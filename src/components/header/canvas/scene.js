@@ -1,7 +1,9 @@
 import * as THREE from 'three';
-import cryptoCupImg from "./src/img/cryptoCupImg.jpg"
-import * as dat from 'lil-gui'
+import cryptoCup from "./src/img/cryptoCup.png"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import gsap from 'gsap';
+
+
 
 const backgroundPresentacion = () => {
 
@@ -41,26 +43,13 @@ const backgroundPresentacion = () => {
 
 
 
-        // Cursor
-
- /*    const cursor = {
-        x: 0,
-        y: 0
-    }
-
-    window.addEventListener('mousemove', (event) =>{
-
-        cursor.x = -(event.clientX / sizes.width - 0.5)
-        cursor.y =  (event.clientY / sizes.height - 0.5)
-    });
- */
 
     /* ------------------------------------------------- */
 
         /* textures */
 
     const textureLoader = new THREE.TextureLoader()
-    const texturePantalla = textureLoader.load(cryptoCupImg)
+    const texturePantalla = textureLoader.load(cryptoCup)
 
 
 
@@ -70,8 +59,8 @@ const backgroundPresentacion = () => {
     
         /* geometrys */
         
-    const geometryPantalla =new THREE.BoxBufferGeometry(2.5, 1.6, 1)
-    const materialPantalla=new THREE.MeshStandardMaterial({map: texturePantalla})
+    const geometryPantalla =new THREE.BoxBufferGeometry(2.5, 1.6, 1, 1)
+        const materialPantalla=new THREE.MeshStandardMaterial({/* wireframe:true, */map: texturePantalla})
           materialPantalla.metalness = 1
           materialPantalla.roughness = 0.68
           materialPantalla.metalnessMap= texturePantalla
@@ -79,13 +68,13 @@ const backgroundPresentacion = () => {
 
     const meshPantalla =new THREE.Mesh(geometryPantalla, materialPantalla)
           meshPantalla.position.set(1.4, 0, .3)
-          meshPantalla.rotation.y = - Math.PI * 0.08
+          meshPantalla.quaternion.y = -Math.PI * 0.030
 
 
     scene.add(meshPantalla)
     
     
-    const geometryPiso = new THREE.PlaneBufferGeometry(12,4)
+    const geometryPiso = new THREE.PlaneBufferGeometry(12,40, 1)
     const materialPiso= new THREE.MeshStandardMaterial({color: 0xffffff })
 
     
@@ -97,26 +86,27 @@ const backgroundPresentacion = () => {
     scene.add(piso)
 
 
-
-        /* gui */
-
-    const gui = new dat.GUI()
-    gui.add(materialPantalla, 'metalness').min(0).max(1).step(0.0001)
-    gui.add(materialPantalla, 'roughness').min(0).max(1).step(0.0001)
-
-
-
         /* lights */
 
 
-
-    const spotLight = new THREE.SpotLight(0xff00ff, 2.5, 8, Math.PI * 0.1, .25, )
-    spotLight.position.x = -3
+    const spotLight = new THREE.SpotLight(0xff00ff, 2.5, 8, Math.PI * .1, .25, )
+    spotLight.position.x = 0
     spotLight.position.y = 0
     spotLight.position.z = 4
-    spotLight.target.position.x =  1.5
+    spotLight.target.position.x =  1.4
     scene.add(spotLight.target)
     scene.add(spotLight)
+
+
+    const spotLight1 = new THREE.SpotLight(0xff00af, .6, 8, Math.PI * .15, .20)
+    spotLight1.position.x = 0
+    spotLight1.position.y = 3.5
+    spotLight1.position.z = 3.5
+    spotLight1.target.position.x =  1.5
+    scene.add(spotLight1.target)
+    scene.add(spotLight1)
+
+
 
      const pointLight = new THREE.PointLight(0xffffff, 1.8)
     pointLight.position.x = 1
@@ -124,80 +114,105 @@ const backgroundPresentacion = () => {
     pointLight.position.z = 5
 
     scene.add(pointLight)
- 
-
-    
-    
-  /*   const moviLuz2 = new THREE.PointLight("#00ffff", 3)
-    moviLuz2.position.set(0 , 10 , 1)
-    scene.add(moviLuz2)
-    
-    const moviLuz3 = new THREE.PointLight("#ffff00", 3)
-    moviLuz3.position.set(0 ,10, 1)
-    scene.add(moviLuz3)
-     */
-    
-    
-
-
-
 
         /* camera */
         
-    const camera =new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 100)
+    const camera =new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 1000)
         camera.position.z= 3
+        camera.lookAt(new THREE.Vector3())
 
     scene.add(camera)
 
 
         // Controls
-
+/* 
     const controls = new OrbitControls(camera, canvas)
-    controls.enableDamping = true
+    controls.enableDamping = true */
 
         
         /* animate  */
 
     
-        const clock = new THREE.Clock()
+    const clock = new THREE.Clock()
     const animate = ()=>{
 
         const time = clock.getElapsedTime()
         const ghost1Angle = time 
         spotLight.position.x = -Math.sin(ghost1Angle ) *3
-
-       /*  const ghost1Angle = time *1.1 */
-        /* moviLuz1.position.x = Math.cos(ghost1Angle) *100 */
-        /* moviLuz1.position.z = Math.sin(ghost1Angle) *100 */
-      /*   moviLuz1.position.y = Math.sin(time *3) */
-  
-    /*   const ghost2Angle = -time * 1.2
-        moviLuz2.position.x = Math.cos(ghost2Angle) *100
-        moviLuz2.position.z = Math.sin(ghost2Angle) *100
-        moviLuz2.position.y = Math.sin(time *4) + Math.sin(time *2.5)
-  
-      const ghost3Angle = -time * 1
-        moviLuz3.position.x = Math.cos(ghost3Angle) *100
-        moviLuz3.position.z = Math.sin(ghost3Angle) *100
-        moviLuz3.position.y = Math.sin(time *3) */
-  
-    
+        spotLight1.position.x = Math.cos(ghost1Angle ) *2
         // Update camera
-/* 
-        camera.position.x= cursor.x * 3
-        camera.position.y = cursor.y * 3
- */
-        /* camera.lookAt(mesh.position) */
-
-
-        controls.update()
+     /*    controls.update() */
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)
+
     }
     animate()
 
+    const clickButton = () => {
+        let button = document.querySelector(".buttonEx")
+        let text = document.querySelector(".textPresent")
+        let home = document.querySelector(".containerHome")
+  
+
+        button.addEventListener("click", ()=>{
+            text.style.opacity= 0;
+
+                gsap.to(camera.rotation, { duration: 2, delay:1 ,y: .1  })
+
+                gsap.to(camera.position, { duration: 5, delay:1.7, z:1,x:-3 })
+
+                gsap.to(camera.rotation, { duration: 2, delay:1 ,y: .5  })
+
+                gsap.to(canvas,{
+                    opacity:0,
+                    delay:4.3,
+                    duration:5
+                })
+
+                gsap.to(canvas,{
+                    display:"none",
+                    delay:3,
+                })
+
+                gsap.to(".containerHome",{
+                    display:"inline-block",
+                    zIndex:100,
+                    delay:3,
+                })
+
+                gsap.to(home,{
+                    opacity:1,
+                    delay:3.4,
+                    duration:2
+                })
+            
+        })
+
+    }
+
+    clickButton()
 
 
+
+
+
+
+
+
+    /* OPTIMIZACION */
+    
+geometryPantalla.verticesNeedUpdate = true; 
+geometryPantalla.elementsNeedUpdate = true; 
+geometryPantalla.morphTargetsNeedUpdate = true; 
+geometryPantalla.uvsNeedUpdate = true;
+geometryPantalla.normalsNeedUpdate = true; 
+geometryPantalla.colorsNeedUpdate = true; 
+
+materialPantalla.needsUpdate = true
+
+texturePantalla.needsUpdate = true;
+
+    renderer.render(scene,camera)
 }
 
 
