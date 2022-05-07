@@ -185,6 +185,13 @@ const backgroundPresentacion = () => {
                     delay:3.4,
                     duration:2
                 })
+
+                
+                gsap.to(".nav",{
+                    opacity:1,
+                    delay:3.8,
+                    duration:1
+                })
             
         })
 
