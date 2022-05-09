@@ -15,7 +15,11 @@
     position: relative;
     background-image: url("./src/banner.png");
     background-size:cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
+
 
 .containerPrincipalHome::after{
     content: " ";
@@ -27,16 +31,102 @@
     filter: blur(20px);
 }
 
-.homePrue2{
-    height: 200vh;
-    width: 100vw;
+.textPrincipalHome{
     position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
 }
 
-.cupWebGl {
-    width: 50vw;
-    height: 50vh;
+.tite-home{
     position: absolute;
-    right: 20rem;
-    top: 2rem;
+    top: 26rem;
+    left: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: column;
 }
+
+.tite-home p{
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.cupWebGl {
+    position: relative;
+    cursor: grab;
+    top: 4rem;
+}
+
+.buttons_title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+
+
+
+.Whitelist-buttonTitle,.Tikets-buttonTitle {
+    position: relative;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    background-color: rgb(19, 19, 19);
+    border-radius: 4px;
+    border-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: .6rem 2rem;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    border: none;
+    z-index: 1;
+  }
+  .Whitelist-buttonTitle:after,  .Tikets-buttonTitle:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #6200ff;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .Whitelist-buttonTitle:hover, .Tikets-buttonTitle:hover{
+    color: #fff;
+    transition:  all .5s ease-in-out;
+  }
+  .Whitelist-buttonTitle:hover:after , .Tikets-buttonTitle:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .Whitelist-buttonTitle:active, .Tikets-buttonTitle:active {
+    top: 2px;
+  }
+  
+

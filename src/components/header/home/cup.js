@@ -4,6 +4,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import cupModel from "./src/model/cupModel.gltf"
 
 const cup = () => {
+    const scene = new THREE.Scene()
 
     const canvas = document.querySelector(".cupWebGl")
 
@@ -14,13 +15,13 @@ const cup = () => {
         /* sizes */
 
     const sizes = {
-        width: 600,
-        height: 900
+        width: 500,
+        height: 800
     }
 
     window.addEventListener("resize", () =>{
-        sizes.width = window.innerWidth
-        sizes.height = window.innerHeight
+        sizes.width = 500
+        sizes.height = 800
 
         camera.aspect = sizes.width / sizes.height
         camera.updateProjectionMatrix()
@@ -39,13 +40,11 @@ const cup = () => {
     })
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-    renderer.physicallyCorrectLights = true
 
 
 
     /* ------------------------------------------------- */
 
-    const scene = new THREE.Scene()
 
      
 
@@ -53,11 +52,19 @@ const cup = () => {
         const ambientLight = new THREE.AmbientLight(0xffffff, 1)
         scene.add(ambientLight)
 
+        const pointLight = new THREE.PointLight(0xffffff, 10)
+        pointLight.position.set(4 , 0 , 0)
+        scene.add(pointLight)
+
+        const pointLight2 = new THREE.PointLight(0xffffff, 10)
+        pointLight2.position.set(-4 , 0 , 0)
+        scene.add(pointLight2)
+
 
         /* camera */
         
-    const camera =new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 100)
-        camera.position.z= 3
+    const camera =new THREE.PerspectiveCamera(58, sizes.width / sizes.height, .1, 100)
+        camera.position.z= 4.6
 
     scene.add(camera)
 
@@ -68,11 +75,10 @@ const cup = () => {
     gltfLoader.load(cupModel,
         (gltf) =>
         {
-            gltf.scene.scale.set(1, 1, 1)
-            gltf.scene.position.set(0, -1.5, 0)
+            gltf.scene.scale.set(1.3, 1.3, 1.3)
+            gltf.scene.position.set(0, -2, 0)
             gltf.scene.rotation.set(0, -1.55, 0)
             scene.add(gltf.scene)
-
         }
     )
 
@@ -82,27 +88,29 @@ const cup = () => {
 
     const controls = new OrbitControls(camera, canvas)
     controls.enableDamping = true
-    controls.enableZoom = false 
+    /* controls.enableZoom = false  */
     controls.enablePan= false
     controls.minDistance = 2
     controls.maxDistance = 10
 
-    controls.minPolarAngle = 1.7;
-    controls.maxPolarAngle = 1.7;
+/*     controls.minPolarAngle = 1.7;
+    controls.maxPolarAngle = 1.7; */
 
 
         
         /* animate  */
 
-    /* 
-    const clock = new THREE.Clock() */
+    
+    const clock = new THREE.Clock()
     const animate = ()=>{
-     /*    const time = clock.getElapsedTime()
-        const ghost1Angle = time  */
+        const time = clock.getElapsedTime()
+        const ghost1Angle = time 
 
+        camera.rotation.y -= 0.01
 
         // Update camera
-      /*  controls.update()  */
+
+        controls.update() 
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)
 
@@ -124,7 +132,6 @@ const cup = () => {
     gltfLoader.needsUpdate = true
 
 
- 
 
 }
 

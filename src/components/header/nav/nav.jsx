@@ -26,7 +26,7 @@ function Nav() {
                     </li>
                     <li className="nav-menu-item">
                         <a href="#home" className="nav-menu-link nav-link">
-                            Tikets
+                            Token
                         </a>
                     </li>
                     
