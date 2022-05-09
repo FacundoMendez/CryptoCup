@@ -20,28 +20,28 @@ function Nav() {
                 
                 <ul className="navVisible nav-menu">
                     <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                        <a href="#home" className="nav-menu-link nav-link">
                             Home
                         </a>
                     </li>
                     <li className="nav-menu-item">
-                        <a href="/tikets" className="nav-menu-link nav-link">
+                        <a href="#home" className="nav-menu-link nav-link">
                             Tikets
                         </a>
                     </li>
                     
-                    <li className="nav-menu-item user">
-                        <a href="/roadmap" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item ">
+                        <a href="#home" className="nav-menu-link nav-link">
                             Roadmap
                         </a>
                     </li>
-                    <li className="nav-menu-item user">
-                        <a href="/whitepaper" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item ">
+                        <a href="#home" className="nav-menu-link nav-link">
                             Whitepaper
                         </a>
                     </li>
-                    <li className="nav-menu-item user">
-                        <a href="/dapp" className="nav-menu-link nav-link">
+                    <li className=" dapp">
+                        <a href="/dapp" className="nav-menu-link nav-link ">
                             Dapp
                         </a>
                     </li>

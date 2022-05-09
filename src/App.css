@@ -2,10 +2,37 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
-html{
+html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
-    background-color: rgba(0, 0, 0, 0.863);
-}
+    background-color: #000000;
+  }
+  
 
+::-webkit-scrollbar {
+    width: 5px;
+    border: 3px solid rgb(7, 7, 7);
+    background-position: top;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #7702fc;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #871fff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #9e4afd;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  

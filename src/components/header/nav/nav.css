@@ -1,111 +1,112 @@
-.header{
-
-}
 
 .nav{
     position: fixed;
     z-index: 10000;
     width: 100%;
-    height: 6rem;
-    top: 0;
+    height: 7rem;
+    top: -.2rem;
     opacity: 0;
-    background-color: rgba(0, 0, 0, 0.959);
-    border-bottom: 2px solid orange;
+    background-color: rgba(0, 0, 0, 0.281);
+    /* border-bottom: 2px solid orange; */
 }
 
 
-.navVar-movile{
-    display: none;
+/* ul  */
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    width: 100%;
+    padding-right: 5rem;
+
 }
 
-.nav__img img{
-    width: 85%;
-    height: 7.7rem;
+.nav-menu-item {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+    position: relative;
+    list-style: none;
 }
+
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 700;
     letter-spacing: 1px;
-    filter: drop-shadow(1px 1px 1px black);
     color:rgb(250, 238, 215);
-
+    padding: 0px 12px;
+    border-radius: 13px;
 } 
 
-.nav-menu {
-    display: flex;
-    justify-content: center;
-    margin-right: 40px;
-    list-style: none;
+
+.dapp{
+    padding: 2rem;
+    background-color: rgb(113, 4, 255);
+    text-transform: uppercase;
+    height: 5rem;
+    width: 12rem; 
+    margin-left: 6rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.dapp a{
     position: absolute;
-    width: 100%;
-    margin: 0 auto;
-    top: .4rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.nav-menu-link {
-    padding: 0px 12px;
-    border-radius: 3px;
-}
-
-.nav-menu-link_active {
-    border-radius: 9%;
-    transition: 0.5s;
+.dapp:hover{
+    clip-path: none;
+    background-color: none;
+    box-shadow: 0 0 .7rem rgb(105, 19, 255);
+    transition: all .2s ease-in-out;
 }
 
 .logo{
     position: absolute;
-    top: 0rem;
+    top: 50%;
+    transform: translate(0%, -50%);
     left: 12%;
     color: white;
     background: none;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
     cursor: pointer;
     z-index: 4000;
-    display: none;
 }
 
   /* TOGGLE */
 .nav-toggle {
     position: absolute;
-    top: 0rem;
+    top: 50%;
+    transform: translate(0, -50%);
     right: 12%;
     color: white;
     background: none;
     border: none;
     font-size: 30px;
-    padding: 0 20px;
-    line-height: 60px;
     cursor: pointer;
     display: none;
     z-index: 4000;
 }
 
-.nav-menu-item {
-    font-size: 18px;
-    margin: 0 10px;
-    line-height: 4.5rem;
-    text-transform: uppercase;
-    width: max-content;
+.nav-menu-item:hover{
+    clip-path: polygon(22.3% 0%, 100% 0%, 81.2% 100%, 0% 100%);
+    background-color:  rgb(111, 0, 255);
+    transition: all .5s ease-in-out;
 }
 
-
-.nav-menu-link_active:hover{
-    transition: all 0.2s ease-in-out;
-}
-
-.nav li:hover{
-    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
-
-}
-
-.nav li a:hover{
-    
-    transition: all 0.2s ease-in-out;
+.nav-menu-item:hover > .nav-menu-link{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1rem rgb(140, 0, 255);
+    filter: drop-shadow( 0 0 18px black) ;
+    transition: all .4s ease-in-out;
 }
 
 .nav-menu-link i{
@@ -120,25 +121,25 @@
 
 @media (max-width: 1082px){
 
-    .nav__img img {
-        width: 85%;
-        height: 7rem;
-    }
-
     .nav-menu {
         flex-direction: column;
         align-items: center;
-        margin: 0;
+        justify-content: center;
         position: fixed;
-        top: 0px;
         width: 100%;
         padding: 20px 0;
         height: 100vh;
         left: 100%;
         overflow-y: auto;
-        padding-top: 0rem;
         transition: left 0.3s;
-        filter:contrast(105%);
+        background-color: black;
+        margin-top: 3rem;
+
+    }
+
+    .dapp{
+        margin: 0;
+        margin-top: 4rem;
     }
     
     .nav-menu_visible {
@@ -150,7 +151,7 @@
         
     }
     .nav-menu-item a{
-        font-size: 2.1rem;
+        font-size: 2.5rem;
     }
 
 
@@ -170,23 +171,5 @@
     .fa-bars{
         color: rgb(250, 238, 215);
         font-size: 3.9rem;
-    }
-
-    .logo{
-        position: absolute;
-        top: -1.4rem;
-        left: 12%;
-        color: white;
-        background: none;
-        border: none;
-        padding: 0 20px;
-        cursor: pointer;
-        z-index: 4000;
-        display: block;
-    }
-
-    .logo a{
-        font-size: 1.6rem;
-        letter-spacing: 1px;
     }
 }
