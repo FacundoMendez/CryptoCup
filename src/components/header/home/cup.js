@@ -101,7 +101,7 @@ const cup = () => {
         {
             modelCup= gltf.scene
             modelCup.scale.set(1.2, 1.2, 1.2)
-            modelCup.position.set(-.2, -1.7, 0)
+            modelCup.position.set(0, -1.7, 0)
             modelCup.rotation.set(0, -1.55, 0)
             scene.add(modelCup)
         }
