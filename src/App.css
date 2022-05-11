@@ -3,14 +3,9 @@
     margin: 0;
     box-sizing: border-box;
     user-select: none;
+    font-family:gilron;
 }
 
-html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
-    background-color: #000000;
-  }
-  
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -22,17 +17,40 @@ html {
     height: 0px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #7702fc;
+    background: #db9748;
     border-radius: 10px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #871fff;
+    background: #e9922f;
   }
   ::-webkit-scrollbar-thumb:active {
-    background: #9e4afd;
+    background: #ee8814;
   }
   
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
   
+
+
+  @font-face {
+    font-family: 'gilron';
+    src: url('./components//fonts/Gilroy-ExtraBold.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'tt1';
+    src: url('./components//fonts/Gilroy-Light.otf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  background-color: #161b22;
+  font-family: "tt1";
+}

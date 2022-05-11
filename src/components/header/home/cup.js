@@ -52,32 +52,32 @@ const cup = () => {
      
 
         /* lights */
-        const direccionalLight = new THREE.DirectionalLight(0xFDD275, 2)
+        const direccionalLight = new THREE.DirectionalLight(0xffffff, 2)
         direccionalLight.position.set(8, 5, 200)
         scene.add(direccionalLight)
      
-        const pointLight = new THREE.PointLight(0xFBAD5F,35)
+        const pointLight = new THREE.PointLight(0xFFDAAA,35)
         pointLight.position.set(4 , 0, 2)
         scene.add(pointLight)
 
-        const pointLight2 = new THREE.PointLight(0xFBAD5F, 35)
+        const pointLight2 = new THREE.PointLight(0xFFDAAA, 35)
         pointLight2.position.set(-2 , 0, 1)
         scene.add(pointLight2)
 
-        const pointLight3 = new THREE.PointLight(0xFBAD5F, 20)
+        const pointLight3 = new THREE.PointLight(0xFFDAAA, 20)
         pointLight3.position.set(-2 , -2 , 0)
         scene.add(pointLight3)
 
-        const pointLight4 = new THREE.PointLight(0xFBAD5F, 50)
+        const pointLight4 = new THREE.PointLight(0xFFDAAA, 50)
         pointLight4.position.set(-3 , 5, -2)
         scene.add(pointLight4)
 
-        const pointLight5 = new THREE.PointLight(0xFBAD5F, 50)
+        const pointLight5 = new THREE.PointLight(0xFFDAAA, 50)
         pointLight5.position.set(3 , 5, -2)
         scene.add(pointLight5)
 
 
-        const spotLight = new THREE.SpotLight(0xFBAD5F, 100, 1.4, Math.PI * 1.14, .25, 1)
+        const spotLight = new THREE.SpotLight(0xffffff, 20, 1.4, Math.PI * 1.14, .25, 1)
         spotLight.position.set(0, 5, 2)
         scene.add(spotLight)
 
@@ -125,11 +125,11 @@ const cup = () => {
         
         /* animate  */
 
-    
-    const clock = new THREE.Clock()
+/*     
+    const clock = new THREE.Clock() */
     const animate = ()=>{
-        const time = clock.getElapsedTime()
-        const ghost1Angle = time 
+/*         const time = clock.getElapsedTime()
+        const ghost1Angle = time  */
 
         camera.rotation.y -= 0.01
 

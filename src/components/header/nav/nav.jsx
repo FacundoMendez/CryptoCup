@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
 import "./nav.css"
+import logo from "./src/logo.png"
 
 
 function Nav() {
@@ -12,7 +13,7 @@ function Nav() {
         <header className="header">
             <nav className="nav">
                 <div className='logo'>
-                    <p>logo</p>
+                    <img src={logo} alt="logo" />
                 </div>
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
@@ -25,7 +26,7 @@ function Nav() {
                         </a>
                     </li>
                     <li className="nav-menu-item">
-                        <a href="#home" className="nav-menu-link nav-link">
+                        <a href="#example" className="nav-menu-link nav-link">
                             Token
                         </a>
                     </li>
