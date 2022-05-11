@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 import "./home.css"
 import cup from './cup'
-import backgroundPrincipal from "./src/bannerPrincipal.png"
+import backgroundPrincipal from "./src/bannerPrincipal1.png"
+import VideoBackground from "./src/videos/particle1.mp4"
 import Timer from './timer/Timer'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
   return (
     <div id='home' className="containerHome">
       <div className="containerPrincipalHome">
+        <video className='particleVideo' src={VideoBackground} autoPlay loop muted ></video>
         <img src={backgroundPrincipal} alt="backgoundPrincipal" />
         
         <div className='textPrincipalHome'>
@@ -39,8 +41,7 @@ const Home = () => {
       <div id="tikets" className="tikets"></div>
 
       <div id="tokens" className="tokens"></div>
-{/* 
-      <div id="tournament" className="tournament"></div> */}
+
     </div>
 
   )
