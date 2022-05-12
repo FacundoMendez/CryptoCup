@@ -36,12 +36,6 @@ const Home = () => {
         <canvas className='cupWebGl'></canvas>  
       </div>    
 
-      <div id="tournament" className="tournament"></div>
-
-      <div id="tikets" className="tikets"></div>
-
-      <div id="tokens" className="tokens"></div>
-
     </div>
 
   )

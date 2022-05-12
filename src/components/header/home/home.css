@@ -30,15 +30,16 @@
   opacity: .8;
 }
 
-.containerPrincipalHome::after{
+.containerPrincipalHome::before{
     content: " ";
     position: absolute;
-    bottom: -18rem;
+    bottom: -10rem;
     height: 20rem;
     width: 100vw;
     left: -2rem;
     background-color: black;
     filter: blur(20px);
+    z-index: 10;
 }
 
 .textPrincipalHome{
@@ -202,6 +203,7 @@ background: linear-gradient(90deg, rgba(230,112,60,1) 0%, rgba(237,137,43,1) 43%
 
 }
 
+
 .particleVideo video{
   width: 100%;
   height: 100vh;
@@ -230,12 +232,6 @@ background: linear-gradient(90deg, rgba(230,112,60,1) 0%, rgba(237,137,43,1) 43%
 }
 
 .tikets{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-
-.tokens{
   width: 100%;
   height: 100vh;
   position: relative;

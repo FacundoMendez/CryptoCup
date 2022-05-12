@@ -51,6 +51,11 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
-  background-color: #161b22;
   font-family: "tt1";
+  background-color: black;
+
+}
+
+main{
+  overflow: hidden;
 }

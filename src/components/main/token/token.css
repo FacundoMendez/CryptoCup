@@ -1,0 +1,74 @@
+.tokens{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 36%, rgba(18,18,19,1) 50%, rgba(16,16,18,1) 66%, rgba(0,0,0,1) 100%);
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24rem;
+ 
+}
+
+  
+/* .tokens::before{
+    content: " ";
+    position: absolute;
+    top: -18rem;
+    height: 20rem;
+    width: 100vw;
+    left: -2rem;
+    background-color: rgb(3, 3, 3);
+    filter: blur(20px);
+    z-index: 10;
+} */
+
+.tokenWebGl {
+    position: relative;
+    width: 50%;
+    cursor: grab;
+}
+
+/* .tokenWebG::before{
+    content: " ";
+    position: absolute;
+    border: 2px solid red;
+    width: 50%;
+    height: 20rem;
+    border-radius: 100%;
+    top: 20%;
+} */
+
+
+.containerToken{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.textToken{
+    position: relative;
+    top: 15%;
+    width: 34%;
+}
+
+.textToken p{
+    color: white;
+    text-align: center;
+    font-size: 2.1rem;
+    padding: 1rem 4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
