@@ -20,7 +20,7 @@
     height: 20rem;
     width: 100vw;
     left: -2rem;
-    background-color: rgba(6, 6, 6, 0.945);
+    background-color: rgba(0, 0, 0, 0.699);
     filter: blur(20px);
     z-index: 10;
 }

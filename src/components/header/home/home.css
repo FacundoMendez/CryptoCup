@@ -1,7 +1,7 @@
 .containerHome{
     width: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 36%, rgba(18,18,19,1) 50%, rgba(16,16,18,1) 66%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 36%, #121213 50%, rgba(16,16,18,1) 66%, rgba(0,0,0,1) 100%);
     position: relative;
     top: 0;
     z-index: 10;
@@ -30,11 +30,11 @@
   opacity: .8;
 }
 
-.containerPrincipalHome::before{
+.containerPrincipalHome::after{
     content: " ";
     position: absolute;
-    bottom: -10rem;
-    height: 20rem;
+    bottom: -5rem;
+    height: 10rem;
     width: 100vw;
     left: -2rem;
     background-color: black;
