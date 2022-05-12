@@ -152,5 +152,5 @@
     position: absolute;
     object-fit: contain;
     height: 100vh;
-    filter: blur(3px) ;
+    filter: blur(3px);
 }
