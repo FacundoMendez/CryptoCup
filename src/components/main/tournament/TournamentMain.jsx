@@ -1,11 +1,14 @@
 import React from 'react'
 import "./tournament.css"
 import TitlesContainers from '../TitlesContainers'
+import backgroundReflejo from "../../main/src/pp2.png"
 
 const TournamentMain = () => {
   return (
       <div className="tournamentContainer">
-          <TitlesContainers title="TOURNAMENT" />
+        <img className="backgroundReflejo"src={backgroundReflejo}  alt="backReflejo" />
+        <div className="boxTournament">
+            <TitlesContainers title="TOURNAMENT" />
 
           <div className="subTitle">
             <h5>MAIN PRIZE</h5>
@@ -33,6 +36,8 @@ const TournamentMain = () => {
 
             </div>
           </div>
+        </div>
+      
       
       </div>
   )

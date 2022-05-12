@@ -35,17 +35,24 @@
 
   @font-face {
     font-family: 'gilron';
-    src: url('./components//fonts/Gilroy-ExtraBold.otf') format("truetype");
+    src: url('./components/fonts/Gilroy-ExtraBold.otf') format("truetype");
     font-weight: normal;
     font-style: normal;
   }
   
+
+
   @font-face {
-    font-family: 'tt1';
-    src: url('./components//fonts/Gilroy-Light.otf') format("truetype");
+    font-family: 'qatar';
+    src: url('./components/fonts/Qatar2022Arabic-Bold.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
   }
+
+  
+ 
+
+
 
   
 html {
@@ -58,4 +65,7 @@ html {
 
 main{
   overflow: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
+
 }

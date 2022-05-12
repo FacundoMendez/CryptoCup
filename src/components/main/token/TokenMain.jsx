@@ -2,6 +2,8 @@ import React, {useEffect} from 'react'
 import tokenModel from './tokenModel'
 import "./token.css"
 import TitlesContainers from '../TitlesContainers'
+import backgroundReflejo from "../../main/src/pp2-volt.png"
+
 
 const TokenMain = () => {
 
@@ -11,6 +13,7 @@ const TokenMain = () => {
 
   return (
     <div id="tokens" className="tokens">
+        <img className="backgroundReflejo-token" src={backgroundReflejo}  alt="backReflejo" />
 
         <TitlesContainers  title="TOKEN"/>
 

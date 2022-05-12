@@ -7,11 +7,9 @@
     z-index: 10;
     overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 24rem;
- 
 }
 
   
@@ -29,19 +27,10 @@
 
 .tokenWebGl {
     position: relative;
-    width: 50%;
+    width: 10%;
     cursor: grab;
 }
 
-/* .tokenWebG::before{
-    content: " ";
-    position: absolute;
-    border: 2px solid red;
-    width: 50%;
-    height: 20rem;
-    border-radius: 100%;
-    top: 20%;
-} */
 
 
 .containerToken{
@@ -51,16 +40,13 @@
     gap: 5rem;
     flex-wrap: wrap;
     width: 100%;
-    height: 100vh;
 }
-
-
 
 
 .textToken{
     position: relative;
     top: 15%;
-    width: 34%;
+    width: 32%;
 }
 
 .textToken p{
@@ -73,4 +59,14 @@
     text-align: inherit;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+
+.backgroundReflejo-token{
+    width: 100%;
+    opacity: .1;
+    position: absolute;
+    object-fit: contain;
+    height: 100vh;
+    filter: blur(3px) ;
 }
