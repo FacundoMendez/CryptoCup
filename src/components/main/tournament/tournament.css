@@ -1,6 +1,5 @@
 .tournamentContainer{
     width: 100%;
-    height: 100vh;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
     position: relative;
@@ -9,9 +8,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    top: 10rem;
-    gap: 24rem;
- 
+    top: 15rem;
+    gap: 8rem;
 }
 
 .tournamentContainer::before{
@@ -28,10 +26,12 @@
 
 
 
+
 .subTitle{
     position: relative;
     width: 45%;
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -66,3 +66,73 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+
+
+/* ------TOURNAMENTS------ */
+
+.tiposTorneos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin-top: 10rem;
+    
+}
+
+
+.tournaments{
+    border: 4px solid rgb(29, 29, 29);
+    height: 28rem;
+    width: 27rem;
+    border-radius: 15px;
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+
+
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #1c1b1d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+  
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
+  .title {
+    font-weight: 300;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 25px;
+    width: 100%;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  }
+  

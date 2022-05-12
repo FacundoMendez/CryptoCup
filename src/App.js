@@ -4,6 +4,7 @@ import Nav from './components/header/nav/Nav';
 import "./components/main/main.css"
 import TokenMain from './components/main/token/TokenMain';
 import TournamentMain from './components/main/tournament/TournamentMain';
+import TiketsMain from './components/main/tikets/TiketsMain';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 
       <main>
         <TournamentMain/>
+        <TiketsMain/>
         <TokenMain/>
       </main>
 

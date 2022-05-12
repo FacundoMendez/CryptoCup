@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
-import "./nav.css"
-import logo from "./src/logo.png"
-
+import "./nav.css";
+import logo from "./src/logo.png";
+import navScroll from './scrollNav';
 
 function Nav() {
 
+    useEffect(()=>{
+        navScroll()
+    },[])
 
     return (
         <header className="header">

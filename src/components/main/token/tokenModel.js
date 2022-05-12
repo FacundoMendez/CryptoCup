@@ -98,8 +98,8 @@ const tokenModel = () =>{
     
       var geometry = new THREE.CylinderGeometry(3,3,0.4,100);
       const mesh = new THREE.Mesh(geometry,material)
-      mesh.rotation.x = 2
-      mesh.rotation.y = 1.6
+      mesh.rotation.x = 1.6
+      mesh.rotation.y = 1.58
       scene.add(mesh)
 
 
@@ -122,7 +122,7 @@ const tokenModel = () =>{
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)
     }
-    
+
     animate()
     
 
