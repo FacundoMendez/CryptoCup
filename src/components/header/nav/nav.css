@@ -161,7 +161,7 @@ box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     width: 17rem;
     margin-top: .8rem;
     object-fit: cover;
-    filter: drop-shadow(0 0 5px rgba(255, 203, 34, 0.5)) brightness(120%) contrast(120%);
+    filter: drop-shadow(0 0 5px rgba(255, 247, 223, 0.5)) brightness(101%) contrast(105%) ;
 }
 
   

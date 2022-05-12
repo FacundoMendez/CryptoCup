@@ -118,12 +118,11 @@ const tokenModel = () =>{
 
         controls.update() 
 
-        mesh.rotation.x += 0.018
+        mesh.rotation.x += 0.015
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)
-            
-
     }
+    
     animate()
     
 

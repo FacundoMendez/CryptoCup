@@ -27,7 +27,7 @@
   text-align: center;
   object-fit: cover;
   filter: contrast(108%) brightness(140%);
-  opacity: .8;
+  opacity: .83;
 }
 
 .containerPrincipalHome::after{
@@ -37,7 +37,7 @@
     height: 10rem;
     width: 100vw;
     left: -2rem;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.952);
     filter: blur(20px);
     z-index: 10;
 }

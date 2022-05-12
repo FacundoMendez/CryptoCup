@@ -2,13 +2,14 @@
     width: 100%;
     height: 100vh;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 36%, rgba(18,18,19,1) 50%, rgba(16,16,18,1) 66%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
     position: relative;
     z-index: 10;
     overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
+    top: 10rem;
     gap: 24rem;
  
 }
@@ -16,12 +17,52 @@
 .tournamentContainer::before{
     content: " ";
     position: absolute;
-    top: -8rem;
-    height: 20rem;
+    top: -14rem;
+    height: 15rem;
     width: 100vw;
     left: -2rem;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgb(0, 0, 0);
     filter: blur(20px);
     z-index: 10;
 }
 
+
+
+.subTitle{
+    position: relative;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0rem;
+}
+
+
+.subTitle h5{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 3.5rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+}
+
+.subTitle p {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,12 +1,9 @@
-
-
 .titleContainers{
     position: relative;
     top: 20%;
 }
 
 .titleContainers h2{
-    color: white;
     text-align: center;
     font-size: 12rem;
     letter-spacing: 15px;
@@ -17,5 +14,5 @@
     inset 0 -2px 5px 1px rgba(139,66,8,1),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #c96d23, #e08336, #fef1a2, #f08228, #a54e07);
-    filter: drop-shadow( 0 0 70px rgba(255, 174, 25, 0.37)) contrast(102%) brightness(110%);
+    filter: drop-shadow( 0 0 35px rgba(255, 174, 52, 0.205)) contrast(102%) brightness(105%);
 }
