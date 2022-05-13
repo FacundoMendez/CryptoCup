@@ -154,3 +154,103 @@
     height: 100vh;
     filter: blur(3px) ;
 }
+
+
+@media screen and (max-width: 480px){
+
+    .tournamentContainer{
+        width: 100%;
+        gap: 8rem;
+    }
+    
+    .boxTournament{
+        padding-top: 10rem;
+        gap: 8rem;
+    }
+
+
+    .tournamentContainer::before{
+        content: " ";
+        position: absolute;
+        top: 0rem;
+        height: 10rem;
+        width: 100vw;
+        left: -2rem;
+        background-color: rgb(0, 0, 0);
+        filter: blur(100px);
+        z-index: 10;
+    }
+    
+    
+    .subTitle{
+        width: 100%;
+        text-align: inherit;
+    }
+    
+    
+    .subTitle h5{
+        text-align: center;
+        padding: 1rem 2rem;
+        font-size: 3.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .subTitle p {
+        font-size: 2rem;
+        padding: 1rem 4rem;
+        letter-spacing: .8px;
+        line-height: 3rem;
+        text-align: inherit;
+    }
+
+
+    
+    /* ------TOURNAMENTS------ */
+
+    .tiposTorneos{
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 10rem;
+    }
+
+
+    .tournaments{
+        height: 28rem;
+        width: 27rem;
+        border-radius: 15px;
+    }
+
+
+    .card {
+        display: flex;
+        height: 300px;
+        width: 280px;
+        border-radius: 10px;
+        left: 0px;
+    }
+    
+    .card:not(:first-child) {
+        margin-left: 0px;
+    }
+
+    .card:hover {
+        transform: translateY(-3px);
+        transition: 0.4s ease-out;
+      }
+      
+      .card:hover ~ .card {
+        left: 0px;
+        transition: 0.4s ease-out;
+      }
+    
+    
+    .title {
+        font-weight: 300;
+        font-size: 1.8rem;
+        top: 25px;
+        width: 100%;
+    }
+    
+
+    
+}

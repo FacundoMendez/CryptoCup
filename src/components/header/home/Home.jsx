@@ -20,7 +20,7 @@ const Home = () => {
         
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <p>Title Lorem ipsum dolor sit amet <br />
+              <p>Title Lorem ipsum dolor<br />
                       lorem asdoi todoto lso
               </p>
               <div className="buttons_title">

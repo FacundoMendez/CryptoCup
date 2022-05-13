@@ -38,34 +38,8 @@
     padding: 0px 12px;
     border-radius: 13px;
     letter-spacing: 2px;
-
 } 
 
-
-/* .dapp{
-    padding: 2rem;
-    background-color: rgb(113, 4, 255);
-    text-transform: uppercase;
-    height: 5rem;
-    width: 12rem; 
-    margin-left: 6rem;
-    position: relative;
-    border-radius: 5px;
-}
- */
-/* .dapp a{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.dapp:hover{
-    clip-path: none;
-    background-color: none;
-    box-shadow: 0 0 .7rem rgb(105, 19, 255);
-    transition: all .2s ease-in-out;
-} */
 
 .dapp  + .dapp { margin-top: 1em; }
 
@@ -85,7 +59,7 @@
   box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
   inset 0 -2px 5px 1px rgba(139,66,8,1),
   inset 0 -1px 1px 3px rgba(250,227,133,1);
-background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
   border: 1px solid #a55d07;
   text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
   cursor: pointer;
@@ -182,8 +156,6 @@ box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
         overflow-y: auto;
         transition: left 0.3s;
         background-color: black;
-        margin-top: 3rem;
-
     }
 
     .dapp{
@@ -220,5 +192,15 @@ box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     .fa-bars{
         color: rgb(250, 238, 215);
         font-size: 3.9rem;
+    }
+
+    .nav-menu-item:hover{
+        width: 100%;
+        clip-path: none;
+        box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+        inset 0 -2px 5px 1px rgba(139,66,8,1),
+        inset 0 -1px 1px 3px rgba(250,227,133,1);
+        background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+        transition: all .2s ease-in-out;
     }
 }

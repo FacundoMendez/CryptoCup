@@ -91,61 +91,6 @@
     gap: 2rem;
 }
 
-/* 
-
-
-.Whitelist-buttonTitle,.Tikets-buttonTitle {
-    position: relative;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-   background-color: rgb(19, 19, 19); 
-   background: rgb(230,112,60);
-background: linear-gradient(90deg, rgba(230,112,60,1) 0%, rgba(237,137,43,1) 43%, rgba(255,195,110,1) 97%);
-    border-radius: 4px;
-    border-style: none;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 700;
-    line-height: 1.5;
-    padding: .6rem 2rem;
-    position: relative;
-    text-align: center;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100%;
-    border: none;
-    z-index: 1;
-  }
-  .Whitelist-buttonTitle:after,  .Tikets-buttonTitle:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background-color: #843bfa;
-    border-radius: 5px;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    transition: all 0.3s ease;
-  }
-  .Whitelist-buttonTitle:hover, .Tikets-buttonTitle:hover{
-    color: #fff;
-    transition:  all .5s ease-in-out;
-  }
-  .Whitelist-buttonTitle:hover:after , .Tikets-buttonTitle:hover:after {
-    left: 0;
-    width: 100%;
-  }
-  .Whitelist-buttonTitle:active, .Tikets-buttonTitle:active {
-    top: 2px;
-  } */
-
-
 
   .Whitelist-buttonTitle + .Whitelist-buttonTitle { margin-top: 1em; }
 
@@ -215,24 +160,94 @@ background: linear-gradient(90deg, rgba(230,112,60,1) 0%, rgba(237,137,43,1) 43%
 
 
 
+@media screen and (max-width: 1440px){
+
+  .textPrincipalHome{
+      width: 65%;
+      gap: 2rem;
+  }
+
+  .tite-home{
+      top: 24rem;
+      left: 20rem;
+      gap: 4rem;
+  }
+
+  .tite-home p{
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+  }
 
 
+  .cupWebGl {
+      position: relative;
+      cursor: grab;
+      left: -12rem;
+      top: -7rem;
+  }
 
+  .buttons_title{
+      gap: 2rem;
+  }
 
+  .particleVideo{
+    width: 100%;
+    filter: contrast(150%) brightness(110%);
 
+  }
 
-
-.tournament{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-/*   background-image: url("./src/banner-iz.png");
-  background-size:cover; */
-  
+  .particleVideo video{
+    width: 100%;
+    height: 100vh;
+  }
 }
 
-.tikets{
-  width: 100%;
-  height: 100vh;
-  position: relative;
+
+@media screen and (max-width:480px){
+
+  .containerPrincipalHome{
+    height: 90vh;
+    width: 100vw;
+}
+
+  .textPrincipalHome{
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .tite-home{
+      top: 20rem;
+      left: 0;
+      gap: 6rem;
+  }
+
+  .tite-home p{
+      font-size: 2.7rem;
+      letter-spacing: 1.5px;
+      text-align: center;
+      line-height: 4rem;
+      padding: 0 1.5rem;
+  }
+
+
+  .buttons_title{
+      gap: 2rem;
+  }
+
+  .particleVideo{
+    width: 100%;
+    filter: contrast(150%) brightness(110%);
+
+  }
+
+  .particleVideo video{
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  .cupWebGl {
+    display: none;
+}
+
 }
