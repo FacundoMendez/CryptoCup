@@ -7,7 +7,7 @@ function navFuncional(){
     if (navMenu.classList.contains("nav-menu_visible")) {
         navToggle.setAttribute("aria-label", "Cerrar menú");
     } else {
-        navToggle.setAttribute("aria-label", "Abrir menú");
+        navToggle.setAttribute("aria-label", "Abrir menú") 
     }
 }
 
