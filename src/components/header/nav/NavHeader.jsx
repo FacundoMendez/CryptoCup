@@ -6,7 +6,7 @@ import "./nav.css";
 import logo from "./src/logo.png";
 import navScroll from './scrollNav';
 
-function Nav() {
+function NavHeader() {
 
     useEffect(()=>{
         navScroll()
@@ -56,4 +56,4 @@ function Nav() {
 }
 
 
-export default Nav;
+export default NavHeader;
