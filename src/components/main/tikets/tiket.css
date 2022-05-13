@@ -1,5 +1,6 @@
 .containerTikets{
     width: 100%;
+    height: 100vh;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
     position: relative;
@@ -8,9 +9,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    top: 10rem;
     margin-top: 13rem;
-    gap: 24rem;
+    gap: 2rem;
 }
 
 .textTikets{
@@ -20,10 +20,10 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 0rem;
+    gap:10rem;
 }
 
-.textTikets p {
+.textTikets p{
     color: white;
     text-align: center;
     font-size: 2rem;
@@ -40,29 +40,24 @@
 
     .containerTikets{
         width: 100%;
-        top: 0;
-        margin-top: 0;
-        gap: 2rem;
-    }
-
-
-    .containerTikets{
-        margin-top: 10rem;
+        height: 60vh; /* modific */
+        z-index: 10;
+        margin-top: 13rem;
         gap: 0rem;
     }
     
     .textTikets{
         width: 100%;
+        gap:10rem;
     }
     
-    .textTikets p {
+    .textTikets p{
         font-size: 2rem;
-        padding: 4rem;
+        padding: 1rem 4rem;
         letter-spacing: 1px;
         line-height: 3rem;
     }
-    
-
+  
 
 }
 
