@@ -37,7 +37,7 @@
     bottom: -5rem;
     height: 10rem;
     width: 100vw;
-    left: -2rem;
+    left: 0rem;
     background-color: rgba(0, 0, 0, 0.952);
     filter: blur(20px);
     z-index: 10;
