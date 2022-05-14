@@ -40,7 +40,7 @@ function NavHeader() {
                         </a>
                     </li>
                     <li className="nav-menu-item ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank" className="nav-menu-link nav-link">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
                         </a>
                     </li>
