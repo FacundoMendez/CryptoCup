@@ -1,0 +1,57 @@
+.social {
+    position: fixed;    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 101;
+    right: -24.5rem;
+}
+
+.social a {
+    color: white;
+    letter-spacing: 1px;
+    background: rgba(132, 0, 255, 0.37);
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: none;
+    justify-content: flex-start;
+    border: 2px groove rgba(0, 0, 0, 0.103);
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: right;
+    border-radius: 50px;
+    transition: transform 1s;
+    align-items: center;
+} 
+
+.social a:hover {
+    transform: translate(-115px, 0);
+}
+
+
+.social a i {
+    margin-right: 15px;
+    font-size: 30px;
+    width: 30px;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.712)) contrast(104%) brightness(120%);
+    transition: color 0.3s;
+}
+
+.social a:hover:nth-child(1) i {
+    color: #27A5CC;
+}
+
+.social a:hover:nth-child(2) i {
+    color: #27A5CC;
+}
+
+.social a:hover:nth-child(3) i {
+    color: #27A5CC;
+}
+
+.social a:hover:nth-child(4) i {
+    color: #27A5CC;
+}

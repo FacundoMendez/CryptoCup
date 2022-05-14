@@ -2,9 +2,7 @@ import './App.css';
 import Home from './components/header/home/Home';
 import Nav from './components/header/nav/NavHeader';
 import "./components/main/main.css"
-import TokenMain from './components/main/token/TokenMain';
-import TournamentMain from './components/main/tournament/TournamentMain';
-import TiketsMain from './components/main/tikets/TiketsMain';
+import Main from './components/main/Main';
 
 function App() {
   return (
@@ -13,11 +11,8 @@ function App() {
       <Nav />
       <Home />
 
-      <main>
-        <TournamentMain/>
-        <TiketsMain/>
-        <TokenMain/>
-      </main>
+      <Main />
+  
 
     </div>
   );

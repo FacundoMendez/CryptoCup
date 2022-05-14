@@ -1,18 +1,12 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "./tournament.css"
-import ball from './ball'
 import TitlesContainers from '../TitlesContainers'
 import backgroundReflejo from "../../main/src/pp2.png"
 
 const TournamentMain = () => {
 
-  useEffect(()=>{
-    ball()
-  },[])
-
   return (
       <div className="tournamentContainer">
-          <canvas className='cupWebGl'></canvas>  
 
         <img className="backgroundReflejo"src={backgroundReflejo}  alt="backReflejo" />
         <div className="boxTournament">

@@ -1,3 +1,7 @@
+main{
+    user-select: none;
+}
+
 .titleContainers{
     position: relative;
     top: 20%;
@@ -16,6 +20,19 @@
     background-image: linear-gradient(160deg, #a54e07, #f0b94b, #fef1a2, #f0b94b, #a54e07);
     filter: drop-shadow( 0 0 35px rgba(255, 174, 52, 0.205)) contrast(102%) brightness(105%);
 }
+
+
+
+.cupWebGl {
+    position: absolute;
+    top: -2rem;
+    left: 5rem;
+    cursor: grab;
+    width: 100%;
+    z-index: 100;
+    filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.349)) contrast(110%);
+}
+
 
 
 @media screen and (max-width: 480px){

@@ -3,6 +3,7 @@ import "./home.css"
 import backgroundPrincipal from "./src/BackCopa.png"
 import VideoBackground from "./src/videos/particle1.mp4"
 import Timer from './timer/Timer'
+import Social from './social/Social'
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
           </div>
         
         </div>
+        <Social />
 
       </div>    
 

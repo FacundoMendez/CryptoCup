@@ -12,16 +12,6 @@
 }
 
 
-.cupWebGl {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    cursor: grab;
-    z-index: 1000000;
-    width: 100%;
-}
-
-
 .tournamentContainer::before{
     content: " ";
     position: absolute;

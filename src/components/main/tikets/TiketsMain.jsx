@@ -12,6 +12,7 @@ const TiketsMain = () => {
 
   return (
     <div className="containerTikets">
+
         <div className="textTikets">
             <TitlesContainers title="TIKETS" />
             <p>By buying a ticket you acces the Tournamet as a player, and you will be able to use all the functions of the Dapp and place bets on all the matches of the World Cup</p>
@@ -19,6 +20,7 @@ const TiketsMain = () => {
         <div className="tiketImg">
           <img className='tiketsPreview' src={TiketImg} alt="tiket" />
         </div>
+        <canvas className='cupWebGl'></canvas>  
 
     </div>
   )

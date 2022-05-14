@@ -23,13 +23,13 @@ const ball = () => {
             /* sizes */
 
         const sizes = {
-            width: 400,
-            height: 400
+            width: 350,
+            height: 350
         }
 
         window.addEventListener("resize", () =>{
-            sizes.width = 400
-            sizes.height = 400
+            sizes.width = 350
+            sizes.height = 350
 
             camera.aspect = sizes.width / sizes.height
             camera.updateProjectionMatrix()
@@ -91,7 +91,7 @@ const ball = () => {
             (gltf) =>
             {
                 modelCup= gltf.scene
-                modelCup.scale.set(.65, .65, .65)
+                modelCup.scale.set(.71, .71, .71)
                 scene.add(modelCup)
             }
         )
