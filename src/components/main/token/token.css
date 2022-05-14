@@ -1,0 +1,91 @@
+.tokens{
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 6rem;
+    padding-top: 12rem;
+}
+
+  
+.tokenWebGl {
+    position: relative;
+    width: 10%;
+    cursor: grab;
+}
+
+
+
+.containerToken{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+.textToken{
+    position: relative;
+    top: 15%;
+    width: 32%;
+}
+
+.textToken p{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.backgroundReflejo-token{
+    width: 100%;
+    opacity: .1;
+    position: absolute;
+    object-fit: contain;
+    height: 100vh;
+    filter: blur(3px) ;
+}
+
+
+
+@media screen and (max-width:480px){
+
+    .tokens{
+        width: 100%;
+        padding-top: 12rem;
+    }
+    
+    .tokenWebGl {
+        position: relative;
+        width: 10%;
+        cursor: grab;
+    }
+    
+    
+    .textToken{
+        top: 0%;
+        width:100%;
+    }
+    
+    .textToken p{
+        font-size: 2rem;
+        padding: 1rem 3rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        text-align: center;
+    }
+
+}

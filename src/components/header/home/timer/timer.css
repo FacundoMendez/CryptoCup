@@ -1,0 +1,87 @@
+.timer{
+  position: relative;
+  top: 5rem;
+}
+
+.headline  {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 4rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+  inset 0 -2px 5px 1px rgba(139,66,8,1),
+  inset 0 -1px 1px 3px rgba(250,227,133,1);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  letter-spacing: 1px;
+  font-family: qatar;
+}
+  
+.reloj li {
+  display: inline-block;
+  font-size: 1.3rem;
+  list-style-type: none;
+  padding: .5rem 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 0.3rem;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+  inset 0 -2px 5px 1px #8b4208,
+  inset 0 -1px 1px 3px #fae385;
+  background-image: linear-gradient(160deg, rgb(165, 78, 7), rgb(180, 126, 17), rgb(254, 241, 162), #bc881b, #a54e07);
+  border: 2px solid #a55d07;
+}
+  
+.reloj li span {
+  display: block;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+}
+  
+  
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+ .reloj li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+ .reloj li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+
+@media screen and (max-width:480px){
+
+  .timer{
+    position: relative;
+    top: 8rem;
+  }
+  
+  .headline  {
+    padding: 1rem 2rem;
+    font-size: 4rem;
+    letter-spacing: 1px;
+  }
+    
+  .reloj li {
+    font-size: 1.3rem;
+    padding: .5rem 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.3rem;
+  }
+  
+  .reloj li span {
+    display: block;
+    font-size: 3rem;
+  }
+}

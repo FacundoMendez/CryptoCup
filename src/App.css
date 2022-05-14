@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family:gilron;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    border: 3px solid rgb(7, 7, 7);
+    background-position: top;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #db9748;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e9922f;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #ee8814;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+
+
+@font-face {
+  font-family: 'gilron';
+  src: url('./components/fonts/Gilroy-ExtraBold.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'qatar';
+  src: url('./components/fonts/Qatar2022Arabic-Bold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+  
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "tt1";
+  background-color: black;
+  user-select: none;
+}
+
+main{
+  overflow: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
+  user-select: none;
+}
+
