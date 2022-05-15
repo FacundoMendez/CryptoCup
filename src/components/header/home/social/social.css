@@ -11,7 +11,7 @@
 .social a {
     color: white;
     letter-spacing: 1px;
-    background: rgba(132, 0, 255, 0.37);
+    background: #4F4C80 ;
     font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
@@ -36,22 +36,22 @@
     margin-right: 15px;
     font-size: 30px;
     width: 30px;
-    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.712)) contrast(104%) brightness(120%);
+    filter: contrast(104%) brightness(120%);
     transition: color 0.3s;
 }
 
 .social a:hover:nth-child(1) i {
-    color: #27A5CC;
+    color: #9d8af1;
 }
 
 .social a:hover:nth-child(2) i {
-    color: #27A5CC;
+    color: #9d8af1;
 }
 
 .social a:hover:nth-child(3) i {
-    color: #27A5CC;
+    color: #9d8af1;
 }
 
 .social a:hover:nth-child(4) i {
-    color: #27A5CC;
+    color: #9d8af1;
 }
