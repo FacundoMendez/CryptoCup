@@ -13,7 +13,6 @@ const Main = () => {
 
   return (
     <main>
-
         <TournamentMain/>
         <TiketsMain />
         <TokenMain />
