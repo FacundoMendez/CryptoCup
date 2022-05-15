@@ -10,7 +10,6 @@ const navScroll= () =>{
 
         }else{
             $(".nav").css("backgroundColor", " rgba(0, 0, 0, 0.014)");
-
         }
     });
 

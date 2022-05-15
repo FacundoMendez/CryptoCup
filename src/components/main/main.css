@@ -30,7 +30,7 @@ main{
     cursor: grab;
     width: 100%;
     z-index: 100;
-    filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.349)) contrast(110%);
+    filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.336)) contrast(110%);
 }
 
 
