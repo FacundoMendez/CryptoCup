@@ -7,9 +7,16 @@ const navScroll= () =>{
         contenido2 = contenido2.top;
         if(windowHeight >= (contenido2 /1.5)  ){
             $(".nav").css("backgroundColor", "black");
-
         }else{
             $(".nav").css("backgroundColor", " rgba(0, 0, 0, 0.014)");
+        }
+
+        if(windowHeight >= (contenido2 /4.5)  ){
+            $(".social").css("opacity", 0);
+            $(".social").css("visibility", "hidden");
+        }else{
+            $(".social").css("opacity", 1);
+            $(".social").css("visibility", "visible");
         }
     });
 

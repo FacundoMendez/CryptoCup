@@ -47,7 +47,7 @@
   
   
 @media all and (max-width: 768px) {
-  .timer h1 {
+  .headline  {
     font-size: calc(1.5rem * var(--smaller));
   }
   
@@ -75,7 +75,7 @@
   }
     
   .reloj li {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: .5rem 1.5rem;
     font-weight: bold;
     text-align: center;
