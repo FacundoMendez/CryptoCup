@@ -35,7 +35,7 @@ function NavHeader() {
                     </li>
                     
                     <li className="nav-menu-item ">
-                        <a href="#home" className="nav-menu-link nav-link">
+                        <a href="#roadmap" className="nav-menu-link nav-link">
                             Roadmap
                         </a>
                     </li>

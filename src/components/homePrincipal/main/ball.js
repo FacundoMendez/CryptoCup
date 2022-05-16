@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import cupModel from "./src/models/ball.glb"
+import ballModel from "./src/models/ball.glb"
 
 
 const ball = () => {
@@ -14,7 +14,7 @@ const ball = () => {
 
         const scene = new THREE.Scene()
 
-        const canvas = document.querySelector(".cupWebGl")
+        const canvas = document.querySelector(".ballModel")
 
 
         /*------- config ------- */
@@ -84,15 +84,15 @@ const ball = () => {
 
 
 
-        let modelCup
+        let modelBall
 
         const gltfLoader = new GLTFLoader()
-        gltfLoader.load(cupModel,
+        gltfLoader.load(ballModel,
             (gltf) =>
             {
-                modelCup= gltf.scene
-                modelCup.scale.set(.71, .71, .71)
-                scene.add(modelCup)
+                modelBall= gltf.scene
+                modelBall.scale.set(.71, .71, .71)
+                scene.add(modelBall)
             }
         )
 
@@ -120,9 +120,9 @@ const ball = () => {
 
             camera.rotation.y = 0.01
 
-            if (modelCup){
-                modelCup.rotation.y += 0.015
-                modelCup.position.y = Math.cos(ghost1Angle *1.4) / 1.8
+            if (modelBall){
+                modelBall.rotation.y += 0.015
+                modelBall.position.y = Math.cos(ghost1Angle *1.4) / 1.8
                 pointLight2.rotation.y -=  0.1
                 pointLight.rotation.y -=  0.1
                 pointLight3.rotation.y -=  0.1

@@ -9,7 +9,7 @@ const Roadmap = () => {
   },[])
   
   return (
-    <div className="containerRoadmap">
+    <div id='roadmap' className="containerRoadmap">
         <div className="titleContainers roadmapTitle">
           <h2>ROADMAP</h2>
         </div>

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import "./tiket.css"
-/* import TitlesContainers from '../TitlesContainers' */
 import TiketBoost from "./src/tiketBasic.png"
 import TiketBasic from "./src/tiketBoost.png"
 import MaradonaPng from "./src/maradona.png"
@@ -36,7 +35,7 @@ const TiketsMain = () => {
           <img className='tiketsPreview' src={TiketBasic} alt="tiket" onClick={() => setTiketClick(true)} />
         </div>
 
-        <canvas className='cupWebGl'></canvas>  
+        <canvas className='ballModel'></canvas>  
 
         {tiketClick ? <Navigate to= "/tikets" /> : null }
     </div>

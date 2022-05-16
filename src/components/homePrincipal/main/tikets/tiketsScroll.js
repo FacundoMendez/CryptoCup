@@ -40,7 +40,7 @@ const tiketsScroll = () =>{
         }
     })
 
-    gsap.from(".cupWebGl",{
+    gsap.from(".ballModel",{
         opacity:0,
         delay:.2,
         x:-300,
