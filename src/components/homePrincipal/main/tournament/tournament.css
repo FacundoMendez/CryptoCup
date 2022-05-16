@@ -45,7 +45,7 @@
 
 
 .subTitleNft{
-    margin-top: 8rem;
+    margin-top: 3rem;
 }
 
 .containerTexts h5{
@@ -83,7 +83,7 @@
     position: absolute;
     object-fit: contain;
     height: 100vh;
-    filter: hue-rotate(240deg);
+    filter: hue-rotate(240deg) contrast(103%);
 }
 
 .tournament1{
@@ -146,7 +146,6 @@
     position: relative;
     box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     left: 0px;
-    backface-visibility: hidden;
     transition: all 0.6s ease;
 
 }
@@ -185,36 +184,41 @@
   
 
 .tournament1:hover{
-    transform: scale(1.8);
+    transform: scale(1.7) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: all 1s ease-in-out;
+    transition-delay: .1s;
+
 }
 
 .tournament2:hover{
-    transform: scale(1.8);
+    transform: scale(1.7) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: all 1s ease-in-out;
+    transition-delay: .1s;
 }
 
 
 .tournament3:hover{
-    transform: scale(1.8);
+    transform: scale(1.7) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: all 1s ease-in-out;
+    transition-delay: .1s;
 }
 
 .tournament4:hover{
-    transform: scale(1.8);
+    transform: scale(1.7) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
-    background-position: top;
+    background-position: center;
     transition: all 1s ease-in-out;
+    transition-delay: .1s;
 }
 
 
@@ -222,18 +226,23 @@
 
 .tournament1:hover ~ .card {
     opacity: 0;
+    box-shadow: none;
+
 }
 
 .tournament2:hover ~ .card {
     opacity: 0;
+    box-shadow: none;
 }
 
 .tournament3:hover ~ .card {
     opacity: 0;
+    box-shadow: none;
 }
 
 .tournament4:hover ~ .card {
     opacity: 0;
+    box-shadow: none;
 }
 
 
@@ -241,49 +250,38 @@
 .tournament1:hover ~ .card__side--front {
     transform: rotateY(-180deg);
     transition: all 1s ease-in-out;
-
 }
 .tournament1:hover ~ .card__side--back {
     transform: rotate(0);
     transition: all 1s ease-in-out;
-
 }
 
 .tournament2:hover ~ .card__side--front {
     transform: rotateY(-180deg);
     transition: all 1s ease-in-out;
-
 }
 .tournament2:hover ~ .card__side--back {
     transform: rotate(0);
     transition: all 1s ease-in-out;
-
 }
 
 
 .tournament3:hover ~ .card__side--front {
     transform: rotateY(-180deg);
-    opacity: 0;
     transition: all 1s ease-in-out;
-
 }
 .tournament3:hover ~ .card__side--back {
     transform: rotate(0);
-    opacity: 0;
     transition: all 1s ease-in-out;
-
 }
 
 
 .tournament4:hover ~ .card__side--front {
     transform: rotateY(-180deg);
-    opacity: 0;
     transition: all 1s ease-in-out;
-
 }
 .tournament4:hover ~ .card__side--back {
     transform: rotate(0);
-    opacity: 0;
     transition: all 1s ease-in-out;
 }
 
@@ -309,7 +307,6 @@
         height: 10rem;
         width: 100vw;
         left: -2rem;
-        background-color: rgb(0, 0, 0);
         filter: blur(100px);
         z-index: 10;
     }

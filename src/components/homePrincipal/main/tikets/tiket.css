@@ -19,7 +19,7 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap:10rem;
+    gap:5rem;
 }
 
 .textTikets p{
@@ -43,17 +43,20 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
-    padding: 5rem 0;
+    padding: 10rem 0;
 }
 
 .tiketsPreview{
-    width: 13%;
-    object-fit: cover;
-    filter: contrast(105%);
+    width: 15%;
+    object-fit: contain;
+    filter: contrast(105%) ;
+    cursor: pointer;
 }
 
 .tiketsPreview:hover{
-    filter: drop-shadow(0 0 20px rgba(111, 0, 255, 0.411));
+    filter: drop-shadow(0 0 10px #4f4c809a);
+    transform: scale(1.04);
+    transition: all .6s ease-in-out;
 }
 
 .maradonaPng{

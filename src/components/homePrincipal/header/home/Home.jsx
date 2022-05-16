@@ -20,7 +20,7 @@ const Home = () => {
               </p>
               <div className="buttons_title">
                 <button className='Whitelist-buttonTitle'>Presale </button>
-                <button className='Tikets-buttonTitle'>Tikets</button>
+                <a href="/tikets"> <button className='Tikets-buttonTitle'>  Tikets </button></a> 
               </div>
 
              <Timer/>

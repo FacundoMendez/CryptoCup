@@ -136,11 +136,7 @@ const tokenModel = () =>{
     mesh.uvsNeedUpdate = true;
     mesh.normalsNeedUpdate = true; 
     mesh.colorsNeedUpdate = true; 
-
     material.needsUpdate = true
-
-    texture.needsUpdate = true;
-
 
 }
 

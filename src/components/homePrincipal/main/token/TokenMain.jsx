@@ -1,21 +1,24 @@
 import React, {useEffect} from 'react'
 import tokenModel from './tokenModel'
 import "./token.css"
-import TitlesContainers from '../TitlesContainers'
 import backgroundReflejo from "../../main/src/pp2-volt.png"
+import tokenScroll from './tokenScroll'
 
 
 const TokenMain = () => {
 
     useEffect(()=>{
         tokenModel()
+        tokenScroll()
     },[])
 
   return (
     <div id="tokens" className="tokens">
         <img className="backgroundReflejo-token" src={backgroundReflejo}  alt="backReflejo" />
 
-        <TitlesContainers  title="TOKEN"/>
+        <div className="titleContainers tokenTitle">
+            <h2>TOKEN</h2>
+        </div>
 
         <div className="containerToken">
     

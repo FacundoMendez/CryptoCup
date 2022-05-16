@@ -1,16 +1,12 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import navFuncional from './navFuncional';
+import navFuncional from '../homePrincipal/header/nav/navFuncional';
 import "./nav.css";
 import logo from "./src/logoPng.png";
-import navScroll from './scrollNav';
 
-function NavHeader() {
+function NavTikets() {
 
-    useEffect(()=>{
-        navScroll()
-    },[])
 
     return (
         <header className="header">
@@ -24,18 +20,18 @@ function NavHeader() {
                 
                 <ul className="navVisible nav-menu">
                     <li className="nav-menu-item">
-                        <a href="#home" className="nav-menu-link nav-link">
+                        <a href="/" className="nav-menu-link nav-link">
                             Home
                         </a>
                     </li>
                     <li className="nav-menu-item">
-                        <a href="#tokens" className="nav-menu-link nav-link">
+                        <a href="/" className="nav-menu-link nav-link">
                             Token
                         </a>
                     </li>
                     
                     <li className="nav-menu-item ">
-                        <a href="#home" className="nav-menu-link nav-link">
+                        <a href="/" className="nav-menu-link nav-link">
                             Roadmap
                         </a>
                     </li>
@@ -56,4 +52,4 @@ function NavHeader() {
 }
 
 
-export default NavHeader;
+export default NavTikets;

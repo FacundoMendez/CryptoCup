@@ -11,52 +11,54 @@
     gap: 6rem;
     padding-top: 5rem;
 }
-
   
 .tokenWebGl {
     position: relative;
     width: 10%;
     cursor: grab;
+    transform: scale(.01);
+    opacity: 0;
 }
-
-
 
 .containerToken{
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    gap: 5rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
     flex-wrap: wrap;
     width: 100%;
 }
 
-
 .textToken{
     position: relative;
-    top: 20%;
-    width: 32%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:5rem;
 }
 
 .textToken p{
     color: white;
     text-align: center;
     font-size: 2rem;
-    padding: 5rem 4rem;
+    padding: 0rem 4rem;
     letter-spacing: 1px;
     line-height: 3rem;
-    text-align: inherit;
+    text-align: center;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-
 .backgroundReflejo-token{
     width: 100%;
-    opacity: .1;
+    opacity: .08;
     position: absolute;
     object-fit: contain;
     height: 100vh;
-    filter: blur(3px) ;
+    filter: hue-rotate(240deg) blur(3px) contrast(103%) ;
 }
 
 

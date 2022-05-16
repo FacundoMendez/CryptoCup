@@ -1,0 +1,96 @@
+.timerDapp{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+  .headlineDapp  {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9b9b9b66,
+    inset 0 -2px 5px 1px #b8b8b8,
+    inset 0 -1px 1px 3px #ffffff;
+    background-image: linear-gradient(160deg, #575757, #a3a3a3, #ffffff, #a3a3a3, #575757);
+    letter-spacing: 1px;
+    font-family: qatar;
+  }
+    
+  .relojDapp li {
+    display: inline-block;
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding: .5rem 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    margin: 0.3rem;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9b9b9b66,
+    inset 0 -2px 5px 1px #b8b8b8,
+    inset 0 -1px 1px 3px #ffffff;
+    background-image: linear-gradient(160deg, #575757, #a3a3a3, #ffffff, #a3a3a3, #575757);
+    border: 1px solid #929292;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 2px 2px #b8b8b8;
+  }
+    
+  .relojDapp li span {
+    display: block;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+  }
+    
+    
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+   .relojDapp li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+   .relojDapp li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+  
+  
+  @media screen and (max-width:480px){
+  
+    .timerDapp{
+      position: relative;
+      top: 8rem;
+    }
+    
+    .headlineDapp  {
+      padding: 1rem 2rem;
+      font-size: 4rem;
+      letter-spacing: 1px;
+    }
+      
+    .relojDapp li {
+      font-size: 1.3rem;
+      padding: .5rem 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0.3rem;
+    }
+    
+    .relojDapp li span {
+      display: block;
+      font-size: 3rem;
+    }
+  }

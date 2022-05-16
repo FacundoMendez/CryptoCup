@@ -1,21 +1,28 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./tournament.css"
-import TitlesContainers from '../TitlesContainers'
 import backgroundReflejo from "../../main/src/pp2.png"
 import copaPng from "./src/copaPng.png"
+import tournamentScroll from './tournamentScroll'
 
 const TournamentMain = () => {
 
+  useEffect(() =>{
+    tournamentScroll()
+  },[])
 
   return (
       <div className="tournamentContainer">
         <img className='copaPng' src={copaPng} alt="copaMundo" />
         <img className="backgroundReflejo"src={backgroundReflejo}  alt="backReflejo" />
+        
         <div className="boxTournament">
 
             <div className="containerTexts">
 
-              <TitlesContainers title="TOURNAMENT" />
+              
+              <div className="titleContainers tournamentTitle">
+                <h2>TOURNAMENT</h2>
+              </div>
 
               <div className="subTitlePrize">
                 <h5>MAIN PRIZE</h5>

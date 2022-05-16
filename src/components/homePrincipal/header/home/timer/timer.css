@@ -47,7 +47,7 @@
   
   
 @media all and (max-width: 768px) {
-  h1 {
+  .timer h1 {
     font-size: calc(1.5rem * var(--smaller));
   }
   
