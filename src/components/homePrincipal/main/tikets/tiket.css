@@ -43,7 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5rem;
-    padding: 10rem 0;
+    padding-top: 10rem;
 }
 
 .tiketsPreview{
@@ -82,21 +82,22 @@
     .containerTikets{
         width: 100%;
         z-index: 10;
-        margin-top: 13rem;
+        margin-top: 5rem;
         gap: 0rem;
     }
     
     .textTikets{
         width: 100%;
-        gap:10rem;
+        gap:5rem;
     }
     
     .textTikets p{
-        font-size: 2rem;
-        padding: 1rem 4rem;
+        padding: 0rem 4rem;
+        padding-right: 2rem;
         letter-spacing: 1px;
         line-height: 3rem;
-        text-align: center;
+        font-size: 1.6rem;
+        text-align: inherit;
     }
 
     .tiketsPreview{
@@ -105,7 +106,9 @@
     }
     
 
-    
+    .qatarPng{
+        display: none;
+    }
  
   
 

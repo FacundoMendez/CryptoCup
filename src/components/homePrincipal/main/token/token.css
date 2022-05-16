@@ -67,7 +67,7 @@
 
     .tokens{
         width: 100%;
-        padding-top: 12rem;
+        padding-top: 5rem;
     }
     
     .tokenWebGl {
@@ -78,16 +78,17 @@
     
     
     .textToken{
-        top: 0%;
-        width:100%;
+        width: 100%;
+        gap:5rem;
     }
     
     .textToken p{
-        font-size: 2rem;
-        padding: 1rem 3rem;
+        padding: 0rem 4rem;
+        padding-right: 2rem;
         letter-spacing: 1px;
         line-height: 3rem;
-        text-align: center;
+        font-size: 1.6rem;
+        text-align: inherit;
     }
 
 }

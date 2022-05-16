@@ -320,18 +320,18 @@
     
     .containerTexts h5{
         text-align: center;
-        padding: 1rem 2rem;
+        padding: 3rem 2rem;
         font-size: 3.5rem;
         letter-spacing: 1px;
     }
     
     .containerTexts p {
-        font-size: 2rem;
-        padding: 2rem 4rem;
-        letter-spacing: .8px;
+        padding: 0rem 4rem;
+        padding-right: 2rem;
+        letter-spacing: 1px;
         line-height: 3rem;
-        text-align: center;
-
+        font-size: 1.6rem;
+        text-align: inherit;
     }
 
 
@@ -340,22 +340,15 @@
 
     .tiposTorneos{
         flex-direction: column;
-        gap: 2rem;
-        margin-top: 10rem;
-    }
-
-
-    .tournaments{
-        height: 28rem;
-        width: 27rem;
-        border-radius: 15px;
+        gap: 5rem;
+        margin-top: 5rem;
     }
 
 
     .card {
         display: flex;
-        height: 300px;
-        width: 280px;
+        height: 350px;
+        width: 300px;
         border-radius: 10px;
         left: 0px;
     }
@@ -396,6 +389,40 @@
     
     .tournament4:hover ~ .card {
         opacity:1;
+    }
+    
+
+    
+    .tournament1:hover ~ .card__side--front {
+        transform: rotateY(0);
+    }
+
+    .tournament2:hover ~ .card__side--front {
+        transform: rotateY(0);
+    }
+
+    .tournament3:hover ~ .card__side--front {
+        transform: rotateY(0);
+    }
+
+    .tournament4:hover ~ .card__side--front {
+        transform: rotateY(0);
+    }
+
+    .tournament1:hover ~ .card {
+        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    
+    .tournament2:hover ~ .card {
+        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    
+    .tournament3:hover ~ .card {
+        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    
+    .tournament4:hover ~ .card {
+        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
     
     
