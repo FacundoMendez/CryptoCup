@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import imagenToken from "./src/token2.png"
+import imagenToken from "./src/token3.png"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 
@@ -28,6 +28,7 @@ const tokenModel = () =>{
 
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+        
     })
 
 
@@ -37,15 +38,16 @@ const tokenModel = () =>{
         canvas: canvas, 
         antialias:true,
         alpha:true
-    })
+    })    
+    
+
     renderer.setSize(sizes.width, sizes.height)
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-/*     renderer.physicallyCorrectLights = true */
 
 
     /* ----------------------------------------------------------- */
 
-        const camera =new THREE.PerspectiveCamera(65, sizes.width / sizes.height, .1, 100)
+        const camera =new THREE.PerspectiveCamera(65, sizes.width / sizes.height, .1, 10)
         camera.position.set(0,0,7)
 
         scene.add(camera)
@@ -96,7 +98,7 @@ const tokenModel = () =>{
         roughness:0.3,
       })
     
-      var geometry = new THREE.CylinderGeometry(3,3,0.4,100);
+      var geometry = new THREE.CylinderBufferGeometry(3,3,0.4,100);
       const mesh = new THREE.Mesh(geometry,material)
       mesh.rotation.x = 1.6
       mesh.rotation.y = 1.58
@@ -107,8 +109,6 @@ const tokenModel = () =>{
       controls.enableDamping = true
       controls.enableZoom = false 
       controls.enablePan= false
-
-  
 
 
     
