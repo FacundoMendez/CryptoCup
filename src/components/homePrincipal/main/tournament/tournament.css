@@ -33,7 +33,6 @@
 
 .containerTexts{
     position: relative;
-    width: 45%;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -42,11 +41,23 @@
     gap: 5rem;
 }
 
-
+.subTitlePrize{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 
 .subTitleNft{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     margin-top: 3rem;
+
 }
+
+
 
 .containerTexts h5{
     font-weight: bold;
@@ -133,6 +144,7 @@
     position: relative;
     margin-top: 5rem;
     perspective: 150em;
+    width: 100vw;
 }
 
 
@@ -227,7 +239,6 @@
 .tournament1:hover ~ .card {
     opacity: 0;
     box-shadow: none;
-
 }
 
 .tournament2:hover ~ .card {
@@ -287,6 +298,188 @@
 
 
 
+@media screen and (max-width: 1440px){
+
+    .titleContainers h2{
+        padding: 2rem;
+        font-size: 11rem;
+        letter-spacing: 1px;
+    }
+    
+    .containerTexts p {
+        padding: 0rem 4rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.8rem;
+    }
+
+    .subTitlePrize{
+        width: 65%;
+    }
+    
+    .subTitleNft{
+        width: 65%;
+    }
+    
+    /* ------TOURNAMENTS------ */
+
+    .tiposTorneos{
+        flex-direction: row;
+        gap: 5rem;
+        padding: 0 3rem;
+    }
+
+
+    .card {
+        display: flex;
+        border-radius: 10px;
+    }
+    
+    
+    .title {
+        font-weight: 300;
+        font-size: 1.8rem;
+        top: 25px;
+        width: 100%;
+    }
+
+    .tournament1:hover{
+        transform: scale(1.5) ;
+        left: -5rem;
+    }
+    
+    .tournament2:hover{
+        transform: scale(1.5) ;
+        left: 5rem;
+    }
+    
+    
+    .tournament3:hover{
+        transform: scale(1.5) ;
+        left: 5rem;
+
+    }
+    
+    .tournament4:hover{
+        transform: scale(1.5) ;
+        left: 5rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 1170px){
+
+    
+    .titleContainers h2{
+        font-size: 10rem;
+    }
+    
+    .containerTexts p {
+        font-size: 1.7rem;
+    }
+
+    .subTitlePrize{
+        width: 70%;
+    }
+    
+    .subTitleNft{
+        width: 65%;
+    }
+    
+    /* ------TOURNAMENTS------ */
+
+    .tiposTorneos{
+        flex-direction: row;
+        gap: 5rem;
+        padding: 0 3rem;
+    }
+
+
+    .card {
+        display: flex;
+        border-radius: 10px;
+    }
+    
+    
+    .title {
+        font-weight: 300;
+        font-size: 1.8rem;
+        top: 25px;
+        width: 100%;
+    }
+
+    .tournament1:hover{
+        transform: scale(1.1) ;
+        left: 0rem;
+    }
+    
+    .tournament2:hover{
+        transform: scale(1.1) ;
+        left: 0rem;
+    }
+    
+    
+    .tournament3:hover{
+        transform: scale(1.1) ;
+        left: 0rem;
+    }
+    
+    .tournament4:hover{
+        transform: scale(1.1) ;
+        left: 0rem;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    
+    .titleContainers h2{
+        font-size: 8rem;
+    }
+    
+    .containerTexts p {
+        font-size: 1.6rem;
+    }
+
+    .subTitlePrize{
+        width: 90%;
+    }
+    
+    .subTitleNft{
+        width: 90%;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px){
+
+    
+    .titleContainers h2{
+        font-size: 6.6rem;
+    }
+    
+    .containerTexts p {
+        font-size: 1.5rem;
+        text-align: initial;
+    }
+
+    .subTitlePrize{
+        width: 94%;
+    }
+    
+    .subTitleNft{
+        width: 90%;
+    }
+    
+}
+
+
+
 @media screen and (max-width: 480px){
 
     .tournamentContainer{
@@ -294,35 +487,26 @@
         gap: 8rem;
     }
     
+    .titleContainers h2{
+        font-size: 5.5rem;
+    }
+
     .boxTournament{
         padding-top: 10rem;
         gap: 6rem;
     }
 
-
-    .tournamentContainer::before{
-        content: " ";
-        position: absolute;
-        top: -10rem;
-        height: 10rem;
-        width: 100vw;
-        left: -2rem;
-        filter: blur(100px);
-        z-index: 10;
-    }
-    
-    
     .containerTexts{
         width: 100%;
         text-align: inherit;
     }
-    
     
     .containerTexts h5{
         text-align: center;
         padding: 3rem 2rem;
         font-size: 3.5rem;
         letter-spacing: 1px;
+        margin-top: -2rem;
     }
     
     .containerTexts p {
@@ -425,7 +609,42 @@
         box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     }
     
-    
+}
+
+
+@media screen and (max-width: 395px){
 
     
+    .titleContainers h2{
+        font-size: 4.5rem;
+    }
+
+
+    
+    .containerTexts h5{
+        text-align: center;
+        padding: 3rem 2rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+        margin-top: -2rem;
+    }
+    
+    .containerTexts p {
+        padding: 0rem 2rem;
+        padding-right: 2rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.4rem;
+        text-align: inherit;
+    }
+
+    .card {
+        display: flex;
+        height: 330px;
+        width: 280px;
+        border-radius: 10px;
+        left: 0px;
+    }
+
+
 }

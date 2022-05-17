@@ -19,7 +19,6 @@ const TournamentMain = () => {
 
             <div className="containerTexts">
 
-              
               <div className="titleContainers tournamentTitle">
                 <h2>TOURNAMENT</h2>
               </div>
@@ -39,7 +38,7 @@ const TournamentMain = () => {
                 </div>
             </div>
 
-              <div className="tiposTorneos">
+            <div className="tiposTorneos">
                   <div className="card tournament1 card__side--front card__side--front-1">
                     <h3 className="title">TOURNAMENT 1</h3>
                   </div>

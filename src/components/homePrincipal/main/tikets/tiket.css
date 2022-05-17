@@ -14,7 +14,7 @@
 
 .textTikets{
     position: relative;
-    width: 45%;
+    width: 45vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -77,6 +77,63 @@
 }
 
 
+@media screen and (max-width:1440px){
+
+    .containerTikets{
+        width: 100%;
+        margin-top: 4rem;
+        gap: 2rem;
+        padding: 15rem 0;
+    }
+
+    .textTikets{
+        width: 50vw;
+        gap:3rem;
+    }
+    
+    .textTikets p{
+        padding: 0rem 2rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .tiketsPreview{
+        width: 22rem;
+    }
+
+}
+
+
+@media screen and (max-width:1170px){
+
+    .textTikets{
+        width: 75vw;
+        gap:3rem;
+    }
+    
+    .textTikets p{
+        padding: 0rem 2rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .tiketsPreview{
+        width: 22rem;
+    }
+
+    .tiketImg{
+        gap: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+    .textTikets{
+        width: 85vw;
+    }
+}
+
 @media screen and (max-width:480px){
 
     .containerTikets{
@@ -108,6 +165,10 @@
 
     .qatarPng{
         display: none;
+    }
+
+    .tiketImg{
+        gap: 5rem;
     }
  
   
