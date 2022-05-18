@@ -1,11 +1,10 @@
 import React from 'react'
 import "./home.css"
-import backgroundPrincipal from "./src/BackCopa.png"
 import VideoBackground from "./src/videos/particle1.mp4"
 import Timer from './timer/Timer'
 import Social from './social/Social'
 import Button from '../../buttons/Button'
-import BackPrincipal from "./src/videos/BackPrincipal.mp4"
+import BackPrincipal from "./src/videos/BackPrincipal2.mp4"
 
 
 const Home = () => {
