@@ -34,9 +34,9 @@
 .particleVideo{
   width: 100%;
   position: absolute;
-  opacity: .21;
+  opacity: .2;
   z-index: 13;
-  filter: contrast(190%) brightness(100%) hue-rotate(-160deg);
+  filter: contrast(220%) brightness(100%) hue-rotate(-160deg);
 }
 
 .particleVideo video{
@@ -44,7 +44,6 @@
   height: 100vh;
   object-fit: cover;
 }
-
 
 .containerPrincipalHome::after{
   content: " ";
@@ -65,9 +64,9 @@
   height: 100rem;
   width: 35vw;
   left: 5rem;
-  background-color: rgba(0, 0, 0, 0.795);
+  background-color: rgba(0, 0, 0, 0.712);
   filter: blur(80px);
-  z-index: 1;
+  z-index: 12;
 }
 
 .textPrincipalHome{
