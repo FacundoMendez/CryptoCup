@@ -19,10 +19,9 @@ const Home = () => {
 
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <p>CRYPTO CUP <br />
+              <p className='titlePrincipal'>CRYPTO CUP <br />
                 TOURNAMENT
               </p>
-
             <div className="buttonsHome">
               <a href="./tikets">
                 <Button title="TIKETS"/>
