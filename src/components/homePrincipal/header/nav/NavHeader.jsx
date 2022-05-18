@@ -44,11 +44,15 @@ function NavHeader() {
                             Whitepaper
                         </a>
                     </li>
-                    <li className=" dapp">
                         <a href="/Dapp" className="nav-menu-link nav-link ">
-                            Dapp
+                            <div className="wrapperBottonBtn">
+                                <div className="btnButtonNav">
+                                    <p>Dapp</p>
+                                    <span className="BorderTopBottomNav "></span>
+                                    <span className="BorderLeftRightNav "></span>
+                                </div>
+                            </div>
                         </a>
-                    </li>
                 </ul>
             </nav>
         </header>

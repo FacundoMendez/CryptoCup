@@ -4,24 +4,35 @@ import backgroundPrincipal from "./src/BackCopa.png"
 import VideoBackground from "./src/videos/particle1.mp4"
 import Timer from './timer/Timer'
 import Social from './social/Social'
+import Button from '../../buttons/Button'
+import BackPrincipal from "./src/videos/BackPrincipal.mp4"
+
 
 const Home = () => {
 
   return (
     <div id='home' className="containerHome">
       <div className="containerPrincipalHome">
+
+        <video className='BackPrincipal' src={BackPrincipal} autoPlay loop muted ></video>
+
         <video className='particleVideo' src={VideoBackground} autoPlay loop muted ></video>
-        <img src={backgroundPrincipal} alt="backgoundPrincipal" />
-        
+
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <p>Title Lorem ipsum dolor<br />
-                      lorem asdoi todoto lso
+              <p>CRYPTO CUP <br />
+                TOURNAMENT
               </p>
-              <div className="buttons_title">
-                <button className='Whitelist-buttonTitle'>Presale </button>
-                <a href="/tikets"> <button className='Tikets-buttonTitle'>  Tikets </button></a> 
-              </div>
+
+            <div className="buttonsHome">
+              <a href="./tikets">
+                <Button title="TIKETS"/>
+              </a>
+
+              <a href="./presale">
+                <Button title="PRESALE"/>
+              </a>
+            </div>
 
              <Timer/>
           </div>

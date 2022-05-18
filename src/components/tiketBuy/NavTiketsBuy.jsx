@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from '../homePrincipal/header/nav/navFuncional';
-import "./nav.css";
+import "./navTikets.css";
 import logo from "./src/logoPng.png";
 
 function NavTikets() {
