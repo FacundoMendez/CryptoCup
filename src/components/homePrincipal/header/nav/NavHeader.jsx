@@ -32,6 +32,11 @@ function NavHeader() {
                         </a>
                     </li>
                     <li className="nav-menu-item">
+                        <a href="#tournament" className="nav-menu-link nav-link">
+                            Tournament
+                        </a>
+                    </li>
+                    <li className="nav-menu-item">
                         <a href="#tokens" className="nav-menu-link nav-link">
                             Token
                         </a>
@@ -47,15 +52,15 @@ function NavHeader() {
                             Whitepaper
                         </a>
                     </li>
-                        <a href="/Dapp" className="nav-menu-link nav-link ">
-                            <div className="wrapperBottonBtn">
-                                <div className="btnButtonNav">
-                                    <p>Dapp</p>
-                                    <span className="BorderTopBottomNav "></span>
-                                    <span className="BorderLeftRightNav "></span>
-                                </div>
+                    <a href="/Dapp" className="nav-menu-link nav-link ">
+                        <div className="wrapperBottonBtn">
+                            <div className="btnButtonNav">
+                                <p>Dapp</p>
+                                <span className="BorderTopBottomNav "></span>
+                                <span className="BorderLeftRightNav "></span>
                             </div>
-                        </a>
+                        </div>
+                    </a>
                 </ul>
             </nav>
         </header>

@@ -11,7 +11,7 @@ const TournamentMain = () => {
   },[])
 
   return (
-      <div className="tournamentContainer">
+      <div id='tournament' className="tournamentContainer">
         <img className='copaPng' src={copaPng} alt="copaMundo" />
         <img className="backgroundReflejo"src={backgroundReflejo}  alt="backReflejo" />
         

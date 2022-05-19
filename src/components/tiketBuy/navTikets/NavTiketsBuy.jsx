@@ -26,6 +26,11 @@ function NavTikets() {
                     </li>
                     <li className="nav-menu-item">
                         <a href="/" className="nav-menu-link nav-link">
+                            Tournament
+                        </a>
+                    </li>
+                    <li className="nav-menu-item">
+                        <a href="/" className="nav-menu-link nav-link">
                             Token
                         </a>
                     </li>
@@ -40,11 +45,15 @@ function NavTikets() {
                             Whitepaper
                         </a>
                     </li>
-                    <li className=" dapp">
-                        <a href="/dapp" className="nav-menu-link nav-link ">
-                            Dapp
-                        </a>
-                    </li>
+                    <a href="/Dapp" className="nav-menu-link nav-link ">
+                        <div className="wrapperBottonBtn">
+                            <div className="btnButtonNav">
+                                <p>Dapp</p>
+                                <span className="BorderTopBottomNav "></span>
+                                <span className="BorderLeftRightNav "></span>
+                            </div>
+                        </div>
+                    </a>
                 </ul>
             </nav>
         </header>
