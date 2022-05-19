@@ -236,9 +236,9 @@
     height: 100rem;
     width: 120vw;
     left: 0rem;
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(0, 0, 0);
     filter: blur(150px);
-    opacity: .9;
+    opacity: 1;
     z-index: 11;
   }
 
