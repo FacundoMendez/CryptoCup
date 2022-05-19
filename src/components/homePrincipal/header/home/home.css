@@ -229,13 +229,26 @@
   }
 
 
+  .containerPrincipalHome::before{
+    content: " ";
+    position: absolute;
+    bottom: 0rem;
+    height: 100rem;
+    width: 120vw;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.89);
+    filter: blur(150px);
+    opacity: .9;
+    z-index: 11;
+  }
 
-
-
-
-
+  .particleVideo{
+    position: absolute;
+    opacity: .14;
+    z-index: 13;
+    filter: contrast(230%) brightness(100%) hue-rotate(-160deg);
+  }
   
-
 
 }
 
