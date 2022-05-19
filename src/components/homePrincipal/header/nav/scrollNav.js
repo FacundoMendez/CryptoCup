@@ -8,7 +8,7 @@ const navScroll= () =>{
         if(windowHeight >= (contenido2 /1.5)  ){
             $(".nav").css("backgroundColor", "black");
         }else{
-            $(".nav").css("backgroundColor", " rgba(0, 0, 0, 0.425)");
+            $(".nav").css("backgroundColor", " rgba(0, 0, 0, 0.664)");
         }
 
         if(windowHeight >= (contenido2 /4.5)  ){

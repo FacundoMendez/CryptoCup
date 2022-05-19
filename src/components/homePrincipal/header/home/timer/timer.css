@@ -51,16 +51,24 @@
   
   
 @media all and (max-width: 768px) {
+  .timer{
+    position: relative;
+    top: 3rem;
+  }
+  
   .headline  {
-    font-size: calc(1.5rem * var(--smaller));
+    font-size: 4.1rem;
+    letter-spacing: 1px;
+  }
+    
+  .reloj li {
+    padding: 0 .2rem;
+    font-size: 1.9rem;
   }
   
- .reloj li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-  
- .reloj li span {
-    font-size: calc(3.375rem * var(--smaller));
+  .reloj li span {
+    display: block;
+    font-size: 3rem;
   }
 }
 

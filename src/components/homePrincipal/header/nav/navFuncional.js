@@ -9,6 +9,10 @@ function navFuncional(){
     } else {
         navToggle.setAttribute("aria-label", "Abrir menú") 
     }
+
+  
+
+  
 }
 
 export default navFuncional;

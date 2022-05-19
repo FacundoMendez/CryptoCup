@@ -5,15 +5,18 @@ import navFuncional from './navFuncional';
 import "./nav.css";
 import logo from "./src/logoPng.png";
 import navScroll from './scrollNav';
+import navOcultar from './navOcultar';
 
 function NavHeader() {
 
     useEffect(()=>{
         navScroll()
+        navOcultar()
     },[])
 
     return (
         <header className="header">
+            <div className="navBlur"></div>
             <nav className="nav">
                 <div className='logo'>
                     <img src={logo} alt="logo" />

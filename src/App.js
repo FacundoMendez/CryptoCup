@@ -1,7 +1,7 @@
 import './App.css';
 import "./components/homePrincipal/main/main.css"
 import {BrowserRouter, Route, Routes } from "react-router-dom";
-import TiketBuyPage from './components/tiketBuy/TiketBuyPage';
+import TiketBuyPage from './components/tiketBuy/homeTikets/TiketBuyPage'
 import HomePrincipal from './components/homePrincipal/HomePrincipal';
 import Dapp from './components/dapp/Dapp';
 
