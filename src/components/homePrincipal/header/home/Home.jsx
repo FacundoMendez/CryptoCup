@@ -24,7 +24,7 @@ const Home = () => {
               </p>
             <div className="buttonsHome">
               <a href="./tikets">
-                <Button title="TIKETS"/>
+                <Button title="TICKETS"/>
               </a>
 
               <a href="./presale">
