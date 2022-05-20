@@ -23,7 +23,7 @@ const Home = () => {
                 TOURNAMENT
               </p>
             <div className="buttonsHome">
-              <a href="./tikets">
+              <a href="./tickets">
                 <Button title="TICKETS"/>
               </a>
 

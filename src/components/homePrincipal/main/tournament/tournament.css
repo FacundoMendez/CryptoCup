@@ -195,7 +195,7 @@
   
 
 .tournament1:hover{
-    transform: scale(1.7) ;
+    transform: scale(1.6) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
     background-position: center;
@@ -206,7 +206,7 @@
 }
 
 .tournament2:hover{
-    transform: scale(1.7) ;
+    transform: scale(1.6) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
     background-position: center;
@@ -218,7 +218,7 @@
 
 
 .tournament3:hover{
-    transform: scale(1.7) ;
+    transform: scale(1.6) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
     background-position: center;
@@ -229,7 +229,7 @@
 }
 
 .tournament4:hover{
-    transform: scale(1.7) ;
+    transform: scale(1.6) ;
     background-image: url("./src/copaMundo.png");
     background-size: cover;
     background-position: center;
@@ -240,21 +240,19 @@
 }
 
 .tournament1:hover ~ .card {
-    opacity: .5;
     box-shadow: none;
 }
 
 .tournament2:hover ~ .card {
-    opacity: .5;
     box-shadow: none;
 }
 
 .tournament3:hover ~ .card {
-    opacity: .5;
+    box-shadow: none;
 }
 
 .tournament4:hover ~ .card {
-    opacity: .5;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 1440px){
