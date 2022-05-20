@@ -36,12 +36,14 @@
   opacity: .2;
   z-index: 13;
   filter: contrast(220%) brightness(100%) hue-rotate(-160deg);
+
 }
 
 .particleVideo video{
   width: 100%;
   object-fit: cover;
 }
+
 
 .containerPrincipalHome::after{
   content: " ";
