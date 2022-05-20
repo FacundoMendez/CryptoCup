@@ -125,16 +125,16 @@
   }
 .nav-menu-item:after {
   content: '';
-  bottom: 0;
+  bottom: -.75rem;
   left: 0;
   right: 0;
   margin: auto;
   position: absolute;
   width: 0;
-  height: 3px;
+  height: 4px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
-  background: linear-gradient(#ffffff, #ffffff);
-  -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #ffffff, 0px 0px 11px #ffffff;
+  background: linear-gradient(#6404ff, #ffffff);
+  -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
   box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
