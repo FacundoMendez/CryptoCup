@@ -3,11 +3,11 @@
     height: 100vh;
     overflow: hidden;
     background-image: url("./src/backgroundTickets.png");
-    background-position: top;
     background-repeat: no-repeat;
     top:0;
     background-size: cover;
     position: relative;
+    transition: all .3s ease-in-out;
 }
 
 .containerTiketsBuy{
