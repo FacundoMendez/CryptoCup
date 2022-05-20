@@ -2,7 +2,7 @@
     position: fixed;
     z-index: 10000;
     width: 100%;
-    height: 9rem;
+    height: 8rem;
     background-color: rgba(217, 170, 255, 0.288);
     transition: all .6s ease-in-out;
     filter: blur(9px);
@@ -13,7 +13,7 @@
     position: fixed;
     z-index: 10000;
     width: 100%;
-    height: 9rem;
+    height: 8rem;
     top: -.2rem;
     background-color: rgba(0, 0, 0, 0.664);
     transition: all .6s ease-in-out;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 9rem;
+    height: 8rem;
     width: 100%;
     padding-right: 5rem;
 }
@@ -113,10 +113,10 @@
 }
 
 .logo img{
-    width: 13.5rem;
-    margin-top: -2.3rem;
+    width: 11.5rem;
+    margin-top: -1.8rem;
     object-fit: cover;
-    filter: drop-shadow(0 0 5px rgba(197, 148, 253, 0.5)) brightness(100%) contrast(130%) ;
+    filter: drop-shadow(0 0 10px rgba(155, 67, 255, 0.322)) brightness(90%) contrast(150%) ;
 }
 
 /* effect navbar */
