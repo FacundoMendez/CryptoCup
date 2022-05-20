@@ -1,6 +1,6 @@
 import React from 'react'
 import "./home.css"
-import VideoBackground from "./src/videos/particle1.mp4"
+import VideoBackground from "./src/videos/particle1P.mp4"
 import Timer from './timer/Timer'
 import Social from './social/Social'
 import Button from '../../buttons/Button'
