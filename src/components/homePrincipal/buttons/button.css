@@ -161,4 +161,9 @@
           filter: drop-shadow( 0 0 1px white);
           transition: all .5s ease-in-out;
       }
+
+      .btn:hover .BorderTopBottom:before,
+      .btn:hover .BorderTopBottom:after {
+        width: 12.8rem;
+      }
 }
