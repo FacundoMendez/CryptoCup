@@ -11,7 +11,6 @@
   font-size: 4.5rem;
   -webkit-background-clip: text;
   background-clip: text;
-  font-family: qatar;
   color: transparent;
   text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
   inset 0 -2px 5px 1px #9999ff,
@@ -47,6 +46,34 @@
 
 .reloj li{
   font-size: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 2550px){
+  .timer{
+    position: relative;
+    top: 13rem;
+    text-align: center;
+  }
+  
+  .headline  {
+    font-size: 10rem;
+    letter-spacing: 1px;
+
+  }
+    
+  .reloj li {
+    padding: 0 2rem;
+    font-size: 1.9rem;
+  }
+
+  
+  .reloj li span {
+    display: block;
+    font-size: 6rem;
+  }
 }
   
   

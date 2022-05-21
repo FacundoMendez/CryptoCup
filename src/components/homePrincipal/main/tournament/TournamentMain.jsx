@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import "./tournament.css"
-import backgroundReflejo from "../../main/src/pp2.png"
-import copaPng from "./src/copaPng.png"
+import backgroundReflejo from "./src/BackTournament.jpg"
 import tournamentScroll from './tournamentScroll'
 
 const TournamentMain = () => {
@@ -12,7 +11,6 @@ const TournamentMain = () => {
 
   return (
       <div id='tournament' className="tournamentContainer">
-        <img className='copaPng' src={copaPng} alt="copaMundo" />
         <img className="backgroundReflejo"src={backgroundReflejo}  alt="backReflejo" />
         
         <div className="boxTournament">

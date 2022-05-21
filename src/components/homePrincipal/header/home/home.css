@@ -126,6 +126,44 @@
 }
 
 
+@media screen and (min-width: 2550px){
+
+    .textPrincipalHome{
+        width:100%;
+        gap: 2rem;
+    }
+
+    .tite-home{
+        top: 35rem;
+        left: 20rem;
+        gap: 4rem;
+    }
+
+    .tite-home p{
+        font-size: 10rem;
+        letter-spacing: 2px;
+        line-height: 9rem;
+    }
+
+    .buttons_title{
+        gap: 2rem;
+    }
+
+    .particleVideo{
+      position: absolute;
+      opacity: .2;
+      z-index: 13;
+      width: 100%;
+      filter: contrast(280%) brightness(100%) hue-rotate(-160deg);
+    }
+    
+    .particleVideo video{
+      width: 100%;
+      object-fit: cover;
+    }
+    
+
+}
 
 
 @media screen and (max-width: 1440px){

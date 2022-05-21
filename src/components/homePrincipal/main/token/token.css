@@ -1,7 +1,6 @@
 .tokens{
     width: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 36%, rgb(15, 15, 17) 50%, rgb(10, 10, 10) 66%, rgb(0, 0, 0) 100%);
     position: relative;
     z-index: 10;
     overflow: hidden;
@@ -52,14 +51,29 @@
     text-transform: uppercase;
 }
 
+
+
+/* fondo */
+
 .backgroundReflejo-token{
     width: 100%;
-    opacity: .08;
+    opacity: 1;
     position: absolute;
     object-fit: contain;
     height: 100vh;
     filter: hue-rotate(240deg) blur(3px) contrast(103%) ;
 }
+
+
+@media screen and (min-width: 2550px){
+
+    .textToken p{
+        line-height: 4.5rem;
+        font-size: 3rem;
+    }
+}
+
+
 
 @media screen and (max-width: 1440px){
 

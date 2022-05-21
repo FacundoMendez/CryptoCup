@@ -57,6 +57,42 @@
     color: #9d8af1;
 }
 
+
+
+@media screen and (min-width: 2550px){
+
+    .social {
+        position: fixed;    
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 101;
+        right: -25.5rem;
+    }
+    
+    .social a {
+        letter-spacing: 1px;
+        font-size: 3rem;
+        display: flex;
+        margin: 5px;
+        padding: 30px;
+        width: 350px;
+    } 
+
+    .social a i {
+        margin-right: 45px;
+        font-size: 5rem;
+        width: 30px;
+    }
+
+    .social a:hover {
+        transform: translate(-20rem, 0);
+    }
+}
+
+
+
 @media screen and (max-width:480px) {
     .social {
         position: fixed;    

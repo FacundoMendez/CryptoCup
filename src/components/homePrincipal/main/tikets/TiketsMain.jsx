@@ -2,10 +2,9 @@ import React, {useState, useEffect} from 'react'
 import "./tiket.css"
 import TiketBoost from "./src/tiketBasic.png"
 import TiketBasic from "./src/tiketBoost.png"
-import MaradonaPng from "./src/maradona.png"
-import qatarPng from "./src/qatar.png"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
+import backReflejo from "./src/BackTickets.jpg"
 
 const TiketsMain = () => {
 
@@ -18,9 +17,9 @@ const TiketsMain = () => {
   return (
     <>
     <div className="containerTikets">
-        <img className='maradonaPng' src={MaradonaPng} alt="maradooo" />
-        <img className='qatarPng' src={qatarPng} alt="qatar" />
         
+      <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" />
+
         <div className="textTikets">
 
           <div className="titleContainers tiketsTitle">
@@ -31,13 +30,13 @@ const TiketsMain = () => {
         </div>
 
         <div className="tiketImg" >
-          <img className='tiketsPreview' src={TiketBoost} alt="tiket" onClick={() => setTiketClick(true)} />
-          <img className='tiketsPreview' src={TiketBasic} alt="tiket" onClick={() => setTiketClick(true)} />
+          <img className='tiketsPreview' src={TiketBoost} alt="ticket" onClick={() => setTiketClick(true)} />
+          <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
         </div>
 
         <canvas className='ballModel'></canvas>  
 
-        {tiketClick ? <Navigate to= "/tikets" /> : null }
+        {tiketClick ? <Navigate to= "/tickets" /> : null }
     </div>
     </>
   )
