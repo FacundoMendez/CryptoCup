@@ -352,14 +352,15 @@
     }
     
     .boxTickets img{
-        width: 22rem;
+        margin-top: 30%;
+        width: 21rem;
     }
     
 
     /* text */
 
     .text-tickets{
-        top: -10rem;
+        top: -5rem;
         width: 45%;
         margin-left: -2rem;
     }

@@ -30,7 +30,7 @@ const tiketsScroll = () =>{
 
     gsap.from(".tiketImg",{
         opacity:0,
-        delay:.7,
+        delay:.3,
         y:300,
         duration:2,
         scrollTrigger:{
