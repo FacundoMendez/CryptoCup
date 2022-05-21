@@ -9,7 +9,7 @@ const tokenScroll = () =>{
     gsap.from(".tokenTitle",{
         opacity:0,
         scale:1.5,
-        duration:1.3,
+        duration:.7,
         scrollTrigger:{
             trigger: ".tokens",
             start: "top center",
@@ -19,7 +19,7 @@ const tokenScroll = () =>{
 
     gsap.from(".textToken",{
         opacity:0,
-        delay:.9,
+        delay:.3,
         duration:2,
         scrollTrigger:{
             trigger: ".tokens",
@@ -32,7 +32,7 @@ const tokenScroll = () =>{
     gsap.to(".tokenWebGl",{
         opacity:1,
         scale:1,
-        delay:.8,
+        delay:.3,
         duration:2,
         scrollTrigger:{
             trigger: ".tokens",

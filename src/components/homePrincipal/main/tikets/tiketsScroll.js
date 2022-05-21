@@ -9,7 +9,7 @@ const tiketsScroll = () =>{
     gsap.from(".tiketsTitle",{
         opacity:0,
         scale:1.5,
-        duration:1.3,
+        duration:.7,
         scrollTrigger:{
             trigger: ".containerTikets",
             start: "top center",
@@ -19,7 +19,7 @@ const tiketsScroll = () =>{
 
     gsap.from(".textDescripcionTikets",{
         opacity:0,
-        delay:.9,
+        delay:.4,
         duration:2,
         scrollTrigger:{
             trigger: ".containerTikets",
@@ -30,7 +30,7 @@ const tiketsScroll = () =>{
 
     gsap.from(".tiketImg",{
         opacity:0,
-        delay:1.1,
+        delay:.7,
         y:300,
         duration:2,
         scrollTrigger:{
