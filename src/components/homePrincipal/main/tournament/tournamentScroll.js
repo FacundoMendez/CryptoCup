@@ -9,7 +9,7 @@ const tournamentScroll = () =>{
     gsap.from(".tournamentTitle",{
         opacity:0,
         scale:1.5,
-        duration:.7,
+        duration:.8,
         scrollTrigger:{
             trigger: ".boxTournament",
             start: "top center",
@@ -19,7 +19,7 @@ const tournamentScroll = () =>{
 
     gsap.from(".subTitlePrize",{
         opacity:0,
-        delay:.3,
+        delay:.5,
         duration:2,
         scrollTrigger:{
             trigger: ".boxTournament",

@@ -32,7 +32,7 @@
 .nav-menu-item {
     text-align: center;
     text-transform: uppercase;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem;
     position: relative;
     list-style: none;
 }
@@ -40,7 +40,7 @@
 
 .nav-link {
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 700;
     color:rgb(250, 238, 215);
     padding: 0px 5px;

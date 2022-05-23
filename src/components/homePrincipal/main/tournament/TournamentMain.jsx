@@ -18,13 +18,17 @@ const TournamentMain = () => {
             <div className="containerTexts">
 
               <div className="titleContainers tournamentTitle">
-                <h2>TOURNAMENT</h2>
+                <h2>CHOOSE RIGHT, BE THE BEST</h2>
               </div>
 
               <div className="subTitlePrize">
-                <h5>MAIN PRIZE</h5>
+                <h5>TOURNAMENTS</h5>
                 <p>
-                  Crypto Cup is the first crypto Tournament based on the Fifa World Cup 2022 that seeks to entertain and benefit players with dollar prizes and the possibility of obtaining exclusive collectible NFT'S from their favorite world players
+                  Crypto Cup is the first crypto tournament based on predictions of the Fifa World Cup 2022.
+                  With its exponential growth possibilities, you'll be allowed to join a low-cost opportunity to win a big pool prize,unique NFTs and more!
+                </p>
+                <p>
+                  Prove your soccer insights competing with your friends and the world, cheer for your favorite team and win it all.
                 </p>
               </div>
 
@@ -36,7 +40,7 @@ const TournamentMain = () => {
                 </div>
             </div>
 
-            <div className="tiposTorneos">
+{/*             <div className="tiposTorneos">
                   <div className="card tournament1 card__side--front card__side--front-1">
                     <h3 className="title">TOURNAMENT 1</h3>
                   </div>
@@ -49,8 +53,50 @@ const TournamentMain = () => {
                   <div className="card tournament4 card__side--front card__side--front-4">
                     <h3 className="title">TOURNAMENT 4</h3>
                   </div>
+              </div> */}
+
+            <div className="tiposTorneos">   
+              <div className="flip">
+                  <div className="front" >
+                    <h1 className="text-shadow">TORUNAMENT 1</h1>
+                  </div>
+                  <div className="back">
+                    <h2>TORUNAMENT 1</h2>
+                    <p>Descripcion torneo 1</p>
+                  </div>
+              </div>
+
+              <div className="flip">
+                  <div className="front" >
+                    <h1 className="text-shadow">TORUNAMENT 2</h1>
+                  </div>
+                  <div className="back">
+                    <h2>TORUNAMENT 2</h2>
+                    <p>Descripcion torneo 2</p>
+                  </div>
+              </div>
+
+              <div className="flip">
+                  <div className="front" >
+                    <h1 className="text-shadow">TORUNAMENT 3</h1>
+                  </div>
+                  <div className="back">
+                    <h2>TORUNAMENT 3</h2>
+                    <p>Descripcion torneo 3</p>
+                  </div>
+              </div>
+
+              <div className="flip">
+                  <div className="front" >
+                    <h1 className="text-shadow">TORUNAMENT 4</h1>
+                  </div>
+                  <div className="back">
+                    <h2>TORUNAMENT 4</h2>
+                    <p>Descripcion torneo 4</p>
+                  </div>
               </div>
             </div>
+          </div>
         </div>
   )
 }

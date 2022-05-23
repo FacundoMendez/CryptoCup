@@ -31,22 +31,13 @@ function NavHeader() {
                             Home
                         </a>
                     </li>
+          
                     <li className="nav-menu-item">
-                        <a href="#tournament" className="nav-menu-link nav-link">
-                            Tournament
-                        </a>
-                    </li>
-                    <li className="nav-menu-item">
-                        <a href="#tokens" className="nav-menu-link nav-link">
-                            Token
+                        <a href="#tickets" className="nav-menu-link nav-link">
+                            Tickets
                         </a>
                     </li>
                     
-                    <li className="nav-menu-item ">
-                        <a href="#roadmap" className="nav-menu-link nav-link">
-                            Roadmap
-                        </a>
-                    </li>
                     <li className="nav-menu-item ">
                         <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper

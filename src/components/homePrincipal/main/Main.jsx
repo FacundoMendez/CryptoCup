@@ -4,6 +4,7 @@ import TournamentMain from './tournament/TournamentMain'
 import TiketsMain from './tikets/TiketsMain'
 import ball from './ball'
 import Roadmap from './roadmap/Roadmap'
+import VideoPubli from './videoPubli/VideoPubli'
 
 
 const Main = () => {
@@ -16,6 +17,7 @@ const Main = () => {
     <main>
         <TournamentMain/>
         <TiketsMain />
+        <VideoPubli />
         <TokenMain />
         <Roadmap/>
     </main>
