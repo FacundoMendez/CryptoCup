@@ -40,19 +40,6 @@ const tiketsScroll = () =>{
         }
     })
 
-    gsap.from(".ballModel",{
-        opacity:0,
-        delay:.2,
-        x:-300,
-        y:300,
-        duration:1,
-        scrollTrigger:{
-            trigger: ".containerTikets",
-            start: "top center",
-            end: "bottom bottom",
-        }
-    })
-
 }
 
 export default tiketsScroll;

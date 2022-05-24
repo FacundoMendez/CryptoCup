@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.nav img{
+.navBack{
     width: 100%;
     height: 10.6rem;
 }
@@ -70,6 +70,8 @@
     width: 80%;
     padding-right: 5rem;
 }
+
+
 
 .nav-menu-item {
     text-transform: uppercase;
@@ -165,7 +167,7 @@
 
 .wrapperBottonBtn {
     position: absolute;
-    right: 10rem;
+    right: 5%;
     top: 3.5rem;
     margin-top: 0rem;
     text-decoration: none;
@@ -329,8 +331,63 @@
 }
 
 
+@media screen and (max-width: 1440px){
+
+    
+    .wrapperBottonBtn {
+        right: 3%;
+    }
+
+
+    .nav-menu {
+        height: 10rem;
+        width: 80%;
+        padding-right: 0rem;
+    }
+    
+    .navDerecha{
+        padding-left: 0rem;
+        height: 10rem;
+        width: 80%;
+    }
+    
+
+
+    
+    .wrapperBottonBtn .btnButtonNav {
+        width: 10.5rem;
+    }
+
+    .BorderTopBottomNav:before {
+        width: 11.7rem;
+    }
+      
+    .BorderTopBottomNav:after {
+      width: 11.7rem;
+    }
+    
+    .BorderLeftRightNav:before {
+      height: 4.5rem;
+    }
+    
+    .BorderLeftRightNav:after {
+      height: 4.5rem;
+    }
+
+
+
+
+}
+
 
 @media (max-width: 1150px){
+
+    .navBack{
+        width: 100%;
+        height: 10.6rem;
+        object-fit: cover;
+    }
+    
 
     .nav-menu {
         flex-direction: column;
@@ -407,4 +464,29 @@
         margin-top: 0rem;
         text-decoration: none;
       }
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-toggle {
+        right: 10%;
+    }
+    
+}
+
+
+@media screen and (max-width: 330px) {
+
+    .nav-toggle {
+        right: 5%;
+    }
+    
+}
+
+@media screen and (max-width: 290px) {
+
+    .nav-toggle {
+        right: 3%;
+    }
+    
 }

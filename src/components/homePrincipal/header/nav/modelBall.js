@@ -7,7 +7,7 @@ import ballModel from "./src/models/ball.glb"
 const navBallModel = () => {
 
     function isMobile() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        /* return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); */
     }
     
     if (!isMobile()) {
@@ -118,16 +118,12 @@ const navBallModel = () => {
             /* animate  */
 
         
-        const clock = new THREE.Clock()
         const animate = ()=>{
-            const time = clock.getElapsedTime()
-            const ghost1Angle = time 
 
             camera.rotation.y = 0.01
 
             if (modelBall){
                 modelBall.rotation.y += 0.006
-                modelBall.position.y = Math.cos(ghost1Angle * .5) / 20
                 pointLight2.rotation.y -=  -0.1
                 pointLight.rotation.y -=  0.1
                 pointLight3.rotation.y -=  0.1
