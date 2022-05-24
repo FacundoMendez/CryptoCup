@@ -1,38 +1,79 @@
+/* model */
+
+.navBallModel{
+    cursor: grab;
+    z-index: 10000;
+    filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.336)) contrast(110%);
+    margin-top: .4rem;
+    margin-left: -.6rem;
+    width: 100%;
+    text-align: center;
+}
+
 .navBlur{
     position: fixed;
     z-index: 10000;
     width: 100%;
-    height: 8rem;
-    background-color: rgba(217, 170, 255, 0.288);
+    height: 10.5rem;
+    background-color: rgba(122, 0, 221, 0.185);
     transition: all .6s ease-in-out;
     filter: blur(9px);
-    opacity: 0.8;
+    opacity: 0.9;
 }
+
 
 .nav{
     position: fixed;
     z-index: 10000;
     width: 100%;
-    height: 8rem;
+    height: 10.2rem;
     top: -.2rem;
-    background-color: rgba(0, 0, 0, 0.664);
     transition: all .6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav img{
+    width: 100%;
+    height: 10.6rem;
+}
+
+
+.navDerecha{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    padding-left: 5rem;
+    height: 10rem;
+    width: 80%;
+}
+
+.navBack{
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    position: fixed;
+    opacity:.8;
+    top: 0;
+    filter: contrast(120%) brightness(110%) ;
 }
 
 /* ul  */
+
+/* nav izquierda */
 .nav-menu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 8rem;
-    width: 100%;
-    padding-right: 3rem;
+    height: 10rem;
+    width: 80%;
+    padding-right: 5rem;
 }
 
 .nav-menu-item {
-    text-align: center;
     text-transform: uppercase;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     position: relative;
     list-style: none;
 }
@@ -40,7 +81,7 @@
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color:rgb(250, 238, 215);
     padding: 0px 5px;
@@ -82,19 +123,22 @@
     position: absolute;
     top: 3.8rem;
 }
-
+/* 
 .logo{
     position: absolute;
-    left: 1%;
     filter: contrast(100%) brightness(100%);
+    z-index: 20000;
+    text-align: center;
+    width:100%;
+    left: -.2%;
 }
 
 .logo img{
-    width: 11.5rem;
+    width: 18rem;
     margin-top: -1.8rem;
     object-fit: cover;
     filter: drop-shadow(0 0 10px rgba(155, 67, 255, 0.322)) brightness(90%) contrast(150%) ;
-}
+} */
 
 /* effect navbar */
 .nav-menu-item:hover:after {
@@ -120,91 +164,99 @@
 /* button dapp  */
 
 .wrapperBottonBtn {
-    position: relative;
+    position: absolute;
+    right: 10rem;
+    top: 3.5rem;
     margin-top: 0rem;
     text-decoration: none;
-  }
-  
-  .wrapperBottonBtn .btnButtonNav {
-    width: 14.5rem;
-    height: 3.5rem;
-    margin: 0 2rem;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-  }
-  
-  .btnButtonNav p {
-    color: white;
-    font-size: 2.4rem;
-    letter-spacing: 3.8px;
-    padding-top: .15rem;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: qatar;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-  }
-  
-  .BorderTopBottomNav:before {
-    content: "";
-    position: absolute;
-    width: 15.7rem;
-    height: 2px;
-    top: -6px;
-    left: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderTopBottomNav:after {
-    content: "";
-    position: absolute;
-    width: 15.7rem;
-    height: 2px;
-    bottom: -6px;
-    right: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRightNav:before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -7px;
-    width: 2px;
-    height: 4.5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRightNav:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    right: -7px;
-    width: 2px;
-    height: 4.5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
+}
 
-  .btnButtonNav:hover {
-      transform: scale(1.02);
-      filter: drop-shadow( 0 0 1px white);
-      transition: all .5s ease-in-out;
-  }
+.wrapperBottonBtn .btnButtonNav {
+  width: 14.5rem;
+  height: 3.5rem;
+  margin: 0 2rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.btnButtonNav p {
+  color: white;
+  font-size: 2.4rem;
+  letter-spacing: 3.8px;
+  padding-top: .15rem;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: qatar;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+}
+
+.BorderTopBottomNav:before {
+  content: "";
+  position: absolute;
+  width: 15.7rem;
+  height: 2px;
+  top: -6px;
+  left: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderTopBottomNav:after {
+  content: "";
+  position: absolute;
+  width: 15.7rem;
+  height: 2px;
+  bottom: -6px;
+  right: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderLeftRightNav:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 2px;
+  height: 4.5rem;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderLeftRightNav:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 2px;
+  height: 4.5rem;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+.btnButtonNav:hover {
+    transform: scale(1.02);
+    filter: drop-shadow( 0 0 1px white);
+    transition: all .5s ease-in-out;
+}
 
 
+.dappIzquierda{
+    display: none;
+}
+
+.homeIzquierda{
+    display: none;
+}
 
 
 @media screen and (min-width: 2550px){
@@ -335,4 +387,24 @@
         margin-top: -1.8rem;
         transition: all .5s ease-in-out;
     }
+
+    .navDerecha{
+        display: none;
+    }
+
+    .dappIzquierda{
+        display: inline-block;
+    }
+    
+    .homeIzquierda{
+        display: inline-block;
+    }
+
+    .wrapperBottonBtn {
+        position: relative;
+        right: 0;
+        top: 0;
+        margin-top: 0rem;
+        text-decoration: none;
+      }
 }

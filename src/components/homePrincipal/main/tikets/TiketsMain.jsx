@@ -34,7 +34,7 @@ const TiketsMain = () => {
           <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
         </div>
 
-        <canvas className='ballModel'></canvas>  
+{/*         <canvas className='ballModel'></canvas>   */}
 
         {tiketClick ? <Navigate to= "/tickets" /> : null }
     </div>

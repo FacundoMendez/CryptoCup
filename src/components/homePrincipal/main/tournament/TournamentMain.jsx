@@ -22,7 +22,6 @@ const TournamentMain = () => {
               </div>
 
               <div className="subTitlePrize">
-                <h5>TOURNAMENTS</h5>
                 <p>
                   Crypto Cup is the first crypto tournament based on predictions of the Fifa World Cup 2022.
                   With its exponential growth possibilities, you'll be allowed to join a low-cost opportunity to win a big pool prize,unique NFTs and more!
