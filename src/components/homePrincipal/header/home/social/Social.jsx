@@ -10,12 +10,18 @@ function Social() {
 
     return(
         <>
-
             <div className="social">
                 <a href="/" target="_blank" rel="noopener noreferrer"><i className="twitterSocial"> <FontAwesomeIcon icon={faTwitter} /> </i>  Twitter </a>
                 <a href="/" target="_blank" rel="noopener noreferrer"><i className="instagramSocial"> <FontAwesomeIcon icon={faInstagram} /> </i>  Instagram  </a>
                 <a href="/" target="_blank" rel="noopener noreferrer"><i className="telegramSocial"> <FontAwesomeIcon icon={faTelegram} /> </i> Telegram  </a>
                 <a href="/" target="_blank" rel="noopener noreferrer"><i className="discordSocial"> <FontAwesomeIcon icon={faDiscord} /> </i>Discord </a>
+            </div>
+
+            <div className="socialMobile">
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="twitterSocial"> <FontAwesomeIcon icon={faTwitter} /> </i>  </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="instagramSocial"> <FontAwesomeIcon icon={faInstagram} /> </i>   </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="telegramSocial"> <FontAwesomeIcon icon={faTelegram} /> </i>  </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="discordSocial"> <FontAwesomeIcon icon={faDiscord} /> </i> </a>
             </div>
 
         </>

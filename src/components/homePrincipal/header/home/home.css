@@ -245,6 +245,9 @@
 
 @media screen and (max-width:480px){
 
+  .BackPrincipal{
+    display: none;
+  }
 
   .tite-home{
     left: 50%;
