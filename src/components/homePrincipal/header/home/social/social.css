@@ -136,19 +136,21 @@
         flex-wrap: nowrap;
         gap: 4rem;
         z-index: 1000;
-        border-top: 2px groove white;
-        border-radius: 20px;
+        border-top: 2px double rgba(193, 170, 255, 0.336);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        filter: drop-shadow(0 0 50px rgba(121, 73, 255, 0.356));
     }
 
 
-    .socialMobile a i {
+    .socialMobile  i {
         padding: 1rem 0;
         margin-right: 15px;
         font-size: 35px;
         width: 30px;
         filter: contrast(104%) brightness(120%);
         transition: color 0.3s;
-        color: rgba(147, 67, 223, 0.966);
+        color: #6330dbd5 ;
     }
     
     .socialMobile a:hover:nth-child(1) i {

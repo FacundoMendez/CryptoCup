@@ -404,7 +404,7 @@
         bottom: 0;
         right: 120%;
         overflow-y: hidden;
-        transition: right 0.7s ease-in-out;
+        transition: right 0.4s ease-in-out;
         padding-top: 10rem;
         filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
         background-color: rgba(0, 0, 0, 0.863);
