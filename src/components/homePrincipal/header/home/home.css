@@ -196,9 +196,6 @@
       gap: 2rem;
   }
 
-
-
-
 }
 
 @media screen and (max-width: 1170px){
@@ -245,9 +242,9 @@
 
 @media screen and (max-width:480px){
 
-  .BackPrincipal{
+/*   .BackPrincipal{
     display: none;
-  }
+  } */
 
   .tite-home{
     left: 50%;
