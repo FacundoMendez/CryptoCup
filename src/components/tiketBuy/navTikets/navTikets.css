@@ -382,6 +382,25 @@ transition: all 0.3s ease-out;
 
 @media (max-width: 1150px){
 
+  .BorderTopBottomNav-Metmask:before {
+    background: rgb(255, 214, 196);
+  }
+  
+  .BorderTopBottomNav-Metmask:after {
+    background: rgb(255, 214, 196);
+  }
+  
+  .BorderLeftRightNav-Metmask:before {
+    background: rgb(255, 214, 196);
+  }
+  
+  .BorderLeftRightNav-Metmask:after {
+    background: rgb(255, 214, 196);
+    display: none;
+  }
+
+
+
   .wrapperBottonBtn-Metmask {
     position: relative;
     margin-left: 3rem;
