@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import navFuncional from '../../homePrincipal/header/nav/navFuncional';
-import "../../homePrincipal/header/nav/NavHeader"
+import navFuncionalTickets from './navFuncionalTickets';
 import imgNav from "../../homePrincipal/header/nav/src/navBack.png"
 import navBallModel from '../../homePrincipal/header/nav/modelBall';
 import "./navTikets.css"
@@ -16,65 +15,67 @@ function NavTikets() {
 
     return (
         <header className="header">
-            <nav className="nav">
+            <nav className="nav-Metamask">
    
-                <img className='navBack' src={imgNav} alt="nav background" />
-                <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
+                <img className='navBack-Metamask' src={imgNav} alt="nav background" />
+                <button className="nav-toggle-Metamask" aria-label="Abrir menú" onClick={navFuncionalTickets}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
                 
-                <ul className="navVisible nav-menu navIzquierda">
+                <ul className="navVisible-Metamask nav-menu-Metamask navIzquierda-Metamask">
                     
-                    <li className="nav-menu-item homeIzquierda" >
-                        <a href="/" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item-Metamask homeIzquierda-Metamask" >
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Home
                         </a>
                     </li>
           
-                    <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item-Metamask">
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Tickets
                         </a>
                     </li>
                     
-                    <li className="nav-menu-item ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item-Metamask ">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link-Metamask nav-link-Metamask">
                             Whitepaper
                         </a>
                     </li>
 
-                    <a href="/Dapp" className="nav-menu-link nav-link dappIzquierda ">
-                        <div className="wrapperBottonBtn ">
-                            <div className="btnButtonNav">
-                                <p>Dapp</p>
-                                <span className="BorderTopBottomNav "></span>
-                                <span className="BorderLeftRightNav "></span>
-                            </div>
+
+                    <li className="nav-menu-item-Metamask movile-Metamask">
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
+                            Roadmap
+                        </a>
+                    </li>
+                    
+                    <div id='metamask' className="wrapperBottonBtn-Metmask movile-Metamask">
+                        <div className="btnButtonNav-Metmask">
+                            <img className='logoMetamask' src={logoMetamask} alt="logoMetamask" />
+                            <p>METAMASK</p>
+                            <span className="BorderTopBottomNav-Metmask "></span>
+                            <span className="BorderLeftRightNav-Metmask "></span>
                         </div>
-                    </a>
+                    </div>
 
                 </ul>
 
                 <canvas className='navBallModel'></canvas>  
 
-                
+                <ul className='navDerecha-Metamask'>
 
-                <ul className='navDerecha'>
-
-                    <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item-Metamask">
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Home
                         </a>
                     </li>
           
-                    <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                    <li className="nav-menu-item-Metamask">
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Roadmap
                         </a>
                     </li>
                     
-                
-
                     <div id='metamask' className="wrapperBottonBtn-Metmask">
                         <div className="btnButtonNav-Metmask">
                             <img className='logoMetamask' src={logoMetamask} alt="logoMetamask" />

@@ -2,16 +2,16 @@
 
 .wrapperBottonBtn-Metmask {
     position: absolute;
-    right: 10rem;
-    top: 3.5rem;
+    right: 5rem;
+    top: 3.7rem;
     margin-top: -.4rem;
     text-decoration: none;
 }
 
 .wrapperBottonBtn-Metmask .btnButtonNav-Metmask {
-  width: 23rem;
-  height: 4rem;
-  margin: 0 2rem;
+  width: 19rem;
+  height: 3rem;
+  margin: 0 1rem;
   text-align: end;
   padding: 0 1rem;
   cursor: pointer;
@@ -20,10 +20,10 @@
 
 
 .btnButtonNav-Metmask p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 1.5px;
-  padding-top: .4rem;
-  padding-right: 1rem;
+  padding-top: .2rem;
+  padding-right: .5rem;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
@@ -38,25 +38,23 @@
 .BorderTopBottomNav-Metmask:before {
   content: "";
   position: absolute;
-  width: 24.4rem;
+  width: 20.3rem;
   height: 2px;
   top: -6px;
   left: -7px;
-  background: rgb(255, 124, 63);
+  background: rgb(255, 141, 89);
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
 }
 
 .BorderTopBottomNav-Metmask:after {
   content: "";
   position: absolute;
-  width: 24.4rem;
+  width: 20.3rem;
   height: 2px;
   bottom: -6px;
   right: -7px;
-  background: rgb(255, 124, 63);
+  background: rgb(255, 141, 89);
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
 }
 
 .BorderLeftRightNav-Metmask:before {
@@ -65,10 +63,9 @@
   top: -4px;
   left: -7px;
   width: 2px;
-  height: 5rem;
-  background: rgb(255, 124, 63);
+  height: 4rem;
+  background: rgb(255, 141, 89);
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
 }
 
 .BorderLeftRightNav-Metmask:after {
@@ -77,10 +74,9 @@
   bottom: -4px;
   right: -7px;
   width: 2px;
-  height: 5rem;
-  background: rgb(255, 124, 63);
+  height: 4rem;
+  background: rgb(255, 141, 89);
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
 }
 .btnButtonNav-Metmask:hover {
     transform: scale(1.02);
@@ -92,7 +88,402 @@
 
 .logoMetamask{
     position: absolute;
-    width: 5rem !important;
+    width: 4rem !important;
     left: 2%;
     top: -.4rem;
+}
+
+
+
+/* model */
+
+.navBallModel{
+  cursor: grab;
+  z-index: 10000;
+  filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.336)) contrast(110%);
+  margin-top: .4rem;
+  margin-left: -.6rem;
+  width: 100%;
+  text-align: center;
+}
+
+.navBlur-Metamask{
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 10.5rem;
+  background-color: rgba(122, 0, 221, 0.185);
+  transition: all .6s ease-in-out;
+  filter: blur(9px);
+  opacity: 0.9;
+}
+
+
+.nav-Metamask{
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 10.2rem;
+  top: -.2rem;
+  transition: all .6s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.navBack-Metamask{
+  width: 100%;
+  height: 10.6rem;
+  text-align: center;
+  position: fixed;
+  opacity:.8;
+  top: 0;
+  object-fit: cover;
+  filter: contrast(120%) brightness(110%) ;
+
+}
+
+
+.navDerecha-Metamask{
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  padding-left: 5rem;
+  height: 10rem;
+  width: 80%;
+  z-index: 5600;
+
+}
+
+.movile-Metamask{
+  display: none;
+}
+
+
+/* ul  */
+
+/* nav izquierda */
+.nav-menu-Metamask {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10rem;
+  width: 80%;
+  padding-right: 5rem;
+  z-index: 5600;
+}
+
+
+
+.nav-menu-item-Metamask {
+  text-transform: uppercase;
+  padding: 2rem 2rem;
+  position: relative;
+  list-style: none;
+}
+
+
+.nav-link-Metamask {
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color:rgb(250, 238, 215);
+  padding: 0px 5px;
+  border-radius: 13px;
+  letter-spacing: 2px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+} 
+
+
+/* TOGGLE */
+.nav-toggle-Metamask {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 12%;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  z-index: 5500;
+}
+
+
+.nav-menu-item-Metamask:hover > .nav-menu-link-Metamask{
+  transform: scale(1.2);
+  filter: drop-shadow( 0 0 18px black) ;
+}
+
+.nav-menu-link-Metamask i{
+  font-size: 2.5rem;
+  position: absolute;
+  top: 3.8rem;
+}
+
+
+/* effect navbar */
+.nav-menu-item-Metamask:hover:after {
+  width: 65%;
+}
+.nav-menu-item-Metamask:after {
+content: '';
+bottom: -.75rem;
+left: 0;
+right: 0;
+margin: auto;
+position: absolute;
+width: 0;
+height: 4px;
+background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
+background: linear-gradient(#6404ff, #ffffff);
+-webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
+box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
+-webkit-transition: all 0.3s ease-out;
+transition: all 0.3s ease-out;
+}
+
+
+.dappIzquierda-Metamask{
+  display: none;
+}
+
+.homeIzquierda-Metamask{
+  display: none;
+}
+
+
+@media screen and (min-width: 2550px){
+  
+
+  .navBlur-Metamask{
+      height: 12rem;
+  }
+  
+  .nav-Metamask{
+      height: 12rem;
+      top: -.2rem;
+  }
+
+  .nav-menu-Metamask{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 12rem;
+      width: 100%;
+      padding-right: 3rem;
+  }
+
+  
+  .nav-link-Metamask {
+      font-size: 3.5rem;
+  } 
+
+  .btnButtonNav-Metamask p {
+      font-size: 3.5rem;
+  }
+
+  .btnButtonNav-Metamask p {
+      line-height: 5rem;
+  }
+
+
+  .wrapperBottonBtn-Metamask .btnButtonNav-Metamask {
+      width: 14.5rem;
+      height: 4.5rem;
+  }
+  
+
+  .BorderTopBottomNav-Metamask:before {
+      width: 15.7rem;
+  }
+    
+  .BorderTopBottomNav-Metamask:after {
+    width: 15.7rem;
+  }
+  
+  .BorderLeftRightNav-Metamask:before {
+    height: 5.5rem;
+  }
+  
+  .BorderLeftRightNav-Metamask:after {
+    height: 5.5rem;
+  }
+  
+}
+
+
+@media screen and (max-width: 1440px){
+
+  
+
+  .wrapperBottonBtn-Metmask {
+    right: 2rem;
+    top: 3.7rem;
+    margin-top: -.4rem;
+}
+
+  .wrapperBottonBtn-Metmask .btnButtonNav-Metmask {
+    width: 16rem;
+    height: 3rem;
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+
+
+  .btnButtonNav-Metmask p {
+    font-size: 1.7rem;
+    letter-spacing: 1.5px;
+    padding-top: .4rem;
+    padding-right: 0rem;
+  }
+  
+  .BorderTopBottomNav-Metmask:before {
+    width: 17.3rem;
+  }
+  
+  .BorderTopBottomNav-Metmask:after {
+    width: 17.3rem;
+  }
+
+  
+  .logoMetamask{
+    width: 3.5rem !important;
+    left: 2%;
+    top: -.2rem;
+  }
+
+  
+  .wrapperBottonBtn-Metamask {
+      right: 3%;
+  }
+
+
+  .nav-menu-Metamask {
+      height: 10rem;
+      width: 80%;
+      padding-right: 0rem;
+  }
+  
+  .navDerecha-Metamask{
+      padding-left: 0rem;
+      height: 10rem;
+      width: 80%;
+  }
+  
+
+}
+
+
+@media (max-width: 1150px){
+
+  .wrapperBottonBtn-Metmask {
+    position: relative;
+    margin-left: 3rem;
+}
+
+
+  .navDerecha-Metamask{
+    display: none;
+  }
+
+  .movile-Metamask{
+    display: inline-block;
+  }
+
+  .navBack-Metamask{
+      width: 100%;
+      height: 10.6rem;
+      object-fit: cover;
+      z-index: 6000;
+  }
+  
+
+  .nav-menu-Metamask {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    height: 100vh;
+    bottom: 0;
+    right: 120%;
+    overflow-y: hidden;
+    transition: right 0.7s ease-in-out;
+    padding-top: 10rem;
+    filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+  .nav-menu_visible-Metamask {
+    right: 0%;
+    filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
+    background-color: rgba(0, 0, 0, 0.884);
+  }
+
+  .nav-menu-item-Metamask {
+      line-height: 60px;    
+      
+  }
+  .nav-menu-item-Metamask a{
+      font-size: 2.5rem;
+
+  }
+
+  .nav-toggle-Metamask {
+      display: block;
+      z-index: 6000;
+  }
+
+  .nav-toggle-Metamask:focus:not(:focus-visible) {
+      outline: none;
+  }
+
+  .fa-bars-Metamask{
+      color: rgb(250, 238, 215);
+      font-size: 3.9rem;
+  }
+
+
+  .dappIzquierda-Metamask{
+      display: inline-block;
+  }
+  
+  .homeIzquierda-Metamask{
+      display: inline-block;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .nav-toggle-Metamask {
+      right: 10%;
+  }
+  
+}
+
+
+@media screen and (max-width: 330px) {
+
+  .nav-toggle-Metamask {
+      right: 5%;
+  }
+  
+}
+
+@media screen and (max-width: 290px) {
+
+  .nav-toggle-Metamask {
+      right: 3%;
+  }
+  
 }

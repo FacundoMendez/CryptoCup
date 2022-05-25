@@ -50,3 +50,70 @@
     background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
     border-radius: 20px;
 }
+
+
+@media screen and (max-width:1440px) {
+    
+    .videoPubli-video{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    
+    .videoPubli-video{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    
+    .videoPubli-video{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:558px) {
+    
+    .videoPubli-video{
+        width: 90%;
+    }
+
+    .videoPubli-container{
+        gap: 4rem;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    
+    .videoPubli-video{
+        width: 90%;
+    }
+
+
+    .videoPubli-texts h5{
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 2rem;
+        font-size: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width:340px) {
+    
+    .videoPubli-video{
+        width: 90%;
+    }
+
+
+    .videoPubli-texts h5{
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
+}

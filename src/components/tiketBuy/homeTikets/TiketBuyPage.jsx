@@ -4,7 +4,7 @@ import NavTikets from '../navTikets/NavTiketsBuy'
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
-
+import Social from "../../homePrincipal/header/home/social/Social"
 
 const TiketBuyPage = () => {
   return (
@@ -54,6 +54,7 @@ const TiketBuyPage = () => {
           </div>
           
       </div>
+      <Social />
     </div>
   )
 }

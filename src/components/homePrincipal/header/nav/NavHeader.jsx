@@ -46,7 +46,16 @@ function NavHeader() {
                         </a>
                     </li>
 
-                    <a href="/Dapp" className="nav-menu-link nav-link dappIzquierda ">
+
+                    <li className="nav-menu-item navMovile">
+                        <a href="#roadmap" className="nav-menu-link nav-link">
+                            Roadmap
+                        </a>
+                    </li>
+
+
+
+                    <a href="/Dapp" className="nav-menu-link nav-link navMovile ">
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p>Dapp</p>
@@ -55,8 +64,8 @@ function NavHeader() {
                             </div>
                         </div>
                     </a>
-
                 </ul>
+
 
                 <canvas className='navBallModel'></canvas>  
 

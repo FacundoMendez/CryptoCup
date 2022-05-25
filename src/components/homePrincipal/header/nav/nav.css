@@ -1,4 +1,7 @@
 /* model */
+.navMovile{
+    display: none;
+}
 
 .navBallModel{
     cursor: grab;
@@ -378,6 +381,10 @@
 
 @media (max-width: 1150px){
 
+    .navMovile{
+        display: inline-block;
+    }
+
     .navBack{
         width: 100%;
         height: 10.6rem;
@@ -394,12 +401,13 @@
         width: 100%;
         padding: 20px 0;
         height: 100vh;
-        bottom: 100%;
+        bottom: 0;
+        right: 120%;
         overflow-y: hidden;
-        transition: bottom 0.4s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.918);
+        transition: right 0.7s ease-in-out;
         padding-top: 10rem;
-        transition: all 1s ease-in-out;
+        filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
+        background-color: rgba(0, 0, 0, 0.863);
     }
 
     .wrapperBottonBtn{
@@ -407,7 +415,9 @@
     }
     
     .nav-menu_visible {
-        bottom: 0%;
+        right: 0%;
+        filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
+        background-color: rgba(0, 0, 0, 0.884);
     }
 
     .nav-menu-item {
