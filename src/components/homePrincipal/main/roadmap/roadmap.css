@@ -1,10 +1,643 @@
 .containerRoadmap{
     width: 100%;
-    height: 100vh;
     background: rgb(0,0,0);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 8rem;
+    gap: 10rem;
+    padding-top: 20rem;
+}
+
+.boxRoadmpa{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 10rem;
+    position: relative;
+    height: 140vh;
+}
+
+.line-Container{
+    position:relative;
+    width: 1rem;
+    height: 110vh;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+.q1{
+    position: relative;
+    top: 1%;
+    left: 0;
+    margin-left: -1.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    z-index: 110 !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+
+.q2{
+    position: relative;
+    top: 20%;
+    left: 0;
+    margin-left: -1.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    z-index: 110;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+
+
+.q3{
+    position: relative;
+    top: 40%;
+    left: 0;
+    margin-left: -1.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    z-index: 110;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+
+
+.q4{
+    position: relative;
+    top: 60%;
+    left: 0;
+    margin-left: -1.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    z-index: 110;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+
+
+
+.q5{
+    position: relative;
+    top: 82%;
+    left: 0;
+    margin-left: -1.15rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    z-index: 110;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+}
+
+
+.line-q1{
+    width: 20rem;
+    height: .7rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    top: 35%;
+    left: 3.5rem;
+    z-index: 10;
+}
+
+.q1-title{
+    position: relative;
+    left: 22rem;
+    width: 20rem;
+    top: -4rem;
+}
+
+.q1-title h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+
+.listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
+    position: relative;
+    color: white;
+    font-size: 1.5rem;
+    width: 47rem;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
+    list-style: none;
+}
+
+.listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
+    padding: .5rem;
+}
+
+
+.line-q2{
+    width: 20rem;
+    height: .7rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    top: 35%;
+    right:20rem;
+    z-index: 10;
+}
+
+.q2-title{
+    position: relative;
+    right: 22rem;
+    width: 20rem;
+    top: -4rem;
+}
+
+.q2-title h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+
+
+.line-q3{
+    width: 20rem;
+    height: .7rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    top: 35.4%;
+    left:3.4rem;
+    z-index: 10;
+}
+
+.q3-title{
+    position: relative;
+    left: 22rem;
+    width: 20rem;
+    top: -4rem;
+}
+
+.q3-title h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+
+.line-q4{
+    width: 20rem;
+    height: .7rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    top: 35%;
+    right:20rem;
+    z-index: 10;
+}
+
+.q4-title{
+    position: relative;
+    right: 22rem;
+    width: 20rem;
+    top: -4rem;
+}
+
+.q4-title h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+
+
+.line-q5{
+    width: 20rem;
+    height: .7rem;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    top: 35.4%;
+    left:3.4rem;
+    z-index: 10;
+}
+
+.q5-title{
+    position: relative;
+    left: 22rem;
+    width: 20rem;
+    top: -4rem;
+}
+
+.q5-title h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2rem;
+    font-size: 4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+
+
+
+
+@media screen and (max-width:1440px) {
+
+    .q1{
+        position: relative;
+        top: 1%;
+        left: 0;
+        margin-left: -1.15rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    
+    .q2{
+        top: 20%;
+        left: 0;
+        margin-left: -1.15rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    
+    
+    .q3{
+        top: 40%;
+        left: 0;
+        margin-left: -1.15rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    
+    
+    .q4{
+        top: 60%;
+        left: 0;
+        margin-left: -1.15rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    
+    .q5{
+        top: 82%;
+        left: 0;
+        margin-left: -1.15rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    
+    .line-q1{
+        width: 12rem;
+        height: .7rem;
+        top: 35%;
+        left: 3.5rem;
+    }
+    
+    .q1-title{
+        position: relative;
+        left: 12rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q1-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
+        font-size: 1.2rem;
+        width: 47rem;
+        margin-left: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
+        list-style: none;
+    }
+    
+    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
+        padding: .5rem;
+    }
+    
+    
+    .line-q2{
+        width: 12rem;
+        height: .7rem;
+        top: 35%;
+        right:12rem;
+        z-index: 10;
+    }
+    
+    .q2-title{
+        right: 21rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q2-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .line-q3{
+        width: 12rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q3-title{
+        left: 13rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q3-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .line-q4{
+        width: 13rem;
+        height: .7rem;
+        top: 35%;
+        right:13rem;
+        z-index: 10;
+    }
+    
+    .q4-title{
+        right: 21rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q4-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+    }
+    
+    
+    
+    .line-q5{
+        width: 13rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q5-title{
+        left: 14rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q5-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+
+@media screen and (max-width:950px) {
+    .boxRoadmpa{
+        width: 70%;
+        padding-top: 5rem;
+        height: 160vh;
+    }
+
+    .line-Container{
+        position:relative;
+        width: 1rem;
+        height: 125vh;
+    }
+    
+    
+    .line-q1{
+        width: 7rem;
+        height: .7rem;
+        top: 35%;
+        left: 3.5rem;
+    }
+    
+    .q1-title{
+        position: relative;
+        left: 6rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q1-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
+        font-size: 1.1rem;
+        width: 47rem;
+        margin-left: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .listQ2, .listQ4 {
+        margin-left: -2rem;
+    }
+    
+    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
+        list-style: none;
+    }
+    
+    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
+        padding: .5rem;
+    }
+    
+    
+    .line-q2{
+        width: 7rem;
+        height: .7rem;
+        top: 35%;
+        right:7rem;
+        z-index: 10;
+    }
+    
+    .q2-title{
+        right: 20rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q2-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .line-q3{
+        width: 7rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q3-title{
+        left:7rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q3-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .line-q4{
+        width: 7rem;
+        height: .7rem;
+        top: 35%;
+        right:7rem;
+        z-index: 10;
+    }
+    
+    .q4-title{
+        right: 20rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q4-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+    }
+    
+    
+    
+    .line-q5{
+        width: 7rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q5-title{
+        left: 7rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q5-title h4{
+        padding: 2rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
+    }
+    
+
 }
