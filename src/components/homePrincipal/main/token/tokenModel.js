@@ -93,18 +93,14 @@ const tokenModel = () =>{
       controls.enableZoom = false 
       controls.enablePan= false
 
-
-    const clock = new THREE.Clock()
     const animate = ()=>{
-
-        const elapsedTime = clock.getElapsedTime()
 
         // Update camera
 
         controls.update() 
 
         mesh.rotation.y = 0.0015 
-        mesh.rotation.z = elapsedTime 
+        mesh.rotation.z -= 0.012
 
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)
