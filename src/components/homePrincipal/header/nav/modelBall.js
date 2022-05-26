@@ -6,12 +6,6 @@ import ballModel from "./src/models/ball.glb"
 
 const navBallModel = () => {
 
-    function isMobile() {
-        /* return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent); */
-    }
-    
-    if (!isMobile()) {
-
         const scene = new THREE.Scene()
 
         const canvas = document.querySelector(".navBallModel")
@@ -155,6 +149,5 @@ const navBallModel = () => {
 
     }
 
-}
 
 export default navBallModel;

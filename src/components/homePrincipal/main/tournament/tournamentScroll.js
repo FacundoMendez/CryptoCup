@@ -7,7 +7,7 @@ const tournamentScroll = () =>{
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    if (isMobile) {
+    if (!isMobile()) {
         gsap.registerPlugin(ScrollTrigger); 
 
 
