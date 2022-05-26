@@ -685,7 +685,173 @@
 }
 
 @media screen and (max-width:480px) {
+
+    
+    .q2{
+        top: 26%;
+    }
+
+    .q3{
+        top: 47%;
+    }
+
+    .q4{
+        top: 64%;
+    }
+
+    .q5{
+        top: 83%;
+    }
+
+    .boxRoadmpa{
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: -5rem;
+    }
+    
+
     .containerRoadmap{
         padding-top: 0rem;
     }
+
+
+    .q1circle, .q3circle, .q5circle, .q2circle, .q4circle{
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 4rem;
+        top: -.4rem;
+    }
+    
+
+    .boxRoadmpa{
+        width: 70%;
+        padding-top: 5rem;
+        height: 160vh;
+    }
+
+    .line-Container{
+        position:relative;
+        width: 1rem;
+        height: 130vh;
+    }
+    
+    
+    .line-q1{
+        width: 4rem;
+        height: .7rem;
+        top: 35%;
+        left: 3.5rem;
+    }
+    
+    .q1-title{
+        position: relative;
+        left: 5rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q1-title h4{
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
+        font-size: 1.15rem;
+        width: 47rem;
+        margin-left: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    
+    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
+        list-style: none;
+    }
+    
+    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
+        padding: .5rem;
+    }
+    
+    
+    .line-q2{
+        width: 4rem;
+        height: .7rem;
+        top: 35%;
+        left: 3.5rem;
+    }
+    
+    .q2-title{
+        position: relative;
+        left: 4rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q2-title h4{
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    .line-q3{
+        width: 4rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q3-title{
+        left:4rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q3-title h4{
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    .line-q4{
+        width: 4rem;
+        height: .7rem;
+        top: 35%;
+        left: 3.5rem;
+    }
+    
+    .q4-title{
+        left:4rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q4-title h4{
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    
+    .line-q5{
+        width: 4rem;
+        height: .7rem;
+        top: 35.4%;
+        left:3.4rem;
+    }
+    
+    .q5-title{
+        left: 4rem;
+        width: 20rem;
+        top: -4rem;
+    }
+    
+    .q5-title h4{
+        padding: 1rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+ 
 }
