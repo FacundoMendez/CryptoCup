@@ -156,7 +156,7 @@
 
 .q1-title{
     position: relative;
-    left: 22rem;
+    left: 21rem;
     width: 20rem;
     top: -6rem;
 }
@@ -357,6 +357,22 @@
 
 @media screen and (max-width:1440px) {
 
+
+    .q1circle, .q3circle, .q5circle{
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 11rem;
+        top: -.4rem;
+    }
+    
+    .q2circle, .q4circle{
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 0.5rem;
+        top: -.4rem;
+    }
+
+
     .q1{
         position: relative;
         top: 1%;
@@ -506,7 +522,7 @@
     
     
     .line-q5{
-        width: 13rem;
+        width: 12rem;
         height: .7rem;
         top: 35.4%;
         left:3.4rem;

@@ -8,7 +8,7 @@
     z-index: 10000;
     filter:drop-shadow(0 0 50px rgba(140, 0, 255, 0.336)) contrast(110%);
     margin-top: .4rem;
-    margin-left: -.6rem;
+    margin-left: .2rem;
     width: 100%;
     text-align: center;
 }
