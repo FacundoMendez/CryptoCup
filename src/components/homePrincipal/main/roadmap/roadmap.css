@@ -129,11 +129,11 @@
 }
 
 .q1circle, .q3circle, .q5circle{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
     left: 19rem;
-    top: -.6rem;
+    top: -.4rem;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgba(139,66,8,1),
@@ -142,11 +142,11 @@
 }
 
 .q2circle, .q4circle{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 100%;
     right: 0.5rem;
-    top: -.6rem;
+    top: -.4rem;
     position: relative;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgba(139,66,8,1),
