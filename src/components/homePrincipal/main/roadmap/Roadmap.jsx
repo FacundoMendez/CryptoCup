@@ -18,6 +18,7 @@ const Roadmap = () => {
           <div className="line-Container">
               <div className="q1">
                 <div className="line-q1"> 
+                  <div className="q1circle"></div>
                   <div className="q1-title">
                       <h4>
                         Q1 2021
@@ -40,6 +41,7 @@ const Roadmap = () => {
 
               <div className="q2">
                 <div className="line-q2"> 
+                  <div className="q2circle"></div>
                     <div className="q2-title">
                       <h4>
                         Q2 2022
@@ -57,6 +59,7 @@ const Roadmap = () => {
               </div>
               <div className="q3">
                 <div className="line-q3"> 
+                  <div className="q3circle"></div>
                     <div className="q3-title">
                       <h4>
                         Q3 2022
@@ -73,6 +76,7 @@ const Roadmap = () => {
               </div>
               <div className="q4">
                 <div className="line-q4"> 
+                  <div className="q4circle"></div>
                     <div className="q4-title">
                       <h4>
                         Q4 2022
@@ -91,6 +95,7 @@ const Roadmap = () => {
               </div>
               <div className="q5">
                   <div className="line-q5"> 
+                    <div className="q5circle"></div>
                       <div className="q5-title">
                         <h4>
                           Q5 2022
