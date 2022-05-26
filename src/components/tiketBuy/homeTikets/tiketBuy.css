@@ -15,7 +15,6 @@
     object-fit: cover;
 }
 
-
 /* general */
 
 .flexTickets{
@@ -30,7 +29,6 @@
     height: 100vh;
     z-index: 15;
 }
-
 
 /* tickets  */
 .ticketsSale{
@@ -71,12 +69,10 @@
     filter: contrast(220%) brightness(100%)  hue-rotate(-160deg);
   }
   
-  .particle-Tikets video{
-    width: 100%;
-    object-fit: cover;
-  }
-  
-
+.particle-Tikets video{
+  width: 100%;
+  object-fit: cover;
+}
   
 @keyframes slidein {
     0% {
@@ -100,8 +96,6 @@
     }
 }
 
-
-
 @keyframes ticketVolador {
     0% {
         transform: translate(0 , -.6%) scale(1.02);
@@ -114,7 +108,6 @@
     100% {
         transform: translate(0 , -.6%) scale(1.02);
     }
-
 }
 
 /* bottons */
@@ -123,31 +116,29 @@
     position: relative;
     margin-top: 0rem;
     text-decoration: none;
-  }
-  
-  .wrapperBotton-Tickets .btnButton-Tickets {
-    width: 14.5rem;
-    height: 4rem;
-    margin: 0 2rem;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    
-  }
-  
-  .btnButton-Tickets p {
-    font-size: 3rem;
-    letter-spacing: 3.8px;
-    padding-top: .15rem;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+}
 
+.wrapperBotton-Tickets .btnButton-Tickets {
+  width: 14.5rem;
+  height: 4rem;
+  margin: 0 2rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.btnButton-Tickets p {
+  font-size: 3rem;
+  letter-spacing: 3.8px;
+  padding-top: .15rem;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
 }
   
 .BorderTopBottom-Tickets:before {
@@ -204,9 +195,7 @@
     transition: all .5s ease-in-out;
 }
 
-
 /* text */
-
 
 .titleTicket{
     width: 100%;
@@ -265,7 +254,6 @@
         object-fit: cover;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -274,7 +262,6 @@
         height: 100vh;
         z-index: 15;
     }
-    
     
     /* tickets  */
 
@@ -287,7 +274,6 @@
         width: 35rem;
     }
     
-
     /* text */
 
     .text-tickets{
@@ -311,8 +297,6 @@
         letter-spacing: 1.5px;
         padding: 1rem;
     }
-
-
 }
 
 
@@ -333,7 +317,6 @@
         object-fit: cover;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -342,7 +325,6 @@
         height: 100vh;
         z-index: 15;
     }
-    
     
     /* tickets  */
 
@@ -356,7 +338,6 @@
         width: 21rem;
     }
     
-
     /* text */
 
     .text-tickets{
@@ -380,7 +361,6 @@
         letter-spacing: 1.5px;
         padding: 1rem;
     }
-
 }
 
 
@@ -402,7 +382,6 @@
         object-fit: cover;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -418,8 +397,6 @@
         z-index: 15;
         padding-bottom: 15rem;
     }
-    
-    
     
     /* tickets  */
     .ticketsSale{
@@ -439,7 +416,6 @@
     .boxTickets img{
         width: 25rem;
     }
-    
 
     /* text */
 
@@ -464,7 +440,6 @@
         letter-spacing: 1.5px;
         padding: 1rem 0rem;
     }
-
 }
 
 
@@ -478,7 +453,6 @@
         width: 100%;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -487,8 +461,6 @@
         height: 100%;
         padding-bottom: 15rem;
     }
-    
-    
     
     /* tickets  */
     .ticketsSale{
@@ -502,7 +474,6 @@
     .boxTickets img{
         width: 25rem;
     }
-    
 
     /* text */
 
@@ -539,7 +510,6 @@
         width: 100%;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -548,8 +518,6 @@
         height: 100%;
         padding-bottom: 15rem;
     }
-    
-    
     
     /* tickets  */
     .ticketsSale{
@@ -563,7 +531,6 @@
     .boxTickets img{
         width: 22rem;
     }
-    
 
     /* text */
 
@@ -601,7 +568,6 @@
         width: 100%;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -610,8 +576,6 @@
         height: 100%;
         padding-bottom: 15rem;
     }
-    
-    
     
     /* tickets  */
     .ticketsSale{
@@ -625,7 +589,6 @@
     .boxTickets img{
         width: 19.9rem;
     }
-    
 
     /* text */
 
@@ -664,7 +627,6 @@
         width: 100%;
     }
     
-    
     /* general */
     
     .flexTickets{
@@ -673,8 +635,6 @@
         height: 100%;
         padding-bottom: 15rem;
     }
-    
-    
     
     /* tickets  */
     .ticketsSale{
@@ -688,7 +648,6 @@
     .boxTickets img{
         width: 19.9rem;
     }
-    
 
     /* text */
     .ticketsSale{

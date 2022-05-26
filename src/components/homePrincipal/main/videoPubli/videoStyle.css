@@ -51,7 +51,6 @@
     border-radius: 20px;
 }
 
-
 @media screen and (max-width:1440px) {
     
     .videoPubli-video{
@@ -66,14 +65,12 @@
     }
 }
 
-
 @media screen and (max-width:768px) {
     
     .videoPubli-video{
         width: 80%;
     }
 }
-
 
 @media screen and (max-width:558px) {
     
@@ -86,13 +83,11 @@
     }
 }
 
-
 @media screen and (max-width:430px) {
     
     .videoPubli-video{
         width: 90%;
     }
-
 
     .videoPubli-texts h5{
         font-weight: bold;
@@ -103,14 +98,11 @@
     }
 }
 
-
-
 @media screen and (max-width:340px) {
     
     .videoPubli-video{
         width: 90%;
     }
-
 
     .videoPubli-texts h5{
         padding: 2rem;

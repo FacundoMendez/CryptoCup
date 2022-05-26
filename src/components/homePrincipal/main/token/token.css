@@ -51,8 +51,6 @@
     text-transform: uppercase;
 }
 
-
-
 /* fondo */
 
 .backgroundReflejo-token{
@@ -64,7 +62,6 @@
     filter: hue-rotate(240deg) blur(3px) contrast(103%) ;
 }
 
-
 @media screen and (min-width: 2550px){
 
     .textToken p{
@@ -73,34 +70,26 @@
     }
 }
 
-
-
 @media screen and (max-width: 1440px){
 
     .textToken{
         width: 65%;
     }
-
 }
-
 
 @media screen and (max-width: 1170px){
 
     .textToken{
         width: 70%;
     }
-
 }
-
 
 @media screen and (max-width: 800px){
 
     .textToken{
         width: 90%;
     }
-
 }
-
 
 @media screen and (max-width:480px){
 
@@ -120,7 +109,6 @@
         text-align: initial;
     }
     
-    
     .textToken{
         width: 100%;
         gap:5rem;
@@ -134,5 +122,4 @@
         font-size: 1.6rem;
         text-align: inherit;
     }
-
 }
