@@ -70,7 +70,7 @@ const tokenModel = () =>{
 
         /* bottom */
 
-      scene.add(new THREE.AmbientLight(0xFFDAAA,2))
+      scene.add(new THREE.AmbientLight(0xFFDAAA,1.5))
 
 
 
