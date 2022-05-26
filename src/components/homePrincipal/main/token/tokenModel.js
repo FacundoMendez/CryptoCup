@@ -53,13 +53,6 @@ const tokenModel = () =>{
         scene.add(camera)
 
         /* top */
-        const direccionalLight = new THREE.DirectionalLight(0xffffff, .1)
-        direccionalLight.position.set(0, 10, 0)
-        scene.add(direccionalLight)
-
-        const direccionalLight2 = new THREE.DirectionalLight(0xffffff, .1)
-        direccionalLight2.position.set(0, -10, 3)
-        scene.add(direccionalLight2)
 
 
         const direccionalLight3 = new THREE.DirectionalLight(0xffffff, .1)
@@ -77,17 +70,7 @@ const tokenModel = () =>{
 
         /* bottom */
 
-        const direccionalLight6 = new THREE.DirectionalLight(0xffffff, .1)
-        direccionalLight6.position.set(-3,-6,3)
-        scene.add(direccionalLight6)
-        
-
-        const direccionalLight7 = new THREE.DirectionalLight(0xffffff, .1)
-        direccionalLight7.position.set(3,-6,3)
-        scene.add(direccionalLight7)
-
-
-      scene.add(new THREE.AmbientLight(0xFFDAAA,1))
+      scene.add(new THREE.AmbientLight(0xFFDAAA,2))
 
 
 
@@ -111,15 +94,17 @@ const tokenModel = () =>{
       controls.enablePan= false
 
 
-    
+    const clock = new THREE.Clock()
     const animate = ()=>{
+
+        const elapsedTime = clock.getElapsedTime()
 
         // Update camera
 
         controls.update() 
 
-        mesh.rotation.y = 0.015
-        mesh.rotation.z -= 0.015
+        mesh.rotation.y = 0.0015 
+        mesh.rotation.z = elapsedTime 
 
         renderer.render(scene,camera)
         window.requestAnimationFrame(animate)

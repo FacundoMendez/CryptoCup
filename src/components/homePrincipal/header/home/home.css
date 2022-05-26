@@ -33,10 +33,9 @@
 
 .particleVideo{
   position: absolute;
-  opacity: .2;
+  opacity: .5;
   z-index: 13;
   filter: contrast(280%) brightness(100%) hue-rotate(-160deg);
-
 }
 
 .particleVideo video{

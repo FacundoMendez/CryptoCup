@@ -8,6 +8,7 @@ import navOcultar from './navOcultar';
 import navBallModel from './modelBall';
 import imgNav from "./src/navBack.png"
 
+
 function NavHeader() {
 
     useEffect(()=>{
@@ -15,6 +16,8 @@ function NavHeader() {
         navOcultar()
         navBallModel()
     },[])
+
+
 
     return (
         <header className="header">
