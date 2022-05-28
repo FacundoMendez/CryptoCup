@@ -24,7 +24,7 @@ function NavTikets() {
                 
                 <ul className="navVisible-Metamask nav-menu-Metamask navIzquierda-Metamask">
                     
-                    <li className="nav-menu-item-Metamask homeIzquierda-Metamask" >
+                    <li className="nav-menu-item-Metamask " >
                         <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Home
                         </a>
@@ -36,7 +36,7 @@ function NavTikets() {
                         </a>
                     </li>
                     
-                    <li className="nav-menu-item-Metamask ">
+                    <li className="nav-menu-item-Metamask movile-Metamask">
                         <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link-Metamask nav-link-Metamask">
                             Whitepaper
                         </a>
@@ -64,15 +64,17 @@ function NavTikets() {
 
                 <ul className='navDerecha-Metamask'>
 
-                    <li className="nav-menu-item-Metamask">
-                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
-                            Home
-                        </a>
-                    </li>
+         
           
                     <li className="nav-menu-item-Metamask">
                         <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
                             Roadmap
+                        </a>
+                    </li>
+
+                    <li className="nav-menu-item-Metamask ">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link-Metamask nav-link-Metamask">
+                            Whitepaper
                         </a>
                     </li>
                     

@@ -31,7 +31,7 @@ function NavHeader() {
                 
                 <ul className="navVisible nav-menu navIzquierda">
                     
-                    <li className="nav-menu-item homeIzquierda" >
+                    <li className="nav-menu-item " >
                         <a href="#home" className="nav-menu-link nav-link">
                             Home
                         </a>
@@ -43,11 +43,7 @@ function NavHeader() {
                         </a>
                     </li>
                     
-                    <li className="nav-menu-item ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
-                            Whitepaper
-                        </a>
-                    </li>
+               
 
 
                     <li className="nav-menu-item navMovile">
@@ -56,6 +52,12 @@ function NavHeader() {
                         </a>
                     </li>
 
+                    <li className="nav-menu-item navMovile">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                            Whitepaper
+                        </a>
+                    </li>
+                
 
 
                     <a href="/Dapp" className="nav-menu-link nav-link navMovile ">
@@ -75,12 +77,6 @@ function NavHeader() {
                 
 
                 <ul className='navDerecha'>
-
-                    <li className="nav-menu-item">
-                        <a href="#home" className="nav-menu-link nav-link">
-                            Home
-                        </a>
-                    </li>
           
                     <li className="nav-menu-item">
                         <a href="#roadmap" className="nav-menu-link nav-link">
@@ -88,6 +84,11 @@ function NavHeader() {
                         </a>
                     </li>
                     
+                    <li className="nav-menu-item ">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                            Whitepaper
+                        </a>
+                    </li>
                 
 
                     <a href="/Dapp" className="nav-menu-link nav-link ">

@@ -90,7 +90,7 @@ const navBallModel = () => {
             (gltf) =>
             {
                 modelBall= gltf.scene
-                modelBall.scale.set(1.05, 1.05, 1.05)
+                modelBall.scale.set(1.0, 1.0, 1.0)
                 scene.add(modelBall)
             }
         )
