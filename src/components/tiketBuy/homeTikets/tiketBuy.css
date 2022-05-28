@@ -110,6 +110,9 @@
     }
 }
 
+
+/* buttons buy */
+
 /* bottons */
 
 .wrapperBotton-Tickets {
@@ -194,6 +197,257 @@
     filter: drop-shadow( 0 0 1px white);
     transition: all .5s ease-in-out;
 }
+
+
+/* button tokens */
+
+.wrapperBotton-ticketSale {
+    position: relative;
+    padding-top: 1rem;
+    text-decoration: none;
+  }
+  
+  .wrapperBotton-ticketSale  .btn-ticketSale  {
+    width: 30.5rem;
+    height: 4.5rem;
+    margin: 0 3rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .btn-ticketSale p {
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: .6rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  }
+  
+  .BorderTopBottom-ticketSale:before {
+    content: "";
+    position: absolute;
+    width: 31.8rem;
+    height: 2px;
+    top: -6px;
+    left: -7px;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderTopBottom-ticketSale:after {
+    content: "";
+    position: absolute;
+    width: 31.8rem;
+    height: 2px;
+    bottom: -6px;
+    right: -7px;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-ticketSale:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 2px;
+    height: 5.5rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-ticketSale:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -7px;
+    width: 2px;
+    height: 5.5rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+
+  
+.radioToken{
+    border: 2px solid white;
+    width: 31.9rem;
+    margin-left: -.7rem;
+    margin-top: .8rem;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    transition: all .2s  ease-in-out;
+    opacity: 0;
+    position: relative;
+
+}
+
+.radioToken-active{
+    border: 2px solid white;
+    width: 31.9rem;
+    margin-left: -.7rem;
+    margin-top: .75rem;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    transition: all .2s  ease-in-out;
+    opacity: 1;
+    background-color: #000000e8;
+    position: relative;
+}
+
+.radio {
+    font-family: arial;
+    display: block;
+    position: relative;
+    padding-left: 33px;
+    margin-bottom: 7px;
+    padding-top: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.radio input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+    border-radius: undefinedpx;
+}
+.radio:hover input ~ .control_indicator,
+.radio input:focus ~ .control_indicator {
+    background: #f5edff;
+}
+
+.radio input:checked ~ .control_indicator {
+    background: #9c5eff;
+}
+.radio:hover input:not([disabled]):checked ~ .control_indicator,
+.radio input:checked:focus ~ .control_indicator {
+    background: #9d3bfe;
+}
+.radio input:disabled ~ .control_indicator {
+    background: #ffffff;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.radio input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-radio .control_indicator {
+    border-radius: 35%;
+}
+
+.control-radio .control_indicator:after {
+    left: 8px;
+    top: 5px;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: background 300ms;
+}
+.control-radio input:disabled ~ .control_indicator:after {
+    background: #7b7b7b;
+}.control-radio .control_indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4.468rem;
+    height: 4.5rem;
+    margin-left: -1.3rem;
+    margin-top: -1.3rem;
+    background: #936ad9;
+    border-radius: 3rem;
+    opacity: 0.9;
+    z-index: 99999;
+    transform: scale(0);
+}
+@keyframes s-ripple {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    20% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.01;
+        transform: scale(1);
+    }
+}
+@keyframes s-ripple-dup {
+   0% {
+       transform: scale(0);
+    }
+   30% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.control-radio input + .control_indicator::before {
+    animation: s-ripple 300ms ease-out;
+}
+.control-radio input:checked + .control_indicator::before {
+    animation-name: s-ripple-dup;
+}
+
+.radio p{
+    margin-top: -1rem;
+    font-size: 1.8rem;
+    letter-spacing: 1.3px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  }
+
+
 
 /* text */
 
@@ -625,6 +879,8 @@
     
     .containerTiketsBuy{
         width: 100%;
+        padding-left: -2rem;
+        
     }
     
     /* general */

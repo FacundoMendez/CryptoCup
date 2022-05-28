@@ -6,6 +6,7 @@ import imgNav from "../../homePrincipal/header/nav/src/navBack.png"
 import navBallModel from '../../homePrincipal/header/nav/modelBall';
 import "./navTikets.css"
 import logoMetamask from "../src/logoMetamask.png"
+ 
 
 function NavTikets() {
 

@@ -1,12 +1,20 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import "./tiketBuy.css"
 import NavTikets from '../navTikets/NavTiketsBuy'
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
 import Social from "../../homePrincipal/header/home/social/Social"
+import checkToken from './checkToken'
 
 const TiketBuyPage = () => {
+
+  const [active, setActive ] = useState(1)
+
+  useEffect(() => {
+    checkToken()
+  })
+
   return (
     <div className="containerTiketsBuy">
       <NavTikets />
@@ -51,8 +59,41 @@ const TiketBuyPage = () => {
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora praesentium eius esse dignissimos minima at architecto ipsam dicta voluptas amet, odio non cumque pariatur repellat velit repellendus. Culpa, labore.
               </p>
             </div>
+
+            <div className="wrapperBotton-ticketSale ">
+              <div className="btn-ticketSale" >
+                <p>Selec Token</p>
+                
+                <div className="radioToken">
+                  <label className="radio control-radio">
+                    <p>BUSD</p>
+                      <input type="radio" value="option1" readOnly={true} name="radio" checked={active === 1} onClick={() => setActive(1)}/>
+                      <div className="control_indicator"></div>
+                  </label>
+                  <label className="radio control-radio">
+                      <p>ETHER</p>
+                          <input type="radio" value="option2" readOnly={true} name="radio" checked={active === 2} onClick={() => setActive(2)}  />
+                      <div className="control_indicator"></div>
+                  </label>
+                  
+                  <label className="radio control-radio">
+                      <p>DAI</p>
+                          <input type="radio" value="option3" readOnly={true} name="radio" checked={active === 3} onClick={() => setActive(3)} />
+                      <div className="control_indicator"></div>
+                  </label>
+                  
+                  <label className="radio control-radio">
+                      <p>...</p>
+                          <input type="radio" value="option4" readOnly={true} name="radio" checked={active === 4} onClick={() => setActive(4)} />
+                      <div className="control_indicator"></div>
+                  </label>
+
+              </div>
+                <span className="BorderTopBottom-ticketSale  "></span>
+                <span className="BorderLeftRight-ticketSale  "></span>
+              </div>
+            </div>
           </div>
-          
       </div>
       <Social />
     </div>
