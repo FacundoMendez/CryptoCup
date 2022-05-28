@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import "./roadmap.css"
 import roadmapScroll from './roadmapScroll'
+import backPrincipalRoadmap from "./src/Roadmap5.jpg"
 
 const Roadmap = () => {
 
@@ -10,6 +11,7 @@ const Roadmap = () => {
   
   return (
     <div id='roadmap' className="containerRoadmap">
+        <img className='backgroundPrincipalRoadmap' src={backPrincipalRoadmap} alt="backPrincipalRoadmap" />
         <div className="titleContainers roadmapTitle">
           <h2>ROADMAP</h2>
         </div>

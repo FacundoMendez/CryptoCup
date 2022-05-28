@@ -276,7 +276,7 @@
 
     .titleContainers h2{
         padding: 2rem;
-        font-size: 11rem;
+        font-size: 6rem;
         letter-spacing: 1px;
     }
     
@@ -346,7 +346,7 @@
 @media screen and (max-width: 1170px){
     
     .titleContainers h2{
-        font-size: 10rem;
+        font-size: 5.5rem;
     }
     
     .containerTexts p {
@@ -408,7 +408,7 @@
 @media screen and (max-width: 800px){
 
     .titleContainers h2{
-        font-size: 8rem;
+        font-size: 4.5rem;
     }
     
     .containerTexts p {
@@ -429,7 +429,7 @@
 @media screen and (max-width: 600px){
 
     .titleContainers h2{
-        font-size: 6.6rem;
+        font-size: 4rem;
     }
     
     .containerTexts p {
@@ -457,6 +457,7 @@
     
     .titleContainers h2{
         font-size: 4rem;
+        padding: 1rem;
     }
 
     .boxTournament{
@@ -575,7 +576,7 @@
 @media screen and (max-width: 395px){
 
     .titleContainers h2{
-        font-size: 4.5rem;
+        font-size: 4rem;
         padding: 0;
     }
     

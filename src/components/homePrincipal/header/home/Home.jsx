@@ -5,7 +5,6 @@ import Social from './social/Social'
 import Button from '../../buttons/Button'
 import BackPrincipal from "./src/videos/BackCopa2.mp4"
 
-
 const Home = () => {
 
   return (
