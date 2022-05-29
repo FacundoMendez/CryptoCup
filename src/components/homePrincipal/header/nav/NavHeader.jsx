@@ -43,8 +43,6 @@ function NavHeader() {
                         </a>
                     </li>
                     
-               
-
 
                     <li className="nav-menu-item navMovile">
                         <a href="#roadmap" className="nav-menu-link nav-link">

@@ -324,6 +324,7 @@
     padding-top: 6px;
     cursor: pointer;
     font-size: 12px;
+    user-select: none;
 }
 
 .radio input {
@@ -347,11 +348,11 @@
 }
 
 .radio input:checked ~ .control_indicator {
-    background: #9c5eff;
+    background: #4409a3;
 }
 .radio:hover input:not([disabled]):checked ~ .control_indicator,
 .radio input:checked:focus ~ .control_indicator {
-    background: #9d3bfe;
+    background: #8e61f8;
 }
 .radio input:disabled ~ .control_indicator {
     background: #ffffff;

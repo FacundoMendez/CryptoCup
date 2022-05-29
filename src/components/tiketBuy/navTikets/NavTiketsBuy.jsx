@@ -31,15 +31,15 @@ function NavTikets() {
                         </a>
                     </li>
           
-                    <li className="nav-menu-item-Metamask">
-                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
-                            Tickets
-                        </a>
-                    </li>
-                    
-                    <li className="nav-menu-item-Metamask movile-Metamask">
+                    <li className="nav-menu-item-Metamask ">
                         <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link-Metamask nav-link-Metamask">
                             Whitepaper
+                        </a>
+                    </li>
+
+                    <li className="nav-menu-item-Metamask movile-Metamask">
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
+                            Tickets
                         </a>
                     </li>
 
@@ -73,9 +73,10 @@ function NavTikets() {
                         </a>
                     </li>
 
+        
                     <li className="nav-menu-item-Metamask ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link-Metamask nav-link-Metamask">
-                            Whitepaper
+                        <a href="/" className="nav-menu-link-Metamask nav-link-Metamask">
+                            Tickets
                         </a>
                     </li>
                     

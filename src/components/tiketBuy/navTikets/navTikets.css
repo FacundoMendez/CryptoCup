@@ -290,10 +290,10 @@
 }
 
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1500px){
 
   .wrapperBottonBtn-Metmask {
-    right: 2rem;
+    right: 1rem;
     top: 3.7rem;
     margin-top: -.4rem;
   }
@@ -343,7 +343,7 @@
   }
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1170px){
 
   .BorderTopBottomNav-Metmask:before {
     background: rgb(255, 225, 212);
