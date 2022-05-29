@@ -62,7 +62,7 @@ const TiketBuyPage = () => {
 
             <div className="wrapperBotton-ticketSale ">
               <div className="btn-ticketSale" >
-                <p>Selec Token</p>
+                <p className='select'>Selec Token</p>
                 
                 <div className="radioToken">
                   <label className="radio control-radio">
