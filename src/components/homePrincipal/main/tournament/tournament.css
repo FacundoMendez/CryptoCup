@@ -7,18 +7,9 @@
     flex-direction: column;
     gap: 8rem;
     padding-top: 15rem;
-    padding-bottom: 18rem;
+    padding-bottom: 19rem;
 }
 
-.tournamentContainer::after{
-    content: " ";
-    position: absolute;
-    width: 120%;
-    bottom: -15rem;
-    height: 10rem;
-    background-color: rgba(0, 0, 0, 0.774);
-    filter: blur(10px);
-}
 
 .tournamentContainer::before{
     content: " ";
