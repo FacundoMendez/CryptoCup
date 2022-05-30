@@ -1,0 +1,155 @@
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 6rem ;
+    z-index: 100;
+    background-image: url("./src/Footer3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.backFooter{
+    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    display: none;
+}
+
+.blurFooter{
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    height: .5rem;
+    background-color:#ffffff;
+    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+    border: 2px solid rgb(152, 150, 255);
+    border-radius: 100%;
+    filter: blur(2px)  ;
+}
+
+.blurFooter::before{
+    width: 100%;
+    height: 50vh;
+    content: " ";
+    top: 1rem;
+    background-color: rgba(0, 0, 0, 0.849);
+    filter: blur(15px);
+    position: absolute;
+    z-index: 10;
+}
+
+
+/* title */
+.logoFooter{
+    position: relative;
+}
+
+.logoFooter p{
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 5.3rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+}
+
+/* lsit nav */
+
+
+.listNav{
+    position: relative;
+}
+
+.listNav ul{
+    list-style: none;
+}
+
+.listNav li{
+    display: block;
+    margin:0 1rem;
+    padding: .5rem 0;
+}
+
+.listNav a{
+    color: rgb(206, 205, 205);
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* list terms */
+.terms{
+    position: relative;
+    width: 90%;
+}
+
+.terms ul{
+    list-style: none;
+}
+
+.terms li{
+    display: inline-block;
+    margin:0 1rem;
+}
+
+.listTerms{
+    text-align: center;
+}
+
+.listTerms a{
+    color: rgb(206, 205, 205);
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* legal */
+
+.termsAndCond {
+    color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2rem 0;
+    z-index: 11;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .footer{
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(5, 5, 5);
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5.5rem 0;
+    }
+
+}

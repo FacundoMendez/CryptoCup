@@ -1,15 +1,41 @@
 .containerRoadmap{
     width: 100%;
-    background: rgb(0,0,0);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10rem;
-    background-image: url("../token/src/BackToken.jpg");
+    background-image: url("./src/Roadmap5.jpg");
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
+    padding-top: 20rem;
 }
+
+.containerRoadmap::before{
+    width: 100%;
+    height: 200vh;
+    content: " ";
+    top: -4rem;
+    background-color: rgba(0, 0, 0, 0.521);
+    filter: blur(15px);
+    position: absolute;
+}
+
+.containerRoadmap::after{
+    width: 150%;
+    height: 20vh;
+    content: " ";
+    top: -7rem;
+    filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(30px) ;
+    background-color: rgba(0, 0, 0, 0.89);
+    position: absolute;
+    z-index: 10;
+    border-radius: 50px;
+    border: 2px solid black;
+}
+
+
 
 .backgroundPrincipalRoadmap{
     width: 100%;
@@ -27,6 +53,10 @@
     padding-top: 10rem;
     position: relative;
     height: 140vh;
+}
+
+.roadmapTitle{
+    z-index: 11;
 }
 
 .line-Container{

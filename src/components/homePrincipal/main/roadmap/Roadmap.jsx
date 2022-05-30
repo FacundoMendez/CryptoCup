@@ -11,7 +11,7 @@ const Roadmap = () => {
   
   return (
     <div id='roadmap' className="containerRoadmap">
-        <img className='backgroundPrincipalRoadmap' src={backPrincipalRoadmap} alt="backPrincipalRoadmap" />
+        {/* <img className='backgroundPrincipalRoadmap' src={backPrincipalRoadmap} alt="backPrincipalRoadmap" /> */}
         <div className="titleContainers roadmapTitle">
           <h2>ROADMAP</h2>
         </div>
