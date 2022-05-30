@@ -6,6 +6,8 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
 }
 
 .tournamentContainer::before{
@@ -21,7 +23,6 @@
 }
 
 .boxTournament{
-    padding-top: 15rem;
     display: flex;
     align-items: center;
     flex-direction: column;
