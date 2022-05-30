@@ -153,3 +153,24 @@
     }
 
 }
+
+
+
+@media screen and (max-width: 480px) {
+
+    .footer{
+        gap: 3rem;
+        padding-top: 4rem ;
+    }
+
+    .listTerms a{
+        font-size: 1.1rem;
+    }
+    
+    .termsAndCond {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+
+}

@@ -14,12 +14,13 @@
 
 .containerRoadmap::before{
     width: 100%;
-    height: 200vh;
+    height: 100%;
     content: " ";
     top: -4rem;
     background-color: rgba(0, 0, 0, 0.521);
     filter: blur(15px);
     position: absolute;
+    overflow: hidden;
 }
 
 .containerRoadmap::after{
@@ -34,8 +35,6 @@
     border-radius: 50px;
     border: 2px solid black;
 }
-
-
 
 .backgroundPrincipalRoadmap{
     width: 100%;
@@ -140,7 +139,7 @@
 
 .q5{
     position: relative;
-    top: 82rem;
+    top: 80%;
     left: 0;
     margin-left: -1.15rem;
     width: 3.5rem;
