@@ -61,7 +61,7 @@ const navBallModel = () => {
             scene.add(pointLight4)
 
         
-            const pointLight = new THREE.PointLight(0xffffff,12)
+            const pointLight = new THREE.PointLight(0xffffff,10)
             pointLight.position.set(4 , 0, 2)
             scene.add(pointLight)
 

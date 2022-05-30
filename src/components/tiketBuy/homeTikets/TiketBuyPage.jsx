@@ -66,24 +66,24 @@ const TiketBuyPage = () => {
                 
                 <div className="radioToken">
                   <label className="radio control-radio">
-                    <p>BUSD</p>
+                    <p>USDC</p>
                       <input type="radio" value="option1" readOnly={true} name="radio" checked={active === 1} onClick={() => setActive(1)}/>
                       <div className="control_indicator"></div>
                   </label>
                   <label className="radio control-radio">
-                      <p>ETHER</p>
+                      <p>USDT</p>
                           <input type="radio" value="option2" readOnly={true} name="radio" checked={active === 2} onClick={() => setActive(2)}  />
                       <div className="control_indicator"></div>
                   </label>
                   
                   <label className="radio control-radio">
-                      <p>DAI</p>
+                      <p>BUSD</p>
                           <input type="radio" value="option3" readOnly={true} name="radio" checked={active === 3} onClick={() => setActive(3)} />
                       <div className="control_indicator"></div>
                   </label>
                   
                   <label className="radio control-radio">
-                      <p>...</p>
+                      <p>DAI</p>
                           <input type="radio" value="option4" readOnly={true} name="radio" checked={active === 4} onClick={() => setActive(4)} />
                       <div className="control_indicator"></div>
                   </label>
