@@ -236,11 +236,12 @@
       font-size:4rem;
       line-height: 3.6rem;
       letter-spacing: 2px;
-      filter:  contrast(135%) brightness(120%) drop-shadow(0 0 20px black);
-      text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+      filter:  contrast(135%) brightness(120%)/*  drop-shadow(0 0 20px black) */;
+/*       text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
       inset 0 -2px 5px 1px #9999ff,
-      inset 0 -1px 1px 3px #9999ff;
-      background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
+      inset 0 -1px 1px 3px #9999ff; */
+      text-shadow: none;
+      background-image: linear-gradient(160deg, #9655ff, #956eff, #d5b9ff, #fffffff3, #b397ff, #956eff, #9655ff);
   }
 
   .containerPrincipalHome::before{
