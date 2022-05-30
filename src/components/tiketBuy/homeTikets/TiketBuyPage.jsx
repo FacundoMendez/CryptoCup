@@ -1,11 +1,13 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, lazy, Suspense} from 'react'
 import "./tiketBuy.css"
-import NavTikets from '../navTikets/NavTiketsBuy'
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
 import Social from "../../homePrincipal/header/home/social/Social"
 import checkToken from './checkToken'
+import Spinner from '../../spinner/Spinner'
+const NavTikets = lazy(() => import ('../navTikets/NavTiketsBuy'))
+
 
 const TiketBuyPage = () => {
 
@@ -17,7 +19,9 @@ const TiketBuyPage = () => {
 
   return (
     <div className="containerTiketsBuy">
-      <NavTikets />
+      <Suspense fallback={<Spinner/>}>
+        <NavTikets />
+      </Suspense>
 
       <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
       
