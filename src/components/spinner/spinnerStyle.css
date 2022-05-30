@@ -1,0 +1,24 @@
+.boxSpinner{
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0, 0.767);
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.spinner {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-image: url("./src/logoPng.png");
+   background-size: cover;
+   animation: spinner-a78xsi 1s infinite linear;
+ }
+ 
+ @keyframes spinner-a78xsi {
+    100% {
+       transform: rotate(1turn);
+    }
+ }
