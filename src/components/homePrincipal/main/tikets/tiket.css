@@ -5,11 +5,14 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 28rem;
+    padding-top: 28rem;
     gap: 2rem;
     padding-bottom: 15rem ;
 }
 
+.tiketsTitle{
+    margin-top: -10rem;
+}
 
 .textTikets{
     position: relative;

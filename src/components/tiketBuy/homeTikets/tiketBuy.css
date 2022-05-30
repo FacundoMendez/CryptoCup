@@ -128,6 +128,8 @@
   text-align: center;
   cursor: pointer;
   position: relative;
+  background-color: rgba(8, 8, 8, 0.822);
+
 }
 
 .btnButton-Tickets p {
@@ -295,8 +297,8 @@
     transition: all .2s  ease-in-out;
     opacity: 0;
     position: relative;
-
 }
+
 
 .radioToken-active{
     border: 2px solid white;
@@ -321,10 +323,13 @@
     position: relative;
     padding-left: 33px;
     margin-bottom: 7px;
-    padding-top: 6px;
     cursor: pointer;
     font-size: 12px;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .radio input {
@@ -334,7 +339,7 @@
 }
 .control_indicator {
     position: absolute;
-    top: 3px;
+    top: 10px;
     left: 0;
     height: 20px;
     width: 20px;
@@ -446,9 +451,15 @@
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-  }
+}
 
 
+.LogoToken{
+    position: relative;
+    width: 4rem !important;
+    top: -.4rem;
+    left: .5rem;
+}
 
 /* text */
 

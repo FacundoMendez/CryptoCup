@@ -5,6 +5,12 @@ const checkToken = () => {
     checkButton.addEventListener("click", function(){
         radioBox.classList.toggle("radioToken-active");
     })
+
+    checkButton.addEventListener("click", function(){
+        radioBox.classList.toggle("radioToken");
+    })
+
+
 }
 
 export default checkToken;

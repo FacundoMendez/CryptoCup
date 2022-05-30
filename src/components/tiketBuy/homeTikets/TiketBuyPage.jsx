@@ -6,6 +6,12 @@ import videoParticle from "./src/particle1P.mp4"
 import Social from "../../homePrincipal/header/home/social/Social"
 import checkToken from './checkToken'
 import Spinner from '../../spinner/Spinner'
+
+import busdLogo from "./src/busdLogo.png"
+import daiLogo from "./src/daiLogo.png"
+import usdcLogo from "./src/usdcLogo.png"
+import usdtLogo from "./src/usdtLogo.png"
+
 const NavTikets = lazy(() => import ('../navTikets/NavTiketsBuy'))
 
 
@@ -69,26 +75,32 @@ const TiketBuyPage = () => {
                 <p className='select'>Selec Token</p>
                 
                 <div className="radioToken">
+
                   <label className="radio control-radio">
+                    <img className='LogoToken' src={usdcLogo} alt="Logo Dai" />
                     <p>USDC</p>
                       <input type="radio" value="option1" readOnly={true} name="radio" checked={active === 1} onClick={() => setActive(1)}/>
                       <div className="control_indicator"></div>
                   </label>
+
                   <label className="radio control-radio">
+                      <img className='LogoToken' src={usdtLogo} alt="Logo Dai" />
                       <p>USDT</p>
-                          <input type="radio" value="option2" readOnly={true} name="radio" checked={active === 2} onClick={() => setActive(2)}  />
+                      <input type="radio" value="option2" readOnly={true} name="radio" checked={active === 2} onClick={() => setActive(2)}  />
                       <div className="control_indicator"></div>
                   </label>
                   
                   <label className="radio control-radio">
+                      <img className='LogoToken' src={busdLogo} alt="Logo Dai" />
                       <p>BUSD</p>
-                          <input type="radio" value="option3" readOnly={true} name="radio" checked={active === 3} onClick={() => setActive(3)} />
+                      <input type="radio" value="option3" readOnly={true} name="radio" checked={active === 3} onClick={() => setActive(3)} />
                       <div className="control_indicator"></div>
                   </label>
                   
                   <label className="radio control-radio">
+                      <img className='LogoToken' src={daiLogo} alt="Logo Dai" />
                       <p>DAI</p>
-                          <input type="radio" value="option4" readOnly={true} name="radio" checked={active === 4} onClick={() => setActive(4)} />
+                      <input type="radio" value="option4" readOnly={true} name="radio" checked={active === 4} onClick={() => setActive(4)} />
                       <div className="control_indicator"></div>
                   </label>
 
