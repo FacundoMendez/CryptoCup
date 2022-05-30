@@ -5,15 +5,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 19%;
+    margin-top: 19rem;
     gap: 2rem;
     padding-bottom: 15rem ;
 }
 
-.backTikets {
-    filter: contrast(130%) ;
-    opacity: .6;
-}
 
 .textTikets{
     position: relative;

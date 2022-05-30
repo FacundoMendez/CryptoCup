@@ -6,7 +6,9 @@
     align-items: center;
     flex-direction: column;
     gap: 10rem;
-    padding-top: 20rem;
+    background-image: url("../token/src/BackToken.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .backgroundPrincipalRoadmap{
@@ -559,7 +561,6 @@
     .backgroundPrincipalRoadmap{
         width: 160rem;
         object-fit: contain;
-        margin-top: 15rem;
     }
 }
 

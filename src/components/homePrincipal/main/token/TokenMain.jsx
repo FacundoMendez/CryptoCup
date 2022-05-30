@@ -3,7 +3,6 @@ import tokenModel from './tokenModel'
 import "./token.css"
 import tokenScroll from './tokenScroll'
 
-
 const TokenMain = () => {
 
     useEffect(()=>{
@@ -13,7 +12,6 @@ const TokenMain = () => {
 
   return (
     <div id="tokens" className="tokens">
-
         <div className="titleContainers tokenTitle">
             <h2>TOKEN</h2>
         </div>
