@@ -6,7 +6,6 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-top: 15rem;
     padding-bottom: 19rem;
 }
 
@@ -24,6 +23,7 @@
 }
 
 .boxTournament{
+    padding-top: 15rem;
     display: flex;
     align-items: center;
     flex-direction: column;
