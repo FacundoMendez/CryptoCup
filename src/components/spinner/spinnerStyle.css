@@ -1,7 +1,7 @@
 .boxSpinner{
    width: 100%;
    height: 100vh;
-   background-color: rgba(0, 0, 0, 0.767);
+   background-color: rgb(0, 0, 0);
    position: relative;
    display: flex;
    justify-content: center;
@@ -9,8 +9,8 @@
 }
 
 .spinner {
-   width: 200px;
-   height: 200px;
+   width: 150px;
+   height: 150px;
    border-radius: 50%;
    background-image: url("./src/logoPng.png");
    background-size: cover;
@@ -19,6 +19,6 @@
  
  @keyframes spinner-a78xsi {
     100% {
-       transform: rotate(1turn);
+       transform: rotate(.5turn);
     }
  }
