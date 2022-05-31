@@ -70,12 +70,13 @@
 }
 
 @media screen and (max-width:1440px){
-
     .containerTikets{
         width: 100%;
-        margin-top: 4rem;
+        padding-top: 0rem;
         gap: 2rem;
+        padding-bottom: 10rem ;
     }
+    
 
     .textTikets{
         width: 50vw;
@@ -96,6 +97,7 @@
 
 
 @media screen and (max-width:1170px){
+
 
     .textTikets{
         width: 75vw;
