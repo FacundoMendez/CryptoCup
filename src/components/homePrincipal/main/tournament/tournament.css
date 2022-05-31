@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-bottom: 28rem;
+    padding-bottom: 15rem;
 }
 
 
@@ -21,6 +21,7 @@
     filter: blur(50px);
     z-index: 10;
 }
+
 
 .boxTournament{
     padding-top: 15rem;
@@ -246,7 +247,17 @@
     width: 100%;
 }
 
-@media screen and (min-width: 2550px){
+@media screen and (min-width: 2000px){
+
+    
+    .backgroundReflejo{
+        width: 325rem;
+    } 
+
+
+    .tournamentContainer{
+        padding-bottom: 80rem;
+    }
 
     .containerTexts{
         gap: 15rem;
