@@ -29,7 +29,7 @@ const Footer = () => {
                 </ul>
                 <br />
                 <p className='termsAndCond'>
-                    ©2002-2016 Crypto Cup. All rights reserved. Crypto Cup and the Crypto Cup logo are trademarks of Crypto Cup in the U.S. and/or other countries.
+                    ©2021-2022 Crypto Cup. All rights reserved. Crypto Cup and the Crypto Cup logo are trademarks of Crypto Cup in the U.S. and/or other countries.
                     All other trademarks are the property of their respective owners. 
                 </p>
 
