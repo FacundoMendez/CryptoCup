@@ -154,6 +154,11 @@
         width: 22rem;
     }
 
+    .textoTicket-home p{
+        margin-top: 0rem;
+    }
+    
+
 }
 
 
@@ -183,11 +188,15 @@
 
 @media screen and (max-width:600px){
     .textTikets{
-        width: 85vw;
+        width: 100vw;
     }
 }
 
 @media screen and (max-width:480px){
+    .tiketsTitle h2{
+        font-size: 7rem;
+    }
+    
 
     .containerTikets{
         width: 100%;
