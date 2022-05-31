@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-bottom: 19rem;
+    padding-bottom: 28rem;
 }
 
 
@@ -58,7 +58,7 @@
 }
 
 .tournamentTitle{
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 
 .containerTexts h5{
