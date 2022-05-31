@@ -13,12 +13,12 @@
 }
 
 .containerRoadmap::before{
-    width: 100%;
+    width: 110%;
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.521);
-    filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.658);
+    filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
 }

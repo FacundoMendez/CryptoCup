@@ -298,6 +298,7 @@
     }
     .backgroundReflejo{
         width: 160rem;
+        height: 100%;
         position: absolute;
         object-fit: contain;
         filter: contrast(110%) brightness(115%);

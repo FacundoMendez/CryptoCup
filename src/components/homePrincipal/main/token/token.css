@@ -1,28 +1,37 @@
 .tokens{
     width: 100%;
     position: relative;
-    z-index: 10;
-    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 20rem;
+    padding-top: 15rem;
     background-image: url("./src/BackToken.jpg");
     background-size: cover;
+    background-position: center;
     padding-bottom: 20rem;
+    z-index: 10;
 }
 
  .tokens::before{
-    width: 100%;
+    width: 110%;
     height: 100%;
     content: " ";
     top: -4rem;
     background-color: rgba(0, 0, 0, 0.5);
     filter: blur(15px);
     position: absolute;
+    
 }
-
+.tokens::after{
+    content:"";
+    position: absolute;
+    top: -4rem;
+    height: 10rem;
+    width: 110vw;
+    background-color: rgba(0, 0, 0, 0.904);
+    filter: blur(20px);
+}
 
 .tokenWebGl {
     position: relative;

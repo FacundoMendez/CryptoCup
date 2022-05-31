@@ -1,18 +1,26 @@
 .containerTikets{
     width: 100%;
-    background: rgb(0,0,0);
+    background: rgb(0, 0, 0);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 28rem;
+    padding-top: 8rem;
     gap: 2rem;
     padding-bottom: 15rem ;
+    z-index: 500;
 }
 
-.tiketsTitle{
-    margin-top: -10rem;
+.containerTikets::after{
+    content:"";
+    position: absolute;
+    top: -4rem;
+    height: 10rem;
+    width: 110%;
+    background-color: rgba(0, 0, 0, 0.966);
+    filter: blur(20px);
 }
+
 
 .textTikets{
     position: relative;
@@ -61,6 +69,8 @@
     transition: all .6s ease-in-out;
 }
 
+
+
 @media screen and (min-width: 2550px){
     .textTikets p{
         font-size: 3.5rem;
@@ -72,11 +82,14 @@
 @media screen and (max-width:1440px){
     .containerTikets{
         width: 100%;
-        padding-top: 0rem;
+        padding-top: 8rem;
         gap: 2rem;
         padding-bottom: 10rem ;
     }
-    
+    .backgroundReflejo{
+        width: 100vw;
+        object-fit: cover;
+    }
 
     .textTikets{
         width: 50vw;
