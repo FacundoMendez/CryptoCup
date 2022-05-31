@@ -128,7 +128,6 @@
   text-align: center;
   cursor: pointer;
   position: relative;
-  background-color: rgba(8, 8, 8, 0.822);
 
 }
 
@@ -820,6 +819,11 @@
         letter-spacing: 1.5px;
         padding: 1rem;
     }
+
+    .btn-ticketSale p {
+        font-size: 2.3rem;
+        padding-top: .8rem;
+      }
 }
 
 
@@ -881,10 +885,6 @@
         padding: 1rem;
     }
 
-    .select {
-        margin-top: 1rem;
-      }
-    
     
 }
 
