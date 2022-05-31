@@ -34,9 +34,33 @@ const tiketsScroll = () =>{
             }
         })
 
+        
+        gsap.from(".titleTicket-home",{
+            opacity:0,
+            delay:.4,
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerTikets",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+        
+        gsap.from(".textoTicket-home",{
+            opacity:0,
+            delay:.5,
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerTikets",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+
+
         gsap.from(".tiketImg",{
             opacity:0,
-            delay:.3,
+            delay:.8,
             y:300,
             duration:2,
             scrollTrigger:{
@@ -45,6 +69,7 @@ const tiketsScroll = () =>{
                 end: "bottom bottom",
             }
         })
+
     }
 
 }

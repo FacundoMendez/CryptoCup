@@ -39,21 +39,6 @@ const TournamentMain = () => {
                 </div>
             </div>
 
-{/*             <div className="tiposTorneos">
-                  <div className="card tournament1 card__side--front card__side--front-1">
-                    <h3 className="title">TOURNAMENT 1</h3>
-                  </div>
-                  <div className="card tournament2 card__side--front card__side--front-2">
-                    <h3 className="title">TOURNAMENT 2</h3>
-                  </div>
-                  <div className="card tournament3 card__side--front card__side--front-3">
-                    <h3 className="title">TOURNAMENT 3</h3>
-                  </div>
-                  <div className="card tournament4 card__side--front card__side--front-4">
-                    <h3 className="title">TOURNAMENT 4</h3>
-                  </div>
-              </div> */}
-
             <div className="tiposTorneos">   
               <div className="flip">
                   <div className="front" >
