@@ -23,10 +23,10 @@ const TiketsMain = () => {
         <div className="textTikets">
 
             <div className="titleContainers tiketsTitle">
-              <h2>TICKETS</h2>
+              <h2>TOURNAMENT TICKETS</h2>
             </div>
             <p className='textDescripcionTikets'>
-              By buying a ticket you access the tournament as a player, and you will be able to use all the functions of the dapp and place bets on all the matches of the world cup!
+              By buying a ticket you grant your access to the tournament as a player, and you will be able to use all the functions of the dapp!
             </p>
 
             <div className="titleTicket-home">

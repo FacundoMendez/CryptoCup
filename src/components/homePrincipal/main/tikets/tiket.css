@@ -22,12 +22,13 @@
 }
 
 .tiketsTitle h2{
-    font-size: 11rem;
+    font-size: 7.5rem;
+    letter-spacing: 3px;
 }
 
 .textTikets{
     position: relative;
-    width: 48vw;
+    width: 46.5vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -108,11 +109,11 @@
 .textoTicket-home p{
     font-size: 1.8rem;
     color: white;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-align: center;
-    margin-top: -3rem;
+    margin-top: -2rem;
     padding: 0 10rem;
-    line-height: 2.8rem;
+    line-height: 2.7rem;
     text-transform: uppercase;
 }
 
@@ -211,7 +212,7 @@
 
 @media screen and (max-width:480px){
     .tiketsTitle h2{
-        font-size: 7rem;
+        font-size: 4.5rem;
     }
     
 
@@ -228,8 +229,8 @@
     }
     
     .textTikets p{
-        padding: 0rem 4rem;
-        padding-right: 2rem;
+        padding: 0rem 0rem;
+        padding-left: 2rem;
         letter-spacing: 1px;
         line-height: 3rem;
         font-size: 1.6rem;
