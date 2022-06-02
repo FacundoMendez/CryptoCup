@@ -7,7 +7,7 @@
     flex-direction: column;
     padding-top: 8rem;
     gap: 2rem;
-    padding-bottom: 15rem ;
+    padding-bottom: 20rem ;
     z-index: 500;
 }
 
@@ -20,6 +20,8 @@
     background-color: rgba(0, 0, 0, 0.966);
     filter: blur(20px);
 }
+
+
 
 .tiketsTitle h2{
     font-size: 7.5rem;
@@ -118,7 +120,10 @@
 }
 
 
-
+.backTikets{
+    object-fit: cover;
+    filter: contrast(120%) opacity(.8) ;
+}
 
 @media screen and (min-width: 2550px){
 

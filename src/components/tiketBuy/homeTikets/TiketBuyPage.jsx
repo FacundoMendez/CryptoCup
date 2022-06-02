@@ -8,7 +8,6 @@ import Spinner from '../../spinner/Spinner'
 import SelectTokenBasic from './tokensSelect/tokenBasic/SelectTokenBasic'
 import SelectTokenBoost from './tokensSelect/tokenBoost/SelectTokenBoost'
 
-
 const NavTikets = lazy(() => import ('../navTikets/NavTiketsBuy'))
 
 
@@ -19,6 +18,7 @@ const TiketBuyPage = () => {
       <Suspense fallback={<Spinner/>}>
         <NavTikets />
       </Suspense>
+      <Social />
 
       <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
       
@@ -63,11 +63,8 @@ const TiketBuyPage = () => {
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora praesentium eius esse dignissimos minima at architecto ipsam dicta voluptas amet, odio non cumque pariatur repellat velit repellendus. Culpa, labore.
               </p>
             </div>
-
-            
           </div>
         </div>
-      <Social />
     </div>
   )
 }
