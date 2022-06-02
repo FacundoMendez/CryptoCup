@@ -1173,14 +1173,19 @@
     .text-tickets{
         top: 18rem;
         width: 95%;
-        margin-left: -4rem;
+        margin-left: 0rem;
     }
 
     .textoTicket p{
-        font-size: 2rem;
+        font-size: 1.7rem;
         letter-spacing: 1px;
         text-align: inherit;
         margin-left: .5rem;
         padding: 0rem;
+    }
+
+    .titleTicket h2{
+        font-size: 3rem;
+        line-height: 3rem;
     }
 }
