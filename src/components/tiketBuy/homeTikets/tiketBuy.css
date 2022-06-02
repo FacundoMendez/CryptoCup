@@ -1,6 +1,5 @@
 .containerTiketsBuy{
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     background-image: url("./src/backgroundTickets.png");
     background-repeat: no-repeat;
@@ -38,7 +37,9 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 8rem;
+    margin-left: -5rem;
+
 }
 
 .boxTickets{
@@ -52,14 +53,16 @@
     align-items: center;
     flex-direction: column;
     gap: 5rem;
+    margin-top: -6rem;
 }
 
-.boxTickets img{
-    width: 25rem;
+.ImgTicket {
+    width: 23rem;
     filter: contrast(110%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26));
     animation-iteration-count: infinite;
     animation-duration: 8000ms;
     animation-name: ticketVolador;
+    position: relative;
 }
 
 .particle-Tikets{
@@ -119,6 +122,12 @@
     position: relative;
     margin-top: 0rem;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: -2rem;
+
 }
 
 .wrapperBotton-Tickets .btnButton-Tickets {
@@ -204,20 +213,20 @@
 
 .wrapperBotton-ticketSale {
     position: relative;
-    padding-top: 1rem;
     text-decoration: none;
   }
   
-  .wrapperBotton-ticketSale  .btn-ticketSale  {
-    width: 30.5rem;
-    height: 4.5rem;
-    margin: 0 3rem;
+  .wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
+    width: 4.7rem;
+    height: 4rem;
     text-align: center;
     cursor: pointer;
     position: relative;
   }
+
+
   
-  .btn-ticketSale p {
+  .btn-ticketSale p , .btn-ticketSaleBoost p {
     color: white;
     font-size: 2.4rem;
     letter-spacing: 3px;
@@ -236,7 +245,7 @@
   .BorderTopBottom-ticketSale:before {
     content: "";
     position: absolute;
-    width: 31.8rem;
+    width: 6rem;
     height: 2px;
     top: -6px;
     left: -7px;
@@ -248,7 +257,7 @@
   .BorderTopBottom-ticketSale:after {
     content: "";
     position: absolute;
-    width: 31.8rem;
+    width: 6rem;
     height: 2px;
     bottom: -6px;
     right: -7px;
@@ -263,7 +272,7 @@
     top: -4px;
     left: -7px;
     width: 2px;
-    height: 5.5rem;
+    height: 5rem;
     background: #fff;
     transition: all 0.5s ease;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
@@ -275,7 +284,7 @@
     bottom: -4px;
     right: -7px;
     width: 2px;
-    height: 5.5rem;
+    height: 5rem;
     background: #fff;
     transition: all 0.5s ease;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
@@ -284,36 +293,78 @@
   
 .radioToken{
     border: 2px solid white;
-    width: 31.9rem;
+    width: 6rem;
     margin-left: -.7rem;
     margin-top: .8rem;
     display: flex;
     justify-content:center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
     transition: all .2s  ease-in-out;
     opacity: 0;
     position: relative;
+    display: none;
 }
 
 
 .radioToken-active{
     border: 2px solid white;
-    width: 31.9rem;
-    margin-left: -.7rem;
-    margin-top: .75rem;
+    width: 22.5rem;
+    margin-left: -17.2rem;
+    margin-top: .5rem;
     display: flex;
     justify-content:center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
+    gap: 1.7rem;
+    padding: 1rem;
     transition: all .2s  ease-in-out;
     opacity: 1;
     background-color: #000000e8;
     position: relative;
+    display: inline-block;
+}
+
+
+/* boost */
+
+.radioTokenBoost{
+    border: 2px solid white;
+    width: 6rem;
+    margin-left: -.7rem;
+    margin-top: .8rem;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    transition: all .2s  ease-in-out;
+    opacity: 0;
+    position: relative;
+    display: none;
+}
+
+
+.radioTokenBoost-active{
+    border: 2px solid white;
+    width: 22.5rem;
+    margin-left: -17.2rem;
+    margin-top: .5rem;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.7rem;
+    padding: 1rem;
+    transition: all .2s  ease-in-out;
+    opacity: 1;
+    background-color: #000000e8;
+    position: relative;
+    display: inline-block;
+    z-index: 1000000;
 }
 
 .radio {
@@ -336,6 +387,7 @@
     z-index: -1;
     opacity: 0;
 }
+
 .control_indicator {
     position: absolute;
     top: 10px;
@@ -346,6 +398,7 @@
     border: 0px solid #000000;
     border-radius: undefinedpx;
 }
+
 .radio:hover input ~ .control_indicator,
 .radio input:focus ~ .control_indicator {
     background: #f5edff;
@@ -354,10 +407,12 @@
 .radio input:checked ~ .control_indicator {
     background: #4409a3;
 }
+
 .radio:hover input:not([disabled]):checked ~ .control_indicator,
 .radio input:checked:focus ~ .control_indicator {
     background: #8e61f8;
 }
+
 .radio input:disabled ~ .control_indicator {
     background: #ffffff;
     opacity: 0.6;
@@ -369,9 +424,11 @@
     position: absolute;
     display: none;
 }
+
 .radio input:checked ~ .control_indicator:after {
     display: block;
 }
+
 .control-radio .control_indicator {
     border-radius: 35%;
 }
@@ -385,9 +442,12 @@
     background: #ffffff;
     transition: background 300ms;
 }
+
 .control-radio input:disabled ~ .control_indicator:after {
     background: #7b7b7b;
-}.control-radio .control_indicator::before {
+}
+
+.control-radio .control_indicator::before {
     content: '';
     display: block;
     position: absolute;
@@ -403,6 +463,7 @@
     z-index: 99999;
     transform: scale(0);
 }
+
 @keyframes s-ripple {
     0% {
         opacity: 0;
@@ -431,17 +492,22 @@
         transform: scale(1);
     }
 }
+
 .control-radio input + .control_indicator::before {
     animation: s-ripple 300ms ease-out;
 }
+
 .control-radio input:checked + .control_indicator::before {
     animation-name: s-ripple-dup;
 }
 
 .radio p{
-    margin-top: -1rem;
-    font-size: 1.8rem;
-    letter-spacing: 1.3px;
+    padding: 0;
+    position: absolute;
+    top: .6rem;
+    left: 8rem;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
     -webkit-background-clip: text;
     background-clip: text;
     font-family: qatar;
@@ -455,9 +521,20 @@
 
 .LogoToken{
     position: relative;
+    width: 2.2rem !important;
+    top: .75rem;
+    left: -6rem;
+}
+
+.imgTokenSelect{
     width: 4rem !important;
-    top: -.4rem;
-    left: .5rem;
+    left: 10%;
+    z-index: 1;
+}
+
+.btn-ticketSale , .btn-ticketSaleBoost{
+    z-index: 10;
+    margin-top: 0rem;
 }
 
 /* text */
@@ -535,7 +612,7 @@
         gap: 5rem;
     }
     
-    .boxTickets img{
+    .ImgTicket {
         width: 35rem;
     }
     
@@ -598,9 +675,8 @@
         gap: 5rem;
     }
     
-    .boxTickets img{
-        margin-top: 30%;
-        width: 21rem;
+    .ImgTicket {
+        width: 20rem;
     }
     
     /* text */
@@ -626,6 +702,7 @@
         letter-spacing: 1.5px;
         padding: 1.5rem;
     }
+
 }
 
 
@@ -678,8 +755,9 @@
         width: 40%;
     }
     
-    .boxTickets img{
-        width: 25rem;
+    .ImgTicket {
+        padding-top: 4rem;
+        width: 20rem;
     }
 
     /* text */
@@ -736,7 +814,7 @@
         width: 40%;
     }
     
-    .boxTickets img{
+    .ImgTicket {
         width: 25rem;
     }
 
@@ -769,6 +847,7 @@
     .containerTiketsBuy{
         width: 100%;
         height: 100%;
+        overflow-y: scroll;
     }
     
     .containerTiketsBuy{
@@ -790,11 +869,14 @@
     }
     
     .boxTickets{
-        width: 40%;
+        width: 100%;
+        margin-left: 4rem;
+        margin-top: 2rem;
     }
     
-    .boxTickets img{
+    .ImgTicket {
         width: 22rem;
+        margin-top: 15rem;
     }
 
     /* text */
@@ -815,12 +897,12 @@
     }
 
     .textoTicket p{
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: 1.5px;
         padding: 1rem;
     }
 
-    .btn-ticketSale p {
+    .btn-ticketSale p , .btn-ticketSaleBoost p{
         font-size: 2.3rem;
         padding-top: .8rem;
       }
@@ -856,8 +938,9 @@
         width: 40%;
     }
     
-    .boxTickets img{
+    .ImgTicket {
         width: 19.9rem;
+        margin-top: 10rem;
     }
 
     /* text */
@@ -890,21 +973,7 @@
 
 @media screen and (max-width:380px){
 
-    .wrapperBotton-ticketSale {
-        margin-left: -1rem;
-      }
-    
 
-    .containerTiketsBuy{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
-        padding-left: -2rem;
-        
-    }
     
     /* general */
     
@@ -924,7 +993,7 @@
         width: 40%;
     }
     
-    .boxTickets img{
+    .ImgTicket {
         width: 19.9rem;
     }
 

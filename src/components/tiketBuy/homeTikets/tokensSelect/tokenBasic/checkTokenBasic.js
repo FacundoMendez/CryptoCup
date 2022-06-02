@@ -1,4 +1,4 @@
-const checkToken = () => {
+const checkTokenBasic = () => {
     const checkButton = document.querySelector(".btn-ticketSale ")
     const radioBox = document.querySelector(".radioToken")
 
@@ -13,4 +13,4 @@ const checkToken = () => {
 
 }
 
-export default checkToken;
+export default checkTokenBasic;

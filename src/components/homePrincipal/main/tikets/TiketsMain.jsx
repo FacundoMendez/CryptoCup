@@ -36,7 +36,7 @@ const TiketsMain = () => {
             </div>
             <div className="textoTicket-home">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora praesentium eius esse dignissimos minima at architecto ipsam dicta voluptas amet, odio non cumque pariatur repellat velit repellendus. Culpa, labore.
+              “Basic ladder” is the representation of a simple tournament, in which you only have to have your ticket and your knowledge to predict the largest possible number of matches and thus lead the top of the ladder.
               </p>
             </div>
 
@@ -47,7 +47,7 @@ const TiketsMain = () => {
             </div>
             <div className="textoTicket-home">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam tempora praesentium eius esse dignissimos minima at architecto ipsam dicta voluptas amet, odio non cumque pariatur repellat velit repellendus. Culpa, labore.
+                Purchase multipliers to climb faster, match bets to increase your winnings, streak rewards, and more. Talking about this is just the beginning
               </p>
             </div>
 
