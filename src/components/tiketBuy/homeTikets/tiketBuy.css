@@ -133,7 +133,7 @@
 .wrapperBotton-Tickets .btnButton-Tickets {
   width: 14.5rem;
   height: 4rem;
-  margin: 0 2rem;
+  margin: 0 1.2rem;
   text-align: center;
   cursor: pointer;
   position: relative;
@@ -214,83 +214,80 @@
 .wrapperBotton-ticketSale {
     position: relative;
     text-decoration: none;
-  }
-  
-  .wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
-    width: 4.7rem;
-    height: 4rem;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-  }
+}
 
+.wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
+  width: 4.7rem;
+  height: 4rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
 
-  
-  .btn-ticketSale p , .btn-ticketSaleBoost p {
-    color: white;
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    padding-top: .6rem;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: qatar;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-  }
-  
-  .BorderTopBottom-ticketSale:before {
-    content: "";
-    position: absolute;
-    width: 6rem;
-    height: 2px;
-    top: -6px;
-    left: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderTopBottom-ticketSale:after {
-    content: "";
-    position: absolute;
-    width: 6rem;
-    height: 2px;
-    bottom: -6px;
-    right: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRight-ticketSale:before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -7px;
-    width: 2px;
-    height: 5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRight-ticketSale:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    right: -7px;
-    width: 2px;
-    height: 5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
+.btn-ticketSale p , .btn-ticketSaleBoost p {
+  color: white;
+  font-size: 2.4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding-top: .6rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: qatar;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+}
 
-  
+.BorderTopBottom-ticketSale:before {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 2px;
+  top: -6px;
+  left: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderTopBottom-ticketSale:after {
+  content: "";
+  position: absolute;
+  width: 6rem;
+  height: 2px;
+  bottom: -6px;
+  right: -7px;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderLeftRight-ticketSale:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 2px;
+  height: 5rem;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
+.BorderLeftRight-ticketSale:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 2px;
+  height: 5rem;
+  background: #fff;
+  transition: all 0.5s ease;
+  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+}
+
 .radioToken{
     border: 2px solid white;
     width: 6rem;
@@ -308,12 +305,11 @@
     display: none;
 }
 
-
 .radioToken-active{
     border: 2px solid white;
-    width: 22.5rem;
-    margin-left: -17.2rem;
-    margin-top: .5rem;
+    width: 21.8rem;
+    margin-left: -16.4rem;
+    margin-top: .1rem;
     display: flex;
     justify-content:center;
     align-items: flex-start;
@@ -350,9 +346,9 @@
 
 .radioTokenBoost-active{
     border: 2px solid white;
-    width: 22.5rem;
-    margin-left: -17.2rem;
-    margin-top: .5rem;
+    width: 21.8rem;
+    margin-left: -16.4rem;
+    margin-top: .1rem;
     display: flex;
     justify-content:center;
     align-items: flex-start;
@@ -711,7 +707,7 @@
     .containerTiketsBuy{
         width: 100%;
         height: 100%;
-        overflow: hidden;
+        overflow-y: scroll;
         background-position: top;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -737,7 +733,7 @@
         width: 100%;
         height: 100%;
         z-index: 15;
-        padding-bottom: 15rem;
+        padding-bottom: 25rem;
     }
     
     /* tickets  */
@@ -749,7 +745,9 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 6rem;
+        margin-left: 1rem;
     }
+
     
     .boxTickets{
         width: 40%;
@@ -789,34 +787,25 @@
 @media screen and (max-width: 800px){
     .containerTiketsBuy{
         width: 100%;
-        height: 100%;
     }
     
     .containerTiketsBuy{
         width: 100%;
     }
-    
-    /* general */
-    
+
     .flexTickets{
         gap: 25rem;
         width: 100%;
         height: 100%;
-        padding-bottom: 15rem;
+        padding-bottom: 25rem;
     }
     
     /* tickets  */
     .ticketsSale{
         gap: 6rem;
+        margin-left: 1rem;
     }
     
-    .boxTickets{
-        width: 40%;
-    }
-    
-    .ImgTicket {
-        width: 25rem;
-    }
 
     /* text */
 
@@ -860,23 +849,7 @@
         gap: 25rem;
         width: 100%;
         height: 100%;
-        padding-bottom: 15rem;
-    }
-    
-    /* tickets  */
-    .ticketsSale{
-        gap: 4rem;
-    }
-    
-    .boxTickets{
-        width: 100%;
-        margin-left: 4rem;
-        margin-top: 2rem;
-    }
-    
-    .ImgTicket {
-        width: 22rem;
-        margin-top: 15rem;
+        padding-bottom: 25rem;
     }
 
     /* text */
@@ -926,12 +899,14 @@
         gap: 25rem;
         width: 100%;
         height: 100%;
-        padding-bottom: 15rem;
+        padding-bottom: 35rem;
     }
     
     /* tickets  */
     .ticketsSale{
         gap: 3.5rem;
+        margin-top: -7rem;
+
     }
     
     .boxTickets{
@@ -968,13 +943,171 @@
         padding: 1rem;
     }
 
+
+    /* button img token  */
+    .radioToken{
+        width: 6rem;
+    }
     
+    
+    .radioToken-active{
+        width: 17.3rem;
+        margin-left: -11.9rem;
+    }
+
+    .radioTokenBoost{
+        width: 6rem;
+    }
+    
+    
+    .radioTokenBoost-active{
+        width: 17.3rem;
+        margin-left: -11.9rem;
+    }
+
+    .wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
+        width: 4.7rem;
+        height: 4rem;
+    }
+    .BorderTopBottom-ticketSale:before {
+      width: 6rem;
+      height: 2px;
+      top: -6px;
+      left: -7px;
+    }
+    
+    .BorderTopBottom-ticketSale:after {
+      width: 6rem;
+      height: 2px;
+      bottom: -6px;
+      right: -7px;
+    }
+    
+    .BorderLeftRight-ticketSale:before {
+      top: -4px;
+      left: -7px;
+      width: 2px;
+      height: 5rem;
+    }
+    
+    .BorderLeftRight-ticketSale:after {
+      bottom: -4px;
+      right: -7px;
+      width: 2px;
+      height: 5rem;
+    }
+
+
+    /* button buy */
+    
+    .wrapperBotton-Tickets {
+        margin-top: 0rem;
+        margin-left: -2rem;
+        filter:drop-shadow(0 0 20px black);
+    }
+
+    .wrapperBotton-Tickets .btnButton-Tickets {
+        width: 10rem;
+        height: 4rem;
+        margin: 0 1.2rem;
+    }
+
+    .btnButton-Tickets p {
+        font-size: 3rem;
+        letter-spacing: 3.8px;
+        padding-top: .15rem;
+    }
+    
+    .BorderTopBottom-Tickets:before {
+        width: 11.4rem;
+        height: 2px;
+        top: -6px;
+        left: -7px;
+    }
+
+    .BorderTopBottom-Tickets:after {
+        width: 11.4rem;
+        height: 2px;
+        bottom: -6px;
+        right: -7px;
+    }
+
+    .BorderLeftRight-Tickets:before {
+        top: -4px;
+        left: -7px;
+        width: 2px;
+        height: 4.8rem;
+    }
+
+    .BorderLeftRight-Tickets:after {
+        bottom: -4px;
+        right: -7px;
+        width: 2px;
+        height: 5rem;
+    }
+
+    .btnButton-Tickets:hover {
+        transform: scale(1);
+        filter: drop-shadow( 0 0 1px white);
+        transition: all .5s ease-in-out;
+    }
+    
+    /* button tokens active */
+
+        
+    .radio {
+        padding-left: 33px;
+        margin-bottom: 7px;
+        font-size: 12px;
+        gap: 2rem;
+    }
+
+    .radio input {
+        z-index: -1;
+        opacity: 0;
+    }
+
+    .control_indicator {
+        top: 10px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+    }
+
+    .radio p{
+        padding: 0;
+        top: .6rem;
+        left: 8rem;
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+
+    .LogoToken{
+        position: relative;
+        width: 2.2rem !important;
+        top: 0rem;
+        left: -2.5rem;
+    }
+
+    .radio {
+        padding: 1rem 0 ;
+    }
+
+    .imgTokenSelect{
+        width: 4rem !important;
+        left: 10%;
+        z-index: 1;
+    }
+
+    .btn-ticketSale , .btn-ticketSaleBoost{
+        z-index: 10;
+        margin-top: 0rem;
+    }
+
 }
 
 @media screen and (max-width:380px){
-
-
-    
     /* general */
     
     .flexTickets{
@@ -994,9 +1127,10 @@
     }
     
     .ImgTicket {
-        width: 19.9rem;
+        width: 18.9rem;
     }
 
+    
     /* text */
     .ticketsSale{
         flex-direction: column;
@@ -1024,6 +1158,10 @@
         text-align: inherit;
         margin-left: .5rem;
         padding: 1rem;
+    }
+
+    .radio {
+        padding: .3rem 0 ;
     }
 }
 

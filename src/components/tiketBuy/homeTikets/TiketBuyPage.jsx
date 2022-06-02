@@ -40,7 +40,7 @@ const TiketBuyPage = () => {
               </div>
 
               <div className="boxTickets">
-                  <img className='ImgTicket' src={tiketBoost} alt="Ticket Ladder" />
+                  <img className='ImgTicket ImgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets">
