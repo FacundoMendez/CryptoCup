@@ -151,12 +151,18 @@
 }
 
 @media screen and (max-width:1440px){
+
+    .tiketsTitle h2{
+        font-size: 5rem;
+    }
+
     .containerTikets{
         width: 100%;
         padding-top: 8rem;
         gap: 2rem;
         padding-bottom: 10rem ;
     }
+
     .backgroundReflejo{
         width: 100vw;
         object-fit: cover;

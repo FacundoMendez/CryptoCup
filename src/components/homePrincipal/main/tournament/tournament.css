@@ -281,7 +281,7 @@
 
     .titleContainers h2{
         padding: 2rem;
-        font-size: 6rem;
+        font-size: 4rem;
         letter-spacing: 1px;
     }
     
@@ -289,7 +289,7 @@
         padding: 0rem 4rem;
         letter-spacing: 1px;
         line-height: 3rem;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
     .subTitlePrize{
@@ -298,7 +298,15 @@
     
     .subTitleNft{
         width: 65%;
+        padding: 1rem 0;
     }
+
+    .subTitleNft h5{
+        padding: 4rem 0;
+        font-size: 4rem;
+
+    }
+
     .backgroundReflejo{
         width: 160rem;
         height: 100%;
