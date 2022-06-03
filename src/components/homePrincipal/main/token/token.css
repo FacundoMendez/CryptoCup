@@ -119,10 +119,28 @@
 
 @media screen and (max-width:480px){
 
+    
+    .tokens::before{
+        display: none;
+    }
+
+    .tokens::after{
+       display: none;
+    }
+
+    .tokenWebGl {
+        display: none;
+    }
+
+    .tokenTitle h2{
+        font-size: 4rem;
+    }
+
     .tokens{
         width: 100%;
         padding-top: 6rem;
-        padding-bottom: 0;
+        padding-bottom: 15rem;
+    
     }
     
     .tokenWebGl {

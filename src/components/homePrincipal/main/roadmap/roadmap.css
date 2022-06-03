@@ -898,6 +898,10 @@
 
 @media screen and (max-width:590px) {
 
+    .roadmapTitle h2{
+        font-size: 4rem;
+    }
+
     .containerRoadmap{
         padding-top: 0rem;
     }
@@ -922,6 +926,9 @@
         align-items: flex-start;
         flex-direction: column;
         margin-left: -5rem;
+        width: 70%;
+        padding-top: 0rem;
+        height: 160vh;
     }
     
 
@@ -938,18 +945,11 @@
     }
     
 
-    .boxRoadmpa{
-        width: 70%;
-        padding-top: 5rem;
-        height: 160vh;
-    }
-
     .line-Container{
         position:relative;
         width: 1rem;
         height: 130vh;
     }
-    
     
     .line-q1{
         width: 4rem;
