@@ -29,13 +29,13 @@ const TournamentMain = () => {
 
                 </p>
               </div>
-
+{/* 
                 <div className="subTitleNft">
                     <h5>¿How to join the tournament?</h5>
                     <p className='textSubtitle'>
                       o be available to participate you’ll need to decide which ladder you want to compete in and then purchase your special ticket entrance. You can choose between a “Basic Ladder Ticket” or “Premium Ladder Ticket”!
                     </p>
-                </div>
+                </div> */}
             </div>
 
             <div className="tiposTorneos">   
