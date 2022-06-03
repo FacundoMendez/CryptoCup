@@ -73,9 +73,13 @@ const tokenModel = () =>{
             direccionalLight5.position.set(0,1,3)
             scene.add(direccionalLight5)
 
+            const AmbientLight2 = new THREE.AmbientLight(0xffc1a1, 1.2)
+            AmbientLight2.position.set(0,0,0)
+            scene.add(AmbientLight2)
+
             /* bottom */
 
-        scene.add(new THREE.AmbientLight(0xFFDAAA,1.5))
+        scene.add(new THREE.AmbientLight(0xFFDA7f,1.5))
 
 
 
@@ -86,7 +90,7 @@ const tokenModel = () =>{
             roughness:0.3,
         })
         
-        var geometry = new THREE.CylinderBufferGeometry(3,3,0.4,100);
+        var geometry = new THREE.CylinderBufferGeometry(3,3,0.3,100);
         const mesh = new THREE.Mesh(geometry,material)
         mesh.rotation.x = 1.6
         mesh.rotation.y = 1.58
@@ -104,8 +108,8 @@ const tokenModel = () =>{
 
             controls.update() 
 
-            mesh.rotation.y = 0.0015 
-            mesh.rotation.z -= 0.012
+            mesh.rotation.y = 0.0001 
+            mesh.rotation.z -= 0.01
 
             renderer.render(scene,camera)
             window.requestAnimationFrame(animate)
