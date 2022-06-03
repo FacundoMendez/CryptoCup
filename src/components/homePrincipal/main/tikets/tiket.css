@@ -24,8 +24,26 @@
 
 
 .tiketsTitle h2{
-    font-size: 7.5rem;
+    font-size: 5rem;
     letter-spacing: 3px;
+}
+
+.tiketsTitle h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    letter-spacing: 1px;
+    padding-top: 6rem;
+    filter: drop-shadow(0 0 40px black);
 }
 
 .textTikets{

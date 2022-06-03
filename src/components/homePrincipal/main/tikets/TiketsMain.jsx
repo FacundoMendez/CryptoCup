@@ -23,10 +23,12 @@ const TiketsMain = () => {
         <div className="textTikets">
 
             <div className="titleContainers tiketsTitle">
-              <h2>TOURNAMENT TICKETS</h2>
+              <h2>GRIND YOUR WAY TO THE TOP OF THE LADDER</h2>
+              <h3>Wanna compete? Get your ticket.</h3>
+              
             </div>
             <p className='textDescripcionTikets'>
-              By buying a ticket you grant your access to the tournament as a player, and you will be able to use all the functions of the dapp!
+            To be available to participate, you’ll need one of our NFT tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access to the tournament as a player, so you will be able to use all the functions of the dapp!
             </p>
 
             <div className="titleTicket-home">
@@ -36,7 +38,7 @@ const TiketsMain = () => {
             </div>
             <div className="textoTicket-home">
               <p>
-              “Basic ladder” is the representation of a simple tournament, in which you only have to have your ticket and your knowledge to predict the largest possible number of matches and thus lead the top of the ladder.
+              This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to predict the largest possible number of matches to earn points on this ladder. Each match will vary in the points given to the participants, based on the real probabilities on winning/losing of each different team and its adversary.
               </p>
             </div>
 
@@ -47,7 +49,15 @@ const TiketsMain = () => {
             </div>
             <div className="textoTicket-home">
               <p>
-                Purchase multipliers to climb faster, match bets to increase your winnings, streak rewards, and more. Talking about this is just the beginning
+                It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:
+                <br /><br />
+                Token utility <br />
+                Access to Multipliers<br />
+                Bet system unlocked<br />
+                Prediction Streak Rewards<br />
+                <br />
+                Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
+
               </p>
             </div>
 
