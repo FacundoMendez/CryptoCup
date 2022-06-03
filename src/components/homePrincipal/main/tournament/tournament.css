@@ -93,25 +93,25 @@
 }
 
 .tournament1{
-    background-image: url("./src/vs.jpg");
+/*  background-image: url("./src/vs.jpg"); */
     background-size: cover;
     background-position: top;
 }
 
 .tournament2{
-    background-image: url("./src/vs.jpg");
+/*  background-image: url("./src/vs.jpg"); */
     background-size: cover;
     background-position: top;
 }
 
 .tournament3{
-    background-image: url("./src/vs.jpg");
+/*  background-image: url("./src/vs.jpg"); */
     background-size: cover;
     background-position: top;
 }
 
 .tournament4{
-    background-image: url("./src/vs.jpg");
+/*  background-image: url("./src/vs.jpg"); */
     background-size: cover;
     background-position: top;
 }
@@ -144,7 +144,6 @@
     position: relative;
     margin-top: 5rem;
     perspective: 150em;
-    width: 100vw;
     margin-bottom: 10rem;
 }
 
@@ -195,7 +194,10 @@
     height: 380px;
     background: #000000;
     border-radius: 10px;
-    border: 8px groove rgba(155, 4, 255, 0.226);
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    border: 1px inset rgba(255, 232, 182, 0.719);
 }
 
 .text-shadow{
@@ -465,12 +467,28 @@
 @media screen and (max-width: 480px){
 
     .tournamentContainer{
+        padding-bottom: 0rem;
+    }
+    
+    
+    .tournamentContainer::before{
+        display: none;
+    }
+
+    .flip {
+        width: 300px;
+    }
+    .flip > .front, .flip > .back {
+        height: 380px;
+    }
+
+    .tournamentContainer{
         width: 100%;
         gap: 8rem;
     }
     
     .titleContainers h2{
-        font-size: 4rem;
+        font-size: 3rem;
         padding: 1rem;
     }
 
@@ -487,16 +505,16 @@
     .containerTexts h5{
         text-align: center;
         padding: 3rem 2rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: 1px;
         margin-top: -2rem;
     }
     
     .containerTexts p {
-        padding: 0rem 4rem;
-        padding-right: 2rem;
+        padding: 0rem 1rem;
+        margin-left: 2rem;
         letter-spacing: 1px;
-        line-height: 3rem;
+        line-height: 3.1rem;
         font-size: 1.6rem;
         text-align: inherit;
     }
@@ -509,95 +527,34 @@
         margin-top: 5rem;
     }
 
-    .card {
-        display: flex;
-        height: 350px;
-        width: 300px;
-        border-radius: 10px;
-        left: 0px;
-    }
-    
-    .card:not(:first-child) {
-        margin-left: 0px;
-    }
-
-    .card:hover {
-        transform: translateY(-3px);
-        transition: 0.4s ease-out;
-    }
-      
-    .card:hover ~ .card {
-      left: 0px;
-      transition: 0.4s ease-out;
-    }
-    
     .title {
         font-weight: 300;
         font-size: 1.8rem;
         top: 25px;
         width: 100%;
     }
-    
-    .tournament1:hover ~ .card {
-        opacity: 1;
-    }
-    
-    .tournament2:hover ~ .card {
-        opacity: 1;
-    }
-    
-    .tournament3:hover ~ .card {
-        opacity: 1;
-    }
-    
-    .tournament4:hover ~ .card {
-        opacity:1;
-    }
-    
-    .tournament1:hover ~ .card__side--front {
-        transform: rotateY(0);
-    }
 
-    .tournament2:hover ~ .card__side--front {
-        transform: rotateY(0);
-    }
-
-    .tournament3:hover ~ .card__side--front {
-        transform: rotateY(0);
-    }
-
-    .tournament4:hover ~ .card__side--front {
-        transform: rotateY(0);
-    }
-
-    .tournament1:hover ~ .card {
-        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
-    
-    .tournament2:hover ~ .card {
-        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
-    
-    .tournament3:hover ~ .card {
-        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
-    
-    .tournament4:hover ~ .card {
-        box-shadow: rgb(125, 144, 160) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-    }
 }
 
 @media screen and (max-width: 395px){
 
+    .flip {
+        width: 280px;
+    }
+    .flip > .front, .flip > .back {
+        height: 380px;
+    }
+
+
     .titleContainers h2{
-        font-size: 4rem;
+        font-size: 3.5rem;
         padding: 0;
     }
     
     .containerTexts h5{
         text-align: center;
         padding: 3rem 2rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: 1px;
         margin-top: -2rem;
     }
@@ -611,13 +568,6 @@
         text-align: inherit;
     }
 
-    .card {
-        display: flex;
-        height: 330px;
-        width: 280px;
-        border-radius: 10px;
-        left: 0px;
-    }
 
 
 }

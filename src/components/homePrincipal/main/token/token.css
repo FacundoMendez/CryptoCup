@@ -53,7 +53,7 @@
 
 .textToken{
     position: relative;
-    width: 45%;
+    width: 49%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -113,7 +113,7 @@
 @media screen and (max-width: 800px){
 
     .textToken{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -138,8 +138,8 @@
     }
     
     .textToken p{
-        padding: 0rem 1rem;
-        margin-left: 4rem;
+        padding: 0rem 2rem;
+        margin-left: 1rem;
         letter-spacing: 1px;
         line-height: 3rem;
         font-size: 1.6rem;

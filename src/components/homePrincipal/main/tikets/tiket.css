@@ -222,17 +222,25 @@
 }
 
 @media screen and (max-width:480px){
-    .tiketsTitle h2{
-        font-size: 4.5rem;
-    }
-    
 
     .containerTikets{
         width: 100%;
         z-index: 10;
         margin-top: 5rem;
         gap: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 20rem ;
     }
+    
+    .containerTikets::after{
+        display: none;
+    }
+    
+
+    .tiketsTitle h2{
+        font-size: 4.5rem;
+    }
+
     
     .textTikets{
         width: 100%;
@@ -240,13 +248,13 @@
     }
     
     .textTikets p{
-        padding: 0rem 0rem;
+        padding: 0rem 2rem;
         padding-left: 2rem;
         letter-spacing: 1px;
         line-height: 3rem;
         font-size: 1.6rem;
         text-align: inherit;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .tiketsPreview{
@@ -260,6 +268,23 @@
 
     .tiketImg{
         gap: 5rem;
+    }
+}
+
+
+@media screen and (max-width:350px){
+    .tiketsTitle h2{
+        font-size: 3.5rem;
+    }
+    
+    .textTikets p{
+        padding: 0rem 1rem;
+        padding-left: 1rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.6rem;
+        text-align: inherit;
+        margin-left: 1rem;
     }
 }
 

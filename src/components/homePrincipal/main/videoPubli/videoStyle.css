@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-top: 15rem;
+    padding-top: 22rem;
     padding-bottom: 25rem;
     background-image: url("../token/src/BackToken.jpg");
     background-attachment: fixed;
@@ -18,7 +18,7 @@
     width: 110%;
     height: 100%;
     content: " ";
-    top: 1rem;
+    top: -1rem;
     background-color: rgba(0, 0, 0, 0.815);
     filter: blur(15px);
     position: absolute;
@@ -28,10 +28,10 @@
     content: " ";
     position: absolute;
     top: -7rem;
-    height: 15rem;
+    height: 25rem;
     width: 110vw;
-    background-color: rgba(0, 0, 0, 0.966);
-    filter: blur(30px);
+    background-color: rgba(0, 0, 0, 0.877);
+    filter: blur(50px);
     z-index: 1000;
 }
 
@@ -106,6 +106,22 @@
     .videoPubli-container{
         gap: 4rem;
     }
+
+    
+    .videoPubli-container{
+        width: 100%;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+
+    
+    .videoPubli-container::before{
+        display: none;
+    }
+
+    .videoPubli-container::after{
+        display: none;
+    }
 }
 
 @media screen and (max-width:430px) {
@@ -121,6 +137,8 @@
         padding: 2rem;
         font-size: 3rem;
     }
+
+
 }
 
 @media screen and (max-width:340px) {
@@ -133,4 +151,7 @@
         padding: 2rem;
         font-size: 2.5rem;
     }
+
+    
+
 }

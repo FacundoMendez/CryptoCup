@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import imagenToken from "./src/token3.png"
+import imagenToken from "./src/token4.png"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 
