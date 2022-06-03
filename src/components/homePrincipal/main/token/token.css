@@ -13,7 +13,7 @@
     z-index: 10;
 }
 
- .tokens::before{
+.tokens::before{
     width: 110%;
     height: 100%;
     content: " ";
@@ -73,13 +73,6 @@
     text-transform: uppercase;
 }
 
-/* fondo */
-
-/* .backToken{
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-} */
 
 @media screen and (min-width: 2550px){
 
@@ -100,7 +93,6 @@
         background-size: cover;
     }
     
-
 }
 
 @media screen and (max-width: 1170px){
@@ -118,7 +110,6 @@
 }
 
 @media screen and (max-width:480px){
-
     
     .tokens::before{
         display: none;
@@ -140,7 +131,6 @@
         width: 100%;
         padding-top: 6rem;
         padding-bottom: 15rem;
-    
     }
     
     .tokenWebGl {
