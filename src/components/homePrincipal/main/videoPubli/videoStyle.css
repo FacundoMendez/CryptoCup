@@ -90,10 +90,15 @@
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:750px) {
     
     .videoPubli-video{
         width: 80%;
+    }
+    .videoPubli-container{
+        gap: 8rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 }
 

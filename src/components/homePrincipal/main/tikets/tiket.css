@@ -244,7 +244,7 @@
 
 @media screen and (min-width: 2550px){
 
-    .titleTicket-home h2{
+    .titleTicket-home-basic h2, .titleTicket-home-boost h2{
         font-size: 6rem;
         line-height:4rem;
         letter-spacing: 2.5px;
@@ -269,9 +269,9 @@
 
 @media screen and (max-width:1440px){
 
-    .boxTickets-Home{
+    .boxTickets-Home-basic, .boxTickets-Home-boost {
         gap: 5rem;
-        width: 90%;
+        width: 100%;
         margin-top: 10rem;
         margin-left: 0rem;
     }
@@ -317,32 +317,63 @@
 
 @media screen and (max-width:1170px){
 
-
     .textTikets{
         width: 75vw;
         gap:3rem;
     }
-    
-    .textTikets p{
-        padding: 0rem 2rem;
-        font-size: 1.8rem;
-        text-align: center;
-    }
 
-    .tiketsPreview{
-        width: 22rem;
-    }
-
-    .tiketImg{
-        gap: 2rem;
-    }
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:750px){
     .textTikets{
         width: 100vw;
     }
+
+    .boxTickets-Home-basic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10rem;
+        position: relative;
+        width: 180%;
+        margin-top: 10rem;
+        padding-bottom: 0rem;
+    }
+
+    .boxTickets-Home-boost{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 10rem;
+        position: relative;
+        width: 180%;
+        margin-top: 10rem;
+        padding-bottom: 0rem;
+    }
+
+    .containerTikets{
+        padding-bottom: 5rem ;
+    }
+    
+ 
+/*     .titleTicket-home-basic h2{
+        font-size: 3.5rem;
+        line-height:4rem;
+        letter-spacing: 2.5px;
+    }
+
+
+    .titleTicket-home-boost h2{
+        font-size: 3.5rem;
+        line-height:4rem;
+        letter-spacing: 2.5px;
+    } */
+
 }
 
 @media screen and (max-width:480px){
@@ -362,7 +393,8 @@
     
 
     .tiketsTitle h2{
-        font-size: 4.5rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
     }
 
     
