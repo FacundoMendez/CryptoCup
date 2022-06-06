@@ -17,16 +17,11 @@ const TokenMain = () => {
         </div>
 
         <div className="containerToken">
-    
             <div className="textToken">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque neque minima ab ipsa animi impedit quo earum, et placeat fugit. Modi quidem ut nemo a impedit praesentium distinctio illum.</p>
             </div>
-
             <canvas className='tokenWebGl'></canvas>
-
         </div>
-
-
     </div>
   )
 }

@@ -1,3 +1,4 @@
+
 function navFuncionalTickets(){
     const navToggle = document.querySelector(".nav-toggle-Metamask");
     const navMenu = document.querySelector(".nav-menu-Metamask");

@@ -29,7 +29,6 @@
     filter: drop-shadow(0 0 40px black);
 }
 
-
 .tournamentTitle h3{
     font-weight: bold;
     text-transform: uppercase;
@@ -49,7 +48,7 @@
 
 .subTitlePrize{
     position: relative;
-    width: 44%;
+    width: 47%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -347,9 +346,7 @@
         font-size: 5.5rem;
     }
     
-    .containerTexts p {
-        font-size: 1.7rem;
-    }
+
 
     .subTitlePrize{
         width: 70%;
@@ -409,9 +406,6 @@
         font-size: 4.5rem;
     }
     
-    .containerTexts p {
-        font-size: 1.6rem;
-    }
 
     .subTitlePrize{
         width: 90%;
@@ -430,11 +424,6 @@
         font-size: 4rem;
     }
     
-    .containerTexts p {
-        font-size: 1.5rem;
-        text-align: initial;
-    }
-
     .subTitlePrize{
         width: 94%;
     }
@@ -470,7 +459,7 @@
     }
     
     .titleContainers h2{
-        font-size: 3rem;
+        font-size: 5rem;
         padding: 1rem;
     }
 
@@ -495,10 +484,8 @@
     .containerTexts p {
         padding: 0rem 1rem;
         margin-left: 1rem;
-        letter-spacing: 1px;
-        line-height: 3.1rem;
-        font-size: 1.5rem;
         text-align: inherit;
+        font-size: 1.8rem;
     }
     
     /* ------TOURNAMENTS------ */
@@ -544,10 +531,7 @@
     .containerTexts p {
         padding: 0rem 2rem;
         padding-right: 2rem;
-        letter-spacing: 1px;
-        line-height: 3rem;
-        font-size: 1.4rem;
-        text-align: inherit;
+        font-size: 1.7rem;
     }
 
 

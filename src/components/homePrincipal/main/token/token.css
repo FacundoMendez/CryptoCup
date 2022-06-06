@@ -142,9 +142,6 @@
     .textToken p{
         padding: 0rem 2rem;
         margin-left: 1rem;
-        letter-spacing: 1px;
-        line-height: 3rem;
-        font-size: 1.6rem;
         text-align: inherit;
     }
 }

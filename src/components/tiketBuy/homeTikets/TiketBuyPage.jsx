@@ -8,7 +8,7 @@ import Spinner from '../../spinner/Spinner'
 import SelectTokenBasic from './tokensSelect/tokenBasic/SelectTokenBasic'
 import SelectTokenBoost from './tokensSelect/tokenBoost/SelectTokenBoost'
 
-const NavTikets = lazy(() => import ('../navTikets/NavTiketsBuy'))
+const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 
 
 const TiketBuyPage = () => {
@@ -16,7 +16,7 @@ const TiketBuyPage = () => {
   return (
     <div className="containerTiketsBuy">
       <Suspense fallback={<Spinner/>}>
-        <NavTikets />
+        <NavTickets />
       </Suspense>
       <Social />
 

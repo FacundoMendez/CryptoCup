@@ -127,7 +127,6 @@
     align-items: center;
     flex-direction: row;
     margin-left: -2rem;
-
 }
 
 .wrapperBotton-Tickets .btnButton-Tickets {
@@ -141,7 +140,9 @@
 }
 
 .btnButton-Tickets p {
+  font-family: 'gilron';
   font-size: 3rem;
+  margin-top: .5rem;
   letter-spacing: 3.8px;
   padding-top: .15rem;
   text-transform: uppercase;
