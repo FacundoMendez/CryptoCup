@@ -33,16 +33,6 @@ const tournamentScroll = () =>{
             }
         })
     
-        gsap.from(".subTitleNft",{
-            opacity:0,
-            delay:.9,
-            duration:2,
-            scrollTrigger:{
-                trigger: ".boxTournament",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
     
         gsap.from(".tiposTorneos",{
             opacity:0,

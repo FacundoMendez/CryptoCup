@@ -27,7 +27,7 @@
 .videoPubli-container::after{
     content: " ";
     position: absolute;
-    top: -12rem;
+    top: -5rem;
     height: 20rem;
     width: 110vw;
     background-color: rgba(0, 0, 0, 0.932);
@@ -132,8 +132,13 @@
 @media screen and (max-width:430px) {
     
     .videoPubli-video{
-        width: 90%;
+        width: 95%;
+        border: none;
     }
+    .videoPubli-container{
+        padding-bottom: 10rem;
+    }
+    
 
     .videoPubli-texts h5{
         font-weight: bold;
