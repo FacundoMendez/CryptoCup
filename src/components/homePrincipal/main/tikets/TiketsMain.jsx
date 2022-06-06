@@ -34,7 +34,6 @@ const TiketsMain = () => {
             <h2>
               BASIC LADDER 
             </h2>
-            
             <div className="textoTicket-home">
               <p>
                 This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to predict the largest possible number of matches to earn points on this ladder. <br /> <br /> Each match will vary in the points given to the participants, based on the real probabilities on winning/losing of each different team and its adversary.
@@ -56,7 +55,6 @@ const TiketsMain = () => {
             <h2>
               BOOST LADDER 
             </h2>
-            
             <div className="textoTicket-home">
               <p>
               It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:

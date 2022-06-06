@@ -441,7 +441,6 @@
         padding-bottom: 0rem;
     }
     
-    
     .tournamentContainer::before{
         display: none;
     }
@@ -459,7 +458,7 @@
     }
     
     .titleContainers h2{
-        font-size: 5rem;
+        font-size: 4rem;
         padding: 1rem;
     }
 
@@ -501,6 +500,11 @@
         font-size: 1.8rem;
         top: 25px;
         width: 100%;
+    }
+
+    .textoTicket-home ,.textoTicket-home{
+        width: 110%;
+        margin-left: -1.8rem;
     }
 
 }

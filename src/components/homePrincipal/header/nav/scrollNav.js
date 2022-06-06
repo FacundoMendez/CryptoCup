@@ -7,7 +7,6 @@ const navScroll= () =>{
         contenido2 = contenido2.top;
         if(windowHeight >= (contenido2 /1.5)  ){
             $(".nav").css("backgroundColor", "black");
-            $('.nav').css("background-image", "url(./src/navBackDorado.png)"); 
         }else{
             $(".nav").css("backgroundColor", " transparent");
         }
