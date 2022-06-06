@@ -27,10 +27,10 @@
 .videoPubli-container::after{
     content: " ";
     position: absolute;
-    top: -5rem;
-    height: 15rem;
+    top: -12rem;
+    height: 20rem;
     width: 110vw;
-    background-color: rgba(0, 0, 0, 0.877);
+    background-color: rgba(0, 0, 0, 0.932);
     filter: blur(50px);
     z-index: 1000;
 }

@@ -13,7 +13,7 @@ const TokenMain = () => {
   return (
     <div id="tokens" className="tokens">
         <div className="titleContainers tokenTitle">
-            <h2>TOKEN</h2>
+            <h2>TOKENOMICS</h2>
         </div>
 
         <div className="containerToken">

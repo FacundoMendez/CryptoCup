@@ -67,6 +67,11 @@
     text-align: center;
 }
 
+.tokenTitle h2{
+    font-size: 7rem;
+    letter-spacing: 4px;
+}
+
 
 @media screen and (min-width: 2550px){
 
