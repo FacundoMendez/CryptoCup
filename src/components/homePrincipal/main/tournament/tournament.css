@@ -62,7 +62,7 @@
 
 .subTitlePrize{
     position: relative;
-    width: 50%;
+    width: 44%;
     left: 50%;
     transform: translate(-50%, 0%);
 }
@@ -101,7 +101,6 @@
     letter-spacing: 1px;
     line-height: 3.3rem;
     text-align: inherit;
-    font-weight: bold;
     text-transform: uppercase;
     filter: drop-shadow(0 0 40px black);
 }
