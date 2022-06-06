@@ -27,8 +27,8 @@
 .videoPubli-container::after{
     content: " ";
     position: absolute;
-    top: -7rem;
-    height: 25rem;
+    top: -5rem;
+    height: 15rem;
     width: 110vw;
     background-color: rgba(0, 0, 0, 0.877);
     filter: blur(50px);

@@ -63,14 +63,8 @@
 
 .textToken p{
     color: white;
-    text-align: center;
-    font-size: 2rem;
     padding:0rem 6rem;
-    letter-spacing: 1px;
-    line-height: 3rem;
     text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 

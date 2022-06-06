@@ -12,6 +12,14 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
 }
 
+p{
+  font-family:openSans;
+  font-weight: 500;
+  font-size: 1.95rem;
+  line-height: 3rem;
+  letter-spacing: .3px;
+  filter: drop-shadow(0 0 40px black);
+}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -49,6 +57,14 @@
 @font-face {
   font-family: 'qatar';
   src: url('./components/fonts/Qatar2022Arabic-Bold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'openSans';
+  src: url('./components/fonts/OpenSans-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }

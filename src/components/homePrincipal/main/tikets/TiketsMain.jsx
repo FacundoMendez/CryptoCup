@@ -29,9 +29,8 @@ const TiketsMain = () => {
               To be available to participate, you’ll need one of our NFT tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access to the tournament as a player, so you will be able to use all the functions of the dapp!
             </p>
         </div>
-
-        <div className="boxTickets-Home">
-          <div className="titleTicket-home">
+        <div className="boxTickets-Home-basic">
+          <div className="titleTicket-home-basic">
             <h2>
               BASIC LADDER 
             </h2>
@@ -49,9 +48,11 @@ const TiketsMain = () => {
 
 
 
-        <div className="boxTickets-Home">
-  
-          <div className="titleTicket-home">
+        <div className="boxTickets-Home-boost">
+          <div className="tiketImg-boost" >
+              <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
+          </div>
+          <div className="titleTicket-home-boost">
             <h2>
               BOOST LADDER 
             </h2>
@@ -66,13 +67,10 @@ const TiketsMain = () => {
                 Prediction Streak Rewards<br />
                 <br />
                 Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
-
               </p>
             </div>
           </div>
-          <div className="tiketImg-basic" >
-              <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
-            </div>
+    
         </div>
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
