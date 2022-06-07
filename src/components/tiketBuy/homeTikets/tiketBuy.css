@@ -979,7 +979,9 @@
         gap: 25rem;
         width: 100%;
         height: 100%;
+        padding: 0;
         padding-bottom: 35rem;
+
     }
     
     /* tickets  */
@@ -1184,6 +1186,86 @@
         z-index: 10;
         margin-top: 0rem;
     }
+
+    /* button connect wallet */
+    
+  
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+        padding: 6rem 0;
+    }
+    
+    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+      width: 30.7rem;
+      height: 4.5rem;
+      margin: 0 2rem;
+    }
+    
+    .btn-ticketSale-Connect p {
+      font-size: 2.4rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+      
+    .BorderTopBottom-ticketSale-Connect:before {
+        content: "";
+        position: absolute;
+        width: 31.9rem;
+        height: 2px;
+        top: -6px;
+        left: -7px;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderTopBottom-ticketSale-Connect:after {
+        content: "";
+        position: absolute;
+        width: 31.9rem;
+        height: 2px;
+        bottom: -6px;
+        right: -7px;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderLeftRight-ticketSale-Connect:before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -7px;
+        width: 2px;
+        height: 5.5rem;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderLeftRight-ticketSale-Connect:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: -7px;
+        width: 2px;
+        height: 5.5rem;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+    
+      .btnButton-ticketSale-Connect:hover {
+          transform: scale(1.02);
+          filter: drop-shadow( 0 0 1px white);
+          transition: all .5s ease-in-out;
+      }
+
+      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:before,
+      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:after {
+        width: 12.8rem;
+      }
 
 }
 
