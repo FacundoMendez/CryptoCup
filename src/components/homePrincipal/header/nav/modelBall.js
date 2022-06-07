@@ -17,13 +17,13 @@ const navBallModel = () => {
             /* sizes */
 
         const sizes = {
-            width: 200,
-            height: 200
+            width: 190,
+            height: 190
         }
 
         window.addEventListener("resize", () =>{
-            sizes.width = 200
-            sizes.height = 200
+            sizes.width = 190
+            sizes.height = 190
 
             camera.aspect = sizes.width / sizes.height
             camera.updateProjectionMatrix()

@@ -170,7 +170,7 @@
 .textoTicket-home{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: initial;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 5rem;
@@ -178,7 +178,7 @@
 
 .textoTicket-home p{
     color: white;
-    text-align: center;
+    text-align: initial;
 }
 
 .tiketsPreview{
