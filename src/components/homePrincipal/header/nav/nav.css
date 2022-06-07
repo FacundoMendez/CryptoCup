@@ -334,11 +334,16 @@
 
     .nav-menu-item {
         line-height: 60px;    
-        
     }
+
+    .nav-menu-item {
+        padding: 2rem 0rem;
+        overflow: hidden;
+    }
+    
+
     .nav-menu-item a{
         font-size: 2.5rem;
-
     }
 
     .nav-toggle {
@@ -396,7 +401,7 @@
     .btnButtonNav p {
         font-size: 2.4rem;
         letter-spacing: 3.8px;
-        padding-top: .30rem;
+        padding-top: .35rem;
     }
 
     .navBallModel{
