@@ -575,6 +575,104 @@
 }
 
 
+/* button Metamask */
+
+
+.wrapperBotton-ticketSale-Connect {
+    position: relative;
+    padding-top: 1rem;
+    text-decoration: none;
+  }
+  
+  .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+    width: 31.5rem;
+    height: 4.5rem;
+    margin: 0 3rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .btn-ticketSale-Connect p {
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: 3.8px;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  }
+  
+  .BorderTopBottom-ticketSale-Connect:before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    top: -6px;
+    left: -7px;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderTopBottom-ticketSale-Connect:after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    bottom: -6px;
+    right: -7px;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-ticketSale-Connect:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 2px;
+    height: 2rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-ticketSale-Connect:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -7px;
+    width: 2px;
+    height: 2rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:before,
+  .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:after {
+    width: 32.7rem;
+    filter: drop-shadow(0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+  }
+  
+  .btn-ticketSale-Connect:hover .BorderLeftRight-ticketSale-Connect:before,
+  .btn-ticketSale-Connect:hover .BorderLeftRight-ticketSale-Connect:after {
+    height: 5.5rem;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+  }
+
+
+
 @media screen and (min-width: 2550px){
     .containerTiketsBuy{
         width: 100%;
@@ -1089,7 +1187,7 @@
 
 }
 
-@media screen and (max-width:380px){
+@media screen and (max-width:395px){
     /* general */
     
     .flexTickets{
@@ -1145,6 +1243,85 @@
     .radio {
         padding: .3rem 0 ;
     }
+
+    /* button connect wallet */
+    
+  
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+    }
+    
+    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+      width: 22.5rem;
+      height: 4.5rem;
+      margin: 0 2rem;
+    }
+    
+    .btn-ticketSale-Connect p {
+      font-size: 1.9rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+      
+    .BorderTopBottom-ticketSale-Connect:before {
+        content: "";
+        position: absolute;
+        width: 23.7rem;
+        height: 2px;
+        top: -6px;
+        left: -7px;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderTopBottom-ticketSale-Connect:after {
+        content: "";
+        position: absolute;
+        width: 23.7rem;
+        height: 2px;
+        bottom: -6px;
+        right: -7px;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderLeftRight-ticketSale-Connect:before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -7px;
+        width: 2px;
+        height: 5.5rem;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+      
+      .BorderLeftRight-ticketSale-Connect:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: -7px;
+        width: 2px;
+        height: 5.5rem;
+        background: #fff;
+        transition: all 0.5s ease;
+        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      }
+    
+      .btnButton-ticketSale-Connect:hover {
+          transform: scale(1.02);
+          filter: drop-shadow( 0 0 1px white);
+          transition: all .5s ease-in-out;
+      }
+
+      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:before,
+      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:after {
+        width: 12.8rem;
+      }
 }
 
 
