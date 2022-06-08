@@ -81,6 +81,8 @@
 
 .tournamentTitle h2{
     font-size: 6.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 2550px){
