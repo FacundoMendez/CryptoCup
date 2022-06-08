@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react'
-import "./tournament.css"
+import "./present.css"
 import backgroundReflejo from "./src/BackTournament.jpg"
-import tournamentScroll from './tournamentScroll'
+import presentScroll from './presentScroll'
 
 const TournamentMain = () => {
 
   useEffect(() =>{
-    tournamentScroll()
+    presentScroll()
   },[])
 
   return (

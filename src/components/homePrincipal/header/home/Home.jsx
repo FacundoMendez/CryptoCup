@@ -4,6 +4,7 @@ import Timer from './timer/Timer'
 import Social from './social/Social'
 import Button from '../../buttons/Button'
 import BackPrincipal from "./src/videos/BackCopa2.mp4"
+import soonImg from "./src/comingSoon.png"
 
 const Home = () => {
 
@@ -24,11 +25,19 @@ const Home = () => {
                 <Button title="TICKETS"/>
               </a>
 
-              <a href="./presale">
-                <Button title="PRESALE"/>
-              </a>
-            </div>
+              {/* <a href="./presale"> */}
+                <div className=" wrapperBottonPresale">
+                  <div className="btnPresale">
+                    <p> Presale </p>
+                    <span className=" BorderTopBottomPresale"></span>
+                    <span className=" BorderBottomPresale"></span>
+                    <span className=" BorderLeftRightPresale"></span>
+                    <img className='comingSoon' src={soonImg} alt="Coming Soon" />
+                  </div>
+                </div>
+            {/*   </a> */}
 
+            </div>
              <Timer/>
           </div>
         
