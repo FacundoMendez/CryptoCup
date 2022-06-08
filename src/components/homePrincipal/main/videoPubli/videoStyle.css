@@ -100,6 +100,14 @@
         padding-top: 10rem;
         padding-bottom: 10rem;
     }
+
+    .videoPubli-container::before{
+        display: none;
+    }
+
+    .videoPubli-container::after{
+        display: none;
+    }
 }
 
 @media screen and (max-width:558px) {
