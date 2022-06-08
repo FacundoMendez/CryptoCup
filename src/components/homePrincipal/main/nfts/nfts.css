@@ -32,11 +32,11 @@
     inset 0 -2px 5px 1px rgba(139,66,8,1),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    z-index: 1000;
+    z-index: 100;
 }
 
 .textNfts{
-    z-index: 1000;
+    z-index: 100;
     width: 45%;
     text-align: center;
 }
@@ -46,11 +46,11 @@
     color: white;
     padding: 0 1rem ;
     text-align: center;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .tiposTorneos{
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

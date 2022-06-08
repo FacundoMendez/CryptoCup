@@ -9,6 +9,8 @@
     padding-bottom: 31rem;
 }
 
+
+
 .boxTournament{
     padding-top: 15rem;
     display: flex;
@@ -70,8 +72,8 @@
 
 /* fondo */
 
-.backgroundReflejo{
-    width: 100%;
+.backPresentacion{
+    width: 150%;
     position: absolute;
     object-fit: cover;
     filter: contrast(110%) brightness(115%);
@@ -138,12 +140,12 @@
 
     }
 
-    .backgroundReflejo{
-        width: 160rem;
-        height: 100%;
+    .backPresentacion{
+        width: 170rem;
         position: absolute;
-        object-fit: contain;
+        object-fit: cover;
         filter: contrast(110%) brightness(115%);
+        opacity: .4;
     } 
   
 }

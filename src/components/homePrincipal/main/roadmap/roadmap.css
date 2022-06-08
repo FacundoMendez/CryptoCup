@@ -679,8 +679,6 @@
         letter-spacing: 1px;
     }
     
-    
-    
     .line-q3{
         width: 7rem;
         height: .7rem;
@@ -719,8 +717,6 @@
         padding: 2rem;
         font-size: 4rem;
     }
-    
-    
     
     .line-q5{
         width: 7rem;
@@ -902,6 +898,7 @@
 
     .roadmapTitle h2{
         font-size: 4rem;
+        padding-top: 15rem;
     }
 
     .containerRoadmap{
@@ -932,12 +929,10 @@
         padding-top: 0rem;
         height: 160vh;
     }
-    
 
     .containerRoadmap{
         padding-top: 0rem;
     }
-
 
     .q1circle, .q3circle, .q5circle, .q2circle, .q4circle{
         width: 1.5rem;
