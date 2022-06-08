@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import "./present.css"
-import backgroundReflejo from "./src/BackTournament.jpg"
+import backgroundReflejo from "../tikets/src/BackTickets2.jpg"
 import presentScroll from './presentScroll'
 
 const TournamentMain = () => {

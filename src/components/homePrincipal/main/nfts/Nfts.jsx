@@ -2,10 +2,13 @@ import React from 'react'
 import "./nfts.css"
 import nftTournament1 from "./src/copaMundo.png"
 import nftTournament2 from "./src/copaMundo.png"
+/* import backReflejo from "../tikets/src/BackTickets2.jpg" */
 
 const Nfts = () => {
   return (
     <div className="containerNfts">
+{/*       <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" /> */}
+
         <div className="titleNfts">
             <h2>NFT'S</h2>
         </div>
