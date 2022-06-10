@@ -22,9 +22,8 @@ const Footer = () => {
         <div className="terms">
             <div className='listTerms'>
                 <ul>
-                    <li><a href="/home"> • Privacy Policy</a></li>
+                    <li><a href="/PrivacyPolicy "> • Privacy Policy</a></li>
                     <li><a href="/home"> • Terms and Conditions </a></li>
-                    <li><a href="/home"> • Cookie Policy </a></li>
                     <li><a href="/home"> • Legal Notices </a></li>
                 </ul>
                 <br />

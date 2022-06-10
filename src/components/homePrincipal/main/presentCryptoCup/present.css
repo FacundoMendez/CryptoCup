@@ -9,8 +9,6 @@
     padding-bottom: 31rem;
 }
 
-
-
 .boxTournament{
     padding-top: 15rem;
     display: flex;
@@ -66,9 +64,8 @@
 .containerTexts p {
     color: white;
     padding: 0 1rem ;
-    text-align: initial;
+    text-align: center;
 }
-
 
 /* fondo */
 
@@ -79,7 +76,6 @@
     filter: contrast(110%) brightness(115%);
     opacity: .4;
 } 
-
 
 .tournamentTitle h2{
     font-size: 6.5rem;
@@ -105,9 +101,7 @@
     .containerTexts h5 {
         font-size: 5.5rem;
     }
-
 }
-
 
 
 @media screen and (max-width: 1440px){
@@ -137,7 +131,6 @@
     .subTitleNft h5{
         padding: 4rem 0;
         font-size: 4rem;
-
     }
 
     .backPresentacion{
@@ -147,7 +140,6 @@
         filter: contrast(110%) brightness(115%);
         opacity: .4;
     } 
-  
 }
 
 
@@ -156,8 +148,6 @@
     .titleContainers h2{
         font-size: 5.5rem;
     }
-    
-
 
     .subTitlePrize{
         width: 70%;
@@ -166,9 +156,6 @@
     .subTitleNft{
         width: 65%;
     }
-    
- 
-
 }
 
 
@@ -179,7 +166,6 @@
         font-size: 4.5rem;
     }
     
-
     .subTitlePrize{
         width: 90%;
     }
@@ -187,7 +173,6 @@
     .subTitleNft{
         width: 90%;
     }
-    
 }
 
 
@@ -252,8 +237,6 @@
         text-align: inherit;
         font-size: 1.8rem;
     }
-    
-
 }
 
 @media screen and (max-width: 395px){
