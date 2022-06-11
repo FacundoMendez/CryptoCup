@@ -14,7 +14,7 @@ const tiketsScroll = () =>{
 
         gsap.from(".tiketsTitle",{
             opacity:0,
-            scale:1.5,
+            scale:1.2,
             duration:.7,
             scrollTrigger:{
                 trigger: ".containerTikets",

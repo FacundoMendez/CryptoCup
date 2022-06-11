@@ -1,10 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import "./nfts.css"
 import nftTournament1 from "./src/copaMundo.png"
 import nftTournament2 from "./src/copaMundo.png"
+import nftScroll from "./nftScroll"
 /* import backReflejo from "../tikets/src/BackTickets2.jpg" */
 
 const Nfts = () => {
+
+  useEffect(()=> {
+    nftScroll()
+  },[])
+
   return (
     <div className="containerNfts">
 {/*       <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" /> */}
