@@ -138,14 +138,12 @@
   text-align: center;
   cursor: pointer;
   position: relative;
-
 }
 
 .btnButton-Tickets p {
-  font-size: 3rem;
-  margin-top: .5rem;
+  font-size: 2.2rem;
+  line-height: 4rem;
   letter-spacing: 3.8px;
-  padding-top: .15rem;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;

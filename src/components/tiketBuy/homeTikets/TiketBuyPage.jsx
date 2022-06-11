@@ -1,8 +1,14 @@
-import React, {lazy, Suspense} from 'react'
+import React, {lazy, Suspense, useState} from 'react'
+import { ethers } from 'ethers';
+import { contractAddress, abi } from './utils'
+import truncateEthAddress from 'truncate-eth-address';
+
 import "./tiketBuy.css"
+
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
+
 import Social from "../../homePrincipal/header/home/social/Social"
 import Spinner from '../../spinner/Spinner'
 import SelectTokenBasic from './tokensSelect/tokenBasic/SelectTokenBasic'
@@ -13,10 +19,50 @@ const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 
 const TiketBuyPage = () => {
 
+  const [provider, setProvider] = useState(undefined);
+  const [connected, setConnected] = useState(false);
+  const [contract, setContract] = useState(false);
+  const [account, setAccount] = useState(undefined);
+  const [signer, setSigner] = useState(undefined);
+
+  const login = async () => {
+    try {
+      let newProvider = new ethers.providers.Web3Provider(window.ethereum);
+      if(newProvider !== undefined) {
+        let newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        let newSigner = await newProvider.getSigner();
+        let newContract = await new ethers.Contract( contractAddress , abi , newSigner )
+        setProvider(newProvider);
+        setAccount(newAccount);
+        setSigner(newSigner);
+        setContract(newContract);
+        setConnected(true);
+
+      } else {
+        alert("Please Install Metamask.");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+
+  const buyBasicTicket = async () => {
+    const tx = await contract.mint(1, 4, 0)
+    .then(res => { 
+      // use the returned value here
+      setTimeout(() => {
+        alert("Minted successfully");
+        console.log(res); 
+
+      }, 15000);
+    }) 
+  }
+
   return (
     <div className="containerTiketsBuy">
       <Suspense fallback={<Spinner/>}>
-        <NavTickets />
+        <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
       </Suspense>
       <Social />
 
@@ -27,11 +73,11 @@ const TiketBuyPage = () => {
           <div className="ticketsSale">
 
               <div className="boxTickets">
-                  <img className='ImgTicket' src={tiketBasico} alt="Ticket Bassic" />
+                  <img className='ImgTicket' src={tiketBasico} alt="Ticket Basic" />
                   
                   <div className="wrapperBotton-Tickets">
-                      <div className="btnButton-Tickets">
-                          <p>BUY</p>
+                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
+                          <p>{connected? "BUY" : "CONNECT"}</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
@@ -43,8 +89,8 @@ const TiketBuyPage = () => {
                   <img className='ImgTicket ImgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
 
                   <div className="wrapperBotton-Tickets">
-                      <div className="btnButton-Tickets">
-                          <p>BUY</p>
+                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
+                          <p>{connected? "BUY" : "CONNECT"}</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
@@ -65,8 +111,8 @@ const TiketBuyPage = () => {
             </div>
 
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
-              <div className="btn-ticketSale-Connect" >
-                <p className='select-Connect'>Connect Wallet</p>
+              <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
+                <p className='select-Connect'>{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>
@@ -78,4 +124,4 @@ const TiketBuyPage = () => {
   )
 }
 
-export default TiketBuyPage
+export default TiketBuyPage;
