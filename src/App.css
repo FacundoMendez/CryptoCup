@@ -21,7 +21,7 @@ p{
 
 ::-webkit-scrollbar {
     width: 5px;
-    border: 3px solid rgb(7, 7, 7);
+    border: 3px groove rgb(7, 7, 7);
     background-position: top;
   }
   ::-webkit-scrollbar-button {
@@ -29,14 +29,14 @@ p{
     height: 0px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #dddddd;
-    border-radius: 10px;
+    background: #53535342;
+    border-radius: 15px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #b1b1b1;
+    background: #d0a6ff;
   }
   ::-webkit-scrollbar-thumb:active {
-    background: #757575;
+    background: #8b4dff;
   }
   
   ::-webkit-scrollbar-corner {
