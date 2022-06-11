@@ -141,12 +141,12 @@
     .textToken{
         width: 100%;
         gap:5rem;
-        text-align: initial;
+        text-align: center;
     }
     
     .textToken p{
         padding: 0rem 2rem;
         margin-left: 1rem;
-        text-align: inherit;
+        text-align: center;
     }
 }

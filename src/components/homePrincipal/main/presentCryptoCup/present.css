@@ -234,7 +234,7 @@
     .containerTexts p {
         padding: 0rem 1rem;
         margin-left: 1rem;
-        text-align: inherit;
+        text-align: center;
         font-size: 1.8rem;
     }
 }

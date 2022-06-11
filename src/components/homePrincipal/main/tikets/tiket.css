@@ -388,7 +388,7 @@
         flex-wrap: wrap;
         gap: 10rem;
         position: relative;
-        width: 180%;
+        width: 180vw;
         margin-top: 10rem;
         padding-bottom: 0rem;
     }
@@ -401,9 +401,10 @@
         flex-wrap: wrap;
         gap: 10rem;
         position: relative;
-        width: 180%;
+        width: 180vw;
         margin-top: 10rem;
         padding-bottom: 0rem;
+        margin-left: -2rem;
     }
 
     .containerTikets{
@@ -421,8 +422,14 @@
         gap: 0rem;
         padding-top: 0rem;
         padding-bottom: 10rem ;
+        text-align: center;
     }
     
+    .boxTickets-Home-basic p, .boxTickets-Home-boost p{
+        text-align: center;
+    }
+
+ 
     .containerTikets::after{
         display: none;
     }
@@ -439,10 +446,9 @@
     
     .textTikets p{
         padding: 0rem 2rem;
-        padding-left: 2rem;
-        text-align: inherit;
-        margin-left: 1rem;
+        text-align: center;
     }
+
 
     .tiketsPreview{
         width: 50%;
@@ -466,10 +472,8 @@
     
     .textTikets p{
         padding: 0rem 1rem;
-        padding-left: 1rem;
         font-size: 1.6rem;
-        text-align: inherit;
-        margin-left: 1rem;
+        text-align: center;
     }
 }
 
