@@ -59,6 +59,18 @@ const TiketBuyPage = () => {
     }) 
   }
 
+  const buyBoostTicket = async () => {
+    const tx = await contract.mint(1, 4, 1)
+    .then(res => { 
+      // use the returned value here
+      setTimeout(() => {
+        alert("Minted successfully");
+        console.log(res); 
+
+      }, 15000);
+    }) 
+  }
+
   return (
     <div className="containerTiketsBuy">
       <Suspense fallback={<Spinner/>}>
@@ -89,7 +101,7 @@ const TiketBuyPage = () => {
                   <img className='ImgTicket ImgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
 
                   <div className="wrapperBotton-Tickets">
-                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
+                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
                           <p>{connected? "BUY" : "CONNECT"}</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
