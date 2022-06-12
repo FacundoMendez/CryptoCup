@@ -1,4 +1,4 @@
-import $ from "jquery"
+/* import $ from "jquery"
 
 const navScroll= () =>{
     $(window).scroll(function(){
@@ -23,3 +23,4 @@ const navScroll= () =>{
 }
 
 export default navScroll;
+ */

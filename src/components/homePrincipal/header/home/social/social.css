@@ -30,6 +30,7 @@
     transition: transform 1s;
     align-items: center;
     transition: all .5s ease-in-out;
+    
 } 
 
 .social a:hover {
@@ -43,6 +44,7 @@
     width: 30px;
     filter: contrast(104%) brightness(120%);
     transition: color 0.3s;
+
 }
 
 .social a:hover:nth-child(1) i {

@@ -141,9 +141,11 @@
 }
 
 .btnButton-Tickets p {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   line-height: 4rem;
-  letter-spacing: 3.8px;
+  letter-spacing: 1.5px;
+  padding-top: .06rem;
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
