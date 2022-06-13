@@ -25,8 +25,8 @@ const TiketBuyPage = () => {
   const [account, setAccount] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
 
-  const [cantTicketsBasic, setCantTicketsBasic] = useState(0)
-  const [cantTicketsBoost, setCantTicketsBoost] = useState(0)
+  const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
+  const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
 
 
   const login = async () => {
@@ -101,7 +101,7 @@ const TiketBuyPage = () => {
                   </div>
                   <div className="cantTicket-basic">
                         <button className='menos-basic' onClick={() => {
-                          if (cantTicketsBasic > 0){
+                          if (cantTicketsBasic > 1){
                             setCantTicketsBasic(cantTicketsBasic - 1) 
                           }
                         }}> - </button>
@@ -125,7 +125,7 @@ const TiketBuyPage = () => {
                   </div>
                   <div className="cantTicket-boost">
                         <button className='menos-boost' onClick={() => {
-                          if (cantTicketsBoost > 0){
+                          if (cantTicketsBoost > 1){
                             setCantTicketsBoost(cantTicketsBoost - 1) 
                           }
                         }}> - </button>
