@@ -10,109 +10,75 @@ const Roadmap = () => {
   
   return (
     <div id='roadmap' className="containerRoadmap">
-        <div className="titleContainers roadmapTitle">
-          <h2>ROADMAP</h2>
+      <section className="intro">
+        <div className="container">
+          <h1>ROADMAP</h1>
         </div>
+      </section>
 
-        <div className="boxRoadmpa">
-          <div className="line-Container">
-              <div className="q1">
-                <div className="line-q1"> 
-                  <div className="q1circle"></div>
-                  <div className="q1-title">
-                      <h4>
-                        Q1 2021
-                      </h4>
-                    <div className="listQ1">
-                      <ul>
-                        <li>- Concept Design ✓</li>
-                        <li>- Branding and game research ✓</li>
-                        <li>- Tournament concept ✓</li>
-                        <li>- Art design ✓</li>
-                        <li>- Ladders System idea ✓</li>
-                        <li>- Web footage selection ✓</li>
-                        <li>- Development environment setup ✓</li>
-                      </ul>
-                    </div>
-                  </div>
+      <section className="timeline">
+        <ul>
+          <li>
+            <div className='textRoadamp'>
+              <time>Q1 2021</time>
+              <p>
+              - Concept Design <span>✓</span><br/>
+              - Branding and game research <span>✓</span> <br/>
+              - Tournament concept <span>✓</span> <br/>
+              - Art design <span>✓</span> <br/>
+              - Ladders System idea <span>✓</span> <br/>
+              - Web footage selection <span>✓</span> <br/>
+              - Development environment setup <span>✓</span><br/>
+            </p>
+            </div>
+          </li>
+          <li>
+          <div className='textRoadamp'>
+              <time>Q2 2022</time> 
+              <p>
+                - Smart contracts development <span>✓</span> <br/>
+                - NFTs Illustrations and 3D Models <span>✓</span> <br/>
+                - Official launch of the website <span>✓</span>  <br/>
+                - Investor selection process <span>✓</span><br/>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='textRoadamp'>
+              <time>Q3 2022</time> 
+              <p>
+                - Whitepaper creation <span>✓</span><br/>
+                - Ticket Sales <br/>
+                - Private sale <br/>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='textRoadamp'>
+              <time>Q4 2022</time>
+              <p>
+                - Token public presale 1 <br/>
+                - Token public presale 2 <br/>
+                - DAPP launching <br/>
+                - Ladders System development <br/>
+                - Release Gameplay PDF <br/>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='textRoadamp'>
+              <time>Q5 2022</time> 
+              <p>
+                - Playable Ladders System Release <br/>
+                - Tournament starts <br/>
+                - Prize pool distribution <br/>
+                - Marketplace <br/>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-                </div>
-              </div>
-
-              <div className="q2">
-                <div className="line-q2"> 
-                  <div className="q2circle"></div>
-                    <div className="q2-title">
-                      <h4>
-                        Q2 2022
-                      </h4>
-                      <div className="listQ2">
-                        <ul>
-                          <li>- Smart contracts development ✓</li>
-                          <li>- NFTs Illustrations and 3D Models ✓</li>
-                          <li>- Official launch of the website ✓</li>
-                          <li>- Investor selection process ✓</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="q3">
-                <div className="line-q3"> 
-                  <div className="q3circle"></div>
-                    <div className="q3-title">
-                      <h4>
-                        Q3 2022
-                      </h4>
-                      <div className="listQ3">
-                        <ul>
-                          <li>- Whitepaper creation ✓</li>
-                          <li>- Ticket Sales </li>
-                          <li>- Private sale </li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="q4">
-                <div className="line-q4"> 
-                  <div className="q4circle"></div>
-                    <div className="q4-title">
-                      <h4>
-                        Q4 2022
-                      </h4>
-                      <div className="listQ4">
-                        <ul>
-                          <li>- Token public presale 1</li>
-                          <li>- Token public presale 2</li>
-                          <li>- DAPP launching</li>
-                          <li>- Ladders System development</li>
-                          <li>- Release Gameplay PDF</li>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="q5">
-                  <div className="line-q5"> 
-                    <div className="q5circle"></div>
-                      <div className="q5-title">
-                        <h4>
-                          Q5 2022
-                        </h4>
-                        <div className="listQ5">
-                          <ul>
-                            <li>- Playable Ladders System Release</li>
-                            <li>- Tournament starts</li>
-                            <li>- Prize pool distribution</li>
-                            <li>- Marketplace</li>
-                          </ul>
-                      </div>
-                    </div>
-                </div>
-              </div>
-          </div>
-        </div>
     </div>
   )
 }

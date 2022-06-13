@@ -1,29 +1,33 @@
-import gsap from "gsap";
-import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const roadmapScroll = () =>{
 
-    function isMobile() {
-        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    "use strict";
+
+    var items = document.querySelectorAll(".timeline li");
+  
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
     }
-
-    if (!isMobile()) {
-
-        gsap.registerPlugin(ScrollTrigger); 
-
-
-        gsap.from(".roadmapTitle",{
-            opacity:0,
-            scale:1.5,
-            duration:1.3,
-            scrollTrigger:{
-                trigger: ".containerRoadmap",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
+  
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
     }
-
-}
+  
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+};
+  
 
 export default roadmapScroll;

@@ -40,10 +40,27 @@
     width: 100%;
     object-fit: cover;
     position: absolute;
-    filter: contrast(120%) brightness(145%) opacity(.5);
+    filter: 
+    contrast(120%) brightness(145%) opacity(.5);
 }
 
-.boxRoadmpa{
+.container h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 6rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    letter-spacing: 1px;
+    filter: drop-shadow(0 0 40px black);
+}
+
+/* .boxRoadmpa{
     width: 70%;
     display: flex;
     align-items: center;
@@ -52,9 +69,9 @@
     padding-top: 10rem;
     position: relative;
     height: 140vh;
-}
+} */
 
-
+/* 
 .line-Container{
     position:relative;
     width: 1rem;
@@ -64,9 +81,10 @@
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
 
-.q1{
+}
+ */
+/* .q1{
     position: relative;
     top: 1%;
     left: 0;
@@ -80,994 +98,336 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
 }
+ */
 
+ .intro {
+    padding: 100px 0;
+  }
 
-.q2{
+  
+  
+  /* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul {
+    padding: 50px 0;
+  }
+  
+  .timeline ul li {
+    list-style-type: none;
     position: relative;
-    top: 20%;
-    left: 0;
-    margin-left: -1.15rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 100%;
-    z-index: 110;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
 
-
-
-.q3{
+  }
+  
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+    z-index: 1;
+  }
+  
+  .timeline ul li div {
     position: relative;
-    top: 40%;
-    left: 0;
-    margin-left: -1.15rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 100%;
-    z-index: 110;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+  
+  .timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
 
+  .textRoadamp p{
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+  }
 
-
-.q4{
-    position: relative;
-    top: 60%;
-    left: 0;
-    margin-left: -1.15rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 100%;
-    z-index: 110;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
-
-
-
-
-.q5{
-    position: relative;
-    top: 80%;
-    left: 0;
-    margin-left: -1.15rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 100%;
-    z-index: 110;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
-
-
-.line-q1{
-    width: 20rem;
-    height: .7rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    top: 35%;
-    left: 3.5rem;
-    z-index: 10;
-}
-
-.q1circle, .q3circle, .q5circle{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 100%;
-    left: 19rem;
-    top: -.4rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
-
-.q2circle, .q4circle{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 100%;
-    right: 0.5rem;
-    top: -.4rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-}
-
-.q1-title{
-    position: relative;
-    left: 21rem;
-    width: 20rem;
-    top: -6rem;
-}
-
-.q1-title h4{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
-    font-size: 4rem;
+  .textRoadamp span{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
-}
-
-
-.listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
-    position: relative;
-    color: white;
-    font-size: 1.5rem;
-    width: 47rem;
-    margin-left: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
-    list-style: none;
-}
-
-.listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
-    padding: .5rem;
-}
-
-
-.line-q2{
-    width: 20rem;
-    height: .7rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    top: 35%;
-    right:20rem;
-    z-index: 10;
-}
-
-.q2-title{
-    position: relative;
-    right: 22rem;
-    width: 20rem;
-    top: -6rem;
-}
-
-.q2-title h4{
     font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+  
+  .timeline ul li:nth-child(odd) div {
+    left: 45px;
+  }
+  
+  .timeline ul li:nth-child(odd) div::before {
+    left: -16px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
+    backdrop-filter: blur(1rem);
+}
+  
+  .timeline ul li:nth-child(even) div {
+    left: -439px;
+  }
+  
+  .timeline ul li:nth-child(even) div::before {
+    right: -16px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent  transparent transparent hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+  }
+  
+  time {
+    display: block;
     font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
-}
-
-
-
-.line-q3{
-    width: 20rem;
-    height: .7rem;
-    position: relative;
+  }
+  
+  
+  /* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  .timeline ul li::after {
+    transition: background 0.5s ease-in-out;
+  }
+  
+  .timeline ul li.in-view::after {
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    top: 35.4%;
-    left:3.4rem;
-    z-index: 10;
+
+  }
+
+  .textRoadamp:hover{
+    filter: drop-shadow(0px 0px 15px rgba(108, 3, 168, 0.637));
+    transition: all 220ms ease-in-out;
 }
-
-.q3-title{
-    position: relative;
-    left: 22rem;
-    width: 20rem;
-    top: -6rem;
-}
-
-.q3-title h4{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
-    font-size: 4rem;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    letter-spacing: 1px;
-    filter: drop-shadow(0 0 40px black);
-}
-
-
-.line-q4{
-    width: 20rem;
-    height: .7rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    top: 35%;
-    right:20rem;
-    z-index: 10;
-}
-
-.q4-title{
-    position: relative;
-    right: 22rem;
-    width: 20rem;
-    top: -6rem;
-}
-
-.q4-title h4{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
-    font-size: 4rem;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    letter-spacing: 1px;
-    filter: drop-shadow(0 0 40px black);
-}
-
-
-
-.line-q5{
-    width: 20rem;
-    height: .7rem;
-    position: relative;
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    top: 35.4%;
-    left:3.4rem;
-    z-index: 10;
-}
-
-.q5-title{
-    position: relative;
-    left: 22rem;
-    width: 20rem;
-    top: -6rem;
-}
-
-.q5-title h4{
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2rem;
-    font-size: 4rem;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
-    letter-spacing: 1px;
-    filter: drop-shadow(0 0 40px black);
-}
-
-
-.roadmapTitle h2{
-    z-index: 11;
-    font-size: 8.5rem;
-    letter-spacing: 3px;
-}
-
-
-
-@media screen and (max-width:1440px) {
-    .line-Container{
-        position:relative;
-        width: 1rem;
-        height: 145vh;
+  
+  
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+  }
+  
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+  }
+  
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  
+  /* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  
+  @media screen and (max-width: 900px) {
+    .timeline ul li div {
+      width: 330px;
     }
-    .boxRoadmpa{
-        width: 70%;
-        padding-top: 10rem;
-        height: 200vh;
+    .timeline ul li:nth-child(even) div {
+      left: -369px;
+      /*250+45-6*/
     }
 
-    .q1circle, .q3circle, .q5circle{
-        width: 1.5rem;
-        height: 1.5rem;
-        left: 11rem;
-        top: -.4rem;
+    .textRoadamp p {
+        font-size: 1.5rem;
     }
-    
-    .q2circle, .q4circle{
-        width: 1.5rem;
-        height: 1.5rem;
-        right: 0.5rem;
-        top: -.4rem;
+  }
+  
+  @media screen and (max-width: 752px) {
+    .timeline ul li {
+      margin-left: 20px;
     }
-
-
-    .q1{
-        position: relative;
-        top: 1%;
-        left: 0;
-        margin-left: -1.15rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    
-    
-    .q2{
-        top: 20%;
-        left: 0;
-        margin-left: -1.15rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    
-    
-    
-    .q3{
-        top: 40%;
-        left: 0;
-        margin-left: -1.15rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    
-    
-    
-    .q4{
-        top: 60%;
-        left: 0;
-        margin-left: -1.15rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    
-    
-    .q5{
-        top: 82%;
-        left: 0;
-        margin-left: -1.15rem;
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-    
-    
-    .line-q1{
-        width: 12rem;
-        height: .7rem;
-        bottom: 5%;
-        left: 3.5rem;
-    }
-    
-    .q1-title{
-        position: relative;
-        left: 12rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q1-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
-        font-size: 1.2rem;
-        width: 47rem;
-        margin-left: 1.5rem;
-        letter-spacing: 2px;
-    }
-    
-    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
-        list-style: none;
-    }
-    
-    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
-        padding: .5rem;
-    }
-    
-    
-    .line-q2{
-        width: 12rem;
-        height: .7rem;
-        top: 35%;
-        right:12rem;
-        z-index: 10;
-    }
-    
-    .q2-title{
-        right: 21rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q2-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    
-    .line-q3{
-        width: 12rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q3-title{
-        left: 13rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q3-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .line-q4{
-        width: 13rem;
-        height: .7rem;
-        top: 35%;
-        right:13rem;
-        z-index: 10;
-    }
-    
-    .q4-title{
-        right: 21rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q4-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-    }
-    
-    
-    
-    .line-q5{
-        width: 12rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q5-title{
-        left: 14rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q5-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
+    .timeline ul li div {
+        width: 35rem;
     }
 
-    .backgroundPrincipalRoadmap{
-        width: 160rem;
-        object-fit: contain;
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
     }
-}
-
-
-
-@media screen and (max-width:950px) {
-    .boxRoadmpa{
-        width: 70%;
-        padding-top: 5rem;
-        height: 170vh;
+    .timeline ul li:nth-child(even) div::before {
+        left: -16px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
+        backdrop-filter: blur(1rem);
     }
 
-    .q1circle, .q3circle, .q5circle{
-        width: 1.5rem;
-        height: 1.5rem;
-        left: 7rem;
-        top: -.4rem;
-    }
-
-    .line-Container{
-        position:relative;
-        width: 1rem;
-        height: 125vh;
-    }
-    
-    
-    .line-q1{
-        width: 7rem;
-        height: .7rem;
-        top: 35%;
-        left: 3.5rem;
-    }
-    
-    .q1-title{
-        position: relative;
-        left: 6rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q1-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
-        font-size: 1.1rem;
-        width: 47rem;
-        margin-left: 1.5rem;
-        letter-spacing: 1px;
-    }
-
-    .listQ2, .listQ4 {
-        margin-left: -2rem;
-    }
-    
-    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
-        list-style: none;
-    }
-    
-    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
-        padding: .5rem;
-    }
-    
-    
-    .line-q2{
-        width: 7rem;
-        height: .7rem;
-        top: 35%;
-        right:7rem;
-        z-index: 10;
-    }
-    
-    .q2-title{
-        right: 20rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q2-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    .line-q3{
-        width: 7rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q3-title{
-        left:7rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q3-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .line-q4{
-        width: 7rem;
-        height: .7rem;
-        top: 35%;
-        right:7rem;
-        z-index: 10;
-    }
-    
-    .q4-title{
-        right: 20rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q4-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-    }
-    
-    .line-q5{
-        width: 7rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q5-title{
-        left: 7rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q5-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-}
-
-
-
-@media screen and (max-width:687px) {
-    .boxRoadmpa{
-        width: 70%;
-        padding-top: 5rem;
-        height: 170vh;
-    }
-
-    .q1circle, .q3circle, .q5circle{
-        width: 1.5rem;
-        height: 1.5rem;
-        left: 5rem;
-        top: -.4rem;
-    }
-
-    .line-Container{
-        position:relative;
-        width: 1rem;
-        height: 125vh;
-    }
-    
-    
-    .line-q1{
-        width: 5rem;
-        height: .7rem;
-        top: 35%;
-        left: 3.5rem;
-    }
-    
-    .q1-title{
-        position: relative;
-        left: 6rem;
-        width: 20rem;
-        top: -5rem;
-        margin-left: -2rem;
-
-    }
-    
-    .q1-title h4{
-        padding: 2rem;
-        font-size: 3.5rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
-        font-size: 1rem;
-        width: 47rem;
-        margin-left: 0.5rem;
-        letter-spacing: 1px;
-    }
-
-    .listQ2, .listQ4 {
-        margin-left: -2rem;
-    }
-    
-    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
-        list-style: none;
-    }
-    
-    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
-        padding: .5rem;
-    }
-    
-    
-    .line-q2{
-        width: 5rem;
-        height: .7rem;
-        top: 35%;
-        right:4.8rem;
-        z-index: 10;
-    }
-    
-    .q2-title{
-        right: 20rem;
-        width: 20rem;
-        top: -5rem;
-        margin-left: 2rem;
-    }
-    
-    .q2-title h4{
-        padding: 2rem;
-        font-size: 3.5rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    
-    .line-q3{
-        width: 5rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q3-title{
-        left:7rem;
-        width: 20rem;
-        top: -5rem;
-        margin-left: -2.5rem;
-    }
-    
-    .q3-title h4{
-        padding: 2rem;
-        font-size: 3.5rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .line-q4{
-        width: 5rem;
-        height: .7rem;
-        top: 35%;
-        right:4.8rem;
-        z-index: 10;
-    }
-    
-    .q4-title{
-        right: 20rem;
-        width: 20rem;
-        top: -5rem;
-        margin-left: 2rem;
-
-    }
-    
-    .q4-title h4{
-        padding: 2rem;
-        font-size: 3.5rem;
-    }
-    
-    
-    
-    .line-q5{
-        width: 5rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q5-title{
-        left: 7rem;
-        width: 20rem;
-        top: -5rem;
-        margin-left: -2rem;
-    }
-    
-    .q5-title h4{
-        padding: 2rem;
-        font-size: 4rem;
-        letter-spacing: 1px;
-    }
-    
-}
-
-@media screen and (max-width:590px) {
-
-    .roadmapTitle h2{
-        font-size: 4rem;
-        padding-top: 15rem;
-    }
-
-    .containerRoadmap{
-        padding-top: 0rem;
-    }
-    
-    .q2{
-        top: 26%;
-    }
-
-    .q3{
-        top: 47%;
-    }
-
-    .q4{
-        top: 64%;
-    }
-
-    .q5{
-        top: 83%;
-    }
-
-    .boxRoadmpa{
+    .timeline{
+        display: flex;
+        justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
-        margin-left: -5rem;
-        width: 70%;
-        padding-top: 0rem;
-        height: 160vh;
-    }
-
-    .containerRoadmap{
-        padding-top: 0rem;
-    }
-
-    .q1circle, .q3circle, .q5circle, .q2circle, .q4circle{
-        width: 1.5rem;
-        height: 1.5rem;
-        left: 4rem;
-        top: -.4rem;
-    }
-    
-
-    .line-Container{
-        position:relative;
-        width: 1rem;
-        height: 130vh;
-    }
-    
-    .line-q1{
-        width: 4rem;
-        height: .7rem;
-        top: 35%;
-        left: 3.5rem;
-    }
-    
-    .q1-title{
-        position: relative;
-        left: 5rem;
-        width: 20rem;
-        top: -4rem;
-        margin-left: 0rem;
-    }
-    
-    .q1-title h4{
-        padding: 1rem;
-        font-size: 3rem;
-        letter-spacing: 1px;
-    }
-    
-    
-    .listQ1, .listQ2 , .listQ3 ,.listQ4 , .listQ5{
-        font-size: 1.15rem;
-        width: 47rem;
-        margin-left: 1.5rem;
-        letter-spacing: 1px;
-    }
-
-    
-    .listQ1 ul, .listQ2 ul, .listQ3 ul,.listQ4 ul, .listQ5 ul{
-        list-style: none;
-    }
-    
-    .listQ1 li, .listQ2 li, .listQ3 li,.listQ4 li, .listQ5 li{
-        padding: .5rem;
-    }
-    
-    
-    .line-q2{
-        width: 4rem;
-        height: .7rem;
-        top: 35%;
-        left: 3.5rem;
-    }
-    
-    .q2-title{
-        position: relative;
-        left: 4rem;
-        width: 20rem;
-        top: -4rem;
-        margin-left: 0rem;
-    }
-    
-    .q2-title h4{
-        padding: 1rem;
-        font-size: 3rem;
-        letter-spacing: 1px;
-    }
-    
-    .line-q3{
-        width: 4rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q3-title{
-        left:4rem;
-        width: 20rem;
-        top: -4rem;
-        margin-left: 0rem;
+        margin-left: -40rem;
 
     }
-    
-    .q3-title h4{
-        padding: 1rem;
-        font-size: 3rem;
-        letter-spacing: 1px;
+  }
+  
+
+  @media screen and (max-width: 420px) {
+    .timeline ul li {
+      margin-left: 20px;
     }
-    
-    
-    .line-q4{
-        width: 4rem;
-        height: .7rem;
-        top: 35%;
-        left: 3.5rem;
-    }
-    
-    .q4-title{
-        margin-left: 0rem;
-        left:4rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q4-title h4{
-        padding: 1rem;
-        font-size: 3rem;
-        letter-spacing: 1px;
-    }
-    
-    .line-q5{
-        width: 4rem;
-        height: .7rem;
-        top: 35.4%;
-        left:3.4rem;
-    }
-    
-    .q5-title{
-        left: 4rem;
-        margin-left: 0rem;
-        width: 20rem;
-        top: -4rem;
-    }
-    
-    .q5-title h4{
-        padding: 1rem;
-        font-size: 3rem;
-        letter-spacing: 1px;
+    .timeline ul li div {
+        width: 30rem;
     }
 
-}
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -16px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
+        backdrop-filter: blur(1rem);
+    }
+
+    .textRoadamp p {
+        font-size: 1.3rem;
+    }
+
+    .timeline{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: -34rem;
+
+    }
+  }
+
+
+  
+  @media screen and (max-width: 370px) {
+    .timeline ul li {
+      margin-left: 20px;
+    }
+    .timeline ul li div {
+        width: 26.5rem;
+    }
+
+    .timeline ul li:nth-child(even) div {
+      left: 45px;
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -16px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
+        backdrop-filter: blur(1rem);
+    }
+
+    .textRoadamp p {
+        font-size: 1.1rem;
+    }
+
+    .timeline{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: -31rem;
+
+    }
+  }
+  
+  /* EXTRA/CLIP PATH STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .timeline-clippy ul li::after {
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  .timeline-rhombus ul li::after {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  
+  .timeline-rhombus ul li div::before {
+    bottom: 12px;
+  }
+  
+  .timeline-star ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+  }
+  
+  .timeline-heptagon ul li::after {
+    clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+  }
+  
+  .timeline-infinite ul li::after {
+    animation: scaleAnimation 2s infinite;
+  }
+  
+  @keyframes scaleAnimation {
+    0% {
+      transform: translateX(-50%) scale(1);
+    }
+    50% {
+      transform: translateX(-50%) scale(1.25);
+    }
+    100% {
+      transform: translateX(-50%) scale(1);
+    }
+  }
