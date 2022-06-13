@@ -98,6 +98,23 @@
 }
 
 
+@media screen and (max-width:1440px) {
+    
+    .social {
+        right: -25rem;
+    }
+    
+    .social a {
+        font-size: 20px;
+        margin: 5px;
+        padding: 15px;
+        width: 300px;
+        border-radius: 50px;
+    } 
+    
+    
+}
+
 
 @media screen and (max-width:600px) {
     .social {

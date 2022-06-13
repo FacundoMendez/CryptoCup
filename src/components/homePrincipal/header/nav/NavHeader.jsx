@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
 import "./nav.css";
-/* import navScroll from './scrollNav'; */
+import navScroll from './scrollNav';
 import navOcultar from './navOcultar';
 import navBallModel from './modelBall';
 import imgNav from "./src/navBack.png"
@@ -12,7 +12,7 @@ import imgNav from "./src/navBack.png"
 function NavHeader() {
 
     useEffect(()=>{
-/*         navScroll() */
+        navScroll()
         navOcultar()
         navBallModel()
     },[])

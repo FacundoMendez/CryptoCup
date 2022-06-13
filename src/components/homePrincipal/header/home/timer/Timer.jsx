@@ -10,7 +10,7 @@ const Timer = () => {
 
   return (
     <div className="timer">
-        <h1 className="headline">Qatar 2022</h1>
+        <h2 className="headline">Qatar 2022</h2>
 
         <div id="countdown">
             <ul className="reloj">

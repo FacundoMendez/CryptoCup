@@ -319,7 +319,7 @@
         gap: 5rem;
         width: 100%;
         margin-top: 10rem;
-        margin-left: 0rem;
+        margin-left: 8rem;
     }
 
     .tiketsTitle h2{
@@ -339,22 +339,26 @@
     }
 
     .textTikets{
-        width: 50vw;
+        width: 65%;
         gap:3rem;
     }
     
     .textTikets p{
-        padding: 0rem 2rem;
-        font-size: 1.8rem;
-        text-align: center;
+        padding: 0rem 4rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.9rem;
     }
 
     .tiketsPreview{
-        width: 22rem;
+        width: 20rem;
     }
 
     .textoTicket-home p{
         margin-top: 0rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.9rem;
     }
     
     .backTikets{
@@ -370,6 +374,10 @@
     .textTikets{
         width: 75vw;
         gap:3rem;
+    }
+
+    .boxTickets-Home-basic, .boxTickets-Home-boost {
+        margin-left: 0rem;
     }
 
 }

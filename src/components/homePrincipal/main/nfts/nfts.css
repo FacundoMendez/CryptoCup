@@ -202,14 +202,15 @@
     }
 
     .textNfts{
-        width: 60%;
+        width: 65%;
         text-align: center;
     }
     
     .textNfts p{
-        color: white;
-        padding: 0 1rem ;
-        text-align: center;
+        padding: 0rem 4rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.9rem;
     }
     
     .tiposTorneos{

@@ -107,8 +107,8 @@
 @media screen and (max-width: 1440px){
 
     .titleContainers h2{
-        padding: 2rem;
-        font-size: 4rem;
+        padding:  0 2rem;
+        font-size: 6rem;
         letter-spacing: 1px;
     }
     

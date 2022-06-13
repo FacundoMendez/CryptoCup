@@ -91,6 +91,15 @@
         padding-bottom: 15rem;
         background-size: cover;
     }
+
+    .textToken p{
+        padding: 0rem 4rem;
+        letter-spacing: 1px;
+        line-height: 3rem;
+        font-size: 1.9rem;
+    }
+
+
     
 }
 

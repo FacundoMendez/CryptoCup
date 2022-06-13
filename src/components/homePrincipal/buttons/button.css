@@ -14,6 +14,7 @@
   }
   
   .btn p {
+    padding-top: 1rem;
     color: white;
     font-size: 2.4rem;
     letter-spacing: 3.8px;
@@ -256,6 +257,13 @@
 
 }
 
+@media screen and (max-width: 1440px) {
+  .btn p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 3.4px;
+  }
+}
 
   
 @media screen and (max-width:480px) {

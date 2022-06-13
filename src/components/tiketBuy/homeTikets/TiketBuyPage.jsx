@@ -25,6 +25,10 @@ const TiketBuyPage = () => {
   const [account, setAccount] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
 
+  const [cantTicketsBasic, setCantTicketsBasic] = useState(0)
+  const [cantTicketsBoost, setCantTicketsBoost] = useState(0)
+
+
   const login = async () => {
     try {
       let newProvider = new ethers.providers.Web3Provider(window.ethereum);
@@ -95,6 +99,17 @@ const TiketBuyPage = () => {
                       </div>
                       <SelectTokenBasic />
                   </div>
+                  <div className="cantTicket-basic">
+                        <button className='menos-basic' onClick={() => {
+                          if (cantTicketsBasic > 0){
+                            setCantTicketsBasic(cantTicketsBasic - 1) 
+                          }
+                        }}> - </button>
+                        <div className="contador-basic">
+                          <p>{cantTicketsBasic}</p>
+                        </div>
+                        <button className='mas-basic' onClick={() => setCantTicketsBasic(cantTicketsBasic + 1) }> + </button>
+                  </div>
               </div>
 
               <div className="boxTickets">
@@ -106,7 +121,18 @@ const TiketBuyPage = () => {
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
-                    <SelectTokenBoost />
+                      <SelectTokenBoost />
+                  </div>
+                  <div className="cantTicket-boost">
+                        <button className='menos-boost' onClick={() => {
+                          if (cantTicketsBoost > 0){
+                            setCantTicketsBoost(cantTicketsBoost - 1) 
+                          }
+                        }}> - </button>
+                        <div className="contador-boost">
+                          <p>{cantTicketsBoost}</p>
+                        </div>
+                        <button className='mas-boost' onClick={() => setCantTicketsBoost(cantTicketsBoost + 1) }> + </button>
                   </div>
               </div>
           </div>

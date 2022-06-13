@@ -17,9 +17,9 @@ const Home = () => {
 
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <p className='titlePrincipal'>CRYPTO CUP <br />
+              <h1 className='titlePrincipal'>CRYPTO CUP <br />
                 TOURNAMENT
-              </p>
+              </h1>
             <div className="buttonsHome">
               <a href="./tickets">
                 <Button title="TICKETS"/>

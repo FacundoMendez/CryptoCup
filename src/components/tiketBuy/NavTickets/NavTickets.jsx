@@ -32,7 +32,7 @@ function NavTicket() {
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                        <a href="/tickets" className="nav-menu-link nav-link">
                             Tickets
                         </a>
                     </li>
