@@ -428,7 +428,7 @@
 @media screen and (max-width: 480px) {
 
     .nav-toggle {
-        right: 10%;
+        right: 2.2rem;
     }
     
     .btnButtonNav p {

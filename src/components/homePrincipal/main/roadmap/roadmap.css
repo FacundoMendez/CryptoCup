@@ -275,6 +275,10 @@
         width: 30rem;
     }
 
+    .timeline ul li div {
+      padding: 15px;
+    }
+
     .timeline ul li:nth-child(even) div {
       left: 45px;
     }
