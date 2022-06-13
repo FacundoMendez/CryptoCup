@@ -17,6 +17,7 @@ const Roadmap = () => {
       </section>
 
       <section className="timeline">
+        <div className='iniTimeline'></div>
         <ul>
           <li>
             <div className='textRoadamp'>
@@ -47,7 +48,7 @@ const Roadmap = () => {
             <div className='textRoadamp'>
               <time>Q3 2022</time> 
               <p>
-                - Whitepaper creation <span>✓</span><br/>
+                - Whitepaper creation <br/>
                 - Ticket Sales <br/>
                 - Private sale <br/>
               </p>
