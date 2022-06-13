@@ -669,7 +669,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap:3rem;
+    gap:3.5rem;
     border:2px solid rgb(255, 255, 255);
     padding: .5rem ;
     width: 17.4rem;
@@ -695,13 +695,11 @@
 }
 
 .menos-basic:active, .mas-basic:active , .menos-boost:active, .mas-boost:active{
-    font-size: 2.15rem;
-    padding: 0 .95rem;
     filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.411)) brightness(140%);
 }
 
 .contador-basic p , .contador-boost p{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     font-weight: 700;
     -webkit-background-clip: text;
     background-clip: text;
@@ -832,6 +830,22 @@
         text-align: center;
     }
 
+
+
+    .radioTokenBoost-active, .radioToken-active {
+        width: 17.3rem;
+        margin-left: -11.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .radio {
+        padding-top: 2px;
+        padding-left: 70px;
+        margin-bottom: 20px;
+        font-size: 13px;
+        gap: 4rem;
+    }
+
     /* button buy */
 
         
@@ -881,7 +895,11 @@
         height: 5rem;
     }
 
+    /* contador */
 
+    .cantTicket-basic , .cantTicket-boost{
+        width: 17.2rem;
+    }
 
 }
 
