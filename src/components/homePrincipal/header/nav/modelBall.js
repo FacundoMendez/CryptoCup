@@ -49,31 +49,36 @@ const navBallModel = () => {
 
         /* ------------------------------------------------- */
 
-        
+        /* 0xff00ff */
 
             /* lights */
        
-            const ambientLight = new THREE.AmbientLight(0xff00ff, .7)
+            const ambientLight = new THREE.AmbientLight(0xffffff, .75)
             scene.add(ambientLight)
 
-            const pointLight4 = new THREE.PointLight(0xffffff,1.8)
-            pointLight4.position.set(0 , 0, 2)
+            const pointLight4 = new THREE.PointLight(0xffffff,2)
+            pointLight4.position.set(0 , 0, 3)
             scene.add(pointLight4)
 
-        
-            const pointLight = new THREE.PointLight(0xffffff,10)
-            pointLight.position.set(4 , 0, 2)
+            const pointLight = new THREE.PointLight(0xffffff,5)
+            pointLight.position.set(3 , 0, 3)
             scene.add(pointLight)
 
-            const pointLight2 = new THREE.PointLight(0xFFDAAA, 10)
-            pointLight2.position.set(-2 , 0, 1)
+            const pointLight2 = new THREE.PointLight(0xffffff,5)
+            pointLight2.position.set(-1 , 0, 6)
             scene.add(pointLight2)
 
-            const pointLight3 = new THREE.PointLight(0xFFDAAA, 10)
+            const pointLight3 = new THREE.PointLight(0xffffff,6)
             pointLight3.position.set(0 , 2, 0)
             scene.add(pointLight3)
 
-          
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 3)
+            directionalLight.position.set(0, 0, -2)
+            scene.add(directionalLight)
+            
+            const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
+            scene.add(hemisphereLight)
+
 
             /* camera */
             
@@ -118,9 +123,6 @@ const navBallModel = () => {
 
             if (modelBall){
                 modelBall.rotation.y += 0.006
-                pointLight2.rotation.y -=  -0.1
-                pointLight.rotation.y -=  0.1
-                pointLight3.rotation.y -=  0.1
             } 
 
 

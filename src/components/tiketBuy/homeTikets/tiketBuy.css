@@ -685,7 +685,7 @@
 
 .menos-basic, .mas-basic , .menos-boost, .mas-boost{
     border-radius: 5px;
-    background-color: #946dffbb;
+    background-color: #9366fcd0;
     backdrop-filter: blur(1em);
     border:none;
     font-size: 2.2rem;
@@ -697,7 +697,7 @@
 }
 
 .menos-basic:active, .mas-basic:active , .menos-boost:active, .mas-boost:active{
-    filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.411)) brightness(140%);
+    filter: drop-shadow( 0 0 5px rgb(155, 48, 255)) brightness(130%);
 }
 
 .contador-basic p , .contador-boost p{
