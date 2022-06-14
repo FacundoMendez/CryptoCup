@@ -669,27 +669,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap:3.5rem;
+    gap:5rem;
     border:2px solid rgb(255, 255, 255);
     padding: .5rem ;
-    width: 17.4rem;
-    margin-left: -.8rem;
     position: relative;
     background-color: #000000d7;
     overflow:hidden;
     backdrop-filter: blur(1em);
     filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.411)) brightness(140%);
+    top:-4.6rem;
+    left: -.4rem;
+    width: 21.8rem;
+
 }
 
 .menos-basic, .mas-basic , .menos-boost, .mas-boost{
     border-radius: 5px;
-    background-color: #4400ff;
+    background-color: #946dffbb;
     backdrop-filter: blur(1em);
     border:none;
     font-size: 2.2rem;
     font-weight: 700;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 2rem;
     color: white;
     cursor: pointer;
 }
@@ -898,7 +900,17 @@
     /* contador */
 
     .cantTicket-basic , .cantTicket-boost{
-        width: 17.2rem;
+        gap:4rem;
+        padding: .5rem ;
+        top:-1.5rem;
+        left: -.4rem;
+        width: 17.3rem;
+    
+    }
+    
+    .menos-basic, .mas-basic , .menos-boost, .mas-boost{
+        font-size: 2.2rem;
+        padding: 0 1.3rem;
     }
 
 }
@@ -1332,12 +1344,21 @@
         filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
       }
 
-        
+
     /* contador */
 
     .cantTicket-basic , .cantTicket-boost{
-        width: 17rem;
-        margin-left: -.75rem;
+        gap:4rem;
+        padding: .5rem ;
+        top:-1.5rem;
+        left: -.4rem;
+        width: 17.3rem;
+    
+    }
+    
+    .menos-basic, .mas-basic , .menos-boost, .mas-boost{
+        font-size: 2.2rem;
+        padding: 0 1.3rem;
     }
 
       
