@@ -9,12 +9,11 @@
     gap: 2rem;
     padding-bottom: 5rem ;
     z-index: 100;
-
 }
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(130%) opacity(1) ;
+    filter: contrast(130%) brightness(120%) opacity(1) ;
     height: 102%;
     width: 100%;
     z-index: -1;
@@ -37,7 +36,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(0, 0, 0, 0.795);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
