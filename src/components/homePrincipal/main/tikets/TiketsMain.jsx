@@ -4,8 +4,10 @@ import TiketBoost from "./src/tiketBasic.png"
 import TiketBasic from "./src/tiketBoost.png"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
-import backReflejo from "../presentCryptoCup/src/BackTournament.jpg"
+import backReflejo from "./src/BackgroundTickets4.jpg"
 import star from "./src/star.png"
+import xBoost from "./src/xBoost.png"
+
 
 const TiketsMain = () => {
 
@@ -70,6 +72,14 @@ const TiketsMain = () => {
                 Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
               </p>
             </div>
+          </div>
+
+          <div className="containerBoostX">
+
+            <div className="boostXimg">
+              <img className="boostX" src={xBoost} alt="Boost Multiplicadores" />
+            </div>
+
           </div>
     
         </div>

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import ballModel from "./src/models/ball.glb"
+import ballModel from "./src/models/PelotaGod.glb"
 
 
 const navBallModel = () => {
@@ -53,9 +53,9 @@ const navBallModel = () => {
 
             /* lights */
        
-            const ambientLight = new THREE.AmbientLight(0xffffff, .75)
-            scene.add(ambientLight)
-
+  /*           const ambientLight = new THREE.AmbientLight(0xffffff, .75)
+            scene.add(ambientLight) */
+/* 
             const pointLight4 = new THREE.PointLight(0xffffff,2)
             pointLight4.position.set(0 , 0, 3)
             scene.add(pointLight4)
@@ -78,7 +78,7 @@ const navBallModel = () => {
             
             const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
             scene.add(hemisphereLight)
-
+ */
 
             /* camera */
             

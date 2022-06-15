@@ -9,7 +9,18 @@
     gap: 2rem;
     padding-bottom: 5rem ;
     z-index: 100;
+
 }
+
+.backTikets{
+    object-fit: cover;
+    filter: contrast(130%) opacity(1) ;
+    height: 102%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
 
 .containerTikets::after{
     content:"";
@@ -26,7 +37,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.699);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
@@ -276,15 +287,26 @@
     width: 2.5rem;
 }
 
-
-.backTikets{
-    object-fit: cover;
-    filter: contrast(130%) opacity(.9) ;
-    height: 102%;
-    position: absolute;
-    z-index: -1;
+.containerBoostX{
+    padding: 10rem 0;
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15rem;
 }
 
+.boostXimg{
+    width: 45%;
+}
+
+.boostXimg img{
+    object-fit: cover;
+    width: 100%;
+    filter: drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.932));
+    margin-left: -2rem;
+}
 
 
 

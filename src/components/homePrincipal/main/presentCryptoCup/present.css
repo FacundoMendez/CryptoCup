@@ -6,8 +6,29 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-bottom: 31rem;
+    padding-bottom: 15rem;
 }
+
+.logoContainer{
+    width: 100%;
+    margin-top: 5em;
+}
+
+.logoContainer img{
+    object-fit: cover;
+    width: 25%;
+    filter: brightness(125%) contrast(120%) drop-shadow( 0 0 80px rgba(141, 42, 255, 0.281));
+}
+
+/* fondo */
+
+.backPresentacion{
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    filter: contrast(110%) brightness(115%);
+    opacity: .4;
+} 
 
 .boxTournament{
     padding-top: 15rem;
@@ -67,15 +88,7 @@
     text-align: center;
 }
 
-/* fondo */
 
-.backPresentacion{
-    width: 150%;
-    position: absolute;
-    object-fit: cover;
-    filter: contrast(110%) brightness(115%);
-    opacity: .4;
-} 
 
 .tournamentTitle h2{
     font-size: 6.5rem;

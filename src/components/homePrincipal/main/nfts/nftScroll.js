@@ -35,7 +35,7 @@ const nftScroll= ()=>{
             }
         })
 
-        gsap.from(".flip",{
+        gsap.from(".container_card",{
             opacity:0,
             delay:.8,
             y:300,

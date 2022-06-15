@@ -30,7 +30,7 @@
     flex-wrap: wrap;
     gap: 10rem;
     width: 100%;
-    height: 105vh;
+    height: 100vh;
     z-index: 15;
 }
 
@@ -557,12 +557,12 @@
     gap: 2rem;
     top: -6rem;
     width: 32%;
+    left: 2rem;
 }
 
 .titleTicket h2{
-    font-size: 7rem;
-    line-height: 6rem;
-    letter-spacing: 2.5px;
+    font-size: 6.5rem;
+    letter-spacing: 1px;
     -webkit-background-clip: text;
     background-clip: text;
     font-family: qatar;
@@ -573,10 +573,15 @@
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
 }
 
+.textoTicket{
+    width: 90%;
+}
+
 .textoTicket p{
     color: white;
-    text-align: initial;
+    text-align: center;
     padding: 2rem;
+    margin-top: -3rem;
 }
 
 
@@ -832,7 +837,9 @@
         text-align: center;
     }
 
-
+    .textoTicket p{
+        margin-top: -2rem;
+    }
 
     .radioTokenBoost-active, .radioToken-active {
         width: 17.3rem;
@@ -923,7 +930,10 @@
         overflow-y: scroll;
     }
 
-        
+    .text-tickets{
+        left: 0rem;
+    }
+    
 
     
     .containerTiketsBuy{
@@ -1104,6 +1114,10 @@
         width: 100%;
     }
     
+    .textoTicket{
+        width: 100%;
+    }
+
     /* general */
     
     .flexTickets{

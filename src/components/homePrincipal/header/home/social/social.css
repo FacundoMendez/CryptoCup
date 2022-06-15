@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 5000;
+    z-index: 999999;
     right: -24.5rem;
     transition: all .5s ease-in-out;
 }
@@ -73,7 +73,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        z-index: 5000;
+        z-index: 999999;
         right: -25.5rem;
     }
     
@@ -123,7 +123,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        z-index: 5000;
+        z-index: 999999;
         right: -23.5rem;
     }
     
@@ -154,7 +154,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 4rem;
-        z-index: 5000;
+        z-index: 999999;
         border-top: 2px double rgba(193, 170, 255, 0.336);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;

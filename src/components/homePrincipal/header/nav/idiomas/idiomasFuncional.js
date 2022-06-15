@@ -11,10 +11,10 @@ const idiomasFuncional = () =>{
     })
 
     boxEspañol.addEventListener("click", function(){
-        window.location.reload();
+   /*      window.location.reload(); */
     })
     boxEnglish.addEventListener("click", function(){
-        window.location.reload();
+    /*     window.location.reload(); */
     })
 }
 
