@@ -224,7 +224,7 @@
     }
     
     .titleContainers h2{
-        font-size: 4rem;
+        font-size: 5.5rem;
         padding: 1rem;
     }
 
@@ -254,14 +254,14 @@
     }
 
     .logoContainer img{
-        margin-left: 2rem;
+        left: 2rem;
     }
 }
 
 @media screen and (max-width: 395px){
 
     .titleContainers h2{
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding: 0;
     }
     
