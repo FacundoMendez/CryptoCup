@@ -37,7 +37,7 @@ const tournamentScroll = () =>{
         gsap.from(".logoContainer",{
             opacity:0,
             delay:1,
-            rotateY: 40,
+            y: 100,
             duration:2.5,
             scrollTrigger:{
                 trigger: ".boxTournament",

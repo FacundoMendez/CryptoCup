@@ -16,7 +16,7 @@
 
 .logoContainer img{
     object-fit: cover;
-    width: 25%;
+    width: 45rem;
     filter: brightness(125%) contrast(120%) drop-shadow( 0 0 80px rgba(141, 42, 255, 0.281));
 }
 
@@ -169,6 +169,8 @@
     .subTitleNft{
         width: 65%;
     }
+
+
 }
 
 
@@ -250,6 +252,10 @@
         text-align: center;
         font-size: 1.8rem;
     }
+
+    .logoContainer img{
+        margin-left: 2rem;
+    }
 }
 
 @media screen and (max-width: 395px){
@@ -271,5 +277,10 @@
         padding: 0rem 2rem;
         padding-right: 2rem;
         font-size: 1.7rem;
+    }
+
+    .logoContainer img{
+        margin-left: 0rem;
+        width: 100%;
     }
 }

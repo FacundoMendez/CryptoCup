@@ -6,14 +6,14 @@ import "./nav.css";
 import navScroll from './scrollNav';
 /* import navOcultar from './navOcultar'; */
 import navBallModel from './modelBall';
-import imgNav from "./src/navBack.png"
+import imgNav from "./src/navBack.png";
 /* import Idiomas from './idiomas/Idiomas'; */
 
 function NavHeader() {
 
     useEffect(()=>{
         navScroll()
-    /*     navOcultar() */
+       /*  navOcultar() */
         navBallModel()
     },[])
 
@@ -29,7 +29,7 @@ function NavHeader() {
                 </button>
                 
                 <ul className="navVisible nav-menu navIzquierda">
-                   {/*  <Idiomas /> */}
+                    {/* <Idiomas /> */}
                     
                     <li className="nav-menu-item " >
                         <a href="#home" className="nav-menu-link nav-link">
