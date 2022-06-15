@@ -23,6 +23,7 @@
     "react-scripts": "5.0.1",
     "three": "^0.140.0",
     "truncate-eth-address": "^1.0.2",
+    "vanilla-tilt": "^1.7.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

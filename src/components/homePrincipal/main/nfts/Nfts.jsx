@@ -3,12 +3,14 @@ import "./nfts.css"
 import nftTournament1 from "./src/copaMundo.png"
 import nftTournament2 from "./src/copaMundo.png"
 import nftScroll from "./nftScroll"
+import cardsFuncional from './cardsFuncional'
 /* import backReflejo from "../tikets/src/BackTickets2.jpg" */
 
 const Nfts = () => {
 
   useEffect(()=> {
     nftScroll()
+    cardsFuncional()
   },[])
 
   return (
@@ -24,31 +26,10 @@ const Nfts = () => {
             </p>
         </div>
         <div className="tiposTorneos">   
-              <div className="flip">
-                  <div className="front" >
-                    <h1 className="text-shadow">BASSIC TORUNAMENT <br />
-                        NFT CHAMPION
-                    </h1>
-                  </div>
-                  <div className="back nftTournament1">
-                  <img src={nftTournament1} alt="Nft Tournament Basic" />
-                    {/* <h2>BASSIC TORUNAMENT</h2>
-                    <p>Descripcion torneo BASSIC</p> */}
-                  </div>
-              </div>
-
-              <div className="flip">
-                  <div className="front" >
-                    <h1 className="text-shadow">BOOST TORUNAMENT <br />
-                        NFT CHAMPION
-                    </h1>
-                  </div>
-                  <div className="back nftTournament2">
-                    <img src={nftTournament2} alt="Nft Tournament Boost" />
-                 {/*    <h2>BOOST TORUNAMENT</h2>
-                    <p>Descripcion torneo BOOST</p> */}
-                  </div>
-              </div>
+          <div className="container">
+            <div className="container_card"></div>  
+            <div className="container_card"> </div> 
+          </div>
         </div>
     </div>
   )

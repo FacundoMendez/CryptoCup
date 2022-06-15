@@ -2,7 +2,6 @@ import React, {lazy, Suspense, useState} from 'react'
 import { ethers } from 'ethers';
 import { contractAddress, abi } from './utils'
 import truncateEthAddress from 'truncate-eth-address';
-
 import "./tiketBuy.css"
 
 import tiketBasico from "./src/tiketBasic.png"
@@ -18,6 +17,8 @@ const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 
 
 const TiketBuyPage = () => {
+
+
 
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);
@@ -89,7 +90,7 @@ const TiketBuyPage = () => {
           <div className="ticketsSale">
 
               <div className="boxTickets">
-                  <img className='ImgTicket' src={tiketBasico} alt="Ticket Basic" />
+                  <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
                   
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
@@ -113,7 +114,7 @@ const TiketBuyPage = () => {
               </div>
 
               <div className="boxTickets">
-                  <img className='ImgTicket ImgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
+                  <img className='imgTicket imgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
