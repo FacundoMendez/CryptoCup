@@ -1,6 +1,12 @@
 import React from 'react'
 import "./footer.css"
 import backFooter from "./src/Footer3.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from "@fortawesome/free-brands-svg-icons"
+import { faInstagram } from "@fortawesome/free-brands-svg-icons"
+import { faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faDiscord } from "@fortawesome/free-brands-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = () => {
   return (
@@ -8,7 +14,14 @@ const Footer = () => {
         <img className='backFooter' src={backFooter} alt="Background Footer" />
         <div className="blurFooter"></div>
         <div className="logoFooter">
-            <p>Crypto Cup</p>
+            <p>Our Social Networks</p>
+            <div className="socialFooter">
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="twitterSocialFooter"> <FontAwesomeIcon icon={faTwitter} /> </i>   </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="instagramSocialFooter"> <FontAwesomeIcon icon={faInstagram} /> </i>    </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="telegramSocialFooter"> <FontAwesomeIcon icon={faTelegram} /> </i>   </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="discordSocialFooter"> <FontAwesomeIcon icon={faDiscord} /> </i> </a>
+                <a href="/" target="_blank" rel="noopener noreferrer"><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
+            </div>
         </div>
 
 {/*         <div className="listNav">
@@ -22,9 +35,7 @@ const Footer = () => {
         <div className="terms">
             <div className='listTerms'>
                 <ul>
-                    <li><a href="/PrivacyPolicy "> • Privacy Policy</a></li>
-                    <li><a href="/home"> • Terms and Conditions </a></li>
-                    <li><a href="/home"> • Legal Notices </a></li>
+                    <li><a href="/PrivacyPolicy "> • Terms and Conditions</a></li>
                 </ul>
                 <br />
                 <p className='termsAndCond'>
