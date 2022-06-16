@@ -210,8 +210,6 @@
 
 @media screen and (max-width: 480px){
 
-
-
     .tournamentContainer{
         padding-bottom: 0rem;
     }
@@ -255,10 +253,8 @@
         font-size: 1.8rem;
     }
 
-    
     .logoContainer img{
-        width: 34rem;
-        margin-left: 6.2rem;
+        left: 2rem;
     }
 }
 

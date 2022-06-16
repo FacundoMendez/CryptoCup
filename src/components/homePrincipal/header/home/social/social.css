@@ -167,13 +167,13 @@
         margin-right: 15px;
         font-size: 35px;
         width: 30px;
-        filter: contrast(124%) brightness(120%);
+        filter: contrast(104%) brightness(120%);
         transition: color 0.3s;
-        color: #7338fc ;
+        color: #9d82ff ;
     }
     
     .socialMobile a:hover:nth-child(1) i {
-        color: #7338fc ;
+        color: #9d8af1;
     }
     
     .socialMobile a:hover:nth-child(2) i {

@@ -92,9 +92,9 @@ const navBallModel = () => {
 
         const gltfLoader = new GLTFLoader()
         gltfLoader.load(ballModel,
-            (glb) =>
+            (gltf) =>
             {
-                modelBall= glb.scene
+                modelBall= gltf.scene
                 modelBall.scale.set(1.0, 1.0, 1.0)
                 scene.add(modelBall)
             }
@@ -146,6 +146,7 @@ const navBallModel = () => {
         gltfLoader.uvsNeedUpdate = true;
         gltfLoader.normalsNeedUpdate = true; 
         gltfLoader.colorsNeedUpdate = true; 
+
         gltfLoader.needsUpdate = true
 
     }

@@ -24,7 +24,6 @@ function NavHeader() {
             <nav className="nav">
 
                 <img className='navBack' src={imgNav} alt="nav background" />
-                
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
