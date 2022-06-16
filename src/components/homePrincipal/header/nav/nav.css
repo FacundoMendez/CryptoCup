@@ -269,6 +269,8 @@
 
 @media screen and (max-width: 1440px){
 
+
+        
     .nav-link {
         font-size: 2rem;
         font-weight: 900;
@@ -317,6 +319,8 @@
     .BorderLeftRightNav:after {
       height: 4.5rem;
     }
+
+    
 }
 
 
@@ -389,7 +393,7 @@
     }
 
     .fa-bars{
-        color: rgb(250, 238, 215);
+        color: rgb(234, 212, 255);
         font-size: 3.9rem;
     }
 
@@ -426,9 +430,15 @@
 }
 
 @media screen and (max-width: 480px) {
+    .nav img{
+        width: 100vw;
+        height: 16vh;
+        object-fit: cover;
+    }
 
     .nav-toggle {
-        right: 2.2rem;
+        right: 4rem;
+        top: 3.7rem;
     }
     
     .btnButtonNav p {
@@ -438,7 +448,7 @@
     }
 
     .navBallModel{
-        margin-top: .5rem;
+        margin-top: -.7rem;
     }
 
     .nav {
