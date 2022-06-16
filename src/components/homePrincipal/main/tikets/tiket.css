@@ -401,6 +401,7 @@
         margin-left: 0rem;
     }
 
+
 }
 
 
@@ -431,14 +432,18 @@
         gap: 10rem;
         position: relative;
         width: 180vw;
-        margin-top: 10rem;
+        margin-top: -15rem;
         padding-bottom: 0rem;
-        margin-left: -2rem;
     }
 
     .containerTikets{
         padding-bottom: 5rem ;
     }
+
+    .boostXimg{
+        display: none;
+    }
+
  
 }
 
