@@ -76,7 +76,7 @@
     border-left: 1px solid rgba(213, 180, 255, 0.356);
     backdrop-filter: blur(1rem);
     background: #161623;
-    filter: drop-shadow(2px -12px 15px rgba(186, 136, 252, 0.247));
+    filter: drop-shadow(2px -8px 15px rgba(186, 136, 252, 0.247));
 }
 
 .videoCopaBasic, .videoCopaBoost{
