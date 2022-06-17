@@ -94,8 +94,6 @@
 .prizepoolBasic img{
     filter: contrast(110%) brightness(110%);
     width: 85%;
-    transform: scale(0.7);
-    opacity: 0;
 }
 
 

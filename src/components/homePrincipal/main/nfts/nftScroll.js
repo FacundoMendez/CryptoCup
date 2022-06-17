@@ -49,10 +49,9 @@ const nftScroll= ()=>{
 
 
 
-        gsap.to(".imgPrizePoolBasic",{
-            opacity:1,
-            scale:1,
-            delay:.1,
+        gsap.from(".imgPrizePoolBasic",{
+            opacity:0,
+            delay:.4,
             duration:2,
             scrollTrigger:{
                 trigger: ".prizepool",
