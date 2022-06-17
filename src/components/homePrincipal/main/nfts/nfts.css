@@ -73,9 +73,28 @@
     border-radius: 15px;
     overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(252, 252, 252, 0.356);
     backdrop-filter: blur(1rem);
     background: #161623;
+}
+
+.videoCopaBasic, .videoCopaBoost{
+    width: 100%;
+    filter: contrast(115%) brightness(130%);
+}
+
+.prizepoolBasic {
+    padding-top: 10rem ;
+    object-fit: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.prizepoolBasic img{
+    filter: contrast(110%) brightness(110%);
+    width: 85%;
+    transform: scale(0.7);
+    opacity: 0;
 }
 
 

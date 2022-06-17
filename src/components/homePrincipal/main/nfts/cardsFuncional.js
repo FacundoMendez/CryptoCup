@@ -24,7 +24,7 @@ const cardsFuncional = () => {
             max: 25,
             speed: 1000,
             glare:true,
-            "max-glare":1,
+            "max-glare":.2,
         });
 
         VanillaTilt.init(document.querySelectorAll(".textRoadamp"), {

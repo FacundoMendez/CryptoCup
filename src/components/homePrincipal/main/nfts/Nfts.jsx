@@ -5,6 +5,9 @@ import nftTournament2 from "./src/copaMundo.png"
 import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
 /* import backReflejo from "../tikets/src/BackTickets2.jpg" */
+import videoCopaBasic from "./src/prizepoolBasicVideo.mp4"
+import videoCopaBoost from "./src/prizepoolBoostVideo.mp4"
+import prizepoolBasic from "./src/prizepoolBasic.png"
 
 const Nfts = () => {
 
@@ -27,9 +30,19 @@ const Nfts = () => {
         </div>
         <div className="tiposTorneos">   
           <div className="container">
-            <div className="container_card"></div>  
-            <div className="container_card"> </div> 
+            <div className="container_card">
+                <video className='videoCopaBasic' src={videoCopaBasic} autoPlay loop muted ></video> 
+            </div>  
+            <div className="container_card"> 
+                <video className='videoCopaBoost' src={videoCopaBoost} autoPlay loop muted ></video> 
+            </div> 
           </div>
+        </div>
+
+        <div className="prizepool">
+            <div className="prizepoolBasic">
+                <img className='imgPrizePoolBasic' src={prizepoolBasic} alt="PrizePool basic" />
+            </div>
         </div>
     </div>
   )
