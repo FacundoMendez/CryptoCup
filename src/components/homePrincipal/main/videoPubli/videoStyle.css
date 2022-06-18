@@ -11,28 +11,18 @@
     background-image: url("../token/src/BackToken.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
 }
 
 .videoPubli-container::before{
     width: 110%;
     height: 100%;
     content: " ";
-    top: -1rem;
-    background-color: rgba(0, 0, 0, 0.815);
-    filter: blur(15px);
+    top: .01rem;
+    background-color: rgba(0, 0, 0, 0.705);
     position: absolute;
 }
 
-.videoPubli-container::after{
-    content: " ";
-    position: absolute;
-    top: -5rem;
-    height: 20rem;
-    width: 110vw;
-    background-color: rgba(0, 0, 0, 0.932);
-    filter: blur(50px);
-}
+
 
 .videoPubli-texts h5{
     font-weight: bold;

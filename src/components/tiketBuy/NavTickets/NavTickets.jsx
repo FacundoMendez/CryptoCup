@@ -71,7 +71,7 @@ function NavTicket() {
                 <ul className='navDerecha'>
           
                     <li className="nav-menu-item">
-                        <a href="#roadmap" className="nav-menu-link nav-link">
+                        <a href="/" className="nav-menu-link nav-link">
                             Roadmap
                         </a>
                     </li>

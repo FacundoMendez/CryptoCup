@@ -37,7 +37,7 @@ const nftScroll= ()=>{
 
         gsap.from(".container_card",{
             opacity:0,
-            delay:.8,
+            delay:.5,
             y:300,
             duration:1,
             scrollTrigger:{
@@ -49,16 +49,6 @@ const nftScroll= ()=>{
 
 
 
-        gsap.from(".imgPrizePoolBasic",{
-            opacity:0,
-            delay:.4,
-            duration:2,
-            scrollTrigger:{
-                trigger: ".prizepool",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
         /* gsap.from(".textToken",{
             opacity:0,
             delay:.3,

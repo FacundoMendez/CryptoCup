@@ -7,6 +7,10 @@
     flex-direction: column;
     gap: 6rem;
     padding-top: 10rem ;
+    background-image: url("./src/BackToken.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 10;
 }
 
 .containerNfts::before{
@@ -14,10 +18,26 @@
     height: 100%;
     content: " ";
     top: -1rem;
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(0, 0, 0, 0.705);
     filter: blur(15px);
     position: absolute;
-    z-index: -1;
+    z-index: 1;
+}
+
+.containerNfts::after{
+    width: 110%;
+    height: 20rem;
+    content: " ";
+    top: -1rem;
+    background-color: rgba(0, 0, 0, 0.863);
+    filter: blur(10px);
+    position: absolute;
+    z-index: 1;
+}
+
+.titleNfts{
+    z-index: 10;
+    padding-top: 5rem;
 }
 
 
@@ -91,11 +111,24 @@
     width: 100%;
     height: 100%;
     position: relative;
+    background-image: url("./src/BackToken.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 10;
 }
 
-.event1 {
-    background-color: black;
+
+
+.events-page::before{
+    width: 110%;
+    height: 100%;
+    content: " ";
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.705);
+    position: absolute;
+    z-index: -1;
 }
+
 .event1 .image {
     top: 50%;
     background-image: url(./src/prizepoolBasic.png);
@@ -107,9 +140,7 @@
     filter: contrast(110%) brightness(110%);
 }
 
-.event2 {
-    background-color: black;
-}
+
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
     background-size: contain;
