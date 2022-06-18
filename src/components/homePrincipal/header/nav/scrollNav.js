@@ -1,7 +1,7 @@
-import $ from "jquery"
+/* import $ from "jquery"
 
 const navScroll= () =>{
-/*     $(window).scroll(function(){
+  $(window).scroll(function(){
         var windowHeight = $(window).scrollTop();
         var contenido2 = $(".tournamentContainer").offset();
         contenido2 = contenido2.top;
@@ -13,8 +13,9 @@ const navScroll= () =>{
             $(".social").css("opacity", 1);
             $(".social").css("visibility", "visible");
         }
-    }); */
+    }); 
 
 }
 
 export default navScroll;
+ */

@@ -1,8 +1,6 @@
 
 const roadmapScroll = () =>{
 
-    "use strict";
-
     var items = document.querySelectorAll(".timeline li");
   
     function isElementInViewport(el) {

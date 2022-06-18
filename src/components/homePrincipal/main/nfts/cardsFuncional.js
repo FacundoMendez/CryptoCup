@@ -32,6 +32,8 @@ const cardsFuncional = () => {
             speed: 1000,
             "max-glare":1,
         });
+
+
     }
     
 }

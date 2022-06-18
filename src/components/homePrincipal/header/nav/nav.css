@@ -7,7 +7,7 @@
     cursor: grab;
     z-index: 10000;
     filter:drop-shadow(0 0 50px rgba(92, 1, 167, 0.336)) contrast(110%);
-    margin-top: .8rem;
+    margin-top: .4rem;
     margin-left: .2rem;
     width: 100%;
     text-align: center;
@@ -18,7 +18,7 @@
     z-index: 10000;
     width: 100%;
     top: -1rem;
-    height: 10rem;
+    height: 9.7rem;
     background-color: rgba(40, 4, 68, 0.397);
     transition: all .6s ease-in-out;
     filter: blur(8px);

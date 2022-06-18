@@ -84,7 +84,10 @@
     filter: contrast(115%) brightness(130%);
 }
 
-.prizepoolBasic {
+
+
+/* ----- */
+/* .prizepoolBasic {
     padding-top: 10rem ;
     object-fit: cover;
     width: 100%;
@@ -95,6 +98,64 @@
     filter: contrast(110%) brightness(110%);
     width: 85%;
 }
+ */
+
+/* ---------- */
+.events-page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.event1 {
+    background-color: black;
+}
+.event1 .image {
+    top: 50%;
+    background-image: url(./src/prizepoolBasic.png);
+    background-size: contain;
+    width: 55%;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-top: 15rem;
+    filter: contrast(110%) brightness(110%);
+}
+
+.event2 {
+    background-color: black;
+}
+.event2 .image {
+    background-image: url(./src/prizepoolBoost.png);
+    background-size: contain;
+    width: 55%;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-top: 15rem;
+    filter: contrast(110%) brightness(110%);
+}
+.image {
+    top: -50%;
+    left: 50%;
+    background-size: contain;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 50vw;
+}
+.pinWrapper {
+    height: 100%;
+    width: 100%;
+}
+.event {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.scrollmagic-pin-spacer {
+    position: absolute !important;
+    clip: rect(auto, auto, auto, auto);
+}
+
 
 
 @media screen and (max-width: 1440px){
@@ -119,6 +180,15 @@
     .tiposTorneos{
         gap: 5rem;
         padding-top: 5rem;
+    }
+
+    .event1 .image {
+        width: 75%;
+        margin-top: 15rem;
+    }
+    
+    .event2 .image {
+        width: 75%;
     }
 }
 
@@ -147,6 +217,15 @@
         padding-top: 5rem;
     }
 
+    .event1 .image {
+        width: 85%;
+        margin-top: 15rem;
+    }
+    
+    .event2 .image {
+        width: 85%;
+    }
+
 }
 
 @media screen and (max-width: 770px){
@@ -164,6 +243,15 @@
     .tiposTorneos{
         gap: 5rem;
         padding-top: 5rem;
+    }
+
+    .event1 .image {
+        width: 85%;
+        margin-top: 15rem;
+    }
+    
+    .event2 .image {
+        width: 85%;
     }
 }
 
@@ -191,6 +279,15 @@
     .tiposTorneos{
         gap: 5rem;
         padding-top: 5rem;
+    }
+
+    .event1 .image {
+        width: 95%;
+        margin-top: 15rem;
+    }
+    
+    .event2 .image {
+        width: 95%;
     }
 }
 

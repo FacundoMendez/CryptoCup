@@ -21,6 +21,7 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "scrollmagic": "^2.0.8",
     "three": "^0.140.0",
     "truncate-eth-address": "^1.0.2",
     "vanilla-tilt": "^1.7.2",
