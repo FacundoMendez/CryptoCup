@@ -48,40 +48,36 @@ const TiketsMain = () => {
           </div>
         </div>
 
-
-
         <div className="boxTickets-Home-boost">
-          <div className="tiketImg-boost" >
-              <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
-          </div>
-          <div className="titleTicket-home-boost">
-            <h2>
-              BOOST LADDER 
-            </h2>
-            <div className="textoTicket-home">
-              <p>
-              It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:
-              </p>
+            <div className="tiketImg-boost" >
+                <img className='tiketsPreview' src={TiketBasic} alt="ticket" onClick={() => setTiketClick(true)} />
+            </div>
+            <div className="titleTicket-home-boost">
+              <h2>
+                BOOST LADDER 
+              </h2>
+              <div className="textoTicket-home">
+                <p>
+                It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:
+                </p>
                 <ul>
                   <li><img src={star} alt="stars1" /> Token utility</li>
                   <li><img src={star} alt="stars2" />  Access to Multipliers</li>
                   <li><img src={star} alt="stars3" />  Bet system unlocked</li>
                   <li><img src={star} alt="stars4" />  Prediction Streak Rewards</li>
                 </ul>
-              <p>
-                Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
-              </p>
-            </div>
+                <p>
+                  Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
+                </p>
+              </div>
           </div>
 
           <div className="containerBoostX">
-
             <div className="boostXimg">
               <img className="boostX" src={xBoost} alt="Boost Multiplicadores" />
             </div>
-
           </div>
-    
+
         </div>
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 

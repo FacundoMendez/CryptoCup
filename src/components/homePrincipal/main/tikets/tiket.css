@@ -496,8 +496,34 @@
     .tiketImg{
         gap: 5rem;
     }
+
+
+    .titleTicket-home-boost{
+        width: 50%;
+    }
 }
 
+
+@media screen and (max-width:378px){
+
+    .containerTikets p{
+        font-size: 1.7rem;
+    }
+
+   .boxTickets-Home-boost p{
+        font-size: 1.7rem;
+        width: 92%;
+    }
+
+
+    .titleTicket-home-boost h2 {
+        margin-left: -3rem;
+    }
+
+    .textoTicket-home li{
+        font-size: 1.7rem;
+    }
+}
 
 @media screen and (max-width:350px){
     .tiketsTitle h2{
@@ -508,6 +534,13 @@
         padding: 0rem 1rem;
         font-size: 1.6rem;
         text-align: center;
+    }
+    .boxTickets-Home-boost p{
+        width: 85%;
+    }
+
+    .titleTicket-home-boost h2 {
+        margin-left: -5rem;
     }
 }
 
