@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding: 10rem 0;
+    padding-top: 10rem ;
 }
 
 .containerNfts::before{
@@ -86,20 +86,6 @@
 
 
 
-/* ----- */
-/* .prizepoolBasic {
-    padding-top: 10rem ;
-    object-fit: cover;
-    width: 100%;
-    text-align: center;
-}
-
-.prizepoolBasic img{
-    filter: contrast(110%) brightness(110%);
-    width: 85%;
-}
- */
-
 /* ---------- */
 .events-page {
     width: 100%;
@@ -114,10 +100,10 @@
     top: 50%;
     background-image: url(./src/prizepoolBasic.png);
     background-size: contain;
-    width: 55%;
+    width: 52%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 15rem;
+    margin-top: 20rem;
     filter: contrast(110%) brightness(110%);
 }
 
@@ -127,10 +113,10 @@
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
     background-size: contain;
-    width: 55%;
+    width: 52%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 15rem;
+    margin-top: 20rem;
     filter: contrast(110%) brightness(110%);
 }
 .image {
@@ -155,7 +141,6 @@
     position: absolute !important;
     clip: rect(auto, auto, auto, auto);
 }
-
 
 
 @media screen and (max-width: 1440px){
@@ -219,11 +204,25 @@
 
     .event1 .image {
         width: 85%;
-        margin-top: 15rem;
+        margin-top: 17rem;
     }
     
     .event2 .image {
         width: 85%;
+        margin-top: 17rem;
+    }
+}
+
+
+@media screen and (max-width: 880px){
+    .event1 .image {
+        width: 85%;
+        margin-top: 22rem;
+    }
+    
+    .event2 .image {
+        width: 85%;
+        margin-top: 22rem;
     }
 
 }
@@ -246,12 +245,13 @@
     }
 
     .event1 .image {
-        width: 85%;
-        margin-top: 15rem;
+        width: 90%;
+        margin-top: 25rem;
     }
     
     .event2 .image {
-        width: 85%;
+        width: 90%;
+        margin-top: 25rem;
     }
 }
 
@@ -282,12 +282,13 @@
     }
 
     .event1 .image {
-        width: 95%;
-        margin-top: 15rem;
+        width: 100%;
+        margin-top: 30rem;
     }
     
     .event2 .image {
-        width: 95%;
+        width: 100%;
+        margin-top: 30rem;
     }
 }
 
