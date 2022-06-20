@@ -40,7 +40,6 @@
     padding-top: 5rem;
 }
 
-
 .titleNfts h2{
     font-weight: 300;
     font-size: 6rem;
@@ -61,15 +60,12 @@
     text-align: center;
 }
 
-
 .textNfts p{
     color: white;
     padding: 0 1rem ;
     text-align: center;
     z-index: 100;
 }
-
-
 
 /* cards */
 
@@ -104,8 +100,6 @@
     filter: contrast(115%) brightness(130%);
 }
 
-
-
 /* ---------- */
 .events-page {
     width: 100%;
@@ -116,8 +110,6 @@
     background-size: cover;
     z-index: 10;
 }
-
-
 
 .events-page::before{
     width: 110%;
@@ -139,7 +131,6 @@
     margin-top: 20rem;
     filter: contrast(110%) brightness(110%);
 }
-
 
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
