@@ -57,7 +57,7 @@ function NavHeader() {
                     </li>
                 
 
-
+                    <li>
                     {/* <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
@@ -66,7 +66,8 @@ function NavHeader() {
                                 <span className="BorderLeftRightNav "></span>
                             </div>
                         </div>
-                 {/*    </a> */}
+                    {/*    </a> */}
+                    </li>
                 </ul>
 
 
@@ -88,8 +89,8 @@ function NavHeader() {
                         </a>
                     </li>
                 
-
-                  {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
+                    <li>
+                    {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p>Dapp</p>
@@ -97,7 +98,8 @@ function NavHeader() {
                                 <span className="BorderLeftRightNav "></span>
                             </div>
                         </div>
-              {/*       </a> */}
+                    {/*       </a> */}
+                    </li>
                 </ul>
 
             </nav>

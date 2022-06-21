@@ -10,8 +10,7 @@ const VideoPubli = () => {
   return (
     <div className="videoPubli-container">
         <div className="videoPubli-texts">
-            <h5>WATCH THE TRAILER</h5>
-
+            <h2>WATCH THE TRAILER</h2>
         </div>
         <div className="videoPubli-video">
             <video className='videoPromocional' src={videoPromocional} controls muted  ></video>

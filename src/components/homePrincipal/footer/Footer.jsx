@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="logoFooter">
             <p>Our Social Networks</p>
             <div className="socialFooter">
-                <a href="/" target="_blank" rel="noopener noreferrer"><i className="twitterSocialFooter"> <FontAwesomeIcon icon={faTwitter} /> </i>   </a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><i className="instagramSocialFooter"> <FontAwesomeIcon icon={faInstagram} /> </i>    </a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><i className="telegramSocialFooter"> <FontAwesomeIcon icon={faTelegram} /> </i>   </a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><i className="discordSocialFooter"> <FontAwesomeIcon icon={faDiscord} /> </i> </a>
-                <a href="/" target="_blank" rel="noopener noreferrer"><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
+                <a href="/" target="_blank" rel="noopener noreferrer" aria-label='twitter red social'><i className="twitterSocialFooter"> <FontAwesomeIcon icon={faTwitter}  />  </i>   </a>
+                <a href="/" target="_blank" rel="noopener noreferrer" aria-label='instagram red social'><i className="instagramSocialFooter"> <FontAwesomeIcon icon={faInstagram} /> </i>    </a>
+                <a href="/" target="_blank" rel="noopener noreferrer" aria-label='telegram red social'><i className="telegramSocialFooter"> <FontAwesomeIcon icon={faTelegram} /> </i>   </a>
+                <a href="/" target="_blank" rel="noopener noreferrer" aria-label='discord red social'><i className="discordSocialFooter"> <FontAwesomeIcon icon={faDiscord} /> </i> </a>
+                <a href="/" target="_blank" rel="noopener noreferrer" aria-label='youtube red social'><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
             </div>
         </div>
 
