@@ -22,8 +22,6 @@
     position: absolute;
 }
 
-
-
 .videoPubli-texts h5{
     font-weight: bold;
     text-transform: uppercase;
@@ -66,14 +64,12 @@
 }
 
 @media screen and (max-width:1440px) {
-    
     .videoPubli-video{
         width: 60%;
     }
 }
 
 @media screen and (max-width:1170px) {
-    
     .videoPubli-video{
         width: 70%;
     }
@@ -109,14 +105,12 @@
         gap: 4rem;
     }
 
-    
     .videoPubli-container{
         width: 100%;
         padding-top: 6rem;
         padding-bottom: 2rem;
     }
 
-    
     .videoPubli-container::before{
         display: none;
     }
@@ -136,7 +130,6 @@
         padding-bottom: 10rem;
     }
     
-
     .videoPubli-texts h5{
         font-weight: bold;
         text-transform: uppercase;
@@ -144,7 +137,6 @@
         padding: 2rem;
         font-size: 3rem;
     }
-
 
 }
 
@@ -158,7 +150,5 @@
         padding: 2rem;
         font-size: 2.5rem;
     }
-
-    
 
 }
