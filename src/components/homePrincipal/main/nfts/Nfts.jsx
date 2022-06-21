@@ -2,10 +2,8 @@ import React,{useEffect} from 'react'
 import "./nfts.css"
 import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
-/* import backReflejo from "../tikets/src/BackTickets2.jpg" */
 import videoCopaBasic from "./src/prizepoolBasicVideo.mp4"
 import videoCopaBoost from "./src/prizepoolBoostVideo.mp4"
-import prizepoolBasic from "./src/prizepoolBasic.png"
 import effectPool from './effectPool'
 
 
@@ -19,7 +17,6 @@ const Nfts = () => {
 
   return (
     <div className="containerNfts">
-{/*       <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" /> */}
 
         <div className="titleNfts">
             <h2>NFT'S</h2>
@@ -39,12 +36,6 @@ const Nfts = () => {
             </div> 
           </div>
         </div>
-{/* 
-        <div className="prizepool">
-            <div className="prizepoolBasic">
-                <img className='imgPrizePoolBasic' src={prizepoolBasic} alt="PrizePool basic" />
-            </div>
-        </div> */}
 
       <section className="events-page ">
         
