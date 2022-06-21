@@ -90,6 +90,10 @@
     color: #d5b9ff;
 }
 
+.socialFooter i:hover{
+    color: #9375ff;
+    transition: all .5s ease-in-out;
+}
 
 
 /* lsit nav */

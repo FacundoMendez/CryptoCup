@@ -24,10 +24,10 @@
 .containerTikets::after{
     content:"";
     position: absolute;
-    top: -5rem;
+    bottom: -18rem;
     height: 10rem;
     width: 110%;
-    background-color: rgba(0, 0, 0, 0.966);
+    background-color: rgba(2, 2, 2, 0.322);
     filter: blur(20px);
 }
 
@@ -36,7 +36,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.795);
+    background-color: rgba(0, 0, 0, 0.753);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
@@ -297,7 +297,7 @@
 }
 
 .boostXimg{
-    width: 45%;
+    width: 47%;
 }
 
 .boostXimg img{

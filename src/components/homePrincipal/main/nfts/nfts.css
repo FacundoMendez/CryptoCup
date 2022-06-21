@@ -18,7 +18,7 @@
     height: 100%;
     content: " ";
     top: -1rem;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.753);
     filter: blur(15px);
     position: absolute;
     z-index: 1;
@@ -26,10 +26,10 @@
 
 .containerNfts::after{
     width: 110%;
-    height: 20rem;
+    height: 10rem;
     content: " ";
-    top: -1rem;
-    background-color: rgba(0, 0, 0, 0.863);
+    top: -2rem;
+    background-color: rgba(0, 0, 0, 0.945);
     filter: blur(10px);
     position: absolute;
     z-index: 1;
@@ -116,7 +116,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.705);
+    background-color: rgba(0, 0, 0, 0.753);
     position: absolute;
     z-index: -1;
 }

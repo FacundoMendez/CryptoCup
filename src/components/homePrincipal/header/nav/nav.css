@@ -7,7 +7,7 @@
     cursor: grab;
     z-index: 10000;
     filter:drop-shadow(0 0 50px rgba(92, 1, 167, 0.336)) contrast(110%);
-    margin-top: .4rem;
+    margin-top: .8rem;
     margin-left: .2rem;
     width: 100%;
     text-align: center;
