@@ -6,6 +6,10 @@ import tokenModelo from "./src/models/TokenModel.glb"
 
 const tokenModel = () => {
 
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    if (!isMobile()) {
         const scene = new THREE.Scene()
 
         const canvas = document.querySelector(".tokenWebGl")
@@ -149,6 +153,6 @@ const tokenModel = () => {
         gltfLoader.needsUpdate = true
 
     }
-
+}
 
 export default tokenModel;
