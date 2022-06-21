@@ -52,7 +52,7 @@ function NavTicket() {
                 
 
 
-                    <a href="/Dapp" className="nav-menu-link nav-link navMovile ">
+                {/*     <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p>Dapp</p>
@@ -60,7 +60,7 @@ function NavTicket() {
                                 <span className="BorderLeftRightNav "></span>
                             </div>
                         </div>
-                    </a>
+                   {/*  </a> */}
                 </ul>
 
 
@@ -83,7 +83,7 @@ function NavTicket() {
                     </li>
                 
 
-                    <a href="/Dapp" className="nav-menu-link nav-link ">
+                  {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p>Dapp</p>
@@ -91,7 +91,7 @@ function NavTicket() {
                                 <span className="BorderLeftRightNav "></span>
                             </div>
                         </div>
-                    </a>
+                {/*     </a> */}
                 </ul>
 
             </nav>

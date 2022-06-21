@@ -181,19 +181,19 @@
 }
 
 .btnButtonNav p {
-  color: white;
-  font-size: 2.4rem;
-  letter-spacing: 3.8px;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
   padding-top: .25rem;
   text-transform: uppercase;
-  -webkit-background-clip: text;
-  background-clip: text;
+/*   -webkit-background-clip: text;
+  background-clip: text; */
     font-family:gilron;
-  color: transparent;
+/*   color: transparent;
   text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
   inset 0 -2px 5px 1px #9999ff,
   inset 0 -1px 1px 3px #9999ff;
-  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); */
+  color: rgba(209, 209, 209, 0.815);
 }
 
 .BorderTopBottomNav:before {
@@ -205,7 +205,8 @@
   left: -7px;
   background: #fff;
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  /* filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%); */
+  background: rgba(199, 199, 199, 0.815);
 }
 
 .BorderTopBottomNav:after {
@@ -217,7 +218,8 @@
   right: -7px;
   background: #fff;
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  /* filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%); */
+  background: rgba(199, 199, 199, 0.815);
 }
 
 .BorderLeftRightNav:before {
@@ -229,7 +231,8 @@
   height: 4.5rem;
   background: #fff;
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+/*   filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%); */
+    background: rgba(199, 199, 199, 0.815);
 }
 
 .BorderLeftRightNav:after {
@@ -241,14 +244,15 @@
   height: 4.5rem;
   background: #fff;
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  /* filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%); */
+  background: rgba(199, 199, 199, 0.815);
 }
-.btnButtonNav:hover {
+/* .btnButtonNav:hover {
     transform: scale(1.02);
     filter: drop-shadow( 0 0 1px white);
     transition: all .5s ease-in-out;
 }
-
+ */
 
 .dappIzquierda{
     display: none;
