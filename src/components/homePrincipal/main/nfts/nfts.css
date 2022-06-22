@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 10rem ;
+    padding-top: 15rem ;
     background-image: url("./src/BackToken.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -38,6 +38,7 @@
 .titleNfts{
     z-index: 10;
     padding-top: 5rem;
+    text-transform: uppercase;
 }
 
 .titleNfts h2{
@@ -52,6 +53,43 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #e9b183, #be963e, #fef1a2, #be963e, #e9b183);
     z-index: 100;
+    letter-spacing: 2px;
+
+}
+
+
+.subtitleNftWinners{
+    font-weight: 300;
+    font-size: 6rem;
+    padding-top:6rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(161, 114, 75),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #e9b183, #be963e, #fef1a2, #be963e, #e9b183);
+    z-index: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+
+.subtitleNftPricePool{
+    font-weight: 300;
+    font-size: 7rem;
+    letter-spacing: 3px;
+    padding-top:15rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(161, 114, 75),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #e9b183, #be963e, #fef1a2, #be963e, #e9b183);
+    z-index: 100;
+    text-transform: uppercase;
 }
 
 .textNfts{
@@ -77,7 +115,6 @@
     flex-wrap: wrap;
     max-width: 1200px;
     z-index: 1;
-    padding-top: 5rem;
 }
 
 .container_card {
@@ -88,16 +125,16 @@
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     overflow: hidden;
-    border-top: 1px solid rgba(213, 180, 255, 0.356);
-    border-left: 1px solid rgba(213, 180, 255, 0.356);
     backdrop-filter: blur(1rem);
     background: #161623;
-    filter: drop-shadow(2px -8px 15px rgba(186, 136, 252, 0.247));
+    filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075));
+    border: 4px groove rgb(255, 192, 150);
+    backdrop-filter: blur(1rem);
 }
 
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
-    filter: contrast(115%) brightness(130%);
+    filter: contrast(120%) brightness(140%);
 }
 
 /* ---------- */
@@ -125,21 +162,21 @@
     top: 50%;
     background-image: url(./src/prizepoolBasic.png);
     background-size: contain;
-    width: 52%;
+    width: 55%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 20rem;
-    filter: contrast(110%) brightness(110%);
+    margin-top: 15rem;
+    filter: contrast(125%) brightness(125%);
 }
 
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
     background-size: contain;
-    width: 52%;
+    width: 55%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 20rem;
-    filter: contrast(110%) brightness(110%);
+    margin-top: 15rem;
+    filter: contrast(125%) brightness(125%);
 }
 .image {
     top: -50%;
@@ -247,6 +284,25 @@
         margin-top: 22rem;
     }
 
+    .titleNfts h2{
+        font-weight: 300;
+        font-size: 4.5rem;
+        top: 25px;
+    }
+    
+    
+    .subtitleNftWinners{
+        font-size: 4.5rem;
+        padding-top:6rem;
+    }
+    
+    
+    .subtitleNftPricePool{
+        font-size:5.6rem;
+        letter-spacing: 3px;
+        padding-top:15rem;
+    }
+
 }
 
 @media screen and (max-width: 770px){
@@ -274,6 +330,26 @@
     .event2 .image {
         width: 90%;
         margin-top: 25rem;
+    }
+
+
+    .titleNfts h2{
+        font-weight: 300;
+        font-size: 3.8rem;
+        top: 25px;
+    }
+    
+    
+    .subtitleNftWinners{
+        font-size: 3.8rem;
+        padding-top:6rem;
+    }
+    
+    
+    .subtitleNftPricePool{
+        font-size:4.8rem;
+        letter-spacing: 3px;
+        padding-top:15rem;
     }
 }
 
@@ -312,6 +388,27 @@
         width: 100%;
         margin-top: 30rem;
     }
+
+    .titleNfts h2{
+        font-weight: 300;
+        font-size: 3.4rem;
+        letter-spacing: 1px;
+        top: 25px;
+    }
+    
+    
+    .subtitleNftWinners{
+        font-size: 4.5rem;
+        padding-top:6rem;
+    }
+    
+    
+    .subtitleNftPricePool{
+        font-size:4rem;
+        letter-spacing: 3px;
+        padding-top:0rem;
+        display: none;
+    }
 }
 
 @media screen and (max-width: 395px){
@@ -321,6 +418,26 @@
     }
     .flip > .front, .flip > .back {
         height: 380px;
+    }
+
+    .titleNfts h2{
+        font-weight: 300;
+        font-size:  2.6rem;
+        top: 25px;
+    }
+    
+    
+    .subtitleNftWinners{
+        font-size: 4rem;
+        padding-top:6rem;
+    }
+    
+    
+    .subtitleNftPricePool{
+        font-size:3rem;
+        letter-spacing: 3px;
+        padding-top:0rem;
+        display: none;
     }
 
 }

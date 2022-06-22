@@ -303,7 +303,7 @@
 .boostXimg img{
     object-fit: cover;
     width: 100%;
-    filter: drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.932));
+    filter: contrast(125%) brightness(120%) drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.932));
     margin-left: -2rem;
 }
 

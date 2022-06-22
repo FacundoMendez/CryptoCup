@@ -19,13 +19,15 @@ const Nfts = () => {
     <div className="containerNfts">
 
         <div className="titleNfts">
-            <h2>NFT'S</h2>
+            <h2>Competition Rewards</h2>
         </div>
         <div className="textNfts">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero quidem cum? Deleniti incidunt distinctio quidem. Deleniti fuga, eaque, quo voluptas vel magnam officia dicta mollitia, aut quia ratione sit!
+              We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge.    
             </p>
         </div>
+        <h2 className='subtitleNftWinners'>Winners NFT's</h2>
+
         <div className="tiposTorneos">   
           <div className="container">
             <div className="container_card">
@@ -37,6 +39,7 @@ const Nfts = () => {
           </div>
         </div>
 
+      <h2 className='subtitleNftPricePool'>Ladders prize pool</h2>
       <section className="events-page ">
         
         <div className="event event1">
