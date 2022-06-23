@@ -166,20 +166,20 @@
     top: 50%;
     background-image: url(./src/prizepoolBasic.png);
     background-size: contain;
-    width: 55%;
+    width: 50%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 15rem;
+    margin-top: 10rem;
     filter: contrast(125%) brightness(125%);
 }
 
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
     background-size: contain;
-    width: 55%;
+    width: 50%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 15rem;
+    margin-top: 10rem;
     filter: contrast(125%) brightness(125%);
 }
 .image {

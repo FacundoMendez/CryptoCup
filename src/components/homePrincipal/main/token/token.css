@@ -45,6 +45,8 @@
     cursor: grab;
     transform: scale(.01);
     opacity: 0;
+    padding-bottom: 5rem;
+
 }
 
 .containerToken{
@@ -52,7 +54,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10rem;
+    gap: 0rem;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -64,7 +66,7 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap:5rem;
+    gap:0rem;
 }
 
 .textToken p{
@@ -94,7 +96,7 @@
     }
 
     .tokens{
-        padding-bottom: 15rem;
+        padding-bottom: 0rem;
         background-size: cover;
     }
 
