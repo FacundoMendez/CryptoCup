@@ -128,7 +128,7 @@
     backdrop-filter: blur(1rem);
     background: #161623;
     filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075));
-    border: 4px groove rgb(255, 192, 150);
+    border: 4px groove rgb(255, 213, 150);
     backdrop-filter: blur(1rem);
 }
 
@@ -376,7 +376,7 @@
     
     .tiposTorneos{
         gap: 5rem;
-        padding-top: 5rem;
+        padding-top: 0rem;
     }
 
     .event1 .image {
@@ -391,14 +391,14 @@
 
     .titleNfts h2{
         font-weight: 300;
-        font-size: 3.4rem;
+        font-size: 3.2rem;
         letter-spacing: 1px;
         top: 25px;
     }
     
     
     .subtitleNftWinners{
-        font-size: 4.5rem;
+        font-size: 4rem;
         padding-top:6rem;
     }
     

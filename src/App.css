@@ -29,7 +29,7 @@ p{
     height: 0px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #53535342;
+    background: #d0a6ff;
     border-radius: 15px;
   }
   ::-webkit-scrollbar-thumb:hover {

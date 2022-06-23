@@ -54,8 +54,6 @@ const Nfts = () => {
             </div>
           </div>
         </div>
-
-        
       </section>
     </div>
   )
