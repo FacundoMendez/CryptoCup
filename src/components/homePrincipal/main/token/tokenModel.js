@@ -56,7 +56,7 @@ const tokenModel = () => {
 
             /* lights */
        
-            const ambientLight = new THREE.AmbientLight(0xffffff, 2.75)
+         /*    const ambientLight = new THREE.AmbientLight(0xffffff, 2.75)
             scene.add(ambientLight)
 
             const pointLight4 = new THREE.PointLight(0xffffff,2)
@@ -81,7 +81,7 @@ const tokenModel = () => {
             
             const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
             scene.add(hemisphereLight)
-
+ */
 
             /* camera */
             
