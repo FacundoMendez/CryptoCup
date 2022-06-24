@@ -47,7 +47,7 @@
 }
 
 .tiketsTitle h2{
-    font-size: 5rem;
+    font-size: 5.2rem;
     margin-top: 6rem;
     letter-spacing: 3px;
 }
@@ -57,7 +57,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -165,7 +165,7 @@
 
 
 .titleTicket-home-basic h2{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height:4rem;
     letter-spacing: 2.5px;
     -webkit-background-clip: text;
@@ -179,7 +179,7 @@
 
 
 .titleTicket-home-boost h2{
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     line-height:4rem;
     letter-spacing: 2.5px;
     -webkit-background-clip: text;
