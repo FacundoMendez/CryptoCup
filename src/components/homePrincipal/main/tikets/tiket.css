@@ -13,7 +13,7 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(130%) brightness(115%) opacity(1) ;
+    filter: contrast(130%) brightness(115%)  ;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -40,7 +40,7 @@
     height: 74%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.562);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
