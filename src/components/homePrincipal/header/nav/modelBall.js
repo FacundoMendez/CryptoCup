@@ -116,13 +116,16 @@ const navBallModel = () => {
             
             /* animate  */
 
-        
+        let time = Date.now()
+
         const animate = ()=>{
 
-            camera.rotation.y = 0.01
+            const currentTime = Date.now()
+            const deltaTime = currentTime - time
+            time = currentTime
 
             if (modelBall){
-                modelBall.rotation.y += 0.006
+                modelBall.rotation.y += 0.0001 * deltaTime
             } 
 
 

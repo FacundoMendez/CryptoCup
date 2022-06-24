@@ -7,7 +7,7 @@ import tiketsScroll from './tiketsScroll'
 import backReflejo from "./src/BackgroundTickets4.jpg"
 import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
-/* import division from "./src/division.png" */
+import division from "./src/division.png"
 
 
 const TiketsMain = () => {
@@ -75,10 +75,10 @@ const TiketsMain = () => {
               
           </div>
 
-         {/*  <div className="division">
+          <div className="division">
             <img className='divisionImg' src={division} alt="Division container" />
           </div>
- */}
+
         </div>
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 

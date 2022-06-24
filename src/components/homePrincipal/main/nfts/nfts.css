@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 15rem ;
+    padding-top: 40rem ;
     background-image: url("./src/BackToken.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -281,6 +281,12 @@
     }
 }
 
+@media screen and (max-width:942px){
+    .containerNfts{
+        padding-top: 32rem ;
+    }
+    
+}
 
 @media screen and (max-width: 880px){
     .event1 .image {
@@ -374,6 +380,10 @@
 
     .textNfts{
         width: 95%;
+    }
+
+    .containerNfts{
+        padding-top: 10rem ;
     }
     
     .textNfts p{

@@ -51,7 +51,7 @@ const tokenModel = () => {
 
 
         /* ------------------------------------------------- */
-
+   
         /* 0xff00ff */
 
             /* lights */
@@ -82,11 +82,13 @@ const tokenModel = () => {
             const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
             scene.add(hemisphereLight)
  */
+      
+
 
             /* camera */
             
         const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 100)
-            camera.position.z= 4.6
+        camera.position.z= 4.6
         scene.add(camera)
 
 
@@ -98,7 +100,7 @@ const tokenModel = () => {
             (gltf) =>
             {
                 tokenModelDorada= gltf.scene
-                tokenModelDorada.scale.set(1.0, 1.0, 1.0)
+                tokenModelDorada.scale.set(.9, 1.0, 1.0)
                 scene.add(tokenModelDorada)
             }
         )
@@ -112,20 +114,22 @@ const tokenModel = () => {
         controls.enableZoom = false 
         controls.enablePan= false
 
-        controls.minPolarAngle = 1.7;
-        controls.maxPolarAngle = 1.7;
 
 
             
             /* animate  */
 
-        
+        let time = Date.now()
+
         const animate = ()=>{
 
-            camera.rotation.y = 0.01
+            const currentTime = Date.now()
+            const deltaTime = currentTime - time
+            time = currentTime
+
 
             if (tokenModelDorada){
-                tokenModelDorada.rotation.y += 0.006
+                tokenModelDorada.rotation.y += 0.0001 * deltaTime
             } 
 
 
