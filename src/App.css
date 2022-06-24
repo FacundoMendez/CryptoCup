@@ -20,7 +20,7 @@ p{
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 7px;
     border: 3px groove rgb(7, 7, 7);
     background-position: top;
   }

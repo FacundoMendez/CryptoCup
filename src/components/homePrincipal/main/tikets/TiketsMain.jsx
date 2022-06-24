@@ -26,7 +26,7 @@ const TiketsMain = () => {
         <div className="textTikets">
             <div className="titleContainers tiketsTitle">
               <h2>GRIND YOUR WAY TO THE TOP OF THE LADDER</h2>
-              <h3>Wanna compete? Get your ticket.</h3>
+              <h3> Want to compete? Get your ticket!</h3>
             </div>
             <p className='textDescripcionTikets'>
               To be available to participate, you’ll need one of our NFT tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access to the tournament as a player, so you will be able to use all the functions of the dapp!
