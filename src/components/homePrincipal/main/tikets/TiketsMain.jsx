@@ -5,8 +5,8 @@ import TiketBasic from "./src/tiketBoost.png"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
 import backReflejo from "./src/BackgroundTickets4.jpg"
+import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
-import xBoost from "./src/xBoost.png"
 
 
 const TiketsMain = () => {
@@ -22,6 +22,7 @@ const TiketsMain = () => {
     <div id='tickets' className="containerTikets">
         
       <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" />
+      <img className="backgroundReflejoMovile backTiketsMovile " src={backReflejoMovile} alt="backgroundMovileTickets" />
 
         <div className="textTikets">
             <div className="titleContainers tiketsTitle">
@@ -72,11 +73,6 @@ const TiketsMain = () => {
               </div>
           </div>
 
-          <div className="containerBoostX">
-            <div className="boostXimg">
-              <img className="boostX" src={xBoost} alt="Boost Multiplicadores" />
-            </div>
-          </div>
 
         </div>
 

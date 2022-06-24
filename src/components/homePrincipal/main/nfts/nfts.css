@@ -176,8 +176,9 @@
 .event2 .image {
     background-image: url(./src/prizepoolBoost.png);
     background-size: contain;
-    width: 51%;
+    width: 51.09%;
     text-align: center;
+    margin-left: 1.3px;
     background-repeat: no-repeat;
     margin-top: 16rem;
     filter: contrast(125%) brightness(125%);

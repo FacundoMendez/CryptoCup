@@ -35,9 +35,10 @@ const nftScroll= ()=>{
             }
         })
 
-        gsap.from(".container_card",{
+
+        gsap.from(".subtitleNftWinners",{
             opacity:0,
-            delay:.5,
+            delay:.8,
             y:300,
             duration:1,
             scrollTrigger:{
@@ -48,32 +49,32 @@ const nftScroll= ()=>{
         })
 
 
-
-        /* gsap.from(".textToken",{
+        gsap.from(".container_card",{
             opacity:0,
-            delay:.3,
-            duration:2,
+            delay:1,
+            y:300,
+            duration:1,
             scrollTrigger:{
-                trigger: ".tokens",
+                trigger: ".containerNfts",
                 start: "top center",
                 end: "bottom bottom",
             }
         })
 
-
-        gsap.to(".tokenWebGl",{
-            opacity:1,
-            scale:1,
-            delay:.3,
-            duration:2,
+        
+        gsap.from(".subtitleNftPricePool",{
+            opacity:0,
+            delay:1.3,
+            y:300,
+            duration:1,
             scrollTrigger:{
-                trigger: ".tokens",
+                trigger: ".containerNfts",
                 start: "top center",
                 end: "bottom bottom",
             }
-        }) */
-    }
+        })
 
+    }
 }
 
 export default nftScroll

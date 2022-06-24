@@ -9,7 +9,7 @@ const tiketsScroll = () =>{
 
     if (!isMobile()) {
 
-        gsap.registerPlugin(ScrollTrigger); 
+        gsap.registerPlugin(ScrollTrigger);
 
 
         gsap.from(".tiketsTitle",{
@@ -54,6 +54,7 @@ const tiketsScroll = () =>{
                 trigger: ".boxTickets-Home-boost",
                 start: "top center",
                 end: "bottom bottom",
+
             }
         })
         
@@ -92,6 +93,7 @@ const tiketsScroll = () =>{
                 end: "bottom bottom",
             }
         })
+        
 
     }
 
