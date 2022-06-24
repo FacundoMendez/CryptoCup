@@ -7,6 +7,7 @@ import tiketsScroll from './tiketsScroll'
 import backReflejo from "./src/BackgroundTickets4.jpg"
 import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
+/* import division from "./src/division.png" */
 
 
 const TiketsMain = () => {
@@ -71,9 +72,13 @@ const TiketsMain = () => {
                   Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
                 </p>
               </div>
+              
           </div>
 
-
+         {/*  <div className="division">
+            <img className='divisionImg' src={division} alt="Division container" />
+          </div>
+ */}
         </div>
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 

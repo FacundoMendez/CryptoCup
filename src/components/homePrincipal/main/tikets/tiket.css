@@ -291,6 +291,16 @@
 }
 
 
+.division{
+    position: absolute;
+    bottom: -70rem;
+    z-index: 1000;
+}
+
+.division img{
+    object-fit: cover;
+    filter: contrast(40%);
+}
 
 @media screen and (min-width: 2550px){
 
