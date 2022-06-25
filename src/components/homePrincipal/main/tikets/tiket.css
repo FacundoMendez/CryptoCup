@@ -498,7 +498,9 @@
     }
 
    
- 
+    .division{
+        display: none;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -509,7 +511,7 @@
         margin-top: 5rem;
         gap: 0rem;
         padding-top: 0rem;
-        padding-bottom: 20rem ;
+        padding-bottom: 10rem ;
         text-align: center;
     }
     
@@ -557,14 +559,12 @@
     }
 
     .division{
-        position: absolute;
-        bottom: -19rem;
-        z-index: 1000;
+        display: none;
     }
 
-    .division img{
-        object-fit: cover;
-        filter: contrast(130%) hue-rotate(230deg) brightness(110%) opacity(.8);
+    
+    .titleTicket-home-basic h2 ,  .titleTicket-home-boost h2 {
+        font-size: 4rem;
     }
 }
 
@@ -580,9 +580,12 @@
         width: 92%;
     }
 
+    .titleTicket-home-basic h2 ,  .titleTicket-home-boost h2 {
+        font-size: 3rem;
+    }
 
     .titleTicket-home-boost h2 {
-        margin-left: -3rem;
+        margin-left: -3.5rem;
     }
 
     .textoTicket-home li{
@@ -602,10 +605,14 @@
     }
     .boxTickets-Home-boost p{
         width: 85%;
+        margin-left: -.6rem;
+
     }
 
     .titleTicket-home-boost h2 {
         margin-left: -5rem;
     }
+
+ 
 }
 
