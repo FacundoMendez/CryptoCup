@@ -125,7 +125,7 @@ const navBallModel = () => {
             time = currentTime
 
             if (modelBall){
-                modelBall.rotation.y += 0.0001 * deltaTime
+                modelBall.rotation.y += 0.0005 * deltaTime
             } 
 
 

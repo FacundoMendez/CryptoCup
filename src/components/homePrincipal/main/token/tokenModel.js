@@ -129,7 +129,7 @@ const tokenModel = () => {
 
 
             if (tokenModelDorada){
-                tokenModelDorada.rotation.y += 0.0001 * deltaTime
+                tokenModelDorada.rotation.y += 0.0005 * deltaTime
             } 
 
 
