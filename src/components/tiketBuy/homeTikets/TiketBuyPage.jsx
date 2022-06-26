@@ -89,6 +89,10 @@ const TiketBuyPage = () => {
               <div className="boxTickets">
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
                   
+                  <div className="priceBasic">
+                    <h2>$15</h2>
+                  </div>
+
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
                           <p>{connected? "BUY" : "CONNECT"}</p>
@@ -112,6 +116,10 @@ const TiketBuyPage = () => {
 
               <div className="boxTickets">
                   <img className='imgTicket imgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
+                  
+                  <div className="priceBoost">
+                    <h2>$30</h2>
+                  </div>
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
