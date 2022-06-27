@@ -2,6 +2,9 @@ import React, {useEffect} from 'react'
 import tokenModel from './tokenModel'
 import "./token.css"
 import tokenScroll from './tokenScroll'
+import backToken from "./src/BackToken.jpg"
+import comingToken from "./src/comingToken.png"
+
 
 const TokenMain = () => {
 
@@ -12,6 +15,10 @@ const TokenMain = () => {
 
   return (
     <div id="tokens" className="tokens">
+        <img className='backToken' src={backToken} alt="Background Token" />
+        <div className="tokenblur">
+            <img className='comingToken' src={comingToken} alt="Background Token ComingSoon" />
+        </div>
         <div className="titleContainers tokenTitle">
             <h2>TOKEN</h2>
         </div>

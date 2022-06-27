@@ -6,22 +6,52 @@
     flex-direction: column;
     gap: 6rem;
     padding-top: 15rem;
-    background-image: url("./src/BackToken.jpg");
-    background-size: cover;
-    padding-bottom: 20rem;
+/*     background-image: url("./src/BackToken.jpg");
+    background-size: cover; */
+    padding-bottom: 5rem;
     z-index: 10;
+/*     filter: grayscale(100); */
 }
 
-.tokens::before{
-    width: 110%;
+.backToken{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    filter: grayscale(100) blur(8px);
+}
+
+.tokenblur{
+    backdrop-filter: blur(.75rem);
+    width: 100%;
+    height: 90%;
+    z-index: 13000;
+    position: absolute;
+}
+
+.comingToken {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    object-fit: cover;
+    filter: contrast(120%) brightness(105%) drop-shadow(0 0 50px rgba(135, 6, 255, 0.144));
+}
+
+
+
+/* .tokens::before{
+    width: 100%;
     height: 100%;
     content: " ";
-    top: -4rem;
+    top: -2rem;
     background-color: rgba(0, 0, 0, 0.658);
     filter: blur(15px);
     position: absolute;
-    
-}
+    z-index: 100;
+} */
+
 .tokens::after{
     width: 110%;
     height: 2rem;
@@ -46,7 +76,7 @@
     transform: scale(.01);
     opacity: 0;
     padding-bottom: 5rem;
-
+    filter: grayscale(100);
 }
 
 .containerToken{
@@ -57,6 +87,7 @@
     gap: 0rem;
     flex-wrap: wrap;
     width: 100%;
+    
 }
 
 .textToken{
@@ -78,6 +109,7 @@
 .tokenTitle h2{
     font-size: 7rem;
     letter-spacing: 4px;
+    filter: grayscale(100);
 }
 
 
@@ -107,7 +139,12 @@
         font-size: 1.9rem;
     }
 
-
+    .comingToken {
+        top: 33%;
+        left: 50%;
+        width: 85%;
+    }
+    
     
 }
 
@@ -116,6 +153,13 @@
     .textToken{
         width: 70%;
     }
+
+    .comingToken {
+        top: 33%;
+        left: 50%;
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
@@ -123,17 +167,24 @@
     .textToken{
         width: 100%;
     }
+
+    .comingToken {
+        top: 33%;
+        left: 50%;
+        width: 120%;
+    }
 }
 
 @media screen and (max-width:480px){
+
+    .tokenblur{
+        backdrop-filter: blur(.5rem);
+    }
     
     .tokens::before{
         display: none;
     }
 
-    .tokens::after{
-       display: none;
-    }
 
     .tokenWebGl {
         display: none;
@@ -145,7 +196,7 @@
 
     .tokens{
         width: 100%;
-        padding-top: 6rem;
+        padding-top: 10rem;
         padding-bottom: 15rem;
     }
     
@@ -165,5 +216,11 @@
         padding: 0rem 2rem;
         margin-left: 1rem;
         text-align: center;
+    }
+
+    .comingToken {
+        top: 45%;
+        left: 53%;
+        width: 150%;
     }
 }
