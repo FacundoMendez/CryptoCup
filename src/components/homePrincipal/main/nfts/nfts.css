@@ -77,7 +77,7 @@
     font-weight: 300;
     font-size: 7rem;
     letter-spacing: 3px;
-    padding-top:15rem;
+    padding-top:5rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -202,6 +202,70 @@
     position: absolute !important;
     clip: rect(auto, auto, auto, auto);
 }
+
+
+.boxPricePool{
+    position: relative;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+
+}
+
+
+/* flechas */
+
+
+.arrowss {
+	width: 60px;
+	height: 72px;
+	position: relative;
+    z-index: 1000;
+}
+
+.arrowss path {
+	stroke: #ffd586;
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrowss path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrowss path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrowss path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+
 
 
 @media screen and (max-width: 1440px){
@@ -359,7 +423,7 @@
     
     
     .subtitleNftPricePool{
-        font-size:4.8rem;
+        font-size:4rem;
         letter-spacing: 3px;
         padding-top:15rem;
     }
@@ -424,10 +488,9 @@
     
     
     .subtitleNftPricePool{
-        font-size:4rem;
+        font-size:3.2rem;
         letter-spacing: 3px;
-        padding-top:0rem;
-        display: none;
+        padding-top:5rem;
     }
 }
 
@@ -454,10 +517,9 @@
     
     
     .subtitleNftPricePool{
-        font-size:3rem;
+        font-size:2.5rem;
         letter-spacing: 3px;
         padding-top:0rem;
-        display: none;
     }
 
 }

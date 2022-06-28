@@ -4,7 +4,7 @@ import "./token.css"
 import tokenScroll from './tokenScroll'
 import backToken from "./src/BackToken.jpg"
 import comingToken from "./src/comingToken.png"
-
+import tokenComingSoon from "./src/tokenComingSoon.jpg"
 
 const TokenMain = () => {
 
@@ -17,7 +17,9 @@ const TokenMain = () => {
     <div id="tokens" className="tokens">
         <img className='backToken' src={backToken} alt="Background Token" />
         <div className="tokenblur">
-            <img className='comingToken' src={comingToken} alt="Background Token ComingSoon" />
+            {/* <img className='comingToken' src={comingToken} alt="Background Token ComingSoon" /> */}
+            <img className='tokenComingSoon-left' src={tokenComingSoon} alt="tokenComingSoon-left" /> 
+            <img className='tokenComingSoon-right' src={tokenComingSoon} alt="tokenComingSoon-right" /> 
         </div>
         <div className="titleContainers tokenTitle">
             <h2>TOKEN</h2>

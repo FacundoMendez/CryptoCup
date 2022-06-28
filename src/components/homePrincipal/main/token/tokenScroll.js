@@ -46,6 +46,27 @@ const tokenScroll = () =>{
                 end: "bottom bottom",
             }
         })
+
+
+        gsap.to(".tokenComingSoon-left",{
+            x: "+= 100",
+            scrollTrigger:{
+                trigger: ".tokens",
+                start: "top center",
+                end: "bottom bottom",
+                scrub: 2,
+            }
+        })
+
+        gsap.to(".tokenComingSoon-right",{
+            x: "-= 100",
+            scrollTrigger:{
+                trigger: ".tokens",
+                start: "top center",
+                end: "bottom bottom",
+                scrub: 2,
+            }
+        })
     }
 
 }
