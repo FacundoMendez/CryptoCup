@@ -47,7 +47,7 @@
     transform: translate(-50%, -50%) rotate(10deg);
     width: 115%;
     object-fit: cover;
-    filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(135, 6, 255, 0.144));
+    filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(167, 72, 255, 0.459));
 }
 
 .tokenComingSoon-right{
@@ -57,7 +57,7 @@
     transform: translate(-50%, -50%) rotate(-10deg);
     width: 115%;
     object-fit: cover;
-    filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(135, 6, 255, 0.144));
+    filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(167, 72, 255, 0.459));
 }
 
 
