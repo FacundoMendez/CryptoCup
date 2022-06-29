@@ -21,7 +21,7 @@ const Roadmap = () => {
         <ul>
           <li>
             <div className='textRoadamp'>
-              <time>Q1 2021</time>
+              <time>Q4 2022</time>
               <p>
               - Concept Design <span>✓</span><br/>
               - Branding and game research <span>✓</span> <br/>
@@ -68,7 +68,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp'>
-              <time>Q5 2022</time> 
+              <time>Q4 2022</time> 
               <p>
                 - Playable Ladders System Release <br/>
                 - Tournament starts <br/>

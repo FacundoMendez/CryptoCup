@@ -1,27 +1,29 @@
 import "./components/homePrincipal/main/main.css"
+import { lazy, Suspense} from "react";
 import './App.css';
 import {BrowserRouter, Route, Routes } from "react-router-dom";
-import TiketBuyPage from './components/tiketBuy/homeTikets/TiketBuyPage'
-import HomePrincipal from './components/homePrincipal/HomePrincipal';
-import Dapp from './components/dapp/Dapp';
-import PrivacyPolicy from "./components/homePrincipal/footer/privacyPolicy/PrivacyPolicy";
+
+const TiketBuyPage = lazy(() => import ("./components/tiketBuy/homeTikets/TiketBuyPage"))
+const HomePrincipal = lazy(() => import ("./components/homePrincipal/HomePrincipal"))
+const Dapp = lazy(() => import ("./components/dapp/Dapp"))
+const PrivacyPolicy = lazy(() => import ("./components/homePrincipal/footer/privacyPolicy/PrivacyPolicy"))
+const Spinner = lazy(() => import ("./components/spinner/Spinner"))
 
 function App() {
   return (
-
     <BrowserRouter  >
 
       <Routes >
-          <Route path='/' element={<HomePrincipal />}/>
-          <Route path='/tickets' element={<TiketBuyPage /> }/>
-          <Route path='/Dapp' element={<Dapp /> }/>
-          <Route path='/PrivacyPolicy' element={<PrivacyPolicy /> }/>
+          <Route  path="/"   element={ <Suspense fallback={<Spinner />}><HomePrincipal /> </Suspense>} /> 
+          <Route path='/tickets' element={ <Suspense fallback={<Spinner />}><TiketBuyPage /> </Suspense>} /> 
+          <Route path='/Dapp' element={ <Suspense fallback={<Spinner />}><Dapp /> </Suspense>} /> 
+          <Route path='/PrivacyPolicy' element={ <Suspense fallback={<Spinner />}><PrivacyPolicy /> </Suspense>} />
       </Routes>
 
     </BrowserRouter>
-
 
   );
 }
 
 export default App;
+

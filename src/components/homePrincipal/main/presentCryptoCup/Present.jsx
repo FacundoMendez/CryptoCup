@@ -4,6 +4,7 @@ import backgroundReflejo from "./src/BackTournament.jpg"
 import presentScroll from './presentScroll'
 import logo from "../src/Logo.png"
 
+
 const TournamentMain = () => {
 
   useEffect(() =>{
