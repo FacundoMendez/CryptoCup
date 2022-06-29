@@ -4,7 +4,7 @@ import TiketBoost from "./src/tiketBasic.png"
 import TiketBasic from "./src/tiketBoost.png"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
-import backReflejo from "./src/BackgroundTickets4.jpg"
+import backReflejo from "./src/BackgroundTickets42.jpg"
 import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
 import division from "./src/division.png"
@@ -14,6 +14,10 @@ const TiketsMain = () => {
 
   const [tiketClick , setTiketClick] = useState(false)
 
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
+
   useEffect(()=>{
     tiketsScroll()
   },[])
@@ -22,8 +26,8 @@ const TiketsMain = () => {
     <>
     <div id='tickets' className="containerTikets">
         
-      <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" />
-      <img className="backgroundReflejoMovile backTiketsMovile " src={backReflejoMovile} alt="backgroundMovileTickets" />
+      {!isMobile() ? <img className="backgroundReflejo backTikets " src={backReflejo} alt="background" /> : <img className="backgroundReflejoMovile backTiketsMovile " src={backReflejoMovile} alt="backgroundMovileTickets" />}
+      
 
         <div className="textTikets">
             <div className="titleContainers tiketsTitle">

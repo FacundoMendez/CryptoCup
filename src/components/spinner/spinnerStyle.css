@@ -12,7 +12,7 @@
    width: 150px;
    height: 150px;
    border-radius: 50%;
-   background-image: url("./src/logoPng.png");
+   background-image: url("./src/Logo.png");
    background-size: cover;
    animation: spinner-a78xsi 1s infinite linear;
  }

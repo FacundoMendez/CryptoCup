@@ -3,7 +3,6 @@ import tokenModel from './tokenModel'
 import "./token.css"
 import tokenScroll from './tokenScroll'
 import backToken from "./src/BackToken.jpg"
-import comingToken from "./src/comingToken.png"
 import tokenComingSoon from "./src/tokenComingSoon.jpg"
 
 const TokenMain = () => {
