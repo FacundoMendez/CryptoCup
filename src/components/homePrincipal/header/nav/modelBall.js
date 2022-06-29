@@ -45,41 +45,6 @@ const navBallModel = () => {
         renderer.physicallyCorrectLights = true
 
 
-
-
-        /* ------------------------------------------------- */
-
-        /* 0xff00ff */
-
-            /* lights */
-       
-  /*           const ambientLight = new THREE.AmbientLight(0xffffff, .75)
-            scene.add(ambientLight) */
-/* 
-            const pointLight4 = new THREE.PointLight(0xffffff,2)
-            pointLight4.position.set(0 , 0, 3)
-            scene.add(pointLight4)
-
-            const pointLight = new THREE.PointLight(0xffffff,5)
-            pointLight.position.set(3 , 0, 3)
-            scene.add(pointLight)
-
-            const pointLight2 = new THREE.PointLight(0xffffff,5)
-            pointLight2.position.set(-1 , 0, 6)
-            scene.add(pointLight2)
-
-            const pointLight3 = new THREE.PointLight(0xffffff,6)
-            pointLight3.position.set(0 , 2, 0)
-            scene.add(pointLight3)
-
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 3)
-            directionalLight.position.set(0, 0, -2)
-            scene.add(directionalLight)
-            
-            const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
-            scene.add(hemisphereLight)
- */
-
             /* camera */
             
         const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 100)
