@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+/* import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'; */
 import tokenModelo from "./src/models/TokenModel.glb"
 
 
@@ -41,8 +41,8 @@ const tokenModel = () => {
 
         const renderer =new THREE.WebGLRenderer({
             canvas: canvas, 
-            antialias:true,
-            alpha:true
+            /* antialias:true, */
+           /*  alpha:true */
         })
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
@@ -52,38 +52,6 @@ const tokenModel = () => {
 
         /* ------------------------------------------------- */
    
-        /* 0xff00ff */
-
-            /* lights */
-       
-         /*    const ambientLight = new THREE.AmbientLight(0xffffff, 2.75)
-            scene.add(ambientLight)
-
-            const pointLight4 = new THREE.PointLight(0xffffff,2)
-            pointLight4.position.set(0 , 0, 3)
-            scene.add(pointLight4)
-
-            const pointLight = new THREE.PointLight(0xffffff,5)
-            pointLight.position.set(3 , 0, 3)
-            scene.add(pointLight)
-
-            const pointLight2 = new THREE.PointLight(0xffffff,5)
-            pointLight2.position.set(-1 , 0, 6)
-            scene.add(pointLight2)
-
-            const pointLight3 = new THREE.PointLight(0xffffff,6)
-            pointLight3.position.set(0 , 2, 0)
-            scene.add(pointLight3)
-
-            const directionalLight = new THREE.DirectionalLight(0xffffff, 3)
-            directionalLight.position.set(0, 0, -2)
-            scene.add(directionalLight)
-            
-            const hemisphereLight = new THREE.HemisphereLight(0xff0000, 0x0000ff, 1.5)
-            scene.add(hemisphereLight)
- */
-      
-
 
             /* camera */
             
@@ -109,10 +77,10 @@ const tokenModel = () => {
 
             // Controls
 
-        const controls = new OrbitControls(camera, canvas)
+/*         const controls = new OrbitControls(camera, canvas)
         controls.enableDamping = true
         controls.enableZoom = false 
-        controls.enablePan= false
+        controls.enablePan= false */
 
 
 
@@ -135,7 +103,7 @@ const tokenModel = () => {
 
             // Update camera
 
-            controls.update() 
+         /*    controls.update()  */
             renderer.render(scene,camera)
             window.requestAnimationFrame(animate)
 
