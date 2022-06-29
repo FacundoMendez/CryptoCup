@@ -6,7 +6,6 @@ const checkTokenBasic = () => {
         radioBox.classList.toggle("radioToken-active");
     })
     
-    
 }
 
 
