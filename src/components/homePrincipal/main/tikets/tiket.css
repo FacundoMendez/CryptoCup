@@ -302,27 +302,31 @@
     filter: contrast(110%) hue-rotate(230deg) brightness(110%) opacity(.8);
 }
 
-@media screen and (min-width: 2550px){
+@media screen and (max-width: 2550px){
 
-    .titleTicket-home-basic h2, .titleTicket-home-boost h2{
-        font-size: 6rem;
-        line-height:4rem;
-        letter-spacing: 2.5px;
+    .backTikets{
+        object-fit: cover;
+        filter: contrast(130%) brightness(85%)  ;
+        height: 105%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
     }
 
-    .textTikets p{
-        font-size: 3.5rem;
-        line-height: 4.7rem;
-        text-align: center;
-        padding-top: 1rem;
+    .containerTikets::after{
+        content:"";
+        position: absolute;
+        bottom: -18rem;
+        height: 10rem;
+        width: 110%;
+        background-color: rgba(0, 0, 0, 0.98);
+        filter: blur(20px);
     }
 
-    .textoTicket-home p{
-        font-size: 2.8rem;
-        margin-top: 0rem;
-        padding: 1rem 10rem;
-        line-height: 4rem;
-        text-transform: uppercase;
+    .division{
+        position: absolute;
+        bottom: -95rem;
+        z-index: 1000;
     }
     
 }
