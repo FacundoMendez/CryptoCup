@@ -1,7 +1,8 @@
-import React from 'react'
-import NavTicket from '../../../tiketBuy/NavTickets/NavTickets'
-import Footer from '../Footer'
+import React, {lazy} from 'react'
 import "./privacyPolicy.css"
+
+const NavTicket = lazy(() => import ('../../../tiketBuy/NavTickets/NavTickets'))
+const Footer = lazy(() => import ('../Footer'))
 
 const PrivacyPolicy = () => {
   return (

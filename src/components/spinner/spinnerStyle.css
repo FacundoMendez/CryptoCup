@@ -9,16 +9,16 @@
 }
 
 .spinner {
-   width: 150px;
-   height: 150px;
+   width: 160px;
+   height: 160px;
    border-radius: 50%;
    background-image: url("./src/Logo.png");
    background-size: cover;
-   animation: spinner-a78xsi 1s infinite linear;
+   animation: spinner-a78xsi 1.2s infinite linear;
  }
  
  @keyframes spinner-a78xsi {
     100% {
-       transform: rotate(.5turn);
+       transform: rotate(360deg);
     }
  }
