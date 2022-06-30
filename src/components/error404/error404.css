@@ -6,48 +6,75 @@
     margin:0px;
     background: rgb(0, 0, 0);
     box-shadow:0px 0px 122px 25px black inset;
-    background-image:url('https://i.imgur.com/eg7VIun.jpg');
-    background-repeat:repeat;
-    animation:noise 230ms steps(6) infinite;
-    filter: contrast(200%) brightness(80%);
+    animation:noise 50ms steps(6) infinite;
+    z-index: 4800;
+}
+
+.imgeerror{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    opacity: .9;
+    z-index: -3;
+    background-image: url("./src/backError404.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    animation:noise 50ms steps(6) infinite;
+    filter: contrast(135%) brightness(110%) ;
+}
+
+.particulas404{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: contrast(220%) brightness(100%)  hue-rotate(-120deg);
+    opacity: .16;
 }
 
 @keyframes noise{
     0% {background-position-y: 0px;}
-    100% {background-position-y: -420px;}
-    }
+    100% {background-position-y: -2px;}
+}
     
 
 .enlace404{
     text-decoration: none;
-    filter: contrast(200%) brightness(140%);
+    z-index: 4800;
+
 }
 
 .logoError404{
     position: absolute;
-    right: 4%;
-    bottom: 4%;
-    width: 10%;
-    filter: contrast(60%);
+    z-index: 4800;
+    left: 1%;
+    top: 1%;
+    width: 13rem;
+    filter: contrast(100%) drop-shadow( 0 0 60px rgb(142, 94, 255)) brightness(120%);
+    animation:glitch 4s infinite;
 }
 
 .glitch-wrapper{
     padding-top:180px;
     width:100vw;
+    z-index: 4800;
     text-align:center;
     animation:glitch 2s linear infinite;
     margin-bottom:110px;
+    position: absolute;
+    top: 0;
+}
     
-    }
-    
-    
-    .glitch-text, .buttonError404{
-    font-family: monospace;
+.glitch-text, .buttonError404{
     font-weight:bold;
+    z-index: 4800;
     filter: contrast(100%) brightness(170%);
-    }
-    
-    .glitch-text::before{
+    text-shadow: .2rem .1rem 1rem rgba(151, 79, 233, 0.856);
+    position: absolute;
+    top: 0;
+}
+
+
+.glitch-text::before{
     content:'ERROR 404';
     color:black;
     text-shadow:0px 0px 5px 10px black!IMPORTANT;
@@ -56,59 +83,53 @@
     -o-filter: blur(7x);
     -ms-filter: blur(7px);
     filter: blur(7px);
+    z-index: 4800;
     display:block;
     position:absolute;
-    z-index:-1;
-    font-size:132px;
+    z-index:1300;
+    font-size:11rem;
     left:0px;
     right:0px;
     margin-top:-30px;
     opacity:.5;
-    }
-    
-    .glitch-text{
+    animation:glitch 6s infinite;
+
+}
+
+.glitch-text span{
+    font-size: 5rem;
+    letter-spacing: 4px;
+    z-index: 4800;
+    position: relative;
+    top: -5rem ;
+    text-shadow: .2rem .1rem 1rem rgba(151, 79, 233, 0.856);
+}
+
+.glitch-text{
     position:relative;
-    z-index:2;
+    z-index: 4800;
     opacity:.9;
     margin:0 auto;
-    text-shadow:0px 0px 3px white;
-    animation:glitch 3s infinite;
-    cursor:pointer;
-    font-size:52px;
+    text-shadow: .5rem .4rem 1rem rgba(151, 79, 233, 0.856);
+    animation:glitch 6s infinite;
+    font-size:8rem;
     color:white;
+    letter-spacing: 4px;
+    font-family: gilron;
+}
 
-    }
-    
-    
-    .buttonError404{
-    display:block;
-    opacity:.6;
-    box-shadow:0px 0px 3px 6px white,0px 0px 3px white;
-    text-shadow:0px 0px 3px black;
-    background:white;
-    border:0px;
-    padding:7px;
-    margin:0 auto;
-    outline:none;
-    cursor:pointer;
-    margin-top:30px;
-    font-size:16px;
-    transition:200ms;
-    }
-    
- 
-    
-    .paused{
+
+.paused{
     animation-play-state: paused;
-    }
-    
-    
-    /* JUST RANDOM VALUES HERE! */
-    @keyframes glitch{
-     3%{text-shadow:7px 7px 0px red;}
+}
+
+
+/* JUST RANDOM VALUES HERE! */
+@keyframes glitch{
+    3%{text-shadow:7px 7px 0px red;}
     6%{text-shadow:-9px 4px 0px blue;transform:translate(4px,-10px) skewX(3240deg);}
     7%{text-shadow:3px -4px 0px green;}
-    9%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skewX(0deg);}
+    9%{text-shadow:0px 0px 3px rgb(255, 255, 255);transform:translate(0px,0px) skewX(0deg);}
     2% , 54%{transform:translateX(0px) skew(0deg);}
     55%{transform:translate(-2px,6px) skew(-5530deg);}
     56%{text-shadow:0px 0px 3px white;transform:translate(0px,0px) skew(0deg);}
@@ -117,5 +138,324 @@
     62%{text-shadow:3px -4px 0px green;transform:translate(0px,20px) skew(0deg);}
     63%{text-shadow:0px 0px 3px white;transform:translate(4px,-2px) skew(0deg);}
     66%{transform:translate(0px,0px) skew(0deg);}
-    
+}
+
+
+/* button */
+
+
+.wrapperBotton-error404 {
+    z-index: 4800;
+    position: relative;
+    padding-top: 1rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation:glitch 3s infinite;
+    top: -40rem;
+  }
+  
+  .wrapperBotton-error404 .btn-error404 {
+    width: 18.5rem;
+    height: 4.5rem;
+    margin: 0 3rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    animation:glitch 3s infinite;
+  }
+  
+  .btn-error404 p {
+    padding-top: 1rem;
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: 3.8px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  }
+  
+  .BorderTopBottom-error404:before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    top: -6px;
+    left: -7px;
+    background: #fff;
+    transition: all 0.5s ease;
+    animation:glitch 5s infinite;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderTopBottom-error404:after {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    bottom: -6px;
+    right: -7px;
+    animation:glitch 5s infinite;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-error404:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    animation:glitch 5s infinite;
+    width: 2px;
+    height: 2rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .BorderLeftRight-error404:after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: -7px;
+    animation:glitch 5s infinite;
+    width: 2px;
+    height: 2rem;
+    background: #fff;
+    transition: all 0.5s ease;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+  }
+  
+  .btn-error404:hover .BorderTopBottom-error404:before,
+  .btn-error404:hover .BorderTopBottom-error404:after {
+    width: 19.7rem;
+    filter: drop-shadow(0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+  }
+  
+  .btn-error404:hover .BorderLeftRight-error404:before,
+  .btn-error404:hover .BorderLeftRight-error404:after {
+    height: 5.5rem;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+  }
+
+
+
+
+
+@media screen and (min-width: 2550px) {
+    .wrapperBotton-error404 {
+      position: relative;
+      padding-top: 1rem;
     }
+
+    .wrapperBotton-error404 .btn-error404 {
+      width: 26rem;
+      height: 10rem;
+      margin: 0 5rem;
+    }
+
+    .btn-error404 p {
+      font-size: 4rem;
+      letter-spacing: 3.8px;
+      line-height: 11rem;
+      text-transform: uppercase;
+    }
+    
+    .BorderTopBottom-error404:before {
+      content: "";
+      position: absolute;
+      width: 27rem;
+      height: 4px;
+      top: -6px;
+      left: -7px;
+      background: #fff;
+      transition: all 0.5s ease;
+      filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    }
+    
+    .BorderTopBottom-error404:after {
+      content: "";
+      position: absolute;
+      width: 27rem;
+      height: 4px;
+      bottom: -6px;
+      right: -7px;
+      background: #fff;
+      transition: all 0.5s ease;
+      filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    }
+    
+    .BorderLeftRight-error404:before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -7px;
+      width: 4px;
+      height: 11rem;
+      background: #fff;
+      transition: all 0.5s ease;
+      filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    }
+    
+    .BorderLeftRight-error404:after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      right: -7px;
+      width: 4px;
+      height: 11rem;
+      background: #fff;
+      transition: all 0.5s ease;
+      filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    }
+
+    .btnButton-error404:hover {
+        transform: scale(1.02);
+        filter: drop-shadow( 0 0 1px white);
+        transition: all .5s ease-in-out;
+    }
+
+    .btn-error404:hover .BorderTopBottom-error404:before,
+    .btn-error404:hover .BorderTopBottom-error404:after {
+      width: 27rem;
+    }
+
+    .btn-error404:hover .BorderLeftRight-error404:before,
+    .btn-error404:hover .BorderLeftRight-error404:after {
+      height: 11rem;
+      filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+      transition: all 0.5s ease;
+    }
+
+  
+}
+
+@media screen and (max-width: 1440px) {
+  .btn-error404 p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    letter-spacing: 3.4px;
+  }
+  .wrapperBotton-error404 {
+    top: -35rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .wrapperBotton-error404 {
+        top: -20rem;
+      }
+    
+}
+
+
+  
+@media screen and (max-width:480px) {
+    .wrapperBotton-error404 {
+        position: relative;
+        padding-top: 1rem;
+    }
+    
+    .wrapperBotton-error404 .btn-error404 {
+      width: 11.5rem;
+      height: 4.5rem;
+      margin: 0 2rem;
+    }
+    
+    .btn-error404 p {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+      
+    .BorderTopBottom-error404:before {
+        content: "";
+        position: absolute;
+        width: 12.8rem;
+        height: 2px;
+        top: -6px;
+        left: -7px;
+        transition: all 0.5s ease;
+      }
+      
+      .BorderTopBottom-error404:after {
+        content: "";
+        position: absolute;
+        width: 12.8rem;
+        height: 2px;
+        bottom: -6px;
+        right: -7px;
+        transition: all 0.5s ease;
+      }
+      
+      .BorderLeftRight-error404:before {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: -7px;
+        width: 2px;
+        height: 5.5rem;
+        transition: all 0.5s ease;
+      }
+      
+      .BorderLeftRight-error404:after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: -7px;
+        width: 2px;
+        height: 5.5rem;
+        transition: all 0.5s ease;
+      }
+    
+      .btnButton-error404:hover {
+          transform: scale(1.02);
+          filter: drop-shadow( 0 0 1px white);
+          transition: all .5s ease-in-out;
+      }
+
+      .btn-error404:hover .BorderTopBottom-error404:before,
+      .btn-error404:hover .BorderTopBottom-error404:after {
+        width: 12.8rem;
+      }
+
+      .glitch-text{
+        font-size:6rem;
+        letter-spacing: 3px;
+    }
+    
+    
+    .glitch-text span{
+        font-size: 4rem;
+        top: -2rem ;
+    }
+
+
+        
+}
+
+
+@media screen and (max-width: 350px) {
+    .glitch-text{
+        font-size:5em;
+        letter-spacing: 3px;
+    }
+    
+    
+    .glitch-text span{
+        font-size: 3rem;
+        top: 0rem ;
+    }
+
+}

@@ -68,13 +68,6 @@ p{
 }
 
 
-@font-face {
-  font-family: 'openSans';
-  src: url('./components/fonts/OpenSans-Regular.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
   
 html {
   scroll-behavior: smooth;
