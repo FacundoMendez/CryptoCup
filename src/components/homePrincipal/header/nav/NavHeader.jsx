@@ -5,11 +5,13 @@ import navFuncional from './navFuncional';
 import "./nav.css";
 import navBallModel from './modelBall';
 import imgNav from "./src/navBack.png";
+import navOcultar from './navOcultar';
 
 function NavHeader() {
 
     useEffect(()=>{
         navBallModel()
+        navOcultar()
     },[])
 
 
