@@ -7,6 +7,7 @@ const navOcultar = () => {
             navMenu.classList.toggle("nav-menu_visible");
         })
     }
+    
 }
 
 export default navOcultar; 

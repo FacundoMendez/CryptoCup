@@ -6,11 +6,13 @@ import "./nav.css";
 import navBallModel from './modelBall';
 import imgNav from "./src/navBack.png";
 import navOcultar from './navOcultar';
+import commingDapp from './comingDapp';
 
 function NavHeader() {
 
     useEffect(()=>{
         navBallModel()
+        commingDapp()
         navOcultar()
     },[])
 
@@ -58,10 +60,11 @@ function NavHeader() {
                     {/* <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
-                                <p>Dapp</p>
+                                <p >Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
                                 <span className="BorderLeftRightNav "></span>
                             </div>
+                            
                         </div>
                     {/*    </a> */}
                     </li>
@@ -90,10 +93,11 @@ function NavHeader() {
                     {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
                         <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
-                                <p>Dapp</p>
+                                <p className='dapp'>Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
                                 <span className="BorderLeftRightNav "></span>
                             </div>
+                            <p className='comingDapp'>Coming Soon</p>
                         </div>
                     {/*       </a> */}
                     </li>
