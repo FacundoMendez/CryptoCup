@@ -1,5 +1,6 @@
 import React, {lazy , Suspense} from 'react'
-import Spinner from '../../spinner/Spinner'
+
+const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const TournamentMain = lazy(() => import ("./presentCryptoCup/Present"))
 const TiketsMain = lazy(() => import ('./tikets/TiketsMain'))
 const VideoPubli = lazy(() => import ('./videoPubli/VideoPubli'))

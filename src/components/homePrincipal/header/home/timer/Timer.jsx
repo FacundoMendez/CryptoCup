@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import "./timer.css"
 import timerFuncional from './timerFuncional'
 
+
 const Timer = () => {
 
   useEffect(()=>{

@@ -1,6 +1,5 @@
 import React,{useState, useEffect} from 'react'
 import checkTokenBoost from './checkTokenBoost'
-
 import busdLogo from "../../src/busdLogo.png"
 import daiLogo from "../../src/daiLogo.png"
 import usdcLogo from "../../src/usdcLogo.png"

@@ -6,16 +6,15 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
-import Social from "../../homePrincipal/header/home/social/Social"
-import Spinner from '../../spinner/Spinner'
-import SelectTokenBasic from './tokensSelect/tokenBasic/SelectTokenBasic'
-import SelectTokenBoost from './tokensSelect/tokenBoost/SelectTokenBoost'
+
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
+const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
+const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTokenBasic'))
+const Spinner = lazy(() => import ('../../spinner/Spinner'))
+const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 
 
 const TiketBuyPage = () => {
-
-
 
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);
@@ -25,7 +24,8 @@ const TiketBuyPage = () => {
 
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
-
+  const [priceTicketBasic, setPriceTicketBasic] = useState(15)
+  const [priceTicketBoost, setPriceTicketBoost] = useState(30)
 
   const login = async () => {
     try {
@@ -90,7 +90,7 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
                   
                   <div className="priceBasic">
-                    <h2>$15</h2>
+                    <h2>${priceTicketBasic}</h2>
                   </div>
 
                   <div className="wrapperBotton-Tickets">
@@ -103,14 +103,25 @@ const TiketBuyPage = () => {
                   </div>
                   <div className="cantTicket-basic">
                         <button className='menos-basic' onClick={() => {
+                          
                           if (cantTicketsBasic > 1){
                             setCantTicketsBasic(cantTicketsBasic - 1) 
                           }
+                          if(priceTicketBasic >= 30){
+                            setPriceTicketBasic(priceTicketBasic - 15) 
+                          }
+
                         }}> - </button>
                         <div className="contador-basic">
                           <p>{cantTicketsBasic}</p>
                         </div>
-                        <button className='mas-basic' onClick={() => setCantTicketsBasic(cantTicketsBasic + 1) }> + </button>
+                        <button className='mas-basic' onClick={() => {
+                            if(priceTicketBasic >= 15){
+                              setPriceTicketBasic(priceTicketBasic + 15) 
+                            }
+                          setCantTicketsBasic(cantTicketsBasic + 1)
+                          
+                          } }> + </button>
                   </div>
               </div>
 
@@ -118,7 +129,7 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
                   
                   <div className="priceBoost">
-                    <h2>$30</h2>
+                    <h2>${priceTicketBoost}</h2>
                   </div>
 
                   <div className="wrapperBotton-Tickets">
@@ -131,14 +142,26 @@ const TiketBuyPage = () => {
                   </div>
                   <div className="cantTicket-boost">
                         <button className='menos-boost' onClick={() => {
+
                           if (cantTicketsBoost > 1){
-                            setCantTicketsBoost(cantTicketsBoost - 1) 
+                            setCantTicketsBoost(cantTicketsBoost - 1)  
                           }
+                          if(priceTicketBoost >= 60){
+                            setPriceTicketBoost(priceTicketBoost - 30) 
+                          }
+
+
                         }}> - </button>
                         <div className="contador-boost">
                           <p>{cantTicketsBoost}</p>
                         </div>
-                        <button className='mas-boost' onClick={() => setCantTicketsBoost(cantTicketsBoost + 1) }> + </button>
+                        <button className='mas-boost' onClick={() => {
+                          if(priceTicketBoost >= 30){
+                            setPriceTicketBoost(priceTicketBoost + 30) 
+                          }
+                          setCantTicketsBoost(cantTicketsBoost + 1)
+                          
+                          } }> + </button>
                   </div>
               </div>
           </div>

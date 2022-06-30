@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {lazy} from 'react'
 import "./home.css"
-import Timer from './timer/Timer'
-import Social from './social/Social'
-import Button from '../../buttons/Button'
 import BackPrincipal from "./src/videos/BackCopa2.mp4"
 import soonImg from "./src/comingSoon.png"
+
+const Button = lazy(() => import ("../../buttons/Button"))
+const Social = lazy(() => import ('./social/Social'))
+const Timer = lazy(() => import ('./timer/Timer'))
+
 
 const Home = () => {
 
