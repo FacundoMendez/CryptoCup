@@ -1,9 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./error404.css"
 import logo from "../homePrincipal/main/src/Logo.png"
 import particulas from "../tiketBuy/homeTikets/src/particle1P.mp4"
 
 const Error404 = () => {
+
+  useEffect(() => {
+
+    setTimeout(function(){
+      window.location.href = "/"
+    },10000)
+    
+   }, [])
+
   return (
     <div className='containerError404'>
       <video className='particulas404' src={particulas} autoPlay loop muted ></video>

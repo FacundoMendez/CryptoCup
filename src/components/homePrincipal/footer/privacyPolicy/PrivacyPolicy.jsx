@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
 
             <div className="titlePrivacy">
                 <h2>
-                     I. ASUNCIÓN DE RIESGOS
+                     I. ASSUMPTION OF RISKS
                 </h2>
             </div>
             <div className="textPrivacy">

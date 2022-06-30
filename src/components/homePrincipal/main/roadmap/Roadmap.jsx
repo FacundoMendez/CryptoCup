@@ -35,7 +35,7 @@ const Roadmap = () => {
           </li>
           <li>
           <div className='textRoadamp'>
-              <time>Q2 2022</time> 
+              <time>Q1 2022</time> 
               <p>
                 - Smart contracts development <span>✓</span> <br/>
                 - NFTs Illustrations and 3D Models <span>✓</span> <br/>
@@ -46,7 +46,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp'>
-              <time>Q3 2022</time> 
+              <time>Q2 2022</time> 
               <p>
                 - Whitepaper creation <br/>
                 - Ticket Sales <br/>
@@ -56,7 +56,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp'>
-              <time>Q4 2022</time>
+              <time>Q3 2022</time>
               <p>
                 - Token public presale 1 <br/>
                 - Token public presale 2 <br/>

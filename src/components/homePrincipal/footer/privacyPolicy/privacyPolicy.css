@@ -7,7 +7,7 @@
 
 
 .boxPrivacy{
-    width: 55%;
+    width: 60%;
     position: relative;
     margin: 20rem auto;
     background: #070707;
@@ -61,4 +61,101 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+
+
+@media screen and (max-width:1440px){
+    
+    .boxPrivacy{
+        width: 75%;
+    }
+
+    .boxPrivacy h4{
+        font-size: 3rem;
+        padding: 4rem 3rem;
+    }
+
+
+    .titlePrivacy{
+        font-size: 3rem;
+        padding: 3rem  ;
+    }
+    
+    .textPrivacy p{
+        font-size: 1.9rem;
+        padding: 0 3rem;
+    }
+}
+
+
+@media screen and (max-width:1050px){
+    
+    .boxPrivacy{
+        width: 85%;
+    }
+
+    .boxPrivacy h4{
+        font-size: 3rem;
+        padding: 4rem 3rem;
+    }
+
+
+    .titlePrivacy{
+        font-size: 3rem;
+        padding: 3rem  ;
+    }
+    
+    .textPrivacy p{
+        font-size: 1.9rem;
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width:700px){
+    
+    .boxPrivacy{
+        width: 95%;
+    }
+
+    .boxPrivacy h4{
+        font-size: 3rem;
+        padding: 4rem 3rem;
+    }
+
+
+    .titlePrivacy{
+        font-size: 3rem;
+        padding: 3rem  ;
+    }
+    
+    .textPrivacy p{
+        font-size: 1.9rem;
+        padding: 0 3rem;
+    }
+}
+
+
+
+@media screen and (max-width:480px){
+    
+    .boxPrivacy{
+        width: 100%;
+    }
+
+    .boxPrivacy h4{
+        font-size: 3rem;
+        padding: 4rem 3rem;
+    }
+
+
+    .titlePrivacy{
+        font-size: 3rem;
+        padding: 3rem  ;
+    }
+    
+    .textPrivacy p{
+        font-size: 1.9rem;
+        padding: 0 3rem;
+    }
 }
