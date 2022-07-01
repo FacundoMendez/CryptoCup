@@ -1,6 +1,6 @@
 const commingDapp = () => {
 
-    const dapp = document.querySelector(".dapp")
+    const dapp = document.querySelector(".dappTitleButton")
     const comingDappButton = document.querySelector(".comingDapp")
 
     dapp.addEventListener("click", function(){

@@ -58,7 +58,7 @@ function NavHeader() {
 
                     <li>
                     {/* <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
-                        <div className="wrapperBottonBtn">
+                        <div className="wrapperBottonBtn navMovile">
                             <div className="btnButtonNav">
                                 <p >Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
@@ -66,7 +66,8 @@ function NavHeader() {
                             </div>
                             
                         </div>
-                    {/*    </a> */}
+                       {/* </a> */}
+
                     </li>
                 </ul>
 
@@ -91,15 +92,19 @@ function NavHeader() {
                 
                     <li>
                     {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
-                        <div className="wrapperBottonBtn">
+                       {/*  <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p className='dapp'>Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
                                 <span className="BorderLeftRightNav "></span>
                             </div>
                             <p className='comingDapp'>Coming Soon</p>
-                        </div>
+                        </div> */}
                     {/*       </a> */}
+
+                        <div className="lineDappButton"></div>
+                        <p className='dappTitleButton'>DAPP</p>
+                        <p className='comingDapp'>Coming Soon</p>
                     </li>
                 </ul>
 

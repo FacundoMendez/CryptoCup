@@ -44,9 +44,7 @@
     position: fixed;
     opacity:.8;
     top: 0;
-    object-fit: cover;
     filter: contrast(120%) brightness(110%) ;
-    
 }
 
 .navDerecha{
@@ -163,6 +161,55 @@
 
 /* button dapp  */
 
+
+.lineDappButton{
+    position: absolute;
+    right: 10%;
+    margin-top: .2rem;
+    transform: rotate(-60deg);
+    width: 10rem;
+    height: .2rem;
+    border-radius: 20px;
+    background-color:#fffffff5;
+    border: 1.5px solid rgb(152, 150, 255);
+    filter: drop-shadow(0 0 4px #7119ffe1) opacity(.8);
+}
+
+.dappTitleButton{
+    position: absolute;
+    right: 1.8%;
+    top: 0rem;
+    text-align: center;
+    margin-top: 0rem;
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    width: 19rem;
+    height: 8.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: oblique;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-family: gilron;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+}
+
+.dappTitleButton:hover{
+    filter: drop-shadow(0 0 20px rgb(188, 130, 255));
+    transition: all 1s ease-in-out;
+}
+
+
+
 .wrapperBottonBtn {
     position: absolute;
     right: 5%;
@@ -271,9 +318,12 @@
     font-size: 1.6rem;
     margin-left: -.5rem;
     font-family: gilron;
-    font-style: italic;
+    font-style: oblique;
     opacity: 0;
     transition: all 1s ease-in-out;
+    position:absolute;
+    right: 4.5%;
+    top:5.6rem;
 }
 
 
@@ -336,6 +386,22 @@
     .BorderLeftRightNav:after {
       height: 4.5rem;
     }
+
+    
+.lineDappButton{
+    right: 8%;
+    margin-top: .2rem;
+    width: 10rem;
+    height: .2rem;
+}
+
+.dappTitleButton{
+    right: -1%;
+    font-size: 2.7rem;
+    width: 19rem;
+    height: 8.5rem;
+}
+
 }
 
 
