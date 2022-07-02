@@ -5,12 +5,14 @@ import navFuncional from '../../homePrincipal/header/nav/navFuncional';
 import "../../homePrincipal/header/nav/nav.css";
 import navBallModel from '../../homePrincipal/header/nav/modelBall';
 import imgNav from "../../homePrincipal/header/nav/src/navBack.png"
+import commingDapp from '../../homePrincipal/header/nav/comingDapp';
 
 
 function NavTicket() {
 
     useEffect(()=>{
         navBallModel()
+        commingDapp()
     },[])
 
     return (
