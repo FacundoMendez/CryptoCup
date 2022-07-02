@@ -53,12 +53,13 @@ function NavTicket() {
 
                     <li>
                         {/*     <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
-                        <div className="wrapperBottonBtn">
+                        <div className="wrapperBottonBtn navMovile">
                             <div className="btnButtonNav">
-                                <p>Dapp</p>
+                                <p >Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
                                 <span className="BorderLeftRightNav "></span>
                             </div>
+                            
                         </div>
                         {/*  </a> */}
                    </li>
@@ -85,13 +86,16 @@ function NavTicket() {
                 
                     <li>
                   {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
-                        <div className="wrapperBottonBtn">
+                    {/*     <div className="wrapperBottonBtn">
                             <div className="btnButtonNav">
                                 <p>Dapp</p>
                                 <span className="BorderTopBottomNav "></span>
                                 <span className="BorderLeftRightNav "></span>
                             </div>
-                        </div>
+                        </div> */}
+                        <div className="lineDappButton"></div>
+                        <p className='dappTitleButton'>DAPP</p>
+                        <p className='comingDapp'>Coming Soon</p>
                     {/*     </a> */}
                     </li>
                 </ul>
