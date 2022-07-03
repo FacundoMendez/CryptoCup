@@ -4,7 +4,7 @@ import TiketBoost from "./src/tiketBasic.png"
 import TiketBasic from "./src/tiketBoost.png"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
-import backReflejo from "./src/BackgroundTickets42.jpg"
+import backReflejo from "./src/BackgroundTickets422.jpg"
 import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
 import division from "./src/division.png"

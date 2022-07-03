@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 40rem ;
+    padding-top: 45rem ;
     background-image: url("./src/BackToken.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -43,7 +43,7 @@
 
 .titleNfts h2{
     font-weight: 300;
-    font-size: 7.4rem;
+    font-size: 8rem;
     top: 25px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -102,6 +102,56 @@
     z-index: 100;
 }
 
+
+.container_card:hover > .basicTextVideo{
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 100;
+    font-weight: bold;
+    top:4%;
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: qatar;
+    width: 100%;
+    left: .5rem;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(161, 114, 75),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #e9b183, #be963e, #fef1a2, #be963e, #e9b183);
+    transition: all .5s ease-in-out;
+}
+
+
+.container_card:hover > .boostTextVideo{
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 100;
+    font-weight: bold;
+    top:4%;
+    position: absolute;
+    letter-spacing: 1px;
+    font-family: qatar;
+    width: 100%;
+    left: .5rem;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(161, 114, 75),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #e9b183, #be963e, #fef1a2, #be963e, #e9b183);
+    transition: all .5s ease-in-out;
+}
+
+
+
 /* cards */
 
  .container {
@@ -128,6 +178,9 @@
     border: 4px groove rgb(255, 213, 150);
     backdrop-filter: blur(1rem);
 }
+
+
+
 
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
@@ -167,7 +220,7 @@
     text-align: center;
     background-repeat: no-repeat;
     margin-top: 16rem;
-    filter: contrast(125%) brightness(125%);
+    filter: contrast(115%) brightness(105%);
 }
 
 .event2 .image {
@@ -178,7 +231,7 @@
     margin-left: 1.3px;
     background-repeat: no-repeat;
     margin-top: 16rem;
-    filter: contrast(125%) brightness(125%);
+    filter: contrast(120%) brightness(100%);
 }
 .image {
     top: -50%;

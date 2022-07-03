@@ -33,11 +33,13 @@ const Nfts = () => {
 
         <div className="tiposTorneos">   
           <div className="container">
-            <div className="container_card">
+            <div className="container_card ">
                 <video className='videoCopaBasic' src={videoCopaBasic} autoPlay loop muted ></video> 
+                <p className='basicTextVideo'>BASIC LADDER</p>
             </div>  
             <div className="container_card"> 
                 <video className='videoCopaBoost' src={videoCopaBoost} autoPlay loop muted ></video> 
+                <p className='boostTextVideo'>BOOST LADDER</p>
             </div> 
           </div>
         </div>

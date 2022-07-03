@@ -11,6 +11,7 @@
     z-index: 999999;
     right: -24.5rem;
     transition: all .5s ease-in-out;
+
 }
 
 .social a {
@@ -30,7 +31,10 @@
     transition: transform 1s;
     align-items: center;
     transition: all .5s ease-in-out;
-    
+
+    background-color: rgba(236, 187, 255, 0.178);
+    backdrop-filter: blur(3rem);
+    border: 2px groove rgba(183, 119, 255, 0.377);
 } 
 
 .social a:hover {
@@ -44,23 +48,23 @@
     width: 30px;
     filter: contrast(104%) brightness(120%);
     transition: color 0.3s;
-
+    filter: drop-shadow( 0 0 .5px white);
 }
 
 .social a:hover:nth-child(1) i {
-    color: #9d8af1;
+    color: #3db1e7;
 }
 
 .social a:hover:nth-child(2) i {
-    color: #9d8af1;
+    color: #eb4894;
 }
 
 .social a:hover:nth-child(3) i {
-    color: #9d8af1;
+    color: #279add;
 }
 
 .social a:hover:nth-child(4) i {
-    color: #9d8af1;
+    color: #846de9;
 }
 
 
@@ -159,6 +163,7 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         filter: drop-shadow(0 0 50px rgba(121, 73, 255, 0.356));
+        backdrop-filter: filter(2rem);
     }
 
 
@@ -169,11 +174,47 @@
         width: 30px;
         filter: contrast(104%) brightness(120%);
         transition: color 0.3s;
-        color: #9d82ff ;
+        color: #c5b5ff ;
+        
     }
     
     .socialMobile a:hover:nth-child(1) i {
         color: #9d8af1;
+        
+    }
+    
+    .socialMobile a:hover:nth-child(2) i {
+        color: #9d8af1;
+    }
+    
+    .socialMobile a:hover:nth-child(3) i {
+        color: #9d8af1;
+    }
+    
+    .socialMobile a:hover:nth-child(4) i {
+        color: #9d8af1;
+    }
+
+}
+
+
+
+@media screen and (max-width:350px) {
+ 
+    .socialMobile  i {
+        padding: 1rem 0;
+        margin-right: 5px;
+        font-size: 30px;
+        width: 34px;
+        filter: contrast(104%) brightness(120%);
+        transition: color 0.3s;
+        color: #9d82ff ;
+        
+    }
+    
+    .socialMobile a:hover:nth-child(1) i {
+        color: #9d8af1;
+        
     }
     
     .socialMobile a:hover:nth-child(2) i {

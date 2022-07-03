@@ -13,7 +13,7 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(130%) brightness(85%)  ;
+    filter: contrast(113%) brightness(110%)  ;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -293,7 +293,7 @@
 
 .division{
     position: absolute;
-    bottom: -90rem;
+    bottom: -90rem !important;
     z-index: 1000;
 }
 
@@ -306,7 +306,6 @@
 
     .backTikets{
         object-fit: cover;
-        filter: contrast(130%) brightness(85%)  ;
         height: 105%;
         width: 100%;
         z-index: -1;
