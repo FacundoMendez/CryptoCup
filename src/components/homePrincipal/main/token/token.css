@@ -123,7 +123,7 @@
 }
 
 .tokenTitle h2{
-    font-size: 7rem;
+    font-size: 7.5rem;
     letter-spacing: 4px;
     filter: grayscale(100);
 }
@@ -240,7 +240,7 @@
     }
 
     .tokenTitle h2{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .tokens{
@@ -275,16 +275,20 @@
 
 
     .tokenComingSoon-left{
-        width: 225%;
-        top: 32%;
+        width: 275%;
+        top: 36%;
         left: 50%;
-        transform: translate(-50%, -50%) rotate(15deg);
+        transform: translate(-50%, -50%) rotate(22deg);
     }
     
     .tokenComingSoon-right{
-        top: 32%;
+        top: 36%;
         left: 50%;
-        width: 225%;
-        transform: translate(-50%, -50%) rotate(-15deg);
+        width: 275%;
+        transform: translate(-50%, -50%) rotate(-22deg);
+    }
+
+    .tokens {
+        padding-bottom: 5rem;
     }
 }

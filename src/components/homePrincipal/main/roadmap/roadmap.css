@@ -48,7 +48,7 @@
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    font-size: 6.5rem;
+    font-size: 7rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -298,11 +298,22 @@
         align-items: flex-start;
         flex-direction: column;
         margin-left: -40rem;
-
     }
 
     .containerRoadmap{
       padding: 10rem 0;
+    }
+
+    .textRoadamp p {
+      font-size: 1.4rem;
+    }
+
+    .containerRoadmap{
+      gap: 0rem;
+    }
+
+    .intro {
+      padding: 50px 0;
   }
   
   }

@@ -7,7 +7,6 @@ const checkTokenBoost = () => {
     checkButton.addEventListener("click", function(){
         radioToken.classList.add("radioTokenBoost-active")
         boxBlurToken.classList.add("boxBlurTokenBoost_active")
-        radio.style.top = "5rem"
     })
 
     for ( let i = 0; i < radio.length; i++){

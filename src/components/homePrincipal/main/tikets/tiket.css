@@ -439,6 +439,12 @@
     .containerTikets::before{
         height: 100%;
     }
+
+    .tiketsTitle h2{
+        margin-top: 6rem;
+        letter-spacing: 1px;
+        line-height: 5rem;
+    }
     
     
 }
@@ -498,6 +504,10 @@
 }
 
 @media screen and (max-width:480px){
+
+    .boxTickets-Home-basic{
+        width: 200vw;
+    }
 
     .containerTikets{
         width: 100%;
