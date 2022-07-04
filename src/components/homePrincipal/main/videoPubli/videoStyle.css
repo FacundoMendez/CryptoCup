@@ -23,7 +23,6 @@
     position: absolute;
 }
 
-
 .videoPubli-container::after{
     width: 110%;
     height: 2rem;
@@ -41,13 +40,12 @@
     z-index: 1;
 }
 
-
 .videoPubli-texts h2{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     padding: 2rem;
-    font-size: 4rem;
+    font-size: 6rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

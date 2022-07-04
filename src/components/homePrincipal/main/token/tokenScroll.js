@@ -52,7 +52,7 @@ const tokenScroll = () =>{
             x: "+= 100",
             scrollTrigger:{
                 trigger: ".tokens",
-                start: "top center",
+                start: "top top",
                 end: "bottom bottom",
                 scrub: 2,
             }
@@ -62,7 +62,7 @@ const tokenScroll = () =>{
             x: "-= 100",
             scrollTrigger:{
                 trigger: ".tokens",
-                start: "top center",
+                start: "top top",
                 end: "bottom bottom",
                 scrub: 2,
             }

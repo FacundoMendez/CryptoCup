@@ -47,9 +47,10 @@
 }
 
 .tiketsTitle h2{
-    font-size: 5.2rem;
+    font-size: 6.5rem;
     margin-top: 6rem;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
+    line-height: 7rem;
 }
 
 .tiketsTitle h3{
@@ -57,7 +58,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -105,7 +106,6 @@
     cursor: pointer;
 }
 
-
 /* boost basic */
 
 .boxTickets-Home-basic{
@@ -141,9 +141,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
-    /* text-align: center; */
     width: 45%;
     gap: 5rem;
     margin-top: -10rem;
@@ -154,18 +152,14 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
-    /* text-align: center; */
     width: 45%;
     gap: 5rem;
     margin-top: 0rem;
 }
 
-
-
 .titleTicket-home-basic h2{
-    font-size: 4.5rem;
+    font-size: 5rem;
     line-height:4rem;
     letter-spacing: 2.5px;
     -webkit-background-clip: text;
@@ -177,9 +171,8 @@
     background-image: linear-gradient(180deg, rgb(216, 138, 74), #e7bd69, #fff199, #e7bd69, rgb(216, 138, 74));
 }
 
-
 .titleTicket-home-boost h2{
-    font-size: 4.5rem;
+    font-size: 5rem;
     line-height:4rem;
     letter-spacing: 2.5px;
     -webkit-background-clip: text;
@@ -225,7 +218,6 @@
 .tiketImg-boost, .tiketImg-basic{
     text-align: center;
 }
-
   
 @keyframes slidein {
     0% {
@@ -289,7 +281,6 @@
 .textoTicket-home ul li img {
     width: 2.5rem;
 }
-
 
 .division{
     position: absolute;

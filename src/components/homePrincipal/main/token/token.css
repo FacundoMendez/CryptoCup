@@ -10,7 +10,6 @@
     background-size: cover; */
     padding-bottom: 5rem;
     z-index: 10;
-/*     filter: grayscale(100); */
 }
 
 .backToken{
@@ -39,11 +38,10 @@
     filter: contrast(120%) brightness(105%) drop-shadow(0 0 50px rgba(135, 6, 255, 0.144));
 }
 
-
 .tokenComingSoon-left{
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 34%;
+    left: 50.5%;
     transform: translate(-50%, -50%) rotate(10deg);
     width: 115%;
     object-fit: cover;
@@ -52,14 +50,13 @@
 
 .tokenComingSoon-right{
     position: absolute;
-    top: 32%;
-    left: 50%;
+    top: 34%;
+    left: 50.5%;
     transform: translate(-50%, -50%) rotate(-10deg);
     width: 115%;
     object-fit: cover;
     filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(167, 72, 255, 0.459));
 }
-
 
 /* .tokens::before{
     width: 100%;
@@ -107,7 +104,6 @@
     gap: 0rem;
     flex-wrap: wrap;
     width: 100%;
-    
 }
 
 .textToken{
