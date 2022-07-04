@@ -6,6 +6,7 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
+import {useSearchParams } from "react-router-dom";
 
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
@@ -15,6 +16,10 @@ const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social
 
 
 const TiketBuyPage = () => {
+
+  const [ params , setParams ] = useSearchParams();
+  params.get("r")
+  console.log(params.get("r"))
 
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);

@@ -20,7 +20,6 @@
     position: absolute;
 }
 
-
 .containerTikets::after{
     content:"";
     position: absolute;
@@ -47,7 +46,7 @@
 }
 
 .tiketsTitle h2{
-    font-size: 6.5rem;
+    font-size: 6rem;
     margin-top: 6rem;
     letter-spacing: 1px;
     line-height: 7rem;
@@ -84,7 +83,7 @@
 
 .textDescripcionTikets{
     color: white;
-    padding: .5rem 5rem;
+    padding: .5rem 0rem;
     text-align: center;
 }
 

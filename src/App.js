@@ -1,7 +1,7 @@
 import "./components/homePrincipal/main/main.css"
 import { lazy, Suspense} from "react";
 import './App.css';
-import {BrowserRouter, Route, Routes } from "react-router-dom";
+import {BrowserRouter, Route, Routes, useSearchParams } from "react-router-dom";
 
 
 const Error404 = lazy(() => import ("./components/error404/Error404"))
@@ -12,6 +12,9 @@ const PrivacyPolicy = lazy(() => import ("./components/homePrincipal/footer/priv
 const Spinner = lazy(() => import ("./components/spinner/Spinner"))
 
 function App() {
+
+
+
   return (
     <BrowserRouter  >
 
