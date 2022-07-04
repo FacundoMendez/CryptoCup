@@ -21,7 +21,7 @@ const Roadmap = () => {
         <ul>
           <li>
             <div className='textRoadamp'>
-              <time>Q4 2022</time>
+              <time>Q4 2021</time>
               <p>
               - Concept Design <span>✓</span><br/>
               - Branding and game research <span>✓</span> <br/>
