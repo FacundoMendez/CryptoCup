@@ -1,10 +1,22 @@
 const checkTokenBasic = () => {
     const checkButton = document.querySelector(".btn-ticketSale ")
-    const radioBox = document.querySelector(".radioToken")
+    const boxBlurToken = document.querySelector(".boxBlurToken")
+    const radio = document.querySelectorAll(".radio")
+    const radioToken = document.querySelector(".radioToken")
 
     checkButton.addEventListener("click", function(){
-        radioBox.classList.toggle("radioToken-active");
+        radioToken.classList.add("radioToken-active")
+        boxBlurToken.classList.add("boxBlurToken_active")
     })
+
+    for ( let i = 0; i < radio.length; i++){
+        radio[i].addEventListener("click", function(){
+            radioToken.classList.remove("radioToken-active")
+            boxBlurToken.classList.remove("boxBlurToken_active")
+        })
+    }
+
+ 
     
 }
 

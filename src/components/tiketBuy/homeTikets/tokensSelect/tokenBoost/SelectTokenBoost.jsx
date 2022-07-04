@@ -14,27 +14,28 @@ const SelectTokenBoost = () => {
     },[])
 
   return (
-      
-    <div className="wrapperBotton-ticketSale-boost ">
 
-        <div className="btn-ticketSaleBoost" >
-            {activeBoost === 1 ? <img className='imgTokenSelect' src={usdcLogo} alt="BusdToken" /> : null}
-            {activeBoost === 2 ? <img className='imgTokenSelect' src={usdtLogo} alt="DaiToken" /> : null}
-            {activeBoost === 3 ? <img className='imgTokenSelect' src={busdLogo} alt="UsdcToken" /> : null}
-            {activeBoost === 4 ? <img className='imgTokenSelect' src={daiLogo} alt="UsdtToken" /> : null}
+    <div className="boxToken">
+        <div className="wrapperBotton-ticketSale-boost ">
 
-            <span className="BorderTopBottom-ticketSale  "></span>
-            <span className="BorderLeftRight-ticketSale  "></span>
+            <div className="btn-ticketSaleBoost" >
+                {activeBoost === 1 ? <img className='imgTokenSelect' src={usdcLogo} alt="BusdToken" /> : null}
+                {activeBoost === 2 ? <img className='imgTokenSelect' src={usdtLogo} alt="DaiToken" /> : null}
+                {activeBoost === 3 ? <img className='imgTokenSelect' src={busdLogo} alt="UsdcToken" /> : null}
+                {activeBoost === 4 ? <img className='imgTokenSelect' src={daiLogo} alt="UsdtToken" /> : null}
+
+                <span className="BorderTopBottom-ticketSale  "></span>
+                <span className="BorderLeftRight-ticketSale  "></span>
             
+            </div>
             <div className="radioTokenBoost">
-
                 <label className="radio control-radio">
                     <img className='LogoToken' src={usdcLogo} alt="Logo Dai" />
                     <p>USDC</p>
                     <input type="radio" value="option1-boost" readOnly={true} name="radioBoost" checked={activeBoost === 1} onClick={() => setActiveBoost(1)}/>
                     <div className="control_indicator"></div>
                 </label>
-
+                
                 <label className="radio control-radio">
                     <img className='LogoToken' src={usdtLogo} alt="Logo Dai" />
                     <p>USDT</p>

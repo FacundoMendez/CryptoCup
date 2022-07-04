@@ -15,8 +15,9 @@ const SelectTokenBasic = () => {
     },[])
 
   return (
-      
-    <div className="wrapperBotton-ticketSale ">
+
+    <div className="boxToken">
+        <div className="wrapperBotton-ticketSale ">
 
         <div className="btn-ticketSale" >
             {activeBasic === 1 ? <img className='imgTokenSelect' src={usdcLogo} alt="BusdToken" /> : null}
@@ -25,9 +26,11 @@ const SelectTokenBasic = () => {
             {activeBasic === 4 ? <img className='imgTokenSelect' src={daiLogo} alt="UsdtToken" /> : null}
 
             <span className="BorderTopBottom-ticketSale  "></span>
-            <span className="BorderLeftRight-ticketSale  "></span>
+            <span className="BorderLeftRight-ticketSale  "></span>  
             
-            <div className="radioToken">
+        </div>
+
+        <div className="radioToken">
 
                 <label className="radio control-radio">
                     <img className='LogoToken' src={usdcLogo} alt="Logo Dai" />

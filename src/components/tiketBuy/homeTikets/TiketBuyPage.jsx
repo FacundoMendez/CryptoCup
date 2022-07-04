@@ -83,8 +83,11 @@ const TiketBuyPage = () => {
       <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
       
       <div className="flexTickets">
-
+          
           <div className="ticketsSale">
+
+            <div className="boxBlurToken"></div>
+            <div className="boxBlurTokenBoost"></div>
 
               <div className="boxTickets">
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
@@ -186,6 +189,7 @@ const TiketBuyPage = () => {
             
           </div>
         </div>
+
     </div>
   )
 }

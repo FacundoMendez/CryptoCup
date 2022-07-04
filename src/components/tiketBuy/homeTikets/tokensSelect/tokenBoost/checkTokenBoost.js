@@ -1,18 +1,21 @@
 const checkTokenBoost = () => {
     const checkButton = document.querySelector(".btn-ticketSaleBoost ")
-    const radioBox = document.querySelector(".radioTokenBoost")
-    const tiketMargin = document.querySelector(".flexTickets")
+    const boxBlurToken = document.querySelector(".boxBlurTokenBoost")
+    const radio = document.querySelectorAll(".radio")
+    const radioToken = document.querySelector(".radioTokenBoost")
 
     checkButton.addEventListener("click", function(){
-        radioBox.classList.toggle("radioTokenBoost-active");
-        if (window.matchMedia("(max-width: 380px)").matches) {
-            tiketMargin.style.paddingBottom = "32rem"
-          } 
+        radioToken.classList.add("radioTokenBoost-active")
+        boxBlurToken.classList.add("boxBlurTokenBoost_active")
+        radio.style.top = "5rem"
     })
 
-    checkButton.addEventListener("click", function(){
-        radioBox.classList.toggle("radioTokenBoost");
-    })
+    for ( let i = 0; i < radio.length; i++){
+        radio[i].addEventListener("click", function(){
+            radioToken.classList.remove("radioTokenBoost-active")
+            boxBlurToken.classList.remove("boxBlurTokenBoost_active")
+        })
+    }
 
  
 
