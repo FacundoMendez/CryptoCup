@@ -13,7 +13,7 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(113%) brightness(110%)  ;
+    filter: contrast(116%) brightness(112%)  ;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -496,7 +496,6 @@
     .containerTikets{
         padding-bottom: 5rem ;
     }
-
    
     .division{
         display: none;
