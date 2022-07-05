@@ -99,7 +99,7 @@ const TiketBuyPage = () => {
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
-                          <p>{connected? "BUY" : "CONNECT"}</p>
+                          <p >{connected? "BUY" : "CONNECT"}</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
@@ -184,7 +184,12 @@ const TiketBuyPage = () => {
 
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
               <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
-                <p className='select-Connect'>{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
+                <p className='select-Connect' >{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
+                
+           {/* {connected ? <input type="text" className="copyWallet" id='copyWallet' data-autoselect="" value={truncateEthAddress(account[0])} aria-label={truncateEthAddress(account[0])}  readonly=""></input> : null} */}
+
+                <input type="text"  className="copyWallet2" id='copyWallet2'  data-autoselect=""  aria-label="texto copiado" readOnly="" defaultValue="Texto Copiado"/>
+
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>

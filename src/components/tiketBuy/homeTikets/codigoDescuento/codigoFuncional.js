@@ -1,18 +1,12 @@
 const codigoFuncional = () => {
-/*     const boxCopyCupon = document.querySelector(".boxCopyCupon")
-    const text1Copy = document.querySelector(".text1Copy")
+    const hereClick = document.querySelector(".hereClick")
+    const containerInputCupon = document.querySelector(".containerInputCupon")
 
-    let open = false
-
-    boxCopyCupon.addEventListener("mouseover", function(){
-        text1Copy.classList.add("text1Copy_active")
-        open= true
+    hereClick.addEventListener("click", function(){
+        containerInputCupon.classList.add("containerInputCupon_active")
     })
 
-    if (open) {
-        text1Copy.classList.remove("text1Copy_active")
-    }
- */
+
 }
 
 export default codigoFuncional;
