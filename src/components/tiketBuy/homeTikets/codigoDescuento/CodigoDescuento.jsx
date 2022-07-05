@@ -3,15 +3,17 @@ import "./codigoDescuento.css"
 import codigoFuncional from './codigoFuncional'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
-
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
+import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 
 const CodigoDescuento = () => {
     useEffect(() => {
         codigoFuncional()
     },[])
 
-    const [copyActive , setCopyActive] = useState(true) //modificar a false (true para pruebas)
+    const [copyActive , setCopyActive] = useState(true) //validacion de si la persona compro o no - modificar a false (true para pruebas)
+
+    const [submitCodigoDescuento , setSubmitCodigoDescuento] = useState(true) //validacion si el cupon es correcto - modificar a false (true para pruebas)
 
     //en el archivo TiketBuyPage se encuentra la validacion que trae el numero de cuenta de wallet
 
@@ -36,7 +38,11 @@ const CodigoDescuento = () => {
 
             <div className="containerInputCupon">
                 <input type="text" />
-                <button type='submit'> 
+                <button id='buttonSubmitCode' type='submit' onClick={() => {
+                    if(submitCodigoDescuento){
+                        submitActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que valido si el cupon es correcto ) 
+                    }
+                }}> 
                     <FontAwesomeIcon icon={faAnglesRight} />
                  </button>
             </div>
