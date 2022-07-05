@@ -6,20 +6,16 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
-import {useSearchParams } from "react-router-dom";
 
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
 const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTokenBasic'))
 const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
+const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
 
 const TiketBuyPage = () => {
-
-  const [ params , setParams ] = useSearchParams();
-  params.get("r")
-  console.log(params.get("r"))
 
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);
@@ -109,27 +105,29 @@ const TiketBuyPage = () => {
                       </div>
                       <SelectTokenBasic />
                   </div>
-                  <div className="cantTicket-basic">
-                        <button className='menos-basic' onClick={() => {
-                          
-                          if (cantTicketsBasic > 1){
-                            setCantTicketsBasic(cantTicketsBasic - 1) 
-                          }
-                          if(priceTicketBasic >= 30){
-                            setPriceTicketBasic(priceTicketBasic - 15) 
-                          }
 
+                  <div className="cantTicket-basic">
+
+                        <button className='menos-basic' onClick={() => {
+                            if (cantTicketsBasic > 1){
+                              setCantTicketsBasic(cantTicketsBasic - 1) 
+                            }
+                            if(priceTicketBasic >= 30){
+                              setPriceTicketBasic(priceTicketBasic - 15) 
+                            }
                         }}> - </button>
+
                         <div className="contador-basic">
                           <p>{cantTicketsBasic}</p>
                         </div>
+
                         <button className='mas-basic' onClick={() => {
                             if(priceTicketBasic >= 15){
                               setPriceTicketBasic(priceTicketBasic + 15) 
                             }
-                          setCantTicketsBasic(cantTicketsBasic + 1)
-                          
-                          } }> + </button>
+                            setCantTicketsBasic(cantTicketsBasic + 1)
+                        } }> + </button>
+
                   </div>
               </div>
 
@@ -191,6 +189,8 @@ const TiketBuyPage = () => {
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>
             </div>
+
+            <CodigoDescuento /> 
             
           </div>
         </div>

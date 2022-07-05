@@ -115,7 +115,6 @@
     width: 0;
     height: 0;
     border-style: solid;
-
   }
   .textRoadamp p{
       color: white;
@@ -137,9 +136,8 @@
     font-weight: bold;
     font-size: 2rem;
     padding-left: 1rem;
-
-}
-  
+  }
+    
   .timeline ul li:nth-child(odd) div {
     left: 45px;
 
