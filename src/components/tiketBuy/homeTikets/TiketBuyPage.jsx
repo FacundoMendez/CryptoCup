@@ -95,9 +95,10 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
                   
                   <div className="priceBasic">
+                  <div className="boxPrinceBasic">
                     <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
                     <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
-
+                  </div>
                     <div className="boxPriceBasicDescuento">
                       <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
                     </div>
@@ -141,10 +142,11 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
                   
                   <div className="priceBoost">
-                    <h2>${priceTicketBoost}</h2>
-
-                    <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
-
+                    <div className="boxPrinceBoost">
+                      <h2>${priceTicketBoost}</h2>
+                      <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
+                    </div>
+                  
                     <div className="boxPriceBoostDescuento">
                       <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
                     </div>
@@ -198,9 +200,9 @@ const TiketBuyPage = () => {
               <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
                 <p className='select-Connect' >{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
                 
-           {/* {connected ? <input type="text" className="copyWallet" id='copyWallet' data-autoselect="" value={truncateEthAddress(account[0])} aria-label={truncateEthAddress(account[0])}  readonly=""></input> : null} */}
+           {connected ? <input type="text" className="copyWallet" id='copyWallet' data-autoselect="" value={truncateEthAddress(account[0])} aria-label={truncateEthAddress(account[0])}  readonly=""></input> : null}
 
-                <input type="text"  className="copyWallet2" id='copyWallet2'  data-autoselect=""  aria-label="texto copiado" readOnly="" defaultValue="Texto Copiado"/>
+                {/* <input type="text"  className="copyWallet2" id='copyWallet2'  data-autoselect=""  aria-label="texto copiado" readOnly="" defaultValue="Texto Copiado"/> */}
 
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
