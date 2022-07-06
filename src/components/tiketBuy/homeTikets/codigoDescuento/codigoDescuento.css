@@ -143,6 +143,7 @@
     opacity: 0;
     transition: all 1s ease-in-out;
     visibility: hidden;
+    z-index: 999999;
 }
 
 .containerInputCupon_active{
@@ -194,7 +195,6 @@
     color: rgb(0, 255, 162);
 }
 
-
 /* input invisible */
 
 .copyWallet2{
@@ -225,15 +225,12 @@
     display: inline-block;
     opacity: 1;
     transition: all .5s ease-in-out;
-
 }
-
 
 .boxPriceBasicDescuento{
     display: none;
     opacity: 0;
     transition: all .5s ease-in-out;
-
 }
 
 .boxPriceBasicDescuento_active{
@@ -244,15 +241,13 @@
 
 }
 
-
-
 /* precio tachado boost */
 
 
 .imagenBanDescuentoBoost{
     position: absolute;
     width: 7rem;
-    left: 3rem;
+    left: 34rem;
     height: .3rem;
     bottom: 16rem;
     transform: rotate(-20deg);
@@ -266,9 +261,7 @@
     display: inline-block;
     opacity: 1;
     transition: all .5s ease-in-out;
-
 }
-
 
 .boxPriceBoostDescuento{
     display: none;
@@ -286,7 +279,7 @@
 }
 
 
-@media screen  and (max-width: 1400px){
+@media screen  and (max-width: 1440px){
 
     .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
@@ -314,6 +307,289 @@
 
     .containerInputCupon{
         right: 3rem;
+    }
+
+
+    /* basic price */
+
+    .imagenBanDescuento{
+        left: 1rem;
+        bottom: 12.2rem;
+        width: 9rem;
+    }
+
+    /* boost price */
+
+    .imagenBanDescuentoBoost{
+        left: 27rem;
+        bottom: 12.5rem;
+        width: 9rem;
+    }
+    
+}
+
+
+
+@media screen  and (max-width: 1170px){
+
+  
+    /* basic price */
+
+    .imagenBanDescuento{
+        left: 1.5rem;
+        bottom: 16.2rem;
+        width: 9rem;
+    }
+
+    /* boost price */
+
+    .imagenBanDescuentoBoost{
+        left: 25.5rem;
+        bottom: 16.5rem;
+        width: 9rem;
+    }
+    
+}
+
+@media screen  and (max-width: 480px){
+
+    .boxCopyCupon{
+        width: 6rem;
+        left:32.4rem;
+        margin-top: -13.1rem;
+    }
+    
+
+    .boxCopyCupon:hover > .containerCopy {
+        border: 2px solid rgb(255, 255, 255);
+        width: 39rem;
+        height: 20rem;
+        position: relative;
+        right: 33rem;
+        top: 8rem;
+        background-color: rgb(0, 0, 0);
+        transition: all .4s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .triangle{
+        width: 2rem;
+        height: 1.5rem;
+        clip-path: polygon(50% 0% , 0% 100%, 100% 100%);
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: 90%;
+        top: -1.7rem;
+    }
+
+    .containerInputCupon{
+        right: 3rem;
+    }
+
+
+  
+    /* basic price */
+
+    .imagenBanDescuento{
+        left: 4%;
+        bottom: 16.2rem;
+        width: 9rem;
+    }
+
+    /* boost price */
+
+    .imagenBanDescuentoBoost{
+        left: 51%;
+        bottom: 16.5rem;
+        width: 9rem;
+    }
+    
+}
+
+
+@media screen  and (max-width: 410px){
+
+    .boxCopyCupon{
+        width: 6rem;
+        left:27rem;
+        margin-top: -13.1rem;
+    }
+    
+
+    .boxCopyCupon:hover > .containerCopy {
+        border: 2px solid rgb(255, 255, 255);
+        width: 39rem;
+        height: 20rem;
+        position: relative;
+        right: 33rem;
+        top: 8rem;
+        background-color: rgb(0, 0, 0);
+        transition: all .4s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .triangle{
+        width: 2rem;
+        height: 1.5rem;
+        clip-path: polygon(50% 0% , 0% 100%, 100% 100%);
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: 90%;
+        top: -1.7rem;
+    }
+
+    .containerInputCupon{
+        right: 3rem;
+    }
+
+
+  
+    /* basic price */
+
+    .imagenBanDescuento{
+        left: 1%;
+        bottom: 0;
+        top: 59rem;
+        width: 9rem;
+    }
+
+    /* boost price */
+
+    .imagenBanDescuentoBoost{
+        left: 0%;
+        bottom: 16.5rem;
+        width: 9rem;
+    }
+
+    /* input */
+
+    .containerInputCupon input{
+        width: 25rem;
+        height: 4rem;
+    }
+
+    .containerInputCupon button{
+        left: 25rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+        text-decoration: none;
+        margin-right: 0rem;
+        left: -3rem;
+    }
+    
+    
+}
+
+
+
+@media screen  and (max-width: 355px){
+
+    .boxCopyCupon{
+        width: 6rem;
+        left:25.5rem;
+        margin-top: -13.1rem;
+    }
+    
+
+    .boxCopyCupon:hover > .containerCopy {
+        border: 2px solid rgb(255, 255, 255);
+        width: 39rem;
+        height: 20rem;
+        position: relative;
+        right: 33rem;
+        top: 8rem;
+        background-color: rgb(0, 0, 0);
+        transition: all .4s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .triangle{
+        width: 2rem;
+        height: 1.5rem;
+        clip-path: polygon(50% 0% , 0% 100%, 100% 100%);
+        color: white;
+        background-color: white;
+        position: absolute;
+        left: 90%;
+        top: -1.7rem;
+    }
+
+    .containerInputCupon{
+        right: 3rem;
+    }
+
+  
+    /* basic price */
+
+    .imagenBanDescuento{
+        left: 3%;
+        bottom: 16.2rem;
+        width: 9rem;
+    }
+
+    /* boost price */
+
+    .imagenBanDescuentoBoost{
+        left: 51%;
+        bottom: 16.5rem;
+        width: 9rem;
+    }
+
+    /* input */
+
+    .containerInputCupon input{
+        width: 25rem;
+        height: 4rem;
+    }
+
+    .containerInputCupon button{
+        left: 25rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+        text-decoration: none;
+        margin-right: 0rem;
+        left: -3rem;
+    }
+    
+    
+}
+
+
+
+@media screen  and (max-width: 325px){
+
+    .boxCopyCupon{
+        width: 6rem;
+        left:24rem;
+        margin-top: -13.1rem;
+    }
+
+    .containerInputCupon input{
+        width: 20rem;
+        height: 4rem;
+    }
+
+    .containerInputCupon button{
+        left: 20rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+        text-decoration: none;
+        margin-right: 0rem;
+        left: -3rem;
     }
     
 }

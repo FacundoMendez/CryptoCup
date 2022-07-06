@@ -724,7 +724,6 @@
 @media screen and ( max-width:1440px) {
     .containerTiketsBuy{
         width: 100%;
-        overflow-y: scroll;
     }
 
     
@@ -739,7 +738,6 @@
         gap: 10rem;
         width: 100%;
         z-index: 15;
-        padding-top: 5rem;
     }
     
     /* tickets  */
@@ -875,7 +873,6 @@
 
     .containerTiketsBuy{
         width: 100%;
-        overflow-y: scroll;
     }
 
     .text-tickets{
@@ -1018,7 +1015,6 @@
     .containerTiketsBuy{
         width: 100%;
         height: 100%;
-        overflow-y: scroll;
     }
     
     .containerTiketsBuy{
@@ -1093,8 +1089,8 @@
     /* tickets  */
     .ticketsSale{
         gap: 3.5rem;
-        margin-top: -17rem;
-
+        margin-top: -10rem;
+        z-index: 1;
     }
     
     .boxTickets{
@@ -1274,7 +1270,7 @@
 
 }
 
-@media screen and (max-width:395px){
+@media screen and (max-width:410px){
     /* general */
     
     .flexTickets{
@@ -1285,9 +1281,7 @@
     }
     
     /* tickets  */
-    .ticketsSale{
-        gap: 3.5rem;
-    }
+
     
     .boxTickets{
         width: 40%;
@@ -1301,7 +1295,7 @@
     /* text */
     .ticketsSale{
         flex-direction: column;
-        gap: 10rem;
+        gap: 0rem;
     }
 
     .text-tickets{
@@ -1412,10 +1406,7 @@
 }
 
 
-@media screen and (max-width:340px){
-
-
-    
+@media screen and (max-width:355px){
     .text-tickets{
         top: 18rem;
         width: 95%;
@@ -1440,7 +1431,6 @@
         width: 30rem;
         height: 40rem;
         padding: 3rem;
-
     }
 
     .radioTokenBoost {
