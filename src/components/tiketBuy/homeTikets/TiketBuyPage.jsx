@@ -6,6 +6,7 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
+import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
 
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
@@ -25,8 +26,8 @@ const TiketBuyPage = () => {
 
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
-  const [priceTicketBasic, setPriceTicketBasic] = useState(15)
-  const [priceTicketBoost, setPriceTicketBoost] = useState(30)
+  const [priceTicketBasic, setPriceTicketBasic] = useState(20)
+  const [priceTicketBoost, setPriceTicketBoost] = useState(35)
 
   const login = async () => {
     try {
@@ -94,7 +95,12 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
                   
                   <div className="priceBasic">
-                    <h2>${priceTicketBasic}</h2>
+                    <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
+                    <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
+
+                    <div className="boxPriceBasicDescuento">
+                      <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
+                    </div>
                   </div>
 
                   <div className="wrapperBotton-Tickets">
@@ -113,7 +119,7 @@ const TiketBuyPage = () => {
                               setCantTicketsBasic(cantTicketsBasic - 1) 
                             }
                             if(priceTicketBasic >= 30){
-                              setPriceTicketBasic(priceTicketBasic - 15) 
+                              setPriceTicketBasic(priceTicketBasic - 20) 
                             }
                         }}> - </button>
 
@@ -123,7 +129,7 @@ const TiketBuyPage = () => {
 
                         <button className='mas-basic' onClick={() => {
                             if(priceTicketBasic >= 15){
-                              setPriceTicketBasic(priceTicketBasic + 15) 
+                              setPriceTicketBasic(priceTicketBasic + 20) 
                             }
                             setCantTicketsBasic(cantTicketsBasic + 1)
                         } }> + </button>
@@ -136,6 +142,12 @@ const TiketBuyPage = () => {
                   
                   <div className="priceBoost">
                     <h2>${priceTicketBoost}</h2>
+
+                    <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
+
+                    <div className="boxPriceBoostDescuento">
+                      <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
+                    </div>
                   </div>
 
                   <div className="wrapperBotton-Tickets">
@@ -153,7 +165,7 @@ const TiketBuyPage = () => {
                             setCantTicketsBoost(cantTicketsBoost - 1)  
                           }
                           if(priceTicketBoost >= 60){
-                            setPriceTicketBoost(priceTicketBoost - 30) 
+                            setPriceTicketBoost(priceTicketBoost - 35) 
                           }
 
 
@@ -163,7 +175,7 @@ const TiketBuyPage = () => {
                         </div>
                         <button className='mas-boost' onClick={() => {
                           if(priceTicketBoost >= 30){
-                            setPriceTicketBoost(priceTicketBoost + 30) 
+                            setPriceTicketBoost(priceTicketBoost + 35) 
                           }
                           setCantTicketsBoost(cantTicketsBoost + 1)
                           

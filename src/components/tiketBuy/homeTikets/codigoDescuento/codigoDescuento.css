@@ -206,6 +206,86 @@
 }
 
 
+/* precio tachado  basic*/
+
+.imagenBanDescuento{
+    position: absolute;
+    width: 7rem;
+    left: 3rem;
+    height: .3rem;
+    bottom: 16rem;
+    transform: rotate(-20deg);
+    display: none;
+    filter: hue-rotate(200deg)  drop-shadow(0 0 3px rgb(135, 7, 255));
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.imagenBanDescuento_active{
+    display: inline-block;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.boxPriceBasicDescuento{
+    display: none;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+}
+
+.boxPriceBasicDescuento_active{
+    display: inline-block;
+    font-size: 3.2rem;
+    opacity:1;
+    transition: all .5s ease-in-out;
+
+}
+
+
+
+/* precio tachado boost */
+
+
+.imagenBanDescuentoBoost{
+    position: absolute;
+    width: 7rem;
+    left: 3rem;
+    height: .3rem;
+    bottom: 16rem;
+    transform: rotate(-20deg);
+    display: none;
+    filter: hue-rotate(200deg)  drop-shadow(0 0 3px rgb(135, 7, 255));
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.imagenBanDescuentoBoost_active{
+    display: inline-block;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+
+}
+
+
+.boxPriceBoostDescuento{
+    display: none;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+
+}
+
+.boxPriceBoostDescuento_active{
+    display: inline-block;
+    font-size: 3.2rem;
+    opacity:1;
+    transition: all .5s ease-in-out;
+
+}
+
+
 @media screen  and (max-width: 1400px){
 
     .boxCopyCupon:hover > .containerCopy {
