@@ -210,8 +210,8 @@
 
 .imagenBanDescuento{
     position: absolute;
-    width: 7.5rem;
-    left: 2rem;
+    width: 6.5rem;
+    left: 3.5rem;
     height: .5rem;
     bottom: 16rem;
     transform: rotate(-20deg);
@@ -246,8 +246,8 @@
 
 .imagenBanDescuentoBoost{
     position: absolute;
-    width: 7.5rem;
-    left: 33.5rem;
+    width: 6.5rem;
+    left: 34.5rem;
     height: .5rem;
     bottom: 16rem;
     transform: rotate(-20deg);
@@ -427,8 +427,8 @@
     /* basic price */
 
     .imagenBanDescuento{
-        left: 5.5%;
-        bottom: 16.5rem;
+        left: 8.5%;
+        bottom: 16rem;
         width: 7rem;
     }
 
@@ -436,7 +436,7 @@
 
     .imagenBanDescuentoBoost{
         left: 53%;
-        bottom: 16.5rem;
+        bottom: 16rem;
         width: 7rem;
     }
     
@@ -451,6 +451,12 @@
         transition: all .5s ease-in-out;
     }
     
+    .priceBoostDescuento{
+        font-size: 4rem !important;
+    }
+    .priceBasicDescuento{
+        font-size: 4rem !important;
+    }
 }
 
 
@@ -495,18 +501,18 @@
     /* basic price */
 
     .imagenBanDescuento{
-        left: 1%;
+        left:15%;
         bottom: 0;
-        top: 59rem;
-        width: 9rem;
+        top: 58.5rem;
+        width: 6rem;
     }
 
     /* boost price */
 
     .imagenBanDescuentoBoost{
-        left: 0%;
-        bottom: 16.5rem;
-        width: 9rem;
+        left: 12%;
+        bottom: 16rem;
+        width: 6rem;
     }
 
     /* input */
@@ -574,17 +580,17 @@
     /* basic price */
 
     .imagenBanDescuento{
-        left: 5.5%;
+        left: 15%;
         bottom: 16.2rem;
-        width: 7rem;
+        width: 6rem;
     }
 
     /* boost price */
 
     .imagenBanDescuentoBoost{
-        left: 2%;
-        bottom: 16.5rem;
-        width: 7rem;
+        left: 12%;
+        bottom: 16rem;
+        width: 6rem;
     }
 
     /* input */
