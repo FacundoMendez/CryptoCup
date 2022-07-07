@@ -2,39 +2,6 @@ import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const tokenScroll = () =>{
-    gsap.registerPlugin(ScrollTrigger); 
-            /* referidos */
-
-            gsap.to(".cortinaTop",{
-                y: "-= 400",
-                duration:2,
-                scrollTrigger:{
-                    trigger: ".containerReferidos",
-                    start: "top 60%",
-                    scrub: 2,
-                }
-            })
-    
-            gsap.to(".cortinaBottom",{
-                y: "+= 400",
-                duration:2,
-                scrollTrigger:{
-                    trigger: ".containerReferidos",
-                    scrub:2,
-                    start: "top 60%",
-                }
-            })
-    
-            gsap.to(".textsReferidos",{
-                duration:2,
-                delay:1,
-                opacity:3,
-                scrollTrigger:{
-                    trigger: ".containerReferidos",
-                    scrub:2,
-                    start: "top 40%",
-                }
-            })
 
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -97,21 +64,41 @@ const tokenScroll = () =>{
             }
         })
 
+            /* referidos */
 
-/* 
-        gsap.to(".backReferidos",{
+        
+        gsap.to(".cortinaTop",{
+            y: "-= 400",
             duration:2,
-            filter:"blur(2px)",
             scrollTrigger:{
                 trigger: ".containerReferidos",
-                start: "top 20%",
-                end: "bottom bottom",
-                scrub:2,
+                start: "top 60%",
+                scrub: 2,
             }
-        }) */
+        })
+
+        gsap.to(".cortinaBottom",{
+            y: "+= 400",
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                scrub:2,
+                start: "top 60%",
+            }
+        })
+
+        gsap.to(".textsReferidos",{
+            duration:2,
+            delay:1,
+            opacity:3,
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                scrub:2,
+                start: "top 40%",
+            }
+        })
 
     }
-
 }
 
 export default tokenScroll;
