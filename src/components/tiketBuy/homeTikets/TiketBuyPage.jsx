@@ -24,6 +24,11 @@ const TiketBuyPage = () => {
   const [account, setAccount] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
 
+  const [referralCode, setReferralCode] = useState(0);
+  const [activeReferralCode, setActiveReferralCode] = useState(0);
+  const [submitCodigoDescuento , setSubmitCodigoDescuento] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
+  const [copyActive , setCopyActive] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
+
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
   const [priceTicketBasic, setPriceTicketBasic] = useState(20)
@@ -31,11 +36,27 @@ const TiketBuyPage = () => {
 
   const login = async () => {
     try {
-      let newProvider = new ethers.providers.Web3Provider(window.ethereum);
+      const newProvider = new ethers.providers.Web3Provider(window.ethereum);
       if(newProvider !== undefined) {
-        let newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        let newSigner = await newProvider.getSigner();
-        let newContract = await new ethers.Contract( contractAddress , abi , newSigner )
+        const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
+        const newSigner = await newProvider.getSigner();
+        const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
+        
+        await newContract.getReferralCodeFromAddress(newAccount[0])
+        .then(res => {
+          if (res != 0) { 
+            setCopyActive(true);
+            setReferralCode(res);
+            console.log(true);
+            console.log(res);
+          }  
+          else {
+            setCopyActive(false);
+            console.log(false);
+            console.log(res);
+          }
+        })
+
         setProvider(newProvider);
         setAccount(newAccount);
         setSigner(newSigner);
@@ -52,7 +73,7 @@ const TiketBuyPage = () => {
   }
 
   const buyBasicTicket = async () => {
-    const tx = await contract.mint(1, 4, 0)
+    const tx = await contract.mint(1, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
@@ -63,8 +84,25 @@ const TiketBuyPage = () => {
     }) 
   }
 
+
+  const checkRefCodeValid = async (code) => {
+    console.log("a");
+    await contract.getReferralAddressFromCode(code)
+    .then(res => {
+      console.log(res);
+      if (res != "0x0000000000000000000000000000000000000000") {
+        setSubmitCodigoDescuento(true);
+        setActiveReferralCode(code);
+      } 
+      else {
+        setSubmitCodigoDescuento(false);
+        setActiveReferralCode(0);
+      }
+    })
+  }
+
   const buyBoostTicket = async () => {
-    const tx = await contract.mint(1, 4, 1)
+    const tx = await contract.mint(1, 4, 1, activeReferralCode)
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
@@ -195,20 +233,19 @@ const TiketBuyPage = () => {
               Everything you need is here. Let's build your way to the top!  
               </p>
             </div>
-
+ 
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
               <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
                 <p className='select-Connect' >{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
                 
-           {connected ? <input type="text" className="copyWallet" id='copyWallet' data-autoselect="" value={truncateEthAddress(account[0])} aria-label={truncateEthAddress(account[0])}  readonly=""></input> : null}
-
+                {connected ? <input type="text" className="copyWallet" id='copyWallet' ></input> : null}
 
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>
             </div>
-
-            <CodigoDescuento /> 
+ 
+            <CodigoDescuento copyActive={copyActive} checkRefCodeValid={checkRefCodeValid} submitCodigoDescuento={submitCodigoDescuento} /> 
             
           </div>
         </div>

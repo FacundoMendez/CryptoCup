@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import "./codigoDescuento.css"
 import codigoFuncional from './codigoFuncional'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,14 +6,14 @@ import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 
-const CodigoDescuento = () => {
+const CodigoDescuento = ({ copyActive, submitCodigoDescuento, checkRefCodeValid }) => {
     useEffect(() => {
         codigoFuncional()
     },[])
 
-    const [copyActive , setCopyActive] = useState(true) //validacion de si la persona compro o no - modificar a false (true para pruebas)
-
-    const [submitCodigoDescuento , setSubmitCodigoDescuento] = useState(true) //validacion si el cupon es correcto - modificar a false (true para pruebas)
+    if(submitCodigoDescuento){
+        submitActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que valido si el cupon es correcto ) 
+    }
 
     //en el archivo TiketBuyPage se encuentra la validacion que trae el numero de cuenta de wallet
 
@@ -37,11 +37,9 @@ const CodigoDescuento = () => {
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
-                <input type="text" />
-                <button id='buttonSubmitCode' type='submit' onClick={() => {
-                    if(submitCodigoDescuento){
-                        submitActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que valido si el cupon es correcto ) 
-                    }
+                <input type="text" id='referral_code_input' />
+                <button id='buttonSubmitCode' type='submit' onClick={async () => {
+                    await checkRefCodeValid(document.querySelector('#referral_code_input').value);
                 }}> 
                     <FontAwesomeIcon icon={faAnglesRight} />
                  </button>

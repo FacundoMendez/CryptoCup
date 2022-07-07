@@ -14,11 +14,7 @@ const copyActiveFuncional = () => {
         boxCopyCupon.classList.remove("boxCopyCupon_active")
     },1000)
 
-
-
-
-
-    return copyWallet
+    return copyWallet;
 
 }
 
