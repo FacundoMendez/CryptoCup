@@ -14,7 +14,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: contrast(135%) brightness(130%) grayscale(.4);
+    filter: contrast(140%) brightness(130%) grayscale(.4);
     object-fit: cover;
     z-index: 1;
 }
@@ -72,7 +72,7 @@
     z-index: 100;
     position: relative;
     width: 100%;
-    padding: 0 25%;
+    width: 60%;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -85,14 +85,14 @@
 .textsReferidos::before{
     content: "";
     position: absolute;
-    width: 100%;
+    width: 300%;
     height: 200%;
     background-color: rgba(0, 0, 0, 0.767);
     backdrop-filter: blur(2px);
 }
 
 .textsReferidos h2{
-    font-size: 6.5rem;
+    font-size: 6.2rem;
     columns: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -114,13 +114,13 @@
     font-weight: bold;
     line-height: 3.5rem;
     text-align: center;
-    text-shadow: .4rem .5rem .5rem black;
+    text-shadow:  0 0 .15rem rgb(252, 252, 252);
     filter: drop-shadow(0 0 20px black);
 
 }
 
 .textsReferidos span{
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     letter-spacing: 2px;
 }
 
@@ -136,4 +136,113 @@
     font-weight: bold;
     padding: 0 2rem;
     font-family: gilron;
+}
+
+
+
+@media screen and (max-width:1440px){
+
+    .textsReferidos {
+        width: 100%;
+        width: 70%;
+        gap: 4rem;
+        
+    }
+
+    .textsReferidos h2{
+        font-size: 6rem;
+        letter-spacing: 2px;
+        padding-bottom: 0rem;
+    }
+
+    .textsReferidos p{
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+        line-height: 3.5rem;
+    }
+
+    .textsReferidos span{
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .spanColor{
+        font-size: 3rem !important;
+        padding: 0 2rem;
+    }
+}
+
+
+@media screen and (max-width:1170px){
+
+    .textsReferidos {
+        width: 100%;
+        width: 80%;
+        gap: 4rem;
+        
+    }
+
+    .textsReferidos h2{
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        padding-bottom: 0rem;
+    }
+
+    .textsReferidos p{
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+        line-height: 3.5rem;
+    }
+
+    .textsReferidos span{
+        font-size: 1.8rem;
+        letter-spacing: 2px;
+    }
+
+    .spanColor{
+        font-size: 2.8rem !important;
+        padding: 0 2rem;
+    }
+}
+
+
+
+@media screen and (max-width:970px){
+
+    .textsReferidos {
+        width: 100%;
+        width: 90%;
+        gap: 4rem;
+        
+    }
+
+    .textsReferidos h2{
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        padding-bottom: 0rem;
+    }
+
+    .textsReferidos p{
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        line-height: 3.5rem;
+    }
+
+    .textsReferidos span{
+        font-size: 1.7rem;
+        letter-spacing: 1.5px;
+    }
+
+    .spanColor{
+        font-size: 2.5rem !important;
+        padding: 0 2rem;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .containerReferidos{
+        display: none;
+    }
+    
 }

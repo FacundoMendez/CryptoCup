@@ -167,11 +167,12 @@
 @media screen and (max-width: 1170px){
     
     .titleContainers h2{
-        font-size: 5.5rem;
+        font-size: 6rem;
     }
 
+
     .subTitlePrize{
-        width: 70%;
+        width: 90%;
     }
     
     .subTitleNft{
@@ -187,6 +188,11 @@
 
     .titleContainers h2{
         font-size: 4.5rem;
+    }
+
+    .titleContainers h3{
+        font-size: 3rem;
+        padding: 0 5rem;
     }
     
     .subTitlePrize{
@@ -219,7 +225,9 @@
 
 @media screen and (max-width: 480px){
 
-    
+    .titleContainers h3{
+        padding: 0 0rem;
+    }
 
     .tournamentContainer{
         padding-bottom: 0rem;

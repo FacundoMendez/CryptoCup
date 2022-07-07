@@ -32,7 +32,7 @@ const tokenScroll = () =>{
                 scrollTrigger:{
                     trigger: ".containerReferidos",
                     scrub:2,
-                    start: "top 35%",
+                    start: "top 40%",
                 }
             })
 
