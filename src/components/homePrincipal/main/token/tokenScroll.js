@@ -72,7 +72,7 @@ const tokenScroll = () =>{
             duration:2,
             scrollTrigger:{
                 trigger: ".containerReferidos",
-                start: "top 60%",
+                start: "top 70%",
                 scrub: 2,
             }
         })
@@ -83,7 +83,7 @@ const tokenScroll = () =>{
             scrollTrigger:{
                 trigger: ".containerReferidos",
                 scrub:2,
-                start: "top 60%",
+                start: "top 70%",
             }
         })
 
@@ -94,7 +94,7 @@ const tokenScroll = () =>{
             scrollTrigger:{
                 trigger: ".containerReferidos",
                 scrub:2,
-                start: "top 40%",
+                start: "top 50%",
             }
         })
 
