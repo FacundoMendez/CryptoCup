@@ -14,10 +14,11 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: contrast(135%) brightness(110%) grayscale(.4);
+    filter: contrast(135%) brightness(130%) grayscale(.4);
     object-fit: cover;
     z-index: 1;
 }
+
 
 .containerReferidos::after{
     width: 110%;
@@ -73,20 +74,66 @@
     width: 100%;
     padding: 0 25%;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.textsReferidos::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.767);
+    backdrop-filter: blur(2px);
+}
+
+.textsReferidos h2{
+    font-size: 6.5rem;
+    columns: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 100;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    padding-bottom: 2rem;
 }
 
 .textsReferidos p{
-    font-size: 3rem;
-    letter-spacing: 1px;
+    font-size: 2rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    line-height: 4rem;
+    font-weight: bold;
+    line-height: 3.5rem;
     text-align: center;
-    text-shadow: 0 0 4rem black;
+    text-shadow: .4rem .5rem .5rem black;
     filter: drop-shadow(0 0 20px black);
-    transform: scale(1.4);
+
 }
 
 .textsReferidos span{
-    font-size: 2rem;
-    letter-spacing: 1.5px;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.spanColor{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    font-size: 3rem !important;
+    font-weight: bold;
+    padding: 0 2rem;
+    font-family: gilron;
 }

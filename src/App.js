@@ -1,7 +1,7 @@
 import "./components/homePrincipal/main/main.css"
 import { lazy, Suspense} from "react";
 import './App.css';
-import {BrowserRouter, Route, Routes, useSearchParams } from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 const Error404 = lazy(() => import ("./components/error404/Error404"))
@@ -18,6 +18,7 @@ function App() {
   return (
     <BrowserRouter  >
 
+
       <Routes >
           <Route   path="/"               element={ <Suspense fallback={<Spinner />}>  <HomePrincipal />   </Suspense>}  /> 
           <Route   path='/tickets'        element={ <Suspense fallback={<Spinner />}>  <TiketBuyPage />    </Suspense>}  /> 
@@ -25,6 +26,7 @@ function App() {
           <Route   path='/PrivacyPolicy'  element={ <Suspense fallback={<Spinner />}>  <PrivacyPolicy />   </Suspense>}  />
           <Route   path='*'               element={ <Suspense fallback={<Spinner />}>  <Error404 />        </Suspense>}  />
       </Routes>
+
 
     </BrowserRouter>
 
