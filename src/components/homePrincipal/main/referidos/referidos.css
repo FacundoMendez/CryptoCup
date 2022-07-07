@@ -41,12 +41,12 @@
 .cortinaTop{
     position: absolute;
     width: 100%;
-    height:25rem;
+    height:24.5rem;
     top: 0;
     z-index: 10;
     background-color:#050505;
     backdrop-filter: blur(1rem);
-    border: 2px solid violet;
+    border: 2px solid rgba(0, 0, 0, 0.774);
     border-left: none;
     border-right: none;
     border-top: none;
@@ -56,11 +56,11 @@
 .cortinaBottom{
     position: absolute;
     width: 100%;
-    height: 25rem;
+    height: 24.5rem;
     bottom: 0;
     background-color:#050505;
     backdrop-filter: blur(1rem);
-    border: 2px solid violet;
+    border: 2px solid rgba(0, 0, 0, 0.774);
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -72,7 +72,7 @@
     z-index: 100;
     position: relative;
     width: 100%;
-    width: 60%;
+    width: 55%;
     opacity: 0;
     display: flex;
     justify-content: center;
@@ -108,8 +108,8 @@
 }
 
 .textsReferidos p{
-    font-size: 2rem;
-    letter-spacing: 2px;
+    font-size: 1.9rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     font-weight: bold;
     line-height: 3.5rem;
@@ -119,8 +119,8 @@
 }
 
 .textsReferidos span{
-    font-size: 2.1rem;
-    letter-spacing: 2px;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
 }
 
 .spanColor{
@@ -137,7 +137,24 @@
     font-family: gilron;
 }
 
+.linesBackTop{
+    width: 100%;
+    position: absolute;
+    height: 2rem;
+    object-fit: cover;
+    background-repeat: repeat-x;
+    bottom: 0;
+}
 
+.linesBackBottom{
+    width: 100%;
+    position: absolute;
+    height: 2rem;
+    object-fit: cover;
+    background-repeat: repeat-x;
+    background-position: top;
+    top: 0;
+}
 
 @media screen and (max-width:1440px){
 
