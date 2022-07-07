@@ -52,8 +52,6 @@ const tokenScroll = () =>{
             x: "+= 100",
             scrollTrigger:{
                 trigger: ".tokens",
-                start: "top top",
-                end: "bottom bottom",
                 scrub: 2,
             }
         })
@@ -62,11 +60,55 @@ const tokenScroll = () =>{
             x: "-= 100",
             scrollTrigger:{
                 trigger: ".tokens",
-                start: "top top",
-                end: "bottom bottom",
                 scrub: 2,
             }
         })
+
+
+        /* referidos */
+
+        gsap.to(".cortinaTop",{
+            y: "-= 400",
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                start: "top 60%",
+                scrub: 2,
+            }
+        })
+
+        gsap.to(".cortinaBottom",{
+            y: "+= 400",
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                scrub:2,
+                start: "top 60%",
+            }
+        })
+
+        gsap.to(".textsReferidos",{
+            duration:2,
+            opacity:3,
+            scale:.6,
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                scrub:2,
+                start: "top 70%",
+            }
+        })
+/* 
+        gsap.to(".backReferidos",{
+            duration:2,
+            filter:"blur(2px)",
+            scrollTrigger:{
+                trigger: ".containerReferidos",
+                start: "top 20%",
+                end: "bottom bottom",
+                scrub:2,
+            }
+        }) */
+
     }
 
 }

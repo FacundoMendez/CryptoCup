@@ -7,7 +7,7 @@ const VideoPubli = lazy(() => import ('./videoPubli/VideoPubli'))
 const TokenMain = lazy(() => import ('./token/TokenMain'))
 const Roadmap = lazy(() => import ('./roadmap/Roadmap'))
 const Nfts = lazy(() => import ('./nfts/Nfts'))
-
+const Referidos = lazy(() => import ('./referidos/Referidos'))
 
 const Main = () => {
 
@@ -18,6 +18,7 @@ const Main = () => {
           <TiketsMain />
           <Nfts /> 
           <VideoPubli />
+          <Referidos />
           <TokenMain />
           <Roadmap/>
         </Suspense>

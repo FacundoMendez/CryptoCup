@@ -1,0 +1,92 @@
+.containerReferidos{
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.backReferidos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: contrast(135%) brightness(110%) grayscale(.4);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.containerReferidos::after{
+    width: 110%;
+    height: 2rem;
+    content: " ";
+    top: 0rem;
+    width: 100%;
+    height: .3rem;
+    background-color:#fffffff5;
+    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+    border: 2px solid rgb(152, 150, 255);
+    border-radius: 100%;
+    backdrop-filter: blur(1rem);
+    filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
+    position: absolute;
+    z-index: 150;
+}
+
+
+.cortinaTop{
+    position: absolute;
+    width: 100%;
+    height:25rem;
+    top: 0;
+    z-index: 10;
+    background-color:#050505;
+    backdrop-filter: blur(1rem);
+    border: 2px solid violet;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    z-index: 150;
+}
+
+.cortinaBottom{
+    position: absolute;
+    width: 100%;
+    height: 25rem;
+    bottom: 0;
+    background-color:#050505;
+    backdrop-filter: blur(1rem);
+    border: 2px solid violet;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    z-index: 100;
+}
+
+.textsReferidos {
+    color: white;
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    padding: 0 25%;
+    opacity: 0;
+}
+
+.textsReferidos p{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 4rem;
+    text-align: center;
+    text-shadow: 0 0 4rem black;
+    filter: drop-shadow(0 0 20px black);
+    transform: scale(1.4);
+}
+
+.textsReferidos span{
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}

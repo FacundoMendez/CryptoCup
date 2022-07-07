@@ -202,7 +202,6 @@ const TiketBuyPage = () => {
                 
            {connected ? <input type="text" className="copyWallet" id='copyWallet' data-autoselect="" value={truncateEthAddress(account[0])} aria-label={truncateEthAddress(account[0])}  readonly=""></input> : null}
 
-                {/* <input type="text"  className="copyWallet2" id='copyWallet2'  data-autoselect=""  aria-label="texto copiado" readOnly="" defaultValue="Texto Copiado"/> */}
 
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
