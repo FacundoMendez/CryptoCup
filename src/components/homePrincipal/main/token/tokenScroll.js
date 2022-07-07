@@ -2,6 +2,39 @@ import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const tokenScroll = () =>{
+    gsap.registerPlugin(ScrollTrigger); 
+            /* referidos */
+
+            gsap.to(".cortinaTop",{
+                y: "-= 400",
+                duration:2,
+                scrollTrigger:{
+                    trigger: ".containerReferidos",
+                    start: "top 60%",
+                    scrub: 2,
+                }
+            })
+    
+            gsap.to(".cortinaBottom",{
+                y: "+= 400",
+                duration:2,
+                scrollTrigger:{
+                    trigger: ".containerReferidos",
+                    scrub:2,
+                    start: "top 60%",
+                }
+            })
+    
+            gsap.to(".textsReferidos",{
+                duration:2,
+                opacity:3,
+                scale:.6,
+                scrollTrigger:{
+                    trigger: ".containerReferidos",
+                    scrub:2,
+                    start: "top 70%",
+                }
+            })
 
     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
