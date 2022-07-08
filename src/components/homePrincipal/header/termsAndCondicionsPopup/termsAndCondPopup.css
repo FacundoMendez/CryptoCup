@@ -1,0 +1,92 @@
+
+/* terminos y condiciones popup */
+
+.termsAndCondicionsPopup_container{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000b6;
+    backdrop-filter: blur(1rem);
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    transition: all 1s ease-in-out;
+  }
+  
+  .termsAndCondicionsPopup_popup{
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+    border: 2px solid rgb(152, 150, 255);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    backdrop-filter: blur(1rem);
+    padding: 0 5rem;
+  }
+  
+  .termsAndCondicionsPopup_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .termsAndCondicionsPopup_buttons button{
+    width: 10rem;
+    height: 4rem;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border:2px solid white;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .termsAndCondicionsPopup_buttons button:active{
+    background-color: rgb(24, 24, 24);
+    transition: all .5s ease-in-out;
+  }
+  
+  .termsAndCondicionsPopup_buttons-decline:hover , .termsAndCondicionsPopup_buttons-acept:hover{
+    filter: drop-shadow(0 0 1px white);
+    transition: all .5s ease-in-out;
+  }
+  
+  
+  .termsAndCondicionsPopup_popup p{
+    font-size: 1.8rem;
+    color: white;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .termsAndCondicionsPopup_popup a{
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+    border-bottom: 2px solid #9999ff;
+    margin-left: 1rem;
+  }
+  

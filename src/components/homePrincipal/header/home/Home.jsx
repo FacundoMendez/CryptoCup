@@ -12,22 +12,20 @@ const Home = () => {
 
   return (
     <div id='home' className="containerHome">
+
       <div className="containerPrincipalHome">
-
         <video className='BackPrincipal' src={BackPrincipal} autoPlay loop muted ></video> 
-        
-
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'>CRYPTO CUP <br />
                 TOURNAMENT
               </h1>
-            <div className="buttonsHome">
-              <a href="./tickets">
-                <Button title="TICKETS"/>
-              </a>
-
-              {/* <a href="./presale"> */}
+              
+              <div className="buttonsHome">
+                <a href="./tickets">
+                  <Button title="TICKETS"/>
+                </a>
+            {/* <a href="./presale"> */}
                 <div className=" wrapperBottonPresale">
                   <div className="btnPresale">
                     <p> Presale </p>
@@ -37,16 +35,14 @@ const Home = () => {
                     <img className='comingSoon' src={soonImg} alt="Coming Soon" />
                   </div>
                 </div>
-            {/*   </a> */}
-
+            {/*</a> */}
             </div>
-             <Timer/>
+            <Timer/>
           </div>
-        
         </div>
         <Social />
-
       </div>    
+    
 
     </div>
 

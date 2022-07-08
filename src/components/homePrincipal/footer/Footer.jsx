@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="terms">
             <div className='listTerms'>
                 <ul>
-                    <li><a href="/PrivacyPolicy "> • Terms and Conditions</a></li>
+                    <li><a href="/TermsAndConditions "> • Terms and Conditions</a></li>
                 </ul>
                 <br />
                 <p className='termsAndCond'>

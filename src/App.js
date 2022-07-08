@@ -23,7 +23,7 @@ function App() {
           <Route   path="/"               element={ <Suspense fallback={<Spinner />}>  <HomePrincipal />   </Suspense>}  /> 
           <Route   path='/tickets'        element={ <Suspense fallback={<Spinner />}>  <TiketBuyPage />    </Suspense>}  /> 
           <Route   path='/Dapp'           element={ <Suspense fallback={<Spinner />}>  <Dapp />            </Suspense>}  /> 
-          <Route   path='/PrivacyPolicy'  element={ <Suspense fallback={<Spinner />}>  <PrivacyPolicy />   </Suspense>}  />
+          <Route   path='/TermsAndConditions'  element={ <Suspense fallback={<Spinner />}>  <PrivacyPolicy />   </Suspense>}  />
           <Route   path='*'               element={ <Suspense fallback={<Spinner />}>  <Error404 />        </Suspense>}  />
       </Routes>
 
