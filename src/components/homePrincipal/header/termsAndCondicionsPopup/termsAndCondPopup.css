@@ -126,11 +126,11 @@
     }
 
     .termsAndCondicionsPopup_popup{
-      height: 18rem;
+      height: 22rem;
       gap: 3rem;
       padding:2rem 3rem;
       flex-direction: column;
-
+      padding-bottom: 6rem;
     }
   }
 
@@ -143,9 +143,10 @@
     }
 
     .termsAndCondicionsPopup_popup{
-      height: 24rem;
+      height: 27rem;
       gap: 3rem;
-      padding:4rem 2rem;
+      padding:0rem 2rem;
+      padding-bottom: 6rem;
       flex-direction: column;
     }
   }
