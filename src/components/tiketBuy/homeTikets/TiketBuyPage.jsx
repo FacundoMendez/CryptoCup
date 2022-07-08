@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useState} from 'react'
+import React, {lazy, Suspense, useState, useContext} from 'react'
 import { ethers } from 'ethers';
 import { contractAddress, abi } from './utils'
 import truncateEthAddress from 'truncate-eth-address';
@@ -7,6 +7,8 @@ import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
+import TermsAndCondicionsPopup from '../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup';
+import Context from '../../context/Context'
 
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
@@ -17,6 +19,7 @@ const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
 
 const TiketBuyPage = () => {
+  const context = useContext(Context)
 
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);
@@ -115,6 +118,7 @@ const TiketBuyPage = () => {
 
   return (
     <div className="containerTiketsBuy">
+          { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
       <Suspense fallback={<Spinner/>}>
         <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
       </Suspense>

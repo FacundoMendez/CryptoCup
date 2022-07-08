@@ -7,7 +7,6 @@ const termsFuncionalDecline = () => {
         termsContainer.style.display = "none"
     },1000)
 
-    sessionStorage.setItem("terms and Conditions", "Decline")
 }
 
 export default termsFuncionalDecline ; 

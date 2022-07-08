@@ -8,7 +8,6 @@ const termsFuncionalAcept = () => {
         termsContainer.style.display = "none"
     },1000)
 
-    localStorage.setItem("terms and Conditions", "Acept")
 
 }
 
