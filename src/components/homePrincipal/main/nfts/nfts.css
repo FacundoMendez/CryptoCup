@@ -18,7 +18,7 @@
     height: 100%;
     content: " ";
     top: -1rem;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.582);
     filter: blur(15px);
     position: absolute;
     z-index: 1;
@@ -198,7 +198,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.582);
     position: absolute;
     z-index: -1;
 }

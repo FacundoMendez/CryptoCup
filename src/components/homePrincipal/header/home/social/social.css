@@ -46,7 +46,6 @@
     width: 30px;
     filter: contrast(104%) brightness(120%);
     transition: color 0.3s;
-    filter: drop-shadow( 0 0 .5px white);
 }
 
 .social a:hover:nth-child(1) i {
