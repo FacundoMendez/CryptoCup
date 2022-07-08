@@ -69,6 +69,7 @@
     
     .boxPrivacy{
         width: 75%;
+        padding-bottom: 5rem;
     }
 
     .boxPrivacy h4{
@@ -93,6 +94,7 @@
     
     .boxPrivacy{
         width: 85%;
+        padding-bottom: 5rem;
     }
 
     .boxPrivacy h4{
@@ -107,7 +109,7 @@
     }
     
     .textPrivacy p{
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         padding: 0 3rem;
     }
 }
@@ -116,6 +118,7 @@
     
     .boxPrivacy{
         width: 95%;
+        padding-bottom: 5rem;
     }
 
     .boxPrivacy h4{
@@ -130,7 +133,7 @@
     }
     
     .textPrivacy p{
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         padding: 0 3rem;
     }
 }
@@ -141,6 +144,7 @@
     
     .boxPrivacy{
         width: 100%;
+        padding-bottom: 5rem;
     }
 
     .boxPrivacy h4{
@@ -155,7 +159,7 @@
     }
     
     .textPrivacy p{
-        font-size: 1.9rem;
-        padding: 0 3rem;
+        font-size: 1.5rem;
+        padding: 0 2rem;
     }
 }

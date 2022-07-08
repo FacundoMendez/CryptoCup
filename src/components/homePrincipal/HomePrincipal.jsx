@@ -12,10 +12,6 @@ const HomePrincipal = () => {
 
   const context = useContext(Context)
 
-  console.log(context.checkTerminosyCondiciones)
-  
-
- /*  console.log(checkStatePopupTyc) */
   return (
     <div>
         <Suspense fallback={<Spinner />}>

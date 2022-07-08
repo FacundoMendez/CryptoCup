@@ -1,7 +1,6 @@
-import React , {useState, useContext} from 'react'
+import React , {useContext} from 'react'
 import "./termsAndCondPopup.css"
-import termsFuncionalAcept from './termsFuncionalAcept'
-import termsFuncionalDecline from './termsFuncionalDecline'
+
 import Context from '../../../context/Context'
 
 
