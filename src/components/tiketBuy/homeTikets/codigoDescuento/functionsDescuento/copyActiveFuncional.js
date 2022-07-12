@@ -1,10 +1,12 @@
-const copyActiveFuncional = () => {
+const copyActiveFuncional = (code) => {
+
+
     const copyWallet = document.getElementById("copyWallet").select()
     const boxCopy = document.querySelector(".copy")
     const boxCopyCupon = document.querySelector(".boxCopyCupon")
  
 
-    document.execCommand("copy"); 
+    copyValue(code);
 
     boxCopy.classList.add("copy_active")
     boxCopyCupon.classList.add("boxCopyCupon_active")
@@ -16,6 +18,10 @@ const copyActiveFuncional = () => {
 
     return copyWallet;
 
+}
+
+const copyValue = (code) => {
+    navigator.clipboard.writeText(code)
 }
 
 export default copyActiveFuncional;

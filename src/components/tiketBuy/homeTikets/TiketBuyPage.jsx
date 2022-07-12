@@ -48,7 +48,8 @@ const TiketBuyPage = () => {
 
         await newContract.getReferralCodeFromAddress(newAccount[0])
         .then(res => {
-          if (res != 0) { 
+          if (res != 0) { // si el usuario tiene un codigo de referencia
+            console.log(res);
             setCopyActive(true);
             setReferralCode(res);
           }  
@@ -77,7 +78,7 @@ const TiketBuyPage = () => {
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
-        alert("Minted successfully");
+        alert("Minted successfully"); // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
         console.log(res); 
 
       }, 15000);
@@ -104,7 +105,7 @@ const TiketBuyPage = () => {
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
-        alert("Minted successfully");
+        alert("Minted successfully"); // Emite un evento cuando se confirma la transaccion. (se muestra el video boost)
         console.log(res); 
 
       }, 15000);
@@ -244,7 +245,7 @@ const TiketBuyPage = () => {
               </div>
             </div>
  
-            <CodigoDescuento copyActive={copyActive} checkRefCodeValid={checkRefCodeValid} submitCodigoDescuento={submitCodigoDescuento} /> 
+            <CodigoDescuento referralCode={referralCode} copyActive={copyActive} checkRefCodeValid={checkRefCodeValid} submitCodigoDescuento={submitCodigoDescuento} /> 
             
           </div>
         </div>

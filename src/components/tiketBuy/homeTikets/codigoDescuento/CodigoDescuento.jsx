@@ -6,7 +6,7 @@ import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 
-const CodigoDescuento = ({ copyActive, submitCodigoDescuento, checkRefCodeValid }) => {
+const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid }) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -21,7 +21,7 @@ const CodigoDescuento = ({ copyActive, submitCodigoDescuento, checkRefCodeValid 
     <div className="containerCodigoDescuento">
         <div className='boxCopyCupon'  onClick={() => {
                 if(copyActive){
-                    copyActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que compro la persona y se conecto a la billetera ) 
+                    copyActiveFuncional(referralCode)  //( hacer las conecciones para que lo ejecute una vez que compro la persona y se conecto a la billetera ) 
                 }
             }}>
             <p className='copy'>
