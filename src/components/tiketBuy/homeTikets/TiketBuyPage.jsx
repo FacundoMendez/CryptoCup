@@ -35,7 +35,7 @@ const TiketBuyPage = () => {
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
   const [priceTicketBasic, setPriceTicketBasic] = useState(20)
-  const [priceTicketBoost, setPriceTicketBoost] = useState(35)
+  const [priceTicketBoost, setPriceTicketBoost] = useState(45)
 
   const login = async () => {
     try {
@@ -44,19 +44,16 @@ const TiketBuyPage = () => {
         const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const newSigner = await newProvider.getSigner();
         const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
-        
+
+
         await newContract.getReferralCodeFromAddress(newAccount[0])
         .then(res => {
           if (res != 0) { 
             setCopyActive(true);
             setReferralCode(res);
-            console.log(true);
-            console.log(res);
           }  
           else {
             setCopyActive(false);
-            console.log(false);
-            console.log(res);
           }
         })
 
@@ -76,7 +73,7 @@ const TiketBuyPage = () => {
   }
 
   const buyBasicTicket = async () => {
-    const tx = await contract.mint(1, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
@@ -89,10 +86,8 @@ const TiketBuyPage = () => {
 
 
   const checkRefCodeValid = async (code) => {
-    console.log("a");
     await contract.getReferralAddressFromCode(code)
     .then(res => {
-      console.log(res);
       if (res != "0x0000000000000000000000000000000000000000") {
         setSubmitCodigoDescuento(true);
         setActiveReferralCode(code);
@@ -105,7 +100,7 @@ const TiketBuyPage = () => {
   }
 
   const buyBoostTicket = async () => {
-    const tx = await contract.mint(1, 4, 1, activeReferralCode)
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
