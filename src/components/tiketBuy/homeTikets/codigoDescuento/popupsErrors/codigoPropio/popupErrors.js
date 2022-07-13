@@ -1,3 +1,4 @@
+
 const popupError = () => {
     const errorCuponPropio = document.querySelector(".errorCuponPropio")
 
@@ -6,9 +7,7 @@ const popupError = () => {
     setTimeout(function(){
        errorCuponPropio.classList.remove("errorCuponPropio_active")
     },3000)
-      
-
-
+    
 }
 
 export default popupError;

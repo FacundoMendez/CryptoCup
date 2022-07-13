@@ -8,7 +8,7 @@ const VideoBuyBasic = () => {
     videoBuyBasicFuncional()
   }, [])
   return (
-    <video className='basicBuyVideo' src={basicBuyVideo} autoPlay loop muted ></video> 
+    <video className='basicBuyVideo' src={basicBuyVideo} autoPlay ></video> 
   )
 }
 

@@ -287,26 +287,29 @@
 }
 
 
+/* error cupon propio */
+
 .errorCuponPropio{
     width: 90%;
     height: 5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
-    transition: all .5s ease-in-out;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.801));
-    margin-top: 1.5rem;
-    visibility: hidden;
+    top: 12.5rem;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
 
 .errorCuponPropio_active{
-    visibility: visible;
-    transition: all .5s ease-in-out;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    animation: jittery 3s infinite;
 }
 
 .errorCuponPropio p{
@@ -315,7 +318,39 @@
     padding: 0 1rem;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: all 1ms ease-in-out;
 }
+
+
+
+@keyframes jittery {
+    5%, 50% {
+      transform: scale(1);
+    }
+    10% {
+      transform: scale(0.9);
+    }
+    15% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1) rotate(-3deg);
+    }
+    25% {
+      transform: scale(1) rotate(3deg);
+    }
+    30% {
+      transform: scale(1) rotate(-2deg);
+    }
+    35% {
+      transform: scale(1) rotate(1deg);
+    }
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+
 
 @media screen  and (max-width: 1440px){
 

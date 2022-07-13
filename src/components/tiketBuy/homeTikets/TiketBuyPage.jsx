@@ -47,7 +47,7 @@ const TiketBuyPage = () => {
 
   /* validacion de compra de tickets */
 
-  const [buyTicketBasic, setBuyTicketBasic] = useState(false)
+  const [buyTicketBasic, setBuyTicketBasic] = useState(true)
   const [buyTicketBoost, setBuyTicketBoost] = useState(false)
 
   /* validaciones de tickets (precio / cantidad) */
@@ -100,7 +100,7 @@ const TiketBuyPage = () => {
       setTimeout(() => {
         setBuyTicketBasic(true)   // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
         /* console.log(res);  */
-      }, 7000);
+      }, 16000);
     }) 
   }
 
