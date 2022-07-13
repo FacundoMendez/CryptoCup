@@ -777,8 +777,8 @@
     /* text */
 
     .text-tickets{
-        top: -2rem;
-        width: 42%;
+        top: 0rem;
+        width: 40%;
         text-align: center;
     }
 
@@ -873,7 +873,7 @@
     /* precio */
     
     .priceBasic, .priceBoost{
-        font-size: 3rem;
+        font-size: 2.7rem;
         letter-spacing: 2px;
         color: white;
         padding-bottom: 1.6rem;
