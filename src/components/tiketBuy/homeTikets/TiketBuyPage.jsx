@@ -6,9 +6,12 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
+
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
 import TermsAndCondicionsPopup from '../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup';
 import Context from '../../context/Context'
+import VideoBuyBasic from './tokensSelect/tokenBasic/videoBuyBasic/VideoBuyBasic';
+import VideoBuyBoost from './tokensSelect/tokenBoost/videoBuyBoost/VideoBuyBoost';
 
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
@@ -21,21 +24,38 @@ const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 const TiketBuyPage = () => {
   const context = useContext(Context)
 
+  /* validaciones de coneccion blockchain */
+
   const [provider, setProvider] = useState(undefined);
   const [connected, setConnected] = useState(false);
   const [contract, setContract] = useState(false);
   const [account, setAccount] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
 
+  /* validaciones de codigo de descuento */
+
   const [referralCode, setReferralCode] = useState(0);
   const [activeReferralCode, setActiveReferralCode] = useState(0);
   const [submitCodigoDescuento , setSubmitCodigoDescuento] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
   const [copyActive , setCopyActive] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
 
+  /* validaciones de errores */
+
+  const [codigoPropio, setCodigoPropio] = useState(false)
+  const [chainIncorrecta, setChainIncorrecta] = useState(false)
+
+
+  /* validacion de compra de tickets */
+
+  const [buyTicketBasic, setBuyTicketBasic] = useState(false)
+  const [buyTicketBoost, setBuyTicketBoost] = useState(false)
+
+  /* validaciones de tickets (precio / cantidad) */
+
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
   const [priceTicketBasic, setPriceTicketBasic] = useState(20)
-  const [priceTicketBoost, setPriceTicketBoost] = useState(45)
+  const [priceTicketBoost, setPriceTicketBoost] = useState(35)
 
   const login = async () => {
     try {
@@ -78,10 +98,9 @@ const TiketBuyPage = () => {
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
-        alert("Minted successfully"); // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
-        console.log(res); 
-
-      }, 15000);
+        setBuyTicketBasic(true)   // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
+        /* console.log(res);  */
+      }, 7000);
     }) 
   }
 
@@ -100,7 +119,7 @@ const TiketBuyPage = () => {
         }
       })
     } else {
-
+      setCodigoPropio(true)
       // Acá habría que mostrar un error diciendo que el codigo ingresado no puede ser el codigo de uno mismo. Osea uno no se puede referir a si mismo.
 
     }
@@ -111,8 +130,8 @@ const TiketBuyPage = () => {
     .then(res => { 
       // use the returned value here
       setTimeout(() => {
-        alert("Minted successfully"); // Emite un evento cuando se confirma la transaccion. (se muestra el video boost)
-        console.log(res); 
+        setBuyTicketBoost(true) // Emite un evento cuando se confirma la transaccion. (se muestra el video boost)
+        /* console.log(res);  */
 
       }, 15000);
     }) 
@@ -121,32 +140,41 @@ const TiketBuyPage = () => {
   return (
     <div className="containerTiketsBuy">
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
+
       <Suspense fallback={<Spinner/>}>
-        <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
+          <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
       </Suspense>
       <Social />
 
       <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
       
-      <div className="flexTickets">
-          
-          <div className="ticketsSale">
+      {buyTicketBasic ?  <VideoBuyBasic /> : null}
+      {buyTicketBoost ?  <VideoBuyBoost /> : null}
 
+
+      <div className="flexTickets">
+          <div className="ticketsSale">
             <div className="boxBlurToken"></div>
             <div className="boxBlurTokenBoost"></div>
-
               <div className="boxTickets">
+
+
+                 {/* ticket basic- descuentos aplicados */}
+
                   <img className='imgTicket imgTicket-basic' src={tiketBasico} alt="Ticket Basic" />
-                  
                   <div className="priceBasic">
-                  <div className="boxPrinceBasic">
-                    <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
-                    <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
+                      <div className="boxPrinceBasic">
+                        <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
+                        <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
+                      </div>
+                      <div className="boxPriceBasicDescuento">
+                        <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
+                      </div>
                   </div>
-                    <div className="boxPriceBasicDescuento">
-                      <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
-                    </div>
-                  </div>
+
+
+
+                  {/* ticket basic- compra */}
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
@@ -157,44 +185,55 @@ const TiketBuyPage = () => {
                       <SelectTokenBasic />
                   </div>
 
-                  <div className="cantTicket-basic">
 
+
+                   {/* ticket basic- cantidades/precio  */}
+
+                  <div className="cantTicket-basic">
                         <button className='menos-basic' onClick={() => {
                             if (cantTicketsBasic > 1){
                               setCantTicketsBasic(cantTicketsBasic - 1) 
                             }
-                            if(priceTicketBasic >= 30){
+                            if(priceTicketBasic >= 40){
                               setPriceTicketBasic(priceTicketBasic - 20) 
                             }
-                        }}> - </button>
+                            }}> - 
+                        </button>
 
                         <div className="contador-basic">
-                          <p>{cantTicketsBasic}</p>
+                            <p>{cantTicketsBasic}</p>
                         </div>
 
                         <button className='mas-basic' onClick={() => {
-                            if(priceTicketBasic >= 15){
+                            if(priceTicketBasic >= 20){
                               setPriceTicketBasic(priceTicketBasic + 20) 
                             }
                             setCantTicketsBasic(cantTicketsBasic + 1)
-                        } }> + </button>
-
+                          } }> + 
+                        </button>
                   </div>
               </div>
 
+
+              
+              {/* ticket boost- descuentos aplicados */}
+
               <div className="boxTickets">
                   <img className='imgTicket imgTicket-boost' src={tiketBoost} alt="Ticket Ladder" />
-                  
                   <div className="priceBoost">
-                    <div className="boxPrinceBoost">
-                      <h2>${priceTicketBoost}</h2>
-                      <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
-                    </div>
+                      <div className="boxPrinceBoost">
+                        <h2>${priceTicketBoost}</h2>
+                        <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
+                      </div>
                   
-                    <div className="boxPriceBoostDescuento">
-                      <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
-                    </div>
+                      <div className="boxPriceBoostDescuento">
+                        <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
+                      </div>
                   </div>
+
+
+
+                  {/* ticket boost- compra */}
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
@@ -204,6 +243,9 @@ const TiketBuyPage = () => {
                       </div>
                       <SelectTokenBoost />
                   </div>
+
+
+                  {/* ticket boost- cantidades/precio  */}
                   <div className="cantTicket-boost">
                         <button className='menos-boost' onClick={() => {
 
@@ -213,49 +255,59 @@ const TiketBuyPage = () => {
                           if(priceTicketBoost >= 60){
                             setPriceTicketBoost(priceTicketBoost - 35) 
                           }
-
-
-                        }}> - </button>
+                          }}> - 
+                        </button>
                         <div className="contador-boost">
-                          <p>{cantTicketsBoost}</p>
+                            <p>{cantTicketsBoost}</p>
                         </div>
                         <button className='mas-boost' onClick={() => {
                           if(priceTicketBoost >= 30){
                             setPriceTicketBoost(priceTicketBoost + 35) 
                           }
                           setCantTicketsBoost(cantTicketsBoost + 1)
-                          
-                          } }> + </button>
+                          }}> + 
+                        </button>
                   </div>
               </div>
           </div>
 
+
+
+          {/* texto ladders  */}
+
           <div className="text-tickets">
             <div className="titleTicket">
-              <h2>LADDER TICKETS </h2>
+                <h2>LADDER TICKETS </h2>
             </div>
             <div className="textoTicket">
-              <p>
-              Everything you need is here. Let's build your way to the top!  
-              </p>
+                <p> Everything you need is here. Let's build your way to the top!  </p>
             </div>
- 
+        
+        
+
+          {/* boton de connectar wallet */}
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
               <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
                 <p className='select-Connect' >{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
-                
                 {connected ? <input type="text" className="copyWallet" id='copyWallet' ></input> : null}
-
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>
             </div>
  
-            <CodigoDescuento referralCode={referralCode} copyActive={copyActive} checkRefCodeValid={checkRefCodeValid} submitCodigoDescuento={submitCodigoDescuento} /> 
+
+            {/* pasa los parametros al componente del codigo de descuento*/}
+            
+            <CodigoDescuento 
+              referralCode={referralCode} 
+              copyActive={copyActive} 
+              checkRefCodeValid={checkRefCodeValid} 
+              submitCodigoDescuento={submitCodigoDescuento} 
+              codigoPropio= {codigoPropio}
+            /> 
             
           </div>
         </div>
-
     </div>
   )
 }

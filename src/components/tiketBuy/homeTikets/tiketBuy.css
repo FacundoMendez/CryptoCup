@@ -19,6 +19,28 @@
     object-fit: cover;
 }
 
+
+/* videos buy */
+
+.basicBuyVideo, .boostBuyVideo{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: 9999;
+    filter: contrast(180%) brightness(100%); 
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    display: none;
+}
+
+.boostBuyVideo_active, .basicBuyVideo_active{
+    opacity: 1;
+    display: inline-block;
+    transition: all .5s ease-in-out;
+}
+
+
 /* general */
 
 .flexTickets{

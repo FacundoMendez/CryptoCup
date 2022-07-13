@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
+import PopupErrorCodigoPropio from './popupsErrors/codigoPropio/PopupErrorCodigoPropio'
 
-const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid }) => {
+const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio}) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -40,10 +41,16 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
                 <input type="text" id='referral_code_input' />
                 <button id='buttonSubmitCode' type='submit' onClick={async () => {
                     await checkRefCodeValid(document.querySelector('#referral_code_input').value);
-                }}> 
+                    }}> 
                     <FontAwesomeIcon icon={faAnglesRight} />
-                 </button>
+                 </button>                    
             </div>
+
+            {codigoPropio   ?   
+                            <PopupErrorCodigoPropio /> 
+                            :  
+                            null
+            }
         </div>
 
     </div>

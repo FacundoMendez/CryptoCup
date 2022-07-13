@@ -277,7 +277,6 @@
     display: none;
     opacity: 0;
     transition: all .5s ease-in-out;
-
 }
 
 .boxPriceBoostDescuento_active{
@@ -285,9 +284,38 @@
     font-size: 3.2rem;
     opacity:1;
     transition: all .5s ease-in-out;
-
 }
 
+
+.errorCuponPropio{
+    width: 90%;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: #000000ec;
+    backdrop-filter: blur(2rem);
+    transition: all .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.801));
+    margin-top: 1.5rem;
+    visibility: hidden;
+}
+
+.errorCuponPropio_active{
+    visibility: visible;
+    transition: all .5s ease-in-out;
+}
+
+.errorCuponPropio p{
+    font-size: 1.55rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 
 @media screen  and (max-width: 1440px){
 
