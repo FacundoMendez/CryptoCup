@@ -87,17 +87,23 @@ const TiketBuyPage = () => {
 
 
   const checkRefCodeValid = async (code) => {
-    await contract.getReferralAddressFromCode(code)
-    .then(res => {
-      if (res != "0x0000000000000000000000000000000000000000") {
-        setSubmitCodigoDescuento(true);
-        setActiveReferralCode(code);
-      } 
-      else {
-        setSubmitCodigoDescuento(false);
-        setActiveReferralCode(0);
-      }
-    })
+    if(code != referralCode) {
+      await contract.getReferralAddressFromCode(code)
+      .then(res => {
+        if (res != "0x0000000000000000000000000000000000000000") {
+          setSubmitCodigoDescuento(true);
+          setActiveReferralCode(code);
+        } 
+        else {
+          setSubmitCodigoDescuento(false);
+          setActiveReferralCode(0);
+        }
+      })
+    } else {
+
+      // Acá habría que mostrar un error diciendo que el codigo ingresado no puede ser el codigo de uno mismo. Osea uno no se puede referir a si mismo.
+
+    }
   }
 
   const buyBoostTicket = async () => {
