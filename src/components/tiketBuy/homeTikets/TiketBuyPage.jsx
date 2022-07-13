@@ -47,7 +47,7 @@ const TiketBuyPage = () => {
 
   /* validacion de compra de tickets */
 
-  const [buyTicketBasic, setBuyTicketBasic] = useState(false)
+  const [buyTicketBasic, setBuyTicketBasic] = useState(true)
   const [buyTicketBoost, setBuyTicketBoost] = useState(false)
 
   /* validaciones de tickets (precio / cantidad) */

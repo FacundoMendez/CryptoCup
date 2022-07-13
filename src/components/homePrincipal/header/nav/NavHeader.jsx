@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
 import "./nav.css";
 import navBallModel from './modelBall';
-import imgNav from "./src/navBack.png";
+import imgNav from "./src/navBack1.png";
 import navOcultar from './navOcultar';
 import commingDapp from './comingDapp';
 
@@ -74,7 +74,6 @@ function NavHeader() {
 
                 <canvas className='navBallModel'></canvas>  
 
-                
 
                 <ul className='navDerecha'>
           

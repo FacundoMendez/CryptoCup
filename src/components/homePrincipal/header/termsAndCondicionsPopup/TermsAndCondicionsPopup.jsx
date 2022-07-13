@@ -1,6 +1,5 @@
 import React , {useContext} from 'react'
 import "./termsAndCondPopup.css"
-
 import Context from '../../../context/Context'
 
 

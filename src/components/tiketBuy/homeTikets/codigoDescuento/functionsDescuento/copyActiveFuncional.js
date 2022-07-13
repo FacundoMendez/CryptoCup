@@ -1,11 +1,9 @@
 const copyActiveFuncional = (code) => {
 
-
     const copyWallet = document.getElementById("copyWallet").select()
     const boxCopy = document.querySelector(".copy")
     const boxCopyCupon = document.querySelector(".boxCopyCupon")
  
-
     copyValue(code);
 
     boxCopy.classList.add("copy_active")
