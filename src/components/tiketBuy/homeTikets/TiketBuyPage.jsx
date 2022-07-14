@@ -108,7 +108,7 @@ const TiketBuyPage = () => {
 
       setTimeout(function(){
         setBuyTicketBasic(false) 
-      },15000)
+      },8000)
     }) 
   }
   
@@ -121,8 +121,8 @@ const TiketBuyPage = () => {
       setBuyTicketBoost(true) // se muestra el video boost de compra 
       /* console.log(res);  */
       setTimeout(function(){
-        setBuyTicketBoost(true)
-      },15000)
+        setBuyTicketBoost(false)
+      },8000)
     }) 
   }
 
