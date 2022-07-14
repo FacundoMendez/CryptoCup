@@ -9,7 +9,7 @@ import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 const PopupErrorCodigoPropio = lazy(() => import ('./popupsErrors/codigoPropio/PopupErrorCodigoPropio'))
 const CodigoIncorrecto = lazy(() => import ('./popupsErrors/codigoIncorrecto/CodigoIncorrecto'))
 
-const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
+const CodigoDescuento = ({ connected, referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -37,7 +37,7 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
                 <p className='text2Copy'>Click to copy your invitation link into clipboard!</p>
             </div>
         </div>
-        <div className="containerHereCupon">
+        {connected? (<div className="containerHereCupon"> // Hay que esconder este componente chequeando el estado de 'connected'
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
@@ -54,7 +54,7 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
 
             {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
             {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
-        </div>
+        </div>) : null}
 
     </div>
 
