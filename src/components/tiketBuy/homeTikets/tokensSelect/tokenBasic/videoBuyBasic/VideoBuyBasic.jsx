@@ -1,6 +1,7 @@
 import React, {useEffect, lazy} from 'react'
 import basicBuyVideo from "../../../src/basicBuy.mp4"
-const videoBuyBasicFuncional = lazy(() => import ('./videoBuyBasicFuncional'))
+
+import videoBuyBasicFuncional from './videoBuyBasicFuncional'
 
 const VideoBuyBasic = () => {
   
