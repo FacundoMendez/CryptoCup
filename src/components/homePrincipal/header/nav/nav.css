@@ -335,6 +335,9 @@
 
 
 @media screen and (max-width: 1440px){
+    .navBack{
+        height: 9.2rem;
+    }
 
     .nav-link {
         font-size: 2rem;
@@ -387,9 +390,9 @@
 
     
 .lineDappButton{
-    right: 8%;
-    margin-top: .2rem;
-    width: 10rem;
+    right: 7.7%;
+    margin-top: -1rem;
+    width: 11.5rem;
     height: .2rem;
 }
 
