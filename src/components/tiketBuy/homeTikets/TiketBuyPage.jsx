@@ -18,7 +18,7 @@ const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTok
 const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
-
+const NoMetamask = lazy(() => import ('./codigoDescuento/popupsErrors/noMetamask/NoMetamask'))
 
 const TiketBuyPage = () => {
   const context = useContext(Context)
@@ -42,7 +42,7 @@ const TiketBuyPage = () => {
 
   const [codigoPropio, setCodigoPropio] = useState(false)
   const [chainIncorrecta, setChainIncorrecta] = useState(false)
-
+  const [noMetamask, setNoMetamask] = useState(false)
 
   /* validacion de compra de tickets */
 
@@ -85,6 +85,11 @@ const TiketBuyPage = () => {
 
       } else {
         alert("Please Install Metamask.");
+        setNoMetamask(true)
+
+        setTimeout(function(){
+          setNoMetamask(false) 
+        },5000)
       }
     } catch (error) {
       console.log(error);
@@ -96,7 +101,7 @@ const TiketBuyPage = () => {
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
-        setBuyTicketBasic(true)   // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
+        setBuyTicketBasic(true)    // se muestra el video basic de compra 
         /* console.log(res);  */
 
         setTimeout(function(){
@@ -125,7 +130,7 @@ const TiketBuyPage = () => {
       setTimeout(function(){
         setCodigoPropio(false)
       },2000)
-      // Acá habría que mostrar un error diciendo que el codigo ingresado no puede ser el codigo de uno mismo. Osea uno no se puede referir a si mismo.
+      //error de codigo propio.
 
     }
   }
@@ -134,7 +139,7 @@ const TiketBuyPage = () => {
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
-        setBuyTicketBoost(true) // Emite un evento cuando se confirma la transaccion. (se muestra el video boost)
+        setBuyTicketBoost(true) // se muestra el video boost de compra 
         /* console.log(res);  */
         setTimeout(function(){
           setBuyTicketBoost(true)
@@ -149,13 +154,16 @@ const TiketBuyPage = () => {
       <Suspense fallback={<Spinner/>}>
           <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
       </Suspense>
+
       <Social />
+
 
       <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
 
+      {noMetamask ? <NoMetamask /> : null}
 
       <div className="flexTickets">
           <div className="ticketsSale">

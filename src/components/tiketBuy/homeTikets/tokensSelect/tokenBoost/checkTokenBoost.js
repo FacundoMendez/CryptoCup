@@ -9,6 +9,11 @@ const checkTokenBoost = () => {
         boxBlurToken.classList.add("boxBlurTokenBoost_active")
     })
 
+    boxBlurToken.addEventListener("click", function(){
+        boxBlurToken.classList.remove("boxBlurTokenBoost_active")
+        radioToken.classList.remove("radioTokenBoost-active")
+    })
+
     for ( let i = 0; i < radio.length; i++){
         radio[i].addEventListener("click", function(){
             radioToken.classList.remove("radioTokenBoost-active")
