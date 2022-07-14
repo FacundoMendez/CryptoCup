@@ -119,6 +119,10 @@ const TiketBuyPage = () => {
       })
     } else {
       setCodigoPropio(true)
+
+      setTimeout(function(){
+        setCodigoPropio(false)
+      },2000)
       // Acá habría que mostrar un error diciendo que el codigo ingresado no puede ser el codigo de uno mismo. Osea uno no se puede referir a si mismo.
 
     }
