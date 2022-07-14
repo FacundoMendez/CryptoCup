@@ -99,17 +99,32 @@ const TiketBuyPage = () => {
   }
 
   const buyBasicTicket = async () => {
+    // Aca se deberia activar el timeout.
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
-      // use the returned value here
-        setBuyTicketBasic(true)    // se muestra el video basic de compra 
+      // Aca se deberia desactivar el timeout.
 
-        setTimeout(function(){
-          setBuyTicketBasic(false) 
-        },15000)
+      setBuyTicketBasic(true)    // se muestra el video basic de compra 
+
+      setTimeout(function(){
+        setBuyTicketBasic(false) 
+      },15000)
     }) 
   }
-
+  
+  const buyBoostTicket = async () => {
+    // Aca se deberia activar el timeout.
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    .then(res => { 
+      // Aca se deberia desactivar el timeout.
+      
+      setBuyTicketBoost(true) // se muestra el video boost de compra 
+      /* console.log(res);  */
+      setTimeout(function(){
+        setBuyTicketBoost(true)
+      },15000)
+    }) 
+  }
 
   const checkRefCodeValid = async (code) => {
     if(code !== referralCode.toString()) {
@@ -140,17 +155,6 @@ const TiketBuyPage = () => {
     }
   }
 
-  const buyBoostTicket = async () => {
-    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
-    .then(res => { 
-      // use the returned value here
-        setBuyTicketBoost(true) // se muestra el video boost de compra 
-        /* console.log(res);  */
-        setTimeout(function(){
-          setBuyTicketBoost(true)
-        },15000)
-    }) 
-  }
 
   return (
     <div className="containerTiketsBuy">
