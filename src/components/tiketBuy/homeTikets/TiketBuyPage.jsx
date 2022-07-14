@@ -96,10 +96,12 @@ const TiketBuyPage = () => {
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
-      setTimeout(() => {
         setBuyTicketBasic(true)   // Emite un evento cuando se confirma la transaccion. (se muestra el video basic)
         /* console.log(res);  */
-      }, 16000);
+
+        setTimeout(function(){
+          setBuyTicketBasic(false) 
+        },15000)
     }) 
   }
 
@@ -132,11 +134,11 @@ const TiketBuyPage = () => {
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .then(res => { 
       // use the returned value here
-      setTimeout(() => {
         setBuyTicketBoost(true) // Emite un evento cuando se confirma la transaccion. (se muestra el video boost)
         /* console.log(res);  */
-
-      }, 15000);
+        setTimeout(function(){
+          setBuyTicketBoost(true)
+        },15000)
     }) 
   }
 

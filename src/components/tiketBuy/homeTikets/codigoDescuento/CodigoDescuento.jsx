@@ -40,7 +40,7 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
-                <input type="text" id='referral_code_input' />
+                <input type="number" id='referral_code_input' />
                 <button id='buttonSubmitCode' type='submit' onClick={async () => {
                     await checkRefCodeValid(document.querySelector('#referral_code_input').value);
                     }}> 
