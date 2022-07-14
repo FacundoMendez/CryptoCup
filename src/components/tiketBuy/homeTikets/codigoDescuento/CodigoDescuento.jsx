@@ -1,11 +1,13 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, lazy} from 'react'
 import "./codigoDescuento.css"
 import codigoFuncional from './codigoFuncional'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
-import PopupErrorCodigoPropio from './popupsErrors/codigoPropio/PopupErrorCodigoPropio'
+
+const PopupErrorCodigoPropio = lazy(() => import ('./popupsErrors/codigoPropio/PopupErrorCodigoPropio'))
+
 
 const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio}) => {
     useEffect(() => {

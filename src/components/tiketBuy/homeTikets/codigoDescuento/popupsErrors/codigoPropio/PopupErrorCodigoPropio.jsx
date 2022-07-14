@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react'
-import popupError from './popupErrors'
+import React, {useEffect, lazy} from 'react'
+
+const popupError = lazy(() => import ('./popupErrors'))
 
 const PopupErrorCodigoPropio = () => {
   

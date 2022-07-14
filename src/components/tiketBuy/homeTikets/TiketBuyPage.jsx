@@ -6,13 +6,12 @@ import "./tiketBuy.css"
 import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
-
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
-import TermsAndCondicionsPopup from '../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup';
 import Context from '../../context/Context'
-import VideoBuyBasic from './tokensSelect/tokenBasic/videoBuyBasic/VideoBuyBasic';
-import VideoBuyBoost from './tokensSelect/tokenBoost/videoBuyBoost/VideoBuyBoost';
 
+const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
+const VideoBuyBoost = lazy(() => import ("./tokensSelect/tokenBoost/videoBuyBoost/VideoBuyBoost"))
+const VideoBuyBasic = lazy(() => import ('./tokensSelect/tokenBasic/videoBuyBasic/VideoBuyBasic'))
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
 const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
 const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTokenBasic'))
@@ -34,7 +33,7 @@ const TiketBuyPage = () => {
 
   /* validaciones de codigo de descuento */
 
-  const [referralCode, setReferralCode] = useState(0);
+  const [referralCode, setReferralCode] = useState(0);  /* validacion > 0 */
   const [activeReferralCode, setActiveReferralCode] = useState(0);
   const [submitCodigoDescuento , setSubmitCodigoDescuento] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
   const [copyActive , setCopyActive] = useState(false) //validacion de si la persona compro o no - modificar a false (true para pruebas)
@@ -106,7 +105,7 @@ const TiketBuyPage = () => {
 
 
   const checkRefCodeValid = async (code) => {
-    if(code != referralCode) {
+    if(code !== referralCode.toString()) {
       await contract.getReferralAddressFromCode(code)
       .then(res => {
         if (res != "0x0000000000000000000000000000000000000000") {
