@@ -141,7 +141,7 @@ const TiketBuyPage = () => {
 
             setCodigoIncorrecto(true)  /* error codigo incorrecto */
             setTimeout(function(){
-              setCodigoIncorrecto(true)
+              setCodigoIncorrecto(false)
             },6000)
           }
         })
@@ -192,7 +192,7 @@ const TiketBuyPage = () => {
                         <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                       <div className="boxPriceBasicDescuento">
-                        <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
+                        <h2 className='priceBasicDescuento'>${priceTicketBasic - ( 5 * cantTicketsBasic)}</h2>
                       </div>
                   </div>
 
@@ -251,7 +251,7 @@ const TiketBuyPage = () => {
                       </div>
                   
                       <div className="boxPriceBoostDescuento">
-                        <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
+                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 5 * cantTicketsBoost) }</h2>
                       </div>
                   </div>
 
@@ -276,7 +276,7 @@ const TiketBuyPage = () => {
                           if (cantTicketsBoost > 1){
                             setCantTicketsBoost(cantTicketsBoost - 1)  
                           }
-                          if(priceTicketBoost >= 60){
+                          if(priceTicketBoost >= 70){
                             setPriceTicketBoost(priceTicketBoost - 35) 
                           }
                           }}> - 
@@ -323,7 +323,6 @@ const TiketBuyPage = () => {
             {/* pasa los parametros al componente del codigo de descuento*/}
             
             <CodigoDescuento 
-              connected={connected}
               referralCode={referralCode} 
               copyActive={copyActive} 
               checkRefCodeValid={checkRefCodeValid} 

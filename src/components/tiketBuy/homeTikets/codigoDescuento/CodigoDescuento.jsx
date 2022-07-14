@@ -5,11 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
+import CodigoIncorrecto from './popupsErrors/codigoIncorrecto/CodigoIncorrecto'
+import PopupErrorCodigoPropio from './popupsErrors/codigoPropio/PopupErrorCodigoPropio'
 
-const PopupErrorCodigoPropio = lazy(() => import ('./popupsErrors/codigoPropio/PopupErrorCodigoPropio'))
-const CodigoIncorrecto = lazy(() => import ('./popupsErrors/codigoIncorrecto/CodigoIncorrecto'))
-
-const CodigoDescuento = ({ connected, referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
+const CodigoDescuento = ({referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -37,7 +36,7 @@ const CodigoDescuento = ({ connected, referralCode, copyActive, submitCodigoDesc
                 <p className='text2Copy'>Click to copy your invitation link into clipboard!</p>
             </div>
         </div>
-        {connected? (<div className="containerHereCupon"> // Hay que esconder este componente chequeando el estado de 'connected'
+        <div className="containerHereCupon"> 
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
@@ -54,7 +53,7 @@ const CodigoDescuento = ({ connected, referralCode, copyActive, submitCodigoDesc
 
             {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
             {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
-        </div>) : null}
+        </div>
 
     </div>
 
