@@ -3,10 +3,10 @@ const videoBuyBoostFuncional = () => {
 
     boostBuyVideo.classList.toggle("boostBuyVideo_active")
     
-/*     setTimeout(function(){
+    setTimeout(function(){
         boostBuyVideo.classList.remove("boostBuyVideo_active")
     },8000)
-       */
+      
 
 
 }
