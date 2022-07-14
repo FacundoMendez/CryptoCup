@@ -526,6 +526,9 @@ input[type=number] { -moz-appearance:textfield; }
 
 @media screen  and (max-width: 480px){
 
+
+
+
     /* popup */
     .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
@@ -597,6 +600,14 @@ input[type=number] { -moz-appearance:textfield; }
 
 @media screen  and (max-width: 410px){
 
+
+        /* error codigo vacio */
+
+        .errorCodigoVacio{
+            left: 2rem;
+        }
+    
+
     .boxCopyCupon{
         width: 6rem;
         left:27rem;
@@ -651,6 +662,17 @@ input[type=number] { -moz-appearance:textfield; }
         margin-right: 0rem;
         left: -3rem;
     }
+
+    .errorCodigoIncorrecto{
+        top: 16rem;
+        height: 6.5rem;
+    }
+
+    .errorCuponPropio{
+        height: 6.5rem;
+        top: 16rem;
+    }
+    
     
     
 }
@@ -659,12 +681,12 @@ input[type=number] { -moz-appearance:textfield; }
 
 @media screen  and (max-width: 355px){
 
+
     .boxCopyCupon{
         width: 6rem;
         left:25.5rem;
         margin-top: -13.1rem;
     }
-    
 
     .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
@@ -768,4 +790,9 @@ input[type=number] { -moz-appearance:textfield; }
         left: -3rem;
     }
     
+        /* error codigo vacio */
+        .errorCodigoVacio{
+            left:0rem;
+        }
+        
 }

@@ -11,7 +11,7 @@ const codigoFuncional = () => {
     })
 
     buttonInput.addEventListener("click", function(){
-        if (input.value === 0) {
+        if (input.value == 0) {
             errorCodigoVacio.classList.add("errorCodigoVacio_active")
             setTimeout(function(){
                 errorCodigoVacio.classList.remove("errorCodigoVacio_active")
