@@ -28,7 +28,7 @@
     position: fixed;
     object-fit: cover;
     z-index: 9999;
-    filter: contrast(115%) brightness(105%); 
+    filter: contrast(145%) brightness(105%) ;
     transition: all .5s ease-in-out;
     opacity: 0;
     display: none;
