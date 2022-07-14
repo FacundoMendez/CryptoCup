@@ -41,8 +41,9 @@ const TiketBuyPage = () => {
   /* validaciones de errores */
 
   const [codigoPropio, setCodigoPropio] = useState(false)
-  const [chainIncorrecta, setChainIncorrecta] = useState(false)
+/*   const [chainIncorrecta, setChainIncorrecta] = useState(false) */
   const [noMetamask, setNoMetamask] = useState(false)
+  const [codigoIncorrecto, setCodigoIncorrecto] = useState(false)
 
   /* validacion de compra de tickets */
 
@@ -102,7 +103,6 @@ const TiketBuyPage = () => {
     .then(res => { 
       // use the returned value here
         setBuyTicketBasic(true)    // se muestra el video basic de compra 
-        /* console.log(res);  */
 
         setTimeout(function(){
           setBuyTicketBasic(false) 
@@ -122,15 +122,20 @@ const TiketBuyPage = () => {
         else {
           setSubmitCodigoDescuento(false);
           setActiveReferralCode(0);
+
+          setCodigoIncorrecto(true)  /* error codigo incorrecto */
+          setTimeout(function(){
+            setCodigoIncorrecto(true)
+          },6000)
         }
       })
     } else {
       setCodigoPropio(true)
 
-      setTimeout(function(){
+      setTimeout(function(){   //error de codigo propio.
         setCodigoPropio(false)
       },2000)
-      //error de codigo propio.
+      
 
     }
   }
@@ -317,6 +322,7 @@ const TiketBuyPage = () => {
               checkRefCodeValid={checkRefCodeValid} 
               submitCodigoDescuento={submitCodigoDescuento} 
               codigoPropio= {codigoPropio}
+              codigoIncorrecto = {codigoIncorrecto}
             /> 
             
           </div>

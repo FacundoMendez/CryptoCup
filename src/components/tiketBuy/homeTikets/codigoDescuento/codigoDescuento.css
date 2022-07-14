@@ -341,7 +341,82 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 
+/* error codigo incorrecto */
+
+.errorCodigoIncorrecto{
+    width: 90%;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: #000000ec;
+    backdrop-filter: blur(2rem);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.801));
+    top: 12.5rem;
+    opacity: 0;
+    animation: jittery 3s infinite;
+    transition: all 1s ease-in-out;
+}
+
+.errorCodigoIncorrecto p{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 1ms ease-in-out;
+}
+
+
+.errorCodigoIncorrecto_active{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    animation: jittery 3s infinite;
+}
+
+
+/* error codigo vacio */
+
+.errorCodigoVacio{
+    width: 26rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    background-color: #000000ec;
+    backdrop-filter: blur(2rem);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 6px rgba(189, 131, 255, 0.801));
+    top: 7rem;
+    left: 4rem;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    animation: jittery 3s infinite;
+}
+
+.errorCodigoVacio p{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 1ms ease-in-out;
+}
+
+
+.errorCodigoVacio_active{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    animation: jittery 3s infinite;
+}
+
 /* error cupon propio */
+
 
 .errorCuponPropio{
     width: 90%;

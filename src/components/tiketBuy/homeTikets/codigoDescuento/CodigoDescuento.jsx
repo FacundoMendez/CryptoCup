@@ -7,9 +7,9 @@ import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 
 const PopupErrorCodigoPropio = lazy(() => import ('./popupsErrors/codigoPropio/PopupErrorCodigoPropio'))
+const CodigoIncorrecto = lazy(() => import ('./popupsErrors/codigoIncorrecto/CodigoIncorrecto'))
 
-
-const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio}) => {
+const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -19,6 +19,7 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
     }
 
     //en el archivo TiketBuyPage se encuentra la validacion que trae el numero de cuenta de wallet
+
 
   return (
     <div className="containerCodigoDescuento">
@@ -45,14 +46,14 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
                     await checkRefCodeValid(document.querySelector('#referral_code_input').value);
                     }}> 
                     <FontAwesomeIcon icon={faAnglesRight} />
-                 </button>                    
+                </button>                    
+                <div className="errorCodigoVacio">
+                    <p>Enter a Valid Code !</p>
+                </div>
             </div>
 
-            {codigoPropio   ?   
-                            <PopupErrorCodigoPropio /> 
-                            :  
-                            null
-            }
+            {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
+            {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
         </div>
 
     </div>
