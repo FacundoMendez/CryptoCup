@@ -378,6 +378,43 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 
+/* error no connect wallet */
+
+.errorNoConnectWallet{
+    width: 90%;
+    height: 5rem;
+    border-radius: 10px;
+    background-color: #000000ec;
+    backdrop-filter: blur(2rem);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 0 6px rgba(255, 139, 72, 0.801));
+    top: 12.5rem;
+    opacity: 0;
+    animation: jittery 3s infinite;
+    transition: all 1s ease-in-out;
+}
+
+.errorNoConnectWallet p{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 1ms ease-in-out;
+}
+
+
+.errorNoConnectWallet_active{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    animation: jittery 3s infinite;
+}
+
+
 /* error codigo vacio */
 
 .errorCodigoVacio{

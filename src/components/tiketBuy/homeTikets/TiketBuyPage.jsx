@@ -323,6 +323,7 @@ const TiketBuyPage = () => {
             {/* pasa los parametros al componente del codigo de descuento*/}
             
             <CodigoDescuento 
+              connected = {connected}
               referralCode={referralCode} 
               copyActive={copyActive} 
               checkRefCodeValid={checkRefCodeValid} 
