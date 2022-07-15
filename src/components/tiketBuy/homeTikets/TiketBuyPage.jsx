@@ -8,6 +8,7 @@ import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
 import Context from '../../context/Context'
+import NoMetamask from './codigoDescuento/popupsErrors/noMetamask/NoMetamask';
 import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupEsperaBuy';
 
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
@@ -19,7 +20,7 @@ const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTok
 const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
-const NoMetamask = lazy(() => import ('./codigoDescuento/popupsErrors/noMetamask/NoMetamask'))
+
 
 const TiketBuyPage = () => {
   const context = useContext(Context)
@@ -86,7 +87,6 @@ const TiketBuyPage = () => {
         setConnected(true);
 
       } else {
-        alert("Please Install Metamask.");
         setNoMetamask(true)
 
         setTimeout(function(){
@@ -95,6 +95,7 @@ const TiketBuyPage = () => {
       }
     } catch (error) {
       console.log(error);
+      setNoMetamask(true)
     }
 
   }
@@ -102,14 +103,14 @@ const TiketBuyPage = () => {
   const buyBasicTicket = async () => {
     // Aca se deberia activar el timeout.
 
-    loadingBuy(true)
+    setLoadingBuy(true)
 
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     
     const receipt = await tx.wait()
     console.log(receipt);
 
-    loadingBuy(false)
+    setLoadingBuy(false)
     setBuyTicketBasic(true);
 
     setTimeout(function(){ 
@@ -121,13 +122,13 @@ const TiketBuyPage = () => {
   const buyBoostTicket = async () => {
     // Aca se deberia activar el timeout.
 
-    loadingBuy(true)
+    setLoadingBuy(true)
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
   
     const receipt = await tx.wait()
     console.log(receipt);
 
-    loadingBuy(false)
+    setLoadingBuy(false)
     setBuyTicketBoost(true);
 
     setTimeout(function(){ 
