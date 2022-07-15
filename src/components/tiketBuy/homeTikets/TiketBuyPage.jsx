@@ -178,7 +178,6 @@ const TiketBuyPage = () => {
 
       <Social />
 
-
       <video className='particle-Tikets' src={videoParticle} preload='none' autoPlay loop muted ></video>
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
@@ -207,7 +206,6 @@ const TiketBuyPage = () => {
                   </div>
 
 
-
                   {/* ticket basic- compra */}
 
                   <div className="wrapperBotton-Tickets">
@@ -218,7 +216,6 @@ const TiketBuyPage = () => {
                       </div>
                       <SelectTokenBasic />
                   </div>
-
 
 
                    {/* ticket basic- cantidades/precio  */}
@@ -249,7 +246,6 @@ const TiketBuyPage = () => {
               </div>
 
 
-              
               {/* ticket boost- descuentos aplicados */}
 
               <div className="boxTickets">
