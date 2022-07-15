@@ -1,6 +1,6 @@
 import React, {lazy} from 'react'
 import "./home.css"
-import BackPrincipal from "./src/videos/BackCopa3.mp4"
+import BackPrincipal from "./src/videos/BackCopa2.mp4"
 import soonImg from "./src/comingSoon.png"
 
 const Button = lazy(() => import ("../../buttons/Button"))

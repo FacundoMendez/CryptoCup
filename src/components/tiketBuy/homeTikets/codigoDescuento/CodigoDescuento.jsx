@@ -1,15 +1,15 @@
-import React, {useEffect, lazy} from 'react'
+import React, {useEffect} from 'react'
 import "./codigoDescuento.css"
 import codigoFuncional from './codigoFuncional'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
+import CodigoIncorrecto from './popupsErrors/codigoIncorrecto/CodigoIncorrecto'
+import PopupErrorCodigoPropio from './popupsErrors/codigoPropio/PopupErrorCodigoPropio'
+import NoConnectedWallet from './popupsErrors/noConnectedWallet/NoConnectedWallet'
 
-const PopupErrorCodigoPropio = lazy(() => import ('./popupsErrors/codigoPropio/PopupErrorCodigoPropio'))
-const CodigoIncorrecto = lazy(() => import ('./popupsErrors/codigoIncorrecto/CodigoIncorrecto'))
-
-const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
+const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
     useEffect(() => {
         codigoFuncional()
     },[])
@@ -37,11 +37,11 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
                 <p className='text2Copy'>Click to copy your invitation link into clipboard!</p>
             </div>
         </div>
-        <div className="containerHereCupon">
+        <div className="containerHereCupon"> 
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
-                <input type="number" id='referral_code_input' />
+                <input type="number" id='referral_code_input' min={1}  />
                 <button id='buttonSubmitCode' type='submit' onClick={async () => {
                     await checkRefCodeValid(document.querySelector('#referral_code_input').value);
                     }}> 
@@ -52,6 +52,7 @@ const CodigoDescuento = ({ referralCode, copyActive, submitCodigoDescuento, chec
                 </div>
             </div>
 
+            {!connected ? <NoConnectedWallet /> : null}
             {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
             {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
         </div>

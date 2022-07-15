@@ -99,58 +99,64 @@ const TiketBuyPage = () => {
   }
 
   const buyBasicTicket = async () => {
+    // Aca se deberia activar el timeout.
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
-    .then(res => { 
-      // use the returned value here
-        setBuyTicketBasic(true)    // se muestra el video basic de compra 
+    
+    const receipt = await tx.wait()
+    console.log(receipt);
 
-        setTimeout(function(){
-          setBuyTicketBasic(false) 
-        },15000)
-    }) 
+    setBuyTicketBasic(true);
+
+    setTimeout(function(){ 
+      setBuyTicketBasic(false); 
+    }, 9000);
+
+  }
+  
+  const buyBoostTicket = async () => {
+    // Aca se deberia activar el timeout.
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    const receipt = await tx.wait()
+    console.log(receipt);
+
+    setBuyTicketBoost(true);
+
+    setTimeout(function(){ 
+      setBuyTicketBoost(false); 
+    }, 9000);
   }
 
-
   const checkRefCodeValid = async (code) => {
-    if(code !== referralCode.toString()) {
-      await contract.getReferralAddressFromCode(code)
-      .then(res => {
-        if (res != "0x0000000000000000000000000000000000000000") {
-          setSubmitCodigoDescuento(true);
-          setActiveReferralCode(code);
-        } 
-        else {
-          setSubmitCodigoDescuento(false);
-          setActiveReferralCode(0);
+    if (code) {
+      if(code !== referralCode.toString()) {
+        await contract.getReferralAddressFromCode(code)
+        .then(res => {
+          if (res != "0x0000000000000000000000000000000000000000") {
+            setSubmitCodigoDescuento(true);
+            setActiveReferralCode(code);
+          } 
+          else {
+            setSubmitCodigoDescuento(false);
+            setActiveReferralCode(0);
 
-          setCodigoIncorrecto(true)  /* error codigo incorrecto */
-          setTimeout(function(){
-            setCodigoIncorrecto(true)
-          },6000)
-        }
-      })
-    } else {
-      setCodigoPropio(true)
+            setCodigoIncorrecto(true)  /* error codigo incorrecto */
+            setTimeout(function(){
+              setCodigoIncorrecto(false)
+            },6000)
+          }
+        })
+      } else {
+        setCodigoPropio(true)
 
-      setTimeout(function(){   //error de codigo propio.
-        setCodigoPropio(false)
-      },2000)
-      
-
+        setTimeout(function(){   //error de codigo propio.
+          setCodigoPropio(false)
+        },2000)
+        
+  
+      }
     }
   }
 
-  const buyBoostTicket = async () => {
-    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
-    .then(res => { 
-      // use the returned value here
-        setBuyTicketBoost(true) // se muestra el video boost de compra 
-        /* console.log(res);  */
-        setTimeout(function(){
-          setBuyTicketBoost(true)
-        },15000)
-    }) 
-  }
 
   return (
     <div className="containerTiketsBuy">
@@ -186,7 +192,7 @@ const TiketBuyPage = () => {
                         <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                       <div className="boxPriceBasicDescuento">
-                        <h2 className='priceBasicDescuento'>${priceTicketBasic - 5}</h2>
+                        <h2 className='priceBasicDescuento'>${priceTicketBasic - ( 5 * cantTicketsBasic)}</h2>
                       </div>
                   </div>
 
@@ -245,7 +251,7 @@ const TiketBuyPage = () => {
                       </div>
                   
                       <div className="boxPriceBoostDescuento">
-                        <h2 className='priceBoostDescuento'>${priceTicketBoost - 5}</h2>
+                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 5 * cantTicketsBoost) }</h2>
                       </div>
                   </div>
 
@@ -270,7 +276,7 @@ const TiketBuyPage = () => {
                           if (cantTicketsBoost > 1){
                             setCantTicketsBoost(cantTicketsBoost - 1)  
                           }
-                          if(priceTicketBoost >= 60){
+                          if(priceTicketBoost >= 70){
                             setPriceTicketBoost(priceTicketBoost - 35) 
                           }
                           }}> - 
@@ -317,6 +323,7 @@ const TiketBuyPage = () => {
             {/* pasa los parametros al componente del codigo de descuento*/}
             
             <CodigoDescuento 
+              connected = {connected}
               referralCode={referralCode} 
               copyActive={copyActive} 
               checkRefCodeValid={checkRefCodeValid} 
