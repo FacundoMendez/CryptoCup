@@ -11,13 +11,16 @@
 .spinner {
    width: 160px;
    height: 160px;
-   border-radius: 50%;
    background-image: url("./src/Logo.png");
    background-size: cover;
-   animation: spinner-a78xsi 1.2s infinite linear;
+   animation: spinner-12 2s infinite linear;
  }
  
- @keyframes spinner-a78xsi {
+ @keyframes spinner-12 {
+
+   0% {
+      transform: rotate(0deg);
+   }
     100% {
        transform: rotate(360deg);
     }
