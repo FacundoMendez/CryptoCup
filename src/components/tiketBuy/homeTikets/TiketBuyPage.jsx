@@ -8,6 +8,7 @@ import tiketBoost from "./src/tiketBoost.png"
 import videoParticle from "./src/particle1P.mp4"
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
 import Context from '../../context/Context'
+import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupEsperaBuy';
 
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 const VideoBuyBoost = lazy(() => import ("./tokensSelect/tokenBoost/videoBuyBoost/VideoBuyBoost"))
@@ -46,7 +47,7 @@ const TiketBuyPage = () => {
   const [codigoIncorrecto, setCodigoIncorrecto] = useState(false)
 
   /* validacion de compra de tickets */
-
+  const [loadingBuy, setLoadingBuy] = useState(false)
   const [buyTicketBasic, setBuyTicketBasic] = useState(false)
   const [buyTicketBoost, setBuyTicketBoost] = useState(false)
 
@@ -100,11 +101,15 @@ const TiketBuyPage = () => {
 
   const buyBasicTicket = async () => {
     // Aca se deberia activar el timeout.
+
+    loadingBuy(true)
+
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     
     const receipt = await tx.wait()
     console.log(receipt);
 
+    loadingBuy(false)
     setBuyTicketBasic(true);
 
     setTimeout(function(){ 
@@ -115,10 +120,14 @@ const TiketBuyPage = () => {
   
   const buyBoostTicket = async () => {
     // Aca se deberia activar el timeout.
+
+    loadingBuy(true)
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+  
     const receipt = await tx.wait()
     console.log(receipt);
 
+    loadingBuy(false)
     setBuyTicketBoost(true);
 
     setTimeout(function(){ 
@@ -173,7 +182,7 @@ const TiketBuyPage = () => {
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
-
+      {loadingBuy ? <PopupEsperaBuy /> : null}
       {noMetamask ? <NoMetamask /> : null}
 
       <div className="flexTickets">
