@@ -179,7 +179,7 @@ const TiketBuyPage = () => {
       <Social />
 
 
-      <video className='particle-Tikets' src={videoParticle} autoPlay loop muted ></video>
+      <video className='particle-Tikets' src={videoParticle} preload='none' autoPlay loop muted ></video>
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}

@@ -13,7 +13,7 @@ const VideoPubli = () => {
             <h2>WATCH THE TRAILER</h2>
         </div>
         <div className="videoPubli-video">
-            <video className='videoPromocional' src={videoPromocional} controls muted  ></video>
+            <video className='videoPromocional' preload='none' src={videoPromocional} controls muted  ></video>
         </div>
     </div>
   )
