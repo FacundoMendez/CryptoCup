@@ -18,7 +18,7 @@ const TermsAndCondicionsPopup = () => {
                     context.setCheckTerminosYCondiciones(true);
                     localStorage.setItem("terms and Conditions", "Acept")
 
-                    }}>Acept</button>
+                    }}>Accept</button>
             </div>
         </div>
     </div>
