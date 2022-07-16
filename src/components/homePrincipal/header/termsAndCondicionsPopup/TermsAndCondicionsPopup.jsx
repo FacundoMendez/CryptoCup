@@ -16,7 +16,7 @@ const TermsAndCondicionsPopup = () => {
                 <button className="termsAndCondicionsPopup_buttons-acept" onClick={() => {
 
                     context.setCheckTerminosYCondiciones(true);
-                    localStorage.setItem("terms and Conditions", "Acept")
+                    localStorage.setItem("terms and Conditions", "Accept")
 
                     }}>Accept</button>
             </div>

@@ -6,7 +6,7 @@ const checkTyc = () => {
 
     console.log(checkTerminos)
 
-    if (checkTerminos ==='Acept') {
+    if (checkTerminos ==='Accept') {
         termsContainer.style.display = "none"
         sessionStorage.removeItem("terms and Conditions")
     } 

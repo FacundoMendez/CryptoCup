@@ -17,7 +17,7 @@ function App() {
   let checkTerminos = localStorage.getItem("terms and Conditions")
   let check;
 
-  if (checkTerminos ==='Acept') {
+  if (checkTerminos ==='Accept') {
     sessionStorage.removeItem("terms and Conditions")
     check = true
   } else{
