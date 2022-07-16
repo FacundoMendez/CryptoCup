@@ -95,7 +95,6 @@ const TiketBuyPage = () => {
       }
     } catch (error) {
       console.log(error);
-      setNoMetamask(true)
     }
 
   }
