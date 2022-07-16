@@ -61,8 +61,8 @@ const TiketBuyPage = () => {
 
   const login = async () => {
     try {
-      const newProvider = new ethers.providers.Web3Provider(window.ethereum);
-      if(newProvider !== undefined) {
+      if(window.ethereum !== undefined) {
+        const newProvider = new ethers.providers.Web3Provider(window.ethereum);
         const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const newSigner = await newProvider.getSigner();
         const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
@@ -95,7 +95,6 @@ const TiketBuyPage = () => {
       }
     } catch (error) {
       console.log(error);
-      setNoMetamask(true)
     }
 
   }
