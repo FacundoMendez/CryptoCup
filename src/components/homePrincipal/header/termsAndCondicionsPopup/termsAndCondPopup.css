@@ -6,7 +6,7 @@
     height: 100vh;
     overflow: hidden;
     background-color: #000000b6;
-    backdrop-filter: blur(1rem);
+/*     backdrop-filter: blur(1rem); */
     position: fixed;
     top: 0;
     z-index: 9999999;

@@ -35,7 +35,7 @@ const tokenScroll = () =>{
         })
 
 
-        gsap.to(".tokenWebGl",{
+/*         gsap.to(".tokenWebGl",{
             opacity:1,
             scale:1,
             delay:.3,
@@ -45,7 +45,7 @@ const tokenScroll = () =>{
                 start: "top center",
                 end: "bottom bottom",
             }
-        })
+        }) */
 
         gsap.to(".tokenVideo",{
             opacity:1,

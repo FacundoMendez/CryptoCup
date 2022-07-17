@@ -11,7 +11,7 @@ const TermsAndCondicionsPopup = () => {
     return (
     <div className="termsAndCondicionsPopup_container">
         <div className="termsAndCondicionsPopup_popup">
-            <p>By accepting you are confirming that you have read, understood and agree to Crypto Cup's <a href="/TermsAndConditions">Terms and Conditions</a> </p>
+            <p>We use cookies and other similar technologies to improve your experience on our service. For more details, you can consult our Cookies Policy and Privacy Policy. </p>
             <div className="termsAndCondicionsPopup_buttons">
                 <button className="termsAndCondicionsPopup_buttons-acept" onClick={() => {
 
