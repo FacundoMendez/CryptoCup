@@ -9,7 +9,7 @@
     background: rgba(255, 255, 255, 0.377);
     backdrop-filter: blur(2rem);
     z-index: 12;
-    transition: all .1s ease-in-out;
+    transition: all .5s ease-in-out linear;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -28,7 +28,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 .boxCopyCupon_active{
     border: 2px solid rgb(0, 255, 162);
-    transition: all .1s ease-in-out;
+    transition: all .5s ease-in-out linear;
 }
 
 .copy{
@@ -38,7 +38,7 @@ input[type=number] { -moz-appearance:textfield; }
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out linear;
 }
 
 .copy_active{
@@ -47,14 +47,14 @@ input[type=number] { -moz-appearance:textfield; }
 }
 
 .boxCopyCupon:hover > .containerCopy {
-    border: 2px solid rgb(255, 255, 255);
-    width: 40rem;
-    height: 22rem;
+    border: 1px solid rgb(255, 255, 255);
+    width: 36rem;
+    height: 21.5rem;
     position: relative;
     right: 17rem;
     top: 8rem;
     background-color: rgb(0, 0, 0);
-    transition: all .4s ease-in-out;
+    transition: all .5s ease-in-out linear;
     opacity: 1;
     visibility: visible;
 }
@@ -137,7 +137,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 .containerHereCupon span:hover{
     text-decoration: underline wavy rgb(206, 173, 238);
-    transition: all .5s ease-in-out;
+    transition: all 1s ease-in-out linear;
 }
 
 /* input */
