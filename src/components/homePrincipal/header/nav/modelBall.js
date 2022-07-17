@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import ballModel from "./src/models/Pelota2.gltf"
+import ballModel from "./src/models/PelotaGod.glb"
 
 
 const navBallModel = () => {
