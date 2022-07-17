@@ -59,32 +59,56 @@ const TiketBuyPage = () => {
   const [priceTicketBasic, setPriceTicketBasic] = useState(20)
   const [priceTicketBoost, setPriceTicketBoost] = useState(35)
 
+  const changeChain = () => {
+    window.ethereum.request({
+      method: "wallet_addEthereumChain",
+      params: [{
+          chainId: "0x38",
+          rpcUrls: ["https://bsc-dataseed.binance.org/"],
+          chainName: "Binance Smart Chain",
+          nativeCurrency: {
+              name: "BNB",
+              symbol: "BNB",
+              decimals: 18
+          },
+          blockExplorerUrls: ["https://bscscan.com/"]
+      }]
+    });
+  }
+
   const login = async () => {
     try {
       if(window.ethereum !== undefined) {
         const newProvider = new ethers.providers.Web3Provider(window.ethereum);
-        const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
-        const newSigner = await newProvider.getSigner();
-        const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
+        const { chainId } = await newProvider.getNetwork();
 
+        if(chainId === 4) {
+          const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
+          const newSigner = await newProvider.getSigner();
+          const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
 
-        await newContract.getReferralCodeFromAddress(newAccount[0])
-        .then(res => {
-          if (res != 0) { // si el usuario tiene un codigo de referencia
-            console.log(res);
-            setCopyActive(true);
-            setReferralCode(res);
-          }  
-          else {
-            setCopyActive(false);
-          }
-        })
+          await newContract.getReferralCodeFromAddress(newAccount[0])
+          .then(res => {
+            if (res != 0) { // si el usuario tiene un codigo de referencia
+              console.log(res);
+              setCopyActive(true);
+              setReferralCode(res);
+            }  
+            else {
+              setCopyActive(false);
+            }
+          })
 
-        setProvider(newProvider);
-        setAccount(newAccount);
-        setSigner(newSigner);
-        setContract(newContract);
-        setConnected(true);
+          setProvider(newProvider);
+          setAccount(newAccount);
+          setSigner(newSigner);
+          setContract(newContract);
+          setConnected(true);
+        } else {
+          // Aca mostrar error que esta conectado en la chain incorrecta.
+          alert("Please connect to the Rinkeby network");
+          await changeChain();
+        }
 
       } else {
         setNoMetamask(true)
