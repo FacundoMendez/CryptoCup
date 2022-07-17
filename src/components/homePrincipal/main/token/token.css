@@ -95,6 +95,16 @@
     filter: grayscale(100);
 }
 
+.tokenVideo{
+    position: relative;
+    cursor: grab;
+    transform: scale(.01);
+    opacity: 0;
+    margin-top: 15rem;
+    padding-bottom: 20rem;
+}
+
+
 .containerToken{
     display: flex;
     justify-content: center;

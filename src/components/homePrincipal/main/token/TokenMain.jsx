@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react'
-import tokenModel from './tokenModel'
+/* import tokenModel from './tokenModel' */
 import "./token.css"
 import tokenScroll from './tokenScroll'
 import backToken from "./src/BackToken.jpg"
 import tokenComingSoon from "./src/tokenComingSoon.jpg"
+import tokenVideo from "./src/tokenVideo.mp4"
 
 const TokenMain = () => {
 
     useEffect(()=>{
-        tokenModel()
+        /* tokenModel() */
         tokenScroll()
     },[])
 
@@ -28,7 +29,8 @@ const TokenMain = () => {
             <div className="textToken">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque neque minima ab ipsa animi impedit quo earum, et placeat fugit. Modi quidem ut nemo a impedit praesentium distinctio illum.</p>
             </div>
-            <canvas className='tokenWebGl'></canvas>
+           {/*  <canvas className='tokenWebGl'></canvas> */}
+            <video className='tokenVideo' preload='none' src={tokenVideo} autoPlay loop muted ></video> 
         </div>
     </div>
   )

@@ -47,6 +47,18 @@ const tokenScroll = () =>{
             }
         })
 
+        gsap.to(".tokenVideo",{
+            opacity:1,
+            scale:1,
+            delay:.3,
+            duration:2,
+            scrollTrigger:{
+                trigger: ".tokens",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+
 
         gsap.to(".tokenComingSoon-left",{
             x: "+= 100",
