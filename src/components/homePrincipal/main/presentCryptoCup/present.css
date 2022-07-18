@@ -113,13 +113,10 @@
     bottom: 6rem;
     z-index: 999999 !important;
     transform: perspective(2000px);
-    background-color: #02020254;
-    backdrop-filter: blur(1rem);
-    width: 13rem;
-    height: 13rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 100%;
     transform-style: preserve-3d;
-
 }
 
 .boxButtonTicketBuy::before{
@@ -132,32 +129,38 @@
     animation: sdb03 2.5s  ease-in-out infinite;
 }
 
-.boxButtonTicketBuy::hover{
-    position: absolute;
-    content: "";
-    width: 13rem;
-    height: 13rem;
-    border-radius: 100%;
-    -webkit-animation: sdb03 2.5s ease-in-out infinite;
-    animation: sdb03 2.5s  ease-in-out infinite;
-}
 
 .bottomTicketBuy{
-    background-image: url("./bottomTickets.png");
+    background-image: url("./src/bottomTickets.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 13rem;
     height: 13rem;
-    border: 2px solid #6a24b936;
     border-radius: 100%;
     cursor: pointer;
     filter:contrast(110%) brightness(104%) drop-shadow(0 0 30px rgba(148, 82, 255, 0.432));
 }
 
-.bottomTicketBuy:hover{
-    transform: scale(1.1) ;
-    transition: all 1.5s ease-in-out ;
+.bottomTicketBuy::before{
+    background-image: url("./src/TextoCurvo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: -3.5rem;
+    bottom: -3.7rem;
+    position: absolute;
+    content: "";
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    -webkit-animation: rotationText 2.5s ease-in-out infinite;
+    animation: rotationText 20s  linear infinite;
+}
+
+.boxButtonTicketBuy:hover{
+    filter: drop-shadow(0 0 20px rgba(225, 187, 255, 0.363));
+    transition: all 1s ease-in-out;
 }
 
 @-webkit-keyframes sdb03 {
@@ -191,6 +194,21 @@
     }
     100% {
       opacity: 0;
+    }
+  }
+
+  
+@-webkit-keyframes rotationText {
+    100% {
+        transform: rotate(360deg);
+      }
+  }
+
+
+  
+  @keyframes rotationText {
+    100% {
+      transform: rotate(360deg);
     }
   }
 
