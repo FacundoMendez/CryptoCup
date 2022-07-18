@@ -1,6 +1,6 @@
 import React, {lazy} from 'react'
 import "./home.css"
-import BackPrincipal from "./src/videos/BackCopa2.mp4"
+import backPrincipal from "./src/videos/BackCopa2.mp4"
 import soonImg from "./src/comingSoon.png"
 
 const Button = lazy(() => import ("../../buttons/Button"))
@@ -14,7 +14,7 @@ const Home = () => {
     <div id='home' className="containerHome">
 
       <div className="containerPrincipalHome">
-        <video className='BackPrincipal' preload='none' src={BackPrincipal} autoPlay loop muted ></video> 
+        <video className='BackPrincipal' src={backPrincipal} autoPlay loop muted ></video> 
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'>CRYPTO CUP <br />
