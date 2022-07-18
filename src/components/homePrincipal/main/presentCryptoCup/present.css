@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 8rem;
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
     padding-top: 5rem;
 }
 
@@ -104,6 +104,98 @@
     
 }
 
+
+/* bottom ticket buy */
+
+.boxButtonTicketBuy{
+    position: fixed;
+    left: 8rem;
+    bottom: 6rem;
+    z-index: 999999 !important;
+    transform: perspective(2000px);
+    background-color: #02020254;
+    backdrop-filter: blur(1rem);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    transform-style: preserve-3d;
+
+}
+
+.boxButtonTicketBuy::before{
+    position: absolute;
+    content: "";
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    -webkit-animation: sdb03 2.5s ease-in-out infinite;
+    animation: sdb03 2.5s  ease-in-out infinite;
+}
+
+.boxButtonTicketBuy::hover{
+    position: absolute;
+    content: "";
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    -webkit-animation: sdb03 2.5s ease-in-out infinite;
+    animation: sdb03 2.5s  ease-in-out infinite;
+}
+
+.bottomTicketBuy{
+    background-image: url("./bottomTickets.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid #6a24b936;
+    border-radius: 100%;
+    cursor: pointer;
+    filter:contrast(110%) brightness(104%) drop-shadow(0 0 30px rgba(148, 82, 255, 0.432));
+}
+
+.bottomTicketBuy:hover{
+    transform: scale(1.1) ;
+    transition: all 1.5s ease-in-out ;
+}
+
+@-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+        box-shadow: 0 0 0 45px rgba(185, 132, 255, 0.11);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 45px rgba(185, 132, 255, 0.11);
+      backdrop-filter: blur(2rem);
+      filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  
+
 @media screen and (min-width: 2550px){
 
     .containerTexts{
@@ -129,7 +221,7 @@
 
     .titleContainers h2{
         padding:  0 2rem;
-        font-size: 6rem;
+        font-size: 7rem;
         letter-spacing: 1px;
     }
     
@@ -167,9 +259,13 @@
 @media screen and (max-width: 1170px){
     
     .titleContainers h2{
-        font-size: 6rem;
+        font-size: 7rem;
     }
 
+    .titleContainers h3{
+        padding: 2rem 5rem;
+        font-size: 3rem;
+    }
 
     .subTitlePrize{
         width: 90%;
@@ -187,13 +283,14 @@
 @media screen and (max-width: 800px){
 
     .titleContainers h2{
-        font-size: 4.5rem;
+        font-size: 7rem;
     }
 
     .titleContainers h3{
+        padding: 2rem 5rem;
         font-size: 3rem;
-        padding: 0 5rem;
     }
+    
     
     .subTitlePrize{
         width: 90%;
@@ -208,8 +305,14 @@
 @media screen and (max-width: 600px){
 
     .titleContainers h2{
-        font-size: 4rem;
+        font-size: 6rem;
     }
+
+    .titleContainers h3{
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    
     
     .subTitlePrize{
         width: 94%;
@@ -218,15 +321,20 @@
     .subTitleNft{
         width: 90%;
     }
-    
+
+
     
 }
 
 
 @media screen and (max-width: 480px){
+    .boxButtonTicketBuy{
+        display: none;
+    }
 
     .titleContainers h3{
-        padding: 0 0rem;
+        padding: 1rem;
+        font-size: 2.6rem;
     }
 
     .tournamentContainer{
@@ -240,7 +348,10 @@
     .tournamentContainer{
         width: 100%;
         gap: 8rem;
+        padding-bottom:0rem;
+
     }
+
     
     .titleContainers h2{
         font-size: 5.5rem;
@@ -256,6 +367,8 @@
         width: 100%;
         text-align: inherit;
     }
+
+    
     
     .containerTexts h5{
         text-align: center;
@@ -266,8 +379,7 @@
     }
     
     .containerTexts p {
-        padding: 0rem 1rem;
-        margin-left: 1rem;
+        padding: 0rem 2rem;
         text-align: center;
         font-size: 1.8rem;
     }
@@ -283,6 +395,11 @@
 }
 
 @media screen and (max-width: 395px){
+
+    .titleContainers h3{
+        padding:  1rem;
+        font-size: 2rem;
+    }
 
     .titleContainers h2{
         font-size: 4.5rem;

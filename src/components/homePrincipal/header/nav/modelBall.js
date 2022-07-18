@@ -32,7 +32,6 @@ const navBallModel = () => {
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
         })
 
-
             /* render */
 
         const renderer =new THREE.WebGLRenderer({
@@ -51,8 +50,6 @@ const navBallModel = () => {
             camera.position.z= 4.6
         scene.add(camera)
 
-
-
         let modelBall
 
         const gltfLoader = new GLTFLoader()
@@ -64,8 +61,6 @@ const navBallModel = () => {
                 scene.add(modelBall)
             }
         )
-
-
 
             // Controls
 

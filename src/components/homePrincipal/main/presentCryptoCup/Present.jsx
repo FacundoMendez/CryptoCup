@@ -38,8 +38,14 @@ const TournamentMain = () => {
               <div className="logoContainer">
                   <img src={logo} alt="logo CRYPTO CUP" />
               </div>
+
             </div>
           </div>
+          <a href='/tickets'>
+            <div className="boxButtonTicketBuy">
+              <div className="bottomTicketBuy"></div>
+            </div>
+          </a>
         </div>
   )
 }

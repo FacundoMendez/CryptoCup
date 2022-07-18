@@ -27,7 +27,7 @@
 
 .nav{
     position: fixed;
-    z-index: 10000;
+    z-index: 99999999 !important;
     width: 100%;
     top: 0;
     height: 9rem;
@@ -388,20 +388,20 @@
       height: 4.5rem;
     }
 
-    
-.lineDappButton{
-    right: 7.7%;
-    margin-top: -1rem;
-    width: 11.5rem;
-    height: .2rem;
-}
+        
+    .lineDappButton{
+        right: 7.7%;
+        margin-top: -1rem;
+        width: 11.5rem;
+        height: .2rem;
+    }
 
-.dappTitleButton{
-    right: -1%;
-    font-size: 2.7rem;
-    width: 19rem;
-    height: 8.5rem;
-}
+    .dappTitleButton{
+        right: -1%;
+        font-size: 2.7rem;
+        width: 19rem;
+        height: 8.5rem;
+    }
 
 }
 
@@ -419,6 +419,17 @@
         z-index: 6000;
     }
     
+    .navBlur{
+        position: fixed;
+        z-index: 10000;
+        width: 100%;
+        top: -1rem;
+        height: 10.7rem;
+        background-color: rgba(40, 4, 68, 0.397);
+        transition: all .6s ease-in-out;
+        filter: blur(8px);
+        backdrop-filter: blur(1em);
+    }
 
     .nav-menu {
         flex-direction: column;

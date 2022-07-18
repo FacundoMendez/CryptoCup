@@ -46,6 +46,20 @@ const tournamentScroll = () =>{
             }
         })
 
+
+            
+        gsap.from(".boxButtonTicketBuy",{
+            opacity:0,
+            delay:.5,
+            y: 100,
+            duration:2.5,
+            scrollTrigger:{
+                trigger: ".boxTournament",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+
     }
    
 }
