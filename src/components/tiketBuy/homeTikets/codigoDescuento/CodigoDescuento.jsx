@@ -33,8 +33,8 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             </p>
             <div className="containerCopy">
                 <div className="triangle"></div>
-                <p className='text1Copy'>You can invite users with your invitation link!</p>
-                <p className='text2Copy'>Click to copy your invitation link into clipboard!</p>
+                {submitCodigoDescuento ? <p className='text2Copy'>Click to copy your invitation link into clipboard!</p> : <p className='text1Copy'>Buy your Ticket and get your Referral Code!</p>}
+
             </div>
         </div>
         <div className="containerHereCupon"> 

@@ -1516,12 +1516,12 @@
         letter-spacing: 1px;
         text-align: inherit;
         margin-left: .5rem;
-        padding: 0rem;
+        padding: 1rem 0;
     }
 
     .titleTicket h2{
-        font-size: 3.5rem;
-        line-height: 7rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
     }
 
 

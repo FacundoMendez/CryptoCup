@@ -43,7 +43,7 @@ const TiketBuyPage = () => {
   /* validaciones de errores */
 
   const [codigoPropio, setCodigoPropio] = useState(false)
-/*   const [chainIncorrecta, setChainIncorrecta] = useState(false) */
+  const [chainIncorrecta, setChainIncorrecta] = useState(false)
   const [noMetamask, setNoMetamask] = useState(false)
   const [codigoIncorrecto, setCodigoIncorrecto] = useState(false)
 
@@ -106,7 +106,11 @@ const TiketBuyPage = () => {
           setConnected(true);
         } else {
           // Aca mostrar error que esta conectado en la chain incorrecta.
-          alert("Please connect to the Rinkeby network");
+          setChainIncorrecta(true)
+          setTimeout(function(){
+            setChainIncorrecta(false)
+          },5000)
+
           await changeChain();
         }
 
@@ -206,7 +210,8 @@ const TiketBuyPage = () => {
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
       {loadingBuy ? <PopupEsperaBuy /> : null}
-      {noMetamask ? <NoMetamask /> : null}
+      {noMetamask ? <NoMetamask noMetamask={noMetamask} textNoMetamask="Please Install Metamask!" /> : null}
+      {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Please connect to the Rinkeby Network!"/> : null }     {/* modificar network */}
 
       <div className="flexTickets">
           <div className="ticketsSale">
