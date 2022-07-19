@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 999999;
-    right: -23.5rem;
+    right: -24rem;
     transition: all .5s ease-in-out;
 }
 
