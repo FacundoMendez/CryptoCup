@@ -1,8 +1,7 @@
 import React, {lazy, useEffect, useState} from 'react'
 import "./home.css"
-import backCopaPrincipal from "./src/videos/backCopa.mp4"
+import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4"
 import soonImg from "./src/comingSoon.png"
-import backImagenCopa from "./src/backCopaImg.jpg"
 
 const Button = lazy(() => import ("../../buttons/Button"))
 const Social = lazy(() => import ('./social/Social'))
@@ -35,7 +34,8 @@ const Home = () => {
     <div id='home' className="containerHome">
 
       <div className="containerPrincipalHome">
-   {  !esMovil  ?   <video className='backPrincipal' src={backCopaPrincipal} autoPlay loop muted  type="video/mp4"></video> :  <img className='backPrincipal' src={backImagenCopa} alt="backPrincialMovil" /> }
+      {  !esMovil  ?   <video className='backPrincipal' src={particulasCopa} autoPlay loop muted  type="video/mp4"></video> : null  }
+
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'>CRYPTO CUP <br />

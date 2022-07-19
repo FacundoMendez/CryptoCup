@@ -16,11 +16,12 @@
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: black;
-  background-image: url("./src/backCopaImg.jpg");
-  filter: contrast(110%) brightness(105%) ;
+  background-image: url("./src/back1.jpeg");
   background-size: cover;
   background-position:10%;
+  filter: contrast(104%) brightness(115%)  ;
 }
+
 
 .backPrincipal{
   position: absolute;
@@ -28,21 +29,13 @@
   height: 100vh;
   text-align: center;
   object-fit: cover;
-  filter: contrast(115%) brightness(100%)  ;
   opacity:1;
   z-index: 10;
 }
 
-.particleVideo{
-  position: absolute;
-  opacity: .5;
-  z-index: 13;
-  filter: contrast(280%) brightness(100%) hue-rotate(-160deg);
-}
-
-.particleVideo video{
-  width: 100%;
-  object-fit: cover;
+.backPrincipal{
+  opacity: .15;
+  filter: contrast(220%) brightness(110%)  hue-rotate(220deg);
 }
 
 .containerPrincipalHome::after{

@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useState, useContext} from 'react'
+import React, {lazy, Suspense, useState, useContext, useEffect} from 'react'
 import { ethers } from 'ethers';
 import { contractAddress, abi } from './utils'
 import truncateEthAddress from 'truncate-eth-address';
@@ -21,9 +21,28 @@ const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
-
 const TiketBuyPage = () => {
   const context = useContext(Context)
+
+  const [esMovil , setEsMovil] = useState(false)
+
+  function isMobile(){
+    return (
+        (navigator.userAgent.match(/Android/i)) ||
+        (navigator.userAgent.match(/webOS/i)) ||
+        (navigator.userAgent.match(/iPhone/i)) ||
+        (navigator.userAgent.match(/iPod/i)) ||
+        (navigator.userAgent.match(/BlackBerry/i))
+    );
+  }
+
+    useEffect(() => {
+      if(isMobile()){
+        setEsMovil(true)
+      } else {
+        setEsMovil(false)
+      } 
+    },[])
 
   /* validaciones de coneccion blockchain */
 
@@ -205,7 +224,8 @@ const TiketBuyPage = () => {
 
       <Social />
 
-      <video className='particle-Tikets' src={videoParticle} preload='none' autoPlay loop muted ></video>
+{  !esMovil  ?   <video className='particle-Tikets' src={videoParticle}  preload='none' autoPlay loop muted  type="video/mp4"></video> : null  }
+
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
