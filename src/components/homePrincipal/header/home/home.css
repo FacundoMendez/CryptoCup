@@ -300,13 +300,21 @@
     letter-spacing: 3.4px;
   }
 
+  .containerPrincipalHome{
+    background-position: 65% ;
+  }
 }
+
 
 @media screen and (max-width: 1170px){
 
   .titlePrincipal{
       font-size: 5.8rem;
       letter-spacing: 2px;
+  }
+
+  .containerPrincipalHome{
+    background-position: 65% ;
   }
 
 }
@@ -320,6 +328,9 @@
   .titlePrincipal{
       font-size: 5.8rem;
       letter-spacing: 2px;
+  }
+  .containerPrincipalHome{
+    background-position: 70% ;
   }
 }
 
@@ -337,6 +348,9 @@
       letter-spacing: 2px;
       text-shadow: 0 0 5rem rgba(0, 0, 0, 0.788);
       filter:  contrast(135%) brightness(120%) drop-shadow(0 0 20px black);
+  }
+  .containerPrincipalHome{
+    background-position: 70% ;
   }
 }
 
@@ -376,6 +390,9 @@
     opacity: .14;
     z-index: 13;
     filter: contrast(230%) brightness(100%) hue-rotate(-160deg);
+  }
+  .containerPrincipalHome{
+    background-position: 70% ;
   }
 }
 

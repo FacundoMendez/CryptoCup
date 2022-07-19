@@ -8,9 +8,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 999999;
+    z-index: 999999 I !important;
     right: -24rem;
     transition: all .5s ease-in-out;
+    top: 0;
 }
 
 .social a {
@@ -30,9 +31,9 @@
     transition: transform 1s;
     align-items: center;
     transition: all .5s ease-in-out;
-    background-color: rgba(236, 187, 255, 0.178);
+    background-color: rgba(85, 73, 104, 0.308);
     backdrop-filter: blur(3rem);
-    border: 2px groove rgba(183, 119, 255, 0.377);
+    border: 2px groove #d19fffa6;
 } 
 
 .social a:hover {
@@ -53,7 +54,7 @@
 }
 
 .social a:hover:nth-child(2) i {
-    color: #eb4894;
+    color: #eb6048;
 }
 
 .social a:hover:nth-child(3) i {
