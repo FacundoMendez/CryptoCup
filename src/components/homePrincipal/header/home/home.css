@@ -16,6 +16,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: black;
+  background-image: url("./src/backCopaImg.jpg");
+  filter: contrast(115%) brightness(100%) ;
+  background-size: cover;
+  background-position:10%;
 }
 
 .backPrincipal{
