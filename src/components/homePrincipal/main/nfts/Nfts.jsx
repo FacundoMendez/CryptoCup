@@ -34,11 +34,11 @@ const Nfts = () => {
         <div className="tiposTorneos">   
           <div className="container">
             <div className="container_card ">
-                <video className='videoCopaBasic' src={videoCopaBasic} autoPlay loop muted ></video> 
+                <video className='videoCopaBasic' src={videoCopaBasic} preload='none' autoPlay loop muted type="video/mp4" ></video> 
                 <p className='basicTextVideo'>BASIC LADDER</p>
             </div>  
             <div className="container_card"> 
-                <video className='videoCopaBoost' src={videoCopaBoost} autoPlay loop muted ></video> 
+                <video className='videoCopaBoost' src={videoCopaBoost} preload='none' autoPlay loop muted type="video/mp4" ></video> 
                 <p className='boostTextVideo'>BOOST LADDER</p>
             </div> 
           </div>
@@ -56,9 +56,6 @@ const Nfts = () => {
 					<path className="a3" d="M0 40 L30 72 L60 40"></path>
 			</svg>
       </div>
-
-
-
 
 
       <section className="events-page ">

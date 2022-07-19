@@ -5,7 +5,7 @@
   }
   
   .wrapperBotton .btn {
-    width: 14.5rem;
+    width: 22.5rem;
     height: 4.5rem;
     margin: 0 3rem;
     text-align: center;
@@ -32,7 +32,7 @@
   .BorderTopBottom:before {
     content: "";
     position: absolute;
-    width: 3rem;
+    width: 4rem;
     height: 2px;
     top: -6px;
     left: -7px;
@@ -44,7 +44,7 @@
   .BorderTopBottom:after {
     content: "";
     position: absolute;
-    width: 3rem;
+    width: 4rem;
     height: 2px;
     bottom: -6px;
     right: -7px;
@@ -59,7 +59,7 @@
     top: -4px;
     left: -7px;
     width: 2px;
-    height: 2rem;
+    height: 3rem;
     background: #fff;
     transition: all 0.5s ease;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
@@ -71,7 +71,7 @@
     bottom: -4px;
     right: -7px;
     width: 2px;
-    height: 2rem;
+    height: 3rem;
     background: #fff;
     transition: all 0.5s ease;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
@@ -79,7 +79,7 @@
   
   .btn:hover .BorderTopBottom:before,
   .btn:hover .BorderTopBottom:after {
-    width: 15.7rem;
+    width: 23.7rem;
     filter: drop-shadow(0 0 5px rgb(182, 136, 255)) brightness(140%);
     transition: all 0.5s ease;
   }

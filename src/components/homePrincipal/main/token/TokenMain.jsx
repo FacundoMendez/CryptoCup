@@ -30,7 +30,7 @@ const TokenMain = () => {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque neque minima ab ipsa animi impedit quo earum, et placeat fugit. Modi quidem ut nemo a impedit praesentium distinctio illum.</p>
             </div>
            {/*  <canvas className='tokenWebGl'></canvas> */}
-            <video className='tokenVideo' preload='none' src={tokenVideo} autoPlay loop muted ></video> 
+            <video className='tokenVideo' preload='none' src={tokenVideo} autoPlay loop muted type="video/mp4"></video> 
         </div>
     </div>
   )

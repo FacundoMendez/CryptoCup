@@ -8,7 +8,7 @@ const VideoBuyBoost = () => {
     videoBuyBoostFuncional()
   },[])
   return (
-    <video className='boostBuyVideo' src={boostBuyVideo} preload='none' autoPlay ></video> 
+    <video className='boostBuyVideo' src={boostBuyVideo} preload='none' autoPlay type="video/mp4" ></video> 
   )
 }
 

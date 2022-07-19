@@ -14,7 +14,7 @@ const Home = () => {
     <div id='home' className="containerHome">
 
       <div className="containerPrincipalHome">
-{        <video className='backPrincipal' src={backCopaPrincipal} autoPlay loop muted ></video> }
+{        <video className='backPrincipal' src={backCopaPrincipal} autoPlay loop muted  type="video/mp4"></video> }
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'>CRYPTO CUP <br />
@@ -23,7 +23,7 @@ const Home = () => {
               
               <div className="buttonsHome">
                 <a href="./tickets">
-                  <Button title="TICKETS"/>
+                  <Button title="BUY TICKETS"/>
                 </a>
             {/* <a href="./presale"> */}
                 <div className=" wrapperBottonPresale">

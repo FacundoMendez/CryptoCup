@@ -9,7 +9,7 @@ const VideoBuyBasic = () => {
     videoBuyBasicFuncional()
   }, [])
   return (
-    <video className='basicBuyVideo' preload='none'  src={basicBuyVideo} autoPlay ></video> 
+    <video className='basicBuyVideo' preload='none'  src={basicBuyVideo} autoPlay type="video/mp4" ></video> 
   )
 }
 
