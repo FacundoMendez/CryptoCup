@@ -100,7 +100,6 @@ const navBallModel = () => {
 
 
 
-
         /* OPTIMIZACION */
         
         gltfLoader.verticesNeedUpdate = true; 

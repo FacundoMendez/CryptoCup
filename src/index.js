@@ -14,7 +14,23 @@ window.onload = function() {
     document.addEventListener("contextmenu", function(e){
       e.preventDefault();
     }, false);
-   };
+};
+
+
+/* evita problemas de consola  */
+(function () {
+    if (typeof EventTarget !== "undefined") {
+        let func = EventTarget.prototype.addEventListener;
+        EventTarget.prototype.addEventListener = function (type, fn, capture) {
+            this.func = func;
+            if(typeof capture !== "boolean"){
+                capture = capture || {};
+                capture.passive = false;
+            }
+            this.func(type, fn, capture);
+        };
+    };
+}());
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
