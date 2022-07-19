@@ -46,7 +46,7 @@ const navBallModel = () => {
 
             /* camera */
             
-        const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 100)
+        const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 10)
             camera.position.z= 4.6
         scene.add(camera)
 
@@ -68,7 +68,6 @@ const navBallModel = () => {
         controls.enableDamping = true
         controls.enableZoom = false 
         controls.enablePan= false
-
         controls.minPolarAngle = 1.7;
         controls.maxPolarAngle = 1.7;
 
