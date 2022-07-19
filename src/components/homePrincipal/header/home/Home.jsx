@@ -14,7 +14,7 @@ const Home = () => {
     <div id='home' className="containerHome">
 
       <div className="containerPrincipalHome">
-        <video className='backPrincipal' src={backCopaPrincipal} autoPlay loop muted ></video> 
+{        <video className='backPrincipal' src={backCopaPrincipal} autoPlay loop muted ></video> }
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'>CRYPTO CUP <br />
