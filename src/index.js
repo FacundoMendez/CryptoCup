@@ -32,7 +32,7 @@ window.onload = function() {
     };
 }());
 
-console.log("%cCRYPTO CUP QATAR 2022!",`
+console.log("%cCRYPTO CUP QATAR 2022",`
   box-sizing: content-box;
   border: none;
   font: bold 25px/normal "Anton", Helvetica, sans-serif;
