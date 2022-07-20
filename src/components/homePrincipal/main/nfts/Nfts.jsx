@@ -7,9 +7,6 @@ import videoCopaBoost from "./src/prizepoolBoostVideo.mp4"
 import effectPool from './effectPool'
 
 
-
-
-
 const Nfts = () => {
 
   useEffect(()=> {

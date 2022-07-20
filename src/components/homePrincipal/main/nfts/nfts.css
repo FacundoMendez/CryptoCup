@@ -175,7 +175,8 @@
 
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
-    filter: contrast(120%) brightness(140%);
+    /* filter: contrast(120%) brightness(140%); */
+    filter: contrast(120%) brightness(110%);
 }
 
 /* ---------- */
@@ -205,7 +206,7 @@
 
 .event1 .image {
     top: 50%;
-    background-image: url(./src/prizepoolBasic.png);
+    background-image: url(./src/prizepoolBasic.jpeg);
     background-size: contain;
     width: 51%;
     text-align: center;
@@ -215,7 +216,7 @@
 }
 
 .event2 .image {
-    background-image: url(./src/prizepoolBoost.png);
+    background-image: url(./src/prizepoolBoost.jpeg);
     background-size: contain;
     width: 51.00%;
     text-align: center;
