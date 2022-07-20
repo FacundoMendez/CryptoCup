@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 999999 I !important;
+    z-index: 999999  !important;
     right: -24rem;
     transition: all .5s ease-in-out;
     top: 0;
@@ -17,7 +17,7 @@
 .social a {
     color: white;
     letter-spacing: 1px;
-    background: #34017796 ;
+    background: #34017754 ;
     font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
@@ -31,7 +31,7 @@
     transition: transform 1s;
     align-items: center;
     transition: all .5s ease-in-out;
-    background-color: rgba(85, 73, 104, 0.308);
+    background-color: rgba(85, 73, 104, 0.158);
     backdrop-filter: blur(3rem);
     border: 2px groove #d19fffa6;
 } 
