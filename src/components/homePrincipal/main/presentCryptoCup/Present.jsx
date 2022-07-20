@@ -41,7 +41,7 @@ const TournamentMain = () => {
 
             </div>
           </div>
-          <a href='/tickets'>
+          <a href='/tickets' aria-label="Tickets">
             <div className="boxButtonTicketBuy">
               <div className="bottomTicketBuy"></div>
             </div>
