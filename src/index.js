@@ -32,6 +32,15 @@ window.onload = function() {
     };
 }());
 
+console.log("%cCRYPTO CUP QATAR 2022!",`
+  box-sizing: content-box;
+  border: none;
+  font: bold 25px/normal "Anton", Helvetica, sans-serif;
+  color:#9999ff;
+  line-height:50px;
+  text-shadow: 0 0 0px #9999ff , 10px -10px 30px #9999ff, -20px -20px 40px #000000 ;
+`);
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
