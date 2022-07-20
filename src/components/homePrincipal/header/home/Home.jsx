@@ -3,6 +3,7 @@ import "./home.css"
 import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4"
 import soonImg from "./src/comingSoon.png"
 
+
 const Button = lazy(() => import ("../../buttons/Button"))
 const Social = lazy(() => import ('./social/Social'))
 const Timer = lazy(() => import ('./timer/Timer'))
@@ -28,12 +29,30 @@ const Home = () => {
     } else {
       setEsMovil(false)
     } 
+
+
+    const elems = document.querySelectorAll('.copa');
+    const layer3 = document.querySelector('.estadio');
+    const layer4 = document.querySelector('.piso');
+    
+    
+    setTimeout(function () {
+        elems.forEach(function (elem, index) {
+            elem.style.animation = "none";
+        });
+    }, 1500);
+    
+    
   },[])
+
+
+
  
   return (
     <div id='home' className="containerHome">
 
       <div className="containerPrincipalHome">
+
       {  !esMovil  ?   <video className='backPrincipal' src={particulasCopa} autoPlay loop muted  type="video/mp4"></video> : null  }
 
         <div className='textPrincipalHome'>
