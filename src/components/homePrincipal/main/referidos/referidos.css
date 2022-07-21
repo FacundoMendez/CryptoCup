@@ -197,6 +197,21 @@
         font-size: 3rem !important;
         padding: 0 .5rem;
     }
+
+
+    .cortinaTop{
+        position: absolute;
+        width: 100%;
+        height:24.5rem;
+        top: -5.7rem;
+    }
+    
+    .cortinaBottom{
+        width: 100%;
+        height: 24.5rem;
+        bottom: -5.7rem;
+    }
+    
 }
 
 

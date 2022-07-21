@@ -24,7 +24,7 @@
     flex-direction: column;
     overflow: hidden;
     margin: 20rem auto;
-    
+    padding: 10rem 0;
 }
 
 .boxPrivacy h4{
@@ -80,22 +80,21 @@
     
     .boxPrivacy{
         width: 75%;
-        padding-bottom: 5rem;
     }
 
     .boxPrivacy h4{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 4rem 3rem;
     }
 
 
     .titlePrivacy{
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding: 3rem  ;
     }
     
     .textPrivacy p{
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         padding: 0 3rem;
     }
 }

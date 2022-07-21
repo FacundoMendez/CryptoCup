@@ -151,8 +151,9 @@ const TiketBuyPage = () => {
 
     setLoadingBuy(true)
 
-    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode)
     
+
     const receipt = await tx.wait()
     console.log(receipt);
 
