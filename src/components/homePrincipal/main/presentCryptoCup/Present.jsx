@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import "./present.css"
-import backgroundReflejo from "./src/BackTournament.jpg"
+/* import backgroundReflejo from "./src/BackTournament.jpg" */
 import presentScroll from './presentScroll'
 import logo from "../src/Logo.png"
 
@@ -13,7 +13,7 @@ const TournamentMain = () => {
 
   return (
       <div id='tournament' className="tournamentContainer">
-        <img className="backgroundReflejo backPresentacion"src={backgroundReflejo}  alt="backReflejo" />
+       {/*  <img className="backgroundReflejo backPresentacion"src={backgroundReflejo}  alt="backReflejo" /> */}
         
         <div className="boxTournament">
 
