@@ -151,7 +151,10 @@ const TiketBuyPage = () => {
 
     setLoadingBuy(true)
 
-    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode)
+    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    .catch(e => {
+      setLoadingBuy(false); // Aca se cancela la compra.
+    });
     
 
     const receipt = await tx.wait()
@@ -171,7 +174,10 @@ const TiketBuyPage = () => {
 
     setLoadingBuy(true)
     const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
-  
+    .catch(e => {
+      setLoadingBuy(false); // Aca se cancela la compra.
+    });
+
     const receipt = await tx.wait()
     console.log(receipt);
 
