@@ -33,7 +33,7 @@
 }
 
 .backPrincipal{
-  opacity: .21;
+  opacity: .15;
   filter: contrast(350%) brightness(100%)  hue-rotate(225deg);
 }
 
