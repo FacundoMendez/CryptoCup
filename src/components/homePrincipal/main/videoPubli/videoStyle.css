@@ -45,7 +45,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 2rem;
-    font-size: 6rem;
+    font-size: 7rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -55,6 +55,7 @@
     background-image: linear-gradient(180deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
+    font-family: qatarHeavy;
 }
 
 .videoPubli-video{

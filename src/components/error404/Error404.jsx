@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import "./error404.css"
-import logo from "../homePrincipal/main/src/Logo.png"
+import logo from "./src/Logo.png"
 import particulas from "../tiketBuy/homeTikets/src/particle1P.mp4"
 
 const Error404 = () => {

@@ -56,7 +56,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -66,6 +66,9 @@
     background-image: linear-gradient(160deg, #f76f00, #ffb520, #fef1a2, #ffb520, #f76f00);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
+    font-family: qatarHeavy;
+    margin-top: -1.5rem;
+
 }
 
 .subTitlePrize{
@@ -84,17 +87,17 @@
 
 
 .tournamentTitle h2{
-    font-size: 8.5rem;
-    letter-spacing: 1px;
+    font-size: 7rem !important;
+    letter-spacing: 0px;
     text-transform: uppercase;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
-    inset 0 -1px 1px 3px #ffb92d;
-    background-image: linear-gradient(160deg, #f76f00, #ffb520, #fef1a2, #ffb520, #f76f00);
-    
+    inset 0 -1px 1px 3px #ff9720;
+    background-image: linear-gradient(160deg, #f76300, #f88c11, #f7eeb3, #f88c11, #f76300);
+    font-family: qatarHeavy;
 }
 
 

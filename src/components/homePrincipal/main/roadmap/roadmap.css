@@ -56,8 +56,10 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     filter: drop-shadow(0 0 40px black);
+    font-family: qatarHeavy;
+
 }
 
  .intro {
@@ -136,6 +138,8 @@
     font-weight: bold;
     font-size: 2rem;
     padding-left: 1rem;
+    font-family: qatarHeavy;
+
   }
     
   .timeline ul li:nth-child(odd) div {
@@ -177,6 +181,7 @@
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
+    font-family: qatarHeavy;
 
   }
   

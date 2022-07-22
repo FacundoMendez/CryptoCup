@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import "./present.css"
 /* import backgroundReflejo from "./src/BackTournament.jpg" */
 import presentScroll from './presentScroll'
-import logo from "../src/Logo.png"
+import logo from "./src/Logo.png"
 
 
 const TournamentMain = () => {

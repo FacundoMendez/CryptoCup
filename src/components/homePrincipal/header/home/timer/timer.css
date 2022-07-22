@@ -15,9 +15,9 @@
   text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
   inset 0 -2px 5px 1px #9999ff,
   inset 0 -1px 1px 3px #9999ff;
-  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  background-image: linear-gradient(160deg, #8f70ff, #b471ff, #d5b9ff,  #d5b9ff, #b471ff, #8f70ff);
   letter-spacing: 1px;
-  font-family: qatar;
+  font-family: qatarHeavy;
 
 }
   
@@ -31,7 +31,7 @@
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
-  font-family: qatar;
+  font-family: qatarHeavy;
   color: transparent;
   text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
   inset 0 -2px 5px 1px #9999ff,

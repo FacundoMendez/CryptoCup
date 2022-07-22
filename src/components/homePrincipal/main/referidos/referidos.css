@@ -42,7 +42,7 @@
     position: absolute;
     width: 100%;
     height:24.5rem;
-    top: 0;
+    top: -.2rem;
     z-index: 10;
     background-color:#080808;
     backdrop-filter: blur(1rem);
@@ -57,7 +57,7 @@
     position: absolute;
     width: 100%;
     height: 24.5rem;
-    bottom: -1.8rem;
+    bottom: -.2rem;
     background-color:#080808;
     backdrop-filter: blur(1rem);
     border: 2px solid rgba(0, 0, 0, 0.774);
@@ -105,6 +105,7 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     padding-bottom: 2rem;
+    font-family: qatarHeavy;
 }
 
 .textsReferidos p{
@@ -115,6 +116,7 @@
     line-height: 3.5rem;
     text-align: center;
     filter: drop-shadow(0 0 20px black);
+    
 
 }
 
@@ -133,8 +135,9 @@
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     font-size: 3rem !important;
     font-weight: bold;
-    padding: 0 2rem;
-    font-family: gilron;
+    padding: 0 1.5rem;
+    font-family: qatarHeavy;
+
 }
 
 .linesBackTop{
