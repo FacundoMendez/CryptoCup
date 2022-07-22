@@ -167,7 +167,7 @@
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     overflow: hidden;
-    background: #161623;
+    background: #000000;
     filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075));
     border: 4px groove rgb(255, 213, 150);
     backdrop-filter: blur(1rem);
@@ -176,8 +176,9 @@
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
     /* filter: contrast(120%) brightness(140%); */
-    filter: contrast(120%) brightness(110%);
+    filter: contrast(180%) brightness(100%);
 }
+
 
 /* ---------- */
 
