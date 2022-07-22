@@ -31,11 +31,11 @@ const Nfts = () => {
         <div className="tiposTorneos">   
           <div className="container">
             <div className="container_card ">
-                <video className='videoCopaBasic' src={videoCopaBasic} preload='none' autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBasic' src={videoCopaBasic} autoPlay loop muted type="video/mp4" ></video> 
                 <p className='basicTextVideo'>BASIC LADDER</p>
             </div>  
             <div className="container_card"> 
-                <video className='videoCopaBoost' src={videoCopaBoost} preload='none' autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBoost' src={videoCopaBoost}  autoPlay loop muted type="video/mp4" ></video> 
                 <p className='boostTextVideo'>BOOST LADDER</p>
             </div> 
           </div>
