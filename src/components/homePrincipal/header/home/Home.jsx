@@ -57,8 +57,8 @@ const Home = () => {
 
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <h1 className='titlePrincipal'>CRYPTO CUP <br />
-                TOURNAMENT
+              <h1 className='titlePrincipal'> CRYPTO CUP <br />
+                TOURNAMENTS
               </h1>
               
               <div className="buttonsHome">
