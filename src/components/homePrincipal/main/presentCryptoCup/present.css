@@ -27,8 +27,8 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
-    filter: contrast(150%) brightness(115%);
-    opacity: .4;
+    filter: contrast(120%) brightness(100%);
+    opacity: .5;
 } 
 
 .boxTournament{
