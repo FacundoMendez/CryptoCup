@@ -11,7 +11,7 @@ import NoConnectedWallet from './popupsErrors/noConnectedWallet/NoConnectedWalle
 
 const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
     useEffect(() => {
-        codigoFuncional()
+       /*  codigoFuncional() */
     },[])
 
     if(submitCodigoDescuento){
@@ -37,7 +37,7 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
 
             </div>
         </div>
-        <div className="containerHereCupon"> 
+{/*         <div className="containerHereCupon"> 
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 
             <div className="containerInputCupon">
@@ -55,7 +55,7 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             {!connected ? <NoConnectedWallet /> : null}
             {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
             {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
-        </div>
+        </div> */}
 
     </div>
 

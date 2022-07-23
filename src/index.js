@@ -10,11 +10,6 @@ root.render(
 );
 
 
-window.onload = function() {
-    document.addEventListener("contextmenu", function(e){
-      e.preventDefault();
-    }, false);
-};
 
 
 /* evita problemas de consola  */
