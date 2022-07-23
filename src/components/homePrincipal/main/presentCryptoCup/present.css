@@ -8,6 +8,7 @@
     gap: 8rem;
     padding-bottom: 10rem;
     padding-top: 5rem;
+    
 }
 
 .logoContainer{
@@ -18,6 +19,7 @@
 .logoContainer img{
     object-fit: cover;
     width: 45rem;
+    border-radius: 50%;
     filter: brightness(125%) contrast(120%) drop-shadow( 0 0 80px rgba(141, 42, 255, 0.281));
 }
 
@@ -63,11 +65,11 @@
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
-    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    background-image: linear-gradient(160deg, #ff933a, #fcc250, #fef1a2, #fcc250, #ff933a);
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
     font-family: qatarHeavy;
-    margin-top: -1.5rem;
+    margin-top: -2rem;
 
 }
 
@@ -88,7 +90,6 @@
 
 .tournamentTitle h2{
     font-size: 7rem ;
-    letter-spacing: 0px;
     text-transform: uppercase;
     -webkit-background-clip: text;
     background-clip: text;
@@ -98,6 +99,7 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     font-family: qatarHeavy;
+    -webkit-text-stroke: 2px transparent;
 }
 
 

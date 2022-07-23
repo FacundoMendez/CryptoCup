@@ -19,7 +19,7 @@ const tiketsScroll = () =>{
             duration:2,
             scrollTrigger:{
                 trigger: ".containerTikets",
-                start: "top center",
+                start: "top 60%",
                 end: "bottom bottom",
             }
         })
@@ -31,7 +31,7 @@ const tiketsScroll = () =>{
             duration:.7,
             scrollTrigger:{
                 trigger: ".containerTikets",
-                start: "top center",
+                start: "top 60%",
                 end: "bottom bottom",
             }
         })
@@ -42,7 +42,7 @@ const tiketsScroll = () =>{
             duration:2,
             scrollTrigger:{
                 trigger: ".containerTikets",
-                start: "top center",
+                start: "top 50%",
                 end: "bottom bottom",
             }
         })
