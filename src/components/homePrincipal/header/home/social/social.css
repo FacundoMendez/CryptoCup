@@ -50,19 +50,19 @@
 }
 
 .social a:hover:nth-child(1) i {
-    color: #3db1e7;
+    color: #66c2ec;
 }
 
 .social a:hover:nth-child(2) i {
-    color: #eb6048;
+    color: #e2a296;
 }
 
 .social a:hover:nth-child(3) i {
-    color: #279add;
+    color: #77b7dd;
 }
 
 .social a:hover:nth-child(4) i {
-    color: #846de9;
+    color: #a899ee;
 }
 
 

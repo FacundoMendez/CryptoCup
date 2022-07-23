@@ -179,7 +179,7 @@
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
     /* filter: contrast(120%) brightness(140%); */
-    filter: contrast(180%) brightness(100%);
+    filter: contrast(105%) brightness(105%);
 }
 
 
