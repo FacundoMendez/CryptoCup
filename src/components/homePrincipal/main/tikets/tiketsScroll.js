@@ -10,6 +10,19 @@ const tiketsScroll = () =>{
     if (!isMobile()) {
 
         gsap.registerPlugin(ScrollTrigger);
+        
+
+        gsap.from(".backTikets",{
+            opacity:0,
+            y:200,
+            x:-200,
+            duration:2,
+            scrollTrigger:{
+                trigger: ".containerTikets",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
 
 
         gsap.from(".tiketsTitle",{

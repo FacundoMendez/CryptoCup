@@ -11,8 +11,20 @@ const tournamentScroll = () =>{
         gsap.registerPlugin(ScrollTrigger); 
 
 
+        gsap.from(".backPresentacion",{
+            opacity:0,
+            duration:3,
+            scrollTrigger:{
+                trigger: ".boxTournament",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+    
+
         gsap.from(".tournamentTitle",{
             opacity:0,
+            delay:.3,
             scale:1.5,
             duration:.5,
             scrollTrigger:{
