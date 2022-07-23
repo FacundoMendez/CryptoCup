@@ -4,7 +4,7 @@ const copyActiveFuncional = (code) => {
     const boxCopy = document.querySelector(".copy")
     const boxCopyCupon = document.querySelector(".boxCopyCupon")
  
-    copyValue(code);
+    copyValue("https://cryptocupqatar.io/tickets?r=" + code.toString());
 
     boxCopy.classList.add("copy_active")
     boxCopyCupon.classList.add("boxCopyCupon_active")
