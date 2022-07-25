@@ -1,18 +1,14 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "./codigoDescuento.css"
-import codigoFuncional from './codigoFuncional'
+/* import codigoFuncional from './codigoFuncional' */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCopy, faAnglesRight} from '@fortawesome/free-solid-svg-icons'
+import { faCopy} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
-import CodigoIncorrecto from './popupsErrors/codigoIncorrecto/CodigoIncorrecto'
-import PopupErrorCodigoPropio from './popupsErrors/codigoPropio/PopupErrorCodigoPropio'
-import NoConnectedWallet from './popupsErrors/noConnectedWallet/NoConnectedWallet'
 
-const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento, checkRefCodeValid, codigoPropio , codigoIncorrecto}) => {
-    useEffect(() => {
-       /*  codigoFuncional() */
-    },[])
+
+const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento , checkRefCodeValid /*, codigoPropio , codigoIncorrecto */}) => {
+
 
     if(submitCodigoDescuento){
         submitActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que valido si el cupon es correcto ) 
@@ -34,9 +30,9 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             <div className="containerCopy">
                 <div className="triangle"></div>
                 {submitCodigoDescuento ? <p className='text2Copy'>Click to copy your invitation link into clipboard!</p> : <p className='text1Copy'>Buy your Ticket and get your Referral Code!</p>}
-
             </div>
         </div>
+        
 {/*         <div className="containerHereCupon"> 
             <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
 

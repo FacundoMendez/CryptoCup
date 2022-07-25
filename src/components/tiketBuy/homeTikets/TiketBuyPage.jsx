@@ -195,7 +195,7 @@ const TiketBuyPage = () => {
         await contract.getReferralAddressFromCode(code)
         .then(res => {
           if (res != "0x0000000000000000000000000000000000000000") {
-            setSubmitCodigoDescuento(true);
+            setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
             setActiveReferralCode(code);
           } 
           else {

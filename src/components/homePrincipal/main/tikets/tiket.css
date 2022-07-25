@@ -363,11 +363,6 @@
         gap: 2rem;
     }
 
-    .backTikets{
-        width: 100vw;
-        object-fit: cover;
-    }
-
     .textTikets{
         width: 65%;
         gap:3rem;
@@ -395,6 +390,14 @@
         height: 100%;
     }
     
+    .backTikets{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: absolute;
+    }
+
     
 }
 
