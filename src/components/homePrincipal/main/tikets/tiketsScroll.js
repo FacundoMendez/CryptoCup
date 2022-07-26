@@ -12,7 +12,7 @@ const tiketsScroll = () =>{
         gsap.registerPlugin(ScrollTrigger);
         
 
-        gsap.from(".backTikets",{
+/*         gsap.from(".backTikets",{
             opacity:0,
             y:200,
             x:-200,
@@ -23,7 +23,7 @@ const tiketsScroll = () =>{
                 end: "bottom bottom",
             }
         })
-
+ */
 
         gsap.from(".tiketsTitle",{
             opacity:0,
