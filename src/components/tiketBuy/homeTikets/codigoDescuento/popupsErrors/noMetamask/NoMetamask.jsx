@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 import noMetamaskFuncional from './noMetamaskFuncional'
-const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainIncorrecta}) => {
+const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainIncorrecta, noBalance}) => {
 
     useEffect(() => {
         noMetamaskFuncional()
@@ -24,6 +24,13 @@ const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainInc
       :null
     }
 
+{
+      noBalance ?     
+      <div className="errorNoMetamask">
+        <p>{noBalance}</p>
+      </div>  
+      :null
+    }
 
 
     </>

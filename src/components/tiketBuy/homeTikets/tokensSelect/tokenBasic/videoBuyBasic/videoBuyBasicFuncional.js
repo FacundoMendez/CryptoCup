@@ -5,7 +5,7 @@ const videoBuyBasicFuncional = () => {
     
     setTimeout(function(){
         basicBuyVideo.classList.remove("basicBuyVideo_active")
-    },8000)
+    },10000)
       
 
 

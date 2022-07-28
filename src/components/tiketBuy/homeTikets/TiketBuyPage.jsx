@@ -65,6 +65,7 @@ const TiketBuyPage = () => {
   const [chainIncorrecta, setChainIncorrecta] = useState(false)
   const [noMetamask, setNoMetamask] = useState(false)
   const [codigoIncorrecto, setCodigoIncorrecto] = useState(false)
+  const [noBalance, setNoBalance] = useState(false)
 
   /* validacion de compra de tickets */
   const [loadingBuy, setLoadingBuy] = useState(false)
@@ -165,7 +166,7 @@ const TiketBuyPage = () => {
 
     setTimeout(function(){ 
       setBuyTicketBasic(false); 
-    }, 9000);
+    }, 10000);
 
   }
   
@@ -186,7 +187,7 @@ const TiketBuyPage = () => {
 
     setTimeout(function(){ 
       setBuyTicketBoost(false); 
-    }, 9000);
+    }, 10000);
   }
 
   const checkRefCodeValid = async (code) => {
@@ -215,7 +216,6 @@ const TiketBuyPage = () => {
           setCodigoPropio(false)
         },2000)
         
-  
       }
     }
   }
@@ -239,6 +239,8 @@ const TiketBuyPage = () => {
       {loadingBuy ? <PopupEsperaBuy /> : null}
       {noMetamask ? <NoMetamask noMetamask={noMetamask} textNoMetamask="Please Install Metamask!" /> : null}
       {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Please connect to the Rinkeby Network!"/> : null }     {/* modificar network */}
+
+      {noBalance ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Does not have the necessary balance"/> : null }    {/* balance  */}
 
       <div className="flexTickets">
           <div className="ticketsSale">

@@ -58,7 +58,7 @@ const Home = () => {
         <div className='textPrincipalHome'>
           <div className="tite-home">
               <h1 className='titlePrincipal'> CRYPTO CUP <br />
-                TOURNAMENTS
+                TOURNAMENT
               </h1>
               
               <div className="buttonsHome">
