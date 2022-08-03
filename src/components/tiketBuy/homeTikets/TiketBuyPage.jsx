@@ -11,12 +11,18 @@ import Context from '../../context/Context'
 import NoMetamask from './codigoDescuento/popupsErrors/noMetamask/NoMetamask';
 import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupEsperaBuy';
 
+import busdLogo from "./src/busdLogo.png"
+import daiLogo from "./src/daiLogo.png"
+import usdcLogo from "./src/usdcLogo.png"
+import usdtLogo from "./src/usdtLogo.png"
+import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
+import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
+
+
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
-const VideoBuyBoost = lazy(() => import ("./tokensSelect/tokenBoost/videoBuyBoost/VideoBuyBoost"))
-const VideoBuyBasic = lazy(() => import ('./tokensSelect/tokenBasic/videoBuyBasic/VideoBuyBasic'))
+const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
+const VideoBuyBasic = lazy(() => import ("./ticketsComponents/tokenBasic/videoCompra/videoBuyBasic/VideoBuyBasic"))
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
-const SelectTokenBoost = lazy(() => import ('./tokensSelect/tokenBoost/SelectTokenBoost'))
-const SelectTokenBasic = lazy(() => import ('./tokensSelect/tokenBasic/SelectTokenBasic'))
 const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
@@ -42,6 +48,9 @@ const TiketBuyPage = () => {
       } else {
         setEsMovil(false)
       } 
+
+      checkTokenBoost()
+      checkTokenBasic()
     },[])
 
   /* validaciones de coneccion blockchain */
@@ -78,6 +87,8 @@ const TiketBuyPage = () => {
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
   const [priceTicketBasic, setPriceTicketBasic] = useState(20)
   const [priceTicketBoost, setPriceTicketBoost] = useState(35)
+  const [tokenOptionSelect, setTokenOptionSelect] = useState(1)
+
 
   const changeChain = () => {
     window.ethereum.request({
@@ -271,7 +282,54 @@ const TiketBuyPage = () => {
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
-                      <SelectTokenBasic />
+                      
+                      {/* seleccionar token */}
+                      <div className="boxToken">
+                          <div className="wrapperBotton-ticketSale " >
+
+                              <div className="btn-ticketSale" >
+                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src={usdcLogo} alt="BusdToken" /> : null}
+                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src={usdtLogo} alt="DaiToken" /> : null}
+                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src={busdLogo} alt="UsdcToken" /> : null}
+                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src={daiLogo} alt="UsdtToken" /> : null}
+
+                                  <span className="BorderTopBottom-ticketSale  "></span>
+                                  <span className="BorderLeftRight-ticketSale  "></span>  
+                                  
+                              </div>
+
+                              <div className="radioToken">
+
+                                      <label className="radio control-radio">
+                                          <img className='LogoToken' src={usdcLogo} alt="Logo Dai" />
+                                          <p>USDC</p>
+                                          <input type="radio" value="option1-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 1} onClick={() => setTokenOptionSelect(1)}/>
+                                          <div className="control_indicator"></div>
+                                      </label>
+
+                                      <label className="radio control-radio">
+                                          <img className='LogoToken' src={usdtLogo} alt="Logo Dai" />
+                                          <p>USDT</p>
+                                          <input type="radio" value="option2-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 2} onClick={() => setTokenOptionSelect(2)}  />
+                                          <div className="control_indicator"></div>
+                                      </label>
+                                      
+                                      <label className="radio control-radio">
+                                          <img className='LogoToken' src={busdLogo} alt="Logo Dai" />
+                                          <p>BUSD</p>
+                                          <input type="radio" value="option3-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 3} onClick={() => setTokenOptionSelect(3)} />
+                                          <div className="control_indicator"></div>
+                                      </label>
+                                      
+                                      <label className="radio control-radio">
+                                          <img className='LogoToken' src={daiLogo} alt="Logo Dai" />
+                                          <p>DAI</p>
+                                          <input type="radio" value="option4-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 4} onClick={() => setTokenOptionSelect(4)} />
+                                          <div className="control_indicator"></div>
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
                   </div>
 
 
@@ -328,7 +386,52 @@ const TiketBuyPage = () => {
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
-                      <SelectTokenBoost />
+                      
+                       {/* seleccionar token */}
+                      <div className="boxToken">
+                          <div className="wrapperBotton-ticketSale-boost " >
+
+                              <div className="btn-ticketSaleBoost" >
+                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src={usdcLogo} alt="BusdToken" /> : null}
+                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src={usdtLogo} alt="DaiToken" /> : null}
+                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src={busdLogo} alt="UsdcToken" /> : null}
+                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src={daiLogo} alt="UsdtToken" /> : null}
+
+                                  <span className="BorderTopBottom-ticketSale  "></span>
+                                  <span className="BorderLeftRight-ticketSale  "></span>
+                              
+                              </div>
+                              <div className="radioTokenBoost">
+                                  <label className="radio control-radio">
+                                      <img className='LogoToken' src={usdcLogo} alt="Logo Dai" />
+                                      <p>USDC</p>
+                                      <input type="radio" value="option1-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 1} onClick={() => setTokenOptionSelect(1)}/>
+                                      <div className="control_indicator"></div>
+                                  </label>
+                                  
+                                  <label className="radio control-radio">
+                                      <img className='LogoToken' src={usdtLogo} alt="Logo Dai" />
+                                      <p>USDT</p>
+                                      <input type="radio" value="option2-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 2} onClick={() => setTokenOptionSelect(2)}  />
+                                      <div className="control_indicator"></div>
+                                  </label>
+                                  
+                                  <label className="radio control-radio">
+                                      <img className='LogoToken' src={busdLogo} alt="Logo Dai" />
+                                      <p>BUSD</p>
+                                      <input type="radio" value="option3-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 3} onClick={() => setTokenOptionSelect(3)} />
+                                      <div className="control_indicator"></div>
+                                  </label>
+                                  
+                                  <label className="radio control-radio">
+                                      <img className='LogoToken' src={daiLogo} alt="Logo Dai" />
+                                      <p>DAI</p>
+                                      <input type="radio" value="option4-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 4} onClick={() => setTokenOptionSelect(4)} />
+                                      <div className="control_indicator"></div>
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
                   </div>
 
 

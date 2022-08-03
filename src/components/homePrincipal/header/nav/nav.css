@@ -80,9 +80,9 @@
 .nav-link {
     font-family:gilron;
     text-decoration: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 500;
     color:rgb(250, 238, 215);
     padding: 0px 5px;
     border-radius: 13px;
@@ -131,40 +131,32 @@
 }
 
 /* effect navbar */
-.nav-menu-item:hover:after {
-    width: 100%;
-    filter: drop-shadow(0px -10px 15px rgb(108, 3, 168));
-    transition: all 220ms ease-in-out;
-}
 
-.nav-menu-item:hover ~ .nav-link {
-    font-weight: 100;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgb(255, 255, 255), 0 3px 6px #ffffff,
-    inset 0 -2px 5px 1px #ffffff,
-    inset 0 -1px 1px 3px #ffffff;
-    background-image: linear-gradient(160deg, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
-    transition: all 220ms ease-in-out;
-}
+
 
 .nav-menu-item:after {
   content: '';
-  bottom: -.8rem;
+  bottom: -.85rem;
   left: 0;
   right: 0;
   margin: auto;
   position: absolute;
-  width: 0;
   height: 4px;
+  width: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffffff));
-  background: linear-gradient(#6404ff, #ffffff);
+  background: linear-gradient(#731de2, #c59ef1);;
   -webkit-box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
   box-shadow: 0px 0px 3px rgb(0 0 0 / 60%), 0px 0px 32px #6200ff, 0px 0px 11px #6200ff;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in;
+  z-index: 9999999999 !important ;
+  border-radius: 45px;
+  transition: all 0.3s ease ;
+}
+
+.nav-menu-item:hover:after {
+    width: 100%;
+    height: 4px;
+    filter: drop-shadow(0px -10px 8px rgba(195, 161, 250, 0.267));
 }
 
 /* button dapp  */

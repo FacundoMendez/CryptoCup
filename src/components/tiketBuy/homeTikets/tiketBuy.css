@@ -431,7 +431,9 @@
     gap: 2rem;
     box-shadow: 0 0 20px #b277ff49, 0 0 56px #b379ffa2, 0 0 105px #b688ff8e;
     -webkit-backdrop-filter: blur(10px);
+
 }
+
 
 .radioTokenBoost-active{
     opacity: 1;
