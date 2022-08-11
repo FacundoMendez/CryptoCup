@@ -76,41 +76,43 @@ const tokenScroll = () =>{
             }
         })
 
-            /* referidos */
 
         
-        gsap.to(".cortinaTop",{
-            y: "-= 500",
-            duration:2,
-            scrollTrigger:{
-                trigger: ".containerReferidos",
-                start: "top 60%",
-                scrub: 2,
-            }
-        })
+    /* referidos */
+    gsap.to(".cortinaTop",{
+        y: "-= 500",
+        duration:2,
+        scrollTrigger:{
+            trigger: ".containerReferidos",
+            start: "top 55%",
+            scrub: 2,
+        }
+    })
+    
+    gsap.to(".cortinaBottom",{
+        y: "+= 500",
+        duration:2,
+        scrollTrigger:{
+            trigger: ".containerReferidos",
+            scrub:2,
+            start: "top 55%",
+        }
+    })
 
-        gsap.to(".cortinaBottom",{
-            y: "+= 500",
-            duration:2,
-            scrollTrigger:{
-                trigger: ".containerReferidos",
-                scrub:2,
-                start: "top 60%",
-            }
-        })
-
-        gsap.to(".textsReferidos",{
-            duration:2,
-            delay:1,
-            opacity:3,
-            scrollTrigger:{
-                trigger: ".containerReferidos",
-                scrub:2,
-                start: "top 50%",
-            }
-        })
+    gsap.to(".boxReferidos_t",{
+        duration:2,
+        delay:1,
+        opacity:2,
+        scrollTrigger:{
+            trigger: ".containerReferidos",
+            scrub:2,
+            start: "top 55%",
+        }
+    })
 
     }
+
+        
 }
 
 export default tokenScroll;

@@ -171,16 +171,19 @@
     border-radius: 15px;
     overflow: hidden;
     background: #000000;
-    filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075));
+    filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075)) ;
     border: 4px groove rgb(255, 213, 150);
     backdrop-filter: blur(1rem);
 }
 
+
+
 .videoCopaBasic, .videoCopaBoost{
     width: 100%;
-    /* filter: contrast(120%) brightness(140%); */
-    filter: contrast(105%) brightness(105%);
+    filter: contrast(105%) brightness(110%);
 }
+
+
 
 
 /* ---------- */

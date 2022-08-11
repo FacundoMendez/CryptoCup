@@ -81,11 +81,8 @@
 }
 
 .imgTicket {
-    width: 20rem;
+    width: 18rem;
     filter: contrast(110%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26));
-    animation-iteration-count: infinite;
-    animation-duration: 8000ms;
-    animation-name: ticketVolador;
     position: relative;
     z-index: -1;
 
@@ -105,19 +102,7 @@
 }
   
 
-@keyframes ticketVolador {
-    0% {
-        transform: translate(0 , -.6%) scale(1.02);
-    }
-  
-    50% {
-        transform: translate(0 , 0%) scale(1);
-    }
 
-    100% {
-        transform: translate(0 , -.6%) scale(1.02);
-    }
-}
 
 /* prices */
 
@@ -126,10 +111,10 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    font-size: 2.8rem;
+    font-size: 3rem;
     letter-spacing: 2px;
     color: white;
-    padding-bottom: 1.4rem;
+    padding: 1.4rem 0;
     margin: 0;
     text-transform: uppercase;
     -webkit-background-clip: text;

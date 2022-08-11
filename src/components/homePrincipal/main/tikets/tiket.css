@@ -84,12 +84,6 @@
     padding-bottom: 5rem;
 }
 
-.textDescripcionTikets{
-    color: white;
-    padding: .5rem 0rem;
-    text-align: center;
-    
-}
 
 .tiketImg{
     width: 100%;
@@ -105,7 +99,7 @@
 .tiketsPreview{
     width: 15%;
     object-fit: contain;
-    filter: contrast(105%) ;
+    filter: contrast(105%);
     cursor: pointer;
 }
 
@@ -206,19 +200,15 @@
     text-align: initial;
 }
 
-.tiketsPreview{
-    width: 57%;
-    position: relative;
-}
-
-.tiketsPreview{
-    object-fit: cover;
-}
 
 .tiketsPreview {
-    filter: contrast(110%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26));
+    width: 57%;
+    position: relative;
+    padding: .5rem 0rem;
+    object-fit: cover;
+    filter: contrast(110%) brightness(105%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26)) ;
     animation-iteration-count: infinite;
-    animation-duration: 8000ms;
+    animation-duration: 3500ms;
     animation-name: ticketVolador;
     position: relative;
 }
@@ -227,27 +217,7 @@
     text-align: center;
 }
   
-@keyframes slidein {
-    0% {
-        filter: drop-shadow(0 0 40px rgba(121, 33, 221, 0.233));
-    }
-  
-    20% {
-        filter: none;
-    }
 
-    40% {
-        filter: drop-shadow(0 0 60px rgba(121, 33, 221, 0.233));
-    }
-  
-    60% {
-        filter: none;
-    }
-
-    100% {
-        filter: drop-shadow(0 0 40px rgba(121, 33, 221, 0.233));
-    }
-}
 
 @keyframes ticketVolador {
     0% {

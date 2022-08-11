@@ -1,13 +1,14 @@
 .containerReferidos{
     width: 100%;
+    height:100%;
     position: relative;
-    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     overflow: hidden;
+    padding: 5rem 0;
 }
 
 .backReferidos{
@@ -20,16 +21,16 @@
 }
 
 
+
+
 .containerReferidos::after{
     width: 110%;
-    height: 2rem;
     content: " ";
     top: -.5rem;
-    width: 100%;
-    height: .3rem;
-    background-color:#ffffffaf;
+    height: .4rem;
+    background-color:#ddc3ff;
     box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
-    border: 2px solid rgb(152, 150, 255);
+    border: 3px solid rgb(154, 152, 255);
     border-radius: 100%;
     backdrop-filter: blur(1rem);
     filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
@@ -41,7 +42,7 @@
 .cortinaTop{
     position: absolute;
     width: 100%;
-    height:24.5rem;
+    height:50.5%;
     top: -.2rem;
     background-color:#080808;
     backdrop-filter: blur(1rem);
@@ -55,7 +56,7 @@
 .cortinaBottom{
     position: absolute;
     width: 100%;
-    height: 24.5rem;
+    height: 50.5%;
     bottom: -.2rem;
     background-color:#080808;
     backdrop-filter: blur(1rem);
@@ -66,31 +67,56 @@
     z-index: 100;
 }
 
+
+/* box */
+
+.boxReferidos_t{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 100;
+    opacity: 0;
+}
+
+.boxReferidos_t::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.ticketsReferidos{
+    width: 45%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.507)) contrast(115%) brightness(105%);
+    z-index: 100;
+}
+
+
 .textsReferidos {
     color: white;
     z-index: 100;
     position: relative;
-    width: 100%;
-    width: 55%;
-    opacity: 0;
+    width: 45%;
+    height: 100%;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    top:-3rem;
 }
 
-.textsReferidos::before{
-    content: "";
-    position: absolute;
-    width: 300%;
-    height: 200%;
-    background-color: rgba(0, 0, 0, 0.767);
-    backdrop-filter: blur(2px);
-}
 
 .textsReferidos h2{
-    font-size: 6.2rem;
+    font-size: 6rem;
     columns: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -100,26 +126,22 @@
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
-    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    inset 0 -1px 1px 3px rgba(250,227,133,1), ;
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     padding-bottom: 2rem;
     font-family: qatarHeavy;
+    filter: drop-shadow( -1px 5px 2px rgba(10, 0, 29, 0.562));
 }
 
 .textsReferidos p{
-    font-size: 1.9rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    width: 100%;
+    letter-spacing: 1.2px;
+    font-weight:bolder;
     text-align: center;
-    filter: drop-shadow(0 0 20px black);
+    filter: drop-shadow(0 0 50px black);
 }
 
-.textsReferidos span{
-    font-size: 2rem;
-    letter-spacing: 1.5px;
-}
 
 .spanColor{
     -webkit-background-clip: text;
@@ -129,10 +151,8 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    font-size: 3rem !important;
-    font-weight: bold;
-    padding: 0 1.5rem;
-    font-family: qatarHeavy;
+    padding: 0 .5rem;
+    text-transform: uppercase;
 }
 
 .linesBackTop{
@@ -155,9 +175,8 @@
 }
 
 @media screen and (max-width:1440px){
-
     .containerReferidos{
-        height: 60vh;
+        padding: 10rem 0;
     }
 
     .containerReferidos::after{
@@ -169,9 +188,102 @@
 
     .textsReferidos {
         width: 100%;
-        width: 60%;
-        gap: 4rem;
+        width: 52%;
     }
+
+    .ticketsReferidos {
+        width: 42%;
+    }
+
+    .textsReferidos h2{
+        font-size: 6rem;
+        letter-spacing: 2px;
+        padding-bottom: 0rem;
+    }
+
+    .textsReferidos p{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+@media screen and (max-width:1170px){
+
+
+    .boxReferidos_t{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+    .textsReferidos {
+        width: 80%;
+        padding: 0;
+        top: 0;
+    }
+
+    .ticketsReferidos {
+        width: 70%;
+    }
+
+    .textsReferidos h2{
+        font-size: 6rem;
+        letter-spacing: 2px;
+        padding-bottom: 0rem;
+    }
+
+    .textsReferidos p{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+  
+}
+
+
+
+@media screen and (max-width:800px){
+    .textsReferidos {
+        width: 100%;
+        width: 85%;
+        padding: 0;
+        top: 0;
+    }
+
+    .ticketsReferidos {
+        width: 80%;
+    }
+
+    .cortinaBottom, .cortinaTop{
+        display: none;
+    }
+
+    .boxReferidos_t{
+        opacity: 1;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+
+
+
+    .containerReferidos::after{
+        top: -.5rem;
+        width: 100%;
+        height: .3rem;
+        box-shadow: 0 0 10px #913cff, 0 0 20px #994bff85;
+    }
+
+    .textsReferidos {
+        width: 100%;
+        width: 80%;
+        padding: 0;
+        top: 0;
+    }
+
+  
 
     .textsReferidos h2{
         font-size: 5rem;
@@ -180,109 +292,44 @@
     }
 
     .textsReferidos p{
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        line-height: 3rem;
-    }
-
-    .textsReferidos span{
-        font-size: 1.6rem;
-        letter-spacing: 1.5px;
-        font-weight: 600;
-    }
-
-    .spanColor{
-        font-size: 3rem !important;
-        padding: 0 .5rem;
-    }
-
-
-    .cortinaTop{
-        position: absolute;
-        width: 100%;
-        height:24.5rem;
-        top: -5.7rem;
-    }
-    
-    .cortinaBottom{
-        width: 100%;
-        height: 24.5rem;
-        bottom: -5.7rem;
-    }
-    
-}
-
-
-@media screen and (max-width:1170px){
-
-    .textsReferidos {
-        width: 100%;
-        width: 80%;
-        gap: 4rem;
-        
-    }
-
-    .textsReferidos h2{
-        font-size: 5.5rem;
-        letter-spacing: 2px;
-        padding-bottom: 0rem;
-    }
-
-    .textsReferidos p{
-        font-size: 1.7rem;
-        letter-spacing: 2px;
-        line-height: 3.5rem;
-    }
-
-    .textsReferidos span{
         font-size: 1.8rem;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
-
-    .spanColor{
-        font-size: 2.8rem !important;
-        padding: 0 2rem;
-    }
+   
 }
 
+@media screen and (max-width:500px){
 
 
-@media screen and (max-width:970px){
 
     .textsReferidos {
         width: 100%;
-        width: 90%;
-        gap: 4rem;
-        
+        width: 85%;
+        padding: 0;
+        top: 0;
     }
 
-    .textsReferidos h2{
-        font-size: 5.5rem;
-        letter-spacing: 2px;
-        padding-bottom: 0rem;
+    .textsReferidos h2 {
+        font-size: 4rem;
     }
 
-    .textsReferidos p{
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-        line-height: 3.5rem;
-    }
 
-    .textsReferidos span{
-        font-size: 1.7rem;
-        letter-spacing: 1.5px;
+    .ticketsReferidos {
+        width: 85%;
     }
-
-    .spanColor{
-        font-size: 2.5rem !important;
-        padding: 0 2rem;
-    }
+    
 }
 
+@media screen and (max-width:360px){
 
-@media screen and (max-width:800px){
-    .containerReferidos{
-        display: none;
+
+    .textsReferidos h2 {
+        font-size: 3.5rem;
+    }
+
+
+    .ticketsReferidos {
+        width: 85%;
     }
     
 }
