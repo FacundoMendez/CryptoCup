@@ -80,22 +80,22 @@ const tokenScroll = () =>{
         
     /* referidos */
     gsap.to(".cortinaTop",{
-        y: "-= 500",
+        y: "-= 805",
         duration:2,
         scrollTrigger:{
             trigger: ".containerReferidos",
-            start: "top 55%",
+            start: "top 50%",
             scrub: 2,
         }
     })
     
     gsap.to(".cortinaBottom",{
-        y: "+= 500",
+        y: "+= 805",
         duration:2,
         scrollTrigger:{
             trigger: ".containerReferidos",
             scrub:2,
-            start: "top 55%",
+            start: "top 50%",
         }
     })
 
@@ -106,7 +106,7 @@ const tokenScroll = () =>{
         scrollTrigger:{
             trigger: ".containerReferidos",
             scrub:2,
-            start: "top 55%",
+            start: "top 50%",
         }
     })
 
