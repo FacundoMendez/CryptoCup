@@ -5,10 +5,11 @@
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 35rem;
 /*     background-image: url("./src/BackToken.jpg");
     background-size: cover; */
     z-index: 10;
+    background-color: black;
+    padding-top: 20rem;
 }
 
 .backToken{
@@ -57,7 +58,7 @@
     filter: contrast(110%) brightness(125%) drop-shadow(0 0 50px rgba(167, 72, 255, 0.459));
 }
 
-.tokens::after{
+/* .tokens::after{
     width: 110%;
     height: 2rem;
     content: " ";
@@ -73,7 +74,7 @@
     position: absolute;
     z-index: 1;
 }
-
+ */
 .tokenWebGl {
     position: relative;
     width: 10%;

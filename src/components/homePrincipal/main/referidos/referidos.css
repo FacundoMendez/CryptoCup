@@ -1,3 +1,12 @@
+.boxContainerPin_referidos{
+    height: 100%;
+    width: 100%;
+    padding: 5rem 0 !important;
+    padding-top: 10rem  !important;
+    backdrop-filter: blur(1rem);
+}
+
+
 .containerReferidos{
     width: 100%;
     height:100%;
@@ -20,14 +29,28 @@
     z-index: 1;
 }
 
+.containerReferidos::before{
+    width: 110%;
+    height: 2rem;
+    content: " ";
+    bottom: -.5rem;
+    width: 100%;
+    height: .3rem;
+    background-color:#ddc3ff;
+    border: 3px solid rgb(154, 152, 255);
+    border-radius: 100%;
+    backdrop-filter: blur(1rem);
+    filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
+    position: absolute;
+    z-index: 200 !important;
+}
 
 
-
-.containerReferidos::after{
+.boxContainerPin_referidos::after{
     width: 110%;
     content: " ";
     top: -.5rem;
-    height: .4rem;
+    height: .1rem;
     background-color:#ddc3ff;
     box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
     border: 3px solid rgb(154, 152, 255);
