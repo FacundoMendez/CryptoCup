@@ -107,8 +107,8 @@
 
 .boxButtonTicketBuy{
     position: fixed;
-    left: 8rem;
-    bottom: 6rem;
+    left: 6rem;
+    bottom: 4rem;
     z-index: 999999 !important;
     transform: perspective(2000px);
     width: 15rem;
@@ -273,6 +273,10 @@
 
 
 @media screen and (max-width: 1170px){
+
+    .tournamentContainer{
+        padding-bottom: 0rem;
+    }
     
     .titleContainers h2{
         font-size: 7rem;

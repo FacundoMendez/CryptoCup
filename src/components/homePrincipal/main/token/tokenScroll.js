@@ -77,62 +77,6 @@ const tokenScroll = () =>{
         })
 
 
-        
-    /* referidos */
-
-/*     gsap.to(".boxContainerPin_referidos",{
-        duration:2,
-        delay:1.5,
-        scrollTrigger:{
-            trigger: ".boxContainerPin_referidos",
-            start: "top top",
-            end: "+= 100%",
-            pin:"true"
-        }
-    }) */
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".boxContainerPin_referidos",
-          pin: ".boxContainerPin_referidos",
-          start: "50% 50%",
-          end: "bottom bottom",
-          pinSpacing: false,
-          scrub:5
-        }
-    })
-
-    gsap.to(".cortinaTop",{
-        y: "-= 760",
-        duration:4,
-        delay:3.5,
-        scrollTrigger:{
-            trigger: ".boxContainerPin_referidos",
-            start: "20% 20%",
-            scrub: 2,
-        }
-    })
-    
-    gsap.to(".cortinaBottom",{
-        y: "+= 750",
-        duration:4,
-        delay:3.5,
-        scrollTrigger:{
-            trigger: ".boxContainerPin_referidos",
-            start: "20% 20%",
-            scrub: 2,
-        }
-    })
-
-    tl.to(".boxReferidos_t",{
-        duration:2,
-        delay:3.5,
-        opacity:2,
-   
-    })
-
     }
 
         

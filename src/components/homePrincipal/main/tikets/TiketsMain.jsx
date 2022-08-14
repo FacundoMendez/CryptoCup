@@ -8,7 +8,7 @@ import backReflejo from "./src/BackgroundTickets1.jpg"
 import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg"
 import star from "./src/star.png"
 import division from "./src/division.png"
-
+import ballCC from "./src/logoPng.png"
 
 const TiketsMain = () => {
 
@@ -85,6 +85,10 @@ const TiketsMain = () => {
         </div>
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
+      
+      <div className="cesped"></div>
+      <img className="pelota" src={ballCC} alt="pelota " />
+
       </div>
     </>
   )

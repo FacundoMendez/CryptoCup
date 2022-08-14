@@ -63,7 +63,7 @@
 
 .textPrincipalHome{
   position: relative;
-  width: 65%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@
 
 .tite-home{
   position: absolute;
-  top: 24rem;
+  top: 21rem;
   left: 15rem; /* 27 */
   display: flex;
   justify-content: center;

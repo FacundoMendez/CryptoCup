@@ -82,6 +82,7 @@
     flex-wrap: wrap;
     gap:2rem;
     padding-bottom: 5rem;
+    color: white;
 }
 
 
@@ -263,7 +264,7 @@
 
 .division{
     position: absolute;
-    bottom: -90rem !important;
+    bottom: -80rem !important;
     z-index: 1000;
 }
 
@@ -377,6 +378,7 @@
     .textTikets{
         width: 75vw;
         gap:3rem;
+        text-align: center;
     }
 
     .boxTickets-Home-basic, .boxTickets-Home-boost {
@@ -385,6 +387,7 @@
     .division{
         margin-left: 0rem;
     }
+
 
 }
 
@@ -527,6 +530,7 @@
     .textTikets p{
         padding: 0rem 2rem;
         text-align: center;
+        color: white;
     }
 
 

@@ -1,4 +1,8 @@
 import gsap from "gsap";
+import { Timeline } from "gsap/gsap-core";
+import { Circ } from "gsap";
+import { Power0 } from "gsap";
+import { Elastic } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const tiketsScroll = () =>{
@@ -7,23 +11,52 @@ const tiketsScroll = () =>{
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
+    const pelota = document.querySelector(".pelota")
+
+    function ballBounce() {
+
+        var tl = new Timeline();
+  
+        tl
+  
+          .to(".pelota", 0.5, {
+          y: 0,
+          ease: Circ.easeOut,
+          force3D: true,
+        }, "bounce")
+  
+        .to(".pelota", 0.4, {
+          y: 140,
+          ease: Circ.easeIn
+        }, "bounce2")
+
+
+      }
+
+
+    pelota.addEventListener("click" , function(){
+        ballBounce()
+    })
+
     if (!isMobile()) {
 
         gsap.registerPlugin(ScrollTrigger);
+
+        ballBounce()
+
         
 
-/*         gsap.from(".backTikets",{
-            opacity:0,
-            y:200,
-            x:-200,
-            duration:2,
+      gsap.to(".pelota",{
+            x: 1800 ,
+            rotate: "+=2080",
+            duration:20,
             scrollTrigger:{
                 trigger: ".containerTikets",
-                start: "top 60%",
-                end: "bottom bottom",
+                start: "100% 450px",
+                end: "+=650",
+                scrub: 7,
             }
         })
- */
 
         gsap.from(".tiketsTitle",{
             opacity:0,
