@@ -81,7 +81,7 @@
 }
 
 .imgTicket {
-    width: 18rem;
+    width: 17rem;
     filter: contrast(110%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26));
     position: relative;
     z-index: -1;
@@ -1008,7 +1008,7 @@
     }
     
     .imgTicket {
-        width: 20rem;
+        width: 18rem;
     }
 
     /* text */
@@ -1142,6 +1142,10 @@
         font-size: 2.3rem;
         padding-top: .8rem;
       }
+
+      .imgTicket {
+        width: 17rem;
+    }
 }
 
 
@@ -1183,7 +1187,7 @@
     }
     
     .imgTicket {
-        width: 19.9rem;
+        width: 16rem;
         margin-top: 10rem;
     }
 
