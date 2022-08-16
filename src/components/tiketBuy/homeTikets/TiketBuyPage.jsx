@@ -9,7 +9,7 @@ import NoMetamask from './codigoDescuento/popupsErrors/noMetamask/NoMetamask';
 import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupEsperaBuy';
 import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
 import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
-
+import Favicon from 'react-favicon';
 
 /* import tiketBasico from "./src/tiketBasic.png"
 import tiketBoost from "./src/tiketBoost.png"
@@ -235,6 +235,10 @@ const TiketBuyPage = () => {
 
 
   return (
+
+    <>
+
+    <Favicon url="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png "></Favicon>
     <div className="containerTiketsBuy">
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
 
@@ -503,6 +507,7 @@ const TiketBuyPage = () => {
           </div>
         </div>
     </div>
+  </>
   )
 }
 
