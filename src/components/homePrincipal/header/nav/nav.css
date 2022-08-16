@@ -400,6 +400,7 @@
 
     .navMovile{
         display: inline-block;
+        z-index: 999999999 !important;
     }
 
     .navBack{
@@ -531,14 +532,23 @@
     .nav {
         height: 10rem;
     }
+
+    .nav-menu-item:after {
+        display: none;
+    }
       
 }
 
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 390px) {
 
     .nav-toggle {
         right: 5%;
+    }
+
+    .nav-menu-item {
+        padding: 1rem 0rem;
+        overflow: hidden;
     }
     
 }

@@ -1,3 +1,5 @@
+
+import React from 'react'
 import "./components/homePrincipal/main/main.css"
 import { lazy, Suspense} from "react";
 import './App.css';

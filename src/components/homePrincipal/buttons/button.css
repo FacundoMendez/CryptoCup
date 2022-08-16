@@ -262,10 +262,25 @@
     font-size: 2rem;
     letter-spacing: 3.4px;
   }
+
+
 }
 
   
 @media screen and (max-width:480px) {
+
+  .btn:hover .BorderTopBottom:before, .btn:hover .BorderTopBottom:after {
+    filter: drop-shadow(0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+    width: 109%;
+  }
+
+  .btn:hover .BorderLeftRight:before, .btn:hover .BorderLeftRight:after {
+    height: 122%;
+    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
+    transition: all 0.5s ease;
+}
+
     .wrapperBotton {
         position: relative;
         padding-top: rem;
@@ -332,6 +347,7 @@
           filter: drop-shadow( 0 0 1px white);
           transition: all .5s ease-in-out;
       }
+
 
     
 

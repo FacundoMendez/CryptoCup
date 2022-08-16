@@ -30,19 +30,6 @@ const Home = () => {
       setEsMovil(false)
     } 
 
-
-    const elems = document.querySelectorAll('.copa');
-    const layer3 = document.querySelector('.estadio');
-    const layer4 = document.querySelector('.piso');
-    
-    
-    setTimeout(function () {
-        elems.forEach(function (elem, index) {
-            elem.style.animation = "none";
-        });
-    }, 1500);
-    
-    
   },[])
 
 
@@ -66,7 +53,6 @@ const Home = () => {
                   {!esMovil ? <Button title="BUY TICKETS"/> : <Button title="TICKETS"/>}
                   
                 </a>
-            {/* <a href="./presale"> */}
                 <div className=" wrapperBottonPresale">
                   <div className="btnPresale">
                     <p> Presale </p>
@@ -76,7 +62,6 @@ const Home = () => {
                     <img className='comingSoon' src={soonImg} alt="Coming Soon" />
                   </div>
                 </div>
-            {/*</a> */}
             </div>
             <Timer/>
           </div>
