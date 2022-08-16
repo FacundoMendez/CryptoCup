@@ -36,11 +36,11 @@ const Referidos = () => {
                   <div className="textsReferidos">
                       <h2>Refer To Earn</h2>
                       <p>
-The Referral System will allow you to earn by inviting people to be a part of Crypto Cup!
-When buying a ticket you will be given a link, which you can share with whoever you want making them get a <span className='spanColor'>great 20% discount</span> on the purchase of their tickets and <span className='spanColor'>benefiting you </span> with <span className='spanColor'>2usd</span> for each basic ticket they buy and <span className='spanColor'>3usd</span> for each boost ticket that will be automatically sent to your wallet <span className='spanColor'> without commissions </span>and ready to spend.
-<br /> Start earning early with this <span className='spanColor'>win-win</span> deal!
-                        
-                        
+                      The Referral System will allow you to earn by inviting people to be a part of Crypto Cup!
+                      When buying a ticket you will be given a link, which you can share with whoever you want making them get a <span className='spanColor'>great 20% discount</span> on the purchase of their tickets and <span className='spanColor'>benefiting you </span> with <span className='spanColor'>2usd</span> for each basic ticket they buy and <span className='spanColor'>3usd</span> for each boost ticket that will be automatically sent to your wallet <span className='spanColor'> without commissions </span>and ready to spend.
+
+                      <br /> <br />
+                     <span className='textStart'> Start earning early with this <span className='spanColor'>win-win</span> deal!</span>
                         
                       </p>
                   </div>
