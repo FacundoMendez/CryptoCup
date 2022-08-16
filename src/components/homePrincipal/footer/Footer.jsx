@@ -1,6 +1,5 @@
 import React from 'react'
 import "./footer.css"
-import backFooter from "./src/Footer3.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
@@ -11,7 +10,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 const Footer = () => {
   return (
     <div className="footer">
-        <img className='backFooter' src={backFooter} alt="Background Footer" />
+        <img className='backFooter' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660661016/CryptocupQatar/footer/Footer3_hxey1j.jpg"/* {backFooter} */ alt="Background Footer" />
         <div className="blurFooter"></div>
         <div className="logoFooter">
             <p>Our Social Networks</p>

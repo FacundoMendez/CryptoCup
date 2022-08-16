@@ -1,6 +1,6 @@
 import React, {lazy, useEffect, useState} from 'react'
 import "./home.css"
-import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4"
+/* import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4" */
 import soonImg from "./src/comingSoon.png"
 
 
@@ -53,7 +53,7 @@ const Home = () => {
 
       <div className="containerPrincipalHome">
 
-      {  !esMovil  ?   <video className='backPrincipal' src={particulasCopa} autoPlay loop muted  type="video/mp4"></video> : null  }
+      {  !esMovil  ?   <video className='backPrincipal' src= " https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660657005/CryptocupQatar/Home%20/particle1P_bhqtfr.mp4"/* {particulasCopa} */ autoPlay loop muted  type="video/mp4"></video> : null  }
 
         <div className='textPrincipalHome'>
           <div className="tite-home">

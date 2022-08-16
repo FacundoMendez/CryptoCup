@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import "./videoStyle.css"
-import videoPromocional from "./src/videoPromocional.mp4"
 import VideoPubliFuncional from './videoPubliFuncional'
 
 const VideoPubli = () => {

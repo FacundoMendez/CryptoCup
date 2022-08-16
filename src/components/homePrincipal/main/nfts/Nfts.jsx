@@ -2,8 +2,8 @@ import React,{useEffect} from 'react'
 import "./nfts.css"
 import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
-import videoCopaBasic from "./src/prizepoolBasicVideo.mp4"
-import videoCopaBoost from "./src/prizepoolBoostVideo.mp4"
+/* import videoCopaBasic from "./src/prizepoolBasicVideo.mp4"
+import videoCopaBoost from "./src/prizepoolBoostVideo.mp4" */
 import effectPool from './effectPool'
 
 
@@ -31,11 +31,11 @@ const Nfts = () => {
         <div className="tiposTorneos">   
           <div className="container">
             <div className="container_card ">
-                <video className='videoCopaBasic' src={videoCopaBasic} autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBasic' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660656633/CryptocupQatar/nft/prizepoolBasicVideo_yfb6dh.mp4"/* {videoCopaBasic} */ autoPlay loop muted type="video/mp4" ></video> 
                 <p className='basicTextVideo'>BASIC LADDER</p>
             </div>  
             <div className="container_card"> 
-                <video className='videoCopaBoost' src={videoCopaBoost}  autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBoost' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660656629/CryptocupQatar/nft/prizepoolBoostVideo_u4maa7.mp4"/* {videoCopaBoost} */  autoPlay loop muted type="video/mp4" ></video> 
                 <p className='boostTextVideo'>BOOST LADDER</p>
             </div> 
           </div>
@@ -59,14 +59,12 @@ const Nfts = () => {
         
         <div className="event event1">
           <div className="pinWrapper">
-            <div className="image">
-            </div>
+            <div className="image"></div>
           </div>
         </div>
         <div className="event event2">
           <div className="pinWrapper">
-            <div className="image">
-            </div>
+            <div className="image"></div>
           </div>
         </div>
       </section>

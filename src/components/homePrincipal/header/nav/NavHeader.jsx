@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
 import "./nav.css";
 import navBallModel from './modelBall';
-import imgNav from "./src/navBack1.png";
+/* import imgNav from "./src/navBack1.png"; */
 import navOcultar from './navOcultar';
 import commingDapp from './comingDapp';
 
@@ -22,13 +22,12 @@ function NavHeader() {
             <div className="navBlur"></div>
             <nav className="nav">
 
-                <img className='navBack' src={imgNav} alt="nav background" />
+                <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.png"/* {imgNav}  */alt="nav background" />
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
                 
                 <ul className="navVisible nav-menu navIzquierda">
-                    {/* <Idiomas /> */}
                     
                     <li className="nav-menu-item " >
                         <a href="#home" className="nav-menu-link nav-link">
@@ -57,7 +56,6 @@ function NavHeader() {
                 
 
                     <li>
-                    {/* <a href="/Dapp" className="nav-menu-link nav-link navMovile "> */}
                         <div className="wrapperBottonBtn navMovile">
                             <div className="btnButtonNav">
                                 <p >Dapp</p>
@@ -66,8 +64,6 @@ function NavHeader() {
                             </div>
                             
                         </div>
-                       {/* </a> */}
-
                     </li>
                 </ul>
 
@@ -90,17 +86,6 @@ function NavHeader() {
                     </li>
                 
                     <li>
-                    {/*   <a href="/Dapp" className="nav-menu-link nav-link "> */}
-                       {/*  <div className="wrapperBottonBtn">
-                            <div className="btnButtonNav">
-                                <p className='dapp'>Dapp</p>
-                                <span className="BorderTopBottomNav "></span>
-                                <span className="BorderLeftRightNav "></span>
-                            </div>
-                            <p className='comingDapp'>Coming Soon</p>
-                        </div> */}
-                    {/*       </a> */}
-
                         <div className="lineDappButton"></div>
                         <p className='dappTitleButton'>DAPP</p>
                         <p className='comingDapp'>Coming Soon</p>
