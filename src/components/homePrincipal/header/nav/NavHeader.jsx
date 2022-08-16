@@ -21,7 +21,6 @@ function NavHeader() {
         <header className="header">
             <div className="navBlur"></div>
             <nav className="nav">
-
                 <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.png"/* {imgNav}  */alt="nav background" />
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
