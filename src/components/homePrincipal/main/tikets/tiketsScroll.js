@@ -9,7 +9,7 @@ const tiketsScroll = () =>{
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    const pelota = document.querySelector(".pelota")
+/*     const pelota = document.querySelector(".pelota")
 
     function ballBounce() {
 
@@ -34,16 +34,16 @@ const tiketsScroll = () =>{
 
     pelota.addEventListener("click" , function(){
         ballBounce()
-    })
+    }) */
 
     if (!isMobile()) {
 
         gsap.registerPlugin(ScrollTrigger);
 
-        ballBounce()
+/*         ballBounce() */
 
         
-
+/* 
       gsap.to(".pelota",{
             x: 1800 ,
             rotate: "+=2080",
@@ -55,6 +55,8 @@ const tiketsScroll = () =>{
                 scrub: 7,
             }
         })
+ */
+
 
         gsap.from(".tiketsTitle",{
             opacity:0,

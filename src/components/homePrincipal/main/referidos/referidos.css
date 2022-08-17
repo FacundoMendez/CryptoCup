@@ -1,5 +1,6 @@
 .containerReferidos{
     width: 100%;
+    height: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -8,7 +9,6 @@
     padding-top: 10rem;
     padding-bottom: 5rem;
     background-color:black;
-    margin-top: 45rem;
 }
 
 .containerReferidos::before{
@@ -395,3 +395,4 @@
     }
     
 }
+

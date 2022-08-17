@@ -87,9 +87,9 @@ const TiketsMain = () => {
 
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
       
-      <div className="cesped"></div>
-      <img className="pelota" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png"  /* {ballCC} */ alt="pelota " />
-
+{/*       <div className="cesped"></div>
+      <img className="pelota" src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png"  alt="pelota " />
+ */}
       </div>
     </>
   )
