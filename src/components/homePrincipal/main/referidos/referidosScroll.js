@@ -19,13 +19,13 @@ const referidosScroll = () =>{
 
         const animateRefers = () => {
             gsap.to(".cortinaTop",{
-                y: "-94.5%",
+                y: "-92.5%",
                 duration:4,
                 delay:.5,
             })
         
             gsap.to(".cortinaBottom",{
-                y: "94.5%",
+                y: "92.5%",
                 duration:4,
                 delay:.5,
             })
@@ -56,7 +56,7 @@ const referidosScroll = () =>{
 
            ScrollTrigger.create({
                     trigger: ".containerReferidos",
-                    start: "top 10%",
+                    start: "top 11%",
                     end:"100%",
                     pin: true,
                     onEnter : animateRefers , 

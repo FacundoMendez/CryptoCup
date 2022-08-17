@@ -1,4 +1,5 @@
 import React, {lazy, Suspense, useState, useContext, useEffect} from 'react'
+import { useSearchParams } from "react-router-dom";
 import { ethers } from 'ethers';
 import { contractAddress, abi } from './utils'
 import truncateEthAddress from 'truncate-eth-address';
@@ -30,6 +31,8 @@ const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
 const TiketBuyPage = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  
   const context = useContext(Context)
 
   const [esMovil , setEsMovil] = useState(false)
@@ -110,7 +113,7 @@ const TiketBuyPage = () => {
   }
 
   const login = async () => {
-    try {
+
       if(window.ethereum !== undefined) {
         const newProvider = new ethers.providers.Web3Provider(window.ethereum);
         const { chainId } = await newProvider.getNetwork();
@@ -119,6 +122,8 @@ const TiketBuyPage = () => {
           const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
           const newSigner = await newProvider.getSigner();
           const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
+
+          console.log(newContract)
 
           await newContract.getReferralCodeFromAddress(newAccount[0])
           .then(res => {
@@ -131,6 +136,12 @@ const TiketBuyPage = () => {
               setCopyActive(false);
             }
           })
+
+          // chequear si hay codigo de descuento. en caso de que haya, hay que chequear si es valido. si es valido hay que mostrar los descuentos.
+          const referralCode = searchParams.get("r")
+          if(referralCode) {
+            await checkRefCodeValid(referralCode, newContract);
+          }
 
           setProvider(newProvider);
           setAccount(newAccount);
@@ -154,9 +165,7 @@ const TiketBuyPage = () => {
           setNoMetamask(false) 
         },5000)
       }
-    } catch (error) {
-      console.log(error);
-    }
+
 
   }
 
@@ -203,10 +212,11 @@ const TiketBuyPage = () => {
     }, 10000);
   }
 
-  const checkRefCodeValid = async (code) => {
+  const checkRefCodeValid = async (code, newContract) => {
+    console.log(code)
     if (code) {
       if(code !== referralCode.toString()) {
-        await contract.getReferralAddressFromCode(code)
+        await newContract.getReferralAddressFromCode(code)
         .then(res => {
           if (res != "0x0000000000000000000000000000000000000000") {
             setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
@@ -267,15 +277,15 @@ const TiketBuyPage = () => {
 
 
                  {/* ticket basic- descuentos aplicados */}
-
-                  <img className='imgTicket imgTicket-basic' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png"/* {tiketBasico} */ alt="Ticket Basic" />
+                 
+                  <img className='imgTicket imgTicket-basic' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png"/* {tiketBasico} */ alt="Ticket Basic" />
                   <div className="priceBasic">
                       <div className="boxPrinceBasic">
                         <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
                         <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                       <div className="boxPriceBasicDescuento">
-                        <h2 className='priceBasicDescuento'>${priceTicketBasic - ( 5 * cantTicketsBasic)}</h2>
+                        <h2 className='priceBasicDescuento'>${priceTicketBasic - ( 4 * cantTicketsBasic)}</h2>
                       </div>
                   </div>
 
@@ -370,7 +380,7 @@ const TiketBuyPage = () => {
               {/* ticket boost- descuentos aplicados */}
 
               <div className="boxTickets">
-                  <img className='imgTicket imgTicket-boost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png"/* {tiketBoost} */ alt="Ticket Ladder" />
+                  <img className='imgTicket imgTicket-boost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png"/* {tiketBoost} */ alt="Ticket Ladder" />
                   <div className="priceBoost">
                       <div className="boxPrinceBoost">
                         <h2>${priceTicketBoost}</h2>
@@ -378,7 +388,7 @@ const TiketBuyPage = () => {
                       </div>
                   
                       <div className="boxPriceBoostDescuento">
-                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 5 * cantTicketsBoost) }</h2>
+                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 7 * cantTicketsBoost) }</h2>
                       </div>
                   </div>
 

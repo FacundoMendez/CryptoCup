@@ -33,26 +33,6 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             </div>
         </div>
         
-{/*         <div className="containerHereCupon"> 
-            <p>Do you have a referral code? put it <span className='hereClick'>HERE</span> </p>
-
-            <div className="containerInputCupon">
-                <input type="number" id='referral_code_input' min={1}  />
-                <button id='buttonSubmitCode' type='submit' onClick={async () => {
-                    await checkRefCodeValid(document.querySelector('#referral_code_input').value);
-                    }}> 
-                    <FontAwesomeIcon icon={faAnglesRight} />
-                </button>                    
-                <div className="errorCodigoVacio">
-                    <p>Enter a Valid Code !</p>
-                </div>
-            </div>
-
-            {!connected ? <NoConnectedWallet /> : null}
-            {codigoIncorrecto   ?   <CodigoIncorrecto /> :  null  }
-            {codigoPropio   ?   <PopupErrorCodigoPropio /> :  null  }
-        </div> */}
-
     </div>
 
   )

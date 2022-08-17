@@ -10,7 +10,7 @@
     overflow: hidden;
     flex-direction: column;
     padding-top: 5rem ;
-    z-index: 9999999 !important;
+    z-index: 9999998 !important;
     background-image: url("./src/Footer3.jpg");
     background-size: cover;
     background-attachment: fixed;

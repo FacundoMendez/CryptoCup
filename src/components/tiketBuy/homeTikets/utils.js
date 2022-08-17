@@ -229,6 +229,25 @@ export const abi = [
 				"type": "uint256"
 			}
 		],
+		"name": "newBatchDeadline",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
 		"name": "newFees",
 		"type": "event"
 	},
@@ -248,6 +267,18 @@ export const abi = [
 	{
 		"anonymous": false,
 		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			},
 			{
 				"indexed": false,
 				"internalType": "uint256",
@@ -347,7 +378,59 @@ export const abi = [
 	},
 	{
 		"inputs": [],
+		"name": "basicReferedDiscount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "basicReferralFee",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
 		"name": "boostPrice",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "boostReferedDiscount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "boostReferralFee",
 		"outputs": [
 			{
 				"internalType": "uint256",
@@ -632,19 +715,6 @@ export const abi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "referedDiscount",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -683,19 +753,6 @@ export const abi = [
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "referralFee",
-		"outputs": [
-			{
-				"internalType": "uint256",
-				"name": "",
-				"type": "uint256"
-			}
-		],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -713,6 +770,19 @@ export const abi = [
 		"name": "renounceOwnership",
 		"outputs": [],
 		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "rewardsPoolAddress",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
@@ -788,7 +858,12 @@ export const abi = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_newFee",
+				"name": "_newBasicFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_newBoostFee",
 				"type": "uint256"
 			}
 		],
@@ -814,12 +889,22 @@ export const abi = [
 		"inputs": [
 			{
 				"internalType": "uint256",
-				"name": "_referralFee",
+				"name": "_basicReferralFee",
 				"type": "uint256"
 			},
 			{
 				"internalType": "uint256",
-				"name": "_referedDiscount",
+				"name": "_boostReferralFee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_basicReferedDiscount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_boostReferedDiscount",
 				"type": "uint256"
 			}
 		],
@@ -975,6 +1060,19 @@ export const abi = [
 			}
 		],
 		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_newDeadline",
+				"type": "uint256"
+			}
+		],
+		"name": "updateBatchDeadline",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"

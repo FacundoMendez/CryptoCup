@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 999999  !important;
+    z-index: 9999999 !important;
     right: -24rem;
     transition: all .5s ease-in-out;
     top: 0;
