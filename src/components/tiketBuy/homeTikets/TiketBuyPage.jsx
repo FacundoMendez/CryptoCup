@@ -118,12 +118,14 @@ const TiketBuyPage = () => {
         const newProvider = new ethers.providers.Web3Provider(window.ethereum);
         const { chainId } = await newProvider.getNetwork();
 
-        if(chainId === 4) {
+        if(chainId === 3) {
           const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
           const newSigner = await newProvider.getSigner();
           const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
 
           console.log(newContract)
+
+          console.log(newAccount[0]);
 
           await newContract.getReferralCodeFromAddress(newAccount[0])
           .then(res => {
@@ -196,7 +198,7 @@ const TiketBuyPage = () => {
     // Aca se deberia activar el timeout.
 
     setLoadingBuy(true)
-    const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+    const tx = await contract.mint(cantTicketsBoost, 4, 1, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
     .catch(e => {
       setLoadingBuy(false); // Aca se cancela la compra.
     });
@@ -265,7 +267,7 @@ const TiketBuyPage = () => {
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
       {loadingBuy ? <PopupEsperaBuy /> : null}
       {noMetamask ? <NoMetamask noMetamask={noMetamask} textNoMetamask="Please Install Metamask!" /> : null}
-      {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Please connect to the Rinkeby Network!"/> : null }     {/* modificar network */}
+      {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Please connect to the Ropsten Network!"/> : null }     {/* modificar network */}
 
       {noBalance ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Does not have the necessary balance"/> : null }    {/* balance  */}
 
