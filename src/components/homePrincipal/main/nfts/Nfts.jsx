@@ -31,11 +31,11 @@ const Nfts = () => {
         <div className="tiposTorneos">   
           <div className="container">
             <div className="container_card ">
-                <video className='videoCopaBasic' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660656633/CryptocupQatar/nft/prizepoolBasicVideo_yfb6dh.mp4"/* {videoCopaBasic} */ autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBasic' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656633/CryptocupQatar/nft/prizepoolBasicVideo_yfb6dh.mp4"/* {videoCopaBasic} */ autoPlay loop muted type="video/mp4" ></video> 
                 <p className='basicTextVideo'>BASIC LADDER</p>
             </div>  
             <div className="container_card"> 
-                <video className='videoCopaBoost' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660656629/CryptocupQatar/nft/prizepoolBoostVideo_u4maa7.mp4"/* {videoCopaBoost} */  autoPlay loop muted type="video/mp4" ></video> 
+                <video className='videoCopaBoost' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656629/CryptocupQatar/nft/prizepoolBoostVideo_u4maa7.mp4"/* {videoCopaBoost} */  autoPlay loop muted type="video/mp4" ></video> 
                 <p className='boostTextVideo'>BOOST LADDER</p>
             </div> 
           </div>
