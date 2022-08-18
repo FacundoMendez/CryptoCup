@@ -27,12 +27,12 @@ const cardsFuncional = () => {
             "max-glare":.2,
         });
 
-        VanillaTilt.init(document.querySelectorAll(".textRoadamp"), {
+/*         VanillaTilt.init(document.querySelectorAll(".textRoadamp"), {
             max: 25,
             speed: 1000,
             "max-glare":1,
         });
-
+ */
 
     }
     
