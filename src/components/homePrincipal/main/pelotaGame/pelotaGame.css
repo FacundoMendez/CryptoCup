@@ -57,6 +57,10 @@
     z-index: 220;
 }
 
+.restart:active{
+    background-color: rgba(211, 193, 253, 0.171); 
+}
+
 .restartInit{
     display: block;
 }
@@ -68,14 +72,22 @@
     bottom: 1.5rem;
     left: 300px;
     z-index: 2;
-/*     animation: animarpelota_game 3s linear infinite; */
+    animation: none;
     z-index: 10;
     object-fit: cover;
     border-radius: 50%;
 }
 
+.pelota_game_active {
+    animation: animarpelota_game 2s linear infinite;;
+}
+
+.pelota_game_desactive {
+    animation:none;
+}
+
 .pelota_game-corriendo {
-    animation: animarpelota_game 3s linear infinite;
+    animation: animarpelota_game 2s linear infinite;
 }
 .pelota_game-estrellado {
     background-position-x: -252px;
@@ -94,22 +106,24 @@
 }
 
 .cactus{
-    width: 46px;
+    width: 60px;
     height: 100px !important;
     position: absolute;
-    bottom: 15px;
+    bottom: 14px;
     left: 600px;
     z-index: 1;
-    background: url("./src/cactus1.png") no-repeat;
+    background: url("./src/cono.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border-radius: 15px;
+    filter: hue-rotate(0deg) contrast(110%) brightness(120%);
 }
 .cactus2{
-    width: 100px;
+    width: 170px !important;
     height: 100px !important;
-    background: url("./src/cactus3.png") no-repeat;
+    bottom: 15px;
+    background: url("./src/cono2.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;

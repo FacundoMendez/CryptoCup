@@ -5,21 +5,21 @@ import pelotaLogo from "./src/pelotaLogo.png"
 
 const PelotaGame = () => {
 
-    useEffect(() => {
+/*     useEffect(() => {
         pelotaGameFunction()
-    })
+    }) */
 
   return (
 
     <div>
         <div className="contenedor">
 
-            <div className="StartGame"><p>Start</p></div>
-            <div className="restart"><p>Restart</p></div>
+            <div className="StartGame" onClick={pelotaGameFunction}><p>Start</p></div>
+            <div className="restart" ><p>Restart</p></div>
 
             <div className="suelo"></div>
 
-            <img className="pelota_game pelota_game-corriendo" src={pelotaLogo} alt="logo CRYPTO CUP" />
+            <img className="pelota_game " src={pelotaLogo} alt="logo CRYPTO CUP" />
 
             <div className="score">0</div>
 
