@@ -24,8 +24,8 @@ const tournamentScroll = () =>{
 
         gsap.from(".tournamentTitle",{
             opacity:0,
-            delay:.3,
-            scale:1.5,
+            delay:.2,
+            scale:1,
             duration:.5,
             scrollTrigger:{
                 trigger: ".boxTournament",

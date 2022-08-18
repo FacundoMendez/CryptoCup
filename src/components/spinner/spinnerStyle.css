@@ -13,7 +13,7 @@
    height: 160px;
    background-image: url("./src/Logo.png");
    background-size: cover;
-   animation: spinner-12 2s infinite linear;
+   animation: spinner-12 1s infinite linear;
  }
  
  @keyframes spinner-12 {

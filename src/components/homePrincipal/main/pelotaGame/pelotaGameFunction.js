@@ -11,46 +11,40 @@ const pelotaGameFunction = () => {
       const cactus = document.querySelectorAll(".cactus")
 
 
-      var sueloY = 12;
-      var velY = .5;
-      var impulso = 950;
-      var gravedad = 2300;
-      
-      var pelota_gamePosX = 300;
-      var pelota_gamePosY = sueloY; 
-      
-      var sueloX = 0;
-      var velEscenario = 1280/3;
-      var gameVel = 1;
-      var score = 0;
-      
-      var parado = false;
-      var saltando = false;
-      
-      var tiempoHastaObstaculo = 2;
-      var tiempoObstaculoMin = 1.5;
-      var tiempoObstaculoMax = 4;
-      var obstaculoPosY = 16;
-      var obstaculos = [];
-      
-      var tiempoHastaNube = 0.5;
-      var tiempoNubeMin = 0.7;
-      var tiempoNubeMax = 2.7;
-      var maxNubeY = 270;
-      var minNubeY = 100;
-      var nubes = [];
-      var velNube = 0.5;
-      
-      var contenedor;
-      var pelota_game;
-      var textoScore;
-      var suelo;
-      var gameOver;
+    let sueloY = 12;
+    let velY = .5;
+    let impulso = 950;
+    let gravedad = 2300;
+    let pelota_gamePosX = 300;
+    let pelota_gamePosY = sueloY; 
+    let sueloX = 0;
+    let velEscenario = 1280/3;
+    let gameVel = 1;
+    let score = 0;
+    let parado = false;
+    let saltando = false;
+    let tiempoHastaObstaculo = 2;
+    let tiempoObstaculoMin = 1.5;
+    let tiempoObstaculoMax = 4;
+    let obstaculoPosY = 16;
+    let obstaculos = [];
+    let tiempoHastaNube = 0.5;
+    let tiempoNubeMin = 0.7;
+    let tiempoNubeMax = 2.7;
+    let maxNubeY = 270;
+    let minNubeY = 100;
+    let nubes = [];
+    let velNube = 0.5;
+    let contenedor;
+    let pelota_game;
+    let textoScore;
+    let suelo;
+    let gameOver;
 
 
 
-    var time = new Date();
-    var deltaTime = 0;
+    let time = new Date();
+    let deltaTime = 0;
     
     if(document.readyState === "complete" || document.readyState === "interactive"){
         setTimeout(Init, 1);
@@ -69,11 +63,14 @@ const pelotaGameFunction = () => {
 
 
     function Init() {
+        const score = document.querySelector(".score")
+
         time = new Date();
         Start();
         Loop();
         StartGame.classList.add("startInit")
         pelotaGame.classList.toggle("pelota_game_active")
+        score.classList.toggle("score_active")
         pelota_game.classList.add("pelota_game-corriendo");
     }
     
@@ -88,6 +85,7 @@ const pelotaGameFunction = () => {
         textoScore = document.querySelector(".score");
         pelota_game = document.querySelector(".pelota_game");
         document.addEventListener("keydown", HandleKeyDown);
+        document.addEventListener("click", handleEvent);
     }
 
     
@@ -102,17 +100,27 @@ const pelotaGameFunction = () => {
         MoverObstaculos();
         MoverNubes();
         DetectarColision();
-        
         velY -= gravedad * deltaTime;
-            
     }
+
+    function handleEvent(e){
+
+        Saltar()
+  
+       }
 
 
     function HandleKeyDown(ev){
-        if(ev.keyCode == 32){
+        if(ev.keyCode==32){
             Saltar();
-        }
+         }
+
+         if(ev.keyCode==38){
+            Saltar();
+         }
     }
+
+
     
     function Saltar(){
         if(pelota_gamePosY === sueloY){
@@ -232,18 +240,18 @@ const pelotaGameFunction = () => {
             tiempoObstaculoMax = 3;
             contenedor.classList.add("mediodia");
    
-        }else if(score == 10) {
+        }else if(score == 15) {
             gameVel = 2;
             contenedor.classList.add("tarde");
             tiempoObstaculoMin = 1;
             tiempoHastaObstaculo = 1.5;
             tiempoObstaculoMax = 2.5;
-        } else if(score == 20) {
+        } else if(score == 25) {
             gameVel = 3;
             contenedor.classList.add("noche");
             tiempoObstaculoMin = 0.7;
-            tiempoHastaObstaculo = 1.2;
-            tiempoObstaculoMax = 2.3;
+            tiempoHastaObstaculo = 1.1;
+            tiempoObstaculoMax = 3;
         }
 
         

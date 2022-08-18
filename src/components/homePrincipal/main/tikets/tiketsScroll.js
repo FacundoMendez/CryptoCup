@@ -9,58 +9,14 @@ const tiketsScroll = () =>{
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-/*     const pelota = document.querySelector(".pelota")
-
-    function ballBounce() {
-
-        var tl = new Timeline();
-  
-        tl
-  
-          .to(".pelota", 0.5, {
-          y: 0,
-          ease: Circ.easeOut,
-          force3D: true,
-        }, "bounce")
-  
-        .to(".pelota", 0.4, {
-          y: 140,
-          ease: Circ.easeIn
-        }, "bounce2")
-
-
-      }
-
-
-    pelota.addEventListener("click" , function(){
-        ballBounce()
-    }) */
-
     if (!isMobile()) {
 
         gsap.registerPlugin(ScrollTrigger);
 
-/*         ballBounce() */
-
-        
-/* 
-      gsap.to(".pelota",{
-            x: 1800 ,
-            rotate: "+=2080",
-            duration:20,
-            scrollTrigger:{
-                trigger: ".containerTikets",
-                start: "100% 450px",
-                end: "+=650",
-                scrub: 7,
-            }
-        })
- */
-
 
         gsap.from(".tiketsTitle",{
             opacity:0,
-            scale:1.2,
+            scale:1,
             duration:.7,
             scrollTrigger:{
                 trigger: ".containerTikets",

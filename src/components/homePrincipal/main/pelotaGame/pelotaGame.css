@@ -44,7 +44,7 @@
 
 .restart{
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid white;
@@ -79,7 +79,7 @@
 }
 
 .pelota_game_active {
-    animation: animarpelota_game 2s linear infinite;;
+    animation: animarpelota_game 1.7s linear infinite;;
 }
 
 .pelota_game_desactive {
@@ -87,7 +87,7 @@
 }
 
 .pelota_game-corriendo {
-    animation: animarpelota_game 2s linear infinite;
+    animation: animarpelota_game 1.7s linear infinite;
 }
 .pelota_game-estrellado {
     background-position-x: -252px;
@@ -101,64 +101,75 @@
     left: 0;
     z-index: 11;
     background: url("./src/cesped.png") repeat-x 0px 0px;
-    background-size: 50% 42px;
-
+    background-size: 50% 45px;
+    filter: contrast(115%) brightness(110%);
 }
 
 .cactus{
-    width: 60px;
+    width: 70px;
     height: 100px !important;
     position: absolute;
-    bottom: 14px;
+    bottom: 10px;
     left: 600px;
     z-index: 1;
     background: url("./src/cono.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    border-radius: 15px;
     filter: hue-rotate(0deg) contrast(110%) brightness(120%);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
 }
 .cactus2{
     width: 170px !important;
     height: 100px !important;
-    bottom: 15px;
+    bottom: 10px;
     background: url("./src/cono2.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    filter: contrast(110%) brightness(120%);
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
 }
 
 .nube{
     width: 92px;
     height: 26px;
-
     position: absolute;
     z-index: 0;
-
+    filter: contrast(110%) brightness(120%);
     background: url("./src/nube.png") no-repeat;
     background-size: 92px 26px;
 }
 
 .score{
-    width: 100px;
-    height: 30px;
     position: absolute;
     top: 10rem;
-    right: 49.5%;
+    right: 48.4%;
     z-index: 10;
     color: #d1b5ff;
     font-family: Verdana;
     font-size: 3rem;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
+    border: 2px solid #d1b5ff;
+    padding: .5rem 1.5rem;
+    border-radius: 20%;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.score_active{
+    display: block;
+    transition: all 1s ease-in-out;
 }
 
 .game-over{
     display: none;
     position: absolute;
     width: 100%;
-    top:35%;
+    top:40%;
     left: 50%;
     transform: translate(-50% , -50%);
     text-align: center;
@@ -176,4 +187,13 @@
     to{
         transform: rotate(720deg);
     }
+}
+
+
+@media screen and (max-width:1170px) {
+
+    .contenedor{
+        display: none;
+    }
+    
 }
