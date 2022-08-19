@@ -30,7 +30,7 @@ const TokenMain = () => {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe eaque neque minima ab ipsa animi impedit quo earum, et placeat fugit. Modi quidem ut nemo a impedit praesentium distinctio illum.</p>
             </div>
            {/*  <canvas className='tokenWebGl'></canvas> */}
-            <video className='tokenVideo' preload='none' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:low/v1660656689/CryptocupQatar/token/tokenVideo_l9kbux.mp4"/* {tokenVideo} */ autoPlay loop muted type="video/mp4"></video> 
+            <img className='tokenVideo' preload='none' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/ac_none,c_scale,h_203,q_auto:low/v1660656689/CryptocupQatar/token/tokenVideo_l9kbux.gif" alt='gifToken'></img> 
         </div>
     </div>
   )
