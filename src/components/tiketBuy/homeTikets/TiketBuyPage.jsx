@@ -118,14 +118,18 @@ const TiketBuyPage = () => {
         const newProvider = new ethers.providers.Web3Provider(window.ethereum);
         const { chainId } = await newProvider.getNetwork();
 
+        window.ethereum.on('accountsChanged', async accounts => {
+          await login();
+        });
+
+        window.ethereum.on('networkChanged', async accounts => {
+          await login();
+        });
+
         if(chainId === 3) {
           const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
           const newSigner = await newProvider.getSigner();
           const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
-
-          console.log(newContract)
-
-          console.log(newAccount[0]);
 
           await newContract.getReferralCodeFromAddress(newAccount[0])
           .then(res => {
@@ -137,7 +141,7 @@ const TiketBuyPage = () => {
             else {
               setCopyActive(false);
             }
-          })
+          });
 
           // chequear si hay codigo de descuento. en caso de que haya, hay que chequear si es valido. si es valido hay que mostrar los descuentos.
           const referralCode = searchParams.get("r")
@@ -152,6 +156,16 @@ const TiketBuyPage = () => {
           setConnected(true);
         } else {
           // Aca mostrar error que esta conectado en la chain incorrecta.
+          setCopyActive(false);
+          setReferralCode(0);
+          setSubmitCodigoDescuento(false);
+          setActiveReferralCode(0);
+          setProvider(undefined);
+          setAccount(undefined);
+          setSigner(undefined);
+          setContract(undefined);
+          setConnected(false);
+
           setChainIncorrecta(true)
           setTimeout(function(){
             setChainIncorrecta(false)
@@ -171,6 +185,20 @@ const TiketBuyPage = () => {
 
   }
 
+  const checkReferral = async () => {
+    await contract.getReferralCodeFromAddress(account[0])
+    .then(res => {
+      if (res != 0) { // si el usuario tiene un codigo de referencia
+        console.log(res);
+        setCopyActive(true);
+        setReferralCode(res);
+      }  
+      else {
+        setCopyActive(false);
+      }
+    });
+  }
+
   const buyBasicTicket = async () => {
     // Aca se deberia activar el timeout.
 
@@ -187,6 +215,7 @@ const TiketBuyPage = () => {
 
     setLoadingBuy(false)
     setBuyTicketBasic(true);
+    checkReferral();
 
     setTimeout(function(){ 
       setBuyTicketBasic(false); 
@@ -208,6 +237,7 @@ const TiketBuyPage = () => {
 
     setLoadingBuy(false)
     setBuyTicketBoost(true);
+    checkReferral();
 
     setTimeout(function(){ 
       setBuyTicketBoost(false); 
