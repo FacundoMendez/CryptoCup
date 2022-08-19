@@ -38,7 +38,7 @@
 
 .tokenComingSoon-left{
     position: absolute;
-    top: 34%;
+    top: 36%;
     left: 50.5%;
     transform: translate(-50%, -50%) rotate(12deg);
     width: 115%;
@@ -47,7 +47,7 @@
 
 .tokenComingSoon-right{
     position: absolute;
-    top: 34%;
+    top: 37%;
     left: 50.5%;
     transform: translate(-50%, -50%) rotate(-12deg);
     width: 115%;
@@ -85,8 +85,9 @@
     cursor: grab;
     transform: scale(.01);
     opacity: 0;
-    margin-top: 15rem;
+    margin-top: 10rem;
     padding-bottom: 20rem;
+    width: 17rem;
 }
 
 

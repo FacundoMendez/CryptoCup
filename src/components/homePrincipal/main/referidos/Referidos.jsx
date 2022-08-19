@@ -2,10 +2,7 @@ import React, {useEffect} from 'react'
 import "./referidos.css"
 import referidosScroll from './referidosScroll'
 
-/* import smokeVideo from "./src/smoke2.mp4" */
-/* import backReferidos from "./src/backReferidos.jpg"
-import ticketReferidos from "./src/ticketReferidos.png"
-import linesBack from "./src/lines.jpg" */
+
 
 const Referidos = () => {
   useEffect(() => {
