@@ -129,7 +129,7 @@
 
 
 .bottomTicketBuy{
-    background-image: url("./src/bottomTickets.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656597/CryptocupQatar/present/bottomTickets_wvjseb.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@
 }
 
 .bottomTicketBuy::before{
-    background-image: url("./src/TextoCurvo.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656597/CryptocupQatar/present/TextoCurvo_qvv2hu.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

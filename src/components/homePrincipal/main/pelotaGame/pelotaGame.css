@@ -20,9 +20,24 @@
 }
 
 .noche {
-    background-color:  #ae9cfd; 
+    background-color:  #a692ff; 
 }
 
+.level-up4 {
+    background-color:  #ff8db3; 
+}
+
+.level-up5 {
+    background-color:  #8dffdd; 
+}
+
+.level-up6 {
+    background-color:  #86ff70; 
+}
+
+.level-up7 {
+    background-color:  #fc4646; 
+}
 
 .StartGame{
     position: absolute;
@@ -75,7 +90,6 @@
     animation: none;
     z-index: 10;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .pelota_game_active {
@@ -100,18 +114,28 @@
     bottom: 0;
     left: 0;
     z-index: 11;
-    background: url("./src/cesped.png") repeat-x 0px 0px;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656671/CryptocupQatar/tickets/cesped_yecoim.png") repeat-x 0px 0px;
     background-size: 50% 45px;
     filter: contrast(115%) brightness(110%);
 }
 
-.cactus{
-    width: 70px;
-    height: 100px !important;
+.cono{
+    width: 30px !important;
+    height: 80px !important;
     position: absolute;
     bottom: 10px;
     left: 600px;
+}
+
+.cono::before{
+    content: " ";
+    width: 64px ;
+    height: 100px ;
+    position: absolute;
     z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% ,0);
     background: url("./src/cono.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -120,15 +144,26 @@
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
 }
-.cactus2{
-    width: 170px !important;
-    height: 100px !important;
+.cono2{
+    width: 123px !important;
+    height: 97px !important;
     bottom: 10px;
+}
+
+.cono2::before{
+    content: " ";
+    width: 170px ;
+    height: 100px ;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% ,0);
     background: url("./src/cono2.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    filter: contrast(110%) brightness(120%);
+    filter: hue-rotate(0deg) contrast(110%) brightness(120%);
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
 }
@@ -146,7 +181,8 @@
 .score{
     position: absolute;
     top: 10rem;
-    right: 48.4%;
+    left: 48.8%;
+    transform: translate(-50%  0);
     z-index: 10;
     color: #d1b5ff;
     font-family: Verdana;

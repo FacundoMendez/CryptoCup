@@ -13,7 +13,7 @@ const TournamentMain = () => {
 
   return (
       <div id='tournament' className="tournamentContainer">
-        <img className="backgroundReflejo backPresentacion"src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656597/CryptocupQatar/present/BackTournament2_zc1ex3.jpg" /* {backgroundReflejo} */  alt="backReflejo" />
+        <img className="backgroundReflejo backPresentacion"src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656597/CryptocupQatar/present/BackTournament2_zc1ex3.jpg" /* {backgroundReflejo} */  alt="backReflejo" />
         
         <div className="boxTournament">
 
@@ -36,7 +36,7 @@ const TournamentMain = () => {
               </div>
 
               <div className="logoContainer">
-                  <img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"/* {logo} */ alt="logo CRYPTO CUP" />
+                  <img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"/* {logo} */ alt="logo CRYPTO CUP" />
               </div>
 
             </div>

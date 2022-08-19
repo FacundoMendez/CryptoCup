@@ -18,15 +18,15 @@ const Referidos = () => {
         <div className='containerReferidos'>
 
 
-                <img className="backReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660657089/CryptocupQatar/referidos/backReferidos_ifrq6n.jpg"  /* {backReferidos} */ alt="background referidos" />
+                <img className="backReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660657089/CryptocupQatar/referidos/backReferidos_ifrq6n.jpg"  /* {backReferidos} */ alt="background referidos" />
                 
                 <div className="cortinaTop">
-                  <img className='linesBackTop' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
+                  <img className='linesBackTop' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
                 </div>
 
 
                   <div className="smoke">
-                     <video className='smokeVideo'  src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660657089/CryptocupQatar/referidos/smoke2_u5v5m4.mp4"  /* {smokeVideo} */  muted type="video/mp4"></video> 
+                     <video className='smokeVideo'  src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660657089/CryptocupQatar/referidos/smoke2_u5v5m4.mp4"  /* {smokeVideo} */  muted type="video/mp4"></video> 
                   </div>
 
                 <div className="boxReferidos_t">
@@ -42,12 +42,12 @@ const Referidos = () => {
                         
                       </p>
                   </div>
-                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660657088/CryptocupQatar/referidos/ticketReferidos_mfeink.png"  /* {ticketReferidos} */ alt="tickets referidos" />
+                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660657088/CryptocupQatar/referidos/ticketReferidos_mfeink.png"  /* {ticketReferidos} */ alt="tickets referidos" />
 
                 </div>
 
                 <div className="cortinaBottom">
-                  <img className='linesBackBottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
+                  <img className='linesBackBottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
                 </div>
             </div>
    

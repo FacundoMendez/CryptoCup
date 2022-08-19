@@ -8,12 +8,12 @@ const pelotaGameFunction = () => {
       const StartGame = document.querySelector(".StartGame")
       let pelotaGame = document.querySelector(".pelota_game")
       const restart = document.querySelector(".restart")
-      const cactus = document.querySelectorAll(".cactus")
+      const cono = document.querySelectorAll(".cono")
 
 
     let sueloY = 12;
     let velY = .5;
-    let impulso = 950;
+    let impulso = 900;
     let gravedad = 2300;
     let pelota_gamePosX = 300;
     let pelota_gamePosY = sueloY; 
@@ -181,9 +181,9 @@ const pelotaGameFunction = () => {
     function CrearObstaculo() {
         var obstaculo = document.createElement("div");
         contenedor.appendChild(obstaculo);
-        obstaculo.classList.add("cactus");
+        obstaculo.classList.add("cono");
         if ((Math.random() > .5) && (score >= 5)){
-            obstaculo.classList.add("cactus2");
+            obstaculo.classList.add("cono2");
         } 
         obstaculo.posX = contenedor.clientWidth;
         obstaculo.style.left = contenedor.clientWidth+"px";
@@ -235,8 +235,8 @@ const pelotaGameFunction = () => {
         textoScore.innerText = score;
         if(score == 5){
             gameVel = 1.5;
-            tiempoObstaculoMin = 1.2;
-            tiempoHastaObstaculo = 1.8;
+            tiempoObstaculoMin = 2;
+            tiempoHastaObstaculo = 4;
             tiempoObstaculoMax = 3;
             contenedor.classList.add("mediodia");
    
@@ -244,21 +244,42 @@ const pelotaGameFunction = () => {
             gameVel = 2;
             contenedor.classList.add("tarde");
             tiempoObstaculoMin = 1;
-            tiempoHastaObstaculo = 1.5;
-            tiempoObstaculoMax = 2.5;
+            tiempoHastaObstaculo = 1.9;
+            tiempoObstaculoMax = 3.5;
         } else if(score == 25) {
             gameVel = 3;
             contenedor.classList.add("noche");
-            tiempoObstaculoMin = 0.7;
-            tiempoHastaObstaculo = 1.1;
+            tiempoObstaculoMin = 1;
+            tiempoHastaObstaculo = 1.8;
             tiempoObstaculoMax = 3;
+        }else if(score == 35) {
+            gameVel = 4;
+            contenedor.classList.add("level-up4");
+            tiempoObstaculoMin = 1;
+            tiempoHastaObstaculo = 1.8;
+            tiempoObstaculoMax = 2.5;
         }
-
+        else if(score == 50) {
+            gameVel = 5;
+            contenedor.classList.add("level-up5");
+            tiempoObstaculoMin = .9;
+            tiempoHastaObstaculo = 1.8;
+            tiempoObstaculoMax = 2.2;
+        }
+        else if(score == 75) {
+            gameVel = 6;
+            contenedor.classList.add("level-up6");
+            tiempoObstaculoMin = .8;
+            tiempoHastaObstaculo = 1.8;
+            tiempoObstaculoMax = 2;
+        }  else if(score == 100) {
+            gameVel = 7;
+            contenedor.classList.add("level-up7");
+            tiempoObstaculoMin = .6;
+            tiempoHastaObstaculo = 1.8;
+            tiempoObstaculoMax = 1.9;
+        }
         
-
-
-    
-
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"
     }
@@ -274,7 +295,7 @@ const pelotaGameFunction = () => {
                 //EVADE
                 break; //al estar en orden, no puede chocar con más
             }else{
-                if(IsCollision(pelota_game, obstaculos[i], 10, 30, 15, 20)) {
+                if(IsCollision(pelota_game, obstaculos[i], 30, 30, 30, 30)) {
                     GameOver();
                     pelotaGame.classList.toggle("pelota_game_desactive")
                 
@@ -289,7 +310,7 @@ const pelotaGameFunction = () => {
     
         return !(
             ((aRect.top + aRect.height - paddingBottom) < (bRect.top)) ||
-            (aRect.top + paddingTop > (bRect.top + bRect.height)) ||
+            (aRect.top + paddingTop > (bRect.top + bRect.height )) ||
             ((aRect.left + aRect.width - paddingRight) < bRect.left) ||
             (aRect.left + paddingLeft > (bRect.left + bRect.width))
         );
@@ -324,8 +345,8 @@ const pelotaGameFunction = () => {
         nubes = [];
         velNube = 0.5;
 
-        document.querySelectorAll(".cactus").forEach(e => e.remove())
-        document.querySelectorAll(".cactus2").forEach(e => e.remove())
+        document.querySelectorAll(".cono").forEach(e => e.remove())
+        document.querySelectorAll(".cono2").forEach(e => e.remove())
         document.querySelectorAll(".nube").forEach(e => e.remove())
 
         gameOver.style.display = "none";
@@ -339,8 +360,12 @@ const pelotaGameFunction = () => {
         restart.classList.remove("restartInit")
         contenedor.classList.remove("tarde");
         contenedor.classList.remove("noche");
-
         contenedor.classList.remove("mediodia");
+        contenedor.classList.remove("level-up4");
+        contenedor.classList.remove("level-up5");
+        contenedor.classList.remove("level-up6");
+        contenedor.classList.remove("level-up7");
+
 
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"
