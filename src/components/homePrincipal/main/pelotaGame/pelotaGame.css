@@ -172,11 +172,22 @@
 }
 
 .moneda{
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
     position: absolute;
     z-index: 1;
     background: url("./src/moneda11.png") no-repeat center center;
+    animation: animarMoneda_game 3s linear infinite;
+    filter: drop-shadow(0 0 1px black) contrast(110%) brightness(120%);
+}
+
+.monedaGrande{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    background: url("./src/monedaGrande.png") no-repeat center center;
+    filter: drop-shadow(0 0 4px rgba(255, 239, 225, 0.137)) contrast(110%) brightness(120%);
 }
 
 .nube{
@@ -283,6 +294,16 @@
     }
     to{
         transform: rotate(720deg);
+    }
+}
+
+
+@keyframes animarMoneda_game{
+    from{
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to{
+        transform: rotate3d(0, 1, 0, 360deg);
     }
 }
 

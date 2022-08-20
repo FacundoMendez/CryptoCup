@@ -210,7 +210,7 @@ const pelotaGameFunction = () => {
     function CrearMoneda() {
         var moneda = document.createElement("div");
 
-        if ((Math.random() > .5) && (score >= 5)){
+        if ((Math.random() > .55) && (score >= 5)){
             contenedor.appendChild(moneda);
             moneda.classList.add("moneda");
             moneda.posX = contenedor.clientWidth;
@@ -219,6 +219,9 @@ const pelotaGameFunction = () => {
         
             obstaculos.push(moneda);
             tiempoHastaMoneda = tiempoMonedaMin + Math.random() * (tiempoMonedaMax-tiempoMonedaMin) / gameVel;
+        } 
+        if ((Math.random() > .7) && (score >= 20)){
+            moneda.classList.add("monedaGrande");
         } 
 
     }
@@ -283,6 +286,8 @@ const pelotaGameFunction = () => {
     
 
     function GanarPuntos() {
+
+    
         score++;
         textoScore.innerText = score;
         if(score == 5){
@@ -375,6 +380,9 @@ const pelotaGameFunction = () => {
             }else{
                 if(IsCollision(pelota_game, obstaculos[i], 30, 30, 30, 30)) {
                     if(obstaculos[i].classList.contains("moneda")){
+                        if(obstaculos[i].classList.contains("monedaGrande")){
+                            score += 3;     
+                        }
                         GanarPuntos();
                         obstaculos[i].parentNode.removeChild(obstaculos[i]);
                         obstaculos.splice(i, 1);
