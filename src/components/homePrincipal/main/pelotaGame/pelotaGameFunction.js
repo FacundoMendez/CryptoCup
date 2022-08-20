@@ -51,7 +51,7 @@ const pelotaGameFunction = () => {
     let time = new Date();
     let deltaTime = 0;
 
-
+    var interactuables = [];
 
 
     
@@ -116,7 +116,8 @@ const pelotaGameFunction = () => {
         DecidirCrearMonedas();
         DetectarColision();
         ScoreMaximo()
-
+        DetectarColisionMoneda()
+        MoverInteractuables()
         velY -= gravedad * deltaTime;
     }
 
@@ -126,7 +127,7 @@ const pelotaGameFunction = () => {
 
 
     function HandleKeyDown(ev){
-        if(ev.keyCode==32){
+        if(ev.keyCode===32){
             Saltar();
          }
     }
@@ -207,24 +208,57 @@ const pelotaGameFunction = () => {
         }
     }
 
+    
     function CrearMoneda() {
-        var moneda = document.createElement("div");
-
+        let moneda = document.createElement("div");
         if ((Math.random() > .55) && (score >= 5)){
             contenedor.appendChild(moneda);
             moneda.classList.add("moneda");
             moneda.posX = contenedor.clientWidth;
             moneda.style.left = contenedor.clientWidth+"px";
             moneda.style.bottom = monedaMinY + (monedaMaxY - monedaMinY) * Math.random() + "px";
-        
-            obstaculos.push(moneda);
+
+            interactuables.push(moneda);
             tiempoHastaMoneda = tiempoMonedaMin + Math.random() * (tiempoMonedaMax-tiempoMonedaMin) / gameVel;
-        } 
+        }
         if ((Math.random() > .7) && (score >= 20)){
             moneda.classList.add("monedaGrande");
         } 
-
     }
+
+    function MoverInteractuables() {
+        for (var i = interactuables.length - 1; i >= 0; i--) {
+            if(interactuables[i].posX < -interactuables[i].clientWidth) {
+                interactuables[i].parentNode.removeChild(interactuables[i]);
+                interactuables.splice(i, 1);
+            }else{
+                interactuables[i].posX -= CalcularDesplazamiento();
+                interactuables[i].style.left = interactuables[i].posX+"px";
+            }
+        }
+    }
+
+    function DetectarColisionMoneda() {
+        for (var i = 0; i < interactuables.length; i++) {
+            
+            if(interactuables[i].posX > pelota_gamePosX + pelota_game.clientWidth) {
+                //EVADE
+                break; //al estar en orden, no puede chocar con más
+            }else{
+                if(IsCollision(pelota_game, interactuables[i], 10, 25, 10, 20)) {
+                    if(interactuables[i].classList.contains("moneda")){
+                        GanarPuntos();
+                        interactuables[i].parentNode.removeChild(interactuables[i]);
+                        interactuables.splice(i, 1);
+                    }else{
+                        GameOver();
+                    }
+                }
+            }
+        }
+    }
+    
+    
 
 
     /* crear nubes */
@@ -290,53 +324,53 @@ const pelotaGameFunction = () => {
     
         score++;
         textoScore.innerText = score;
-        if(score == 5){
+        if(score === 5){
             gameVel = 1.6;
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1.7;
             tiempoObstaculoMax = 2.5;
             contenedor.classList.add("level-up1");
    
-        }else if(score == 20) {
+        }else if(score === 20) {
             gameVel = 2;
             contenedor.classList.add("level-up2");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 3;
-        } else if(score == 40) {
+        } else if(score === 40) {
             gameVel = 3;
             contenedor.classList.add("level-up3");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = .8;
             tiempoObstaculoMax = 2;
-        }else if(score == 60) {
+        }else if(score === 60) {
             gameVel = 4;
             contenedor.classList.add("level-up4");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 2.5;
         }
-        else if(score == 80) {
+        else if(score === 80) {
             gameVel = 5;
             contenedor.classList.add("level-up5");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 4;
         }
-        else if(score == 100) {
+        else if(score === 100) {
             gameVel = 6;
             contenedor.classList.add("level-up6");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .9;
             tiempoObstaculoMax = 5.2;
-        }  else if(score == 120) {
+        }  else if(score === 120) {
             gameVel = 7;
             contenedor.classList.add("level-up7");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .8;
             tiempoObstaculoMax = 5.7;
         }
-        else if(score ==150) {
+        else if(score ===150) {
             gameVel = 8;
             contenedor.classList.add("level-up8");
             tiempoHastaObstaculo = 5;
@@ -352,14 +386,12 @@ const pelotaGameFunction = () => {
     /* score maximo */
 
     let scoreMax = localStorage.getItem("scoreMax")
-   /*  localStorage.setItem("scoreMax", scoreMax) */
 
 
     function ScoreMaximo(){
 
         let scoreText = document.querySelector(".topScore")
    
-
         if (score > scoreMax){
             scoreMax = score
             scoreText.innerHTML= scoreMax
@@ -435,6 +467,7 @@ const pelotaGameFunction = () => {
         minNubeY = 100;
         nubes = [];
         velNube = 0.5;
+        interactuables = []
 
         document.querySelectorAll(".cono").forEach(e => e.remove())
         document.querySelectorAll(".cono2").forEach(e => e.remove())
@@ -464,6 +497,7 @@ const pelotaGameFunction = () => {
 
         for (var i=0 ;  i < obstaculos.length ; i++) {
                 obstaculos[i].parentNode.removeChild(obstaculos[i]);
+                interactuables[i].parentNode.removeChild(interactuables[i]);
         }
         
     })
