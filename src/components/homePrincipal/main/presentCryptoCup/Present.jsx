@@ -13,6 +13,8 @@ const TournamentMain = () => {
 
   return (
       <div id='tournament' className="tournamentContainer">
+
+        
         <img className="backgroundReflejo backPresentacion"src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656597/CryptocupQatar/present/BackTournament2_zc1ex3.jpg" /* {backgroundReflejo} */  alt="backReflejo" />
         
         <div className="boxTournament">

@@ -322,21 +322,21 @@ const pelotaGameFunction = () => {
             gameVel = 6;
             contenedor.classList.add("level-up6");
             tiempoHastaObstaculo = 5;
-            tiempoObstaculoMin = 1;
+            tiempoObstaculoMin = .9;
             tiempoObstaculoMax = 5.2;
         }  else if(score == 120) {
             gameVel = 7;
             contenedor.classList.add("level-up7");
             tiempoHastaObstaculo = 5;
-            tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 6.2;
+            tiempoObstaculoMin = .8;
+            tiempoObstaculoMax = 5.7;
         }
         else if(score ==150) {
             gameVel = 8;
             contenedor.classList.add("level-up8");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .75;
-            tiempoObstaculoMax = 7.2;
+            tiempoObstaculoMax = 6.2;
         }
         
         suelo.style.animationDuration = (3/gameVel)+"s";

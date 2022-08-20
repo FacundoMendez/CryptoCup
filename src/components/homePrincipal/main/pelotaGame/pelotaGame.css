@@ -96,7 +96,7 @@
 }
 
 .pelota_game_active {
-    animation: animarpelota_game 1.7s linear infinite;;
+    animation: animarpelota_game 1.8s linear infinite;;
 }
 
 .pelota_game_desactive {
@@ -104,7 +104,7 @@
 }
 
 .pelota_game-corriendo {
-    animation: animarpelota_game 1.7s linear infinite;
+    animation: animarpelota_game 1.8s linear infinite;
 }
 .pelota_game-estrellado {
     background-position-x: -252px;
@@ -197,7 +197,7 @@
     z-index: 10;
     color: #d1b5ff;
     font-family: Verdana;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
     border: 2px solid #d1b5ff;
@@ -205,6 +205,15 @@
     border-radius: 20%;
     display: none;
     transition: all 1s ease-in-out;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+    font-weight: bold;
 }
 
 .score_active{

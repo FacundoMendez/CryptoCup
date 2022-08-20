@@ -25,11 +25,9 @@ const Roadmap = () => {
               <p>
               - Concept Design <span>✓</span><br/>
               - Branding and game research <span>✓</span> <br/>
-              - Tournament concept <span>✓</span> <br/>
-              - Art design <span>✓</span> <br/>
-              - Ladders System idea <span>✓</span> <br/>
-              - Web footage selection <span>✓</span> <br/>
-              - Development environment setup <span>✓</span><br/>
+              - NFT Research <span>✓</span> <br/>
+              - Token Research <span>✓</span> <br/>
+              - Development environment setup <span>✓</span> <br/>
             </p>
             </div>
           </li>
@@ -37,9 +35,9 @@ const Roadmap = () => {
           <div className='textRoadamp'>
               <time>Q1 2022</time> 
               <p>
+                - Web footage selection <span>✓</span> <br/>
                 - Smart contracts development <span>✓</span> <br/>
-                - NFTs Illustrations and 3D Models <span>✓</span> <br/>
-                - Official launch of the website <span>✓</span>  <br/>
+                - NFTs Illustrations and 3D Models <span>✓</span>  <br/>
                 - Investor selection process <span>✓</span><br/>
               </p>
             </div>
@@ -48,9 +46,12 @@ const Roadmap = () => {
             <div className='textRoadamp'>
               <time>Q2 2022</time> 
               <p>
-                - Whitepaper creation <br/>
-                - Ticket Sales <br/>
+                - Ladders System development <span>✓</span>  <br/>
+                - Whitepaper creation <span>✓</span>  <br/>
+                - Website Structure <span>✓</span>  <br/>
+                - Background Design <span>✓</span>  <br/>
                 - Private sale <br/>
+                - Ticket Sales<br/>
               </p>
             </div>
           </li>
@@ -58,11 +59,12 @@ const Roadmap = () => {
             <div className='textRoadamp'>
               <time>Q3 2022</time>
               <p>
+                - Dapp Design and development <br/>
+                - Official launch of the website<br/>
+                - Public Mini Game <br/>
                 - Token public presale 1 <br/>
                 - Token public presale 2 <br/>
-                - DAPP launching <br/>
-                - Ladders System development <br/>
-                - Release Gameplay PDF <br/>
+                - Dapp Beta <br/>
               </p>
             </div>
           </li>
@@ -70,10 +72,11 @@ const Roadmap = () => {
             <div className='textRoadamp'>
               <time>Q4 2022</time> 
               <p>
+                - Dapp launch<br/>
                 - Playable Ladders System Release <br/>
                 - Tournament starts <br/>
-                - Prize pool distribution <br/>
                 - Marketplace <br/>
+                - Prize pool distribution <br/>
               </p>
             </div>
           </li>
