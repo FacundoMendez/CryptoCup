@@ -2,8 +2,6 @@ import React,{useEffect} from 'react'
 import "./nfts.css"
 import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
-/* import videoCopaBasic from "./src/prizepoolBasicVideo.mp4"
-import videoCopaBoost from "./src/prizepoolBoostVideo.mp4" */
 import effectPool from './effectPool'
 
 

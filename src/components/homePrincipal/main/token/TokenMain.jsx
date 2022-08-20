@@ -1,10 +1,7 @@
 import React, {useEffect} from 'react'
 import "./token.css"
 import tokenScroll from './tokenScroll'
-/* import tokenModel from './tokenModel' */
-/* import backToken from "./src/BackToken.jpg"
-import tokenComingSoon from "./src/tokenComingSoon.jpg"
-import tokenVideo from "./src/tokenVideo.mp4" */
+
 
 const TokenMain = () => {
 
@@ -15,9 +12,7 @@ const TokenMain = () => {
 
   return (
     <div id="tokens" className="tokens">
-        <img className='backToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656688/CryptocupQatar/token/BackToken_rhhx0w.jpg"/* {backToken} */ alt="Background Token" />
         <div className="tokenblur">
-            {/* <img className='comingToken' src={comingToken} alt="Background Token ComingSoon" /> */}
             <img className='tokenComingSoon-left' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.jpg"/* {tokenComingSoon} */ alt="tokenComingSoon-left" /> 
             <img className='tokenComingSoon-right' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.jpg"/* {tokenComingSoon} */ alt="tokenComingSoon-right" /> 
         </div>

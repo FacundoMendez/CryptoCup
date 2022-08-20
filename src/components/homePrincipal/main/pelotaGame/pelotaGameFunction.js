@@ -14,6 +14,7 @@ const pelotaGameFunction = () => {
     let sueloY = 12;
     let velY = .5;
     let impulso = 900;
+    let impusoSaltoDoble= 1000
     let gravedad = 2300;
     let pelota_gamePosX = 300;
     let pelota_gamePosY = sueloY; 
@@ -24,13 +25,13 @@ const pelotaGameFunction = () => {
     let parado = false;
     let saltando = false;
     let tiempoHastaObstaculo = 2;
-    let tiempoObstaculoMin = 1.5;
-    let tiempoObstaculoMax = 4;
+    let tiempoObstaculoMin = 1.2;
+    let tiempoObstaculoMax = 3;
     let obstaculoPosY = 16;
     let obstaculos = [];
     let tiempoHastaNube = 0.5;
     let tiempoNubeMin = 0.7;
-    let tiempoNubeMax = 2.7;
+    let tiempoNubeMax = 6.7;
     let maxNubeY = 270;
     let minNubeY = 100;
     let nubes = [];
@@ -41,10 +42,18 @@ const pelotaGameFunction = () => {
     let suelo;
     let gameOver;
 
-
+    let tiempoHastaMoneda = 2;
+    let tiempoMonedaMin = .8;
+    let tiempoMonedaMax = 3;
+    let monedaMinY = 5;
+    let monedaMaxY = 320;
 
     let time = new Date();
     let deltaTime = 0;
+
+
+
+
     
     if(document.readyState === "complete" || document.readyState === "interactive"){
         setTimeout(Init, 1);
@@ -77,6 +86,7 @@ const pelotaGameFunction = () => {
 
     //****** GAME LOGIC ********//
     
+    let saltoDobleCap = false
     
     function Start() {
         gameOver = document.querySelector(".game-over");
@@ -84,8 +94,12 @@ const pelotaGameFunction = () => {
         contenedor = document.querySelector(".contenedor");
         textoScore = document.querySelector(".score");
         pelota_game = document.querySelector(".pelota_game");
-        document.addEventListener("keydown", HandleKeyDown);
-        document.addEventListener("click", handleEvent);
+
+        if (saltoDobleCap === false){
+            document.addEventListener("keydown", HandleKeyDown);
+            document.addEventListener("click", handleEvent);
+        }
+
     }
 
     
@@ -99,36 +113,41 @@ const pelotaGameFunction = () => {
         DecidirCrearNubes();
         MoverObstaculos();
         MoverNubes();
+        DecidirCrearMonedas();
         DetectarColision();
+        ScoreMaximo()
+
         velY -= gravedad * deltaTime;
     }
 
-    function handleEvent(e){
-
+    function handleEvent(){
         Saltar()
-  
-       }
+    }
 
 
     function HandleKeyDown(ev){
         if(ev.keyCode==32){
             Saltar();
          }
-
-         if(ev.keyCode==38){
-            Saltar();
-         }
     }
+
 
 
     
     function Saltar(){
-        if(pelota_gamePosY === sueloY){
-            saltando = true;
-            velY = impulso;
-            pelota_game.classList.remove("pelota_game-corriendo");
-        }
+
+            if(pelota_gamePosY === sueloY){
+                saltando = true;
+                velY = impulso;
+                pelota_game.classList.remove("pelota_game-corriendo");
+            }else{
+                if (saltoDobleCap === false){
+                    velY = impusoSaltoDoble;
+                    saltoDobleCap = true
+                }
+            }
     }
+
     
     function Moverpelota_game() {
         pelota_gamePosY += velY * deltaTime;
@@ -141,6 +160,7 @@ const pelotaGameFunction = () => {
     
     function TocarSuelo() {
         pelota_gamePosY = sueloY;
+        saltoDobleCap = false
         velY = 0;
         if(saltando){
             pelota_game.classList.add("pelota_game-corriendo");
@@ -177,6 +197,62 @@ const pelotaGameFunction = () => {
             CrearNube();
         }
     }
+
+    /* crear monedas */
+
+    function DecidirCrearMonedas() {
+        tiempoHastaMoneda -= deltaTime;
+        if(tiempoHastaMoneda <= 0) {
+            CrearMoneda();
+        }
+    }
+
+    function CrearMoneda() {
+        var moneda = document.createElement("div");
+
+        if ((Math.random() > .5) && (score >= 5)){
+            contenedor.appendChild(moneda);
+            moneda.classList.add("moneda");
+            moneda.posX = contenedor.clientWidth;
+            moneda.style.left = contenedor.clientWidth+"px";
+            moneda.style.bottom = monedaMinY + (monedaMaxY - monedaMinY) * Math.random() + "px";
+        
+            obstaculos.push(moneda);
+            tiempoHastaMoneda = tiempoMonedaMin + Math.random() * (tiempoMonedaMax-tiempoMonedaMin) / gameVel;
+        } 
+
+    }
+
+
+    /* crear nubes */
+
+    function CrearNube() {
+        var nube = document.createElement("div");
+        contenedor.appendChild(nube);
+        nube.classList.add("nube");
+        nube.posX = contenedor.clientWidth;
+        nube.style.left = contenedor.clientWidth+"px";
+        nube.style.bottom = minNubeY + Math.random() * (maxNubeY-minNubeY)+"px";
+        
+        nubes.push(nube);
+        tiempoHastaNube = tiempoNubeMin + Math.random() * (tiempoNubeMax-tiempoNubeMin) / gameVel;
+    }
+
+    function MoverNubes() {
+        for (var i = nubes.length - 1; i >= 0; i--) {
+            if(nubes[i].posX < -nubes[i].clientWidth) {
+                nubes[i].parentNode.removeChild(nubes[i]);
+                nubes.splice(i, 1);
+            }else{
+                nubes[i].posX -= CalcularDesplazamiento() * velNube;
+                nubes[i].style.left = nubes[i].posX+"px";
+            }
+        }
+    }
+
+
+        
+    /* crear obstaculos */
     
     function CrearObstaculo() {
         var obstaculo = document.createElement("div");
@@ -192,18 +268,6 @@ const pelotaGameFunction = () => {
         tiempoHastaObstaculo = tiempoObstaculoMin + Math.random() * (tiempoObstaculoMax-tiempoObstaculoMin) / gameVel;
     }
     
-    function CrearNube() {
-        var nube = document.createElement("div");
-        contenedor.appendChild(nube);
-        nube.classList.add("nube");
-        nube.posX = contenedor.clientWidth;
-        nube.style.left = contenedor.clientWidth+"px";
-        nube.style.bottom = minNubeY + Math.random() * (maxNubeY-minNubeY)+"px";
-        
-        nubes.push(nube);
-        tiempoHastaNube = tiempoNubeMin + Math.random() * (tiempoNubeMax-tiempoNubeMin) / gameVel;
-    }
-    
     function MoverObstaculos() {
         for (var i = obstaculos.length - 1; i >= 0; i--) {
             if(obstaculos[i].posX < -obstaculos[i].clientWidth) {
@@ -217,71 +281,85 @@ const pelotaGameFunction = () => {
         }
     }
     
-    function MoverNubes() {
-        for (var i = nubes.length - 1; i >= 0; i--) {
-            if(nubes[i].posX < -nubes[i].clientWidth) {
-                nubes[i].parentNode.removeChild(nubes[i]);
-                nubes.splice(i, 1);
-            }else{
-                nubes[i].posX -= CalcularDesplazamiento() * velNube;
-                nubes[i].style.left = nubes[i].posX+"px";
-            }
-        }
-    }
-
 
     function GanarPuntos() {
         score++;
         textoScore.innerText = score;
         if(score == 5){
-            gameVel = 1.5;
-            tiempoObstaculoMin = 2;
+            gameVel = 1.6;
             tiempoHastaObstaculo = 4;
-            tiempoObstaculoMax = 3;
-            contenedor.classList.add("mediodia");
+            tiempoObstaculoMin = 1.7;
+            tiempoObstaculoMax = 2.5;
+            contenedor.classList.add("level-up1");
    
-        }else if(score == 15) {
+        }else if(score == 20) {
             gameVel = 2;
-            contenedor.classList.add("tarde");
+            contenedor.classList.add("level-up2");
+            tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
-            tiempoHastaObstaculo = 1.9;
-            tiempoObstaculoMax = 3.5;
-        } else if(score == 25) {
-            gameVel = 3;
-            contenedor.classList.add("noche");
-            tiempoObstaculoMin = 1;
-            tiempoHastaObstaculo = 1.8;
             tiempoObstaculoMax = 3;
-        }else if(score == 35) {
+        } else if(score == 40) {
+            gameVel = 3;
+            contenedor.classList.add("level-up3");
+            tiempoHastaObstaculo = 4;
+            tiempoObstaculoMin = .8;
+            tiempoObstaculoMax = 2;
+        }else if(score == 60) {
             gameVel = 4;
             contenedor.classList.add("level-up4");
+            tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
-            tiempoHastaObstaculo = 1.8;
             tiempoObstaculoMax = 2.5;
         }
-        else if(score == 50) {
+        else if(score == 80) {
             gameVel = 5;
             contenedor.classList.add("level-up5");
-            tiempoObstaculoMin = .9;
-            tiempoHastaObstaculo = 1.8;
-            tiempoObstaculoMax = 2.2;
+            tiempoHastaObstaculo = 5;
+            tiempoObstaculoMin = 1;
+            tiempoObstaculoMax = 4;
         }
-        else if(score == 75) {
+        else if(score == 100) {
             gameVel = 6;
             contenedor.classList.add("level-up6");
-            tiempoObstaculoMin = .8;
-            tiempoHastaObstaculo = 1.8;
-            tiempoObstaculoMax = 2;
-        }  else if(score == 100) {
+            tiempoHastaObstaculo = 5;
+            tiempoObstaculoMin = 1;
+            tiempoObstaculoMax = 5.2;
+        }  else if(score == 120) {
             gameVel = 7;
             contenedor.classList.add("level-up7");
-            tiempoObstaculoMin = .6;
-            tiempoHastaObstaculo = 1.8;
-            tiempoObstaculoMax = 1.9;
+            tiempoHastaObstaculo = 5;
+            tiempoObstaculoMin = 1;
+            tiempoObstaculoMax = 6.2;
+        }
+        else if(score ==150) {
+            gameVel = 8;
+            contenedor.classList.add("level-up8");
+            tiempoHastaObstaculo = 5;
+            tiempoObstaculoMin = .75;
+            tiempoObstaculoMax = 7.2;
         }
         
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"
+    }
+
+
+    /* score maximo */
+
+    let scoreMax = localStorage.getItem("scoreMax")
+   /*  localStorage.setItem("scoreMax", scoreMax) */
+
+
+    function ScoreMaximo(){
+
+        let scoreText = document.querySelector(".topScore")
+   
+
+        if (score > scoreMax){
+            scoreMax = score
+            scoreText.innerHTML= scoreMax
+            localStorage.setItem("scoreMax", scoreMax)
+        }
     }
     
     function GameOver() {
@@ -296,9 +374,14 @@ const pelotaGameFunction = () => {
                 break; //al estar en orden, no puede chocar con más
             }else{
                 if(IsCollision(pelota_game, obstaculos[i], 30, 30, 30, 30)) {
-                    GameOver();
-                    pelotaGame.classList.toggle("pelota_game_desactive")
-                
+                    if(obstaculos[i].classList.contains("moneda")){
+                        GanarPuntos();
+                        obstaculos[i].parentNode.removeChild(obstaculos[i]);
+                        obstaculos.splice(i, 1);
+                    }else{
+                        GameOver();
+                        pelotaGame.classList.toggle("pelota_game_desactive")
+                    }
                 }
             }
         }
@@ -348,7 +431,8 @@ const pelotaGameFunction = () => {
         document.querySelectorAll(".cono").forEach(e => e.remove())
         document.querySelectorAll(".cono2").forEach(e => e.remove())
         document.querySelectorAll(".nube").forEach(e => e.remove())
-
+        document.querySelectorAll(".moneda").forEach(e => e.remove())
+        
         gameOver.style.display = "none";
 
         pelotaGame.classList.remove("pelota_game_desactive")
@@ -358,14 +442,14 @@ const pelotaGameFunction = () => {
 
 
         restart.classList.remove("restartInit")
-        contenedor.classList.remove("tarde");
-        contenedor.classList.remove("noche");
-        contenedor.classList.remove("mediodia");
+        contenedor.classList.remove("level-up1");
+        contenedor.classList.remove("level-up2");
+        contenedor.classList.remove("level-up3");
         contenedor.classList.remove("level-up4");
         contenedor.classList.remove("level-up5");
         contenedor.classList.remove("level-up6");
         contenedor.classList.remove("level-up7");
-
+        contenedor.classList.remove("level-up8");
 
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"

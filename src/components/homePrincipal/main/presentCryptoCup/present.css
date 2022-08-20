@@ -29,12 +29,12 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
-    filter: contrast(115%) brightness(105%);
-    opacity: .45;
+    filter: contrast(110%) brightness(105%) opacity(.65);
+    top: -10rem;
 } 
 
 .boxTournament{
-    padding-top: 15rem;
+    padding-top: 20rem;
     display: flex;
     align-items: center;
     flex-direction: column;

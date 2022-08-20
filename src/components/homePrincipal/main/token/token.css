@@ -8,6 +8,21 @@
     z-index: 10;
     background-color: black;
     padding-top: 20rem;
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_1920/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tokens::before{
+    width: 110%;
+    height: 100%;
+    content: " ";
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    z-index: -1;
 }
 
 .backToken{
@@ -236,10 +251,8 @@
     .tokenblur{
         backdrop-filter: blur(.5rem);
     }
+
     
-    .tokens::before{
-        display: none;
-    }
 
 
     .tokenWebGl {

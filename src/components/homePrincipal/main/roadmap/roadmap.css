@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap: 5rem;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656655/CryptocupQatar/roadmap/Roadmap5_fiowg9.jpg");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656655/CryptocupQatar/roadmap/Roadmap5_fiowg9.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,7 +17,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(0, 0, 0, 0.712);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
@@ -25,15 +25,14 @@
 
 .containerRoadmap::after{
     width: 150%;
-    height: 20vh;
+    height: 15vh;
     content: " ";
-    top: -10rem;
-    filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(30px) ;
-    background-color: rgba(0, 0, 0, 0.89);
+    top: -9rem;
+    filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(20px) ;
+    background-color: rgba(0, 0, 2, 0.979);
     position: absolute;
     z-index: 10;
     border-radius: 50px;
-    border: 2px solid black;
 }
 
 .backgroundPrincipalRoadmap{
@@ -329,7 +328,16 @@
   
 
   @media screen and (max-width: 420px) {
-
+    .containerRoadmap::after{
+      width: 150%;
+      height: 15vh;
+      content: " ";
+      top: -4rem;
+      filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(10px) ;
+      background-color: rgba(0, 0, 2, 0.979);
+      position: absolute;
+      z-index: 10;
+  }
   
     .timeline ul li {
       margin-left: 20px;

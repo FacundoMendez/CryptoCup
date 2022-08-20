@@ -4,22 +4,22 @@
     height: 60rem;
     margin: 0 auto;
     position: relative;
-    background:  linear-gradient(#000000, transparent) #000000; 
+    background:  linear-gradient(#000000, transparent) black; 
     transition: background-color 1s linear;
     overflow: hidden;
     margin-top: 10rem;
 }
 
 
-.mediodia {
+.level-up1 {
     background-color: #190e3f;
 }
 
-.tarde {
+.level-up2 {
     background-color: #553199;
 }
 
-.noche {
+.level-up3 {
     background-color:  #a692ff; 
 }
 
@@ -36,7 +36,10 @@
 }
 
 .level-up7 {
-    background-color:  #fc4646; 
+    background-color:  #ff3c3c; 
+}
+.level-up8 {
+    background-color:  #a200ff; 
 }
 
 .StartGame{
@@ -113,7 +116,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 11;
+    z-index: 12;
     background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656671/CryptocupQatar/tickets/cesped_yecoim.png") repeat-x 0px 0px;
     background-size: 50% 45px;
     filter: contrast(115%) brightness(110%);
@@ -132,7 +135,7 @@
     width: 64px ;
     height: 100px ;
     position: absolute;
-    z-index: 1;
+    z-index: 11;
     bottom: 0;
     left: 50%;
     transform: translate(-50% ,0);
@@ -155,7 +158,7 @@
     width: 170px ;
     height: 100px ;
     position: absolute;
-    z-index: 1;
+    z-index: 11;
     bottom: 0;
     left: 50%;
     transform: translate(-50% ,0);
@@ -166,6 +169,14 @@
     filter: hue-rotate(0deg) contrast(110%) brightness(120%);
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
+}
+
+.moneda{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 1;
+    background: url("./src/moneda11.png") no-repeat center center;
 }
 
 .nube{
@@ -181,8 +192,8 @@
 .score{
     position: absolute;
     top: 10rem;
-    left: 48.8%;
-    transform: translate(-50%  0);
+    left: 50%;
+    transform: translate(-50% , 0);
     z-index: 10;
     color: #d1b5ff;
     font-family: Verdana;
@@ -200,6 +211,47 @@
     display: block;
     transition: all 1s ease-in-out;
 }
+
+
+.scoreMax{
+    position: absolute;
+    left: 50.5%;
+    top: 16rem;
+    transform: translate(-50% , 0);
+}
+
+.scoreMax p{
+    font-size: 1.8rem;
+    color: #d1b5ff;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+    font-weight: bold;
+}
+
+
+.scoreMax span{
+    font-size: 1.9rem;
+    color: white;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+    font-weight: bold;
+}
+
 
 .game-over{
     display: none;

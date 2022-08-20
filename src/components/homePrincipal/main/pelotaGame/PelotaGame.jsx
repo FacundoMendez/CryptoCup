@@ -8,6 +8,8 @@ const PelotaGame = () => {
         pelotaGameFunction()
     }) */
 
+    let scoreMax = localStorage.getItem("scoreMax")
+
   return (
 
     <div>
@@ -21,6 +23,10 @@ const PelotaGame = () => {
             <img className="pelota_game " src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png" alt="logo CRYPTO CUP" />
 
             <div className="score">0</div>
+
+            <div className="scoreMax">
+              <p>Score Max: <span className='topScore'>{scoreMax}</span> </p>
+            </div>
 
             <div className="game-over">GAME OVER</div>
 

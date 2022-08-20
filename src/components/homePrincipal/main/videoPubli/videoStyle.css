@@ -8,9 +8,9 @@
     gap: 8rem;
     padding-top: 14rem;
     padding-bottom: 14rem;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656688/CryptocupQatar/token/BackToken_rhhx0w.jpg");
-    background-attachment: fixed;
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_1920/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.jpg");
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -21,6 +21,7 @@
     top: .01rem;
     background-color: rgba(0, 0, 0, 0.705);
     position: absolute;
+ 
 }
 
 .videoPubli-container::after{
