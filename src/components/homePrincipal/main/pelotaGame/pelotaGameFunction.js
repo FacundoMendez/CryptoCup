@@ -247,6 +247,9 @@ const pelotaGameFunction = () => {
             }else{
                 if(IsCollision(pelota_game, interactuables[i], 10, 25, 10, 20)) {
                     if(interactuables[i].classList.contains("moneda")){
+                        if(interactuables[i].classList.contains("monedaGrande")){
+                            score = score + 5
+                        }
                         GanarPuntos();
                         interactuables[i].parentNode.removeChild(interactuables[i]);
                         interactuables.splice(i, 1);
@@ -411,17 +414,8 @@ const pelotaGameFunction = () => {
                 break; //al estar en orden, no puede chocar con más
             }else{
                 if(IsCollision(pelota_game, obstaculos[i], 30, 30, 30, 30)) {
-                    if(obstaculos[i].classList.contains("moneda")){
-                        if(obstaculos[i].classList.contains("monedaGrande")){
-                            score += 3;     
-                        }
-                        GanarPuntos();
-                        obstaculos[i].parentNode.removeChild(obstaculos[i]);
-                        obstaculos.splice(i, 1);
-                    }else{
                         GameOver();
                         pelotaGame.classList.toggle("pelota_game_desactive")
-                    }
                 }
             }
         }
