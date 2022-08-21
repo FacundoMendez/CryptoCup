@@ -12,15 +12,6 @@ import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
 import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
 
-/* import tiketBasico from "./src/tiketBasic.png"
-import tiketBoost from "./src/tiketBoost.png"
-import videoParticle from "./src/particle1P.mp4" */
-/* import busdLogo from "./src/busdLogo.png"
-import daiLogo from "./src/daiLogo.png"
-import usdcLogo from "./src/usdcLogo.png"
-import usdtLogo from "./src/usdtLogo.png" */
-
-
 
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
@@ -280,7 +271,7 @@ const TiketBuyPage = () => {
 
     <>
 
-    <Favicon url="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png "></Favicon>
+    <Favicon url="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"></Favicon>
     <div className="containerTiketsBuy">
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
 
