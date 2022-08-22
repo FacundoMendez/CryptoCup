@@ -12,7 +12,7 @@ const VideoPubli = () => {
             <h2>WATCH THE TRAILER</h2>
         </div>
 
-          <iframe className='videoPubli-video' src="https://www.youtube-nocookie.com/embed/rAYY7XTOP-U?controls=0" title="Crypto Cup Qatar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe className='videoPubli-video'src="https://www.youtube-nocookie.com/embed/rAYY7XTOP-U" title="Crypto Cup Qatar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   )
 }
