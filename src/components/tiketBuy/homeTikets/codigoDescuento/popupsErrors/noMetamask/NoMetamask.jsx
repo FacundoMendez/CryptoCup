@@ -27,7 +27,7 @@ const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainInc
 {
       noBalance ?     
       <div className="errorNoMetamask">
-        <p>{noBalance}</p>
+        <p>{textChainIncorrecta}</p>
       </div>  
       :null
     }
