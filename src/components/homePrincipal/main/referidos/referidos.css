@@ -37,32 +37,7 @@
     z-index: 2000;
 }
 
-.containerPelota{
-    width: 100%;
-}
 
-.pelota{
-    position: absolute;
-    z-index: -1;
-    bottom: -30.9rem;
-    left: 0;
-    width: 15rem;
-    cursor: pointer;
-    filter: contrast(103%) brightness(110%);
-}
-
-.cesped{
-    position: absolute;
-    z-index: 2990;
-    bottom: -45rem;
-    width: 100%;
-    height: 5rem;
-    object-fit: contain;
-    background-image: url("../tikets/src/cesped.png");
-    background-repeat: repeat-x;
-    background-size: contain;
-    filter: contrast(123%) brightness(100%) ;
-}
 
 .backReferidos{
     width: 100%;
@@ -158,7 +133,7 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    top:-3rem;
+    top:-6rem;
 }
 
 .textStart{
@@ -188,7 +163,7 @@
     width: 100%;
     letter-spacing: 1.2px;
     font-weight:bolder;
-    text-align: center;
+    text-align:center;
     filter: drop-shadow(0 0 50px black);
 }
 
