@@ -50,8 +50,6 @@ const Roadmap = () => {
                 - Whitepaper creation <span>✓</span>  <br/>
                 - Website Structure <span>✓</span>  <br/>
                 - Background Design <span>✓</span>  <br/>
-                - Private sale <br/>
-                - Ticket Sales<br/>
               </p>
             </div>
           </li>
@@ -59,6 +57,8 @@ const Roadmap = () => {
             <div className='textRoadamp'>
               <time>Q3 2022</time>
               <p>
+                - Private sale <br/>
+                - Ticket Sales<br/>
                 - Dapp Design and development <br/>
                 - Official launch of the website<br/>
                 - Public Mini Game <br/>

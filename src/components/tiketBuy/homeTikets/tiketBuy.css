@@ -1,7 +1,7 @@
 .containerTiketsBuy{
     width: 100%;
     overflow: hidden;
-    background-image: url("./src/backgroundTickets.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/backgroundTickets_nufozr.png");
     background-repeat: no-repeat;
     top:0;
     background-size: cover;
@@ -812,6 +812,9 @@
         width: 100%;
     }
 
+    .radioTokenBoost-active {
+        top:58%;
+    }
     
     .containerTiketsBuy{
         width: 100%;
@@ -834,7 +837,7 @@
     }
     
     .imgTicket {
-        width: 16rem;
+        width: 13rem;
         margin-top:4rem;
     }
     
@@ -965,7 +968,9 @@
         left: 0rem;
     }
     
-
+    .radioTokenBoost-active {
+        top:50%;
+    }
     
     .containerTiketsBuy{
         width: 100%;

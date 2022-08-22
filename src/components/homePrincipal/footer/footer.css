@@ -30,6 +30,11 @@
     right: 15rem;
 }
 
+.emailContac a{
+    text-decoration: none;
+
+}
+
 .email{
     color:rgb(243, 239, 255);
     font-size: 1.7rem;
@@ -169,11 +174,15 @@
 
 @media screen and (max-width: 1440px) {
     .emailContac{
-        right: 0rem;
+        right: 5rem;
     }
 }
 
 @media screen and (max-width: 1100px) {
+
+    .emailContac{
+        right: 0rem;
+    }
     
     .footer{
         position: relative;

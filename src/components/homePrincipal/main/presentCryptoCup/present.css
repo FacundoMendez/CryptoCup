@@ -237,8 +237,8 @@
 
     .titleContainers h2{
         padding:  0 2rem;
-        font-size: 7rem;
-        letter-spacing: 1px;
+        font-size: 5rem;
+        letter-spacing: 2px;
     }
     
     .containerTexts p {
@@ -248,27 +248,57 @@
         font-size: 1.9rem;
     }
 
-    .subTitlePrize{
-        width: 65%;
-    }
-    
-    .subTitleNft{
-        width: 65%;
-        padding: 1rem 0;
+    .logoContainer img {
+        width: 35rem;
     }
 
-    .subTitleNft h5{
-        padding: 4rem 0;
-        font-size: 4rem;
+    .tournamentContainer {
+        padding-bottom: 0rem;
+    }
+    .subTitlePrize{
+        width: 60%;
+    }
+    
+    .titleContainers h3 {
+        padding: 2rem 5rem;
+        font-size: 3rem;
     }
 
     .backPresentacion{
-        width: 170rem;
+        width: 100%;
         position: absolute;
         object-fit: cover;
-        filter: contrast(110%) brightness(115%);
-        opacity: .4;
+        filter: contrast(110%) brightness(105%) opacity(.65);
+        top: 0rem;
     } 
+
+
+    .boxButtonTicketBuy{
+        left: 6rem;
+        bottom: 1rem;
+        width: 13rem;
+        height: 13rem;
+        
+    }
+    
+    .boxButtonTicketBuy::before{
+        width: 13rem;
+        height: 13rem;
+        left: -1rem;
+        bottom: 1rem;
+    }
+
+    .bottomTicketBuy{
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .bottomTicketBuy::before{
+        width: 18rem;
+        left: -4rem;
+        bottom: -3.7rem;
+        height: 18rem;
+    }
 }
 
 

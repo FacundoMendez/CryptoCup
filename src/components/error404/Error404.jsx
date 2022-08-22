@@ -30,7 +30,7 @@ const Error404 = () => {
           </div>
         </a>
 
-        <img className='logoError404' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660659301/CryptocupQatar/error404/Logo_hqnvty.png"/* {logo} */ alt="Logo" />
+        <img className='logoError404' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660659301/CryptocupQatar/error404/Logo_hqnvty.png"/* {logo} */ alt="Logo" />
     </div>
   )
 }

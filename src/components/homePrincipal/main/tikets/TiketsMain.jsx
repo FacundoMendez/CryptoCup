@@ -2,13 +2,7 @@ import React, {useState, useEffect} from 'react'
 import "./tiket.css"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
-/* import star from "./src/star.png"
-import division from "./src/division.png"
-import ballCC from "./src/logoPng.png" */
-/* import backReflejo from "./src/BackgroundTickets1.jpg"
-import backReflejoMovile from "./src/NuevoBackgroundTickets.jpg" */
-/* import TiketBoost from "./src/tiketBasic.png"
-import TiketBasic from "./src/tiketBoost.png" */
+
 
 
 const TiketsMain = () => {
@@ -52,13 +46,13 @@ const TiketsMain = () => {
             </div>
           </div>
           <div className="tiketImg-basic" >
-            <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png"/* {TiketBoost} */ alt="ticket" onClick={() => setTiketClick(true)} />
+            <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png" alt="ticket" onClick={() => setTiketClick(true)} />
           </div>
         </div>
 
         <div className="boxTickets-Home-boost">
             <div className="tiketImg-boost" >
-                <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png"/* {TiketBasic} */ alt="ticket" onClick={() => setTiketClick(true)} />
+                <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png" alt="ticket" onClick={() => setTiketClick(true)} />
             </div>
             <div className="titleTicket-home-boost">
               <h2>

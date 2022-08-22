@@ -231,21 +231,21 @@
 
     .textsReferidos {
         width: 100%;
-        width: 52%;
+        width: 50%;
     }
 
     .ticketsReferidos {
-        width: 42%;
+        width: 40%;
     }
 
     .textsReferidos h2{
-        font-size: 6rem;
+        font-size: 5rem;
         letter-spacing: 2px;
         padding-bottom: 0rem;
     }
 
     .textsReferidos p{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         letter-spacing: 1px;
     }
 

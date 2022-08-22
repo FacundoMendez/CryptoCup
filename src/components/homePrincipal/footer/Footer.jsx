@@ -39,7 +39,7 @@ const Footer = () => {
         
         <div className="emailContac">
             <p className='titleContact' >Contact</p>
-            <p className='email' >Cryptocup2022@gmail.com </p>
+            <a href="mailto:cryptocup2022@gmail.com"><p className='email' >Cryptocup2022@gmail.com </p></a> 
         </div>
 
         <p className='termsAndCond'>

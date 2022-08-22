@@ -315,8 +315,24 @@
         padding: 0 3rem;
     }
 
+    .titleNfts h2 {
+        font-size: 5rem;
+        top: 25px;
+    }
+
+    .subtitleNftWinners {
+        font-size: 5rem;
+        padding-top: 2rem;
+    }
+
+    .subtitleNftPricePool {
+        font-size: 5rem;
+        letter-spacing: 3px;
+        padding-top: 2rem;
+    }
+
     .textNfts{
-        width: 65%;
+        width: 60%;
         text-align: center;
     }
     
@@ -327,10 +343,15 @@
         font-size: 1.9rem;
     }
     
-    .tiposTorneos{
-        gap: 5rem;
-        padding-top: 5rem;
+    .container_card {
+        width: 270px;
+        height: 370px;
     }
+
+    .tiposTorneos {
+        padding-top: 0rem;
+    }
+
 
     .event1 .image {
         width: 50%;

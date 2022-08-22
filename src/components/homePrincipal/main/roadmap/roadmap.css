@@ -256,6 +256,29 @@
   
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width:1440px) {
+  .containerRoadmap::after{
+    width: 150%;
+    height: 15vh;
+    content: " ";
+    top: -4rem;
+    filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(20px) ;
+    background-color: rgba(0, 0, 2, 0.979);
+    position: absolute;
+    z-index: 10;
+    border-radius: 50px;
+  }
+
+   .textRoadamp p {
+        font-size: 1.6rem;
+    }
+
+    time {
+      font-size: 3.2rem;
+  }
+  
+}
+
   
   @media screen and (max-width: 900px) {
     .timeline ul li div {

@@ -349,14 +349,14 @@
     }
 
     .tiketsPreview{
-        width: 20rem;
+        width: 15rem;
     }
 
     .textoTicket-home p{
         margin-top: 0rem;
         letter-spacing: 1px;
         line-height: 3rem;
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
     
     .backTikets{
@@ -371,6 +371,18 @@
         position: absolute;
     }
 
+    .titleTicket-home-boost h2, .titleTicket-home-basic h2  {
+        font-size: 4rem;
+        line-height:4.5rem;
+        letter-spacing: 2.5px;
+    }
+
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 35rem;
+        padding: 0.5rem 0;
+        font-size: 1.9rem;
+    }
     
 }
 

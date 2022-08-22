@@ -9,7 +9,7 @@ const VideoBuyBasic = () => {
     videoBuyBasicFuncional()
   }, [])
   return (
-    <video className='basicBuyVideo' preload='none'  src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660658232/CryptocupQatar/TICKETS%20BUY/home%20tickets/basicBuy_we5tyg.mp4"/* {basicBuyVideo} */ autoPlay type="video/mp4" ></video> 
+    <video className='basicBuyVideo' preload='none'  src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660658232/CryptocupQatar/TICKETS%20BUY/home%20tickets/basicBuy_we5tyg.mp4"/* {basicBuyVideo} */ autoPlay type="video/mp4" ></video> 
   )
 }
 
