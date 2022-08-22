@@ -7,7 +7,7 @@ const Error404 = () => {
 
     setTimeout(function(){
       window.location.href = "/"
-    },10000)
+    },8000)
     
    }, [])
 
