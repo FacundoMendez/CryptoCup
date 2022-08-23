@@ -30,7 +30,7 @@ const pelotaGameFunction = () => {
     let obstaculoPosY = 16;
     let obstaculos = [];
     let tiempoHastaNube = 0.5;
-    let tiempoNubeMin = 0.7;
+    let tiempoNubeMin = 3;
     let tiempoNubeMax = 6.7;
     let maxNubeY = 270;
     let minNubeY = 100;
@@ -346,34 +346,31 @@ const pelotaGameFunction = () => {
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = .8;
             tiempoObstaculoMax = 2;
-        }else if(score === 60) {
+        } else if(score === 60) {
             gameVel = 4;
             contenedor.classList.add("level-up4");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 2.5;
-        }
-        else if(score === 80) {
+        } else if(score === 80) {
             gameVel = 5;
             contenedor.classList.add("level-up5");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 4;
-        }
-        else if(score === 100) {
+        } else if(score === 100) {
             gameVel = 6;
             contenedor.classList.add("level-up6");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .9;
             tiempoObstaculoMax = 5.2;
-        }  else if(score === 120) {
+        } else if(score === 120) {
             gameVel = 7;
             contenedor.classList.add("level-up7");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .8;
             tiempoObstaculoMax = 5.7;
-        }
-        else if(score ===150) {
+        } else if(score === 180) {
             gameVel = 8;
             contenedor.classList.add("level-up8");
             tiempoHastaObstaculo = 5;
