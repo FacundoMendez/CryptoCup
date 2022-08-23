@@ -415,6 +415,9 @@
     }
 
 
+    .backPresentacion{
+        display: none;
+    } 
     
 }
 
@@ -431,14 +434,6 @@
         bottom: -10rem;
         width: 150%;
         height: 10rem;
-    }
-
-    .backPresentacion {
-        width: 110%;
-        position: absolute;
-        object-fit: cover;
-        filter: contrast(110%) brightness(105%) opacity(.65);
-        top: 6rem;
     }
 
     .titleContainers h3{
