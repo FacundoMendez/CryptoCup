@@ -16,8 +16,8 @@ const presetEffectBall = () => {
         /* ---- CREATING ZONE ---- */
 
         /* ---- SETTINGS ---- */
-        const numberParticlesStart = 300;
-        const particleSpeed = 0.2;
+        const numberParticlesStart = 350;
+        const particleSpeed = 0.5;
         const velocity =.5;
         const circleWidth = 48;
 
@@ -39,7 +39,7 @@ const presetEffectBall = () => {
             max : getRandomFloat(10, 100)/10
         }
 
-        this.color = '#632aff19';
+        this.color = '#632aff10';
         }
         Particle.prototype.render = function() {
         context.beginPath();
