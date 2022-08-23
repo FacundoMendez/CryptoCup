@@ -84,18 +84,14 @@
 }
 
 @media screen and (max-width:1440px) {
-    .videoPubli-video{
-        width: 60%;
-    }
-
     .videoPubli-texts h2{
         padding: 2rem;
         font-size: 5rem;
     }
 
     .videoPubli-video{
-        width: 79rem;
-        height: 46rem;
+        width: 78rem;
+        height: 45rem;
     }
 }
 
