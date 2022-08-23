@@ -28,12 +28,37 @@
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: -1;
+    height: 140%;
+    width: 100%;
 }
 
 .logoContainer{
     width: 100%;
     margin-top: 5em;
     position: relative;
+}
+
+.logoContainer::before{
+    content: " ";
+    position: absolute;
+    top: -12rem;
+    left: 0;
+    width: 110%;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.986);
+    filter: blur(20px) drop-shadow(0 0 40px rgba(0, 0, 0, 0.438));
+    z-index: 10!important;
+}
+.logoContainer::after{
+    content: " ";
+    position: absolute;
+    bottom: -12rem;
+    left: 0;
+    width: 110%;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.986);
+    filter: blur(20px) drop-shadow(0 0 40px rgba(0, 0, 0, 0.438));
+    z-index: 10!important;
 }
 
 .logoContainer img{
@@ -71,6 +96,7 @@
     flex-wrap: wrap;
     gap: 5rem;
     filter: drop-shadow(0 0 40px black);
+    z-index: 100!important;
 }
 
 .tournamentTitle h3{
@@ -105,6 +131,7 @@
     color: white;
     padding: 0 1rem ;
     text-align: center;
+    
 }
 
 
@@ -181,21 +208,7 @@
     transition: all 1s ease-in-out;
 }
 
-@-webkit-keyframes sdb03 {
-    0% {
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-        box-shadow: 0 0 0 45px rgba(185, 132, 255, 0.11);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+
 
   @keyframes sdb03 {
     0% {
@@ -419,7 +432,9 @@
     .boxButtonTicketBuy{
         display: none;
     }
-
+    .logoContainer::before{
+       display: none;
+    }
     
     .tournamentContainer::after{
         bottom: -10rem;
