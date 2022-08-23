@@ -16,7 +16,6 @@
   }
   
   .btn p {
-    padding-top: 1rem;
     color: white;
     font-size: 2.4rem;
     letter-spacing: 3.8px;
@@ -94,7 +93,7 @@
   
   .btn:hover .BorderLeftRight:before,
   .btn:hover .BorderLeftRight:after {
-    height: 6.98rem;
+    height: 5.98rem;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
     transition: all 0.5s ease;
   }
@@ -298,12 +297,12 @@
   .btn:hover .BorderTopBottom:before, .btn:hover .BorderTopBottom:after {
     filter: drop-shadow(0 0 5px rgb(182, 136, 255)) brightness(140%);
     transition:none;
-    width: 109%;
+    width: 16.7rem;
   }
 
   .btn:hover .BorderLeftRight:before, .btn:hover .BorderLeftRight:after {
     transition:none;
-    height: 123%;
+    height: 5.5rem;
     filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
   }
 
@@ -313,7 +312,7 @@
     
     .wrapperBotton .btn {
       margin: 0 2rem;
-      padding: .15rem 2rem;
+      padding: .6rem 2rem;
     }
 
     .btn{
@@ -322,7 +321,7 @@
     
     .btn p {
       font-size: 2rem;
-      margin-top: -.2rem;
+      margin-top: 0rem;
       letter-spacing: 3.8px;
       text-transform: uppercase;
     }
@@ -332,7 +331,7 @@
         position: absolute;
         width: 16.6rem;
         height: 2px;
-        top: -6px;
+        top: -10px;
         left: -7px;
         transition: all 0.5s ease;
       }
@@ -350,10 +349,10 @@
       .BorderLeftRight:before {
         content: "";
         position: absolute;
-        top: -4px;
+        top: -8px;
         left: -7px;
         width: 2px;
-        height: 5.1rem;
+        height: 5.5rem;
         transition: all 0.5s ease;
       }
       
@@ -363,7 +362,7 @@
         bottom: -4px;
         right: -7px;
         width: 2px;
-        height: 5.1rem;
+        height: 5.5rem;
         transition: all 0.5s ease;
       }
     

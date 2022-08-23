@@ -349,10 +349,28 @@
     .subTitleNft{
         width: 90%;
     }
+
+    
+    .backPresentacion {
+        width: 110%;
+        position: absolute;
+        object-fit: cover;
+        filter: contrast(110%) brightness(105%) opacity(.65);
+        top: 10rem;
+    }
+
 }
 
 
 @media screen and (max-width: 600px){
+
+    .backPresentacion {
+        width: 110%;
+        position: absolute;
+        object-fit: cover;
+        filter: contrast(110%) brightness(105%) opacity(.65);
+        top: 13rem;
+    }
 
     .titleContainers h2{
         font-size: 6rem;
@@ -380,6 +398,15 @@
 @media screen and (max-width: 480px){
     .boxButtonTicketBuy{
         display: none;
+    }
+
+
+    .backPresentacion {
+        width: 110%;
+        position: absolute;
+        object-fit: cover;
+        filter: contrast(110%) brightness(105%) opacity(.65);
+        top: 6rem;
     }
 
     .titleContainers h3{
@@ -419,7 +446,6 @@
     }
 
     
-    
     .containerTexts h5{
         text-align: center;
         padding: 3rem 2rem;
@@ -436,11 +462,13 @@
 
     .logoContainer{
         width: 100%;
-        margin-top: 5em;
+        text-align: center;
+        margin-top: 0em;
     }
     
     .logoContainer img{
-        padding: 6rem;
+        padding:0 6rem;
+        width: 40rem;
     }
 }
 
