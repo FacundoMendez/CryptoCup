@@ -11,16 +11,36 @@
     
 }
 
+.tournamentContainer::after{
+    content: " ";
+    position: absolute;
+    bottom: -5rem;
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(0, 0, 0, 0.747);
+    filter: blur(35px) drop-shadow(0 0 50px rgba(0, 0, 0, 0.438));
+    z-index: 100000!important;
+}
+
+.effectLogo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: -1;
+}
+
 .logoContainer{
     width: 100%;
     margin-top: 5em;
+    position: relative;
 }
 
 .logoContainer img{
     object-fit: cover;
     width: 45rem;
     border-radius: 50%;
-    filter: brightness(125%) contrast(120%) drop-shadow( 0 0 80px rgba(141, 42, 255, 0.281));
+    filter: brightness(125%) contrast(120%) drop-shadow( 0 0 20px #8d2aff48);
 }
 
 /* fondo */
@@ -400,6 +420,12 @@
         display: none;
     }
 
+    
+    .tournamentContainer::after{
+        bottom: -10rem;
+        width: 150%;
+        height: 10rem;
+    }
 
     .backPresentacion {
         width: 110%;
@@ -477,6 +503,13 @@
     .titleContainers h3{
         padding:  1rem;
         font-size: 2rem;
+    }
+
+    .tournamentContainer::after{
+        bottom: -10rem;
+        width: 140%;
+        height: 10rem;
+        background-color: black;
     }
 
     .titleContainers h2{
