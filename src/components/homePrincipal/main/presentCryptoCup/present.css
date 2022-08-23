@@ -43,7 +43,7 @@
 .logoContainer::after{
     content: " ";
     position: absolute;
-    bottom: -12rem;
+    bottom: -14rem;
     left: 0;
     width: 110%;
     height: 10rem;
