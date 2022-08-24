@@ -1,14 +1,12 @@
 import React, {useEffect} from 'react'
 import "./present.css"
 import presentScroll from './presentScroll'
-import presetEffectBall from './presentEffectBall'
 
 
 const TournamentMain = () => {
 
   useEffect(() =>{
     presentScroll()
-    presetEffectBall()
   },[])
 
   return (
