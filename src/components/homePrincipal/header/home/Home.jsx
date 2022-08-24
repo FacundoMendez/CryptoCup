@@ -1,4 +1,5 @@
 import React, {lazy, useEffect, useState} from 'react'
+import EffectParticles from '../../../tiketBuy/homeTikets/ticketsComponents/effectParticle/EffectParticles'
 import "./home.css"
 /* import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4" */
 import soonImg from "./src/comingSoon.png"
@@ -37,6 +38,8 @@ const Home = () => {
  
   return (
     <div id='home' className="containerHome">
+
+    <EffectParticles/>
 
       <div className="containerPrincipalHome">
 

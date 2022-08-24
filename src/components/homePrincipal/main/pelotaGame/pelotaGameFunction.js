@@ -8,7 +8,6 @@ const pelotaGameFunction = () => {
       const StartGame = document.querySelector(".StartGame")
       let pelotaGame = document.querySelector(".pelota_game")
       const restart = document.querySelector(".restart")
-      const cono = document.querySelectorAll(".cono")
 
 
     let sueloY = 12;
@@ -27,7 +26,6 @@ const pelotaGameFunction = () => {
     let tiempoHastaObstaculo = 2;
     let tiempoObstaculoMin = 1.2;
     let tiempoObstaculoMax = 3;
-    let obstaculoPosY = 16;
     let obstaculos = [];
     let tiempoHastaNube = 0.5;
     let tiempoNubeMin = 3;
@@ -443,7 +441,6 @@ const pelotaGameFunction = () => {
         tiempoHastaObstaculo = 2;
         tiempoObstaculoMin = 1.5;
         tiempoObstaculoMax = 4;
-        obstaculoPosY = 16;
         obstaculos = []
         tiempoHastaNube = 0.5;
         tiempoNubeMin = 0.7;

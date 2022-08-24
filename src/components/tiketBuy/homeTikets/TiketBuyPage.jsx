@@ -11,6 +11,7 @@ import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupE
 import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
 import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
+import EffectParticles from './ticketsComponents/effectParticle/EffectParticles';
 
 
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
@@ -26,25 +27,8 @@ const TiketBuyPage = () => {
   
   const context = useContext(Context)
 
-  const [esMovil , setEsMovil] = useState(false)
-
-  function isMobile(){
-    return (
-        (navigator.userAgent.match(/Android/i)) ||
-        (navigator.userAgent.match(/webOS/i)) ||
-        (navigator.userAgent.match(/iPhone/i)) ||
-        (navigator.userAgent.match(/iPod/i)) ||
-        (navigator.userAgent.match(/BlackBerry/i))
-    );
-  }
 
     useEffect(() => {
-      if(isMobile()){
-        setEsMovil(true)
-      } else {
-        setEsMovil(false)
-      } 
-
       checkTokenBoost()
       checkTokenBasic()
     },[])
@@ -124,7 +108,7 @@ const TiketBuyPage = () => {
 
           await newContract.getReferralCodeFromAddress(newAccount[0])
           .then(res => {
-            if (res != 0) { // si el usuario tiene un codigo de referencia
+            if (res !== 0) { // si el usuario tiene un codigo de referencia
               console.log(res);
               setCopyActive(true);
               setReferralCode(res);
@@ -179,7 +163,7 @@ const TiketBuyPage = () => {
   const checkReferral = async () => {
     await contract.getReferralCodeFromAddress(account[0])
     .then(res => {
-      if (res != 0) { // si el usuario tiene un codigo de referencia
+      if (res !== 0) { // si el usuario tiene un codigo de referencia
         console.log(res);
         setCopyActive(true);
         setReferralCode(res);
@@ -306,7 +290,7 @@ const TiketBuyPage = () => {
       if(code !== referralCode.toString()) {
         await newContract.getReferralAddressFromCode(code)
         .then(res => {
-          if (res != "0x0000000000000000000000000000000000000000") {
+          if (res !== "0x0000000000000000000000000000000000000000") {
             setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
             setActiveReferralCode(code);
           } 
@@ -346,7 +330,7 @@ const TiketBuyPage = () => {
 
       <Social />
 
-{  !esMovil  ?   <video className='particle-Tikets' src= " https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:low/v1660657005/CryptocupQatar/Home%20/particle1P_bhqtfr.mp4"/* {videoParticle}  */ preload='none' autoPlay loop muted  type="video/mp4"></video> : null  }
+      <EffectParticles/>
 
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
