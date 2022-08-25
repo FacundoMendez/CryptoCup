@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, lazy} from 'react'
 import "./present.css"
 import presentScroll from './presentScroll'
 
+const ButtonFloatTickets = lazy(() => import ("./ButtonFloatTickets"))
 
 const TournamentMain = () => {
 
@@ -36,19 +37,16 @@ const TournamentMain = () => {
               </div>
 
               <div className="logoContainer">
-                  <img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"/* {logo} */ alt="logo CRYPTO CUP" />
+                  <img className='imgLogoContainer' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"/* {logo} */ alt="logo CRYPTO CUP" />
 
                   <canvas className='effectLogo'></canvas>
 
               </div>
 
             </div>
+          <ButtonFloatTickets/>
+
           </div>
-          <a href='/tickets' aria-label="Tickets">
-            <div className="boxButtonTicketBuy">
-              <div className="bottomTicketBuy"></div>
-            </div>
-          </a>
         </div>
   )
 }

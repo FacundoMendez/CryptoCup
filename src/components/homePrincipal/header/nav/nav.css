@@ -3,6 +3,7 @@
     display: none;
 }
 
+
 .navBallModel{
     cursor: grab;
     z-index: 10000;
@@ -11,6 +12,7 @@
     margin-left: .2rem;
     width: 100%;
     text-align: center;
+    transform: scale(.5);
 }
 
 .navBlur{

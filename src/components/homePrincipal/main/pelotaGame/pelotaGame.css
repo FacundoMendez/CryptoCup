@@ -24,18 +24,10 @@
 }
 
 .level-up4 {
-    background-color:  #ff8db3; 
-}
-
-.level-up5 {
-    background-color:  #8dffdd; 
-}
-
-.level-up6 {
     background-color:  #86ff70; 
 }
 
-.level-up7 {
+.level-up5 {
     background-color:  #ff3c3c; 
 }
 
@@ -179,14 +171,6 @@
     filter: drop-shadow(0 0 1px black) contrast(110%) brightness(120%);
 }
 
-.monedaGrande{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    z-index: 1;
-    background: url("./src/monedaGrande.png") no-repeat center center;
-    filter: drop-shadow(0 0 4px rgba(255, 239, 225, 0.137)) contrast(110%) brightness(120%);
-}
 
 .nube{
     width: 92px;

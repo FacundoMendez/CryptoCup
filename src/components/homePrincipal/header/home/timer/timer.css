@@ -1,6 +1,7 @@
 .timer{
   position: relative;
   top: 8rem;
+  opacity: 0;
 }
 
 .headline  {
@@ -107,10 +108,11 @@
 }
   
   
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .timer{
     position: relative;
     top: 3rem;
+    opacity: 1;
   }
   
   .headline  {

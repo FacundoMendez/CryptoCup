@@ -173,7 +173,7 @@ const tournamentScroll = () =>{
                 trigger: ".boxTournament",
                 start: "top center",
                 end: "bottom bottom",
-                onEnter:presetEffectBall,
+               
             }
         })
     
@@ -203,17 +203,29 @@ const tournamentScroll = () =>{
     
     
         gsap.from(".logoContainer",{
+            y: "+=100",
             opacity:0,
-            delay:.8,
-            y: 100,
             duration:2.5,
             scrollTrigger:{
-                trigger: ".boxTournament",
-                start: "top center",
+                trigger: ".subTitlePrize",
+                start: "top -100",
                 end: "bottom bottom",
+                onEnter:presetEffectBall,
             }
         })
 
+            
+        gsap.from(".effectLogo",{
+            y: "+=100",
+            opacity:0,
+            duration:2.5,
+            scrollTrigger:{
+                trigger: ".subTitlePrize",
+                start: "top -100",
+                end: "bottom bottom",
+                onEnter:presetEffectBall,
+            }
+        })
 
             
         gsap.from(".boxButtonTicketBuy",{

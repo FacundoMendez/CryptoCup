@@ -11,9 +11,9 @@ import PopupEsperaBuy from './codigoDescuento/popupsErrors/popupEsperaBuy/PopupE
 import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
 import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
-import EffectParticles from './ticketsComponents/effectParticle/EffectParticles';
+import gsap from 'gsap';
 
-
+const EffectParticles = lazy(() => import ('./ticketsComponents/effectParticle/EffectParticles'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
 const VideoBuyBasic = lazy(() => import ("./ticketsComponents/tokenBasic/videoCompra/videoBuyBasic/VideoBuyBasic"))
@@ -31,6 +31,13 @@ const TiketBuyPage = () => {
     useEffect(() => {
       checkTokenBoost()
       checkTokenBasic()
+      gsap.to(".navBallModel",{
+        opacity:1,
+        scale:1,
+        duration:1.2,
+        delay:0
+    })
+
     },[])
 
   /* validaciones de coneccion blockchain */

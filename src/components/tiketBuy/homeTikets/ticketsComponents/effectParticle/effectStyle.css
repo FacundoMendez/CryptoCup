@@ -1,12 +1,9 @@
-.containerParticle {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
- }
- 
+
  #star-particle {
-   width: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  width: 100%;
    /* background-color: rgb(167, 102, 252); */
  }

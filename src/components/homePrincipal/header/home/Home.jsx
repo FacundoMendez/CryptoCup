@@ -1,14 +1,13 @@
 import React, {lazy, useEffect, useState} from 'react'
-import EffectParticles from '../../../tiketBuy/homeTikets/ticketsComponents/effectParticle/EffectParticles'
 import "./home.css"
-/* import particulasCopa from "../../../tiketBuy/homeTikets/src/particle1P.mp4" */
 import soonImg from "./src/comingSoon.png"
+import homeScroll from './homeScroll'
 
+const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
 
 const Button = lazy(() => import ("../../buttons/Button"))
 const Social = lazy(() => import ('./social/Social'))
 const Timer = lazy(() => import ('./timer/Timer'))
-
 
 const Home = () => {
 
@@ -31,6 +30,8 @@ const Home = () => {
       setEsMovil(false)
     } 
 
+    homeScroll()
+
   },[])
 
 
@@ -38,12 +39,9 @@ const Home = () => {
  
   return (
     <div id='home' className="containerHome">
-
-    <EffectParticles/>
+      <NavHeader />
 
       <div className="containerPrincipalHome">
-
-      {/* {  !esMovil  ?   <video className='backPrincipal' src= " https://res.cloudinary.com/dvrxw8fbg/video/upload/v1660657005/CryptocupQatar/Home%20/particle1P_bhqtfr.mp4" autoPlay loop muted  type="video/mp4"></video> : null  } */}
 
         <div className='textPrincipalHome'>
           <div className="tite-home">

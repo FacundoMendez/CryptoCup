@@ -49,19 +49,16 @@ const referidosScroll = () =>{
             })
 
             videoSmoke.play()
-
-
         }
 
-
-           ScrollTrigger.create({
-                    trigger: ".containerReferidos",
-                    start: "top 10%",
-                    end:"100%",
-                    pin: true,
-                    onEnter : animateRefers , 
-                    invalidateOnRefresh: true,
-            })
+        ScrollTrigger.create({
+                 trigger: ".containerReferidos",
+                 start: "top 10%",
+                 end:"100%",
+                 pin: true,
+                 onEnter : animateRefers , 
+                 invalidateOnRefresh: true,
+         })
 
     }else{
         videoSmoke.classList.remove("smoke")

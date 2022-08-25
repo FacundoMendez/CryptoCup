@@ -4,10 +4,6 @@ import "./pelotaGame.css"
 
 const PelotaGame = () => {
 
-/*     useEffect(() => {
-        pelotaGameFunction()
-    }) */
-
     let scoreMax = localStorage.getItem("scoreMax")
 
   return (

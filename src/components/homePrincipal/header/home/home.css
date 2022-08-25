@@ -1,11 +1,11 @@
 .containerHome{
   width: 100%;
   background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(16,16,18,1) 36%, #121213 50%, rgba(16,16,18,1) 66%, rgba(0,0,0,1) 100%);
   position: relative;
   top: 0;
-  z-index: 9999999 !important;
+  z-index: 999999 !important;
   overflow: hidden;
+  opacity: 0;
 }
 
 .containerPrincipalHome{
@@ -20,22 +20,10 @@
   background-size: cover;
   background-position:10%;
   filter: contrast(104%) brightness(125%) ;
+  opacity: 1;
 }
 
-.backPrincipal{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  object-fit: cover;
-  opacity:1;
-  z-index: 10;
-}
 
-.backPrincipal{
-  opacity: .15;
-  filter: contrast(350%) brightness(100%)  hue-rotate(225deg);
-}
 
 .containerPrincipalHome::after{
   content: " ";
@@ -81,6 +69,8 @@
   align-items: center;
   gap: 4rem;
   flex-direction: column;
+  opacity: 0;
+
 }
 
 .tite-home h1{
@@ -109,6 +99,7 @@
   align-items: baseline;
   flex-wrap: wrap;
   flex-wrap: nowrap;
+  opacity: 0;
 }
 
 
@@ -326,6 +317,10 @@
   }
   .containerPrincipalHome{
     background-position: 70% ;
+  }
+
+  .containerHome , .navBallModel , .tite-home, .buttonsHome , .timer{
+    opacity: 1;
   }
 }
 
