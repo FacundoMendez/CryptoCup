@@ -323,7 +323,7 @@ const pelotaGameFunction = () => {
             gameVel = 1.5;
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 1.5;
+            tiempoObstaculoMax = 2;
             contenedor.classList.add("level-up1");
    
         }else if(score === 20) {
@@ -331,25 +331,25 @@ const pelotaGameFunction = () => {
             contenedor.classList.add("level-up2");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 1.8;
+            tiempoObstaculoMax = 2.5;
         } else if(score === 40) {
             gameVel = 3.5;
             contenedor.classList.add("level-up3");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 2;
+            tiempoObstaculoMax = 3;
         } else if(score === 60) {
             gameVel = 5;
             contenedor.classList.add("level-up4");
-            tiempoHastaObstaculo = 4;
+            tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .9;
-            tiempoObstaculoMax = 2.5;
+            tiempoObstaculoMax = 3.5;
         } else if(score === 100) {
             gameVel = 6;
             contenedor.classList.add("level-up5");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .7;
-            tiempoObstaculoMax = 3;
+            tiempoObstaculoMax = 4;
         } 
         
         suelo.style.animationDuration = (3/gameVel)+"s";

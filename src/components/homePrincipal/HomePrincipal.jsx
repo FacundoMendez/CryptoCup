@@ -12,14 +12,12 @@ const HomePrincipal = () => {
   const context = useContext(Context)
 
   return (
-    <div>
         <Suspense fallback={<Spinner />}>
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
           <Home/>
           <Main/>
           <Footer/>
         </Suspense>
-    </div>
   )
 }
 

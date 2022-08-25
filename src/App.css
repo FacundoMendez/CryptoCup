@@ -10,7 +10,10 @@
     -ms-user-select: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
+
+
 
 ul{
   list-style: none;
@@ -51,8 +54,8 @@ h2{
   ::-webkit-scrollbar-corner {
     background: transparent;
   }
-  
 
+  
 
 @font-face {
   font-family: 'gilron';

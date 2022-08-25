@@ -129,7 +129,7 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50% ,0);
-    background: url("./src/cono.png") no-repeat;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661463423/CryptocupQatar/BallGame/cono_in2zha.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -152,7 +152,7 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50% ,0);
-    background: url("./src/cono2.png") no-repeat;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661463423/CryptocupQatar/BallGame/cono2_xky8wr.png") no-repeat;
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -166,7 +166,7 @@
     height: 60px;
     position: absolute;
     z-index: 1;
-    background: url("./src/moneda11.png") no-repeat center center;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661463423/CryptocupQatar/BallGame/moneda11_or9fid.png") no-repeat center center;
     animation: animarMoneda_game 3s linear infinite;
     filter: drop-shadow(0 0 1px black) contrast(110%) brightness(120%);
 }
@@ -178,7 +178,7 @@
     position: absolute;
     z-index: 0;
     filter: contrast(110%) brightness(120%);
-    background: url("./src/nube.png") no-repeat;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661463423/CryptocupQatar/BallGame/nube_sjksmb.png") no-repeat;
     background-size: 92px 26px;
 }
 

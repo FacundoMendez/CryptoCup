@@ -49,9 +49,9 @@ function NavHeader() {
                     </li>
 
                     <li className="nav-menu-item navMovile">
-                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
-                            Whitepaper
-                        </NavLink>
+                        <a href="#roadmap" className="nav-menu-link nav-link">
+                            Roadmap
+                        </a>
                     </li>
                 
 
@@ -74,9 +74,9 @@ function NavHeader() {
                 <ul className='navDerecha'>
           
                     <li className="nav-menu-item">
-                        <NavLink to="#roadmap" className="nav-menu-link nav-link">
+                        <a href="#roadmap" className="nav-menu-link nav-link">
                             Roadmap
-                        </NavLink>
+                        </a>
                     </li>
                     
                     <li className="nav-menu-item ">
