@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from '../../homePrincipal/header/nav/navFuncional';
 import "../../homePrincipal/header/nav/nav.css";
 import navBallModel from '../../homePrincipal/header/nav/modelBall';
-/* import imgNav from "../../homePrincipal/header/nav/src/navBack1.png" */
+import {NavLink  } from "react-router-dom";
 import commingDapp from '../../homePrincipal/header/nav/comingDapp';
 
 
@@ -28,28 +28,28 @@ function NavTicket() {
                 <ul className="navVisible nav-menu navIzquierda">
                     
                     <li className="nav-menu-item " >
-                        <a href="/" className="nav-menu-link nav-link">
+                        <NavLink  to="/" className="nav-menu-link nav-link" >
                             Home
-                        </a>
+                        </NavLink>
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/tickets" className="nav-menu-link nav-link">
+                        <NavLink to="/tickets" className="nav-menu-link nav-link">
                             Tickets
-                        </a>
+                        </NavLink>
                     </li>
                     
 
                     <li className="nav-menu-item navMovile">
-                        <a href="/" className="nav-menu-link nav-link">
+                        <NavLink to="/" className="nav-menu-link nav-link">
                             Roadmap
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="nav-menu-item navMovile">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </a>
+                        </NavLink>
                     </li>
                 
 
@@ -73,15 +73,15 @@ function NavTicket() {
                 <ul className='navDerecha'>
           
                     <li className="nav-menu-item">
-                        <a href="/" className="nav-menu-link nav-link">
+                        <NavLink to="/" className="nav-menu-link nav-link">
                             Roadmap
-                        </a>
+                        </NavLink>
                     </li>
                     
                     <li className="nav-menu-item ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </a>
+                        </NavLink>
                     </li>
                 
                     <li>

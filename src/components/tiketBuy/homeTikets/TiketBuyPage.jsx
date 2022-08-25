@@ -13,12 +13,13 @@ import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
 import gsap from 'gsap';
 
+
+const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
 const EffectParticles = lazy(() => import ('./ticketsComponents/effectParticle/EffectParticles'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
 const VideoBuyBasic = lazy(() => import ("./ticketsComponents/tokenBasic/videoCompra/videoBuyBasic/VideoBuyBasic"))
 const NavTickets = lazy(() => import ("../NavTickets/NavTickets"))
-const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
@@ -332,12 +333,9 @@ const TiketBuyPage = () => {
     <div className="containerTiketsBuy">
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
 
-      <Suspense fallback={<Spinner/>}>
-          <NavTickets login={login} connected={connected} account={account !== undefined? truncateEthAddress(account[0]):account} />
-      </Suspense>
-
+ 
+      <NavTicket/>
       <Social />
-
       <EffectParticles/>
 
       

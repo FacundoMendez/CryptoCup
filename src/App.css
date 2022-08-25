@@ -59,6 +59,8 @@ h2{
   src: url('./components/fonts/Gilroy-ExtraBold.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap
+
 }
 
 @font-face {
@@ -66,6 +68,8 @@ h2{
   src: url('./components/fonts/Gilroy-Medium.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap
+
 }
 
 
@@ -74,6 +78,8 @@ h2{
   src: url('./components/fonts/Qatar2022Arabic-Bold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap
+
 }
 
 
@@ -83,6 +89,8 @@ h2{
   src: url('./components/fonts/Qatar2022Arabic-Heavy.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap
+
 }
 
   

@@ -1,6 +1,5 @@
 import React, {lazy, useEffect, useState} from 'react'
 import "./home.css"
-import soonImg from "./src/comingSoon.png"
 import homeScroll from './homeScroll'
 
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
@@ -29,16 +28,13 @@ const Home = () => {
     } else {
       setEsMovil(false)
     } 
-
     homeScroll()
-
   },[])
-
 
 
  
   return (
-    <div id='home' className="containerHome">
+    <div id='home' className="containerHome" >
       <NavHeader />
 
       <div className="containerPrincipalHome">
@@ -60,7 +56,7 @@ const Home = () => {
                     <span className=" BorderTopBottomPresale"></span>
                     <span className=" BorderBottomPresale"></span>
                     <span className=" BorderLeftRightPresale"></span>
-                    <img className='comingSoon' src={soonImg} alt="Coming Soon" />
+                    <img className='comingSoon' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656414/CryptocupQatar/Home%20/comingSoon_xoiyc1.png" alt="Coming Soon" />
                   </div>
                 </div>
             </div>

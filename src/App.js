@@ -35,7 +35,7 @@ function App() {
         checkTerminosyCondiciones , 
         setCheckTerminosYCondiciones 
       }} >
-    
+
       <Routes >
           <Route   path="/"                    element={ <Suspense fallback={<Spinner />}>  <HomePrincipal />   </Suspense>}  /> 
           <Route   path='/tickets'             element={ <Suspense fallback={<Spinner />}>  <TiketBuyPage />    </Suspense>}  /> 

@@ -4,7 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
 import "./nav.css";
 import navBallModel from './modelBall';
-/* import imgNav from "./src/navBack1.png"; */
+import {NavLink  } from "react-router-dom";
 import navOcultar from './navOcultar';
 import commingDapp from './comingDapp';
 
@@ -17,11 +17,12 @@ function NavHeader() {
     },[])
 
 
+
     return (
         <header className="header">
             <div className="navBlur"></div>
             <nav className="nav">
-                <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.png"/* {imgNav}  */alt="nav background" />
+                <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,q_auto:low,w_1870/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.png"/* {imgNav}  */alt="nav background" />
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
@@ -29,28 +30,28 @@ function NavHeader() {
                 <ul className="navVisible nav-menu navIzquierda">
                     
                     <li className="nav-menu-item " >
-                        <a href="#home" className="nav-menu-link nav-link">
+                        <NavLink to="#home" className="nav-menu-link nav-link" >
                             Home
-                        </a>
+                        </NavLink>
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/tickets" className="nav-menu-link nav-link">
+                        <NavLink to="/tickets" className="nav-menu-link nav-link">
                             Tickets
-                        </a>
+                        </NavLink>
                     </li>
                     
 
                     <li className="nav-menu-item navMovile">
-                        <a href="#roadmap" className="nav-menu-link nav-link">
+                        <NavLink to="#roadmap" className="nav-menu-link nav-link">
                             Roadmap
-                        </a>
+                        </NavLink>
                     </li>
 
                     <li className="nav-menu-item navMovile">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </a>
+                        </NavLink>
                     </li>
                 
 
@@ -73,15 +74,15 @@ function NavHeader() {
                 <ul className='navDerecha'>
           
                     <li className="nav-menu-item">
-                        <a href="#roadmap" className="nav-menu-link nav-link">
+                        <NavLink to="#roadmap" className="nav-menu-link nav-link">
                             Roadmap
-                        </a>
+                        </NavLink>
                     </li>
                     
                     <li className="nav-menu-item ">
-                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup" target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </a>
+                        </NavLink>
                     </li>
                 
                     <li>

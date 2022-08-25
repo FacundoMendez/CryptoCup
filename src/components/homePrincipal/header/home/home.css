@@ -15,11 +15,10 @@
   flex-direction: row;
   flex-wrap: nowrap;
   background-color: black;
-  background-image: url("./src/back1.jpeg");
+  background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656415/CryptocupQatar/Home%20/back1_vztzxs.jpg");
   background-size: cover;
   background-position:10%;
   filter: contrast(104%) brightness(125%) ;
-  opacity: 1;
 }
 
 
