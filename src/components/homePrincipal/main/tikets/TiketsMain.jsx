@@ -65,7 +65,7 @@ const TiketsMain = () => {
                 <ul>
                   <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars1" /> Token utility</li>
                   <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars2" />  Access to Multipliers</li>
-                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars3" />  Advanced Prediction system unlocked</li>
+                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars3" />  Advanced Predictions unlocked</li>
                   <li><img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png" /* {star} */ alt="stars4" />  Prediction Streak Rewards</li>
                 </ul>
                 <p>
