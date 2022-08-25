@@ -154,6 +154,7 @@
     height: 15rem;
     border-radius: 100%;
     transform-style: preserve-3d;
+    opacity: 0;
 }
 
 .boxButtonTicketBuy::before{
@@ -356,6 +357,9 @@
 
 
 @media screen and (max-width: 800px){
+    .boxButtonTicketBuy{
+        opacity: 1;
+    }
 
     .titleContainers h2{
         font-size: 7rem;

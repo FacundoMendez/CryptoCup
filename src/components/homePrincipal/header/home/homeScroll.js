@@ -45,6 +45,7 @@ const homeScroll = () => {
             duration:.4,
             x: "+= 10",
         })
+        
 
         
     }

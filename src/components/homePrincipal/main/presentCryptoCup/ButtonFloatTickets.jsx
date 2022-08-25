@@ -4,7 +4,7 @@ const ButtonFloatTickets = () => {
   return (
     <a href='/tickets' aria-label="Tickets">
         <div className="boxButtonTicketBuy">
-        <div className="bottomTicketBuy"></div>
+            <div className="bottomTicketBuy"></div>
         </div>
     </a>
   )

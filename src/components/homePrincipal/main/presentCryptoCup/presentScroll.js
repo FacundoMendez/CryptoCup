@@ -176,7 +176,7 @@ const tournamentScroll = () =>{
                
             }
         })
-    
+
 
         gsap.from(".tournamentTitle",{
             opacity:0,
@@ -228,10 +228,10 @@ const tournamentScroll = () =>{
         })
 
             
-        gsap.from(".boxButtonTicketBuy",{
-            opacity:0,
+        gsap.to(".boxButtonTicketBuy",{
+            opacity:1,
             delay:.5,
-            y: 100,
+            y: -30,
             duration:2,
             scrollTrigger:{
                 trigger: ".boxTournament",
