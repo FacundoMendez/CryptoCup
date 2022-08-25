@@ -31,9 +31,10 @@ const TiketBuyPage = () => {
     useEffect(() => {
       checkTokenBoost()
       checkTokenBasic()
-      gsap.to(".navBallModel",{
-        opacity:1,
-        scale:1,
+
+      gsap.from(".navBallModel",{
+        opacity:0,
+        scale:.2,
         duration:1.2,
         delay:0
     })

@@ -5,7 +5,6 @@
   top: 0;
   z-index: 999999 !important;
   overflow: hidden;
-  opacity: 0;
 }
 
 .containerPrincipalHome{
@@ -22,7 +21,6 @@
   filter: contrast(104%) brightness(125%) ;
   opacity: 1;
 }
-
 
 
 .containerPrincipalHome::after{
@@ -69,8 +67,6 @@
   align-items: center;
   gap: 4rem;
   flex-direction: column;
-  opacity: 0;
-
 }
 
 .tite-home h1{
@@ -99,7 +95,6 @@
   align-items: baseline;
   flex-wrap: wrap;
   flex-wrap: nowrap;
-  opacity: 0;
 }
 
 
@@ -319,9 +314,7 @@
     background-position: 70% ;
   }
 
-  .containerHome , .navBallModel , .tite-home, .buttonsHome , .timer{
-    opacity: 1;
-  }
+ 
 }
 
 @media screen and (max-width: 600px){
