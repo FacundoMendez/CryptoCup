@@ -65,11 +65,11 @@ const TiketsMain = () => {
                 <ul>
                   <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars1" /> Token utility</li>
                   <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars2" />  Access to Multipliers</li>
-                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars3" />  Bet system unlocked</li>
+                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars3" />  Advanced Prediction system unlocked</li>
                   <li><img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png" /* {star} */ alt="stars4" />  Prediction Streak Rewards</li>
                 </ul>
                 <p>
-                  Place bets on all the matches of the world cup, access multipliers to climb faster, and all of this with our token. to increase your winnings, streak rewards, and more.
+                  Test your skills on all matches of the world cup, access multipliers to climb faster, increase your rewards with our token, access winning streaks and more.
                 </p>
 
               </div>
