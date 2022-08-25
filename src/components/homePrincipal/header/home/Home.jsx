@@ -46,7 +46,7 @@ const Home = () => {
               </h1>
               
               <div className="buttonsHome">
-                <a href="./tickets">
+                <a href="/tickets">
                   {!esMovil ? <Button title="BUY TICKETS"/> : <Button title="TICKETS"/>}
                   
                 </a>

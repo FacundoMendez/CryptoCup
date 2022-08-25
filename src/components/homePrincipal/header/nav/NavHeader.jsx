@@ -30,9 +30,9 @@ function NavHeader() {
                 <ul className="navVisible nav-menu navIzquierda">
                     
                     <li className="nav-menu-item " >
-                        <NavLink to="#home" className="nav-menu-link nav-link" >
+                        <a href="#home" className="nav-menu-link nav-link">
                             Home
-                        </NavLink>
+                        </a>
                     </li>
           
                     <li className="nav-menu-item">
