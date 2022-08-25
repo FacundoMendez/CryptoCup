@@ -20,7 +20,7 @@
     z-index: 99999999 !important;
     width: 100%;
     top: -1rem;
-    height: 10rem;
+    height: 9.8rem;
     background-color: rgba(40, 4, 68, 0.397);
     transition: all .6s ease-in-out;
     filter: blur(8px);
