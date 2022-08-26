@@ -6,9 +6,10 @@
     justify-content: center;
     position: relative;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     background-color:black;
+    z-index: 1500 !important;
 }
 
 .containerReferidos::before{

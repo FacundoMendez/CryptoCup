@@ -8,7 +8,8 @@
     padding-top: 0rem;
     gap: 2rem;
     padding-bottom: 60rem ;
-    z-index: 100;
+    z-index: 2500 !important;
+
 }
 
 .backTikets{
@@ -266,7 +267,6 @@
 .division{
     position: absolute;
     bottom: -80rem !important;
-    z-index: 1000;
 }
 
 .division img{

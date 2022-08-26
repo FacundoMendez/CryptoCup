@@ -1,12 +1,10 @@
 .containerNfts{
     width: 100%;
-    background: rgb(0,0,0);
     position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 6rem;
-    padding-top: 20rem ;
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_1920/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -18,18 +16,59 @@
     width: 110%;
     height: 100%;
     content: " ";
-    top: -1rem;
+    top: 0rem;
     background-color: rgba(0, 0, 0, 0.582);
-    filter: blur(15px);
     position: absolute;
     z-index: 1;
 }
 
 
+.containerWins{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    padding-top:10rem;
+}
+
+/* division */
+
+.divisionPrizePool{
+    position: absolute;
+    top: -7.5rem ;
+    z-index: 1000 !important;
+    width: 100%;
+}
+
+.divisionPrizePool img{
+    object-fit: cover;
+    width: 100%;
+    filter: contrast(110%) hue-rotate(230deg) brightness(110%) opacity(.8);
+}
+
+.divisionPrizePool-bottom{
+    position: absolute;
+    bottom: -5.5rem ;
+    z-index: 1000 !important;
+    width: 100%;
+}
+
+.divisionPrizePool-bottom img{
+    object-fit: cover;
+    width: 100%;
+    filter: contrast(110%) hue-rotate(230deg) brightness(110%) opacity(.8);
+    transform: rotate(180deg);
+}
+
+
 .titleNfts{
     z-index: 10;
-    padding-top: 5rem;
     text-transform: uppercase;
+    padding-top: 15rem ;
 }
 
 .titleNfts h2{
@@ -151,6 +190,7 @@
     flex-wrap: wrap;
     max-width: 1200px;
     z-index: 1;
+    padding-bottom: 18rem;
 }
 
 .container_card {
@@ -181,6 +221,7 @@
 
 /* pricePOOL */
 
+/* background */
 
 .events-page {
     width: 100%;
@@ -203,6 +244,8 @@
     z-index: -1;
 }
 
+/* imag 1 */
+
 .event1 .image {
     top: 50%;
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656624/CryptocupQatar/nft/prizepoolBasic_nrriui.jpg");
@@ -210,9 +253,10 @@
     width: 51%;
     text-align: center;
     background-repeat: no-repeat;
-    margin-top: 16rem;
     filter: contrast(115%) brightness(105%);
 }
+
+/* img2 */
 
 .event2 .image {
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656624/CryptocupQatar/nft/prizepoolBoost_rl3vlt.jpg");
@@ -221,7 +265,6 @@
     text-align: center;
     margin-left: 0px;
     background-repeat: no-repeat;
-    margin-top: 16rem;
     filter: contrast(120%) brightness(100%);
 }
 .image {
@@ -229,7 +272,7 @@
     left: 50%;
     background-size: contain;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -35%);
     height: 100vh;
     width: 50vw;
 }
@@ -241,6 +284,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+
 }
 .scrollmagic-pin-spacer {
     position: absolute !important;
@@ -263,9 +307,10 @@
 
 .arrowss {
 	width: 60px;
-	height: 72px;
-	position: relative;
+	height: 90px;
+	position: absolute;
     z-index: 1000;
+    top: 0rem;
 }
 
 .arrowss path {

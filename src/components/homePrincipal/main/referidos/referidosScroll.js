@@ -52,12 +52,13 @@ const referidosScroll = () =>{
         }
 
         ScrollTrigger.create({
-                 trigger: ".containerReferidos",
-                 start: "top 10%",
-                 end:"100%",
-                 pin: true,
-                 onEnter : animateRefers , 
-                 invalidateOnRefresh: true,
+            trigger: ".containerReferidos",
+            start: "top 10%",
+            end:"100%",
+            /* pin: true, */
+            onEnter : animateRefers , 
+            scrub: 4,
+            invalidateOnRefresh: true,
          })
 
     }else{
