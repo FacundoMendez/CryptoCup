@@ -14,29 +14,33 @@
 
 .effectLogo{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: -1;
-    height: 140%;
     width: 100%;
+    height: 70rem;
     opacity: 1;
 }
 
 .logoContainer{
     width: 100%;
-    margin-top: 5em;
+    height: 70rem;
+    margin-top: 5rem;
     position: relative;
     opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logoContainer::before{
     content: " ";
     position: absolute;
-    top: -12rem;
+    top: -10rem;
     left: 0;
     width: 110%;
-    height: 10rem;
+    height: 5rem;
     background-color: rgba(0, 0, 0, 0.986);
     filter: blur(20px) drop-shadow(0 0 40px rgba(0, 0, 0, 0.438));
     z-index: 10!important;
@@ -44,11 +48,11 @@
 .logoContainer::after{
     content: " ";
     position: absolute;
-    bottom: -14rem;
+    bottom: 3rem;
     left: 0;
     width: 110%;
-    height: 10rem;
-    background-color: rgba(0, 0, 0, 0.986);
+    height: 8rem;
+    background-color: rgba(0, 0, 0, 0.996);
     filter: blur(20px) drop-shadow(0 0 40px rgba(0, 0, 0, 0.438));
     z-index: 10!important;
 }
@@ -57,6 +61,7 @@
     object-fit: cover;
     width: 45rem;
     border-radius: 50%;
+    margin-top: -14rem;
     filter: brightness(125%) contrast(120%) drop-shadow( 0 0 40px #000000);
 }
 
@@ -66,7 +71,7 @@
     width: 100%;
     position: absolute;
     object-fit: cover;
-    filter: contrast(110%) brightness(105%) opacity(.65);
+    filter: contrast(110%) brightness(105%) opacity(.75);
     top: -10rem;
 } 
 
@@ -386,6 +391,10 @@
         object-fit: cover;
         filter: contrast(110%) brightness(105%) opacity(.65);
         top: 10rem;
+    }
+
+    .logoContainer img{
+        margin-top: 0rem;
     }
 
 }

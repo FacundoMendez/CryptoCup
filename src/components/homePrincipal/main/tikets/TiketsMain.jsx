@@ -35,6 +35,9 @@ const TiketsMain = () => {
             </p>
         </div>
         <div className="boxTickets-Home-basic">
+          <div className="tiketImg-basic" >
+            <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png" alt="ticket" onClick={() => setTiketClick(true)} />
+          </div>
           <div className="titleTicket-home-basic">
             <h2>
               BASIC LADDER 
@@ -45,41 +48,40 @@ const TiketsMain = () => {
               </p>
             </div>
           </div>
-          <div className="tiketImg-basic" >
-            <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png" alt="ticket" onClick={() => setTiketClick(true)} />
-          </div>
+       
         </div>
 
         <div className="boxTickets-Home-boost">
-            <div className="tiketImg-boost" >
-                <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png" alt="ticket" onClick={() => setTiketClick(true)} />
-            </div>
+           
             <div className="titleTicket-home-boost">
               <h2>
                 BOOST LADDER 
               </h2>
               <div className="textoTicket-home">
-                <p>
+                <p className='text_boost_top'>
                 It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:
                 </p>
                 <ul>
-                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars1" /> Token utility</li>
-                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars2" />  Access to Multipliers</li>
-                  <li><img src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png"/* {star} */ alt="stars3" />  Advanced Predictions unlocked</li>
-                  <li><img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/star_ks5gr9.png" /* {star} */ alt="stars4" />  Prediction Streak Rewards</li>
+                  <li className='star1'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png"/* {star} */ alt="stars1" /> Token utility</li>
+                  <li className='star2'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png"/* {star} */ alt="stars2" />  Access to Multipliers</li>
+                  <li className='star3'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png"/* {star} */ alt="stars3" />  Advanced Predictions unlocked</li>
+                  <li className='star4'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" /* {star} */ alt="stars4" />  Prediction Streak Rewards</li>
                 </ul>
-                <p>
+                <p className='text_boost_bottom'>
                   Test your skills on all matches of the world cup, access multipliers to climb faster, increase your rewards with our token, access winning streaks and more.
                 </p>
 
               </div>
+        
           </div>
-
-          <div className="division">
+          <div className="tiketImg-boost" >
+                <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png" alt="ticket" onClick={() => setTiketClick(true)} />
+            </div>
+         
+        </div>
+        <div className="division">
             <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.png"/* {division} */ alt="Division container" />
           </div>
-        </div>
-
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
       
 

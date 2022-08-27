@@ -14,7 +14,7 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(116%) brightness(112%)  ;
+    filter: contrast(115%) brightness(110%)  ;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -27,7 +27,7 @@
     bottom: -15rem;
     height: 10rem;
     width: 110%;
-    background-color: rgba(2, 2, 2, 0.192);
+    background-color: rgba(0, 0, 0, 0.192);
     filter: blur(20px);
 }
 
@@ -37,19 +37,19 @@
 
 
 .containerTikets::before{
-    width: 110%;
+    width: 55%;
     height: 74%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.580);
-    filter: blur(15px) ;
+    background-color: rgba(0, 0, 0, 0.400);
+    filter: blur(30px) ;
     position: absolute;
     overflow: hidden;
 }
 
 .tiketsTitle h2{
     font-size: 6rem;
-    margin-top: 6rem;
+    margin-top: -10rem;
     letter-spacing: 0px;
     line-height: 6.5rem;
     font-family: qatarHeavy;
@@ -118,7 +118,7 @@
     position: relative;
     width: 70%;
     margin-top: 10rem;
-    margin-left: 12rem;
+    margin-left: 0rem;
     padding-bottom: 5rem;
 }
 
@@ -132,7 +132,7 @@
     position: relative;
     width: 70%;
     margin-top: 10rem;
-    margin-left: 0rem;
+    margin-left: 12rem;
     padding-bottom: 5rem;
 }
 
@@ -158,6 +158,7 @@
     width: 50%;
     gap: 5rem;
     margin-top: 0rem;
+    
 }
 
 .titleTicket-home-basic h2{
@@ -172,7 +173,7 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     font-family: qatarHeavy;
-
+    text-align: center;
 }
 
 .titleTicket-home-boost h2{
@@ -187,12 +188,13 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     font-family: qatarHeavy;
+    text-align: center;
 }
 
 .textoTicket-home{
     display: flex;
     justify-content: center;
-    align-items: initial;
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 5rem;
@@ -200,7 +202,7 @@
 
 .textoTicket-home p{
     color: white;
-    text-align: initial;
+    text-align: center;
 }
 
 
@@ -238,18 +240,26 @@
 
 .textoTicket-home ul {
     list-style:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 1rem 0;
 }
 
 .textoTicket-home li {
     list-style:none;
     display: flex;
     justify-content: inherit;
+    flex-direction: column;
     gap: 2rem;
-    width: 35rem;
+    width: 15rem;
     letter-spacing: 0px;
     align-items: center;
+    text-align: center;
     padding: .5rem 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-style: italic;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -258,15 +268,27 @@
     inset 0 -1px 1px 3px rgb(255, 236, 159);
     background-image: linear-gradient(180deg, rgb(216, 138, 74), #e7bd69, #fff199, #e7bd69, rgb(216, 138, 74));
     font-family: qatarHeavy;
+    text-transform: uppercase;
 }
 
 .textoTicket-home ul li img {
-    width: 2.5rem;
+    width: 7rem;
+    filter: drop-shadow(0 0 4px rgba(253, 137, 60, 0.63)) contrast(105%) brightness(150%) ;
+}
+
+.star1, .star4{
+    margin-top: 3rem;
+    bottom: 0;
+}
+
+.star2, .star3{
+    margin-top: -3rem;
+    bottom: 0;
 }
 
 .division{
     position: absolute;
-    bottom: -80rem !important;
+    bottom: -10rem !important;
 }
 
 .division img{

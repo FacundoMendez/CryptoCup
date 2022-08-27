@@ -23,9 +23,9 @@ const tournamentScroll = () =>{
                 /* ---- CREATING ZONE ---- */
         
                 /* ---- SETTINGS ---- */
-                const numberParticlesStart = 200;
-                const particleSpeed = 0.5;
-                const velocity =.5;
+                const numberParticlesStart = 220;
+                const particleSpeed = 0.4;
+                const velocity =.4;
                 const circleWidth = 48;
         
                 /* ---- INIT ---- */
@@ -46,7 +46,7 @@ const tournamentScroll = () =>{
                         max : getRandomFloat(10, 100)/10
                     }
         
-                this.color = '#632aff18';
+                this.color = '#6f2aff15';
                 }
         
                 Particle.prototype.render = function() {
