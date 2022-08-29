@@ -405,6 +405,13 @@
         padding: 0.5rem 0;
         font-size: 1.9rem;
     }
+
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 15rem;
+        padding: 0.5rem 0;
+        font-size: 1.6rem;
+    }
     
 }
 
@@ -423,7 +430,59 @@
     .division{
         margin-left: 0rem;
     }
+    .containerTikets::before{
+        width: 85%;
+        height: 74%;
+        content: " ";
+        top: 0rem;
+        background-color: rgba(0, 0, 0, 0.623);
+        filter: blur(40px) ;
+        position: absolute;
+        overflow: hidden;
+    }
+    
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 15rem;
+        padding: 5.5rem 0;
+        font-size: 1.6rem;
+    }
 
+    .textoTicket-home {
+        gap: 23rem;
+    }
+
+
+    .star1{
+        margin: 0;
+        top: -2rem;
+        left: 12%;
+        position: absolute;
+    }
+
+    .star2{
+        margin: 0;
+        top: 1rem;
+        left: 50%;
+        position: absolute;
+    }
+
+    .star4{
+        margin: 0;
+        top: 35rem;
+        left: 50%;
+        position: absolute;
+    }
+
+    .star3{
+        margin: 0;
+        top: 37rem;
+        left: 12%;
+        position: absolute;
+    }
+    
+
+    
 
 }
 
@@ -432,8 +491,9 @@
 
     .division{
         position: absolute;
-        bottom: -30rem;
+        bottom: 2rem !important;
         z-index: 1000;
+        display: none;
     }
 
     .division img{
@@ -442,25 +502,35 @@
     }
 
     .containerTikets{
-        padding-bottom: 5rem;
+        padding-bottom: 25rem;
+        background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/BackgroundTickets1_dmwwf7.jpg");
+        background-attachment: fixed;
     }
 
     .backTikets{
-       display: none;
-    }
-
-    .backTiketsMovile{
-        display: inline-block;
-        object-fit: cover;
-        filter: contrast(130%) brightness(120%) opacity(1) ;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        position: absolute;
+        display: none;
     }
 
     .containerTikets::before{
+        width: 110%;
         height: 100%;
+        content: " ";
+        top: 0rem;
+        background-color: rgba(0, 0, 0, 0.623);
+        filter: blur(40px) ;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .containerTikets::after{
+        width: 130%;
+        height: 15rem;
+        content: " ";
+        top: -8rem;
+        background-color: rgba(0, 0, 0, 0.993);
+        filter: blur(30px) ;
+        position: absolute;
+        overflow: hidden;
     }
 
     .tiketsTitle h2{
@@ -468,10 +538,10 @@
         letter-spacing: 1px;
         line-height: 5rem;
     }
-    
-    .division{
-        top: 56rem;
-    }
+
+    .titleTicket-home-boost {
+        width: 60%;
+    } 
     
 }
 
@@ -510,11 +580,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 10rem;
         position: relative;
-        width: 180vw;
+        width: 130vw;
         margin-top: 10rem;
         padding-bottom: 0rem;
     }
@@ -526,6 +596,41 @@
     .division{
         display: none;
     }
+
+    .tiketImg-basic {
+        text-align: center;
+        order: 2;
+    }
+
+
+    .star1{
+        top: -2rem;
+        left: 10%;
+    }
+
+    
+    .star2{
+        top: 1rem;
+        left: 54%;
+    }
+
+    .star4{
+        top: 35rem;
+        left: 54%;
+    }
+
+    .star3{
+        top: 37rem;
+        left: 10%;
+        width: 8rem;
+    }
+
+    
+    .textoTicket-home li {
+        font-size: 1.4rem;
+    }
+    
+
 }
 
 @media screen and (max-width:480px){
@@ -537,7 +642,7 @@
     .containerTikets{
         width: 100%;
         z-index: 10;
-        margin-top: 5rem;
+        margin-top: 0rem;
         gap: 0rem;
         padding-top: 0rem;
         padding-bottom: 10rem ;
@@ -548,14 +653,19 @@
         text-align: center;
     }
 
- 
-    .containerTikets::after{
-        display: none;
+    .containerReferidos {
+        margin-top: 0rem !important;
     }
+
+ 
+   /*  .containerTikets::after{
+        display: none;
+    } */
 
     .tiketsTitle h2{
         font-size: 4rem;
         letter-spacing: 1px;
+        padding-top: 10rem;
     }
     
     .textTikets{
@@ -567,6 +677,7 @@
         padding: 0rem 2rem;
         text-align: center;
         color: white;
+        padding-bottom: 8rem;
     }
 
 
@@ -596,6 +707,38 @@
     .titleTicket-home-basic h2 ,  .titleTicket-home-boost h2 {
         font-size: 4rem;
     }
+
+    .boxTickets-Home-boost{
+        width: 170vw;
+    }
+
+    .star1{
+        top: -2rem;
+        left: 5%;
+    }
+
+    
+    .star2{
+        top: 1rem;
+        left: 50%;
+    }
+
+    .star4{
+        top: 35rem;
+        left: 50%;
+    }
+
+    .star3{
+        top: 37rem;
+        left: 5%;
+        width: 8rem;
+    }
+
+    .star1 img , .star2 img , .star3 img , .star4 img{
+        width: 6rem !important;
+    }
+
+
 }
 
 
@@ -623,6 +766,7 @@
     }
 }
 
+
 @media screen and (max-width:350px){
     .tiketsTitle h2{
         font-size: 3.5rem;
@@ -635,14 +779,48 @@
     }
     .boxTickets-Home-boost p{
         width: 85%;
-        margin-left: -.6rem;
 
     }
 
     .titleTicket-home-boost h2 {
-        margin-left: -5rem;
+        margin: 0;
     }
 
+    .boxTickets-Home-boost{
+        width: 190vw;
+    }
+
+
+    .textoTicket-home li {
+        font-size: 1.3rem;
+    }
+
+    .star1{
+        top: -2rem;
+        left: 0%;
+    }
+
+    
+    .star2{
+        top: 1rem;
+        left: 50%;
+    }
+
+    .star4{
+        top: 35rem;
+        left: 50%;
+    }
+
+    .star3{
+        top: 37rem;
+        left:0%;
+        width: 8rem;
+    }
+
+
+    .star1 img , .star2 img , .star3 img , .star4 img{
+        width: 5rem !important;
+    }
  
 }
 

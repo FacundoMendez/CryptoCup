@@ -11,7 +11,7 @@ const Roadmap = () => {
   return (
     <div id='roadmap' className="containerRoadmap">
       <section className="intro">
-        <div className="container">
+        <div className="containerTitle_roadmap">
           <h1>ROADMAP</h1>
         </div>
       </section>

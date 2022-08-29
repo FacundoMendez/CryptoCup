@@ -7,7 +7,7 @@
     flex-direction: column;
     gap: 8rem;
     padding-top: 14rem;
-    padding-bottom: 14rem;
+    padding-bottom: 20rem;
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_1920/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.jpg");
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +19,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.350);
     position: absolute;
     z-index: 1 !important;
 }
@@ -104,9 +104,6 @@
 }
 
 @media screen and (max-width:1170px) {
-    .videoPubli-video{
-        width: 70%;
-    }
 
     .videoPubli-video{
         width: 70rem;
@@ -114,11 +111,10 @@
     }
 }
 
+
+
 @media screen and (max-width:750px) {
     
-    .videoPubli-video{
-        width: 80%;
-    }
     .videoPubli-container{
         gap: 8rem;
         padding-top: 10rem;
@@ -166,16 +162,6 @@
         padding: 2rem;
         font-size: 3rem;
     }
-
-    .videoPubli-container::before{
-        width: 110%;
-        height: 100%;
-        content: " ";
-        top: .01rem;
-        background-color: rgba(0, 0, 0, 0.973);
-        position: absolute;
-    }
-    
 
 }
 

@@ -9,7 +9,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    padding: 20rem 0;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
 }
 
 .containerRoadmap::before{
@@ -17,13 +18,13 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0.596);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
 }
 
-.containerRoadmap::after{
+/* .containerRoadmap::after{
     width: 150%;
     height: 15vh;
     content: " ";
@@ -33,6 +34,23 @@
     position: absolute;
     z-index: 10;
     border-radius: 50px;
+} */
+
+
+.containerRoadmap::after{
+  height: 2rem;
+  content: " ";
+  top: 0rem;
+  width: 100%;
+  height: .1rem;
+  background-color:#fffffff5;
+  box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+  border: 1px solid rgba(178, 149, 202, 0.849);
+  border-radius: 100%;
+  backdrop-filter: blur(1rem);
+  filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
+  position: absolute;
+  z-index: 100;
 }
 
 .backgroundPrincipalRoadmap{
@@ -43,7 +61,7 @@
     contrast(120%) brightness(145%) opacity(.5);
 }
 
-.container h1{
+.containerTitle_roadmap h1{
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -257,17 +275,7 @@
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (max-width:1440px) {
-  .containerRoadmap::after{
-    width: 150%;
-    height: 15vh;
-    content: " ";
-    top: -4rem;
-    filter: drop-shadow(0 0 80px rgb(0, 0, 0)) blur(20px) ;
-    background-color: rgba(0, 0, 2, 0.979);
-    position: absolute;
-    z-index: 10;
-    border-radius: 50px;
-  }
+
 
    .textRoadamp p {
         font-size: 1.6rem;
@@ -344,7 +352,7 @@
   }
 
   @media screen and (max-width:480px) {
-    .container h1{
+    .containerTitle_roadmap h1{
       font-size: 5rem;
   }
   }
@@ -432,7 +440,7 @@
 
     }
 
-    .container h1{
+    .containerTitle_roadmap h1{
       font-size: 5.5rem;
     }
   }

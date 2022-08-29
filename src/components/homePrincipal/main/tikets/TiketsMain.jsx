@@ -9,9 +9,6 @@ const TiketsMain = () => {
 
   const [tiketClick , setTiketClick] = useState(false)
 
-  function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
 
   useEffect(()=>{
     tiketsScroll()
@@ -21,9 +18,8 @@ const TiketsMain = () => {
     <>
     <div id='tickets' className="containerTikets">
         
-      {!isMobile() ? <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/BackgroundTickets1_dmwwf7.jpg"/* {backReflejo} */ alt="background" /> : 
-      <img className="backgroundReflejoMovile backTiketsMovile " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/NuevoBackgroundTickets_ff5dqp.jpg"/* {backReflejoMovile} */ alt="backgroundMovileTickets" />}
-      
+      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/BackgroundTickets1_dmwwf7.jpg"/* {backReflejo} */ alt="background" />
+
 
         <div className="textTikets">
             <div className="titleContainers tiketsTitle">

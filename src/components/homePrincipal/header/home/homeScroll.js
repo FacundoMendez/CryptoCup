@@ -5,28 +5,27 @@ const homeScroll = () => {
 
         const tl = new Timeline({delay:.1, duration:.2});
 
-
         gsap.from(".navBallModel",{
             opacity:0,
             scale:.2,
-            duration:1.2,
-            delay:.5
         })
 
-     /*    tl.from(".containerHome",{
+  /*       gsap.from(".containerHome",{
             opacity:0,
+             delay:.5
         })
- */
+*/
         tl.from(".tite-home",{
             opacity:0,
             x: "-=100" , 
-            duration:.4
+            duration:.4, 
         })
 
         tl.from(".buttonsHome",{
             opacity:-2,
             y: "-=100" , 
             duration:.4,
+       
         })
         
 
@@ -34,10 +33,9 @@ const homeScroll = () => {
             opacity:0,
             y: "+=100" , 
             duration:.4,
+            
         })
-        
-
-        
+    
 
 }
 

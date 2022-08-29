@@ -159,7 +159,6 @@
     height: 15rem;
     border-radius: 100%;
     transform-style: preserve-3d;
-    opacity: 0;
 }
 
 .boxButtonTicketBuy::before{
@@ -312,13 +311,6 @@
         
     }
     
-    .boxButtonTicketBuy::before{
-        width: 13rem;
-        height: 13rem;
-        left: -1rem;
-        bottom: 1rem;
-    }
-
     .bottomTicketBuy{
         width: 10rem;
         height: 10rem;
@@ -443,12 +435,13 @@
     .logoContainer::before{
        display: none;
     }
-    
-    .tournamentContainer::after{
-        bottom: -10rem;
-        width: 150%;
-        height: 10rem;
+
+    .logoContainer{
+        height: 40rem;
     }
+    
+
+
 
     .titleContainers h3{
         padding: 1rem;
