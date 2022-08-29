@@ -6,6 +6,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { faDiscord } from "@fortawesome/free-brands-svg-icons"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import {NavLink  } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -37,7 +38,11 @@ const Footer = () => {
         <div className="terms">
                 <div className='listTerms'>
                     <ul>
-                        <li><a href="/TermsAndConditions "> • Terms and Conditions</a></li>
+                        <li>
+                            <NavLink to="/TermsAndConditions" >
+                                • Terms and Conditions
+                            </NavLink>
+                        </li>
                     </ul>
                     <br />
                 </div>
