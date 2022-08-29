@@ -5,7 +5,7 @@
     align-items: center;
     flex-direction: column;
     gap: 5rem;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656655/CryptocupQatar/roadmap/Roadmap5_fiowg9.jpg");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656655/CryptocupQatar/roadmap/Roadmap5_fiowg9.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -18,7 +18,7 @@
     height: 100%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.651);
     filter: blur(15px) ;
     position: absolute;
     overflow: hidden;
@@ -115,6 +115,17 @@
     height: 22px;
     border-radius: 50%;
     background: inherit;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
+    height: 18px;
+    width: 18px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+    border: 2px solid rgb(152, 150, 255);
+    backdrop-filter: blur(1rem);
   }
   
   .timeline ul li div {
@@ -156,11 +167,11 @@
     font-size: 2rem;
     padding-left: 1rem;
     font-family: qatarHeavy;
-
   }
     
   .timeline ul li:nth-child(odd) div {
     left: 45px;
+    
   }
   
   .timeline ul li:nth-child(odd) div::before {
@@ -168,10 +179,12 @@
     border-width: 8px 16px 8px 0;
     border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
     backdrop-filter: blur(1rem);
+    
 }
   
   .timeline ul li:nth-child(even) div {
     left: -439px;
+    
   }
   
   .timeline ul li:nth-child(even) div::before {
@@ -224,7 +237,6 @@
   
   .timeline ul li::after {
     transition: background 0.5s ease-in-out;
-    
   }
   
   .timeline ul li.in-view::after {
@@ -412,7 +424,7 @@
     }
 
     .textRoadamp p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .timeline{
@@ -438,6 +450,10 @@
     }
     .timeline ul li:nth-child(odd) div {
       left: 0px;
+    }
+
+    .timeline ul li div {
+      width: 30rem;
     }
 
     .timeline ul li:nth-child(even) div {
