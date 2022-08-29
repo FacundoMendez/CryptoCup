@@ -17,22 +17,21 @@
     background-position: center;
 }
 
-
-.emailContac{
-    position: relative;
-    width: 20%;
+.logoFooter{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:0rem;
-    top:-3.5rem;
-    right: 15rem;
+}
+
+.emailContac{
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 .emailContac a{
-    text-decoration: none;
-
+ text-decoration: none;
 }
 
 .email{
@@ -40,7 +39,14 @@
     font-size: 1.7rem;
     letter-spacing: 1px;
     font-family: qatar;
-    text-shadow: 0 0 1rem black;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 }
 
 .boxFooter{
@@ -92,7 +98,7 @@
     left: 17%;
 }
 
-.logoFooter p , .titleContact{
+.titleSocialFooter {
     font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
@@ -108,6 +114,24 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 }
+
+.titleContact{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+}
+
 
 
 /* social */
@@ -134,7 +158,6 @@
 
 .terms{
     position: relative;
-    padding-top: 3rem;
     width: 100%;
 }
 
@@ -167,23 +190,16 @@
     font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: 1px;
-    padding: 2rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
     z-index: 11;
     width: 100%;
 }
 
-@media screen and (max-width: 1440px) {
-    .emailContac{
-        right: 5rem;
-    }
-}
 
 @media screen and (max-width: 1100px) {
 
-    .emailContac{
-        right: 0rem;
-    }
-    
+
     .footer{
         position: relative;
         bottom: 0;
@@ -215,7 +231,6 @@
 
     .footer{
         gap: 3rem;
-        padding-top: 4rem ;
     }
 
     .listTerms a{
@@ -230,16 +245,14 @@
     .logoFooter p, .titleContact {
         letter-spacing: 1.5px;
         line-height: 3.3rem;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
     }
     
     .titleContact{
-        padding-bottom: 1rem;
+        padding-bottom: 0rem;
     }
 
-    .emailContac{
-        margin: 2rem 0;
-    }
+ 
 
     .boxFooter {
         display: flex;

@@ -50,7 +50,7 @@ const Nfts = () => {
         <h2 className='subtitleNftWinners'>Winners NFT's</h2>
 
         <div className="textNfts">
-            <p>
+            <p className='textCardsNft'>
               We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge.    
             </p>
         </div>

@@ -161,7 +161,6 @@
     
   .timeline ul li:nth-child(odd) div {
     left: 45px;
-
   }
   
   .timeline ul li:nth-child(odd) div::before {
@@ -169,7 +168,6 @@
     border-width: 8px 16px 8px 0;
     border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
     backdrop-filter: blur(1rem);
-
 }
   
   .timeline ul li:nth-child(even) div {
@@ -250,26 +248,20 @@
   
   
   .timeline ul li div {
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
     transition: all 0.5s ease-in-out;
 
   }
   
   .timeline ul li:nth-child(odd) div {
-    transform: translate3d(200px, 0, 0);
+    transform: translate3d(50px, 0, 0);
   }
   
   .timeline ul li:nth-child(even) div {
-    transform: translate3d(-200px, 0, 0);
+    transform: translate3d(-50px, 0, 0);
   }
   
-  .timeline ul li.in-view div {
-    transform: none;
-    visibility: visible;
-    opacity: 1;
-
-  }
   
   
   /* GENERAL MEDIA QUERIES
@@ -278,28 +270,45 @@
 
 
    .textRoadamp p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     time {
       font-size: 3.2rem;
   }
+
+  .timeline ul li div {
+    width: 340px;
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: -340px;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    left: 0px;
+  }
+
   
 }
 
   
   @media screen and (max-width: 900px) {
     .timeline ul li div {
-      width: 330px;
-    }
-    .timeline ul li:nth-child(even) div {
-      left: -369px;
-      /*250+45-6*/
+      width: 300px;
     }
 
-    .textRoadamp p {
-        font-size: 1.5rem;
+    .textRoadamp  p {
+      font-size: 1.2rem;
     }
+    .timeline ul li:nth-child(even) div {
+      left: -320px;
+    }
+
+    .timeline ul li:nth-child(odd) div {
+      left: 0px;
+    }
+
   }
   
   @media screen and (max-width: 752px) {
@@ -347,14 +356,30 @@
 
     .intro {
       padding: 50px 0;
-  }
+    }
+
+    .timeline ul li:nth-child(odd) div {
+      left: 0px;
+    }
+
+    .timeline ul li:nth-child(even) div {
+      left: 100px;
+    }
   
   }
 
   @media screen and (max-width:480px) {
     .containerTitle_roadmap h1{
       font-size: 5rem;
-  }
+    }
+
+    .timeline ul li:nth-child(odd) div {
+      left: 0px;
+    }
+
+    .timeline ul li:nth-child(even) div {
+      left: 100px;
+    }
   }
   
 
@@ -372,8 +397,12 @@
       padding: 15px;
     }
 
+    .timeline ul li:nth-child(odd) div {
+      left: 0px;
+    }
+
     .timeline ul li:nth-child(even) div {
-      left: 45px;
+      left: 100px;
     }
     .timeline ul li:nth-child(even) div::before {
         left: -16px;
@@ -407,9 +436,12 @@
     .timeline ul li div {
         width: 26.5rem;
     }
+    .timeline ul li:nth-child(odd) div {
+      left: 0px;
+    }
 
     .timeline ul li:nth-child(even) div {
-      left: 45px;
+      left: 100px;
     }
     .timeline ul li:nth-child(even) div::before {
         left: -16px;

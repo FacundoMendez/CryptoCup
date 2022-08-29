@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import { Timeline } from "gsap/gsap-core";
-/* import { Circ } from "gsap"; */
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const tiketsScroll = () =>{

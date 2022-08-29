@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { Timeline } from "gsap/gsap-core";
 
 const nftScroll= ()=>{
 
@@ -12,67 +13,53 @@ const nftScroll= ()=>{
         gsap.registerPlugin(ScrollTrigger); 
 
 
-        gsap.from(".titleNfts",{
-            scale:1.5,
+        let tl_nfts = new Timeline({
+            scrollTrigger:{
+                trigger: ".containerNfts",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+
+
+
+        tl_nfts.from(".titleNfts",{
             opacity:0,
+            scale:1.3,
             y:100,
-            duration:1,
-            scrollTrigger:{
-                trigger: ".containerNfts",
-                start: "top center",
-                end: "bottom bottom",
-            }
         })
 
-        gsap.from(".textNfts",{
+        tl_nfts.from(".textNfts",{
             opacity:0,
-            delay:.6,
-            duration:1,
+            scale:1.3,
+        })
+
+
+        let tl_nftsCopas = new Timeline({
             scrollTrigger:{
-                trigger: ".containerNfts",
+                trigger: ".containerWins",
                 start: "top center",
                 end: "bottom bottom",
             }
         })
 
-
-        gsap.from(".subtitleNftWinners",{
+        tl_nftsCopas.from(".subtitleNftWinners",{
             opacity:0,
-            delay:.8,
-            y:300,
-            duration:1,
-            scrollTrigger:{
-                trigger: ".containerNfts",
-                start: "top center",
-                end: "bottom bottom",
-            }
+            scale:1.3,
         })
 
-
-        gsap.from(".container_card",{
+        tl_nftsCopas.from(".textCardsNft",{
             opacity:0,
-            delay:1,
-            y:300,
-            duration:1,
-            scrollTrigger:{
-                trigger: ".containerNfts",
-                start: "top center",
-                end: "bottom bottom",
-            }
+            scale:1.3,
         })
 
+
+
+        tl_nftsCopas.from(".container_card",{
+            opacity:0,
+            scale:1.3,
+        })
         
-        gsap.from(".subtitleNftPricePool",{
-            opacity:0,
-            delay:1.3,
-            y:300,
-            duration:1,
-            scrollTrigger:{
-                trigger: ".containerNfts",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
 
     }
 }

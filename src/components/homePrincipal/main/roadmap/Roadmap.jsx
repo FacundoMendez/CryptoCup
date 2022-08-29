@@ -20,7 +20,7 @@ const Roadmap = () => {
         <div className='iniTimeline'></div>
         <ul>
           <li>
-            <div className='textRoadamp'>
+            <div className='textRoadamp t1'>
               <time>Q4 2021</time>
               <p>
               - Concept Design <span>✓</span><br/>
@@ -32,7 +32,7 @@ const Roadmap = () => {
             </div>
           </li>
           <li>
-          <div className='textRoadamp'>
+          <div className='textRoadamp t2'>
               <time>Q1 2022</time> 
               <p>
                 - Web footage selection <span>✓</span> <br/>
@@ -43,7 +43,7 @@ const Roadmap = () => {
             </div>
           </li>
           <li>
-            <div className='textRoadamp'>
+            <div className='textRoadamp t3 '>
               <time>Q2 2022</time> 
               <p>
                 - Ladders System development <span>✓</span>  <br/>
@@ -54,7 +54,7 @@ const Roadmap = () => {
             </div>
           </li>
           <li>
-            <div className='textRoadamp'>
+            <div className='textRoadamp t4'>
               <time>Q3 2022</time>
               <p>
                 - Private sale <br/>
@@ -69,7 +69,7 @@ const Roadmap = () => {
             </div>
           </li>
           <li>
-            <div className='textRoadamp'>
+            <div className='textRoadamp t5'>
               <time>Q4 2022</time> 
               <p>
                 - Dapp launch<br/>
