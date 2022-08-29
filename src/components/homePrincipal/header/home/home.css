@@ -91,9 +91,10 @@
 .buttonsHome{
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   flex-wrap: nowrap;
+  margin-left: 2rem;
 }
 
 
@@ -231,6 +232,11 @@
 
 @media screen and (max-width: 1440px){
 
+  .buttonsHome{
+    margin-left: 2rem;
+  }
+  
+
   .textPrincipalHome{
       width:100%;
       gap: 2rem;
@@ -331,7 +337,9 @@
 }
 
 @media screen and (max-width:480px){
-
+  .buttonsHome{
+    margin-left: 2rem;
+  }
   .tite-home{
     left: 50%;
     width: 100%;
@@ -387,5 +395,9 @@
     padding: 0rem 1.2rem;
     border-radius: .3em;
     line-height: 2.5em;
+  }
+  
+  .buttonsHome{
+    margin-left:0rem;
   }
 }
