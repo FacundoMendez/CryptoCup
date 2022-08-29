@@ -24,30 +24,27 @@ const Footer = () => {
                     <a href="/" target="_blank" rel="noopener noreferrer" aria-label='youtube red social'><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
                 </div>
 
-                <div className="emailContac">
-                    <p className='titleContact' >Contact</p>
-                    <a href="mailto:cryptocup2022@gmail.com"><p className='email' >Cryptocup2022@gmail.com </p></a> 
-                </div>
+            </div>
 
-                <div className="terms">
-                    <div className='listTerms'>
-                        <ul>
-                            <li><a href="/TermsAndConditions "> • Terms and Conditions</a></li>
-                        </ul>
-                        <br />
-                    </div>
-                </div>
-                
+            <div className="emailContac">
+                <p className='titleContact' >Contact</p>
+                <a href="mailto:cryptocup2022@gmail.com"><p className='email' >Cryptocup2022@gmail.com </p></a> 
             </div>
 
 
         </div>
         
-      
+        <div className="terms">
+                <div className='listTerms'>
+                    <ul>
+                        <li><a href="/TermsAndConditions "> • Terms and Conditions</a></li>
+                    </ul>
+                    <br />
+                </div>
+            </div>
 
         <p className='termsAndCond'>
-            ©2021-2022 Crypto Cup. All rights reserved. Crypto Cup and the Crypto Cup logo are trademarks of Crypto Cup in the U.S. and/or other countries.
-            All other trademarks are the property of their respective owners. 
+                Copyright © 2022. All Rights Reserved by CryptoCupQatar
         </p>
     </div>
   )

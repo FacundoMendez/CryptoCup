@@ -26,8 +26,8 @@
 
 .emailContac{
     position: relative;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3.5em;
 }
 
 .emailContac a{
@@ -36,10 +36,11 @@
 
 .email{
     color:rgb(243, 239, 255);
-    font-size: 1.7rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     font-family: qatar;
     text-decoration: none;
+    text-transform: uppercase;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -52,11 +53,12 @@
 .boxFooter{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    justify-content: center;
+    gap: 10rem;
     flex-wrap: wrap;
     overflow: hidden;
-    flex-direction: column;
-    width: 75%;
+    flex-direction: row;
+    width: 100%;
 }
 
 .backFooter{
@@ -80,8 +82,8 @@
 }
 
 .blurFooter::before{
-    width: 101.5%;
-    left: -1.5rem;
+    width: 120%;
+    left: -2rem;
     height: 100vh;
     content: " ";
     top: 1rem;
@@ -95,14 +97,13 @@
 /* title */
 .logoFooter{
     position: relative;
-    left: 17%;
 }
 
-.titleSocialFooter {
-    font-size: 2.5rem;
+.titleSocialFooter, .titleContact {
+    font-size: 2.8rem;
     font-weight: bold;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 5.3rem;
     text-transform: uppercase;
     -webkit-background-clip: text;
@@ -115,22 +116,6 @@
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 }
 
-.titleContact{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-    line-height: 3rem;
-    text-transform: uppercase;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: qatar;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
-}
 
 
 
@@ -159,6 +144,7 @@
 .terms{
     position: relative;
     width: 100%;
+    
 }
 
 .terms ul{
@@ -175,11 +161,16 @@
 }
 
 .listTerms a{
-    color: rgb(206, 205, 205);
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: 1px;
+    color: rgb(226, 218, 255);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
     text-decoration: none;
+}
+
+.listTerms a:hover{
+    color: rgb(255, 181, 131);
+   transition: all .5s ease-in-out;
 }
 
 /* legal */
@@ -187,13 +178,21 @@
 .termsAndCond {
     color: rgb(216, 216, 216);
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: bold;
     letter-spacing: 1px;
     padding-top: 0;
     padding-bottom: 2rem;
     z-index: 11;
     width: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: qatar;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 }
 
 
@@ -211,18 +210,27 @@
         gap: 5rem;
         flex-wrap: wrap;
         flex-direction: column;
-        padding: 5.5rem 0;
+        padding: 0rem 0;
     }
+
 
     .logoFooter{
         position: relative;
         left:0%;
     }
 
-    .emailContac{
-        top:1rem;
-        right: 0rem;
+    .boxFooter {
+        gap: 3rem;
+        padding-top: 6rem;
     }
+
+    .emailContac {
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 1.5em;
+    }
+    
+
 }
 
 
@@ -263,4 +271,14 @@
         flex-direction: column;
         width: 100%;
     }
+
+
+    .titleSocialFooter, .titleContact {
+        font-size: 2.4rem;
+    }
+    .email{
+        font-size: 1.7rem;
+        padding-top: 1rem;
+    }
+    
 }

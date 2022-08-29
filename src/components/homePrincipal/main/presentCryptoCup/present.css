@@ -162,11 +162,14 @@
 .boxButtonTicketBuy::before{
     position: absolute;
     content: "";
-    width: 13rem;
-    height: 13rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 100%;
     -webkit-animation: sdb03 2.5s ease-in-out infinite;
     animation: sdb03 2.5s  ease-in-out infinite;
+    border: 2px solid rgba(154, 77, 255, 0.87);
+    left: -.5rem;
+    bottom: 1rem;
 }
 
 
@@ -305,8 +308,18 @@
         left: 6rem;
         bottom: 1rem;
         width: 13rem;
+        height: 13rem;     
+    }
+
+    .boxButtonTicketBuy::before {
+        position: absolute;
+        content: "";
+        width: 13rem;
         height: 13rem;
-        
+        border-radius: 100%;
+        animation: sdb03 2.5s ease-in-out infinite;
+        left: -1.6rem;
+        bottom: 1.6rem;
     }
     
     .bottomTicketBuy{
@@ -422,6 +435,10 @@
     .backPresentacion{
         display: none;
     } 
+
+    .boxButtonTicketBuy{
+        display: none;
+    }
     
 }
 
