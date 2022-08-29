@@ -14,7 +14,6 @@ const HomePrincipal = () => {
   return (
         <Suspense fallback={<Spinner />}>
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
-          <Home/>
           <Main/>
           <Footer/>
         </Suspense>

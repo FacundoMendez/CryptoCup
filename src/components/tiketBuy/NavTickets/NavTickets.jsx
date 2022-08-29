@@ -47,9 +47,9 @@ function NavTicket() {
                     </li>
 
                     <li className="nav-menu-item navMovile">
-                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </NavLink>
+                        </a>
                     </li>
                 
 
@@ -79,9 +79,9 @@ function NavTicket() {
                     </li>
                     
                     <li className="nav-menu-item ">
-                        <NavLink to="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
+                        <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
                             Whitepaper
-                        </NavLink>
+                        </a>
                     </li>
                 
                     <li>

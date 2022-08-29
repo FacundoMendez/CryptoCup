@@ -10,14 +10,13 @@ const homeScroll = () => {
             scale:.2,
         })
 
-  /*       gsap.from(".containerHome",{
-            opacity:0,
-             delay:.5
-        })
-*/
+    /*     gsap.from(".containerPrincipalHome",{
+            opacity:-4,
+            delay:0,
+        }) */
+
         tl.from(".tite-home",{
             opacity:0,
-            x: "-=100" , 
             duration:.4, 
         })
 
@@ -25,7 +24,7 @@ const homeScroll = () => {
             opacity:-2,
             y: "-=100" , 
             duration:.4,
-       
+            y: "+=100" , 
         })
         
 

@@ -47,7 +47,7 @@ const Home = () => {
               
               <div className="buttonsHome">
                 <a href="/tickets">
-                  {!esMovil ? <Button title="BUY TICKETS"/> : <Button title="TICKETS"/>}
+                  <Button title="BUY TICKETS"/>
                   
                 </a>
                 <div className=" wrapperBottonPresale">

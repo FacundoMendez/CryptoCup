@@ -115,9 +115,9 @@
 
 .btnPresale p{
   color: rgba(199, 199, 199, 0.815);
-  font-size: 2.2rem;
-  letter-spacing: 3.8px;
-  padding-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  padding-top: .8rem;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
@@ -273,12 +273,6 @@
     height: 4.5rem;
   }
 
-
-  .btnPresale p{
-    padding-top: 1rem;
-    font-size: 2rem;
-    letter-spacing: 3.4px;
-  }
 
   .containerPrincipalHome{
     background-position: 65% ;
