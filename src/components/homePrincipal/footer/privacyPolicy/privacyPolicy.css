@@ -9,6 +9,15 @@
     overflow: hidden;
 }
 
+.containerPrivacy::after{
+    width: 110%;
+    height: 100%;
+    content: " ";
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.568);
+    position: absolute;
+}
+
 .boxPrivacy{
     width: 60%;
     position: relative;
@@ -25,6 +34,7 @@
     overflow: hidden;
     margin: 20rem auto;
     padding: 10rem 0;
+    z-index: 10;
 }
 
 .boxPrivacy h4{
