@@ -276,14 +276,21 @@
     filter: drop-shadow(0 0 4px rgba(253, 137, 60, 0.63)) contrast(105%) brightness(150%) ;
 }
 
-.star1, .star4{
+.star1{
     margin-top: 3rem;
     bottom: 0;
 }
 
-.star2, .star3{
+.star2{
+    margin-top:-6rem;
+}
+.star3{
     margin-top: -3rem;
     bottom: 0;
+}
+
+.star4{
+    margin-top:4rem;
 }
 
 .division{
@@ -381,10 +388,7 @@
         font-size: 1.8rem;
     }
     
-    .backTikets{
-        height: 100%;
-    }
-    
+
     .backTikets{
         object-fit: cover;
         width: 100%;
@@ -399,18 +403,21 @@
         letter-spacing: 2.5px;
     }
 
-    .textoTicket-home li {
-        gap: 2rem;
-        width: 35rem;
-        padding: 0.5rem 0;
-        font-size: 1.9rem;
-    }
 
     .textoTicket-home li {
         gap: 2rem;
         width: 15rem;
         padding: 0.5rem 0;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+    }
+
+    .textoTicket-home ul li img {
+        width: 6rem;
+    }
+
+    .titleTicket-home-boost {
+        width: 45%;
+        gap:6rem;
     }
     
 }
