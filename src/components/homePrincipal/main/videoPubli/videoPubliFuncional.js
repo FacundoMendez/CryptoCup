@@ -13,7 +13,6 @@ const VideoPubliFuncional = () => {
 
         gsap.from(".videoPubli-texts",{
             opacity:0,
-            scale:1.5,
             duration:.7,
             scrollTrigger:{
                 trigger: ".videoPubli-container",
@@ -24,7 +23,6 @@ const VideoPubliFuncional = () => {
 
         gsap.from(".videoPubli-video",{
             opacity:0,
-            scale:1.1,
             delay:.3,
             duration:1,
             scrollTrigger:{

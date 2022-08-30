@@ -25,13 +25,11 @@ const nftScroll= ()=>{
 
         tl_nfts.from(".titleNfts",{
             opacity:0,
-            scale:1.3,
             y:100,
         })
 
         tl_nfts.from(".textNfts",{
             opacity:0,
-            scale:1.3,
         })
 
 
@@ -45,19 +43,16 @@ const nftScroll= ()=>{
 
         tl_nftsCopas.from(".subtitleNftWinners",{
             opacity:0,
-            scale:1.3,
         })
 
         tl_nftsCopas.from(".textCardsNft",{
             opacity:0,
-            scale:1.3,
         })
 
 
 
         tl_nftsCopas.from(".container_card",{
             opacity:0,
-            scale:1.3,
         })
         
 

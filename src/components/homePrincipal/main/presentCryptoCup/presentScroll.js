@@ -172,12 +172,10 @@ const tournamentScroll = () =>{
         tl_present.from(".tournamentTitle",{
             opacity:0,
             duration:.5,
-            scale:1.3,
         })
 
         tl_present.from(".subTitlePrize",{
             opacity:0,
-            scale:1.3,
         })
 
         gsap.from(".boxButtonTicketBuy",{
@@ -202,14 +200,12 @@ const tournamentScroll = () =>{
         tl_logoPresent.from(".logoContainer",{
                 y: "+=100",
                 opacity:0,
-                scale:1.3,
         })
 
             
         tl_logoPresent.from(".effectLogo",{
             y: "+=100",
             opacity:0,
-            scale:1.3,
         })
         
     }

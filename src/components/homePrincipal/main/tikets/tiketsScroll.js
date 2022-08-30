@@ -27,13 +27,11 @@ const tiketsScroll = () =>{
     
             tl.from(".tiketsTitle",{
                 opacity:0,
-                scale:1.3,
                 duration:1,
             })
     
             tl.from(".textDescripcionTikets",{
                 opacity:0,
-                scale:1.3,
                 duration:1,
             })
            
@@ -53,14 +51,12 @@ const tiketsScroll = () =>{
         
         tl_basic.from(".titleTicket-home-basic",{
             opacity:0,
-            scale:1.3,
         })
 
   
         
         tl_basic.from(".textoTicket-home",{
             opacity:0,
-            scale:1.3,
         })
 
 
@@ -103,50 +99,36 @@ const tiketsScroll = () =>{
 
         tl_boost.from(".titleTicket-home-boost",{
             opacity:0,
-            scale:1.3,
-
         })
 
         tl_boost.from(".text_boost_top",{
             opacity:0,
-            scale:1.3,
-
         })
-
 
 
         tl_boost.from(".star1",{
             opacity:0,
             scale:1.3,
-
         })
 
         tl_boost.from(".star2",{
             opacity:0,
             scale:1.3,
-
         })
 
         tl_boost.from(".star3",{
             opacity:0,
             scale:1.3,
-
         })
 
         tl_boost.from(".star4",{
             opacity:0,
             scale:1.3,
-
         })
 
         tl_boost.from(".text_boost_bottom",{
             opacity:0,
-            scale:1.3,
-
         })
-
-
-
 
     }
 

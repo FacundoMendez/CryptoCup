@@ -14,7 +14,6 @@ const tokenScroll = () =>{
 
         gsap.from(".tokenTitle",{
             opacity:0,
-            scale:1.5,
             duration:.7,
             scrollTrigger:{
                 trigger: ".tokens",
@@ -49,7 +48,6 @@ const tokenScroll = () =>{
 
         gsap.to(".tokenVideo",{
             opacity:1,
-            scale:1,
             delay:.3,
             duration:2,
             scrollTrigger:{

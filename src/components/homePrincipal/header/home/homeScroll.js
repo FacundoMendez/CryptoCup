@@ -3,7 +3,7 @@ import { Timeline } from "gsap/gsap-core";
 
 const homeScroll = () => {
 
-        const tl = new Timeline({delay:.1, duration:.2});
+        const tl = new Timeline({delay:.1, duration:.2,  y: "+=100" , });
 
         gsap.from(".navBallModel",{
             opacity:0,
@@ -22,15 +22,12 @@ const homeScroll = () => {
 
         tl.from(".buttonsHome",{
             opacity:-2,
-            y: "-=100" , 
             duration:.4,
-            y: "+=100" , 
         })
         
 
         tl.from(".timer",{
             opacity:0,
-            y: "+=100" , 
             duration:.4,
             
         })

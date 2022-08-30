@@ -1,4 +1,4 @@
-import React, {lazy, useEffect, useState} from 'react'
+import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import homeScroll from './homeScroll'
 
@@ -10,24 +10,7 @@ const Timer = lazy(() => import ('./timer/Timer'))
 
 const Home = () => {
 
-  const [esMovil , setEsMovil] = useState(false)
-
-  function isMobile(){
-    return (
-        (navigator.userAgent.match(/Android/i)) ||
-        (navigator.userAgent.match(/webOS/i)) ||
-        (navigator.userAgent.match(/iPhone/i)) ||
-        (navigator.userAgent.match(/iPod/i)) ||
-        (navigator.userAgent.match(/BlackBerry/i))
-    );
-}
-
   useEffect(() => {
-    if(isMobile()){
-      setEsMovil(true)
-    } else {
-      setEsMovil(false)
-    } 
     homeScroll()
   },[])
 

@@ -9,13 +9,13 @@ const timerFuncional = () => {
             mm = String(today.getMonth() + 1).padStart(2, "0"),
             yyyy = today.getFullYear(),
             dayMonth = "11/20/",
-            birthday = dayMonth + yyyy;
+            qatar = dayMonth + yyyy;
         
-        today = mm + "/" + dd + "/" + yyyy;
+            today = mm + "/" + dd + "/" + yyyy;
 
         //end
         
-        const countDown = new Date(birthday).getTime(),
+        const countDown = new Date(qatar).getTime(),
             x = setInterval(function() {    
       
               const now = new Date().getTime(),
