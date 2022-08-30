@@ -20,7 +20,7 @@ const tournamentScroll = () =>{
         let windowHeight = canvas.height = window.innerHeight;
         canvas.id = 'canvas';
 
-        const numberParticlesStart = 220;
+        const numberParticlesStart = 190;
         const particleSpeed = 0.4;
         const velocity =.4;
         const circleWidth = 48;
