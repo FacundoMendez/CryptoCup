@@ -38,9 +38,6 @@ const TournamentMain = () => {
 
               <div className="logoContainer">
                   <img className='imgLogoContainer' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.webp"/* {logo} */ alt="logo CRYPTO CUP" />
-
-                  <canvas className='effectLogo'></canvas>
-
               </div>
 
             </div>

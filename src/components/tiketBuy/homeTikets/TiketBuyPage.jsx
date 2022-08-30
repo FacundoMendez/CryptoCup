@@ -15,7 +15,6 @@ import gsap from 'gsap';
 
 
 const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
-const EffectParticles = lazy(() => import ('./ticketsComponents/effectParticle/EffectParticles'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
 const VideoBuyBasic = lazy(() => import ("./ticketsComponents/tokenBasic/videoCompra/videoBuyBasic/VideoBuyBasic"))
@@ -336,7 +335,6 @@ const TiketBuyPage = () => {
  
       <NavTicket/>
       <Social />
-      <EffectParticles/>
 
       
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
