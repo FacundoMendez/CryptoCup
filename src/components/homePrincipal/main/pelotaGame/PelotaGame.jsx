@@ -16,7 +16,7 @@ const PelotaGame = () => {
 
             <div className="suelo"></div>
 
-            <img className="pelota_game " src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.png" alt="logo CRYPTO CUP" />
+            <img className="pelota_game " src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/logoPng_ehylkn.webp" alt="logo CRYPTO CUP" />
 
             <div className="score">0</div>
 

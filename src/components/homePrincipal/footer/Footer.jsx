@@ -11,7 +11,7 @@ import {NavLink  } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="footer">
-        <img className='backFooter' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660661016/CryptocupQatar/footer/Footer3_hxey1j.jpg"/* {backFooter} */ alt="Background Footer" />
+        <img className='backFooter' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/v1660661016/CryptocupQatar/footer/Footer3_hxey1j.webp"/* {backFooter} */ alt="Background Footer" />
         <div className="blurFooter"></div>
 
         <div className="boxFooter">

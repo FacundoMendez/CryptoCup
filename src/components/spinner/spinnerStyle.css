@@ -11,7 +11,7 @@
 .spinner {
    width: 160px;
    height: 160px;
-   background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656597/CryptocupQatar/present/Logo_br3xr2.png");
+   background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656597/CryptocupQatar/present/Logo_br3xr2.webp");
    background-size: cover;
    animation: spinner-12 1s infinite linear;
  }

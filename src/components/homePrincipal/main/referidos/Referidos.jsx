@@ -15,10 +15,10 @@ const Referidos = () => {
         <div className='containerReferidos'>
 
 
-                <img className="backReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_43/v1660657089/CryptocupQatar/referidos/backReferidos_ifrq6n.jpg"  /* {backReferidos} */ alt="background referidos" />
+                <img className="backReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_43/v1660657089/CryptocupQatar/referidos/backReferidos_ifrq6n.webp"  /* {backReferidos} */ alt="background referidos" />
                 
                 <div className="cortinaTop">
-                  <img className='linesBackTop' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
+                  <img className='linesBackTop' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.webp"/* {linesBack} */ alt="linesBack" />
                 </div>
 
 
@@ -39,12 +39,12 @@ const Referidos = () => {
                         
                       </p>
                   </div>
-                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660657088/CryptocupQatar/referidos/ticketReferidos_mfeink.png"  /* {ticketReferidos} */ alt="tickets referidos" />
+                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660657088/CryptocupQatar/referidos/ticketReferidos_mfeink.webp"  /* {ticketReferidos} */ alt="tickets referidos" />
 
                 </div>
 
                 <div className="cortinaBottom">
-                  <img className='linesBackBottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.jpg"/* {linesBack} */ alt="linesBack" />
+                  <img className='linesBackBottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660657090/CryptocupQatar/referidos/lines_ftzzb5.webp"/* {linesBack} */ alt="linesBack" />
                 </div>
             </div>
    

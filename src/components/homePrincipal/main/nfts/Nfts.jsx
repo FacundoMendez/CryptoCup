@@ -43,7 +43,7 @@ const Nfts = () => {
 
     <div className="containerWins">
         <div className="divisionPrizePool">
-              <img className='divisionImgPrizePool' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.png"/* {division} */ alt="Division container" />
+              <img className='divisionImgPrizePool' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp"/* {division} */ alt="Division container" />
         </div>
 
 
@@ -69,7 +69,7 @@ const Nfts = () => {
         </div>
  
         <div className="divisionPrizePool-bottom">
-              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.png"/* {division} */ alt="Division container" />
+              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp"/* {division} */ alt="Division container" />
         </div>
     </div>
 

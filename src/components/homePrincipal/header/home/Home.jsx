@@ -39,7 +39,7 @@ const Home = () => {
                     <span className=" BorderTopBottomPresale"></span>
                     <span className=" BorderBottomPresale"></span>
                     <span className=" BorderLeftRightPresale"></span>
-                    <img className='comingSoon' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656414/CryptocupQatar/Home%20/comingSoon_xoiyc1.png" alt="Coming Soon" />
+                    <img className='comingSoon' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656414/CryptocupQatar/Home%20/comingSoon_xoiyc1.webp" alt="Coming Soon" />
                   </div>
                 </div>
             </div>

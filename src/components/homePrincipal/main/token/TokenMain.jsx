@@ -13,8 +13,8 @@ const TokenMain = () => {
   return (
     <div id="tokens" className="tokens">
         <div className="tokenblur">
-            <img className='tokenComingSoon-left' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.jpg"/* {tokenComingSoon} */ alt="tokenComingSoon-left" /> 
-            <img className='tokenComingSoon-right' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.jpg"/* {tokenComingSoon} */ alt="tokenComingSoon-right" /> 
+            <img className='tokenComingSoon-left' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.webp"/* {tokenComingSoon} */ alt="tokenComingSoon-left" /> 
+            <img className='tokenComingSoon-right' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656687/CryptocupQatar/token/tokenComingSoon_oqzlox.webp"/* {tokenComingSoon} */ alt="tokenComingSoon-right" /> 
         </div>
         <div className="titleContainers tokenTitle">
             <h2>TOKEN</h2>
