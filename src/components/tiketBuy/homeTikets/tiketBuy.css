@@ -1,13 +1,15 @@
 .containerTiketsBuy{
     width: 100%;
     overflow: hidden;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/backgroundTickets_nufozr.webp");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661900963/CryptocupQatar/TICKETS%20BUY/home%20tickets/BackSectorTickets_yhp3gh.webp");
     background-repeat: no-repeat;
+    background-position: 100% 30% ;
     top:0;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     transition: all .3s ease-in-out;
+    filter: contrast(115%) brightness(105%);
 }
 
 .containerTiketsBuy::-webkit-scrollbar-thumb{
@@ -83,27 +85,18 @@
 
 .imgTicket {
     width: 17rem;
-    filter: contrast(110%)  drop-shadow(0 0 100px rgba(164, 85, 255, 0.26));
+    filter: drop-shadow(0 0 30px rgba(232, 173, 255, 0.452));
     position: relative;
     z-index: -1;
 
 }
 
-.particle-Tikets{
-    position: absolute;
-    opacity: .2;
-    height: 100vh;
-    z-index: 10;
-    filter: contrast(220%) brightness(100%)  hue-rotate(-160deg);
-  }
   
 .particle-Tikets video{
   width: 100%;
   object-fit: cover;
 }
   
-
-
 
 /* prices */
 
@@ -237,7 +230,6 @@
 .wrapperBotton-ticketSale {
     position: relative;
     text-decoration: none;
-
 }
 
 .wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
@@ -246,7 +238,6 @@
   text-align: center;
   cursor: pointer;
   position: relative;
-  
 }
 
 .btn-ticketSale p , .btn-ticketSaleBoost p {
