@@ -193,13 +193,15 @@ const tournamentScroll = () =>{
                 trigger: ".subTitlePrize",
                 start: "top -100",
                 end: "bottom bottom",
-                onEnter:presetEffectBall,
+       
             }
         })
 
         tl_logoPresent.from(".logoContainer",{
                 y: "+=100",
                 opacity:0,
+                duration:1,
+                onEnter:presetEffectBall,
         })
 
             
