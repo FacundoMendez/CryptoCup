@@ -18,7 +18,7 @@
   background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/e_contrast:40,q_auto:best/v1661900437/CryptocupQatar/Home%20/BackgroundPrincipalNuevo19_y6w3qm.webp");
   background-size: cover;
   background-position:100% 50%;
-  filter: brightness(105%) ;
+  filter: brightness(105%) contrast(105%) ;
 }
 
 
