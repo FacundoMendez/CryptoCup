@@ -44,9 +44,9 @@ function NavHeader() {
                     
 
                     <li className="nav-menu-item navMovile">
-                        <NavLink to="#roadmap" className="nav-menu-link nav-link">
+                        <a href="#roadmap" className="nav-menu-link nav-link">
                             Roadmap
-                        </NavLink>
+                        </a>
                     </li>
 
                     <li className="nav-menu-item navMovile">

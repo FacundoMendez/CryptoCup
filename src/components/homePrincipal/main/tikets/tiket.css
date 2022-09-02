@@ -53,6 +53,13 @@
     letter-spacing: 0px;
     line-height: 6.5rem;
     font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
 }
 
 .tiketsTitle h3{
@@ -491,7 +498,7 @@
         position: absolute;
     }
     
-
+  
     
 
 }
@@ -532,6 +539,10 @@
         overflow: hidden;
     }
 
+    .textTikets{
+        padding: 0 0rem;
+    }
+
     .containerTikets::after{
         width: 130%;
         height: 15rem;
@@ -543,11 +554,7 @@
         overflow: hidden;
     }
 
-    .tiketsTitle h2{
-        margin-top: 6rem;
-        letter-spacing: 1px;
-        line-height: 5rem;
-    }
+
 
     .titleTicket-home-boost {
         width: 60%;
@@ -577,13 +584,17 @@
         left: 12%;
     }
     
-    
+    .tiketsTitle{
+        margin-top: 14rem;
+        font-size: 5rem;
+    }
 }
 
 
 @media screen and (max-width:750px){
     .textTikets{
         width: 100vw;
+        padding: 0 2rem;
     }
 
     .tiketImg-boost, .tiketImg-basic{
@@ -597,7 +608,9 @@
         margin-top: 0rem;
         margin-right: 0rem;
     }
-    
+    .textoTicket-home p {
+        text-align: center;
+    }
 
     .division{
         position: absolute;
@@ -637,8 +650,8 @@
         padding-bottom: 0rem;
     }
 
-    .containerTikets{
-        padding-bottom: 5rem ;
+    .containerTikets {
+        padding-bottom: 20rem;
     }
    
     .division{
@@ -651,19 +664,19 @@
     }
 
     .star1{
-        left: 5%;
+        left: 10%;
     }
 
     .star2{
-        left: 50%;
+        left: 60%;
     }
 
     .star4{
-        left: 50%;
+        left: 60%;
     }
 
     .star3{
-        left: 5%;
+        left: 10%;
     }
 
     
@@ -671,7 +684,17 @@
         font-size: 1.4rem;
     }
     
+    .tiketsTitle h2{
+        font-size: 4.4rem ;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 4.4rem;
+    }
 
+    .titleTicket-home-boost h2, .titleTicket-home-basic h2 {
+        text-align: center;
+        padding-top: 5rem;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -703,16 +726,6 @@
     }
 
  
-   /*  .containerTikets::after{
-        display: none;
-    } */
-
-    .tiketsTitle h2{
-        font-size: 4rem;
-        letter-spacing: 1px;
-        padding-top: 10rem;
-    }
-    
     .textTikets{
         width: 100%;
         gap:5rem;
@@ -778,8 +791,25 @@
         width: 6rem !important;
     }
 
-    
+   
+    .tiketsTitle h2{
+        font-size: 4rem ;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 4rem;
+        margin-top: 3rem;
+    }
+    .textTikets {
+        padding: 0 1rem;
+    }
 
+    .tiketsTitle h3{
+        font-size: 3.2rem ;
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 4rem;
+        margin-top: 3rem;
+    }
 
 }
 
@@ -803,14 +833,11 @@
         margin-left: -3.5rem;
     }
 
- 
+
 }
 
 
 @media screen and (max-width:350px){
-    .tiketsTitle h2{
-        font-size: 3.5rem;
-    }
     
     .textTikets p{
         padding: 0rem 1rem;

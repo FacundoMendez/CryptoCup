@@ -443,13 +443,13 @@
     }
 
     .event1 .image {
-        width:65%;
-        margin-top: 8rem;
+        width:70%;
+        margin-top: 18rem;
     }
     
     .event2 .image {
-        width: 65%;
-        margin-top: 8rem;
+        width: 70%;
+        margin-top: 18rem;
     }
 }
 
@@ -461,16 +461,6 @@
         padding-top: 5rem;
     }
 
-    .event1 .image {
-        width:65%;
-        margin-top: 8rem;
-    }
-    
-    .event2 .image {
-        width: 65%;
-        margin-top: 8rem;
-    }
-    
 }
 
 @media screen and (max-width: 880px){
@@ -508,6 +498,14 @@
         z-index: 1000 !important;
         width: 100%;
     }
+    .event1 .image {
+        margin-top: 20rem;
+    }
+    
+    .event2 .image {
+        margin-top: 20rem;
+    }
+
 }
 
 @media screen and (max-width: 770px){
@@ -527,26 +525,23 @@
     }
 
     .event1 .image {
-        width: 70%;
-        margin-top: 15rem;
+        width: 80%;
+        margin-top: 22rem;
     }
     
     .event2 .image {
-        width: 70%;
-        margin-top: 15rem;
-    }
-
-
-    .titleNfts h2{
-        font-weight: 300;
-        font-size: 4rem;
-        top: 25px;
-    }
-
-    .titleNfts{
-        padding-bottom: 2rem;
+        width:80%;
+        margin-top: 22rem;
     }
     
+    .titleNfts{
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+    .titleNfts h2{
+        font-weight: 300;
+        font-size: 4.7rem;
+    }
     
     .subtitleNftWinners{
         font-size: 4rem;
@@ -604,18 +599,18 @@
     }
 
     .event1 .image {
-        width: 100%;
-        margin-top: 0rem;
+        width: 98%;
+        margin-top: 2rem;
     }
     
     .event2 .image {
-        width: 100%;
-        margin-top: 0rem;
+        width: 98%;
+        margin-top: 2rem;
     }
 
     .titleNfts h2{
         font-weight: 300;
-        font-size: 3.2rem;
+        font-size: 4rem;
         letter-spacing: 1px;
         top: 25px;
     }
@@ -641,12 +636,6 @@
     }
     .flip > .front, .flip > .back {
         height: 380px;
-    }
-
-    .titleNfts h2{
-        font-weight: 300;
-        font-size:  2.6rem;
-        top: 25px;
     }
     
     

@@ -22,7 +22,7 @@ const TiketsMain = () => {
 
 
         <div className="textTikets">
-            <div className="titleContainers tiketsTitle">
+            <div className=" tiketsTitle">
               <h2>GRIND YOUR WAY TO THE TOP OF THE LADDER</h2>
               <h3> Want to compete? Get your ticket!</h3>
             </div>

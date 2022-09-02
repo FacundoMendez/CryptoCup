@@ -67,11 +67,6 @@ const tournamentScroll = () =>{
         })
 
             
-        tl_logoPresent.from(".effectLogo",{
-            y: "+=100",
-            opacity:0,
-        })
-        
     }
    
 }
