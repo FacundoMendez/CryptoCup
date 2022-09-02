@@ -221,6 +221,18 @@
 
 @media screen and (max-width: 1440px){
 
+  .containerPrincipalHome::before{
+    content: " ";
+    position: absolute;
+    bottom: -5rem;
+    height: 100rem;
+    width:30vw;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.623);
+    filter: blur(80px);
+    z-index: 12;
+  }
+
   .buttonsHome{
     margin-left: 2rem;
   }
