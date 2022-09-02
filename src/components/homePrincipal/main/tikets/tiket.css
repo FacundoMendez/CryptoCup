@@ -776,11 +776,12 @@
 
     .star2{
         left: 53%;
+        top: 56.2%;
     }
 
     .star4{
         left: 53%;
-        top: 37%;
+        top: 38.2%;
     }
 
     .star3{
@@ -857,6 +858,12 @@
         width: 190vw;
     }
 
+    .tiketsTitle h2 {
+        font-size: 3rem;
+    }
+    .tiketsTitle h3 {
+        font-size: 2.5rem;
+    }
 
     .textoTicket-home li {
         font-size: 1.3rem;

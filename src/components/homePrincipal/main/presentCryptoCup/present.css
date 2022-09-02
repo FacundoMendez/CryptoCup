@@ -554,3 +554,17 @@
         width: 100%;
     }
 }
+
+
+@media screen and (max-width: 345px){
+    .titleContainers h2{
+        font-size: 4.4rem !important;
+        padding: 0;
+    }
+
+    .titleContainers h3{
+        font-size: 2.2rem !important;
+        padding-top: 5rem;
+        padding-bottom: 0rem;
+    }
+}
