@@ -34,18 +34,7 @@
   z-index: 11;
 }
 
-/* .containerPrincipalHome::before{
-  content: " ";
-  position: absolute;
-  bottom: -5rem;
-  height: 100rem;
-  width: 35vw;
-  left: 5rem;
-  background-color: rgba(0, 0, 0, 0.712);
-  filter: blur(80px);
-  z-index: 12;
-}
- */
+
 .textPrincipalHome{
   position: relative;
   width: 100%;
@@ -311,6 +300,18 @@
   }
   .containerPrincipalHome{
     background-position: 70% ;
+  }
+  
+  .containerPrincipalHome::before{
+    content: " ";
+    position: absolute;
+    bottom: -5rem;
+    height: 100rem;
+    width:57vw;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.623);
+    filter: blur(80px);
+    z-index: 12;
   }
 
  

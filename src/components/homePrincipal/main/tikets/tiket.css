@@ -99,12 +99,7 @@
     padding-top: 10rem;
 }
 
-.tiketsPreview{
-    width: 15%;
-    object-fit: contain;
-    filter: contrast(105%);
-    cursor: pointer;
-}
+
 
 /* boost basic */
 
@@ -207,7 +202,7 @@
 
 
 .tiketsPreview {
-    width: 57%;
+    width: 53%;
     position: relative;
     padding: .5rem 0rem;
     object-fit: cover;
@@ -216,12 +211,20 @@
     animation-duration: 3500ms;
     animation-name: ticketVolador;
     position: relative;
+    cursor: pointer;
 }
 
 .tiketImg-boost, .tiketImg-basic{
     text-align: center;
+    margin-left: 2rem;
 }
   
+
+.tiketImg-basic{
+    text-align: center;
+    margin-top: -7rem;
+    margin-right: 1rem;
+}
 
 
 @keyframes ticketVolador {
@@ -469,14 +472,14 @@
 
     .star2{
         margin: 0;
-        top: 1rem;
+        top: 48.5rem;
         left: 50%;
         position: absolute;
     }
 
     .star4{
         margin: 0;
-        top: 35rem;
+        top: 31.5rem;
         left: 50%;
         position: absolute;
     }
@@ -549,6 +552,31 @@
     .titleTicket-home-boost {
         width: 60%;
     } 
+
+    .star1{
+        margin: 0;
+        top: -2rem;
+        left: 12%;
+    }
+
+    .star2{
+        margin: 0;
+        top: 57%;
+        left: 50%;
+    }
+
+    .star4{
+        margin: 0;
+        top: 36%;
+        left: 50%;
+    }
+
+    .star3{
+        margin: 0;
+        top: 37rem;
+        left: 12%;
+    }
+    
     
 }
 
@@ -557,6 +585,19 @@
     .textTikets{
         width: 100vw;
     }
+
+    .tiketImg-boost, .tiketImg-basic{
+        text-align: center;
+        margin-left: 0rem;
+    }
+      
+    
+    .tiketImg-basic{
+        text-align: center;
+        margin-top: 0rem;
+        margin-right: 0rem;
+    }
+    
 
     .division{
         position: absolute;
@@ -609,27 +650,20 @@
         order: 2;
     }
 
-
     .star1{
-        top: -2rem;
-        left: 10%;
+        left: 5%;
     }
 
-    
     .star2{
-        top: 1rem;
-        left: 54%;
+        left: 50%;
     }
 
     .star4{
-        top: 35rem;
-        left: 54%;
+        left: 50%;
     }
 
     .star3{
-        top: 37rem;
-        left: 10%;
-        width: 8rem;
+        left: 5%;
     }
 
     
@@ -724,30 +758,27 @@
     }
 
     .star1{
-        top: -2rem;
-        left: 5%;
+        left: 2%;
     }
 
-    
     .star2{
-        top: 1rem;
-        left: 50%;
+        left: 53%;
     }
 
     .star4{
-        top: 35rem;
-        left: 50%;
+        left: 53%;
+        top: 37%;
     }
 
     .star3{
-        top: 37rem;
-        left: 5%;
-        width: 8rem;
+        left: 2%;
     }
 
     .star1 img , .star2 img , .star3 img , .star4 img{
         width: 6rem !important;
     }
+
+    
 
 
 }
@@ -772,9 +803,7 @@
         margin-left: -3.5rem;
     }
 
-    .textoTicket-home li{
-        font-size: 1.7rem;
-    }
+ 
 }
 
 
@@ -804,28 +833,6 @@
 
     .textoTicket-home li {
         font-size: 1.3rem;
-    }
-
-    .star1{
-        top: -2rem;
-        left: 0%;
-    }
-
-    
-    .star2{
-        top: 1rem;
-        left: 50%;
-    }
-
-    .star4{
-        top: 35rem;
-        left: 50%;
-    }
-
-    .star3{
-        top: 37rem;
-        left:0%;
-        width: 8rem;
     }
 
 

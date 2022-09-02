@@ -20,7 +20,7 @@
     z-index: 99999999 !important;
     width: 100%;
     top: -1rem;
-    height: 9.8rem;
+    height: 9.9rem;
     background-color: rgba(40, 4, 68, 0.397);
     transition: all .6s ease-in-out;
     filter: blur(8px);
@@ -109,7 +109,7 @@
   /* TOGGLE */
 .nav-toggle {
     position: absolute;
-    top: 50%;
+    top: 53%;
     transform: translate(0, -50%);
     right: 12%;
     color: white;
@@ -402,7 +402,7 @@
 
     .navMovile{
         display: inline-block;
-        z-index: 999999999 !important;
+        z-index: 9988998899 !important;
     }
 
     .navBack{
@@ -417,7 +417,7 @@
         z-index: 10000;
         width: 100%;
         top: -1rem;
-        height: 10.7rem;
+        height: 10.9rem;
         background-color: rgba(40, 4, 68, 0.397);
         transition: all .6s ease-in-out;
         filter: blur(8px);
@@ -427,12 +427,12 @@
     .nav-menu {
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: initial;
         position: fixed;
         width: 100%;
         padding: 20px 0;
-        height: 100vh;
-        bottom: 0;
+        height: 100%;
+        top: 9.9rem;
         right: 120%;
         overflow-y: hidden;
         transition: right 0.4s ease-in-out;
@@ -440,11 +440,11 @@
         filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
         background-color: rgba(0, 0, 0, 0.863);
         backdrop-filter: blur(1em);
-
     }
 
     .wrapperBottonBtn{
         padding-top: 4rem;
+        position: relative;
     }
     
     .nav-menu_visible {
@@ -452,11 +452,10 @@
         filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
         background-color: rgba(0, 0, 0, 0.884);
         backdrop-filter: blur(1em);
-
     }
 
     .nav-menu-item {
-        line-height: 60px;    
+        line-height: 6rem;    
     }
 
     .nav-menu-item {

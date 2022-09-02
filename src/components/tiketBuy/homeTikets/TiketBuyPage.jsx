@@ -327,13 +327,13 @@ const TiketBuyPage = () => {
   return (
 
     <>
+      <NavTicket/>
 
     <Favicon url="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"></Favicon>
     <div className="containerTiketsBuy">
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
 
  
-      <NavTicket/>
       <Social />
 
       

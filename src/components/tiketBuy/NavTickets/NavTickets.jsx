@@ -34,9 +34,9 @@ function NavTicket() {
                     </li>
           
                     <li className="nav-menu-item">
-                        <NavLink to="/tickets" className="nav-menu-link nav-link">
+                        <a href="/tickets" className="nav-menu-link nav-link">
                             Tickets
-                        </NavLink>
+                        </a>
                     </li>
                     
 

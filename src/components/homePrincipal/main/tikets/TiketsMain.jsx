@@ -57,7 +57,7 @@ const TiketsMain = () => {
                 <p className='text_boost_top'>
                 It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:
                 </p>
-                <ul>
+                <ul className='stars'>
                   <li className='star1'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp"/* {star} */ alt="stars1" /> Token utility</li>
                   <li className='star2'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp"/* {star} */ alt="stars2" />  Access to Multipliers</li>
                   <li className='star3'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp"/* {star} */ alt="stars3" />  Advanced Predictions unlocked</li>

@@ -137,7 +137,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 4rem;
-        z-index: 999999999 !important;
+        z-index: 99999998 !important;
         border-top: 2px double rgba(193, 170, 255, 0.336);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
