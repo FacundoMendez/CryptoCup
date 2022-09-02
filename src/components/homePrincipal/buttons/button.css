@@ -2,7 +2,7 @@
   border: 2px solid rgba(255, 255, 255, 0.637);
   padding: 1.1rem;
   transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.685)) brightness(140%);
+  filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.377)) brightness(140%);
   box-shadow: 0 0 1.5rem rgba(166, 133, 255, 0.555);
   text-align: center
 }
