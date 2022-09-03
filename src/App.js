@@ -13,6 +13,7 @@ const HomePrincipal = lazy(() => import ("./components/homePrincipal/HomePrincip
 const PrivacyPolicy = lazy(() => import ("./components/homePrincipal/footer/privacyPolicy/PrivacyPolicy"))
 
 function App() {
+  
 
   let checkTerminos = localStorage.getItem("terms and Conditions")
   let check;

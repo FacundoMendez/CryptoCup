@@ -13,6 +13,7 @@ root.render(
 
 /* evita problemas de consola  */
 (function () {
+
     if (typeof EventTarget !== "undefined") {
         let func = EventTarget.prototype.addEventListener;
         EventTarget.prototype.addEventListener = function (type, fn, capture) {
