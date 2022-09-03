@@ -21,6 +21,17 @@
   filter: brightness(105%) contrast(108%) ;
 }
 
+.containerPrincipalHome::before{
+  content: " ";
+  position: absolute;
+  bottom: -5rem;
+  height: 100rem;
+  width:27vw;
+  left: 0rem;
+  background-color: rgba(0, 0, 0, 0.623);
+  filter: blur(80px);
+  z-index: 12;
+}
 
 .containerPrincipalHome::after{
   content: " ";

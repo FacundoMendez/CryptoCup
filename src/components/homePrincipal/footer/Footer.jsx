@@ -6,7 +6,6 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { faDiscord } from "@fortawesome/free-brands-svg-icons"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
-import {NavLink  } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,7 +21,7 @@ const Footer = () => {
                     <a href="https://www.instagram.com/cryptocupqatar/" target="_blank" rel="noopener noreferrer" aria-label='instagram red social'><i className="instagramSocialFooter"> <FontAwesomeIcon icon={faInstagram} /> </i>    </a>
                     <a href="https://t.me/cryptocup2022" target="_blank" rel="noopener noreferrer" aria-label='telegram red social'><i className="telegramSocialFooter"> <FontAwesomeIcon icon={faTelegram} /> </i>   </a>
                     <a href="https://discord.gg/ckFmn9xXhw" target="_blank" rel="noopener noreferrer" aria-label='discord red social'><i className="discordSocialFooter"> <FontAwesomeIcon icon={faDiscord} /> </i> </a>
-                    <a href="/" target="_blank" rel="noopener noreferrer" aria-label='youtube red social'><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
+                    <a href="https://www.youtube.com/channel/UCSXGLu9_OU3d5nddp-1rE5w" target="_blank" rel="noopener noreferrer" aria-label='youtube red social'><i className="youtubeSocialFooter"> <FontAwesomeIcon icon={faYoutube} /> </i> </a>
                 </div>
 
             </div>
@@ -39,9 +38,9 @@ const Footer = () => {
                 <div className='listTerms'>
                     <ul>
                         <li>
-                            <NavLink to="/TermsAndConditions" >
+                            <a href="/TermsAndConditions" >
                                 • Terms and Conditions
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                     <br />

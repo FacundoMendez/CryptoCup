@@ -9,336 +9,565 @@ const PrivacyPolicy = () => {
 
     <div className="containerPrivacy">
         <NavTicket/>
-        <div className="boxPrivacy">
-            <h4>CRYPTO CUP IS IN NO WAY ASSOCIATED TO FIFA OR ANY OF THEIR BRANDS</h4>
 
-            <div className="titlePrivacy">
-                <h2>
-                    I. CONSIDERACIONES PREVIAS
-                </h2>
-            </div>
-            <div className="textPrivacy">
-                <p>
-                    Los presentes Términos y Condiciones (en adelante, las “Condiciones”) regulan la prestación del servicio por parte de XXXXXX.
-                            XXXXXX. se reserva la facultad de modificar en cualquier momento estos Términos y Condiciones, siendo que la versión vigente se encontrará disponible en https://cryptocupqatar.io/TermsAndConditions. 
-                    <br /> <br />
-                    <span className='definicionesTyC'>A. DEFINICIONES</span> <br /> <br /> XXXXXX: Es una sociedad conformada según las leyes de la República Argentina, domiciliada en La Plata, provincia de Buenos Aires, Argentina.
-                    “Cryptocup”: Refiere a una plataforma de la red Binance Smart Chain, que es una plataforma para un torneo crypto basado en el conocimiento personal de los usuarios sobre fútbol, titularidad de XXXXXX. Por favor encontrá más detalles en https://cryptocupqatar.io/.
-                    “Plataforma”: Refiere al sitio web y/o aplicación web o móvil al que se puede acceder vía la URL https://cryptocupqatar.io/.
-                    “Persona Usuaria/s”: Persona/s física/s que haya/n aceptado los presentes Términos y Condiciones y que utilice/n los servicios de la Plataforma a partir de su cuenta personal.
-                    “Frase semilla/Seed phrase”: Se refiere a un grupo de palabras aleatorias generadas por su billetera crypto cuando la configura por primera vez, y es increíblemente importante mantener un registro de estas palabras.
-                    "Staking or Stake" Se refiere a servicio de staking o depósito en el que la Persona Usuaria/s pueden delegar o depositar los Tokens CRYPTOCUP del Usuario a cambio de una parte de recompensas netas por Staking en la Plataforma.
-                    “Fecha seleccionada”: Se refiere a una fecha específica donde se llevará a cabo un enfrentamiento entre dos selecciones de fútbol distintas.
-                    “Boost”: Se refiere a multiplicadores adquiribles por la Persona Usuaria en la Dapp de Cryptocup, que potenciará sus puntos obtenidos en el torneo al que su ticket NFT le haya garantizado acceso.
-                    "BUSD": Se refiere a una moneda estable emitida para el ecosistema de Binance y respaldada por el dólar estadounidense con un valor fijo de 1 BUSD = $1,00 USD.
-                    “USDT”: Se refiere a una​ moneda estable emitida por Tether Limited, respaldada por el dólar estadounidense con un valor fijo de 1 USDT = $1,00 USD.​
-                    “USDC”: Se refiere a USD Coin, que es una moneda estable digital  respaldada por el dólar estadounidense con un valor fijo de 1 USDC = $1,00 USD.​
-                    “DAI”: Se refiere a una criptomoneda emitida por MakerDAO, con el objetivo de mantener su valor lo más cercano posible al dólar estadounidense a través de un sistema automatizado de contratos inteligentes en la cadena de bloques de Ethereum
-                    "BNB" Se refiere a una criptomoneda emitida para el ecosistema de Binance, que se requiere para pagar tarifas de transacción en la red Binance Smart Chain.
-                    “Contrato inteligente”. Refiere a un programa informático que facilita, asegura, hace cumplir y ejecuta acuerdos registrados entre dos o más partes.
-                    <br /><br />
-                </p>
-            </div>
+        <div className='containerTyC'>
 
-            <div className="titlePrivacy">
-                <h2>
-                <span>II. PROPIEDAD INTELECTUAL</span> <br /> <br />
-                </h2>
-            </div>
-            <div className="textPrivacy">
-                <p>
-                    <span className='definicionesTyC'>A. DEFINICIONES</span> <br /> <br />
-                    Any acquisition of Tokens by the User from the Platform or external markets will be carried out through smart contracts on the Blokchain of the Binance Smart Chain network using a digital wallet. <br />
-                    The transactions that the User makes with Crypto Cup will be through the Platform www.cryptocupqatar.io <br /><br />
-                    In order to carry out any transaction, the User will have an account at https://www.cryptocupqatar.io which will be linked to his Account. Each User will have a virtual wallet associated with said account, where the payments made by the user from their own virtual wallet will be received. <br /><br />
-                    The User is solely responsible for the custody of the access credentials, and must not share their passwords with third parties. Crypto Cup does not have the ability to reverse any transaction that the User has made through the use of smart contracts. <br /><br />
-                    It is possible that the Binance Smart Chain network receives a fee for each transaction that the user makes, as well as commissions for the use of the network's smart contracts. The User acknowledges and accepts the fees and commissions that Binance Smart Chain applies. <br /><br />
-                </p>
-            </div>
+                <div className="boxEnlaces">
+                    <ul>
+                        <a href="#preliminar"><li>I.  PRELIMINAR</li></a>
+                        <a href="#definiciones"><li>II.  DEFINICIONES</li></a>
+                        <a href="#condicionesDeUso"><li>III.  CONDICIONES DE USO</li></a>
+                        <a href="#accesoAlJuego"><li>IV.  ACCESO AL JUEGO</li></a>
+                        <a href="#custodiaDeContraseña"><li>V. CUSTODIA DE CONTRASEÑA</li></a>
+                        <a href="#conductasProhibidas"><li>VI. CONDUCTAS PROHIBIDAS</li></a>
+                        <a href="#advertenciasYsuspensionProvisoria"><li>VII.  ADVERTENCIAS Y SUSPENSIÓN PROVISORIA</li></a>
+                        <a href="#bloqueoDeAcceso"><li>VIII.  BLOQUEO DE ACCESO</li></a>
+                        <a href="#billeteraDelUsuario"><li>IX.  BILLETERA DEL USUARIO</li></a>
+                        <a href="#politicaDeProteccionDeDatos"><li>X.  POLÍTICA DE PROTECCIÓN DE DATOS</li></a>
+                        <a href="#propiedadIntelectual"><li>XI.  PROPIEDAD INTELECTUAL</li></a>
+                        <a href="#aspectosImpositivos"><li>XII.  ASPECTOS IMPOSITIVOS</li></a>
+                        <a href="#prohibicionDeCesion"><li>XIII.  PROHIBICIÓN DE CESIÓN</li></a>
+                        <a href="#notificaciones"><li>XIV.  NOTIFICACIONES</li></a>
+                        <a href="#indemnizacion"><li>XV.  INDEMNIZACIÓN</li></a>
+                        <a href="#ineficaciaDeLasClausulas"><li>XVI.  INEFICACIA DE LAS CLÁUSULAS</li></a>
+                        <a href="#documentacionContractual"><li>XVII.  DOCUMENTACIÓN CONTRACTUAL</li></a>
+                        <a href="#juridiccionYleyAplicable"><li>XVIII.  JURISDICCIÓN Y LEY APLICABLE</li></a>
+                    </ul>
+                </div>
 
-            <div className="titlePrivacy">
-                <h2>
-                    <span> III. ECONOMÍA DE LA PLATAFORMA</span> <br /> <br />
-                </h2>
-            </div>
-            <div className="textPrivacy">
-                <p>
-                    <span className='definicionesTyC'>A. ASPECTOS GENERALES</span> <br /> <br />
-                    CCryptocup utiliza tokens que representan activos virtuales dentro del juego, cuya propiedad y transmisibilidad queda regida por las cláusulas de los presentes términos y condiciones de uso, así como por sus futuras modificaciones.
-                    La creación y emisión de los tokens se efectúa mediante la utilización de Smart Contracts implementados en la red Binance Smart Chain.
-                    El emisor de los Tokens será XXXXXX, quien podrá emitirlos y transferirlos de acuerdo a las condiciones que se establecen en el presente documento.
-                    <br /><br />
-       
-                    <span className='definicionesTyC'>B. BILLETERA DE LA PERSONA USUARIA</span> <br /> <br />
-                    Toda adquisición de Tokens por la Persona Usuaria desde la Plataforma o mercados externos se llevará a cabo mediante contratos inteligentes en la Blockchain de la red Binance Smart Chain utilizando una billetera digital. 
-                    Las transacciones que la Persona Usuaria realice con Cryptocup serán a través de la Plataforma https://cryptocupqatar.io/.
-                    Para poder realizar cualquier transacción la Persona Usuaria efectuará pagos desde su propia billetera virtual.
-                    La Persona Usuaria es el único responsable de la custodia de sus credenciales de acceso o seed phrase, no debiendo compartir sus claves semilla con terceras personas. Cryptocup no tiene la capacidad de revertir ninguna transacción que la Persona Usuaria haya efectuado mediante la utilización de contratos inteligentes.
-                    Es posible que la red Binance Smart Chain perciba una tarifa por cada transacción que la Persona Usuaria realice, así como pueden ser aplicadas comisiones por la utilización de los contratos inteligentes de la red. La Persona Usuaria reconoce y acepta las tarifas y comisiones que Binance Smart Chain aplique.
-                    <br /><br />
-       
-                    <span className='definicionesTyC'>I. TOKENS</span> <br /> <br />
-                    Cryptocup utiliza distintos tipos de tokens criptográficos para representar activos virtuales cuyas características y funcionalidades son diferentes.
-                    <br /><br />
 
-                    <span className='definicionesTyC'>I.A. NFTs</span> <br /> <br />
-                    Son tokens que representan un activo virtual único e irrepetible (tokens no fungibles). Se identifican como Token ERC721 (BEP721) en la Binance Smart Chain.
-                    Cada uno de los tokens emitidos representará en la plataforma de Cryptocup un ticket de acceso virtual/premiación virtual, único e irrepetible o también , cuyas características serán determinadas por Cryptocup (Ver Whitepaper).
-                    La titularidad del NFT otorga a la Persona Usuaria el derecho a ingresar a la Dapp, pudiendo ser visualizado únicamente por él, en tanto que los competidores o terceros podrán estar viendo en forma simultánea su propio ticket asignado por la Plataforma.
-                    Asimismo, el titular del NFT tendrá derecho a que por cada partido acertado, se le recompense con una cantidad determinada de puntos, los cuales serán determinada por Cryptocup (Ver Whitepaper).
-                    Los NFT podrán ser transferidos por la Persona Usuaria a terceros una vez que Cryptocup habilite dicha opción. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación. 
-                    La Persona Usuaria reconoce que los NFTs representan activos digitales en la Binance Smart Chain, y que no se encuentran respaldados por bienes físicos.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>I.B. TOKEN CCs</span> <br /> <br />
-                    El CC es un token que representa un activo virtual fungible. Se identifican como Token ERC20 (BEP20) en la Binance Smart Chain. No existe límite de emisión por parte de Cryptocup.
-                    Cryptocup emitirá un máximo de XXXXXX TOKEN CC en toda la historia del juego. La emisión de los tokens y su venta o transferencia bajo cualquier título será determinada de acuerdo al cronograma (Ver Whitepaper) que Cryptocup establezca. 
-                    Los TOKEN CC que fueran emitidos podrán encontrarse bloqueados por un período de tiempo con el fin de permitir su utilización progresiva. Los TOKEN CC se irán desbloqueando y asignando por Cryptocup de acuerdo al cronograma que este disponga. Resulta condición esencial para el ejercicio de los derechos que otorga cada TOKEN CC que él mismo se encuentre desbloqueado.
-                    Los TOKEN CC podrán ser utilizados por la Persona Usuaria para adquirir tickets una vez que Cryptocup habilite dicha opción, adquirir multiplicadores, hacer staking y “aumentar su cantidad de tokens seleccionados al ser depositados en un partido en específico” (Ver Whitepaper). La utilización del TOKEN CC en la plataforma para las funciones antes enunciadas implica su transferencia a favor de Cryptocup, el que podrá disponer su eliminación o nueva transferencia.
-                    Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma (Ver Whitepaper). Cada Persona Usuaria en caso de haber depositado tokens en una fecha seleccionada tendrá derecho a que por cada partido acertado se le recompense con una cantidad determinada de TOKEN CC así mismo como la reducción de este balance en caso de no acierto, estos montos serán establecidos por Cryptocup según el partido, y demás estadísticas.
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación.
-
-                    Cryptocup podrá disponer que los TOKEN CC sean utilizados para adquirir tickets, boost u otras utilidades dentro del juego. Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma.
-                    Las Personas Usuarias que queden comprendidos al final de cada torneo, tendrán derecho a ser recompensados con la cantidad de TOKEN CC en la cantidad que Cryptocup determine para cada torneo y posición obtenida.
-
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación. 
-                    La Persona Usuaria reconoce que los TOKEN CC representan activos digitales en la Binance Smart Chain, y que no se encuentran respaldados por bienes físicos.
-                    <br /><br />
-
-                    
-                    <span className='definicionesTyC'>C. COMPRAS EN LA PLATAFORMA </span> <br /> <br />
-                    El CC es un token que representa un activo virtual fungible. Se identifican como Token ERC20 (BEP20) en la Binance Smart Chain. No existe límite de emisión por parte de Cryptocup.
-                    Cryptocup emitirá un máximo de XXXXXX TOKEN CC en toda la historia del juego. La emisión de los tokens y su venta o transferencia bajo cualquier título será determinada de acuerdo al cronograma (Ver Whitepaper) que Cryptocup establezca. 
-                    Los TOKEN CC que fueran emitidos podrán encontrarse bloqueados por un período de tiempo con el fin de permitir su utilización progresiva. Los TOKEN CC se irán desbloqueando y asignando por Cryptocup de acuerdo al cronograma que este disponga. Resulta condición esencial para el ejercicio de los derechos que otorga cada TOKEN CC que él mismo se encuentre desbloqueado.
-                    Los TOKEN CC podrán ser utilizados por la Persona Usuaria para adquirir tickets una vez que Cryptocup habilite dicha opción, adquirir multiplicadores, hacer staking y “aumentar su cantidad de tokens seleccionados al ser depositados en un partido en específico” (Ver Whitepaper). La utilización del TOKEN CC en la plataforma para las funciones antes enunciadas implica su transferencia a favor de Cryptocup, el que podrá disponer su eliminación o nueva transferencia.
-                    Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma (Ver Whitepaper). Cada Persona Usuaria en caso de haber depositado tokens en una fecha seleccionada tendrá derecho a que por cada partido acertado se le recompense con una cantidad determinada de TOKEN CC así mismo como la reducción de este balance en caso de no acierto, estos montos serán establecidos por Cryptocup según el partido, y demás estadísticas.
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación.
-
-                    Cryptocup podrá disponer que los TOKEN CC sean utilizados para adquirir tickets, boost u otras utilidades dentro del juego. Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma.
-                    Las Personas Usuarias que queden comprendidos al final de cada torneo, tendrán derecho a ser recompensados con la cantidad de TOKEN CC en la cantidad que Cryptocup determine para cada torneo y posición obtenida.
-
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación. 
-                    La Persona Usuaria reconoce que los TOKEN CC representan activos digitales en la Binance Smart Chain, y que no se encuentran respaldados por bienes físicos.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>C. TOKEN CCs</span> <br /> <br />
-
-                    El CC es un token que representa un activo virtual fungible. Se identifican como Token ERC20 (BEP20) en la Binance Smart Chain. No existe límite de emisión por parte de Cryptocup.
-                    Cryptocup emitirá un máximo de XXXXXX TOKEN CC en toda la historia del juego. La emisión de los tokens y su venta o transferencia bajo cualquier título será determinada de acuerdo al cronograma (Ver Whitepaper) que Cryptocup establezca. 
-                    Los TOKEN CC que fueran emitidos podrán encontrarse bloqueados por un período de tiempo con el fin de permitir su utilización progresiva. Los TOKEN CC se irán desbloqueando y asignando por Cryptocup de acuerdo al cronograma que este disponga. Resulta condición esencial para el ejercicio de los derechos que otorga cada TOKEN CC que él mismo se encuentre desbloqueado.
-                    Los TOKEN CC podrán ser utilizados por la Persona Usuaria para adquirir tickets una vez que Cryptocup habilite dicha opción, adquirir multiplicadores, hacer staking y “aumentar su cantidad de tokens seleccionados al ser depositados en un partido en específico” (Ver Whitepaper). La utilización del TOKEN CC en la plataforma para las funciones antes enunciadas implica su transferencia a favor de Cryptocup, el que podrá disponer su eliminación o nueva transferencia.
-                    Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma (Ver Whitepaper). Cada Persona Usuaria en caso de haber depositado tokens en una fecha seleccionada tendrá derecho a que por cada partido acertado se le recompense con una cantidad determinada de TOKEN CC así mismo como la reducción de este balance en caso de no acierto, estos montos serán establecidos por Cryptocup según el partido, y demás estadísticas.
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación.
-
-                    Cryptocup podrá disponer que los TOKEN CC sean utilizados para adquirir tickets, boost u otras utilidades dentro del juego. Cryptocup determinará la cantidad de TOKEN CC que deberán utilizarse para realizar las diversas actividades o adquisiciones en la Plataforma.
-                    Las Personas Usuarias que queden comprendidos al final de cada torneo, tendrán derecho a ser recompensados con la cantidad de TOKEN CC en la cantidad que Cryptocup determine para cada torneo y posición obtenida.
-
-                    Los TOKEN CC podrán ser transferidos por la Persona Usuaria a terceros. En este caso, la Persona Usuaria asume exclusiva responsabilidad por la transacción, careciendo Cryptocup de toda intervención en la operación. 
-                    La Persona Usuaria reconoce que los TOKEN CC representan activos digitales en la Binance Smart Chain, y que no se encuentran respaldados por bienes físicos.
-                    <br /><br />
-
-                    
-                    <span className='definicionesTyC'>C. COMPRAS EN LA PLATAFORMA </span> <br /> <br />
-                    <span className='definicionesTyC'>I. </span> 
-                    Cuando la Persona Usuaria desee adquirir TOKENS (NFT o CC), deberá transferir criptoactivos autorizados por Cryptocup (USDT, BUSD, DAI, USDC a través de la Binance Smart Chain) a la billetera virtual de propiedad de Cryptocup que se vincula a la Persona Usuaria. Cryptocup acreditará a la Persona Usuaria crédito a su cuenta en https://cryptocupqatar.io/ dentro de la hora de realizada la transferencia de los criptoactivos por parte de la Persona Usuaria (siempre que no existieran demoras imputables a la red), el cual podrá ser utilizado para adquirir TOKENS. 
-                    <br /><br />
-                    <span className='definicionesTyC'>II. </span> 
-                    Los Tokens podrán ser utilizados dentro del juego según las funciones que tengan asignadas (Ver Whitepaper) o la Persona Usuaria podrá transferirlos fuera de la plataforma de Cryptocup, cuando esté habilitada esta opción por Cryptocup. El hecho de transferir o negociar el TOKEN fuera del sitio https://cryptocupqatar.io/ implica automáticamente la liberación de Cryptocup de cualquier responsabilidad, en tanto la Persona Usuaria asume exclusivamente y en forma personal todo riesgo o consecuencia de transferir o negociar los TOKENS fuera de la plataforma administrada por Cryptocup. 
-                    <br /><br />
-                    <span className='definicionesTyC'>III. </span> 
-                    La Persona Usuaria será la única responsable de las transacciones que realice con los TOKENS que haya adquirido, no teniendo “XXXXXXnombre entidad legal”. control sobre las operaciones que realice. En virtud de lo expuesto, se deja expresamente aclarado que la compañía no tiene la capacidad de detener ni revertir ninguna transacción que la Persona Usuaria haya concretado, siendo la Persona Usuaria el único responsable por las operaciones que realice, ya sea dentro o fuera de las plataformas administradas o utilizadas por la compañía. Cryptocup no será responsable por cualquier error de la Persona Usuaria en la designación de billeteras de destinos y los montos que transfiera. La Persona Usuaria asume plena responsabilidad, conociendo que la operación es irrevocable.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>IV. </span> 
-                    La Persona Usuaria será la única responsable de las transacciones que realice con los TOKENS que haya adquirido, no teniendo “XXXXXXnombre entidad legal”. control sobre las operaciones que realice. En virtud de lo expuesto, se deja expresamente aclarado que la compañía no tiene la capacidad de detener ni revertir ninguna transacción que la Persona Usuaria haya concretado, siendo la Persona Usuaria el único responsable por las operaciones que realice, ya sea dentro o fuera de las plataformas administradas o utilizadas por la compañía. Cryptocup no será responsable por cualquier error de la Persona Usuaria en la designación de billeteras de destinos y los montos que transfiera. La Persona Usuaria asume plena responsabilidad, conociendo que la operación es irrevocable.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>V. </span> 
-                    Cryptocup sólo será responsable por el cumplimiento del contrato que haya concertado en forma directa con la Persona Usuaria, no así de las restantes operaciones que se efectúen con los TOKENS en las que no intervenga. En particular, no será responsable por las ofertas a público indeterminado que se hagan de los TOKENS en sitios que no fueran administrados por Cryptocup. No tendrá ninguna responsabilidad en relación a mercados secundarios en los que se pudieran ofrecer los TOKENS, así como el valor que pudieran tener, o la forma en que fueran ofrecidos y transados por terceros.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VI. </span> 
-                    Se deja aclarado que no teniendo los TOKENS respaldo en bienes físicos, y sirviendo únicamente para las funciones que aquí se detallan, ninguna responsabilidad tendrá Cryptocup sobre variaciones de precio en plataformas de compraventa de criptoactivos o en cualquier mercado, asumiendo la Persona Usuaria que haya dispuesto su venta o compra en dichas plataformas todo riesgo de desvalorización, asumiendo expresamente que dichos mercados se encuentran sometidos a grandes riesgos.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VII. </span> 
-                    La Persona Usuaria será el único y exclusivo responsable por el pago de todo impuesto, tasa, contribución o arancel vigente a la fecha y los que en lo sucesivo se crearán (excepto los impuestos sobre los ingresos netos de Cryptocup), que directa o indirectamente pudieran gravar las operaciones que realice dentro o fuera de la plataforma con los TOKENS o por el uso de la Plataforma y/o Aplicación. En particular y en caso de corresponder conforme leyes vigentes en el país de origen, el I.V.A., aranceles aduaneros por importación o exportación, o cualquier otro tributo.
-                    La Persona Usuaria deberá abonar a Cryptocup los mencionados tributos conforme los términos, plazos y normas que legislen su percepción. Cryptocup podrá retener de la cuenta de la Persona Usuaria los montos que fueran necesarios para el pago de los tributos que se encontraran a su cargo. Si los mismos fueran insuficientes, la Persona Usuaria deberá acreditar a favor de Cryptocup los montos necesarios para cubrir el tributo.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>D. MARKETPLACE CRYPTOCUP</span> <br /> <br />
-
-                    Cryptocup pone a disposición de las personas Usuarias un espacio virtual que les permite ofrecer, vender y/o comprar activos digitales, disponible en https://cryptocupqatar.io/marketplace. Los Vendedores utilizan dicho Marketplace para publicar y definir las condiciones de su oferta. 
-                    En esta sección, se describe el funcionamiento de dicho marketplace, entendiendo al mismo como la plataforma de comercio electrónico donde las Personas Usuarias pueden vender y comprar activos digitales Cryptocup descritos anteriormente en estos Términos y Condiciones. 
-                    <br /><br />
-
-                    <span className='definicionesTyC'>I. </span> 
-                    Solamente se podrán ofrecer activos digitales creados por Cryptocup, es decir, principalmente Tokens conforme la descripción que de ellos se realice en la sección ‘IV B’ de estos Términos y Condiciones. 
-                    <br /><br />
-                    <span className='definicionesTyC'>II. </span> 
-                    En particular, el Marketplace se utiliza para ofrecer y/o adquirir Tokens NFT de tickets.
-                    <br /><br />
-                    <span className='definicionesTyC'>III. </span> 
-                    Una descripción de los Token se encuentra disponible en la Sección ‘IV B’ de los presentes Términos y Condiciones. 
-                    <br /><br />
-
-                    <span className='definicionesTyC'>IV. </span> 
-                    Los pagos en las compras efectuadas por Personas Usuarias en el marketplace solo se podrán realizar utilizando Token CC, que deberán ser adquiridos conforme a lo estipulado en la sección ‘IV C’ de estos Términos y Condiciones.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>V. </span> 
-                    Cryptocup retendrá un 10% del valor de cada una de las transacciones que se efectúen en la plataforma, cantidad que será tomado como comisión de venta.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VI. </span> 
-                    El marketplace mostrará el precio que el Vendedor decida recibir sumándole dicho porcentaje, por lo que Cryptocup retendrá el 10%.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VII. </span> 
-                    Para poder ofrecer un activo digital de Cryptocup en el Marketplace, es necesario primero que la Persona Usuaria haya adquirido dicho activo digital por los medios que Cryptocup dispone en su Plataforma, incluyendo la adquisición a través de su sitio web https://cryptocupqatar.io/.. 
-                    <br /><br />
-                    
-                    <span className='definicionesTyC'>VIII. </span> 
-                    La Persona Usuaria interesada en adquirir uno de los activos digitales publicados en el Marketplace podrá encontrar en la publicación toda la información que el Vendedor proporcione en relación al producto a ofertar.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>IX. </span> 
-                    El Comprador se obliga a pagar el precio total del activo digital seleccionado utilizando la opción “Comprar” disponible en la misma Plataforma.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>X. </span> 
-                    Cryptocup sólo será responsable por el cumplimiento del contrato que haya concertado en forma directa con la Persona Usuaria, no así de las restantes operaciones que se efectúen con los TOKENS en las que no intervenga. En particular, no será responsable por las ofertas a público indeterminado que se hagan de los TOKENS en sitios que no fueran administrados por Cryptocup. No tendrá ninguna responsabilidad en relación a mercados secundarios en los que se pudieran ofrecer los TOKENS, así como el valor que pudieran tener, o la forma en que fueran ofrecidos y transados por terceros.
-                    <br /><br />         
-                </p>
+            <div className="boxPrivacy">
+                <h4>CRYPTO CUP IS IN NO WAY ASSOCIATED TO FIFA OR ANY OF THEIR BRANDS</h4>
 
                 <div className="titlePrivacy">
-                    <h2>
-                        <span> V. DINÁMICA DEL JUEGO</span> <br /> <br />
+                    <h2 className='title1' id='preliminar'>
+                        I. PRELIMINAR
                     </h2>
                 </div>
-                <p>
-                    La dinámica del juego, así como las recompensas disponibles según el staking de cada jugador, descripción del mecanismo para obtener puntos, informació sobre torneos, modalidad de ingreso y participación, y cualquier otro asunto vinculado a la dinámica del juego, se encuentran actualizadas en el Whitepape   (https://crypto-cup.gitbook.io/cryptocup/introduccion/crypto-cup)
-                    <br /><br/>
-                </p>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>I.1. </span> <br /> <br />
+                        Los presentes términos y condiciones generales (en adelante, los “Términos y Condiciones Generales”), establecen las reglas de uso del sitio https://www.cryptocupqatar.io/, así como de las aplicaciones móviles vinculadas al mismo y el acceso por cualquier canal. También regula la relación entre los Visitantes y Usuarios y MINTZ SOCIEDAD ANÓNIMA, fijando los derechos y obligaciones de cada parte con motivo de la utilización del Sitio.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>I.2. </span> <br /> <br />
+                            MINTZ SOCIEDAD ANÓNIMA, de la ciudad y partido de La Plata, Provincia de Buenos Aires, es el titular del sitio  https://www.cryptocupqatar.io/ y se reserva el derecho de modificar en cualquier momento estos Términos y Condiciones. 
+                        <br /><br />
+
+                        <span className='definicionesTyC'>I.3. </span> <br /> <br />
+                            Todos los Visitantes y Usuarios por el solo hecho de ingresar al Sitio de Crypto Cup se encontrarán sujetos a los presentes Términos y Condiciones Generales. Se entenderá que el Visitante y Usuario declara haberlos leído, comprendido y aceptado en su totalidad. Cualquier persona que no acepte estos Términos y Condiciones Generales, deberá abstenerse de utilizar el Sitio.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>I.4. </span> <br /> <br />
+                            El usuario deberá revisar con frecuencia si existen cambios en los Términos y Condiciones. En caso de modificación, entrarán en vigencia al segundo día de su publicación. Todo Usuario que no aceptara las modificaciones deberá remitir un e-mail dentro de los dos días siguientes a la publicación manifestándolo expresamente, esto implicará la rescisión del contrato. A partir del envío de dicho mail el Usuario no podrá realizar más operaciones en el Sitio. Se interpretará que si el Usuario no remitió su disconformidad en el plazo estipulado, acepta los nuevos Términos y Condiciones.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
 
                 <div className="titlePrivacy">
-                    <h2>
-                        VI. POLÍTICA DE PROTECCIÓN DE DATOS
+                    <h2 id='definiciones'>
+                        II. DEFINICIONES
                     </h2>
                 </div>
-                <p>
-                    Este sitio utiliza y protege los datos proporcionados por las Personas Usuarias conforme ley vigente y estándares de buenas prácticas internacionales en protección de datos. Cryptocup se compromete con la seguridad de los datos de las Personas usuarias, guardando la debida reserva y confidencialidad. Cuando el sistema solicita llenar los campos de datos personales necesarios para la creación de una cuenta de usuario, lo hace asegurando que sólo se emplean dichos datos de acuerdo con los términos aquí presentes. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada.
-                    Los siguientes tipos de datos (en adelante, “datos recolectados”) pueden ser almacenados y procesados por el sistema:
-                    <br /><br />
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>II.1.</span> <br /> <br />
+                            Crypto Cup Qatar: es una plataforma de juegos online (propiedad de MINTZ SOCIEDAD ANÓNIMA) basada en la lógica play to earn, que mediante la utilización de la tecnología blokchain permite a los Usuarios obtener recompensas in game por jugar.
+                        <br /><br />
 
-                    <span className='definicionesTyC'>I. </span> 
-                    Datos que fuesen necesarios para generar una cuenta personal en el sitio, Nombre completo y Correo Electrónico.
-                    <br /><br />
-                    <span className='definicionesTyC'>II. </span> 
-                    Datos sobre su ordenador, incluyendo dirección IP y ubicación geográfica.
-                    <br /><br />
-                    <span className='definicionesTyC'>III. </span> 
-                    Datos sobre sus visitas y uso del sistema.
-                    <br /><br />
+                        <span className='definicionesTyC'>II.2.</span> <br /> <br />
+                            Sitio: hace referencia al sitio web o aplicación móvil a la que se puede acceder mediante la URL: https://www.cryptocupqatar.io/
+                        <br /><br />
 
-                    <span className='definicionesTyC'>IV. </span> 
-                    Datos que introduzca para suscribirse a nuestros correos y boletines, como nombre y correo electrónico. 
-                    <br /><br />
+                        <span className='definicionesTyC'>II.3.</span> <br /> <br />
+                            Visitante: Cualquier persona que accede al sitio o aplicaciones administradas por Crypto Cup.
+                        <br /><br />
 
-                    <span className='definicionesTyC'>V. </span> 
-                    Datos que se generen mientras navega en nuestro sitio web. 
-                    <br /><br />
+                        <span className='definicionesTyC'>II.4.</span> <br /> <br />
+                            Usuario: Cualquier Visitante del Sitio que haya adquirido un token que le permita el acceso a las funcionalidades del Sitio.
+                        <br /><br />
 
-                    <span className='definicionesTyC'>VI. </span> 
-                    Nombre de la Persona Usuaria, avatar, edad, género, área de residencia, dirección de correo electrónico.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VII. </span> 
-                    Número de billetera electrónica de la Persona Usuaria.
-                    <br /><br />
-                    
-                    <span className='definicionesTyC'>VIII. </span> 
-                    Datos de redes sociales
-                    <br /><br />
-
-                    <span className='definicionesTyC'>IX. </span> 
-                    Datos requeridos para ingresar a Whitelist.
-                    <br /><br />
-
-                    Desde Cryptocup, tomaremos todas las precauciones razonables técnicas y organizacionales existentes a los fines de evitar la pérdida, mal uso o alteración de su información personal. De todas maneras, usted reconoce que la transmisión de datos en internet es inherentemente insegura y que no se puede garantizar absolutamente la seguridad de los mismos. 
-                    En caso de solicitarlo, la Persona Usuaria recibirá toda la información recolectada y almacenada por Cryptocup. Dicha solicitud deberá ser acompañada de prueba suficiente de identidad. Para mayor información sobre el alcance de lo referido, o al proceso descrito, deberá contactarse al siguiente correo electrónico: info@cryptocup.com utilizando el asunto: ‘Datos personales’. <br /><br />
-
-
-                    <span className='definicionesTyC'>A. USO DE DATOS</span> <br /><br />
-                    Los datos recolectados podrán ser utilizada con alguno o todos lo fines que se describen a continuación:
-                    <br /><br />
-
-                    <span className='definicionesTyC'>I. </span> 
-                    Administrar el sistema, incluyendo la puesta a disposición de estos datos a nuestros dependientes, oficiales, proveedores, entre otros, como sea razonable y necesario según lo estipulado en estos términos y condiciones.
-                    <br /><br />
-                    <span className='definicionesTyC'>II. </span> 
-                    Mejorar la oferta de servicios.
-                    <br /><br />
-                    <span className='definicionesTyC'>III. </span> 
-                    Enviar comunicación publicitaria, notificaciones, o cualquier otro tipo de información.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>IV. </span> 
-                    Enviar sugerencias para mejorar las funcionalidades del producto (que podrán ser, dependiendo el caso, sugerencias sin cargo, o con cargo).
-                    <br /><br />
-
-                    <span className='definicionesTyC'>V. </span> 
-                    Suministrar información estadística a terceros sobre nuestras Persona Usuaria habiendo primeramente disociado correctamente la información personal.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VI. </span> 
-                    Verificar el cumplimiento de estos términos y condiciones.
-                    <br /><br />
-
-                    <span className='definicionesTyC'>VII. </span> 
-                    Otros usos no previstos por esta enunciación.
-                    <br /><br />
-
-                    En caso de mediar solicitud judicial competente o en ocasión de una situación que lo justifique, podremos divulgar sus datos personales hasta lo requerido por la ley. Esto incluye supuestos donde dicha publicación se realice a los fines de custodiar y ejercer los derechos de Cryptocup. 
-                    Los datos recolectados, almacenados y procesados para cualquiera de los fines mencionados, serán eliminados luego de transcurrido como máximo 2 años desde que la Persona Usuaria ha cancelado su suscripción al sistema.
-                </p>
+                        <span className='definicionesTyC'>II.5.</span> <br /> <br />
+                            Token: Hace referencia a tokens criptográficos utilizados por Crypto Cup para representar activos digitales que permiten al Usuario realizar diversas funciones en el Sitio.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
 
                 <div className="titlePrivacy">
-                        <h2>
-                            VII. LIMITACIÓN DE LA RESPONSABILIDAD
-                        </h2>
+                    <h2 id='condicionesDeUso'>
+                        III. CONDICIONES DE USO
+                    </h2>
                 </div>
-                <p>
-                    <span className='definicionesTyC'>I. </span> 
-                    La Persona Usuaria reconoce y acepta que Cryptocup es propiedad de XXXXXX. y que sus accionistas limitan su responsabilidad a la integración delcapital suscrito, no asumiendo ninguna responsabilidad en exceso a dicho aporte.
-                    <br /><br />
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>III.1.</span> <br /> <br />
+                            Para poder ingresar en el Sitio los Visitantes y Usuarios deben ser mayores de 18 años de edad y contar con capacidad jurídica y de ejercicio pleno según la ley de su lugar de domicilio. Toda persona que sea menor de 18 años, o tenga alguna restricción dispuesta por autoridad competente para contratar no podrá acceder al Sitio.
+                        <br /><br />
 
-                    <span className='definicionesTyC'>II. </span> 
-                    La compañía no será responsable por ningún daño que la Persona Usuaria genere a terceros mediante la utilización de la Plataforma o los Tokens. Tampocoserá responsable por conductas delictivas imputables a la Persona Usuaria.
-                    <br /><br />
+                        <span className='definicionesTyC'>III.2.</span> <br /> <br />
+                        No podrán participar en el juego las personas que -según las leyes nacionales que les resultaren aplicables- tuvieran una prohibición legal para hacerlo. En particular quedan excluidos de participar aquellos deportistas que intervengan como jugadores en la copa del mundo de la FIFA 2022, árbitros, integrantes del cuerpo técnico, o toda aquella persona que en forma directa o indirecta pudiera tener influencia por su participación en los resultados de los partidos.
+                        <br /><br />
+                        <strong>
+                            El Sitio se encuentra dirigido y limitado en cuanto a su utilización a aquellas jurisdicciones nacionales donde no se requieren licencias de juego online o donde no se interpreten las funcionalidades del presente juego como una “Apuesta”. Por consiguiente, quedan excluidas las siguientes jurisdicciones: Argentina, Uruguay, Estados Unidos de América, Suiza…
+                            La enumeración resulta meramente enunciativa, siendo responsabilidad del Usuario averiguar si en el estado de domicilio o desde donde pretende ingresar al Sitio se encuentra restringida la participación en este tipo de juegos.
+                        </strong>
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
 
-                    <span className='definicionesTyC'>III. </span> 
-                    El uso de Cryptocup, los Tokens y demás servicios de la plataforma está condicionado a que la Persona Usuaria cumpla todas las regulaciones legales quefueren aplicables.
-                    <br /><br />
+                <div className="titlePrivacy">
+                    <h2 id='accesoAlJuego'>
+                        IV. ACCESO AL JUEGO
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>IV.1.</span> <br /> <br />
+                            Crypto Cup utiliza tokens criptográficos que permiten el acceso a funcionalidades del sistema (Utility tokens). 
+                            Existirá una versión libre del juego a la cual el Usuario no deberá acceder mediante la adquisición del Token. Esta opción se entenderá como muestra y Crypto Cup podrá disponer a su exclusivo criterio que se otorguen recompensas por su utilización o no. Asimismo, la recompensa podrá ser variable o aleatoria.
+                            Existirá una versión full del juego a la cual el Usuario podrá acceder adquiriendo Tickets NFT de ingreso. Se trata de boletos que otorgan acceso a las experiencias actuales construidas sobre la plataforma de Crypto Cup Qatar. 
+                        <br /><br />
 
-                    <span className='definicionesTyC'>IV. </span> 
-                    La compañía no asume ningúna responsabilidad en relación a daños patrimoniales que la Persona Usuaria pudiera sufrir por las transacciones que realicecon los Tokens respecto a terceros. El hecho de transferir los Tokens fuera de la plataforma administrada por Cryptocup exime a esta última porcualquier responsabilidad relacionada con las transacciones que realice.
-                    <br /><br />
+                        <span className='definicionesTyC'>IV.2.</span> <br /> <br />
+                            El Usuario podrá participar en sectores (Ladder) distintos del juego dependiendo el ticket adquirido. En cualquiera de los sectores podrá jugar y obtener una recompensa en tokens propios del sitio de acuerdo a su desempeño, dependiendo la recompensa de la Ladder en la que haya ingresado. 
+                            Podrá ingresar en la “Basic Ladder”,  debiendo tener un "Basic Ladder Ticket" para acceder. Por otro lado en la “Boost Ladder”, debiendo contar con un "Boost Ladder Ticket" para acceder. 
+                            Los Usuarios podrán participar en ambas Ladder al mismo tiempo, pero para ello deberán contar por el Ticket correspondiente a cada una.
+                        <br /><br />
 
-                    <span className='definicionesTyC'>V. </span> 
-                    Queda expresamente aclarado que no cuenta Cryptocup con la posibilidad de revocar ni detener la ejecución de los Contratos inteligentes. Tampoco cuentacon la posibilidad de corregir errores que la Persona Usuaria hubiera cometido al identificar billeteras virtuales de destino, ni errores en cantidadeso montos. 
-                    <br /><br />
 
-                    <span className='definicionesTyC'>VI. </span> 
-                    Los Tokens no cuentan con un respaldo físico. De ser negociados por la Persona Usuaria en cualquier plataforma, la compañía no se responsabiliza porvariaciones en su valor. La Persona Usuaria asume expresamente que la negociación de tokens está sujeta a gran volatilidad en su cotización, por lo quela Persona Usuaria asume cualquier riesgo al respecto.
-                    <br /><br />
+                        <span className='definicionesTyC'>IV.3.</span> <br /> <br />
+                            La adquisición de los Ticket se podrá efectuar mediante el Sitio cuando se habilite el acceso al público general, o en forma directa mediante la preventa que Crypto Cup realice para Usuarios seleccionados
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
 
-                    <span className='definicionesTyC'>VII. </span> 
-                    La compañía no será responsable de ningún daño que no tenga relación de causalidad inmediata con su actuar directo, quedando expresamente excluida laresponsabilidad por las consecuencias mediatas (cualquiera fuera su tipo) y remotas.
-                    <br /><br />
-                </p>
+
+
+                <div className="titlePrivacy">
+                    <h2 id='custodiaDeContraseña'>
+                    V. CUSTODIA DE CONTRASEÑA
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>V.1.</span> <br /> <br />
+                            El acceso al Sitio para participar del juego se efectuará mediante la utilización del token que represente el "Basic Ladder Ticket" o el "Boost Ladder Ticket", el cual será validado por el sistema mediante la utilización del plugin de MetaMask u otro similar que Crypto Cup disponga.
+                            El Usuario será el único responsable por la custodia de las credenciales que le den acceso a sus tokens. En este sentido, será el único responsable por el resguardo de su clave privada, no teniendo Crypto Cup ningún acceso a la misma, ni pudiendo permitir accesos a la plataforma en caso de pérdida por el Usuario de sus tokens.
+                            El Usuario declara expresamente que conoce que las transacciones con criptoactivos por medio de internet resultan altamente riesgosas, que las operaciones no pueden retrotraerse y que los activos digitales carecen de respaldo subyacente en bienes. Asimismo, que existen riesgos concretos de hackeos a todo Sitio de internet y a la blockchain, sin perjuicio de lo cual Crypto Cup realizará sus mejores esfuerzos para tratar de evitarlos, no asumiendo responsabilidad por el actuar ilegal de terceros por quien no tiene obligación legal de responder.
+                            El Usuario asume expresamente todo riesgo relativo a la pérdida de sus claves de acceso que le impidan ingresar al Sitio o acceder a la billetera virtual en donde se le acrediten los premios que otorgue Crypto Cup.
+
+                        <br /><br />
+
+                        <span className='definicionesTyC'>V.2.</span> <br /> <br />
+                            El acceso del Usuario a la Ladder se efectúa acreditando que es titular del ticket correspondiente. Para ello, se utiliza el plugin de MetaMask o el que Crypto Cup determine, el cual permite identificar que el usuario es poseedor del token.
+                            Crypto Cup no será responsable por los daños que pudieran ocasionarse a raíz de la pérdida o sustracción de la contraseña privadas o la imposibilidad de acceder el Usuario a sus propios tokens. 
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='conductasProhibidas'>
+                        VI. CONDUCTAS PROHIBIDAS
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        El Usuario no utilizará el Sitio para participar en los siguientes actos, o cualquier otro acto que pueda ser categorizado como tal: <br /><br />
+
+                        <span className='definicionesTyC'>I.</span> <br /> <br />
+                            Actos que violen leyes y reglamentos aplicables, políticas públicas o los Términos y Condiciones.odo riesgo relativo a la pérdida de sus claves de acceso que le impidan ingresar al Sitio o acceder a la billetera virtual en donde se le acrediten los premios que otorgue Crypto Cup.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>II.</span> <br /> <br />
+                            Actos delictivos, conducta que conduce a actos delictivos o conducta que promueve tales actos.
+                        <br /><br />
                     
+                        <span className='definicionesTyC'>III.</span> <br /> <br />
+                            Ofrecer servicios o productos que requieren autorizaciones públicas o legales sin contar con los mismos.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>IV.</span> <br /> <br />
+                            Recopilar sistemáticamente información relativa a los Usuarios o al Sitio sin consentimiento expreso por parte de Crypto Cup.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>V.</span> <br /> <br />
+                            Utilizar mecanismos automatizados para interactuar con la plataforma, ya sea a partir de scripts, software para data mining, software extractivo de datos, para ejecutar funciones específicas dentro del Sitio y/o para enviar mensajes o cualquier otro tipo de interacción en el Sitio.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>VI.</span> <br /> <br />
+                            Utilizar la Plataforma para publicitar bienes y/o servicios no autorizados por Crypto Cup.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>VII.</span> <br /> <br />
+                            Publicar información que sea dañina para los niños, niñas o adolescentes.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>VIII.</span> <br /> <br />
+                            Publicar contenido que difame, injurie o insulte a un tercero, o contenido que dañe la reputación o credibilidad de un tercero.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>IX.</span> <br /> <br />
+                            Publicar expresiones que conduzcan a la discriminación, ya sea por motivos de raza, etnia, género, credo, condición social, lugar de residencia, características físicas, historial médico, educación, u otro;
+                        <br /><br />
+
+                        <span className='definicionesTyC'>X.</span> <br /> <br />
+                            Infringir los derechos de propiedad intelectual de Crypto Cup o de un tercero;
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XI.</span> <br /> <br />
+                            Llevar adelante esfuerzos de ingeniería inversa del software utilizado en el Sitio;
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XII.</span> <br /> <br />
+                            Coordinar con otros Usuarios estrategias maliciosas para obtener beneficios en el Sitio.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XIII.</span> <br /> <br />
+                            Cualquier otra conducta que Crypto Cup determine inadecuada para la comunidad de Usuarios.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+
+
+                <div className="titlePrivacy">
+                    <h2 id='advertenciasYsuspensionProvisoria'>
+                        VII.  ADVERTENCIAS Y SUSPENSIÓN PROVISORIA
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>VIII.1.</span> <br /> <br />
+                        <strong>
+                            Crypto Cup podrá a su exclusivo criterio, en caso de advertir que se ha infringido alguna de las conductas prohibidas, disponer en forma previa a bloquear el acceso al Usuario al Sitio, dispone una advertencia o suspensión provisoria.
+                        </strong>
+                        <br /><br />
+
+                        <span className='definicionesTyC'>VIII.2.</span> <br /> <br />
+                            Lo ante expuesto es una facultad de Crypto Cup, quien podrá en todo momento disponer en forma directa el bloqueo definitivo del acceso al Usuario cuando a su criterio la magnitud de la falta así lo amerite.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+
+                <div className="titlePrivacy">
+                    <h2 id='bloqueoDeAcceso'>
+                        VIII. BLOQUEO DE ACCESO
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>VIII.1.</span> <br /> <br />
+
+                            <strong>
+                            Crypto Cup podrá bloquear el acceso a un Usuario cuando advierta que:
+                            </strong>
+                            <br /><br />
+
+                            <span className='definicionesTyC'>I.</span> <br /> <br />
+                                La cuenta registra una actividad sospechosa, que hace suponer que el Usuario puede estar violando las conductas prohibidas.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>II.</span> <br /> <br />
+                                El Usuario utiliza vocabulario ofensivo, injuriante, o que de cualquier manera pudiera afectar a la comunidad de Usuarios, conforme a lo estipulado en el apartado de Conductas Prohibidas de los presentes Términos y Condiciones.
+                            <br /><br />
+                        
+                            <span className='definicionesTyC'>III.</span> <br /> <br />
+                                El Usuario utilice la cuenta para planificar o llevar adelante conductas que infrinjan los derechos de Crypto Cup.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>IV.</span> <br /> <br />
+                                Se registra actividad que hace suponer que el Usuario titular del ticket fue anteriormente bloqueado para acceder por Crypto Cup, conforme lo establecen los presentes Términos y Condiciones.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>V.</span> <br /> <br />
+                                Cuando a criterio de Crypto Cup se hayan violado las conductas prohibidas o se advierta que el Usuario estuviera actuando de mala fe para perjudicar a terceros.
+                            <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='billeteraDelUsuario'>
+                        IX. BILLETERA DEL USUARIO
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>IX.1.</span> <br /> <br />
+                            Toda adquisición de Tokens por el Usuario desde el Sitio se llevará a cabo mediante la Dapp (Decentralized Applications) a la que se ingresa por https://www.cryptocupqatar.io/dapp además del website https://www.cryptocupqatar.io. La Dapp está relacionada a una wallet criptográfica que mediante smart contract se ejecuta sobre la blockhain.
+                            Cada Usuario tendrá asociada una cuenta (la cual será solo identificada por la clave pública de su billetera virtual de ingreso) y una billetera virtual de propiedad exclusiva de Crypto Cup, en donde se recibirán los pagos que el Usuario efectúe desde su propia billetera virtual. 
+                            Se deja aclarado que Crypto Cup no tiene la capacidad de revertir ninguna transacción que el usuario haya efectuado mediante la utilización de contratos inteligentes. Es posible que la red Binance Smart Chain perciba una tarifa por cada transacción que el Usuario realice, así como pueden ser aplicadas comisiones por la utilización de los contratos inteligentes de la red. El Usuario reconoce y acepta las tarifas y comisiones que Binance Smart Chain aplique las cuales estarán a su cargo.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>IX.2.</span> <br /> <br />
+
+                            <span className='definicionesTyC'>TOKENS.</span> <br /> <br />
+                                Crypto Cup utiliza dos tipos de tokens criptográficos para representar activos virtuales cuyas características y funcionalidades son diferentes. 
+                                En ambos casos nos encontramos frente a tokens de utilidad, cuya función radica en permitir al Usuario acceder y jugar en la plataforma. <br /> <br />
+                                    Basic (ERC-721) que les dará acceso a los jugadores al Basic Ladder, <br />
+                                    Boost (ERC-721) que permite que los jugadores participen del Boost Ladder. <br /> <br />
+
+                                Son tokens que representan un activo virtual único e irrepetible (tokens no fungibles). 
+                                Cada uno de los tokens emitidos representará en el Sitio un Ticket único e irrepetible. La titularidad del NFT otorga al Usuario derecho a ingresar en sectores (Ladder) distintos del juego dependiendo el ticket adquirido (ver punto IV). <br />
+                                Asimismo, el titular del NFT tendrá derecho a que, de acuerdo a las reglas particulares de cada uno de los juegos del Sitio, se le recompense con una cantidad determinada de tokens, la cual será determinada por Crypto Cup. <br />
+                                Los NFT podrán ser transferidos por el Usuario mediante la Dapp a terceros una vez que Crypto Cup habilite dicha opción. En este caso, el Usuario asume exclusiva responsabilidad por la transacción, careciendo Crypto Cup de toda intervención en la operación.
+                                El Usuario reconoce que los NFTs representan activos digitales en la Binance Smart Chain, y que no se encuentran respaldados por bienes físicos. 
+                                
+                                Crypto Cup podrá crear otros NFTs distintos a los Tickets los cuales podrán representar obras de arte digitales, tales como trofeos u otros artículos. Estos NFTs no tendrán derechos subyacentes y sólo implicarán un reconocimiento a la participación en el juego.
+                            <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+
+                <div className="titlePrivacy">
+                    <h2 id='politicaDeProteccionDeDatos'>
+                        X. POLÍTICA DE PROTECCIÓN DE DATOS
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>X.1.</span> <br /> <br />
+                            Este sitio utiliza y protege los datos proporcionados por los Usuarios conforme ley vigente y estándares de buenas prácticas internacionales en protección de datos. Crypto Cup  se compromete con la seguridad de los datos de los Usuarios, guardando la debida reserva y confidencialidad. Esta Política de Privacidad puede cambiar con el tiempo o ser actualizada. <br /> <br />
+
+                            Los siguientes tipos de datos (en adelante, “datos recolectados”) pueden ser almacenados y procesados por el sistema: <br /><br />
+
+                            <span className='definicionesTyC'>I.</span> <br /> <br />
+                            Datos que fuesen necesarios para generar una cuenta personal en el sitio.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>II.</span> <br /> <br />
+                                Datos sobre su ordenador, incluyendo dirección IP y ubicación geográfica.
+                            <br /><br />
+                        
+                            <span className='definicionesTyC'>III.</span> <br /> <br />
+                                Datos sobre sus visitas y uso del sistema.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>IV.</span> <br /> <br />
+                                Datos que introduzca para suscribirse a nuestros correos y boletines, como nombre y correo electrónico. 
+                            <br /><br />
+
+                            <span className='definicionesTyC'>V.</span> <br /> <br />
+                                Datos que se generen mientras navega en nuestro sitio web.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>VI.</span> <br /> <br />
+                                Nombre de Usuario, Nickname, edad, género, área de residencia, dirección de correo electrónico.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>VII.</span> <br /> <br />
+                                Número de billetera electrónica del Usuario.
+                            <br /><br />
+
+                            Crypto Cup tomará todas las precauciones razonables técnicas y organizacionales existentes a los fines de evitar la pérdida, mal uso o alteración de su información personal. De todas maneras, el Usuario reconoce que la transmisión de datos en internet es inherentemente insegura y que no se puede garantizar absolutamente la seguridad de los mismos. <br /> <br />
+
+                            En caso de solicitarlo, el Usuario recibirá toda la información recolectada y almacenada por Crypto Cup . Dicha solicitud deberá ser acompañada de prueba suficiente de identidad. Para mayor información sobre el alcance de lo referido, o al proceso descrito, deberá contactarse al siguiente correo electrónico: cryptocup2022@gmail.com, Utilizando el asunto: ‘Datos personales’. 
+                        <br /><br />
+
+
+                        <span className='definicionesTyC'>X.2.</span> <br /> <br />
+                            Los datos recolectados podrán ser utilizada con alguno o todos los fines que se describen a continuación:<br />
+                            <br />
+
+                            <span className='definicionesTyC'>I.</span> <br /> <br />
+                                Administrar el sistema, incluyendo la puesta a disposición de estos datos a nuestros dependientes, oficiales, proveedores, entre otros, como sea razonable y necesario según lo estipulado en estos términos y condiciones.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>II.</span> <br /> <br />
+                                Mejorar la oferta de servicios.
+                            <br /><br />
+                        
+                            <span className='definicionesTyC'>III.</span> <br /> <br />
+                                Enviar comunicación publicitaria, notificaciones, o cualquier otro tipo de información.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>IV.</span> <br /> <br />
+                                Enviar sugerencias para mejorar las funcionalidades del producto (que podrán ser, dependiendo el caso, sugerencias sin cargo, o con cargo).
+                            <br /><br />
+
+                            <span className='definicionesTyC'>V.</span> <br /> <br />
+                                Suministrar información estadística a terceros sobre nuestros Usuarios habiendo primeramente disociado correctamente la información personal.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>VI.</span> <br /> <br />
+                                Verificar el cumplimiento de estos términos y condiciones.
+                            <br /><br />
+
+                            <span className='definicionesTyC'>VII.</span> <br /> <br />
+                                Otros usos no previstos por esta enunciación.
+                            <br /><br />
+
+                            En caso de mediar solicitud judicial competente o en ocasión de una situación que lo justifique, podremos divulgar sus datos personales hasta lo requerido por la ley. Esto incluye supuestos donde dicha publicación se realice a los fines de custodiar y ejercer los derechos de Crypto Cup . <br /> <br />
+
+                            Los datos recolectados, almacenados y procesados para cualquiera de los fines mencionados, serán eliminados luego de transcurrido como máximo 2 años desde que el Usuario ha cancelado su suscripción al sistema.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='propiedadIntelectual'>
+                        XI. PROPIEDAD INTELECTUAL
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XI.1.</span> <br /> <br />
+                        <strong>
+                            MINTZ SOCIEDAD ANÓNIMA es titular de todos los derechos de propiedad intelectual en relación a Crypto Cup, incluyendo nombre de dominio, plataforma web, app móvil, software en versión código fuente y objeto, las compilaciones de datos, y cualquier otro desarrollo que pudiera surgir en el futuro.
+                        </strong>
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XI.2.</span> <br /> <br />
+                            MINTZ SOCIEDAD ANÓNIMA autoriza la reproducción por cualquier medio digital o analógico del Contenido Crypto Cup, siempre que dicha reproducción se limite a expresar opiniones de los Usuarios en relación a la plataforma. <br /> <br />
+                            Esta licencia será revocable automáticamente si por cualquier razón se publica contenido ilegal, inmoral, humillante, que afecte la moral, buenas costumbres, o que de cualquier manera pudiera afectar derechos de Crypto Cup o de terceras personas.
+                            Crypto Cup no garantiza la verosimilitud o credibilidad de ningún contenido o información puesta a disposición del público por los Usuarios, ni sostiene necesariamente las opiniones expresadas por éstos. <br /> <br />
+                            Salvo consentimiento expreso de Crypto Cup, el Usuario no podrá, directa ni indirectamente, utilizar la marca Crypto Cup en conexión con ningún servicio o evento, ya sea este online u offline, oneroso o gratuito, que no sean los específicamente comunicados y ofrecidos desde la plataformas y/o perfiles oficiales en redes sociales de Crypto Cup. 
+
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XI.3.</span> <br /> <br />
+                            <strong>
+                                LICENCIA DE USO DE CONTENIDOS GENERADOS POR LOS USUARIOS
+                            </strong> <br /> <br />
+
+                                El Usuario le cede por este medio a Crypto Cup, una licencia gratuita, perpetua e irrevocable para reproducir el contenido compartido por el Usuario en redes sociales y/o en cualquier medio cuando dicho contenido incorpore o reproduzca alguno de los contenidos Crypto Cup. Asimismo, otorga igual licencia respecto de los comentarios efectuados en el Sitio.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='aspectosImpositivos'>
+                        XII. ASPECTOS IMPOSITIVOS
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XII.1.</span> <br /> <br />
+                            Los Usuarios serán los únicos responsables del estricto cumplimiento de las obligaciones fiscales que surjan a partir del contrato celebrado entre ellos. En tanto Crypto Cup no es parte de la relación contractual, no se responsabiliza por el efectivo cumplimiento de las obligaciones fiscales o impositivas establecidas por la ley vigente que afecten a los Usuarios.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XII.2.</span> <br /> <br />
+                            El Usuario asumirá en su totalidad los tributos que pudieran gravar la adquisición de los tokens, el acceso al Sitio, la percepción de los premios o todo otro hecho imponible que se genere por la utilización del Sitio.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+
+                <div className="titlePrivacy">
+                    <h2 id='prohibicionDeCesion'>
+                        XIII. PROHIBICIÓN DE CESIÓN
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XIII.1.</span> <br /> <br />
+                            La cuenta de cada usuario es personal, única e intransferible. No podrá ceder sus derechos y obligaciones sin el previo consentimiento escrito de Crypto Cup. 
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XIII.2.</span> <br /> <br />
+                            Crypto Cup podrá ceder, transferir, delegar o disponer de los derechos u obligaciones derivados de la presente vinculación (incluyendo su posición contractual), total o parcialmente, sin necesidad de requerir autorización por los Usuarios.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='notificaciones'>
+                        XIV. NOTIFICACIONES
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XIV.1.</span> <br /> <br />
+                        Crypto Cup podrá realizar las notificaciones al Usuario a través de una notificación general en el sitio web, a través de mensajes de texto, y a la dirección de correo electrónico facilitada por el Usuario. El Usuario podrá comunicarse con Crypto Cup mediante el envío de un correo electrónico a la dirección: Cryptocup2022@gmail.com. 
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+
+                <div className="titlePrivacy">
+                    <h2 id='indemnizacion'>
+                        XV. INDEMNIZACIÓN
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XV.1.</span> <br /> <br />
+                            El Usuario expresamente asume el deber de dejar indemne a Crypto Cup, sus directivos, asociadas, subsidiarias, empleados y accionistas frente a cualquier reclamo que estos deban hacer frente vinculados con la violación por parte del Usuario de derechos de terceros, violación de derechos de propiedad intelectual, violación de las reglas de conducta impuestas en los Terminos y Condiciones.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XV.2.</span> <br /> <br />
+                            El Usuario deberá reembolsar cualquier gasto que Crypto Cup o las demás personas enunciadas hubieran incurrido en concepto de indemnizaciones, costos, costas, gastos de abogados, tasas judiciales, peritos, traductores, tasas administrativas, costos de escribano, o cualquier otro costo relacionado.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XV.3.</span> <br /> <br />
+                            Asimismo, deberá indemnizar por cualquier daño producido a la plataforma con culpa grave o dolo, incluyendo la reparación por daño efectivo, lucros cesantes, pérdida de chances, y todo otro rubro indemnizatorio que pudiera corresponder.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='ineficaciaDeLasClausulas'>
+                        XVI.  INEFICACIA DE LAS CLÁUSULAS
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XVI.1.</span> <br /> <br />
+                            Si cualquiera de las cláusulas de estos Términos y Condiciones fuera declarada ineficaz por un tribunal competente, ello no afectará al resto de las cláusulas que resulten independientes.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='documentacionContractual'>
+                        XVII. DOCUMENTACIÓN CONTRACTUAL
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XVII.1.</span> <br /> <br />
+                            Las partes acuerdan otorgar pleno valor contractual a los documentos electrónicos que consten en el Sitio, los cuales serán plenamente válidos para probar las transacciones efectuadas, así como todo lo relativo al vínculo entre Crypto Cup y el Usuario.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
+                <div className="titlePrivacy">
+                    <h2 id='juridiccionYleyAplicable'>
+                        XVIII. JURISDICCIÓN Y LEY APLICABLE
+                    </h2>
+                </div>
+                <div className="textPrivacy">
+                    <p>
+                        <span className='definicionesTyC'>XVIII.1.</span> <br /> <br />
+                            Para la resolución de todo reclamo o conflicto el Usuario deberá primero intentar la resolución amigable con Crypto Cup. A dichos fines, deberá remitir su reclamo por escrito al correo electrónico cryptocup2022@gmail.com, indicando: su reclamo en forma detallada y lo pretendido en términos positivos, nombre y apellido completo, tipo y número de documento, dirección exacta de residencia, teléfono y correo electrónico. Crypto Cup tendrá 30 días para analizar el reclamo y brindar una respuesta al Usuario.
+                        <br /><br />
+
+                        <span className='definicionesTyC'>XVIII.2.</span> <br /> <br />
+                            Si fracasara la resolución amigable del reclamo o conflicto, las partes acuerdan que serán competentes para entender en la instancia judicial los tribunales ordinarios con competencia en la Ciudad Autónoma de Buenos Aires, Argentina, con renuncia a cualquier otro fuero o jurisdicción que pudiera corresponder, excepto en aquellos casos que la ley prohíba la prórroga de jurisdicción.
+                        <br /><br />
+                        <br /><br />
+                    </p>
+                </div>
+
             </div>
+
         </div>
         <Footer/>
     </div>

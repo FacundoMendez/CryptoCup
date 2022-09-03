@@ -9,6 +9,8 @@
     overflow: hidden;
 }
 
+
+
 .containerPrivacy::after{
     width: 110%;
     height: 100%;
@@ -16,6 +18,61 @@
     top: 0rem;
     background-color: rgba(0, 0, 0, 0.568);
     position: absolute;
+}
+
+
+.containerTyC{
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    gap: 10rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+.boxEnlaces{
+    position: relative;
+    z-index: 999999 ;
+    padding: 4rem 1rem;
+    top:20rem;
+    height: 50%;
+    width: 35rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    border: 1px inset rgba(255, 232, 182, 0.719);
+    background-color: black;
+    left: 5rem;
+}
+
+.boxEnlaces ul{
+    list-style: none;
+}
+
+.boxEnlaces li{
+    padding: 1rem;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+.boxEnlaces li:hover{
+    color: white;
+}
+
+.boxEnlaces a{
+    text-decoration: none;
 }
 
 .boxPrivacy{
@@ -34,10 +91,14 @@
     overflow: hidden;
     margin: 20rem auto;
     padding: 10rem 0;
+    left: -8rem;
     z-index: 10;
 }
 
+
+
 .boxPrivacy h4{
+    margin-top: -5rem;
     font-size: 3rem;
     text-align: center;
     -webkit-background-clip: text;
@@ -60,6 +121,7 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     padding: 2rem 0;
+    padding-top: 10rem;
 }
 
 .textPrivacy p{
@@ -88,8 +150,17 @@
 
 @media screen and (max-width:1440px){
     
-    .boxPrivacy{
-        width: 75%;
+
+
+    .boxPrivacy {
+        left: -2rem;
+        width: 70%;
+        padding-left: 3rem ;
+        padding-right: 3rem ;
+    }
+
+    .boxEnlaces {
+        left: 2rem;
     }
 
     .boxPrivacy h4{
@@ -111,6 +182,16 @@
 
 
 @media screen and (max-width:1050px){
+
+    
+    .boxEnlaces {
+        display: none;
+    }
+
+    .boxPrivacy {
+        left: 0rem;
+        
+    }
     
     .boxPrivacy{
         width: 85%;
@@ -161,6 +242,12 @@
 
 
 @media screen and (max-width:480px){
+
+    .boxPrivacy {
+        padding-left: 1rem ;
+        padding-right: 1rem ;
+        margin-top: 15rem;
+    }
     
     .boxPrivacy{
         width: 100%;
