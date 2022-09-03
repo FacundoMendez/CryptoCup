@@ -16,12 +16,12 @@ const Roadmap = () => {
         </div>
       </section>
 
-      <section className="timeline">
-        <div className='iniTimeline'></div>
+      <section className="lineaTiempo">
+        <div className='inilineaTiempo'></div>
         <ul>
           <li>
             <div className='textRoadamp t1'>
-              <time>Q4 2021</time>
+              <strong className='qName'>Q4 2021</strong >
               <p>
               - Concept Design <span>✓</span><br/>
               - Branding and game research <span>✓</span> <br/>
@@ -33,7 +33,7 @@ const Roadmap = () => {
           </li>
           <li>
           <div className='textRoadamp t2'>
-              <time>Q1 2022</time> 
+              <strong className='qName'>Q1 2022</strong > 
               <p>
                 - Web footage selection <span>✓</span> <br/>
                 - Smart contracts development <span>✓</span> <br/>
@@ -44,7 +44,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp t3 '>
-              <time>Q2 2022</time> 
+              <strong className='qName'>Q2 2022</strong > 
               <p>
                 - Ladders System development <span>✓</span>  <br/>
                 - Whitepaper creation <span>✓</span>  <br/>
@@ -55,7 +55,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp t4'>
-              <time>Q3 2022</time>
+              <strong className='qName'>Q3 2022</strong >
               <p>
                 - Private sale <br/>
                 - Ticket Sales<br/>
@@ -70,7 +70,7 @@ const Roadmap = () => {
           </li>
           <li>
             <div className='textRoadamp t5'>
-              <time>Q4 2022</time> 
+              <strong className='qName'>Q4 2022</strong > 
               <p>
                 - Dapp launch<br/>
                 - Playable Ladders System Release <br/>

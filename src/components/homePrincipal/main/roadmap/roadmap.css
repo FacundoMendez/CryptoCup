@@ -83,14 +83,14 @@
     padding: 100px 0;
   }
   
-  /* TIMELINE
+  /* lineaTiempo
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
-  .timeline ul {
+  .lineaTiempo ul {
     padding: 50px 0;
   }
   
-  .timeline ul li {
+  .lineaTiempo ul li {
     list-style-type: none;
     border-radius: 100px;
     position: relative;
@@ -105,7 +105,7 @@
 
   }
   
-  .timeline ul li::after {
+  .lineaTiempo ul li::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -128,7 +128,7 @@
     backdrop-filter: blur(1rem);
   }
   
-  .timeline ul li div {
+  .lineaTiempo ul li div {
     position: relative;
     bottom: 0;
     width: 400px;
@@ -138,7 +138,7 @@
     backdrop-filter: blur(4rem);
   }
   
-  .timeline ul li div::before {
+  .lineaTiempo ul li div::before {
     content: "";
     position: absolute;
     bottom: 5px;
@@ -169,12 +169,12 @@
     font-family: qatarHeavy;
   }
     
-  .timeline ul li:nth-child(odd) div {
+  .lineaTiempo ul li:nth-child(odd) div {
     left: 45px;
     
   }
   
-  .timeline ul li:nth-child(odd) div::before {
+  .lineaTiempo ul li:nth-child(odd) div::before {
     left: -16px;
     border-width: 8px 16px 8px 0;
     border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
@@ -182,12 +182,12 @@
     
 }
   
-  .timeline ul li:nth-child(even) div {
+  .lineaTiempo ul li:nth-child(even) div {
     left: -439px;
     
   }
   
-  .timeline ul li:nth-child(even) div::before {
+  .lineaTiempo ul li:nth-child(even) div::before {
     right: -16px;
     border-width: 8px 0 8px 16px;
     border-color: transparent  transparent transparent hsl(0 0% 100% / 0.1);
@@ -195,7 +195,7 @@
 
   }
   
-  time {
+  .qName  {
     display: block;
     font-size: 3.8rem;
     font-weight: bold;
@@ -213,7 +213,7 @@
 
   }
   
-  .iniTimeline{
+  .inilineaTiempo{
     border-width: 8px 0 8px 16px;
     backdrop-filter: blur(1rem);
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
@@ -235,11 +235,11 @@
   /* EFFECTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
-  .timeline ul li::after {
+  .lineaTiempo ul li::after {
     transition: background 0.5s ease-in-out;
   }
   
-  .timeline ul li.in-view::after {
+  .lineaTiempo ul li.in-view::after {
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
@@ -259,22 +259,22 @@
 }
   
   
-  .timeline ul li div {
+  .lineaTiempo ul li div {
     visibility: visible;
     opacity: 1;
     transition: all 0.5s ease-in-out;
 
   }
   
-  .timeline ul li:nth-child(odd) div {
+  .lineaTiempo ul li:nth-child(odd) div {
     transform: translate3d(50px, 0, 0);
   }
   
-  .timeline ul li:nth-child(even) div {
+  .lineaTiempo ul li:nth-child(even) div {
     transform: translate3d(-50px, 0, 0);
   }
   
-  
+
   
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -285,19 +285,19 @@
         font-size: 1.5rem;
     }
 
-    time {
+    .qName  {
       font-size: 3.2rem;
   }
 
-  .timeline ul li div {
+  .lineaTiempo ul li div {
     width: 340px;
   }
 
-  .timeline ul li:nth-child(even) div {
+  .lineaTiempo ul li:nth-child(even) div {
     left: -340px;
   }
 
-  .timeline ul li:nth-child(odd) div {
+  .lineaTiempo ul li:nth-child(odd) div {
     left: 0px;
   }
 
@@ -306,47 +306,47 @@
 
   
   @media screen and (max-width: 900px) {
-    .timeline ul li div {
+    .lineaTiempo ul li div {
       width: 300px;
     }
 
     .textRoadamp  p {
       font-size: 1.2rem;
     }
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: -320px;
     }
 
-    .timeline ul li:nth-child(odd) div {
+    .lineaTiempo ul li:nth-child(odd) div {
       left: 0px;
     }
 
   }
   
   @media screen and (max-width: 752px) {
-    .iniTimeline{
+    .inilineaTiempo{
       top: 6rem;
       left: 1.4rem;
     }
 
-    .timeline ul li {
+    .lineaTiempo ul li {
       margin-left: 20px;
     }
-    .timeline ul li div {
+    .lineaTiempo ul li div {
         width: 35rem;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: 45px;
     }
-    .timeline ul li:nth-child(even) div::before {
+    .lineaTiempo ul li:nth-child(even) div::before {
         left: -16px;
         border-width: 8px 16px 8px 0;
         border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
         backdrop-filter: blur(1rem);
     }
 
-    .timeline{
+    .lineaTiempo{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -370,11 +370,11 @@
       padding: 50px 0;
     }
 
-    .timeline ul li:nth-child(odd) div {
+    .lineaTiempo ul li:nth-child(odd) div {
       left: 0px;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: 100px;
     }
   
@@ -385,11 +385,11 @@
       font-size: 5rem;
     }
 
-    .timeline ul li:nth-child(odd) div {
+    .lineaTiempo ul li:nth-child(odd) div {
       left: 0px;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: 100px;
     }
   }
@@ -398,25 +398,25 @@
   @media screen and (max-width: 420px) {
 
   
-    .timeline ul li {
+    .lineaTiempo ul li {
       margin-left: 20px;
     }
-    .timeline ul li div {
+    .lineaTiempo ul li div {
         width: 30rem;
     }
 
-    .timeline ul li div {
+    .lineaTiempo ul li div {
       padding: 15px;
     }
 
-    .timeline ul li:nth-child(odd) div {
+    .lineaTiempo ul li:nth-child(odd) div {
       left: 0px;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: 100px;
     }
-    .timeline ul li:nth-child(even) div::before {
+    .lineaTiempo ul li:nth-child(even) div::before {
         left: -16px;
         border-width: 8px 16px 8px 0;
         border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
@@ -427,7 +427,7 @@
         font-size: 1.2rem;
     }
 
-    .timeline{
+    .lineaTiempo{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -442,24 +442,24 @@
 
   
   @media screen and (max-width: 370px) {
-    .timeline ul li {
+    .lineaTiempo ul li {
       margin-left: 20px;
     }
-    .timeline ul li div {
+    .lineaTiempo ul li div {
         width: 26.5rem;
     }
-    .timeline ul li:nth-child(odd) div {
+    .lineaTiempo ul li:nth-child(odd) div {
       left: 0px;
     }
 
-    .timeline ul li div {
+    .lineaTiempo ul li div {
       width: 30rem;
     }
 
-    .timeline ul li:nth-child(even) div {
+    .lineaTiempo ul li:nth-child(even) div {
       left: 100px;
     }
-    .timeline ul li:nth-child(even) div::before {
+    .lineaTiempo ul li:nth-child(even) div::before {
         left: -16px;
         border-width: 8px 16px 8px 0;
         border-color: transparent hsl(0 0% 100% / 0.1) transparent transparent;
@@ -470,7 +470,7 @@
         font-size: 1.1rem;
     }
 
-    .timeline{
+    .lineaTiempo{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -484,63 +484,4 @@
     }
   }
   
-  /* EXTRA/CLIP PATH STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .timeline-clippy ul li::after {
-    width: 40px;
-    height: 40px;
-    border-radius: 0;
-  }
-  
-  .timeline-rhombus ul li::after {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  }
-  
-  .timeline-rhombus ul li div::before {
-    bottom: 12px;
-  }
-  
-  .timeline-star ul li::after {
-    clip-path: polygon(
-      50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%
-    );
-  }
-  
-  .timeline-heptagon ul li::after {
-    clip-path: polygon(
-      50% 0%,
-      90% 20%,
-      100% 60%,
-      75% 100%,
-      25% 100%,
-      0% 60%,
-      10% 20%
-    );
-  }
-  
-  .timeline-infinite ul li::after {
-    animation: scaleAnimation 2s infinite;
-  }
-  
-  @keyframes scaleAnimation {
-    0% {
-      transform: translateX(-50%) scale(1);
-    }
-    50% {
-      transform: translateX(-50%) scale(1.25);
-    }
-    100% {
-      transform: translateX(-50%) scale(1);
-    }
-
-  
-  }
+ 
