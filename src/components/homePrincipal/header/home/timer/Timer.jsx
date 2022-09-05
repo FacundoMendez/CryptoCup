@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import "./timer.css"
 import timerFuncional from './timerFuncional'
-
+import {FormattedMessage} from 'react-intl';
 
 const Timer = () => {
 
@@ -15,10 +15,30 @@ const Timer = () => {
 
         <div id="countdown">
             <ul className="reloj">
-                <li><span id="days"></span>days</li>
-                <li><span id="hours"></span>Hours</li>
-                <li><span id="minutes"></span>Minutes</li>
-                <li><span id="seconds"></span>Seconds</li>
+                <li><span id="days"></span>
+                  <FormattedMessage
+                    id="home-days"
+                    defaultMessage="Days"
+                  />
+                </li>
+                <li><span id="hours"></span>
+                  <FormattedMessage
+                    id="home-hours"
+                    defaultMessage="Hours"
+                  />
+                </li>
+                <li><span id="minutes"></span>
+                  <FormattedMessage
+                    id="home-min"
+                    defaultMessage="Minutes"
+                  />
+                </li>
+                <li><span id="seconds"></span>
+                  <FormattedMessage
+                    id="home-seg"
+                    defaultMessage="Seconds"
+                  />
+                </li>
             </ul>
         </div>
 

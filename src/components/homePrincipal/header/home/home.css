@@ -61,6 +61,7 @@
   position: absolute;
   top: 21rem;
   left: 15rem; /* 27 */
+  width: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;

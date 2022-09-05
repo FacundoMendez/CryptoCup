@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react'
 import noMetamaskFuncional from './noMetamaskFuncional'
-const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainIncorrecta, noBalance}) => {
+import {FormattedMessage} from 'react-intl';
+
+const NoMetamask = ({noMetamask , chainIncorrecta , noBalance}) => {
 
     useEffect(() => {
         noMetamaskFuncional()
@@ -11,7 +13,13 @@ const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainInc
     {
       noMetamask ?     
       <div className="errorNoMetamask">
-        <p>{textNoMetamask}</p>
+        <p>
+            <FormattedMessage
+              id="ticketBuy-popupsErrNoMetamask"
+              defaultMessage="Please Install Metamask!"
+            />
+          
+        </p>
       </div>  
       :null
     }
@@ -19,7 +27,12 @@ const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainInc
     {
       chainIncorrecta ?     
       <div className="errorNoMetamask">
-        <p>{textChainIncorrecta}</p>
+        <p>
+          <FormattedMessage
+              id="ticketBuy-popupsChainIncorrecta"
+              defaultMessage="Please connect to the Ropsten Network!"
+            />
+        </p>
       </div>  
       :null
     }
@@ -27,7 +40,12 @@ const NoMetamask = ({noMetamask, textNoMetamask , chainIncorrecta , textChainInc
 {
       noBalance ?     
       <div className="errorNoMetamask">
-        <p>{textChainIncorrecta}</p>
+        <p>
+          <FormattedMessage
+              id="ticketBuy-popupsNoBalance"
+              defaultMessage="You don't have enough tokens."
+            />
+        </p>
       </div>  
       :null
     }

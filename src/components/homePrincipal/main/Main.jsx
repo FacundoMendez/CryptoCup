@@ -15,7 +15,7 @@ const Referidos = lazy(() => import ('./referidos/Referidos'))
 const Main = () => {
 
   return (
-    <main>
+    <main className='main'>
         <Suspense fallback={<Spinner/>}>
           <Home/>
         </Suspense>

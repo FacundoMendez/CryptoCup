@@ -506,11 +506,13 @@
     -webkit-background-clip: text;
     background-clip: text;
     font-family: qatarHeavy;
+    line-height: 6rem;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
+    padding-bottom: 2rem;
 }
 
 .textoTicket{

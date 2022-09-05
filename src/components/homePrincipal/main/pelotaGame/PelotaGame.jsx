@@ -1,6 +1,7 @@
 import React from 'react'
 import pelotaGameFunction from './pelotaGameFunction'
 import "./pelotaGame.css"
+import {FormattedMessage} from 'react-intl';
 
 const PelotaGame = () => {
 
@@ -11,8 +12,22 @@ const PelotaGame = () => {
     <div>
         <div className="contenedor">
 
-            <div className="StartGame" onClick={pelotaGameFunction}><p>Start</p></div>
-            <div className="restart" ><p>Restart</p></div>
+            <div className="StartGame" onClick={pelotaGameFunction}>
+              <p>
+                <FormattedMessage
+                  id="game-start"
+                  defaultMessage="Start"
+                />
+              </p>
+            </div>
+            <div className="restart" >
+              <p>
+                <FormattedMessage
+                  id="game-restart"
+                  defaultMessage="Restart"
+                />
+              </p>
+            </div>
 
             <div className="suelo"></div>
 
@@ -21,10 +36,20 @@ const PelotaGame = () => {
             <div className="score">0</div>
 
             <div className="scoreMax">
-              <p>Score Max: <span className='topScore'>{scoreMax}</span> </p>
+              <p>
+                <FormattedMessage
+                  id="game-scoreMax"
+                  defaultMessage="Score Max: "
+                />
+                <span className='topScore'>{scoreMax}</span> </p>
             </div>
 
-            <div className="game-over">GAME OVER</div>
+            <div className="game-over">
+                <FormattedMessage
+                  id="game-gameOver"
+                  defaultMessage="GAME OVER "
+                />
+            </div>
 
         </div>
 

@@ -4,9 +4,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from '../../homePrincipal/header/nav/navFuncional';
 import "../../homePrincipal/header/nav/nav.css";
 import navBallModel from '../../homePrincipal/header/nav/modelBall';
-import {NavLink  } from "react-router-dom";
 import commingDapp from '../../homePrincipal/header/nav/comingDapp';
-
+import Langs from '../../homePrincipal/header/nav/langComponent/Langs';
+import {FormattedMessage} from 'react-intl';
 
 function NavTicket() {
 
@@ -26,29 +26,46 @@ function NavTicket() {
                 </button>
                 
                 <ul className="navVisible nav-menu navIzquierda">
+
+                    
+                    <li>
+                        <Langs/>
+                    </li>
                     
                     <li className="nav-menu-item " >
-                        <NavLink  to="/" className="nav-menu-link nav-link" >
-                            Home
-                        </NavLink>
+                        <a  href="/" className="nav-menu-link nav-link" >
+                            <FormattedMessage
+                                id="nav-home"
+                                defaultMessage="Home"
+                            />
+                        </a>
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/tickets" className="nav-menu-link nav-link">
-                            Tickets
+                        <a href="/tickets"  className="nav-menu-link nav-link"> 
+                            <FormattedMessage
+                                id="nav-tickets"
+                                defaultMessage="Tickets"
+                            />
                         </a>
                     </li>
                     
 
                     <li className="nav-menu-item navMovile">
-                        <NavLink to="/" className="nav-menu-link nav-link">
-                            Roadmap
-                        </NavLink>
+                        <a href="/" className="nav-menu-link nav-link">
+                            <FormattedMessage
+                                id="nav-roadmap"
+                                defaultMessage="Roadmap"
+                            />
+                        </a>
                     </li>
 
                     <li className="nav-menu-item navMovile">
                         <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
-                            Whitepaper
+                            <FormattedMessage
+                                id="nav-whitepaper"
+                                defaultMessage="Whitepaper"
+                            />
                         </a>
                     </li>
                 
@@ -73,14 +90,20 @@ function NavTicket() {
                 <ul className='navDerecha'>
           
                     <li className="nav-menu-item">
-                        <NavLink to="/" className="nav-menu-link nav-link">
-                            Roadmap
-                        </NavLink>
+                        <a href="/" className="nav-menu-link nav-link">
+                            <FormattedMessage
+                                id="nav-roadmap"
+                                defaultMessage="Roadmap"
+                            />
+                        </a>
                     </li>
                     
                     <li className="nav-menu-item ">
                         <a href="https://crypto-cup.gitbook.io/crypto-cup/crypto-cup"  target="_blank"  rel="noopener noreferrer" className="nav-menu-link nav-link">
-                            Whitepaper
+                            <FormattedMessage
+                                id="nav-whitepaper"
+                                defaultMessage="Whitepaper"
+                            />
                         </a>
                     </li>
                 

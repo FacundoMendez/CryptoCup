@@ -12,7 +12,7 @@ import checkTokenBasic from './ticketsComponents/tokenBasic/checkTokenBasic';
 import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
 import gsap from 'gsap';
-
+import {FormattedMessage} from 'react-intl';
 
 const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
@@ -340,9 +340,15 @@ const TiketBuyPage = () => {
       {buyTicketBasic ?  <VideoBuyBasic /> : null}
       {buyTicketBoost ?  <VideoBuyBoost /> : null}
       {loadingBuy ? <PopupEsperaBuy /> : null}
-      {noMetamask ? <NoMetamask noMetamask={noMetamask} textNoMetamask="Please Install Metamask!" /> : null}
-      {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}   textChainIncorrecta="Please connect to the Ropsten Network!"/> : null }     {/* modificar network */}
-      {noBalance ? <NoMetamask noBalance={noBalance}   textChainIncorrecta="You don't have enough tokens."/> : null }    {/* balance  */}
+
+
+      {noMetamask ? <NoMetamask noMetamask={noMetamask} /> : null}
+
+
+      {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}/> : null }    
+      
+       {/* modificar network */}
+      {noBalance ? <NoMetamask noBalance={noBalance}  /> : null }    {/* balance  */}
 
       <div className="flexTickets">
           <div className="ticketsSale">
@@ -369,7 +375,17 @@ const TiketBuyPage = () => {
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
-                          <p >{connected? "BUY" : "CONNECT"}</p>
+                          <p >{connected? 
+                            <FormattedMessage
+                                id="ticketBuy-buy"
+                                defaultMessage="BUY"
+                            /> 
+                            : 
+                            <FormattedMessage
+                              id="ticketBuy-connect"
+                              defaultMessage="CONNECT"
+                            /> 
+                          }</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
@@ -473,7 +489,17 @@ const TiketBuyPage = () => {
 
                   <div className="wrapperBotton-Tickets">
                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
-                          <p>{connected? "BUY" : "CONNECT"}</p>
+                          <p >{connected? 
+                                <FormattedMessage
+                                    id="ticketBuy-buy"
+                                    defaultMessage="BUY"
+                                /> 
+                                : 
+                                <FormattedMessage
+                                  id="ticketBuy-connect"
+                                  defaultMessage="CONNECT"
+                                /> 
+                          }</p>
                           <span className="BorderTopBottom-Tickets "></span>
                           <span className="BorderLeftRight-Tickets "></span>
                       </div>
@@ -558,10 +584,20 @@ const TiketBuyPage = () => {
 
           <div className="text-tickets">
             <div className="titleTicket">
-                <h2>LADDER TICKETS </h2>
+                <h2>
+                  <FormattedMessage
+                      id="ticketBuy-title"
+                      defaultMessage="LADDER TICKETS "
+                    /> 
+                </h2>
             </div>
             <div className="textoTicket">
-                <p> Everything you need is here. Let's build your way to the top!  </p>
+                <p>
+                  <FormattedMessage
+                      id="ticketBuy-texto"
+                      defaultMessage="Everything you need is here. Let's build your way to the top!"
+                    /> 
+                </p>
             </div>
         
         
@@ -569,7 +605,15 @@ const TiketBuyPage = () => {
           {/* boton de connectar wallet */}
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
               <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
-                <p className='select-Connect' >{connected? truncateEthAddress(account[0]) : "Connect Wallet"}</p>
+                <p className='select-Connect' >
+                  {connected? 
+                    truncateEthAddress(account[0]) 
+                    : 
+                    <FormattedMessage
+                      id="ticketBuy-connectWallet"
+                      defaultMessage="CONNECT WALLET"
+                    /> }
+                </p>
                 {connected ? <input type="text" className="copyWallet" id='copyWallet' ></input> : null}
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>

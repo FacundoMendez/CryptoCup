@@ -3,7 +3,7 @@ import "./nfts.css"
 import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
 import effectPool from './effectPool'
-
+import {FormattedMessage} from 'react-intl';
 
 const Nfts = () => {
 
@@ -17,7 +17,12 @@ const Nfts = () => {
     <div className="containerNfts">
 
         <div className="titleNfts">
-            <h2>Competition Rewards</h2>
+            <h2>
+                <FormattedMessage
+                  id="nfts-title"
+                  defaultMessage="Competition Rewards"
+                />
+            </h2>
         </div>
 
         <div className="boxPricePool">
@@ -47,11 +52,19 @@ const Nfts = () => {
         </div>
 
 
-        <h2 className='subtitleNftWinners'>Winners NFT's</h2>
+        <h2 className='subtitleNftWinners'> 
+          <FormattedMessage
+            id="nfts-prizePoolTitle"
+            defaultMessage="Winners NFT's"
+          />
+        </h2>
 
         <div className="textNfts">
             <p className='textCardsNft'>
-              We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge.    
+              <FormattedMessage
+                id="nfts-prizePooltext"
+                defaultMessage="We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge."
+              />    
             </p>
         </div>
 
@@ -59,11 +72,21 @@ const Nfts = () => {
           <div className="container">
             <div className="container_card ">
                 <video className='videoCopaBasic' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656633/CryptocupQatar/nft/prizepoolBasicVideo_yfb6dh.mp4"/* {videoCopaBasic} */ autoPlay loop muted type="video/mp4" ></video> 
-                <p className='basicTextVideo'>BASIC LADDER</p>
+                <p className='basicTextVideo'>
+                  <FormattedMessage
+                    id="nfts-prizePoolBasicCopa"
+                    defaultMessage="BASIC LADDER"
+                  />
+                </p>
             </div>  
             <div className="container_card"> 
                 <video className='videoCopaBoost' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656629/CryptocupQatar/nft/prizepoolBoostVideo_u4maa7.mp4"/* {videoCopaBoost} */  autoPlay loop muted type="video/mp4" ></video> 
-                <p className='boostTextVideo'>BOOST LADDER</p>
+                <p className='boostTextVideo'>
+                  <FormattedMessage
+                    id="nfts-prizePoolBoostCopa"
+                    defaultMessage="BOOST LADDER"
+                  />
+                </p>
             </div> 
           </div>
         </div>

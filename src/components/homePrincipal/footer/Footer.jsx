@@ -6,6 +6,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { faDiscord } from "@fortawesome/free-brands-svg-icons"
 import { faYoutube } from "@fortawesome/free-brands-svg-icons"
+import {FormattedMessage} from 'react-intl';
 
 const Footer = () => {
   return (
@@ -15,7 +16,12 @@ const Footer = () => {
 
         <div className="boxFooter">
             <div className="logoFooter">
-                <p className='titleSocialFooter'>Our Social Networks</p>
+                <p className='titleSocialFooter'>
+                    <FormattedMessage
+                        id="footer-social"
+                        defaultMessage="Our Social Networks"
+                    />
+                </p>
                 <div className="socialFooter">
                     <a href="https://twitter.com/CryptoCupQatar" target="_blank" rel="noopener noreferrer" aria-label='twitter red social'><i className="twitterSocialFooter"> <FontAwesomeIcon icon={faTwitter}  />  </i>   </a>
                     <a href="https://www.instagram.com/cryptocupqatar/" target="_blank" rel="noopener noreferrer" aria-label='instagram red social'><i className="instagramSocialFooter"> <FontAwesomeIcon icon={faInstagram} /> </i>    </a>
@@ -27,8 +33,20 @@ const Footer = () => {
             </div>
 
             <div className="emailContac">
-                <p className='titleContact' >Contact</p>
-                <a href="mailto:cryptocup2022@gmail.com"><p className='email' >Cryptocup2022@gmail.com </p></a> 
+                <p className='titleContact' >
+                    <FormattedMessage
+                        id="footer-contact"
+                        defaultMessage="Contact"
+                    />
+                </p>
+                <a href="mailto:cryptocup2022@gmail.com">
+                    <p className='email' >
+                        <FormattedMessage
+                            id="footer-email"
+                            defaultMessage="Cryptocup2022@gmail.com "
+                        />
+                    </p>
+                </a> 
             </div>
 
 
@@ -39,7 +57,10 @@ const Footer = () => {
                     <ul>
                         <li>
                             <a href="/TermsAndConditions" >
-                                • Terms and Conditions
+                                <FormattedMessage
+                                    id="footer-tyc"
+                                    defaultMessage="• Terms and Conditions"
+                                />
                             </a>
                         </li>
                     </ul>

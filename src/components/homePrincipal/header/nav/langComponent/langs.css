@@ -1,0 +1,155 @@
+.boxIdiomas{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 8rem;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineLangButton{
+    position: absolute;
+    left: 10rem;
+    margin-top: -.5rem;
+    transform: rotate(-120deg);
+    width: 10.5rem;
+    height: .2rem;
+    border-radius: 20px;
+    background-color:#fffffff5;
+    border: 1.5px solid rgb(152, 150, 255);
+    filter: drop-shadow(0 0 4px #7119ffe1) opacity(.8);
+}
+
+.idiomasContainer{
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgb(216, 199, 255);
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    text-align:center;
+}
+
+.bandera{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.radioIdiomas{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 17rem;
+    position: absolute;
+    top: 6.01rem;
+    left: -3.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.radioIdiomas_active{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+
+
+.idiomaSelect{
+    margin-left: 4rem;
+    top: .7rem;
+    width: 5rem;
+    position: absolute;
+    font-family: qatar;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+    
+}
+
+.boxEnglish , .boxEspañol {
+    border: 2px solid rgba(202, 156, 255, 0.712);
+    width: 17rem;
+    background: rgba(98, 0, 255, 0.1);
+    backdrop-filter: blur(1rem);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.imgBoxEN{
+    background-image: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(60%) opacity(.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.imgBoxES{
+    background-image: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(50%) opacity(.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.imgBoxEN:hover{
+    background-image: url("./src/banderaVintageEN.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(60%) opacity(.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    z-index: 2;
+    transition: all .5s ease-in-out;
+}
+
+.imgBoxES:hover{
+    background-image: url("./src/banderaVintageES.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(50%) opacity(.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    z-index: 2;
+    transition: all .5s ease-in-out;
+}
+
+
+.boxEnglish:active , .boxEspañol:active{
+    background: rgba(149, 66, 243, 0.1);
+    backdrop-filter: blur(1rem);
+}
+
+
+.boxEnglish p, .boxEspañol p{
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+}

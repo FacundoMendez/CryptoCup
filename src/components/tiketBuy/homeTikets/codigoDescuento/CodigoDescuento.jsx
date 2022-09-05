@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy} from '@fortawesome/free-solid-svg-icons'
 import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
-
+import {FormattedMessage} from 'react-intl';
 
 const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento , checkRefCodeValid /*, codigoPropio , codigoIncorrecto */}) => {
 
@@ -29,7 +29,20 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             </p>
             <div className="containerCopy">
                 <div className="triangle"></div>
-                {submitCodigoDescuento ? <p className='text2Copy'>Click to copy your invitation link into clipboard!</p> : <p className='text1Copy'>Buy your Ticket and get your Referral Code!</p>}
+                {submitCodigoDescuento ? 
+                    <p className='text2Copy'>
+                        <FormattedMessage
+                            id="ticketBuy-hoverCopy"
+                            defaultMessage=" Click to copy your invitation link into clipboard!"
+                        />
+                    </p> 
+                    : 
+                    <p className='text1Copy'>
+                        <FormattedMessage
+                            id="ticketBuy-hoverCopy2"
+                            defaultMessage="Buy your Ticket and get your Referral Code!"
+                        />
+                    </p>}
             </div>
         </div>
         

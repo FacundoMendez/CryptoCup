@@ -1,7 +1,7 @@
 import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import homeScroll from './homeScroll'
-
+import {FormattedMessage} from 'react-intl';
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
 
 const Button = lazy(() => import ("../../buttons/Button"))
@@ -24,8 +24,11 @@ const Home = () => {
 
         <div className='textPrincipalHome'>
           <div className="tite-home">
-              <h1 className='titlePrincipal'> CRYPTO CUP <br />
-                TOURNAMENT
+              <h1 className='titlePrincipal'>
+                <FormattedMessage
+                    id="home-title"
+                    defaultMessage="CRYPTO CUP TOURNAMENT" 
+                />
               </h1>
               
               <div className="buttonsHome">
@@ -35,7 +38,12 @@ const Home = () => {
                 </a>
                 <div className=" wrapperBottonPresale">
                   <div className="btnPresale">
-                    <p> Presale </p>
+                    <p>       
+                      <FormattedMessage
+                          id="home-presale"
+                          defaultMessage="Presale" 
+                      />
+                  </p>
                     <span className=" BorderTopBottomPresale"></span>
                     <span className=" BorderBottomPresale"></span>
                     <span className=" BorderLeftRightPresale"></span>

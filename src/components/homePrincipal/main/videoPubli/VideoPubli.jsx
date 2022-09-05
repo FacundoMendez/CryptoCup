@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import "./videoStyle.css"
 import VideoPubliFuncional from './videoPubliFuncional'
+import {FormattedMessage} from 'react-intl';
 
 const VideoPubli = () => {
     useEffect(() => {
@@ -9,7 +10,12 @@ const VideoPubli = () => {
   return (
     <div className="videoPubli-container">
         <div className="videoPubli-texts">
-            <h2>WATCH THE TRAILER</h2>
+            <h2>
+                <FormattedMessage
+                    id="trailer-title"
+                    defaultMessage="WATCH THE TRAILER"
+                  />
+              </h2>
         </div>
     
         <iframe className='videoPubli-video' src="https://www.youtube-nocookie.com/embed/rAYY7XTOP-U" title="Crypto Cup Qatar" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
