@@ -45,7 +45,7 @@ function NavHeader() {
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="tickets"  className="nav-menu-link nav-link"> 
+                        <a href="/Tickets"  className="nav-menu-link nav-link"> 
                             <FormattedMessage
                                 id="nav-tickets"
                                 defaultMessage="Tickets"

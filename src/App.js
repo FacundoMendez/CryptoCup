@@ -37,10 +37,10 @@ function App() {
       }} >
 
       <Routes >
-          <Route   path="/"                    element={ <Suspense fallback={<Spinner />}>  <HomePrincipal />   </Suspense>}  /> 
-          <Route   path='/tickets'             element={ <Suspense fallback={<Spinner />}>  <TiketBuyPage />    </Suspense>}  /> 
-          <Route   path='/TermsAndConditions'  element={ <Suspense fallback={<Spinner />}>  <PrivacyPolicy />   </Suspense>}  />
-          <Route   path='*'                    element={ <Suspense fallback={<Spinner />}>  <Error404 />        </Suspense>}  />
+          <Route exact path="/"                    element={ <Suspense fallback={<Spinner />}>  <HomePrincipal />   </Suspense>}  /> 
+          <Route exact path='/Tickets'             element={ <Suspense fallback={<Spinner />}>  <TiketBuyPage />    </Suspense>}  /> 
+          <Route exact path='/TermsAndConditions'  element={ <Suspense fallback={<Spinner />}>  <PrivacyPolicy />   </Suspense>}  />
+          <Route exact path='*'                    element={ <Suspense fallback={<Spinner />}>  <Error404 />        </Suspense>}  />
       </Routes>
 
     </Context.Provider>

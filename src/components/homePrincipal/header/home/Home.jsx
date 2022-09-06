@@ -32,9 +32,8 @@ const Home = () => {
               </h1>
               
               <div className="buttonsHome">
-                <a href="tickets">
-                  <Button title="BUY TICKETS"/>
-                  
+                <a href="/Tickets">
+                  <Button title="BUY TICKETS"/>          
                 </a>
                 <div className=" wrapperBottonPresale">
                   <div className="btnPresale">
