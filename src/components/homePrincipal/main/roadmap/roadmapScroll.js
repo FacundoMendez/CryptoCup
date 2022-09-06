@@ -23,6 +23,7 @@ const roadmapScroll = () =>{
 
       gsap.from(".t1",{
         opacity:0,
+        duration:.2,
         scrollTrigger:{
           trigger: ".containerTitle_roadmap",
           start: "top center",
@@ -32,6 +33,7 @@ const roadmapScroll = () =>{
 
       gsap.from(".t2",{
         opacity:0,
+        duration:.2,
         scrollTrigger:{
           trigger: ".t1",
           start: "top end",
@@ -42,6 +44,7 @@ const roadmapScroll = () =>{
 
       gsap.from(".t3",{
         opacity:0,
+        duration:.2,
         scrollTrigger:{
           trigger: ".t2",
           start: "top end",
@@ -52,6 +55,7 @@ const roadmapScroll = () =>{
 
       gsap.from(".t4",{
         opacity:0,
+        duration:.2,
         scrollTrigger:{
           trigger: ".t3",
           start: "top end",
@@ -62,6 +66,7 @@ const roadmapScroll = () =>{
       
       gsap.from(".t5",{
         opacity:0,
+        duration:.2,
         scrollTrigger:{
           trigger: ".t4",
           start: "top end",
