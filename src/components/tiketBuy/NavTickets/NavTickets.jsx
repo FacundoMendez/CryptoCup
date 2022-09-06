@@ -42,7 +42,7 @@ function NavTicket() {
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/tickets"  className="nav-menu-link nav-link"> 
+                        <a href="tickets"  className="nav-menu-link nav-link"> 
                             <FormattedMessage
                                 id="nav-tickets"
                                 defaultMessage="Tickets"

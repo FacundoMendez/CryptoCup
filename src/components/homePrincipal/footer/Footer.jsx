@@ -56,7 +56,7 @@ const Footer = () => {
                 <div className='listTerms'>
                     <ul>
                         <li>
-                            <a href="/TermsAndConditions" >
+                            <a href="TermsAndConditions" >
                                 <FormattedMessage
                                     id="footer-tyc"
                                     defaultMessage="• Terms and Conditions"
