@@ -2,8 +2,7 @@ import React,{useEffect, useState , useContext} from 'react'
 import langsFuncional from './langsFuncional'
 import "./langs.css"
 import { LangContext } from '../../../../context/LangContext'
-import flagES from "./src/langES.png"
-import flagEN from "./src/langEN.png"
+
 
 const Langs = () => {
 
@@ -14,7 +13,7 @@ const Langs = () => {
     },[])
     const [idioma, setIdioma] = useState("EN")
 
-    const [bandera, setBandera] = useState(flagEN)
+    const [bandera, setBandera] = useState("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.webp")
 
 
   return (
@@ -27,7 +26,7 @@ const Langs = () => {
                 <div className="boxEnglish boxIdioma" onClick={() => {
                         setIdioma("EN")
                         contextIdioma.establecerLenguaje("enLang")
-                        setBandera(flagEN)
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.webp")
                     }}>
                     <p>English  •  EN</p>
                     <div className="imgBoxEN"></div>
@@ -35,7 +34,7 @@ const Langs = () => {
                 <div className="boxEspañol boxIdioma" onClick={() => {
                         setIdioma("ES")
                         contextIdioma.establecerLenguaje("esLang")
-                        setBandera(flagES)
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langES_hccmqo.webp")
                     }} >
                     <p>Español  •  ES</p>
                     <div className="imgBoxES"></div>

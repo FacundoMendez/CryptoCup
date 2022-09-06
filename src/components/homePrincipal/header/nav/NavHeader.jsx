@@ -114,7 +114,7 @@ function NavHeader() {
                         <p className='comingDapp'>
                             <FormattedMessage
                                 id="nav-comingSoon"
-                                defaultMessage="comingSoon"
+                                defaultMessage="coming Soon"
                             />
 
                         </p>

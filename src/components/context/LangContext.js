@@ -35,7 +35,7 @@ const LangProvider = ({children}) => {
 		switch (lenguaje){
 			case 'EN':
 				establecerMensajes(enLang);
-				establecerLocale('EN');
+				establecerLocale('en');
 				localStorage.setItem('lang', 'en');
 				break;
 			case 'esLang':

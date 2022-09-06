@@ -115,7 +115,7 @@
 }
 
 .imgBoxEN:hover{
-    background-image: url("./src/banderaVintageEN.jpeg");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473870/CryptocupQatar/MultiLang/banderaVintageEN_lacziu.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     filter: opacity(.2);
@@ -129,7 +129,7 @@
 }
 
 .imgBoxES:hover{
-    background-image: url("./src/banderaVintageES.jpeg");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473870/CryptocupQatar/MultiLang/banderaVintageES_nunuwd.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     filter: grayscale(50%) opacity(.3);
