@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, Suspense} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from '../../homePrincipal/header/nav/navFuncional';
@@ -7,6 +7,7 @@ import navBallModel from '../../homePrincipal/header/nav/modelBall';
 import commingDapp from '../../homePrincipal/header/nav/comingDapp';
 import Langs from '../../homePrincipal/header/nav/langComponent/Langs';
 import {FormattedMessage} from 'react-intl';
+import Spinner from '../../spinner/Spinner';
 
 function NavTicket() {
 
@@ -82,8 +83,9 @@ function NavTicket() {
                    </li>
                 </ul>
 
-
-                <canvas className='navBallModel'></canvas>  
+                <Suspense fallback={<Spinner />}>
+                    <canvas className='navBallModel'></canvas>  
+                </Suspense>
 
                 
 

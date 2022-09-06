@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, Suspense} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import navFuncional from './navFuncional';
@@ -8,6 +8,7 @@ import navOcultar from './navOcultar';
 import commingDapp from './comingDapp';
 import {FormattedMessage} from 'react-intl';
 import Langs from './langComponent/Langs';
+import Spinner from '../../../spinner/Spinner';
 
 
 function NavHeader() {
@@ -84,8 +85,9 @@ function NavHeader() {
                     </li>
                 </ul>
 
-
-                <canvas className='navBallModel'></canvas>  
+                <Suspense fallback={<Spinner />}>
+                    <canvas className='navBallModel'></canvas>  
+                </Suspense>
 
 
                 <ul className='navDerecha'>

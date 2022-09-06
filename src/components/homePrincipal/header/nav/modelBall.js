@@ -7,7 +7,6 @@ import ballModel from "./src/models/PelotaGod.glb"
 const navBallModel = () => {
 
         const scene = new THREE.Scene()
-
         const canvas = document.querySelector(".navBallModel")
 
 

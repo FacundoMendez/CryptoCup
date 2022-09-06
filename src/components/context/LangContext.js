@@ -1,4 +1,4 @@
-import React, {useState, createContext, useEffect} from "react";
+import React, {useState, createContext} from "react";
 import {IntlProvider } from 'react-intl';
 import enLang from "../lang/EN/enLang.json"
 import esLang from "../lang/ES/esLang.json"
@@ -15,20 +15,18 @@ const LangProvider = ({children}) => {
 	const [locale, establecerLocale] = useState(localePorDefecto);
 
 
-	useEffect(() => {
-		if(lang){
-			localePorDefecto = lang
-	
-			if(lang === 'EN'){
-				mensajesPorDefecto = enLang;
-			} else if(lang === 'ES'){
-				mensajesPorDefecto = esLang
-			} else {
-				localePorDefecto = 'en'
-				mensajesPorDefecto = enLang
-			}
+	if(lang){
+		localePorDefecto = lang
+
+		if(lang === 'EN'){
+			mensajesPorDefecto = enLang;
+		} else if(lang === 'ES'){
+			mensajesPorDefecto = esLang
+		} else {
+			localePorDefecto = 'en'
+			mensajesPorDefecto = enLang
 		}
-	},[])
+	}
 
 
     const establecerLenguaje = (lenguaje) => {

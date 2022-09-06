@@ -13,6 +13,7 @@
     width: 100%;
     text-align: center;
     transform: scale(1);
+    background-color: transparent;
 }
 
 .navBlur{

@@ -14,9 +14,8 @@ const timerFuncional = () => {
             today = mm + "/" + dd + "/" + yyyy;
 
         //end
-        
         const countDown = new Date(qatar).getTime(),
-            x = setInterval(function() {    
+           x = setInterval(function() {    
       
               const now = new Date().getTime(),
                     distance = countDown - now;
