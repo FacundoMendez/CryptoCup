@@ -579,21 +579,17 @@
         margin: 5rem 0;
         padding-top: 10rem;
     }
-
-
     
     .subtitleNftWinners{
         font-size: 4.5rem;
         padding-top:6rem;
     }
     
-    
     .subtitleNftPricePool{
         font-size:5.6rem;
         letter-spacing: 3px;
         padding-top:15rem;
     }
-
     
     .divisionPrizePool {
         position: absolute;
@@ -690,16 +686,16 @@
     }
 
     .container_card {
-        padding-top: 12rem;
+        padding-top: 14rem;
     }
 
 
     .fondoRock {
         position: absolute;
         width: 100%;
-        height: 55%;
-        top: 50%;
-        left: 49%;
+        height: 50%;
+        top: 25%;
+        left: 0%;
         transform: translate(-50%, -50%);
         opacity: .5;
     }
@@ -707,15 +703,22 @@
     .rockIz {
         display: inline-block;
         width: 24rem;
-        left: 3%;
-        top: 14%;
+        left: 0%;
+        top: 0%;
         z-index: -1;
     }
     .rockDer {
         display: inline-block;
         width: 24rem;
-        right: 0%;
-        top: 85%;
+        right: -5%;
+        top: 79%;
+    }
+
+    .imgNftBasic, .imgNftBoost {
+        width: 45rem;
+        height: 49rem;
+        z-index: 900;
+        margin-left: 1rem;
     }
 
     .textNfts{
@@ -770,6 +773,11 @@
         font-size:3.2rem;
         letter-spacing: 3px;
         padding-top:5rem;
+    }
+
+    .container {
+        padding-bottom: 25rem;
+        gap: 0rem;
     }
 }
 
