@@ -158,14 +158,13 @@
     margin: 10rem 0;
     display: flex;
     justify-content: center;
-/*     filter: drop-shadow(2px -8px 15px rgba(255, 209, 150, 0.075)) ; */
 }
 
 .imgNftBasic, .imgNftBoost{
     width: 43rem;
     height: 50rem;
     z-index: 900;
-    filter: drop-shadow(0 0 20px rgba(101, 8, 177, 0.103)) contrast(110%) brightness(106%);
+    filter: drop-shadow(0 0 20px rgba(101, 8, 177, 0.164)) contrast(110%) brightness(106%);
 }
 .imgNftBasic{
     animation: float 7.5s ease-in-out infinite;
@@ -187,6 +186,18 @@
     z-index: 1000;
     animation: float2 7s ease-in-out infinite;
 }
+
+/* .rocaGrandeIzquierda{
+    position: absolute;
+    width: 15rem;
+    object-fit: cover;
+    left:7%;
+    top: 5%;
+    transform: translate(-0%, -50%) ;
+    filter: contrast(110%) brightness(105%) drop-shadow(5px 0 10px rgba(225, 180, 255, 0.363));
+    z-index: 1000;
+    animation: float2 7s ease-in-out infinite;
+} */
 
 .rockDer{
     position: absolute;
@@ -217,6 +228,7 @@
     top: 18%;
     left: 18%;
     transform: translate(-50%, -50%);
+    filter: drop-shadow(0px 0px 10px rgba(195, 150, 255, 0.568)) ;
     animation: float2 6s ease-in-out infinite;
 }
 
