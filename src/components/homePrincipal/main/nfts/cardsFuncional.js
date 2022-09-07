@@ -20,11 +20,6 @@ const cardsFuncional = () => {
         });
 
 
-        VanillaTilt.init(document.querySelectorAll(".container_card"), {
-            max: 3,
-            speed: 700,
-        });
-
 /*     } */
     
 }

@@ -50,46 +50,25 @@ const nftScroll= ()=>{
         })
 
 
-        tl_nftsCopas.from(".container_card",{
-            opacity:0,
-            duration:1,
-            y: 100,
-        })
+ 
 
-        gsap.from(".rockIz",{
-            duration:2,
+        tl_nftsCopas.from(".rockgrande",{
             opacity:0,
+            y: -100,
             scale:2,
-            scrollTrigger:{
-                trigger: ".tiposTorneos",
-                start: "top 10%",
-                end: "bottom bottom",
-            }
         })
 
-        gsap.from(".rockDer",{
-            opacity:0,
-            duration:2,
-            scale:2,
-            scrollTrigger:{
-                trigger: ".tiposTorneos",
-                start: "top 10%",
-                end: "bottom bottom",
-            }
-        })
 
-        gsap.from(".fondoRock",{
+        tl_nftsCopas.from(".fondoRock",{
             opacity:0,
-            duration:2,
-            scale:0,
-            scrollTrigger:{
-                trigger: ".tiposTorneos",
-                start: "top 10%",
-                end: "bottom bottom",
-            }
+            scale:10,
         })
         
-     
+        tl_nftsCopas.from(".container_card",{
+            opacity:0,
+            duration:1.5,
+            y: 100,
+        })
         
 
     }
