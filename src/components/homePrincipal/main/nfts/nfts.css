@@ -92,7 +92,8 @@
 .subtitleNftWinners{
     font-weight: 300;
     font-size: 7rem;
-    padding-top:2rem;
+    padding-top:-4rem;
+    padding-bottom: 1rem;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

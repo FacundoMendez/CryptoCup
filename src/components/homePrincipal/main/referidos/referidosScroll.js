@@ -55,7 +55,7 @@ const referidosScroll = () =>{
             trigger: ".containerReferidos",
             start: "top 10%",
             end:"100%",
-            pin: true,
+            /* pin: true, */
             onEnter : animateRefers , 
             scrub: 4,
             invalidateOnRefresh: true,
