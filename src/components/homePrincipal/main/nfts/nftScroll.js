@@ -49,16 +49,12 @@ const nftScroll= ()=>{
             opacity:0,
         })
 
-
  
 
         tl_nftsCopas.from(".rockgrande",{
             opacity:0,
-            y: 100,
-            scale:1.5,
+            top: 200,
         })
-
-
 
         
         tl_nftsCopas.from(".container_card",{
@@ -69,7 +65,8 @@ const nftScroll= ()=>{
         
         tl_nftsCopas.from(".fondoRock",{
             opacity:0,
-            scale:1.5,
+            scale:.1,
+            top: 200,
         })
     }
 }
