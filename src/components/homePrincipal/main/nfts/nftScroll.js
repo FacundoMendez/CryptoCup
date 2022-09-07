@@ -62,7 +62,7 @@ const nftScroll= ()=>{
             scale:2,
             scrollTrigger:{
                 trigger: ".tiposTorneos",
-                start: "top top",
+                start: "top 10%",
                 end: "bottom bottom",
             }
         })
@@ -73,7 +73,7 @@ const nftScroll= ()=>{
             scale:2,
             scrollTrigger:{
                 trigger: ".tiposTorneos",
-                start: "top top",
+                start: "top 10%",
                 end: "bottom bottom",
             }
         })
@@ -84,7 +84,7 @@ const nftScroll= ()=>{
             scale:0,
             scrollTrigger:{
                 trigger: ".tiposTorneos",
-                start: "top top",
+                start: "top 10%",
                 end: "bottom bottom",
             }
         })
