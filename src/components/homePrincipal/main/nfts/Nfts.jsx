@@ -69,30 +69,24 @@ const Nfts = () => {
         </div>
 
         <div className="tiposTorneos">   
+          <img className='rockIz' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1662509449/CryptocupQatar/nft/nftsScene/RocasFlotantesIzquierdaConPiedraGrande_czfvtz.png" alt="rocaGrandeIZ" />
+          <img className='fondoRock' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662514123/CryptocupQatar/nft/nftsScene/RocasFondo_lyg4v4.png" alt="background rocas" />
+
           <div className="container">
             <div className="container_card ">
-                <video className='videoCopaBasic' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656633/CryptocupQatar/nft/prizepoolBasicVideo_yfb6dh.mp4"/* {videoCopaBasic} */ autoPlay loop muted type="video/mp4" ></video> 
-                <p className='basicTextVideo'>
-                  <FormattedMessage
-                    id="nfts-prizePoolBasicCopa"
-                    defaultMessage="BASIC LADDER"
-                  />
-                </p>
+                <img className='imgNftBasic' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:best/v1662509449/CryptocupQatar/nft/nftsScene/IslaFlotanteBasicCup_dh2wte.png" alt="nft basic" />
             </div>  
             <div className="container_card"> 
-                <video className='videoCopaBoost' src= "https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:eco/v1660656629/CryptocupQatar/nft/prizepoolBoostVideo_u4maa7.mp4"/* {videoCopaBoost} */  autoPlay loop muted type="video/mp4" ></video> 
-                <p className='boostTextVideo'>
-                  <FormattedMessage
-                    id="nfts-prizePoolBoostCopa"
-                    defaultMessage="BOOST LADDER"
-                  />
-                </p>
+              <img className='imgNftBoost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:best/v1662509449/CryptocupQatar/nft/nftsScene/IslaFlotanteBoostCup_oypdra.png" alt="nft boost" />
             </div> 
           </div>
+          
+          <img className='rockDer' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1662509449/CryptocupQatar/nft/nftsScene/RocasFlotantesDerechaConPiedraGrande_zjtw65.png" alt="rocaGrandeDr" />
         </div>
  
+
         <div className="divisionPrizePool-bottom">
-              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp"/* {division} */ alt="Division container" />
+              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp" alt="Division container" />
         </div>
     </div>
 

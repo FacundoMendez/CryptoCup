@@ -2,11 +2,11 @@ import VanillaTilt from "vanilla-tilt";
 
 const cardsFuncional = () => {
 
-    function isMobile() {
+/*     function isMobile() {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    }
+    } */
 
-    if (!isMobile()) {
+ /*    if (!isMobile()) { */
         VanillaTilt.init(document.querySelectorAll(".tiketImg-basic"), {
             max: 25,
             speed: 1000,
@@ -21,20 +21,11 @@ const cardsFuncional = () => {
 
 
         VanillaTilt.init(document.querySelectorAll(".container_card"), {
-            max: 25,
-            speed: 1000,
-            glare:true,
-            "max-glare":.2,
+            max: 3,
+            speed: 700,
         });
 
-/*         VanillaTilt.init(document.querySelectorAll(".textRoadamp"), {
-            max: 25,
-            speed: 1000,
-            "max-glare":1,
-        });
- */
-
-    }
+/*     } */
     
 }
 

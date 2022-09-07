@@ -14,7 +14,6 @@ const Referidos = () => {
   return (
         <div className='containerReferidos'>
 
-
                 <img className="backReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_43/v1660657089/CryptocupQatar/referidos/backReferidos_ifrq6n.webp"  /* {backReferidos} */ alt="background referidos" />
                 
                 <div className="cortinaTop">

@@ -20,14 +20,14 @@ const referidosScroll = () =>{
         const animateRefers = () => {
             gsap.to(".cortinaTop",{
                 y: "-94.5%",
-                duration:4,
-                delay:.5,
+                duration:3.5,
+                delay:.2,
             })
         
             gsap.to(".cortinaBottom",{
                 y: "94.5%",
-                duration:4,
-                delay:.5,
+                duration:3.5,
+                delay:.2,
             })
 
             gsap.to(".boxReferidos_t",{
