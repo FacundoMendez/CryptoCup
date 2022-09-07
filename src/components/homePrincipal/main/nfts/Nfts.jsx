@@ -69,7 +69,6 @@ const Nfts = () => {
 
         <div className="tiposTorneos">   
           <img className='rockIz rockgrande' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1662509449/CryptocupQatar/nft/nftsScene/RocasFlotantesIzquierdaConPiedraGrande_czfvtz.png" alt="rocaGrandeIZ" />
-{/*           <img className='rocaGrandeIzquierda' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/v1662509448/CryptocupQatar/nft/nftsScene/RocaFlotanteGrandeDerecha_rnw8f0.png" alt="rocaGrandeIzquierda" /> */}
           
           <img className='fondoRock' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662514123/CryptocupQatar/nft/nftsScene/RocasFondo_lyg4v4.png" alt="background rocas" />
 

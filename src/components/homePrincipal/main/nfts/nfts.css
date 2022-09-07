@@ -187,17 +187,6 @@
     animation: float2 7s ease-in-out infinite;
 }
 
-/* .rocaGrandeIzquierda{
-    position: absolute;
-    width: 15rem;
-    object-fit: cover;
-    left:7%;
-    top: 5%;
-    transform: translate(-0%, -50%) ;
-    filter: contrast(110%) brightness(105%) drop-shadow(5px 0 10px rgba(225, 180, 255, 0.363));
-    z-index: 1000;
-    animation: float2 7s ease-in-out infinite;
-} */
 
 .rockDer{
     position: absolute;
@@ -256,6 +245,7 @@
 		transform: translatey(0px);
 	}
 }
+
 
 
 /* pricePOOL */
