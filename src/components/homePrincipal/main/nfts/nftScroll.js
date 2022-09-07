@@ -57,8 +57,6 @@ const nftScroll= ()=>{
         })
 
         gsap.from(".rockIz",{
-            yPercent:150,
-            xPercent:150,
             duration:2,
             opacity:0,
             scale:2,
@@ -73,8 +71,6 @@ const nftScroll= ()=>{
             opacity:0,
             duration:2,
             scale:2,
-            yPercent:150,
-            xPercent:-150,
             scrollTrigger:{
                 trigger: ".tiposTorneos",
                 start: "top top",
