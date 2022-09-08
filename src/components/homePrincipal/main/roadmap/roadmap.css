@@ -114,8 +114,6 @@
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: inherit;
-
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
@@ -184,7 +182,6 @@
   
   .lineaTiempo ul li:nth-child(even) div {
     left: -439px;
-    
   }
   
   .lineaTiempo ul li:nth-child(even) div::before {
@@ -192,7 +189,6 @@
     border-width: 8px 0 8px 16px;
     border-color: transparent  transparent transparent hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(1rem);
-
   }
   
   .qName  {
@@ -210,7 +206,6 @@
     letter-spacing: 1px;
     filter: drop-shadow(0 0 40px black);
     font-family: qatarHeavy;
-
   }
   
   .inilineaTiempo{
@@ -235,36 +230,6 @@
   /* EFFECTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
-  .lineaTiempo ul li::after {
-    transition: background 0.5s ease-in-out;
-  }
-  
-  .lineaTiempo ul li.in-view::after {
-    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
-    background-color:#fffffff5;
-    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
-    border: 2px solid rgb(152, 150, 255);
-    border-radius: 100%;
-    backdrop-filter: blur(1rem);
-    filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
-    
-  }
-
-  .textRoadamp:hover{
-    filter: drop-shadow(0px 0px 15px rgba(108, 3, 168, 0.637));
-    transition: all 220ms ease-in-out;
-}
-  
-  
-  .lineaTiempo ul li div {
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s ease-in-out;
-
-  }
   
   .lineaTiempo ul li:nth-child(odd) div {
     transform: translate3d(50px, 0, 0);
@@ -433,9 +398,7 @@
         align-items: flex-start;
         flex-direction: column;
         margin-left: -34rem;
-
     }
-
 
   }
 
@@ -476,7 +439,6 @@
         align-items: flex-start;
         flex-direction: column;
         margin-left: -31rem;
-
     }
 
     .containerTitle_roadmap h1{

@@ -12,8 +12,6 @@
     flex-direction: row;
     z-index: 999999 !important;
     padding: 10rem 0;
-
-/*     padding-top: 5rem ; */
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660661016/CryptocupQatar/footer/Footer3_hxey1j.webp");
     background-size: cover;
     background-attachment: fixed;
@@ -45,19 +43,16 @@
     z-index: 10;
 }
 
-
-
-
 /* circulo movimiento */
 
 
 .circuloMovimiento{
     position: relative;
     margin: 0 auto;
-    height: 41rem;
-    width: 41rem;
-    padding: 5rem 0;
-    margin-bottom: 5rem;
+    height: 44rem;
+    width: 44rem;
+    padding: 4rem 0;
+    margin-bottom: 4rem;
     z-index: 10;
 }
 
@@ -71,10 +66,10 @@
 }
 
 .circuloMovimiento:before {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
     border-top-color: #be8cff;
     border-right-color: #be8cff;
     box-shadow: 0 0 1px #903cff09, 0 0 10px #c79cff5b, 0 0 45px #9678ff6e;
@@ -113,22 +108,40 @@
 /*contact*/
 
 
-
-
-
 .emailContac{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     gap:1rem;
 }
 
 .emailContac a{
     text-decoration: none;
+    display: flex;
 }
 
+.titleContact{
+    color: rgb(216, 216, 216);
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    z-index: 11;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: gilronMedium;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 
+}
 
 /* social */
 
@@ -145,7 +158,6 @@
     transform: translate(-50%, -50%);
     z-index: 20;
     width: 80%;
-
 }    
 
 .socialFooter i{
@@ -185,7 +197,6 @@
 
 /* tyc */
 
-
 .boxBottomFotter{
     display: flex;
     justify-content: center;
@@ -193,15 +204,17 @@
     flex-direction: row-reverse;
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 2rem;
     padding: 0 3rem;
 }
-
 
 .terms{
     position: relative;
     width: 100%;
 }
+
+
+
 
 .terms ul{
     list-style: none;
@@ -216,8 +229,6 @@
     text-align: center;
 }
 
-
-
 .listTerms a:hover{
     color: rgb(255, 181, 131);
    transition: all .5s ease-in-out;
@@ -230,19 +241,20 @@
 
 /* legal */
 
-.termsAndCond, .titleFotter, .listTerms a , .email , .titleContact{
+.termsAndCond,.termsAndCond a, .titleFotter, .listTerms a , .email {
     color: rgb(216, 216, 216);
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
+    text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     padding-top: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     z-index: 11;
     width: 100%;
     -webkit-background-clip: text;
     background-clip: text;
-    font-family: qatar;
+    font-family: gilronMedium;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
@@ -250,41 +262,30 @@
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
 }
 
+@media screen and (max-width: 1050px) {
 
-@media screen and (max-width: 1100px) {
-
-
-    .footer{
-        position: relative;
-        bottom: 0;
-        width: 100%;
-        background-color: rgb(5, 5, 5);
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        gap: 5rem;
+    .boxBottomFotter{
         flex-wrap: wrap;
-        flex-direction: column;
-        padding: 0rem 0;
     }
 
-
-    .logoFooter{
-        position: relative;
-        left:0%;
-    }
-
-    .boxFooter {
-        gap: 3rem;
-        padding-top: 6rem;
-    }
-
-    .emailContac {
-        position: relative;
-        margin-top: 1rem;
-        margin-bottom: 1.5em;
-    }
     
+    .circuloMovimiento {
+        margin-bottom: 10rem;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .circuloMovimiento {
+        margin-bottom: 13rem;
+    }
+
+    .termsAndCond{
+        margin-top: 3rem;
+    }
+
 
 }
 
@@ -297,43 +298,105 @@
     }
 
     .listTerms a{
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
     
     .termsAndCond {
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 
     .logoFooter p, .titleContact {
-        letter-spacing: 1.5px;
+        letter-spacing: 1.7px;
         line-height: 3.3rem;
         padding-bottom: 1rem;
     }
-    
-    .titleContact{
-        padding-bottom: 0rem;
-    }
 
- 
-
-    .boxFooter {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-        flex-wrap: wrap;
-        overflow: hidden;
-        flex-direction: column;
-        width: 100%;
-    }
-
-
-    .titleSocialFooter, .titleContact {
-        font-size: 2.4rem;
-    }
     .email{
         font-size: 1.7rem;
-        padding-top: 1rem;
+    }
+
+
+    .circuloMovimiento {
+        height: 38rem;
+        width: 38rem;
+        margin-bottom: 15rem;
     }
     
+
+    .socialFooter i{
+        gap: 1.4rem;
+        font-size: 3rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        padding: 1.1rem ;
+    }
+
+
+    .socialFooter a{
+        font-size: 1.7rem;
+    }
+
+    
+    .socialFooter {
+        left: 53%;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+
+    .footer{
+        gap: 3rem;
+    }
+
+    .listTerms a{
+        font-size: 1.5rem;
+    }
+    
+    .termsAndCond {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .logoFooter p{
+        letter-spacing: 1.5px;
+        line-height: 3.3rem;
+    }
+
+    .titleContact {
+        font-size: 1.5rem;
+    }
+
+    .email{
+        font-size: 1.5rem;
+    }
+
+
+    .circuloMovimiento {
+        height: 31rem;
+        width: 31rem;
+        margin-bottom: 15rem;
+    }
+    
+
+    .socialFooter i{
+        font-size: 3rem;
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem ;
+    }
+
+    .socialFooter a{
+        font-size: 1.4rem;
+    }
+
+    .socialFooter {
+        gap: .4rem;
+        top: 50%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+
 }
