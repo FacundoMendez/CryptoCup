@@ -2,7 +2,6 @@ import React,{useEffect} from 'react'
 import "./timer.css"
 import timerFuncional from './timerFuncional'
 import {FormattedMessage} from 'react-intl';
-import timerEf from "./src/timerEf.png"
 
 const Timer = () => {
 

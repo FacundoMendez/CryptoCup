@@ -5,12 +5,16 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { faInstagram } from "@fortawesome/free-brands-svg-icons"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { faDiscord } from "@fortawesome/free-brands-svg-icons"
+
 import {FormattedMessage} from 'react-intl';
 
 const Footer = () => {
   return (
     <div className="footer">
         <div className="blurFooter"></div>
+
+        <p className='cryptoLarg'>Crypto</p>
+
         <div className="circuloMovimiento">
             <div className="socialFooter">
                 <a href="https://twitter.com/CryptoCupQatar" target="_blank" rel="noopener noreferrer" aria-label='twitter red social'><i className="twitterSocialFooter"> <FontAwesomeIcon icon={faTwitter}  />  </i> Twitter  </a>
@@ -20,15 +24,14 @@ const Footer = () => {
             </div> 
         </div>
 
-        <div className="boxBottomFotter">
+        <p className='cupLarg'>Cup</p>
+        <img className='pelotaFooter' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662672273/CryptocupQatar/footer/pelota_t0ln2p.png" alt="pelotaCryptoCup" />
 
+        <div className="boxBottomFotter">
 
             <div className="emailContac">
                 <p className='titleContact' >
-                    <FormattedMessage
-                        id="footer-contact"
-                        defaultMessage="Contact:"
-                    />
+                    <img className='iconMsj' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662674635/CryptocupQatar/footer/email_rpdtix.png" alt="email" /> 
                 </p>
                 <a href="mailto:cryptocup2022@gmail.com">
                     <p className='email' >
@@ -44,11 +47,12 @@ const Footer = () => {
             <div className="terms">
                 <div className='listTerms'>
                     <ul>
+                        <div className="romboFooter"></div>
                         <li>
                             <a href="TermsAndConditions" >
                                 <FormattedMessage
                                     id="footer-tyc"
-                                    defaultMessage="• Terms and Conditions"
+                                    defaultMessage="Terms and Conditions"
                                 />
                             </a>
                         </li>
