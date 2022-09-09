@@ -32,7 +32,7 @@ const Home = () => {
               </h1>
               
               <div className="buttonsHome">
-                <a href="/Tickets">
+                <a href="/tickets">
                   <Button title="BUY TICKETS"/>          
                 </a>
                 <div className=" wrapperBottonPresale">

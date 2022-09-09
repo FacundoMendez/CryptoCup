@@ -43,7 +43,7 @@ const TiketsMain = () => {
             <div className="tiketImg-basic" >
               <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.webp" alt="ticket" onClick={() => setTiketClick(true)} />
             </div>
-            <a className='buttonBuyTicketLP_basic' href="/Tickets">
+            <a className='buttonBuyTicketLP_basic' href="/tickets">
               <Button title="Buy Ticket"/>
             </a>
           </div>
@@ -131,7 +131,7 @@ const TiketsMain = () => {
                     <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.webp" alt="ticket" onClick={() => setTiketClick(true)} />
               </div>
           
-              <a className='buttonBuyTicketLP_boost' href="/Tickets">
+              <a className='buttonBuyTicketLP_boost' href="/tickets">
                   <Button title="Buy Ticket"/>
               </a>
           </div>

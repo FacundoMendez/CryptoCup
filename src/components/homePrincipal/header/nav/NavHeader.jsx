@@ -9,6 +9,7 @@ import commingDapp from './comingDapp';
 import {FormattedMessage} from 'react-intl';
 import Langs from './langComponent/Langs';
 import Spinner from '../../../spinner/Spinner';
+import { NavLink } from 'react-router-dom';
 
 
 function NavHeader() {
@@ -45,12 +46,12 @@ function NavHeader() {
                     </li>
           
                     <li className="nav-menu-item">
-                        <a href="/Tickets"  className="nav-menu-link nav-link"> 
+                        <NavLink to="/tickets">
                             <FormattedMessage
                                 id="nav-tickets"
                                 defaultMessage="Tickets"
                             />
-                        </a>
+                        </NavLink>
                     </li>
                     
 

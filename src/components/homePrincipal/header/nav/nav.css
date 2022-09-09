@@ -73,12 +73,16 @@
     width: 80%;
     padding-right: 5rem;
     z-index: 5600;
+    text-decoration: none;
 }
+
+
 
 .nav-menu-item {
     padding: 2rem 2rem;
     position: relative;
     list-style: none;
+    text-decoration: none;
 }
 
 .nav-link {
