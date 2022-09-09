@@ -66,12 +66,12 @@ const TiketsMain = () => {
 
                 <FormattedMessage
                   id="tickets-basicLadderText"
-                  defaultMessage="This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to predict the largest possible number of matches to earn points on this ladder. "
+                  defaultMessage="This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to Forecast, Points given the largest possible number of matches to earn points on this ladder. "
                 />
                 <br /><br />
                 <FormattedMessage
                   id="tickets-basicLadderText2"
-                  defaultMessage="Each match will vary in the points given to the participants, based on the real probabilities on winning/losing of each different team and its adversary."
+                  defaultMessage="Each match will vary in the given points to the participants, based on the real probabilities on winning/losing of each different team and its adversary."
                 />
                 
               </p>
