@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useState, useContext, useEffect} from 'react'
+import React, {lazy, useState, useContext, useEffect} from 'react'
 import { useSearchParams } from "react-router-dom";
 import { ethers } from 'ethers';
 import { contractAddress, abi, tokenAddresses, ERC20Abi, tokenAddress } from './utils'
@@ -604,7 +604,10 @@ const TiketBuyPage = () => {
 
           {/* boton de connectar wallet */}
             <div id="connectWallet" className="wrapperBotton-ticketSale-Connect ">
-              <div className="btn-ticketSale-Connect" onClick={async () => connected? {} : await login()}>
+              <div className="btn-ticketSale-Connect" onClick={async () => connected && context.checkTerminosyCondiciones ? {} : await login()}>
+
+                {/* ACA AGREGAR VALIDACION DEL LOCAL STORAGE */}
+
                 <p className='select-Connect' >
                   {connected? 
                     truncateEthAddress(account[0]) 
@@ -614,6 +617,7 @@ const TiketBuyPage = () => {
                       defaultMessage="CONNECT WALLET"
                     /> }
                 </p>
+
                 {connected ? <input type="text" className="copyWallet" id='copyWallet' ></input> : null}
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
