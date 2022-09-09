@@ -52,13 +52,10 @@ const tiketsScroll = () =>{
         tl_basic.from(".titleTicket-home-basic",{
             opacity:0,
         })
-
-  
         
         tl_basic.from(".textoTicket-home",{
             opacity:0,
         })
-
 
         gsap.from(".tiketImg-basic",{
             opacity:0,
