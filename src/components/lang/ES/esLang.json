@@ -20,7 +20,6 @@
 
 
     "tickets-title":"ABRE TU CAMINO HASTA LA PARTE SUPERIOR DE LOS TORNEOS",
-    "tickets-subTitle":"¿Quieres competir? ¡Consigue tu entrada!",
     "tickets-text":"Para estar disponible y participar, necesitará uno de nuestros boletos NFT. Puede elegir entre 'Boleto de Torneo básico', 'Boleto de Torneo premium' o ambos. Cada boleto te permite jugar el torneo correspondiente y te otorgará acceso al torneo como jugador, ¡así que podrás usar todas las funciones de la dapp!",
     
     "tickets-basicLadderTitle":"TORNEO BASICO",
@@ -33,7 +32,7 @@
     "tickets-boostLadderStar2":"Acceso a Multiplicadores",
     "tickets-boostLadderStar3":"Predicciones avanzadas desbloqueadas",
     "tickets-boostLadderStar4":"Recompensas de la racha de predicción",
-    "tickets-boostLaddertext2":"Pon a prueba tus habilidades en todos los partidos de la copa del mundo, accede a multiplicadores para escalar más rápido, aumenta tus recompensas con nuestro token, accede a rachas ganadoras y más",
+    "tickets-boostLaddertext2":"Pon a prueba tus habilidades en todos los partidos de la copa del mundo accediendo a multiplicadores para escalar más rápido. Aumente sus recompensas con el token CCT, acceda a rachas ganadoras y más",
 
 
     "game-start":"Iniciar",

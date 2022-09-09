@@ -86,7 +86,7 @@ const Nfts = () => {
  
 
         <div className="divisionPrizePool-bottom">
-              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp" alt="Division container" />
+              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.webp" alt="Division container" />
         </div>
     </div>
 

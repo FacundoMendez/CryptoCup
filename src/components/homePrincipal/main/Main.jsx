@@ -18,13 +18,11 @@ const Main = () => {
     <main className='main'>
         <Suspense fallback={<Spinner/>}>
           <Home/>
-        </Suspense>
-        <Suspense fallback={<Spinner/>}>
           <TournamentMain/>
           <TiketsMain />
+          <Nfts /> 
           <PelotaGame />
           <Referidos />
-          <Nfts /> 
           <VideoPubli />
           <TokenMain />
           <Roadmap/>

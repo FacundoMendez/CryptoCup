@@ -30,12 +30,6 @@ const TiketsMain = () => {
                   defaultMessage="GRIND YOUR WAY TO THE TOP OF THE LADDER"
                 />
               </h2>
-              <h3> 
-                <FormattedMessage
-                  id="tickets-subTitle"
-                  defaultMessage="Want to compete? Get your ticket!"
-                />
-              </h3>
             </div>
             <p className='textDescripcionTikets'>
               <FormattedMessage
@@ -125,7 +119,7 @@ const TiketsMain = () => {
                 <p className='text_boost_bottom'>
                   <FormattedMessage
                       id="tickets-boostLaddertext2"
-                      defaultMessage="Test your skills on all matches of the world cup, access multipliers to climb faster, increase your rewards with our token, access winning streaks and more"
+                      defaultMessage="Test your skills on all matches of the world cup by accessing multipliers to climb faster. Increase your rewards with the CCT Token, access winning streaks and more!"
                     />
                 </p>
 

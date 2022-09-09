@@ -324,29 +324,24 @@ const pelotaGameFunction = () => {
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 2;
-            contenedor.classList.add("level-up1");
    
         }else if(score === 20) {
             gameVel = 2.5;
-            contenedor.classList.add("level-up2");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 2.5;
         } else if(score === 40) {
             gameVel = 3.5;
-            contenedor.classList.add("level-up3");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 3;
         } else if(score === 60) {
             gameVel = 5;
-            contenedor.classList.add("level-up4");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .9;
             tiempoObstaculoMax = 3.5;
         } else if(score === 100) {
             gameVel = 6;
-            contenedor.classList.add("level-up5");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .7;
             tiempoObstaculoMax = 4;

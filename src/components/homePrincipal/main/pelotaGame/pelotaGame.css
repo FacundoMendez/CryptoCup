@@ -1,35 +1,26 @@
 
 .contenedor {
     width: 100%;
-    height: 60rem;
+    height: 70rem;
     margin: 0 auto;
     position: relative;
-    background:  linear-gradient(#000000, transparent) black; 
-    transition: background-color 1s linear;
+    background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background 1s linear;
     overflow: hidden;
-    margin-top: 10rem;
     z-index: 1000;
 }
 
-
-.level-up1 {
-    background-color: #190e3f;
-}
-
-.level-up2 {
-    background-color: #553199;
-}
-
-.level-up3 {
-    background-color:  #a692ff; 
-}
-
-.level-up4 {
-    background-color:  #86ff70; 
-}
-
-.level-up5 {
-    background-color:  #ff3c3c; 
+.contenedor::before{
+    width: 110%;
+    height: 100%;
+    content: " ";
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.400);
+    position: absolute;
+    z-index: 1;
 }
 
 
@@ -45,6 +36,7 @@
     cursor: pointer;
     background-color: rgba(185, 155, 255, 0.171);
     display: block;
+    z-index: 1000;
 }
 
 .startInit{
@@ -64,6 +56,7 @@
     background-color: rgba(185, 155, 255, 0.171);
     display: none;
     z-index: 220;
+    z-index: 1000;
 }
 
 .restart:active{
@@ -181,6 +174,7 @@
     filter: contrast(110%) brightness(120%);
     background: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661463423/CryptocupQatar/BallGame/nube_sjksmb.webp") no-repeat;
     background-size: 92px 26px;
+    z-index: 800;
 }
 
 .score{
@@ -188,7 +182,6 @@
     top: 10rem;
     left: 50%;
     transform: translate(-50% , 0);
-    z-index: 10;
     color: #d1b5ff;
     font-family: Verdana;
     font-size: 2.5rem;
@@ -208,10 +201,12 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
     font-weight: bold;
+    z-index: 1000;
 }
 
 .score_active{
     display: block;
+    z-index: 1000;
     transition: all 1s ease-in-out;
 }
 
@@ -221,6 +216,7 @@
     left: 50.5%;
     top: 16rem;
     transform: translate(-50% , 0);
+    z-index: 1000;
 }
 
 .scoreMax p{
@@ -236,6 +232,7 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
     font-weight: bold;
+    z-index: 1000;
 }
 
 
@@ -253,6 +250,7 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
     font-weight: bold;
+    z-index: 1000;
 }
 
 
@@ -268,7 +266,7 @@
     font-size: 5rem;
     font-family: Verdana;
     font-weight: 700;
-    z-index: 200;
+    z-index: 1000;
 }
 
 @keyframes animarpelota_game{
