@@ -12,8 +12,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 ul{
   list-style: none;
 }
@@ -34,28 +32,27 @@ h2{
     border: 3px groove #070707;
     border-right: none;
     background-position: top;
-  }
-  ::-webkit-scrollbar-button {
-    width: 0px;
-    height: 0px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #d0a6ff;
-    border-radius: 15px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #d0a6ff;
-  }
-  ::-webkit-scrollbar-thumb:active {
-    background: #8b4dff;
-  }
-  
-  ::-webkit-scrollbar-corner {
-    background: transparent;
-  }
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d0a6ff;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d0a6ff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #8b4dff;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
   
-
 @font-face {
   font-family: 'gilron';
   src: url('./components/fonts/Gilroy-ExtraBold.otf') format("truetype");

@@ -43,6 +43,7 @@
     top: -7.5rem ;
     z-index: 1000 !important;
     width: 100%;
+    /* transform: rotate(180deg); */
 }
 
 .divisionPrizePool img{

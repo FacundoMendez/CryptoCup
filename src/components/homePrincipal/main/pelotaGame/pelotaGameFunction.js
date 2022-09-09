@@ -30,7 +30,7 @@ const pelotaGameFunction = () => {
     let tiempoHastaNube = 0.5;
     let tiempoNubeMin = 6;
     let tiempoNubeMax = 12;
-    let maxNubeY = 270;
+    let maxNubeY = 280;
     let minNubeY = 100;
     let nubes = [];
     let velNube = .5;
