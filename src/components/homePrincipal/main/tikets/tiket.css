@@ -124,6 +124,22 @@
     padding-bottom: 5rem;
 }
 
+.boxTicketBasic_button , .boxTicketBoost_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem;
+    cursor: pointer;
+}
+
+.boxTicketBasic_button a, .boxTicketBoost_button a{
+    text-decoration: none;
+    margin-left: 1.5rem;
+}
+
+
 .boxTickets-Home-boost{
     display: flex;
     justify-content: center;
@@ -694,6 +710,14 @@
     .titleTicket-home-boost h2, .titleTicket-home-basic h2 {
         text-align: center;
         padding-top: 5rem;
+    }
+
+    .boxTicketBasic_button {
+        flex-direction: column-reverse;
+    }
+
+    .boxTicketBasic_button a, .boxTicketBoost_button a{
+        margin-left: 0;
     }
 }
 

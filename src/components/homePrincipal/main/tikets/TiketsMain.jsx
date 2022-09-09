@@ -3,6 +3,7 @@ import "./tiket.css"
 import { Navigate } from 'react-router-dom'
 import tiketsScroll from './tiketsScroll'
 import {FormattedMessage} from 'react-intl';
+import Button from '../../buttons/Button';
 
 
 const TiketsMain = () => {
@@ -44,9 +45,15 @@ const TiketsMain = () => {
             </p>
         </div>
         <div className="boxTickets-Home-basic">
-          <div className="tiketImg-basic" >
-            <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.webp" alt="ticket" onClick={() => setTiketClick(true)} />
+          <div className="boxTicketBasic_button">
+            <div className="tiketImg-basic" >
+              <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.webp" alt="ticket" onClick={() => setTiketClick(true)} />
+            </div>
+            <a className='buttonBuyTicketLP_basic' href="/Tickets">
+              <Button title="Buy Ticket"/>
+            </a>
           </div>
+
           <div className="titleTicket-home-basic">
             <h2>
               <FormattedMessage
@@ -125,10 +132,15 @@ const TiketsMain = () => {
               </div>
         
           </div>
-          <div className="tiketImg-boost" >
-                <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.webp" alt="ticket" onClick={() => setTiketClick(true)} />
-            </div>
-         
+          <div className="boxTicketBoost_button">
+              <div className="tiketImg-boost" >
+                    <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.webp" alt="ticket" onClick={() => setTiketClick(true)} />
+              </div>
+          
+              <a className='buttonBuyTicketLP_boost' href="/Tickets">
+                  <Button title="Buy Ticket"/>
+              </a>
+          </div>
         </div>
         <div className="division">
             <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.webp" alt="Division container" />

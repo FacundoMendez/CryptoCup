@@ -72,6 +72,17 @@ const tiketsScroll = () =>{
             }
         })
 
+        gsap.from(".buttonBuyTicketLP_basic",{
+            opacity:0,
+            delay:1,
+            duration:1,
+            scrollTrigger:{
+                trigger: ".titleTicket-home-basic",
+                start: "top 50%",
+                end: "bottom bottom",
+            }
+        })
+
         /* boot */
 
         let tl_boost = new Timeline({
@@ -91,11 +102,20 @@ const tiketsScroll = () =>{
                 trigger: ".titleTicket-home-boost",
                 start: "top 40%",
                 end: "bottom bottom",
-
             }
             
         })
 
+        gsap.from(".buttonBuyTicketLP_boost",{
+            opacity:0,
+            delay:1,
+            duration:1,
+            scrollTrigger:{
+                trigger: ".titleTicket-home-boost",
+                start: "top 40%",
+                end: "bottom bottom",
+            }
+        })
 
         tl_boost.from(".titleTicket-home-boost",{
             opacity:0,

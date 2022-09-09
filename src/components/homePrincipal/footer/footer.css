@@ -50,8 +50,8 @@
     align-items: center;
     background-color: rgba(121, 25, 255, 0.068);
     box-shadow: 0 0 1rem rgba(208, 166, 255, 0.171);
-    filter: drop-shadow(0 0 5px rgba(197, 146, 255, 0.384));
-    opacity: .4;
+    filter: drop-shadow(0 0 1px rgba(197, 146, 255, 0.384));
+    opacity: .7;
 }
 
 
@@ -188,7 +188,7 @@
     width: 23rem;
     border: 2px solid rgba(215, 173, 255, 0.116);
     border-radius: 50%;
-    opacity: .3;
+    opacity: .4;
 }
 
 /* social */
