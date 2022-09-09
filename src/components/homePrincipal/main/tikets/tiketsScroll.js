@@ -103,7 +103,6 @@ const tiketsScroll = () =>{
                 start: "top 40%",
                 end: "bottom bottom",
             }
-            
         })
 
         gsap.from(".buttonBuyTicketLP_boost",{

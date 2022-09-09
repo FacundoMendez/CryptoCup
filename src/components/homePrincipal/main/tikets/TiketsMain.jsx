@@ -146,7 +146,6 @@ const TiketsMain = () => {
             <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.webp" alt="Division container" />
           </div>
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
-      
 
       </div>
     </>
