@@ -9,7 +9,10 @@
     gap: 2rem;
     padding-bottom: 60rem ;
     z-index: 2500 !important;
-
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .backTikets{
@@ -24,12 +27,13 @@
 .containerTikets::after{
     content:"";
     position: absolute;
-    bottom: -15rem;
-    height: 10rem;
+    height: 100%;
+    top: 0rem;
     width: 110%;
-    background-color: rgba(0, 0, 0, 0.192);
-    filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.400);
+    z-index:-2;
 }
+
 
 .backTiketsMovile{
     display: none;
@@ -41,7 +45,7 @@
     height: 74%;
     content: " ";
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.404);
     filter: blur(30px) ;
     position: absolute;
     overflow: hidden;
@@ -303,23 +307,14 @@
 
 .division{
     position: absolute;
-    bottom: -10rem !important;
+    bottom: -15.9rem !important;
 }
 
 .division img{
     object-fit: cover;
-    filter: contrast(110%) hue-rotate(230deg) brightness(110%) opacity(.8);
+    filter: contrast(130%) hue-rotate(230deg) brightness(110%) opacity(.8);
 }
 
-.containerTikets::after{
-    content:"";
-    position: absolute;
-    bottom: -17rem;
-    height: 10rem;
-    width: 110%;
-    background-color: rgba(0, 0, 0, 0.98);
-    filter: blur(16px);
-}
 
 @media screen and (max-width: 2550px){
 
@@ -330,7 +325,6 @@
         z-index: -1;
         position: absolute;
     }
-
 
 
     .division{
@@ -345,9 +339,9 @@
 
     .division{
         position: absolute;
-        bottom: -90rem;
+        bottom: -10rem !important;
         z-index: 1000;
-        margin-left: -8rem;
+        margin-left: 0rem;
     }
     
     .division img{
@@ -496,8 +490,6 @@
         position: absolute;
     }
     
-  
-    
 
 }
 
@@ -518,8 +510,10 @@
 
     .containerTikets{
         padding-bottom: 25rem;
-        background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/BackgroundTickets1_dmwwf7.webp");
+        background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+        background-position: center;
         background-attachment: fixed;
+        background-size: cover;
     }
 
     .backTikets{
@@ -537,20 +531,20 @@
         overflow: hidden;
     }
 
+    .containerTikets::after{
+        content:"";
+        position: absolute;
+        height: 100%;
+        top: 0rem;
+        width: 110%;
+        background-color: rgba(0, 0, 0, 0.400);
+        z-index:-2;
+    }
+
     .textTikets{
         padding: 0 0rem;
     }
 
-    .containerTikets::after{
-        width: 130%;
-        height: 15rem;
-        content: " ";
-        top: -8rem;
-        background-color: rgba(0, 0, 0, 0.993);
-        filter: blur(30px) ;
-        position: absolute;
-        overflow: hidden;
-    }
 
 
 

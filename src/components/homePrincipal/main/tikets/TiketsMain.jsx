@@ -19,7 +19,7 @@ const TiketsMain = () => {
     <>
     <div id='tickets' className="containerTikets">
         
-      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/BackgroundTickets1_dmwwf7.webp"/* {backReflejo} */ alt="background" />
+      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1662825865/CryptocupQatar/tickets/BackgroundTicketsAgostoPNG_fjtvxy.png"/* {backReflejo} */ alt="background" />
 
 
         <div className="textTikets">
@@ -137,7 +137,7 @@ const TiketsMain = () => {
           </div>
         </div>
         <div className="division">
-            <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.webp" alt="Division container" />
+            <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:best/v1660656670/CryptocupQatar/tickets/division_ry26ic.png" alt="Division container" />
           </div>
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
 
