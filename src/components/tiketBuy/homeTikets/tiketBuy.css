@@ -823,6 +823,7 @@
         object-fit: cover;
     }
     
+
     /* general */
     
     .flexTickets{
@@ -898,12 +899,6 @@
         padding-top: .06rem;
     }
     
-    .BorderTopBottom-Tickets:before {
-        width: 11.4rem;
-        height: 2px;
-        top: -6px;
-        left: -7px;
-    }
 
     .BorderTopBottom-Tickets:after {
         width: 11.4rem;
@@ -974,10 +969,11 @@
         left: 0rem;
     }
     
-    .radioTokenBoost-active {
+    .radioTokenBoost-active , .radioToken {
         top:50%;
     }
-    
+
+ 
     .containerTiketsBuy{
         width: 100%;
         object-fit: cover;
@@ -1046,16 +1042,23 @@
         padding: 1rem 0rem;
     }
 
-        /* contador */
+    /* contador */
+    .cantTicket-basic , .cantTicket-boost{
+        gap:4rem;
+        padding: .5rem ;
+        top: -1.5rem;
+        left: -.4rem;
+        width: 17.3rem;
+    
+    }
 
-        .cantTicket-basic , .cantTicket-boost{
-            gap:4rem;
-            padding: .5rem ;
-            top: -1.5rem;
-            left: -.4rem;
-            width: 17.3rem;
-        
-        }
+    .boxBlurToken, .boxBlurTokenBoost {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
 }
 
 
@@ -1164,11 +1167,6 @@
 
     .containerTiketsBuy{
         width: 100%;
-        height: 100%;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
     }
     
     .textoTicket{
@@ -1183,14 +1181,12 @@
         height: 100%;
         padding: 0;
         padding-bottom: 10rem;
-
     }
     
     /* tickets  */
     .ticketsSale{
         gap: 3.5rem;
         margin-top: -10rem;
-        z-index: 1;
     }
     
     .boxTickets{
@@ -1198,7 +1194,7 @@
     }
     
     .imgTicket {
-        width: 16rem;
+        width: 16rem !important;
         margin-top: 10rem;
     }
 
@@ -1366,8 +1362,6 @@
         padding: 0 1.3rem;
     }
 
-      
-
 }
 
 @media screen and (max-width:410px){
@@ -1421,9 +1415,7 @@
         padding: 1rem;
     }
 
-    .radio {
-        padding: .3rem 0 ;
-    }
+
 
     /* button connect wallet */
     
@@ -1521,6 +1513,9 @@
         padding: 1rem 0;
     }
 
+    .radio {
+        padding: .3rem 0 ;
+    }
     .titleTicket h2{
         font-size: 5rem;
         line-height: 5.5rem;

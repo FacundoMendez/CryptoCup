@@ -379,11 +379,12 @@ const TiketBuyPage = () => {
       {noBalance ? <NoMetamask noBalance={noBalance}  /> : null }    {/* balance  */}
 
       <div className="flexTickets">
+        
           <div className="ticketsSale">
-            <div className="boxBlurToken"></div>
-            <div className="boxBlurTokenBoost"></div>
+           
               <div className="boxTickets">
-
+              <div className="boxBlurToken"></div>
+            <div className="boxBlurTokenBoost"></div>
 
                  {/* ticket basic- descuentos aplicados */}
                  

@@ -529,8 +529,6 @@
     }
 
 
-
-
     .titleTicket-home-boost {
         width: 60%;
     } 
@@ -577,7 +575,6 @@
         margin-left: 0rem;
     }
       
-    
     .tiketImg-basic{
         text-align: center;
         margin-top: 0rem;
@@ -603,7 +600,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         flex-wrap: wrap;
         gap: 10rem;
         position: relative;

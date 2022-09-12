@@ -304,11 +304,6 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 
-
-
-
-
-
 /* POPUPS ERRORES  */
 
 
@@ -520,7 +515,7 @@ input[type=number] { -moz-appearance:textfield; }
     40% {
       transform: scale(1) rotate(0);
     }
-  }
+}
 
 
 
@@ -565,6 +560,14 @@ input[type=number] { -moz-appearance:textfield; }
     
 }
 
+@media screen and (max-width:800px) {
+
+    .ticketsSale{
+        margin-top: 10rem;
+    }
+    
+}
+
 
 @media screen  and (max-width: 480px){
 
@@ -576,19 +579,11 @@ input[type=number] { -moz-appearance:textfield; }
         font-size: 1.5rem;
     }
 
-
-
-    /* popup */
-    .boxCopyCupon:hover > .containerCopy {
-        border: 2px solid rgb(255, 255, 255);
-        width: 30rem;
-        overflow: hidden;
-        position: relative;
-        right: 24rem;
-        top: 8rem;
+    .ticketsSale{
+        margin-top: 0rem;
     }
+    /* popup */
 
-        
     .text1Copy{
         top: 0;
         padding: 2.5rem 1rem;
@@ -600,25 +595,23 @@ input[type=number] { -moz-appearance:textfield; }
         font-size: 1.8rem ;
     }
     
-
     .boxCopyCupon{
         width: 6rem;
         left:15.4rem;
         margin-top: -13.1rem;
     }
     
-
     .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
-        width: 39rem;
-        height: 20rem;
+        width: 37rem;
         position: relative;
-        right: 33rem;
-        top: 8rem;
+        right: 31.1rem;
+        top: 9rem;
         background-color: rgb(0, 0, 0);
         transition: all .4s ease-in-out;
         opacity: 1;
         visibility: visible;
+        z-index: 99999999 !important;
     }
     
     .triangle{
@@ -629,13 +622,12 @@ input[type=number] { -moz-appearance:textfield; }
         background-color: white;
         position: absolute;
         left: 90%;
-        top: -1.7rem;
+        top: -1.5rem;
     }
 
     .containerInputCupon{
         right: 3rem;
     }
-
 
     .priceBoostDescuento{
         font-size: 4rem !important;

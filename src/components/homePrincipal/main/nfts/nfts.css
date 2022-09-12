@@ -381,6 +381,9 @@
         font-size: 5rem;
         top: 25px;
     }
+    .titleNfts {
+        padding-top: 14rem;
+    }
 
     .subtitleNftWinners {
         font-size: 5rem;
@@ -469,6 +472,10 @@
         width: 75%;
         text-align: center;
     }
+
+    .titleNfts {
+        padding-top: 14rem;
+    }
     
     .textNfts p{
         color: white;
@@ -515,13 +522,15 @@
         padding-top: 5rem;
     }
 
+
+
 }
 
 @media screen and (max-width: 880px){
     .titleNfts {
         z-index: 10;
         text-transform: uppercase;
-        padding-top: 15rem;
+        padding-top: 0rem;
         padding-bottom: 10rem;
     }
 
@@ -625,7 +634,7 @@
     }
     
     .titleNfts{
-        padding-top: 10rem;
+        padding-top: 0rem;
         padding-bottom: 5rem;
     }
     .titleNfts h2{
@@ -675,7 +684,7 @@
     .titleNfts {
         z-index: 10;
         text-transform: uppercase;
-        padding-top: 5rem;
+        padding-top: 0rem;
         padding-bottom: 5rem;
     }
 
@@ -756,13 +765,11 @@
         top: 25px;
         line-height: 4.2rem;
     }
-    
-    
+
     .subtitleNftWinners{
         font-size: 4rem;
         padding-top:6rem;
     }
-    
     
     .subtitleNftPricePool{
         font-size:3.2rem;
@@ -776,7 +783,6 @@
     }
 
     .containerWins {
-  
         margin-top: -20rem;
     }
 }
