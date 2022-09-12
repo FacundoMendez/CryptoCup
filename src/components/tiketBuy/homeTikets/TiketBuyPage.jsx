@@ -16,8 +16,6 @@ import {FormattedMessage} from 'react-intl';
 
 const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
-const VideoBuyBoost = lazy(() => import ("./ticketsComponents/tokenBoost/videoBuyBoost/VideoBuyBoost"))
-const VideoBuyBasic = lazy(() => import ("./ticketsComponents/tokenBasic/videoCompra/videoBuyBasic/VideoBuyBasic"))
 const Social = lazy(() => import ("../../homePrincipal/header/home/social/Social"))
 const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
@@ -26,7 +24,9 @@ const TiketBuyPage = () => {
   
   const context = useContext(Context)
 
-
+  const videoBuyActive = document.querySelector(".videoBuyActive")
+  const flexTickets = document.querySelector(".flexTickets")
+  
     useEffect(() => {
       checkTokenBoost()
       checkTokenBasic()
@@ -227,12 +227,27 @@ const TiketBuyPage = () => {
       setBuyTicketBasic(true);
       checkReferral();
 
-      setTimeout(function(){ 
-        setBuyTicketBasic(false); 
-      }, 9000);
+      /* video basic compra */
+        videoBuyActive.classList.add("videoCompra_active")
+        flexTickets.classList.add("flexTickets_active")
+
+        videoBuyActive.innerHTML= ` <video className='basicBuyVideo' id="basicBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1660658232/CryptocupQatar/TICKETS%20BUY/home%20tickets/basicBuy_we5tyg.mp4" autoPlay type="video/mp4" ></video> `
+
+        document.getElementById('basicBuyVideo').addEventListener('ended',myHandler,false);
+
+        function myHandler(e) {
+          videoBuyActive.innerHTML=""
+          setBuyTicketBasic(false); 
+          videoBuyActive.classList.remove("videoCompra_active")
+          flexTickets.classList.remove("flexTickets_active")
+        }
 
     } else {
       setLoadingBuy(false)
+      videoBuyActive.innerHTML=""
+      setBuyTicketBasic(false); 
+      videoBuyActive.classList.remove("videoCompra_active")
+      flexTickets.classList.remove("flexTickets_active")
     }
 
   }
@@ -282,12 +297,25 @@ const TiketBuyPage = () => {
       setBuyTicketBoost(true);
       checkReferral();
 
-      setTimeout(function(){ 
-        setBuyTicketBoost(false); 
-      }, 9000);
+        videoBuyActive.classList.add("videoCompra_active")
+        flexTickets.classList.add("flexTickets_active")
+        videoBuyActive.innerHTML= ` <video className='boostBuyVideo' id="boostBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1660658231/CryptocupQatar/TICKETS%20BUY/home%20tickets/boostBuy_ab4apu.mp4" preload='none' autoPlay type="video/mp4" ></video>  `
+
+        document.getElementById('boostBuyVideo').addEventListener('ended',myHandler,false);
+
+        function myHandler(e) {
+          videoBuyActive.innerHTML=""
+          setBuyTicketBoost(false); 
+          videoBuyActive.classList.remove("videoCompra_active")
+          flexTickets.classList.remove("flexTickets_active")
+        }
 
     } else {
-      setLoadingBuy(false)
+      setBuyTicketBoost(false)
+      videoBuyActive.innerHTML=""
+      setBuyTicketBoost(false); 
+      videoBuyActive.classList.remove("videoCompra_active")
+      flexTickets.classList.remove("flexTickets_active")
     }
   }
 
@@ -335,9 +363,10 @@ const TiketBuyPage = () => {
 
  
 
-      
-      {buyTicketBasic ?  <VideoBuyBasic /> : null}
-      {buyTicketBoost ?  <VideoBuyBoost /> : null}
+      <div className="videoCompra">
+        <div className="videoBuyActive"></div>
+      </div>
+
       {loadingBuy ? <PopupEsperaBuy /> : null}
 
 
