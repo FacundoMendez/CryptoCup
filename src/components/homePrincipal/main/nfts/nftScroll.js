@@ -68,6 +68,18 @@ const nftScroll= ()=>{
             scale:.1,
             top: 200,
         })
+
+        gsap.to(".fugaz",{
+            x: "+= 2250",
+            y: "-= 500",
+            delay:3,
+            scrollTrigger:{
+                trigger: ".tiposTorneos",
+                start: "top top",
+                end: "bottom bottom",
+                scrub:7,
+            }
+        })
     }
 }
 

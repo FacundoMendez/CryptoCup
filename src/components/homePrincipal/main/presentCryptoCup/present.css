@@ -462,9 +462,6 @@
         padding-bottom: 0rem;
     }
     
-    .tournamentContainer::before{
-        display: none;
-    }
 
     .tournamentContainer{
         width: 100%;

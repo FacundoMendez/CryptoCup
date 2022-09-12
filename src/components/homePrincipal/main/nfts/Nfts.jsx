@@ -46,10 +46,6 @@ const Nfts = () => {
       </section>
 
     <div className="containerWins">
-        <div className="divisionPrizePool">
-              <img className='divisionImgPrizePool' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661531281/CryptocupQatar/nft/Sin_t%C3%ADtulo_vsybw8.webp"/* {division} */ alt="Division container" />
-        </div>
-
 
         <h2 className='subtitleNftWinners'> 
           <FormattedMessage
@@ -83,11 +79,8 @@ const Nfts = () => {
           
           <img className='rockDer rockgrande' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1662509449/CryptocupQatar/nft/nftsScene/RocasFlotantesDerechaConPiedraGrande_zjtw65.png" alt="rocaGrandeDr" />
         </div>
+        <div className="fugaz"></div>
  
-
-        <div className="divisionPrizePool-bottom">
-              <img className='divisionImgPrizePool-bottom' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656670/CryptocupQatar/tickets/division_ry26ic.webp" alt="Division container" />
-        </div>
     </div>
 
   </div>

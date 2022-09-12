@@ -702,7 +702,6 @@
     .tiketsPreview {
         animation: none;
     }
-    
 
     .boxTickets-Home-basic{
         width: 200vw;
@@ -734,6 +733,11 @@
     .textTikets{
         width: 100%;
         gap:5rem;
+    }
+
+    .tiketsTitle {
+        margin-top: -3.5rem;
+        font-size: 5rem;
     }
     
     .textTikets p{

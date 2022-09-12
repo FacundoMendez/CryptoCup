@@ -14,7 +14,7 @@ const effectPool = () =>{
     new ScrollMagic.Scene({
         triggerElement: ".event.event2",
         triggerHook: "onEnter",
-        duration: "200%"
+        duration: "100%"
     }).setPin(".events-page .event.event2 .pinWrapper",{
         pushFollowers: false
     }).addTo(controller);
