@@ -6,7 +6,7 @@
 
 .navBallModel{
     cursor: grab;
-    z-index: 10000;
+    z-index: 999999999;
     filter:drop-shadow(0 0 50px rgba(92, 1, 167, 0.336)) contrast(110%);
     margin-top: .8rem;
     margin-left: .2rem;
@@ -408,7 +408,7 @@
 
     .navMovile{
         display: inline-block;
-        z-index: 9988998899 !important;
+        z-index: 999999999 !important;
     }
 
     .navBack{
