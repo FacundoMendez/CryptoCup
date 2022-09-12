@@ -231,7 +231,7 @@ const TiketBuyPage = () => {
         videoBuyActive.classList.add("videoCompra_active")
         flexTickets.classList.add("flexTickets_active")
 
-        videoBuyActive.innerHTML= ` <video className='basicBuyVideo' id="basicBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1660658232/CryptocupQatar/TICKETS%20BUY/home%20tickets/basicBuy_we5tyg.mp4" autoPlay type="video/mp4" ></video> `
+        videoBuyActive.innerHTML= ` <video className='basicBuyVideo' id="basicBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1663019654/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBasic_w3hre8.mp4" autoPlay type="video/mp4" ></video> `
 
         document.getElementById('basicBuyVideo').addEventListener('ended',myHandler,false);
 
@@ -299,7 +299,7 @@ const TiketBuyPage = () => {
 
         videoBuyActive.classList.add("videoCompra_active")
         flexTickets.classList.add("flexTickets_active")
-        videoBuyActive.innerHTML= ` <video className='boostBuyVideo' id="boostBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1660658231/CryptocupQatar/TICKETS%20BUY/home%20tickets/boostBuy_ab4apu.mp4" preload='none' autoPlay type="video/mp4" ></video>  `
+        videoBuyActive.innerHTML= ` <video className='boostBuyVideo' id="boostBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1663019658/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBoost_b8oihl.mp4" preload='none' autoPlay type="video/mp4" ></video>  `
 
         document.getElementById('boostBuyVideo').addEventListener('ended',myHandler,false);
 

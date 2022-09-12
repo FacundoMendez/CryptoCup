@@ -43,7 +43,7 @@
     left: 0;
     object-fit: cover;
     z-index: 999999999 !important;
-    filter: contrast(145%) brightness(105%) ;
+    filter: contrast(115%) brightness(105%) ;
     overflow: hidden;
     transition: all .5s ease-in-out;
 
