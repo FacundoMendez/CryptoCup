@@ -669,6 +669,9 @@
         top: 85%;
      }
 
+     .divisionPrizePool-bottom{
+        display: none;
+     }
 }
 
 
