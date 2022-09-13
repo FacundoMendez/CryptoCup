@@ -1,6 +1,5 @@
-import React, {lazy, useEffect} from 'react'
+import React, {lazy} from 'react'
 import "./home.css"
-import homeScroll from './homeScroll'
 import {FormattedMessage} from 'react-intl';
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
 
@@ -10,9 +9,6 @@ const Timer = lazy(() => import ('./timer/Timer'))
 
 const Home = () => {
 
-  useEffect(() => {
-    homeScroll()
-  },[])
 
 
  
