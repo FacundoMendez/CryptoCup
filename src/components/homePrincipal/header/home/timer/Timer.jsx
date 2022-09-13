@@ -16,25 +16,32 @@ const Timer = () => {
         <div id="countdown timerBox">
             <ul className="reloj">
 
-                <li><span id="days"></span>
+                <li>
+                  <span id="days"></span>
                   <FormattedMessage
                     id="home-days"
                     defaultMessage="Days"
                   />
                 </li>
 
-                <li className="rombo"></li>
+                <li>
+                  <div className="rombo"></div>
+                </li>
 
-                <li><span id="hours"></span>
+                <li>
+                  <span id="hours"></span>
                   <FormattedMessage
                     id="home-hours"
                     defaultMessage="Hours"
                   />
                 </li>
 
-                <li className="rombo"></li>
+                <li>
+                  <div className="rombo"></div>
+                </li>
 
-                <li><span id="minutes"></span>
+                <li>
+                  <span id="minutes"></span>
                   <FormattedMessage
                     id="home-min"
                     defaultMessage="Minutes"
