@@ -25,13 +25,13 @@ const Footer = () => {
         </div>
 
         <p className='cupLarg'>Cup</p>
-        <img className='pelotaFooter' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662672273/CryptocupQatar/footer/pelota_t0ln2p.png" alt="pelotaCryptoCup" />
+        <img className='pelotaFooter' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_402,q_auto:low,w_400/v1662672273/CryptocupQatar/footer/pelota_t0ln2p.png" alt="pelotaCryptoCup" />
 
         <div className="boxBottomFotter">
 
             <div className="emailContac">
                 <p className='titleContact' >
-                    <img className='iconMsj' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662674635/CryptocupQatar/footer/email_rpdtix.png" alt="email" /> 
+                    <img className='iconMsj' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_62,q_auto:low,w_86/v1662674635/CryptocupQatar/footer/email_rpdtix.png" alt="email" /> 
                 </p>
                 <a href="mailto:cryptocup2022@gmail.com">
                     <p className='email' >
@@ -47,7 +47,9 @@ const Footer = () => {
             <div className="terms">
                 <div className='listTerms'>
                     <ul>
-                        <div className="romboFooter"></div>
+                        <li>
+                            <div className="romboFooter"></div>
+                        </li>
                         <li>
                             <a href="TermsAndConditions" >
                                 <FormattedMessage

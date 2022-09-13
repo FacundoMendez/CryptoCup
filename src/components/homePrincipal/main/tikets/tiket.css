@@ -9,7 +9,7 @@
     gap: 2rem;
     padding-bottom:75rem ;
     z-index: 2500 !important;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1470,q_auto:low,w_1750/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.webp");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -23,6 +23,8 @@
     z-index: -1;
     opacity: .95;
     position: absolute;
+    width: 100vw;
+    height: 272rem;
 }
 
 .containerTikets::after{
@@ -508,7 +510,7 @@
 
     .containerTikets{
         padding-bottom: 25rem;
-        background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+        background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.webp");
         background-position: center;
         background-attachment: fixed;
         background-size: cover;

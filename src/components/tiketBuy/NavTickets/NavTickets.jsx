@@ -21,7 +21,7 @@ function NavTicket() {
             <div className="navBlur"></div>
             <nav className="nav">
 
-                <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_93,q_auto:low,w_1614/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.webp"/* {imgNav} */ alt="nav background" />
+                <img className='navBack' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:best,w_1920/v1660656832/CryptocupQatar/nav/navBack1_ymcnj5.png"/* {imgNav} */ alt="nav background" />
                 <button className="nav-toggle" aria-label="Abrir menú" onClick={navFuncional}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>

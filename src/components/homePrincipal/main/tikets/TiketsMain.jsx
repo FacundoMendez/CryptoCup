@@ -20,7 +20,7 @@ const TiketsMain = () => {
     <div id='tickets' className="containerTikets">
       <div className="diviTicket"></div>
         
-      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1663006484/CryptocupQatar/tickets/backTickets_csjolw.png" alt="background" />
+      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_3200,q_auto:good,w_2400/v1663006484/CryptocupQatar/tickets/backTickets_csjolw.png" alt="background" />
 
         <div className="textTikets">
             <div className=" tiketsTitle">
@@ -41,7 +41,7 @@ const TiketsMain = () => {
         <div className="boxTickets-Home-basic">
           <div className="boxTicketBasic_button">
             <div className="tiketImg-basic" >
-              <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.webp" alt="ticket" onClick={() => setTiketClick(true)} />
+              <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png" alt="ticket" onClick={() => setTiketClick(true)} />
             </div>
             <a className='buttonBuyTicketLP_basic' href="/tickets">
               <Button title="Buy Ticket"/>
@@ -91,25 +91,25 @@ const TiketsMain = () => {
                   />
                 </p>
                 <ul className='stars'>
-                  <li className='star1'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp" alt="stars1" /> 
+                  <li className='star1'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars1" /> 
                     <FormattedMessage
                       id="tickets-boostLadderStar1"
                       defaultMessage="Token utility"
                     />
                   </li>
-                  <li className='star2'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp" alt="stars2" />  
+                  <li className='star2'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars2" />  
                     <FormattedMessage
                       id="tickets-boostLadderStar2"
                       defaultMessage="Access to Multipliers"
                     />
                   </li>
-                  <li className='star3'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp" alt="stars3" /> 
+                  <li className='star3'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars3" /> 
                     <FormattedMessage
                       id="tickets-boostLadderStar3"
                       defaultMessage="Advanced Predictions unlocked"
                     />
                   </li>
-                  <li className='star4'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.webp" alt="stars4" />  
+                  <li className='star4'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars4" />  
                       <FormattedMessage
                         id="tickets-boostLadderStar4"
                         defaultMessage="Prediction Streak Rewards"
@@ -128,7 +128,7 @@ const TiketsMain = () => {
           </div>
           <div className="boxTicketBoost_button">
               <div className="tiketImg-boost" >
-                    <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.webp" alt="ticket" onClick={() => setTiketClick(true)} />
+                    <img className='tiketsPreview' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png" alt="ticket" onClick={() => setTiketClick(true)} />
               </div>
           
               <a className='buttonBuyTicketLP_boost' href="/tickets">
@@ -137,7 +137,7 @@ const TiketsMain = () => {
           </div>
         </div>
         <div className="division">
-            <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:best/v1660656670/CryptocupQatar/tickets/division_ry26ic.png" alt="Division container" />
+            <img className='divisionImg' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_450,q_auto:eco,w_2467/v1660656670/CryptocupQatar/tickets/division_ry26ic.png" alt="Division container" />
         </div>
        {tiketClick ? <Navigate to= "/tickets" /> : null } 
 

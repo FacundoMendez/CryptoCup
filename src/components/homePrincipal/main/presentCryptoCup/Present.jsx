@@ -14,7 +14,7 @@ const TournamentMain = () => {
       <div id='tournament' className="tournamentContainer">
 
         
-        <img className="backgroundReflejo backPresentacion"src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660656597/CryptocupQatar/present/BackTournament2_zc1ex3.webp" /* {backgroundReflejo} */  alt="backReflejo" />
+        <img className="backgroundReflejo backPresentacion"src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2400,q_auto:best,w_2500/v1660656597/CryptocupQatar/present/BackTournament2_zc1ex3.webp" /* {backgroundReflejo} */  alt="backReflejo" />
         
         <div className="boxTournament">
 
@@ -58,7 +58,7 @@ const TournamentMain = () => {
               </div>
 
               <div className="logoContainer">
-                  <img className='imgLogoContainer' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1660656597/CryptocupQatar/present/Logo_br3xr2.webp"/* {logo} */ alt="logo CRYPTO CUP" />
+                  <img className='imgLogoContainer' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_500,q_auto:best,w_500/v1660656597/CryptocupQatar/present/Logo_br3xr2.png"/* {logo} */ alt="logo CRYPTO CUP" />
               </div>
 
             </div>

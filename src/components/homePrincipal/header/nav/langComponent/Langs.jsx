@@ -13,7 +13,7 @@ const Langs = () => {
     },[])
     const [idioma, setIdioma] = useState("EN")
 
-    const [bandera, setBandera] = useState("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.webp")
+    const [bandera, setBandera] = useState("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.png")
 
 
   return (
@@ -26,7 +26,7 @@ const Langs = () => {
                 <div className="boxEnglish boxIdioma" onClick={() => {
                         setIdioma("EN")
                         contextIdioma.establecerLenguaje("enLang")
-                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.webp")
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.png")
                     }}>
                     <p>English  •  EN</p>
                     <div className="imgBoxEN"></div>
@@ -34,7 +34,7 @@ const Langs = () => {
                 <div className="boxEspañol boxIdioma" onClick={() => {
                         setIdioma("ES")
                         contextIdioma.establecerLenguaje("esLang")
-                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1662473734/CryptocupQatar/MultiLang/langES_hccmqo.webp")
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langES_hccmqo.webp")
                     }} >
                     <p>Español  •  ES</p>
                     <div className="imgBoxES"></div>

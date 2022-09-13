@@ -231,7 +231,7 @@ const TiketBuyPage = () => {
         videoBuyActive.classList.add("videoCompra_active")
         flexTickets.classList.add("flexTickets_active")
 
-        videoBuyActive.innerHTML= ` <video className='basicBuyVideo' id="basicBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1663019654/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBasic_w3hre8.mp4" autoPlay type="video/mp4" ></video> `
+        videoBuyActive.innerHTML= ` <video className='basicBuyVideo' id="basicBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/c_scale,h_1080,q_auto:best,w_1920/v1663019654/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBasic_w3hre8.mp4" autoPlay type="video/mp4" ></video> `
 
         document.getElementById('basicBuyVideo').addEventListener('ended',myHandler,false);
 
@@ -299,7 +299,7 @@ const TiketBuyPage = () => {
 
         videoBuyActive.classList.add("videoCompra_active")
         flexTickets.classList.add("flexTickets_active")
-        videoBuyActive.innerHTML= ` <video className='boostBuyVideo' id="boostBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/q_auto:good/v1663019658/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBoost_b8oihl.mp4" preload='none' autoPlay type="video/mp4" ></video>  `
+        videoBuyActive.innerHTML= ` <video className='boostBuyVideo' id="boostBuyVideo" src="https://res.cloudinary.com/dvrxw8fbg/video/upload/c_scale,h_1080,q_80,w_1920/v1663019658/CryptocupQatar/TICKETS%20BUY/home%20tickets/SobreBoost_b8oihl.mp4" preload='none' autoPlay type="video/mp4" ></video>  `
 
         document.getElementById('boostBuyVideo').addEventListener('ended',myHandler,false);
 
@@ -388,7 +388,7 @@ const TiketBuyPage = () => {
 
                  {/* ticket basic- descuentos aplicados */}
                  
-                  <img className='imgTicket imgTicket-basic' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.webp"/* {tiketBasico} */ alt="Ticket Basic" />
+                  <img className='imgTicket imgTicket-basic' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png"/* {tiketBasico} */ alt="Ticket Basic" />
                   <div className="priceBasic">
                       <div className="boxPrinceBasic">
                         <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
@@ -424,10 +424,10 @@ const TiketBuyPage = () => {
                           <div className="wrapperBotton-ticketSale " >
 
                               <div className="btn-ticketSale" >
-                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u.webp"/* {usdcLogo} */ alt="usdc Logo" /> : null}
-                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx.webp"/* {usdtLogo} */ alt="usdt Logo" /> : null}
-                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68.webp"/* {busdLogo} */ alt="busd Logo" /> : null}
-                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu.webp"/* {daiLogo} */ alt="dai Logo" /> : null}
+                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u_kf6qgl.png"/* {usdcLogo} */ alt="usdc Logo" /> : null}
+                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx_uyuhcp.png"/* {usdtLogo} */ alt="usdt Logo" /> : null}
+                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68_iraojc.png"/* {busdLogo} */ alt="busd Logo" /> : null}
+                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu_qlhlzd.png"/* {daiLogo} */ alt="dai Logo" /> : null}
 
                                   <span className="BorderTopBottom-ticketSale  "></span>
                                   <span className="BorderLeftRight-ticketSale  "></span>  
@@ -500,7 +500,7 @@ const TiketBuyPage = () => {
               {/* ticket boost- descuentos aplicados */}
 
               <div className="boxTickets">
-                  <img className='imgTicket imgTicket-boost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:eco/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.webp"/* {tiketBoost} */ alt="Ticket Ladder" />
+                  <img className='imgTicket imgTicket-boost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png"/* {tiketBoost} */ alt="Ticket Ladder" />
                   <div className="priceBoost">
                       <div className="boxPrinceBoost">
                         <h2>${priceTicketBoost}</h2>
@@ -538,10 +538,11 @@ const TiketBuyPage = () => {
                           <div className="wrapperBotton-ticketSale-boost " >
 
                               <div className="btn-ticketSaleBoost" >
-                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u.webp"/* {usdcLogo} */alt="BusdToken" /> : null}
-                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx.webp"/* {usdtLogo} */alt="DaiToken" /> : null}
-                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68.webp"/* {busdLogo} */alt="UsdcToken" /> : null}
-                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu.webp"/* {daiLogo} */ alt="UsdtToken" /> : null}
+
+                                  {tokenOptionSelect === 2 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u_kf6qgl.png"/* {usdcLogo} */ alt="usdc Logo" /> : null}
+                                  {tokenOptionSelect === 1 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx_uyuhcp.png"/* {usdtLogo} */ alt="usdt Logo" /> : null}
+                                  {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68_iraojc.png"/* {busdLogo} */ alt="busd Logo" /> : null}
+                                  {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu_qlhlzd.png"/* {daiLogo} */ alt="dai Logo" /> : null}
 
                                   <span className="BorderTopBottom-ticketSale  "></span>
                                   <span className="BorderLeftRight-ticketSale  "></span>
@@ -549,28 +550,28 @@ const TiketBuyPage = () => {
                               </div>
                               <div className="radioTokenBoost">
                                   <label className="radio control-radio">
-                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u.webp"/* {usdcLogo} */ alt="Logo Dai" />
+                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u_kf6qgl.png"/* {usdcLogo} */ alt="Logo Dai" />
                                       <p>USDC</p>
                                       <input type="radio" value="option2-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 2} onClick={() => setTokenOptionSelect(2)}/>
                                       <div className="control_indicator"></div>
                                   </label>
                                   
                                   <label className="radio control-radio">
-                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx.webp"/* {usdtLogo} */ alt="Logo Dai" />
+                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx_uyuhcp.png"/* {usdtLogo} */ alt="Logo Dai" />
                                       <p>USDT</p>
                                       <input type="radio" value="option1-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 1} onClick={() => setTokenOptionSelect(1)}  />
                                       <div className="control_indicator"></div>
                                   </label>
                                   
                                   <label className="radio control-radio">
-                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68.webp"/* {busdLogo} */ alt="Logo Dai" />
+                                      <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68_iraojc.png"/* {busdLogo} */ alt="Logo Dai" />
                                       <p>BUSD</p>
                                       <input type="radio" value="option3-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 3} onClick={() => setTokenOptionSelect(3)} />
                                       <div className="control_indicator"></div>
                                   </label>
                                   
                                   <label className="radio control-radio">
-                                      <img className='LogoToken' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu.webp"/* {daiLogo} */ alt="Logo Dai" />
+                                      <img className='LogoToken' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu_qlhlzd.png"/* {daiLogo} */ alt="Logo Dai" />
                                       <p>DAI</p>
                                       <input type="radio" value="option4-boost" readOnly={true} name="radioBoost" checked={tokenOptionSelect === 4} onClick={() => setTokenOptionSelect(4)} />
                                       <div className="control_indicator"></div>
