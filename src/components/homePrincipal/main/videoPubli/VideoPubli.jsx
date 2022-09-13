@@ -17,7 +17,7 @@ const VideoPubli = () => {
                   />
               </h2>
         </div>
-        <iframe className='videoPubli-video' src="https://www.youtube-nocookie.com/embed/vrJ90nxTGl4" title="Crypto Cup Qatar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='videoPubli-video' src="https://www.youtube-nocookie.com/embed/vrJ90nxTGl4" title="Crypto Cup Qatar" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
   )
 }

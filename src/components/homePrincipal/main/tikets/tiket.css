@@ -21,6 +21,7 @@
     height: 105%;
     width: 100%;
     z-index: -1;
+    opacity: .95;
     position: absolute;
 }
 
@@ -50,10 +51,25 @@
     position: absolute;
     overflow: hidden;
 }
+.diviTicket{
+    width: 100%;
+}
+
+.diviTicket::after{
+    width: 110%;
+    height: 15rem;
+    content: " ";
+    top: -7rem;
+    background-color: rgba(0, 0, 0, 0.911);
+    filter: blur(20px) ;
+    position: absolute;
+    z-index: 10;
+}
+
 
 .tiketsTitle h2{
     font-size: 6rem;
-    margin-top: -10rem;
+    margin-top:8rem;
     letter-spacing: 0px;
     line-height: 6.5rem;
     font-family: qatarHeavy;
@@ -64,7 +80,6 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    padding-bottom: rem;
 }
 
 .textTikets{
@@ -308,7 +323,7 @@
 
 .division{
     position: absolute;
-    bottom: -17.5rem !important;
+    bottom: -16.5rem !important;
 }
 
 .division img{
@@ -558,8 +573,15 @@
     }
     
     .tiketsTitle{
-        margin-top: 14rem;
+        padding-top: 2rem;
         font-size: 5rem;
+    }
+
+    .diviTicket::after {
+        width: 150%;
+        left: -3rem;
+        height: 15rem;
+        top: -10rem;
     }
 }
 
@@ -678,6 +700,12 @@
 }
 
 @media screen and (max-width:480px){
+    .diviTicket::after {
+        width: 150%;
+        left: -3rem;
+        height: 15rem;
+        top: -10rem;
+    }
 
     .tiketsPreview {
         animation: none;
@@ -716,7 +744,7 @@
     }
 
     .tiketsTitle {
-        margin-top: -3.5rem;
+        margin-top: 3.5rem;
         font-size: 5rem;
     }
     

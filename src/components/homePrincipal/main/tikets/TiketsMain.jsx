@@ -18,6 +18,7 @@ const TiketsMain = () => {
   return (
     <>
     <div id='tickets' className="containerTikets">
+      <div className="diviTicket"></div>
         
       <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:good/v1663006484/CryptocupQatar/tickets/backTickets_csjolw.png" alt="background" />
 

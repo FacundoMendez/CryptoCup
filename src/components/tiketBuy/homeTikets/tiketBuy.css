@@ -9,7 +9,7 @@
     background-attachment: fixed;
     position: relative;
     transition: all .3s ease-in-out;
-    filter: contrast(110%) brightness(110%) ;
+    filter: contrast(105%) brightness(100%) ;
 }
 
 .containerTiketsBuy::-webkit-scrollbar-thumb{
@@ -96,7 +96,7 @@
 
 .imgTicket {
     width: 17rem;
-    filter: drop-shadow(0 0 40px rgba(211, 173, 255, 0.253));
+    filter: drop-shadow(0 0 40px rgba(159, 76, 255, 0.178));
     position: relative;
     z-index: -1;
 }
