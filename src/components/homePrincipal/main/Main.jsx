@@ -1,5 +1,6 @@
 import React, {lazy , Suspense} from 'react'
-import PelotaGame from './pelotaGame/PelotaGame'
+
+const PelotaGame = lazy(() => import ('./pelotaGame/PelotaGame'))
 const Home = lazy(() => import ("../header/home/Home"))
 const Spinner = lazy(() => import ('../../spinner/Spinner'))
 const TournamentMain = lazy(() => import ("./presentCryptoCup/Present"))

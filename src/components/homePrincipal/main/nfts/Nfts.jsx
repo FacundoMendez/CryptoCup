@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import "./nfts.css"
-import nftScroll from "./nftScroll"
 import cardsFuncional from './cardsFuncional'
 import effectPool from './effectPool'
 import {FormattedMessage} from 'react-intl';
@@ -8,7 +7,6 @@ import {FormattedMessage} from 'react-intl';
 const Nfts = () => {
 
   useEffect(()=> {
-    nftScroll()
     cardsFuncional()
     effectPool()
   },[])

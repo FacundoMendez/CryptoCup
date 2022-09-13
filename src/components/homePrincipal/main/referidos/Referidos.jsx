@@ -1,15 +1,9 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "./referidos.css"
-import referidosScroll from './referidosScroll'
 import {FormattedMessage} from 'react-intl';
 
 
 const Referidos = () => {
-  useEffect(() => {
-    referidosScroll()
-  },[])
-
-
 
   return (
         <div className='containerReferidos'>

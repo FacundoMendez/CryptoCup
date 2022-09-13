@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import "./tiket.css"
 import { Navigate } from 'react-router-dom'
-import tiketsScroll from './tiketsScroll'
 import {FormattedMessage} from 'react-intl';
 import Button from '../../buttons/Button';
 
@@ -9,11 +8,6 @@ import Button from '../../buttons/Button';
 const TiketsMain = () => {
 
   const [tiketClick , setTiketClick] = useState(false)
-
-
-  useEffect(()=>{
-    tiketsScroll()
-  },[])
 
   return (
     <>

@@ -1,14 +1,9 @@
-import React, {useEffect, lazy} from 'react'
+import React, {lazy} from 'react'
 import "./present.css"
-import presentScroll from './presentScroll'
 import {FormattedMessage} from 'react-intl';
 const ButtonFloatTickets = lazy(() => import ("./ButtonFloatTickets"))
 
 const TournamentMain = () => {
-
-  useEffect(() =>{
-    presentScroll()
-  },[])
 
   return (
       <div id='tournament' className="tournamentContainer">

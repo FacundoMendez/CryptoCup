@@ -1,14 +1,10 @@
 import React, {useEffect} from 'react'
 import "./roadmap.css"
-import roadmapScroll from './roadmapScroll'
 import {FormattedMessage} from 'react-intl';
 
 const Roadmap = () => {
 
-  useEffect(()=>{
-    roadmapScroll()
-  },[])
-  
+
   return (
     <div id='roadmap' className="containerRoadmap">
       <section className="intro">
