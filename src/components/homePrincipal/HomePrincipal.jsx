@@ -3,7 +3,6 @@ import Context from '../context/Context'
 import Spinner from '../spinner/Spinner'
 
 const Main = lazy(() => import ("./main/Main"))
-const Footer = lazy(() => import ("./footer/Footer"))
 const TermsAndCondicionsPopup = lazy(() => import ('./header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 
 const HomePrincipal = () => {
@@ -14,7 +13,6 @@ const HomePrincipal = () => {
         <Suspense fallback={<Spinner />}>
           { !context.checkTerminosyCondiciones ? <TermsAndCondicionsPopup /> : null}
           <Main/>
-          <Footer/>
         </Suspense>
   )
 }
