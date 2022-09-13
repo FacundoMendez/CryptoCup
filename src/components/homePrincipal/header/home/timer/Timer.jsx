@@ -23,7 +23,7 @@ const Timer = () => {
                   />
                 </li>
 
-                <div className="rombo"></div>
+                <li className="rombo"></li>
 
                 <li><span id="hours"></span>
                   <FormattedMessage
@@ -32,7 +32,7 @@ const Timer = () => {
                   />
                 </li>
 
-                <div className="rombo"></div>
+                <li className="rombo"></li>
 
                 <li><span id="minutes"></span>
                   <FormattedMessage

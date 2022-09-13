@@ -8,9 +8,10 @@ const effectsGsap = () => {
         return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
-    const videoSmoke = document.querySelector(".smokeVideo")
 
     if (!isMobile()) {
+        const videoSmoke = document.querySelector(".smokeVideo")
+
         gsap.registerPlugin(ScrollTrigger);
 
 
@@ -375,12 +376,6 @@ const effectsGsap = () => {
             }
         })
 
-
-
-
-
-    }else{
-        videoSmoke.classList.remove("smoke")
     }
 }
 
