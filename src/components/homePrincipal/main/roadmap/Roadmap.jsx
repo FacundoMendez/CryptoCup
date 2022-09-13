@@ -95,19 +95,19 @@ const Roadmap = () => {
               </strong >
               <p>
                 <FormattedMessage
-                    id="roadmap-q1span1"
+                    id="roadmap-q2span1"
                     defaultMessage="- Ladders System development "
                 /><span>✓</span><br/>
                 <FormattedMessage
-                    id="roadmap-q1span2"
+                    id="roadmap-q2span2"
                     defaultMessage="- Whitepaper creation"
                 /><span>✓</span><br/>
                 <FormattedMessage
-                    id="roadmap-q1span3"
+                    id="roadmap-q2span3"
                     defaultMessage="- Website Structure "
                 /><span>✓</span><br/>
                 <FormattedMessage
-                    id="roadmap-q1span4"
+                    id="roadmap-q2span4"
                     defaultMessage="- Background Design  "
                 /><span>✓</span><br/>
               </p>
