@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react'
 import "./token.css"
 import tokenScroll from './tokenScroll'
+/* import {FormattedMessage} from 'react-intl'; */
 
 const TokenMain = () => {
 
