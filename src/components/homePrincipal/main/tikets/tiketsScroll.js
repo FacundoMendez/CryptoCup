@@ -13,30 +13,6 @@ const tiketsScroll = () =>{
         gsap.registerPlugin(ScrollTrigger);
 
 
-
-
-            /* text title */
-            let tl = new Timeline({
-                scrollTrigger:{
-                    trigger: ".containerTikets",
-                    start: "top 60%",
-                    end: "bottom bottom",
-                }
-            })
-    
-    
-            tl.from(".tiketsTitle",{
-                opacity:0,
-                duration:1,
-            })
-    
-            tl.from(".textDescripcionTikets",{
-                opacity:0,
-                duration:1,
-            })
-           
-
-    
         /* basic */
 
         let tl_basic = new Timeline({

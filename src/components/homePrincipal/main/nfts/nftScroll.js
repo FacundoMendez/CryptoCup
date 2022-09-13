@@ -13,26 +13,6 @@ const nftScroll= ()=>{
         gsap.registerPlugin(ScrollTrigger); 
 
 
-        let tl_nfts = new Timeline({
-            scrollTrigger:{
-                trigger: ".containerNfts",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
-
-
-
-        tl_nfts.from(".titleNfts",{
-            opacity:0,
-            y:100,
-        })
-
-        tl_nfts.from(".textNfts",{
-            opacity:0,
-        })
-
-
         let tl_nftsCopas = new Timeline({
             scrollTrigger:{
                 trigger: ".containerWins",
@@ -41,15 +21,6 @@ const nftScroll= ()=>{
             }
         })
 
-        tl_nftsCopas.from(".subtitleNftWinners",{
-            opacity:0,
-        })
-
-        tl_nftsCopas.from(".textCardsNft",{
-            opacity:0,
-        })
-
- 
 
         tl_nftsCopas.from(".rockgrande",{
             opacity:0,

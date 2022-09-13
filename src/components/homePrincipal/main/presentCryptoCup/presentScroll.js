@@ -32,25 +32,6 @@ const tournamentScroll = () =>{
         })
 
 
-        tl_present.from(".tournamentTitle",{
-            opacity:0,
-            duration:.5,
-        })
-
-        tl_present.from(".subTitlePrize",{
-            opacity:0,
-        })
-
-        gsap.from(".boxButtonTicketBuy",{
-            y: -30,
-            opacity:0,
-            scrollTrigger:{
-                trigger: ".boxTournament",
-                start: "top center",
-                end: "bottom bottom",
-            }
-        })
-
         let tl_logoPresent = new Timeline({
             scrollTrigger:{
                 trigger: ".subTitlePrize",
@@ -61,9 +42,8 @@ const tournamentScroll = () =>{
         })
 
         tl_logoPresent.from(".logoContainer",{
-                y: "+=100",
+                y: 60,
                 opacity:0,
-                duration:1,
         })
 
             

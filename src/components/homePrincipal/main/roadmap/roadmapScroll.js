@@ -11,16 +11,6 @@ const roadmapScroll = () =>{
 
       gsap.registerPlugin(ScrollTrigger); 
 
-      gsap.from(".containerTitle_roadmap",{
-        opacity:0,
-        scrollTrigger:{
-          trigger: ".containerRoadmap",
-          start: "top top",
-          end: "bottom bottom",
-        }
-      })
-
-
       gsap.from(".t1",{
         opacity:0,
         duration:.2,

@@ -62,14 +62,14 @@
 
 .rombo{
   width: 12px; 
-  height: 12px; 
+  height: 14px; 
   border: 2px solid #c491ff; 
   background: #58448f;
-  -webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(40deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+  transform: rotate(46deg);
 }
 
 .eff2{

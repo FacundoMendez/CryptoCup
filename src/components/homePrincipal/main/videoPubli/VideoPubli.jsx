@@ -1,12 +1,9 @@
-import React,{useEffect} from 'react'
+import React from 'react'
 import "./videoStyle.css"
-import VideoPubliFuncional from './videoPubliFuncional'
 import {FormattedMessage} from 'react-intl';
 
 const VideoPubli = () => {
-    useEffect(() => {
-        VideoPubliFuncional()
-    },[])
+
   return (
     <div className="videoPubli-container">
         <div className="videoPubli-texts">
