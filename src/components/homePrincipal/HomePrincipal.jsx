@@ -1,16 +1,11 @@
-import React,{lazy, Suspense,useContext, useEffect} from 'react'
+import React,{lazy, Suspense,useContext} from 'react'
 import Context from '../context/Context'
 import Spinner from '../spinner/Spinner'
-import effectsGsap from './effectsGsap'
 
 const Main = lazy(() => import ("./main/Main"))
 const TermsAndCondicionsPopup = lazy(() => import ('./header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
 
 const HomePrincipal = () => {
-
-  useEffect(()=> {
-    effectsGsap()
-  },[])
 
   const context = useContext(Context)
 

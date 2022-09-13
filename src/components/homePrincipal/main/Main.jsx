@@ -1,4 +1,5 @@
-import React, {lazy , Suspense} from 'react'
+import React, {lazy , Suspense, useEffect} from 'react'
+import effectsGsap from './effectsGsap'
 
 const PelotaGame = lazy(() => import ('./pelotaGame/PelotaGame'))
 const Home = lazy(() => import ("../header/home/Home"))
@@ -14,6 +15,10 @@ const Footer = lazy(() => import ("../footer/Footer"))
 
 
 const Main = () => {
+
+  useEffect(()=> {
+    effectsGsap()
+  },[])
 
   return (
     <main className='main'>
