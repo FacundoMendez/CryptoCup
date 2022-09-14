@@ -14,7 +14,7 @@ const TimerTickets = () => {
         <h2 className="headline_tickets">
           <FormattedMessage
             id="timerTickets_text"
-            defaultMessage="Time until next batch "
+            defaultMessage="Batch ends in:"
           />
         </h2>
 
