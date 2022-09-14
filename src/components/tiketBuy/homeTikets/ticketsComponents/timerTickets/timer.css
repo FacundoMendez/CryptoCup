@@ -1,0 +1,206 @@
+.timer{
+  position: relative;
+  top: 5rem;
+}
+
+.headline_tickets  {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 1rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: qatarHeavy;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #5b2dff);
+  letter-spacing: 2px;
+}
+  
+.reloj li {
+  display: inline-block;
+  font-size: 1.3rem;
+  list-style-type: none;
+  padding: 0rem .5rem;
+  text-align: center;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: qatarHeavy;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+
+
+}
+
+
+.reloj span {
+  display: block;
+  font-size: 4rem;
+}
+
+.reloj li{
+  font-size: 2rem;
+}
+
+.reloj{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+}
+
+.rombo{
+  width: 12px; 
+  height: 12px; 
+  border: 2px solid #c491ff; 
+  background: #58448f2c;
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(46deg);
+}
+
+.eff2{
+  transform: rotate(180deg);
+}
+
+.eff1, .eff2{
+  filter: hue-rotate(295deg) brightness(110%) contrast(110%);
+  width: 4rem;
+}
+
+
+@media screen and (min-width: 2550px){
+  .timer{
+    position: relative;
+    top: 13rem;
+    text-align: center;
+  }
+  
+  .headline_tickets  {
+    font-size: 10rem;
+    letter-spacing: 1px;
+
+  }
+    
+  .reloj li {
+    padding: 0 2rem;
+    font-size: 1.9rem;
+  }
+
+  
+  .reloj li span {
+    display: block;
+    font-size: 6rem;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .timer{
+    position: relative;
+    top: 3rem;
+  }
+  
+  .headline_tickets  {
+    padding: 0rem 0rem;
+  }
+
+  .timer h2{
+    font-size: 4.5rem;
+  }
+    
+  
+  .reloj li {
+    padding: 0 .2rem;
+    font-size: 1.5rem;
+  }
+  
+  .reloj li span {
+    display: block;
+    font-size: 3rem;
+  }
+}
+  
+  
+@media screen and (max-width: 800px) {
+  .timer{
+    position: relative;
+    top: 3rem;
+    opacity: 1;
+  }
+  
+  .headline_tickets  {
+    font-size: 4.1rem;
+    letter-spacing: 1px;
+  }
+    
+  .reloj li {
+    padding: 0 .2rem;
+    font-size: 1.9rem;
+  }
+  
+  .reloj li span {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width:480px){
+
+  .timer{
+    position: relative;
+    top: 3rem;
+  }
+  
+  .headline_tickets  {
+    font-size: 4.1rem;
+    letter-spacing: 1px;
+  }
+    
+  .reloj li {
+    padding: 0 .2rem;
+    font-size: 1.9rem;
+  }
+  
+  .reloj li span {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width:360px){
+  .timer{
+    position: relative;
+    top: 3rem;
+  }
+  
+  .headline_tickets  {
+    font-size: 4rem;
+    letter-spacing: 1px;
+  }
+    
+  .reloj li {
+    font-size: 1.4rem;
+    padding: .5rem .8rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem;
+  }
+  
+  .reloj li span {
+    display: block;
+    font-size: 1.8rem;
+  }
+}

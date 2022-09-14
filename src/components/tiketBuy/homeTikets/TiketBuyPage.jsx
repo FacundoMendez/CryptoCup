@@ -13,6 +13,7 @@ import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
 import gsap from 'gsap';
 import {FormattedMessage} from 'react-intl';
+import TimerTickets from './ticketsComponents/timerTickets/TimerTickets';
 
 const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
@@ -437,28 +438,28 @@ const TiketBuyPage = () => {
                               <div className="radioToken">
 
                                       <label className="radio control-radio">
-                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u.webp"/* {usdcLogo} */ alt="Logo Dai" />
+                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdcLogo_iz6l8u_kf6qgl.png"/* {usdcLogo} */ alt="Logo Dai" />
                                           <p>USDC</p>
                                           <input type="radio" value="option2-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 2} onClick={() => setTokenOptionSelect(2)}/>
                                           <div className="control_indicator"></div>
                                       </label>
 
                                       <label className="radio control-radio">
-                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx.webp"/* {usdtLogo} */ alt="Logo Dai" />
+                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/usdtLogo_crllfx_uyuhcp.png"/* {usdtLogo} */ alt="Logo Dai" />
                                           <p>USDT</p>
                                           <input type="radio" value="option1-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 1} onClick={() => setTokenOptionSelect(1)}  />
                                           <div className="control_indicator"></div>
                                       </label>
                                       
                                       <label className="radio control-radio">
-                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68.webp"/* {busdLogo} */ alt="Logo Dai" />
+                                          <img className='LogoToken' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68_iraojc.png"/* {busdLogo} */ alt="Logo Dai" />
                                           <p>BUSD</p>
                                           <input type="radio" value="option3-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 3} onClick={() => setTokenOptionSelect(3)} />
                                           <div className="control_indicator"></div>
                                       </label>
                                       
                                       <label className="radio control-radio">
-                                          <img className='LogoToken' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1660658224/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu.webp"/* {daiLogo}  */alt="Logo Dai" />
+                                          <img className='LogoToken' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu_qlhlzd.png"/* {daiLogo}  */alt="Logo Dai" />
                                           <p>DAI</p>
                                           <input type="radio" value="option4-basic" readOnly={true} name="radioBasic" checked={tokenOptionSelect === 4} onClick={() => setTokenOptionSelect(4)} />
                                           <div className="control_indicator"></div>
@@ -652,8 +653,9 @@ const TiketBuyPage = () => {
                 <span className="BorderTopBottom-ticketSale-Connect  "></span>
                 <span className="BorderLeftRight-ticketSale-Connect  "></span>
               </div>
+            
             </div>
- 
+                
 
             {/* pasa los parametros al componente del codigo de descuento*/}
             
@@ -666,8 +668,10 @@ const TiketBuyPage = () => {
               codigoPropio= {codigoPropio}
               codigoIncorrecto = {codigoIncorrecto}
             /> 
+          <TimerTickets/>
             
           </div>
+
         </div>
     </div>
   </>

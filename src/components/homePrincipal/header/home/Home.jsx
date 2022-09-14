@@ -50,7 +50,7 @@ const Home = () => {
                   </div>
                 </div>
             </div>
-            <Timer/>
+            <Timer time="11/20" />
           </div>
         </div>
       </div>    
