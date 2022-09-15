@@ -335,7 +335,7 @@ const TiketBuyPage = () => {
         })
         .then(res => res.json())
         .then(res => {
-          if (res == true) {
+          if (res === true) {
             setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
             setActiveReferralCode(code);
           } 
