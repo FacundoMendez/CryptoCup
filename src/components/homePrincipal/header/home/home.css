@@ -310,6 +310,18 @@
     background-position: 65% ;
   }
 
+  .containerPrincipalHome::before{
+    content: " ";
+    position: absolute;
+    bottom: 0rem;
+    height: 100rem;
+    width: 50vw;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.842);
+    filter: blur(190px);
+    z-index: 11;
+  }
+
 }
 
 @media screen and (max-width: 800px){
@@ -331,12 +343,14 @@
     position: absolute;
     bottom: -5rem;
     height: 100rem;
-    width:57vw;
+    width:60vw;
     left: 0rem;
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(0, 0, 0, 0.562);
     filter: blur(80px);
     z-index: 12;
   }
+
+
 
  
 }
@@ -386,7 +400,7 @@
     position: absolute;
     bottom: 0rem;
     height: 100rem;
-    width: 120vw;
+    width: 90vw;
     left: 0rem;
     background-color: rgb(0, 0, 0);
     filter: blur(190px);
