@@ -542,6 +542,11 @@ input[type=number] { -moz-appearance:textfield; }
         top: -1.7rem;
     }
 
+
+    .errorNoMetamask p{
+        font-size: 1.4rem;
+    }
+
     .containerInputCupon{
         right: 3rem;
     }
