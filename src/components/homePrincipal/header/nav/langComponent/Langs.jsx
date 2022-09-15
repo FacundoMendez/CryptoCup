@@ -49,6 +49,16 @@ const Langs = () => {
                     <div className="imgBoxZH"></div>
                 </div>
 
+                
+                <div className="boxPortugues boxIdioma" onClick={() => {
+                        setIdioma("POR")
+                        contextIdioma.establecerLenguaje("poLang")
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1663281026/CryptocupQatar/MultiLang/brasil_loyjsj.png")
+                    }} >
+                    <p>Portugues  •  POR</p>
+                    <div className="imgBoxPo"></div>
+                </div>
+
                 <div className="boxArabe boxIdioma" onClick={() => {
                         setIdioma("QTR")
                         contextIdioma.establecerLenguaje("arLang")
@@ -57,6 +67,7 @@ const Langs = () => {
                     <p>Qatar  •  QTR</p>
                     <div className="imgBoxAr"></div>
                 </div>
+
             </div>
         </div>
        {/*  <div className="lineLangButton"></div> */}

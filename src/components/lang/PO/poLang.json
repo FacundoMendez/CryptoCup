@@ -1,0 +1,129 @@
+{
+    "nav-home":"Inicio",
+    "nav-tickets":"Tickets",
+    "nav-roadmap":"roadmap",
+    "nav-whitepaper":"whitepaper",
+    "nav-comingSoon":"em breve",
+
+
+
+    "home-title":"Crypto Cup Torneio",
+    "home-presale":"Pré-venda",
+    "home-buyTickets":"Tickets",
+    "home-min":"minutos",
+    "home-days":"dias",
+    "home-hours":"horas",
+    "home-seg":"segundos",
+
+    "timerTickets_text":"O lote termina em:",
+
+
+    "present-subTitle":"O próximo torneio mundial inovador",
+    "present-text1":" Procuramos capacitar sua experiência em torneios, trazendo uma plataforma inovadora para envolvê-lo em competições de criptomoedas baseadas em torneios reais. Vamos nos ater a um modelo de torneio descentralizado, mostrando transparência e tentando distribuir recompensas de pool para o maior número possível de participantes.",
+    "present-text2":"Procuramos capacitar sua experiência em torneios, trazendo uma plataforma inovadora para envolvê-lo em competições de criptomoedas baseadas em torneios reais. Vamos nos ater a um modelo de torneio descentralizado, mostrando transparência e tentando distribuir recompensas de pool para o maior número possível de participantes.",
+    "present-text3":"Você poderá participar de uma oportunidade de baixo custo e a chance de ganhar um grande prêmio de pool, NFTs exclusivos e muito mais! Prove seus conhecimentos de futebol competindo com seus amigos e o mundo, torça pelo seu time favorito e ganhe tudo! O aumento exponencial da adoção de criptomoedas ainda está por vir, não fique para trás!",
+
+
+
+    "tickets-title":"ABRA SEU CAMINHO ATÉ O TOPO DA TORNEIO",
+    "tickets-text":"Para estar disponível para participar, você precisará de um de nossos ingressos NFT. Você pode escolher entre “Tíquete de Torneio básico”, “Tíquete de Torneio Premium” ou ambos. Cada bilhete permite que você jogue o torneio correspondente e concederá seu acesso ao torneio como jogador, para que você possa usar todas as funções do dapp!",
+    
+    "tickets-basicLadderTitle":"Torneio BÁSICA",
+    "tickets-basicLadderText":"Esta Torneio foi pensada para todos que querem competir da forma mais simples, você só precisa do seu ingresso básico adquirido e estar pronto para prever o maior número possível de partidas para ganhar pontos nesta Torneio",
+    "tickets-basicLadderText2":"Cada partida irá variar nos pontos dados aos participantes, com base nas probabilidades reais de ganhar/perder de cada equipe diferente e seu adversário.",
+    
+    "tickets-boostLadderTitle":"Torneio DE IMPULSO",
+    "tickets-boostLadderText1":"É uma Torneio premium que lhe dá acesso a funções extras especiais que trarão mais valor à sua estratégia, tempo, visão e, em geral, uma competição mais interessante. Juntar-se a esta Torneio irá desbloquear você:",
+    "tickets-boostLadderStar1":"Utilitário de token",
+    "tickets-boostLadderStar2":"Acesso a multiplicadores",
+    "tickets-boostLadderStar3":"Previsões avançadas desbloqueadas",
+    "tickets-boostLadderStar4":"Recompensas da sequência de previsões",
+    "tickets-boostLaddertext2":"Teste suas habilidades em todas as partidas da copa do mundo acessando multiplicadores para subir mais rápido. Aumente suas recompensas com o Token CCT, acesse sequências de vitórias e muito mais!",
+
+
+    "game-start":"começar",
+    "game-restart":"jogo-reiniciar",
+    "game-scoreMax":"Pontuação máxima:",
+    "game-gameOver":"fim de jogo",
+
+    "referral-title":"Consulte para ganhar",
+    "referral-text":"O sistema de referência permitirá que você ganhe convidando pessoas para fazer parte da Crypto Cup! Ao comprar um bilhete, você receberá um link, que poderá compartilhar com quem quiser, fazendo com que eles ganhem um",
+    "referral-textSpan1":"ótimo desconto de 20%",
+    "referral-textSpan2":"na compra dos seus Tickets e",
+    "referral-textSpan3":"beneficiando você",
+    "referral-textSpan4":"com ",
+    "referral-textSpan5":"2 dólares",
+    "referral-textSpan6":"para cada bilhete básico que compram e",
+    "referral-textSpan7":"3 dólares",
+    "referral-textSpan8":"para cada bilhete de aumento que será enviado automaticamente para sua carteira",
+    "referral-textSpan9":"sem comissões",
+    "referral-textSpan10":"e pronto para gastar.",
+
+    "referral-text2":"Comece a ouvir cedo com isso ",
+    "referral-text2Span1":"ganha-ganha",
+    "referral-text2Span2":"acordo!",
+
+    "nfts-title":"Recompensas da competição",
+    "nfts-prizePoolTitle":"Vencedores NFT's",
+    "nfts-prizePooltext":"apresentamos a você as NFTs omni chain, onde os campeões podem resgatar e vender em seu mercado favorito sem a necessidade de uma ponte.",
+
+
+    "trailer-title":"ASSISTA O TRAILER",
+
+
+    "roadmap-title":"ROADMAP",
+
+    "roadmap-q42021title":"Q4 2021",
+    "roadmap-q42021span1":"- Projeto de conceito ",
+    "roadmap-q42021span2":"- Pesquisa de branding e jogos ",
+    "roadmap-q42021span3":"- Pesquisa NFT",
+    "roadmap-q42021span4":"- Pesquisa de token ",
+    "roadmap-q42021span5":"- Configuração do ambiente de desenvolvimento ",
+
+    "roadmap-q1title":"Q1 2022",
+    "roadmap-q1span1":"- Seleção de imagens da Web",
+    "roadmap-q1span2":"- Desenvolvimento de contratos inteligentes ",
+    "roadmap-q1span3":"- Ilustrações e modelos 3D de NFTs ",
+    "roadmap-q1span4":"- Processo de seleção de investidores ",
+
+    "roadmap-q2title":"Q2 2022",
+    "roadmap-q2span1":"- Desenvolvimento de sistema de Torneios ",
+    "roadmap-q2span2":"- Criação de whitepaper",
+    "roadmap-q2span3":"- Estrutura do site ",
+    "roadmap-q2span4":"- Plano de fundo ",
+
+    "roadmap-q3title":"Q3 2022",
+    "roadmap-q3span1":"- Venda privada",
+    "roadmap-q3span2":"- Venda de ingressos",
+    "roadmap-q3span3":"- Dapp Design e desenvolvimento",
+    "roadmap-q3span4":"- Lançamento oficial do site",
+    "roadmap-q3span5":"- Minijogo público",
+    "roadmap-q3span6":"- Token public presale 1 ",
+    "roadmap-q3span7":"- Pré-venda pública de token 2",
+    "roadmap-q3span8":"- Dapp Beta",
+    
+    "roadmap-q4title":"Q4 2022",
+    "roadmap-q4span1":"- Lançamento do Dapp",
+    "roadmap-q4span2":"-Lançamento do sistema de Torneios jogáveis",
+    "roadmap-q4span3":"- Início do torneio ",
+    "roadmap-q4span4":"- Mercado",
+    "roadmap-q4span5":"- Distribuição de prêmios ",
+
+
+    "footer-social":"Nossas Redes Sociais",
+    "footer-contact":"Contact",
+    "footer-email":"Cryptocup2022@gmail.com ",
+    "footer-tyc":"• termos e Condições",
+
+
+    "ticketBuy-popupsErrNoMetamask":"Instale o Metamask!",
+    "ticketBuy-popupsChainIncorrecta":"Por favor, conecte-se à rede Binance Smart Chain!",
+    "ticketBuy-popupsNoBalance":"Você não tem fichas suficientes.",
+    "ticketBuy-buy":"Comprar",
+
+    "ticketBuy-title":"TICKETS DE TORNEIO",
+    "ticketBuy-texto":"Tudo que você precisa está aqui. Vamos construir o seu caminho para o topo!",
+    "ticketBuy-hoverCopy":" Clique para copiar o link do convite para a área de transferência!",
+    "ticketBuy-hoverCopy2":"Compre seu ingresso e receba seu código de referência!",
+    "ticketBuy-connectWallet":"CONECTAR CARTEIRA"
+}

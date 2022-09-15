@@ -4,6 +4,7 @@ import enLang from "../lang/EN/enLang.json"
 import esLang from "../lang/ES/esLang.json"
 import zhLang from "../lang/ZH/zhLang.json"
 import arLang from "../lang/AR/arLang.json"
+import poLang from "../lang/PO/poLang.json"
 
 const LangContext = createContext();
 
@@ -28,7 +29,9 @@ const LangProvider = ({children}) => {
 			mensajesPorDefecto = zhLang
 		} else if(lang === 'AR'){
 			mensajesPorDefecto = arLang
-		} else {
+		} else if(lang === 'PO'){
+			mensajesPorDefecto = poLang
+		}else {
 			localePorDefecto = 'en'
 			mensajesPorDefecto = enLang
 		}
@@ -56,6 +59,11 @@ const LangProvider = ({children}) => {
 				establecerMensajes(arLang);
 				establecerLocale('ar');
 				localStorage.setItem('lang', 'ar');
+				break;
+		    case 'poLang':
+				establecerMensajes(poLang);
+				establecerLocale('po');
+				localStorage.setItem('lang', 'po');
 				break;
 			default:
 				establecerMensajes(enLang);
