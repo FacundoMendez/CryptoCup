@@ -154,6 +154,7 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
 
+    
 }
 
 .priceBasic_active{
@@ -249,9 +250,10 @@
 /* controlador de pantalla token */
 
 
+
 .boxBlurToken{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position:fixed;
     left: 0;
     top: 0;
@@ -271,7 +273,7 @@
 
 .boxBlurTokenBoost{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position:fixed;
     left: 0;
     top: 0;
@@ -355,6 +357,7 @@
 .radioTokenBoost-active{
     opacity: 1;
     visibility: visible;
+
     transition: all .5s ease-in-out;
 }
 
@@ -513,7 +516,8 @@
     width: 100%;
     position: absolute;  
 }
-  
+
+
   
 /* contador */
 
@@ -531,7 +535,6 @@
     top:-1.6rem;
     left: -.4rem;
     width: 21.8rem;
-
 }
 
 .menos-basic, .mas-basic , .menos-boost, .mas-boost{

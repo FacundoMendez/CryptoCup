@@ -8,7 +8,7 @@ const timerFuncional = () => {
             dd = String(today.getDate()).padStart(2, "0"),
             mm = String(today.getMonth() + 1).padStart(2, "0"),
             yyyy = today.getFullYear(),
-            dayMonth = "9/30/",              /* ------->  MODICAR FECHA BACHES */
+            dayMonth = "10/1/",              /* ------->  MODICAR FECHA BACHES */
             qatar = dayMonth + yyyy;
         
             today = mm + "/" + dd + "/" + yyyy;
