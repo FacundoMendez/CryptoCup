@@ -132,7 +132,7 @@
     position: fixed;
     left: 6rem;
     bottom: 4rem;
-    z-index: 999999 !important;
+    z-index: 9999 ;
     transform: perspective(2000px);
     width: 15rem;
     height: 15rem;

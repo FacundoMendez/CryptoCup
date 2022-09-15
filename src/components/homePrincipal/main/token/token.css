@@ -117,8 +117,17 @@
     margin-top: 5rem;
     padding-bottom: 15rem;
     width: 17rem;
+    animation: rotate 5s infinite linear;
 }
 
+@keyframes rotate {
+    0%{
+        transform: rotate3d(0 , 1 ,0 , 0deg);
+    }
+    100%{
+        transform: rotate3d(0 , 1 , 0 , 360deg);
+    }
+}
 
 .containerToken{
     display: flex;

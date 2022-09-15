@@ -397,6 +397,13 @@
         height: 49rem;
     }
     
+    .imgNftBasic, .imgNftBoost {
+        width: 37rem;
+        height: 43rem;
+        z-index: 900;
+        filter: drop-shadow(0 0 20px rgba(101, 8, 177, 0.164)) contrast(110%) brightness(106%);
+    }
+
     .rockIz {
         width: 30rem;
         left: 3%;

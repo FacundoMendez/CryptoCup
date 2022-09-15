@@ -11,7 +11,7 @@ const Langs = () => {
     useEffect(() => {
         langsFuncional()
     },[])
-    const [idioma, setIdioma] = useState("EN")
+    const [idioma, setIdioma] = useState("ENG")
 
     const [bandera, setBandera] = useState("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.png")
 
@@ -24,31 +24,39 @@ const Langs = () => {
             <p className='idiomaSelect'>{idioma}</p>
             <div className="radioIdiomas" >
                 <div className="boxEnglish boxIdioma" onClick={() => {
-                        setIdioma("EN")
+                        setIdioma("ENG")
                         contextIdioma.establecerLenguaje("enLang")
                         setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langEN_yrydko.png")
                     }}>
-                    <p>English  •  EN</p>
+                    <p>English  •  ENG</p>
                     <div className="imgBoxEN"></div>
                 </div>
                 <div className="boxEspañol boxIdioma" onClick={() => {
-                        setIdioma("ES")
+                        setIdioma("ESP")
                         contextIdioma.establecerLenguaje("esLang")
                         setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1662473734/CryptocupQatar/MultiLang/langES_hccmqo.webp")
                     }} >
-                    <p>Español  •  ES</p>
+                    <p>Español  •  ESP</p>
                     <div className="imgBoxES"></div>
                 </div>
 
                 <div className="boxChino boxIdioma" onClick={() => {
-                        setIdioma("ZH")
+                        setIdioma("ZHO")
                         contextIdioma.establecerLenguaje("zhLang")
                         setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:low,w_100/v1663262599/CryptocupQatar/MultiLang/chino_f2tjyh.png")
                     }} >
-                    <p>Chino  •  ZH</p>
+                    <p>Chino  •  ZHO</p>
                     <div className="imgBoxZH"></div>
                 </div>
 
+                <div className="boxArabe boxIdioma" onClick={() => {
+                        setIdioma("QTR")
+                        contextIdioma.establecerLenguaje("arLang")
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1663278182/CryptocupQatar/MultiLang/qatar_gvetll.png")
+                    }} >
+                    <p>Qatar  •  QTR</p>
+                    <div className="imgBoxAr"></div>
+                </div>
             </div>
         </div>
        {/*  <div className="lineLangButton"></div> */}
