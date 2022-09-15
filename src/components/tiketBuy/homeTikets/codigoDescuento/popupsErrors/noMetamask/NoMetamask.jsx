@@ -30,7 +30,7 @@ const NoMetamask = ({noMetamask , chainIncorrecta , noBalance}) => {
         <p>
           <FormattedMessage
               id="ticketBuy-popupsChainIncorrecta"
-              defaultMessage="Please connect to the Ropsten Network!"
+              defaultMessage="Please connect to the Binance Smart Chain Network!"
             />
         </p>
       </div>  

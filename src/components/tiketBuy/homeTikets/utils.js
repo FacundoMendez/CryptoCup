@@ -1089,8 +1089,7 @@ export const abi = [
 	}
 ];
 
-export const contractAddress = "0x62F507C418DF5925A76f4442F013574CCaB3EF2f";
-export const tokenAddress = "0x05A2e4FD4CccCC377683f68187fB45b9b2FA1bCC";
+export const contractAddress = "0xF7AbE5DDFa1dDDe789c48cF6838b558F1dd24D2d";
 
 export const tokenAddresses = [
 	{

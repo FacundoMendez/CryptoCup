@@ -117,7 +117,7 @@
 
 
     "ticketBuy-popupsErrNoMetamask":"Please Install Metamask!",
-    "ticketBuy-popupsChainIncorrecta":"Please connect to the Ropsten Network!",
+    "ticketBuy-popupsChainIncorrecta":"Please connect to the Binance Smart Chain Network!",
     "ticketBuy-popupsNoBalance":"You don't have enough tokens.",
     "ticketBuy-buy":"BUY",
 

@@ -120,7 +120,7 @@ const TiketBuyPage = () => {
           await login();
         });
 
-        if(chainId === 3) {
+        if(chainId === 56) {
           const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
           const newSigner = await newProvider.getSigner();
           const newContract = await new ethers.Contract( contractAddress , abi , newSigner );
@@ -190,9 +190,8 @@ const TiketBuyPage = () => {
   const buyBasicTicket = async () => {
     setLoadingBuy(true)
 
-    // const tokenAddress = tokenAddresses[tokenOptionSelect - 1].address;
-    const tokenAddresss = tokenAddress;
-    const tokenContract = await new ethers.Contract( tokenAddresss , ERC20Abi , signer );
+    const tokenAddress = tokenAddresses[tokenOptionSelect - 1].address;
+    const tokenContract = await new ethers.Contract( tokenAddress , ERC20Abi , signer );
     const tokenDecimals = await tokenContract.decimals();
 
     const enoughBalance = await tokenContract.balanceOf(account[0]).then(res => {
@@ -220,7 +219,7 @@ const TiketBuyPage = () => {
         }
       });
 
-      const tx = await contract.mint(cantTicketsBasic, 4, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+      const tx = await contract.mint(cantTicketsBasic, tokenOptionSelect - 1, 0, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
       .catch(e => {
         setLoadingBuy(false);
       });
@@ -261,9 +260,8 @@ const TiketBuyPage = () => {
   const buyBoostTicket = async () => {
     setLoadingBuy(true)
 
-    // const tokenAddress = tokenAddresses[tokenOptionSelect - 1].address;
-    const tokenAddresss = tokenAddress;
-    const tokenContract = await new ethers.Contract( tokenAddresss , ERC20Abi , signer );
+    const tokenAddress = tokenAddresses[tokenOptionSelect - 1].address;
+    const tokenContract = await new ethers.Contract( tokenAddress , ERC20Abi , signer );
     const tokenDecimals = await tokenContract.decimals();
 
     const enoughBalance = await tokenContract.balanceOf(account[0]).then(res => {
@@ -291,7 +289,7 @@ const TiketBuyPage = () => {
         }
       });
 
-      const tx = await contract.mint(cantTicketsBoost, 4, 1, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
+      const tx = await contract.mint(cantTicketsBoost, tokenOptionSelect - 1, 1, activeReferralCode) // Cantidad, Moneda, Tipo de Ticket, Referral Code
       .catch(e => {
         setLoadingBuy(false);
       });
