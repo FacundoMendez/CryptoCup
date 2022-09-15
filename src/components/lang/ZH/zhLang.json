@@ -1,0 +1,125 @@
+{
+    "nav-home":"開始",
+    "nav-tickets":"門票",
+    "nav-roadmap":"路線圖",
+    "nav-whitepaper":"白皮書",
+    "nav-comingSoon":"快來了",
+
+    "home-title":"加密杯錦標賽",
+    "home-presale":"預售",
+    "home-buyTickets":"門票",
+    "home-min":"分鐘",
+    "home-days":"天",
+    "home-hours":"小時",
+    "home-seg":"秒",
+
+    "timerTickets_text":"批次結束於：",
+
+    "present-subTitle":"下一個創新的世界錦標賽",
+    "present-text1":"Crypto Cup 是第一個基於 FIFA 世界杯 2022 預測的加密錦標賽。我們鼓勵您參與這一旅程，並以非常實惠的機會開始比賽並獲得豐厚的回報。",
+    "present-text2":"我們尋求通過提供一個創新的平台來增強您的錦標賽體驗，以根據真實錦標賽進入加密貨幣競賽。 我們將堅持去中心化的錦標賽模式，展示透明度，並嘗試將礦池獎勵分配給盡可能多的參與者.",
+    "present-text3":"您將被允許加入以獲得低成本的機會，並有機會贏得大獎池、獨特的 NFT 等等！ 通過與您的朋友和世界競爭來證明您的足球知識，為您最喜歡的球隊加油並贏得一切！ 加密貨幣採用的指數級增長尚未到來，不要被拋在後面！",
+
+
+    "tickets-title":"勇往直前",
+    "tickets-text":"要參與和參與，您需要一張我們的 NFT 門票。 您可以在“基本錦標賽門票”、“高級錦標賽門票”或兩者之間進行選擇。 每張門票都允許您參加相應的錦標賽，並授予您以玩家身份參加錦標賽的權限，因此您將能夠使用 Dapp 的所有功能！",
+    
+    "tickets-basicLadderTitle":"基本錦標賽",
+    "tickets-basicLadderText":"本次錦標賽專為希望以最簡單方式參賽的所有人而設計，您只需購買基本門票並準備好預測盡可能多的比賽即可在本次錦標賽中獲得積分。",
+
+    "tickets-basicLadderText2":"每場比賽將根據每支不同球隊及其對手的實際輸贏賠率，給予參與者的分數有所不同。",
+    
+    "tickets-boostLadderTitle":"高級錦標賽",
+    "tickets-boostLadderText1":"這是一項高級錦標賽，您可以使用特殊的附加功能，為您的策略、時機、願景和通常更有趣的比賽增加更多價值。 參加本次錦標賽將解鎖您：",
+    "tickets-boostLadderStar1":"代幣效用",
+    "tickets-boostLadderStar2":"使用乘數",
+    "tickets-boostLadderStar3":"高級預測解鎖",
+    "tickets-boostLadderStar4":"預測連勝獎勵",
+    "tickets-boostLaddertext2":"通過訪問乘數以更快地攀登，測試您在所有世界杯比賽中的技能。 使用 CCT 代幣增加您的獎勵，獲得連勝記錄等",
+
+
+    "game-start":"開始",
+    "game-restart":"重新開始",
+    "game-scoreMax":"最高分：",
+    "game-gameOver":"遊戲結束",
+
+
+    "referral-title":"邀請贏",
+    "referral-text":"推薦系​​統將允許您通過邀請人們成為 Crypto Cup 的一部分來賺錢！ 當您購買門票時，您將獲得一個鏈接，您可以將其分享給任何您想要的人，以便他們獲得",
+    "referral-textSpan1":"20% 大折扣",
+    "referral-textSpan2":"在購買您的門票和",
+    "referral-textSpan3":"讓你受益",
+    "referral-textSpan4":"和",
+    "referral-textSpan5":"2美元",
+    "referral-textSpan6":"他們購買的每張基本票和",
+    "referral-textSpan7":"3美元",
+    "referral-textSpan8":"對於每張高級票，將自動發送到您的錢包",
+    "referral-textSpan9":"無佣金",
+    "referral-textSpan10":"並準備消費。",
+
+    "referral-text2":"用這個早點開始賺錢",
+    "referral-text2Span1":"雙贏",
+    "referral-text2Span2":"協議！",
+
+    "nfts-title":"比賽獎勵",
+    "nfts-prizePoolTitle":"NFT 贏家",
+    "nfts-prizePooltext":"引入全向鏈 NFT，冠軍可以在他們最喜歡的市場上贖回和出售，而無需橋樑。",
+
+    "trailer-title":"觀看預告片",
+
+    "roadmap-title":"路線圖",
+
+    "roadmap-q42021title":"Q4 2021",
+    "roadmap-q42021span1":"- 概念設計",
+    "roadmap-q42021span2":"- 品牌和遊戲研究",
+    "roadmap-q42021span3":"- NFT 研究",
+    "roadmap-q42021span4":"- 代幣研究 ",
+    "roadmap-q42021span5":"- 開發環境 ",
+
+    "roadmap-q1title":"Q1 2022",
+    "roadmap-q1span1":"- 網絡圖像的選擇",
+    "roadmap-q1span2":"- 智能合約的開發",
+    "roadmap-q1span3":"- NFT 插圖和 3D 模型",
+    "roadmap-q1span4":"- 投資者選擇流程 ",
+
+    "roadmap-q2title":"Q2 2022",
+    "roadmap-q2span1":"- 開發錦標賽系統",
+    "roadmap-q2span2":"- 創建技術文件",
+    "roadmap-q2span3":"- 網站結構",
+    "roadmap-q2span4":"- 背景設計",
+
+    "roadmap-q3title":"Q3 2022",
+    "roadmap-q3span1":"- 私人銷售",
+    "roadmap-q3span2":"- 售票",
+    "roadmap-q3span3":"- Dapp 設計與開發",
+    "roadmap-q3span4":"- 官網上線。",
+    "roadmap-q3span5":"- 公共小遊戲",
+    "roadmap-q3span6":"- 公共代幣預售1",
+    "roadmap-q3span7":"- 公開代幣預售2",
+    "roadmap-q3span8":"- Dapp 測試版",
+    
+    "roadmap-q4title":"Q4 2022",
+    "roadmap-q4span1":"- dapp 啟動",
+    "roadmap-q4span2":"- 錦標賽系統上線",
+    "roadmap-q4span3":"- 比賽開始",
+    "roadmap-q4span4":"- 市場",
+    "roadmap-q4span5":"- 獎池分配",
+
+
+    "footer-social":"我們的社交網絡",
+    "footer-contact":"接觸",
+    "footer-tyc":"• 條款和條件",
+    "footer-email":"Cryptocup2022@gmail.com ",
+
+    "ticketBuy-popupsErrNoMetamask":"安裝 Metamask！",
+    "ticketBuy-popupsChainIncorrecta":"¡連接幣安智能鍊網絡!",
+    "ticketBuy-popupsNoBalance":"你沒有足夠的代幣。",
+    "ticketBuy-buy":"購買",
+    "ticketBuy-connect":"連接",
+
+    "ticketBuy-title":"比賽門票",
+    "ticketBuy-texto":"你需要的一切都在這裡。 讓我們建立通往頂峰的道路! ",
+    "ticketBuy-hoverCopy":"¡單擊以復制邀請中的鏈接!",
+    "ticketBuy-hoverCopy2":"¡購買您的機票並獲取您的參考代碼!",
+    "ticketBuy-connectWallet":"連接錢包"
+}

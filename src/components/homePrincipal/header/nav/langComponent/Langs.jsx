@@ -40,6 +40,15 @@ const Langs = () => {
                     <div className="imgBoxES"></div>
                 </div>
 
+                <div className="boxChino boxIdioma" onClick={() => {
+                        setIdioma("ZH")
+                        contextIdioma.establecerLenguaje("zhLang")
+                        setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:low,w_100/v1663262599/CryptocupQatar/MultiLang/chino_f2tjyh.png")
+                    }} >
+                    <p>Chino  •  ZH</p>
+                    <div className="imgBoxZH"></div>
+                </div>
+
             </div>
         </div>
        {/*  <div className="lineLangButton"></div> */}

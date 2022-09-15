@@ -732,7 +732,7 @@
     }
     
     .imgTicket {
-        width: 15rem;
+        width: 13rem;
         margin-top:4rem;
     }
     
@@ -750,18 +750,21 @@
     }
 
     .titleTicket h2{
-        font-size: 5rem;
-        line-height: 5.5rem;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        padding: 0;
     }
 
     .textoTicket p{
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         letter-spacing: 1.3px;
         text-align: center;
+        margin-top: -2rem;
+
     }
 
-    .textoTicket p{
-        margin-top: -2rem;
+    .btn-ticketSale-Connect p {
+        font-size: 2.4rem;
     }
 
     .containerTiketsBuy{
@@ -867,7 +870,7 @@
     }
     
     .imgTicket {
-        width: 18rem;
+        width: 14rem;
     }
 
     /* text */
@@ -884,14 +887,14 @@
     }
 
     .titleTicket h2{
-        font-size: 6rem;
+        font-size: 5rem;
         line-height: 5.5rem;
     }
 
     .textoTicket p{
-        font-size: 2.2rem;
+        font-size: 2rem;
         letter-spacing: 1.5px;
-        padding: 1rem 0rem;
+        padding: 1rem 6rem;
     }
 
     /* contador */
@@ -942,14 +945,14 @@
     }
 
     .titleTicket h2{
-        font-size: 5.5rem;
+        font-size: 5rem;
         line-height: 5.5rem;
     }
 
     .textoTicket p{
         font-size: 2rem;
         letter-spacing: 1.5px;
-        padding: 1rem;
+        padding: 1rem 0;
     }
 
         
