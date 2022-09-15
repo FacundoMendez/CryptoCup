@@ -26,10 +26,10 @@
 
 
     "tickets-title":"GRIND YOUR WAY TO THE TOP OF THE LADDER",
-    "tickets-text":"To be available to participate, you’ll need one of our NFT tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access to the tournament as a player, so you will be able to use all the functions of the dapp!",
+    "tickets-text":"To be available to participate, you’ll need one of our NFT Tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access as a player, therefore you could use all the functions of the dapp!",
     
     "tickets-basicLadderTitle":"BASIC LADDER",
-    "tickets-basicLadderText":"This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder",
+    "tickets-basicLadderText":"This ladder is designed for everyone who wants to compete in the simplest way, you only need your Basic Ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder!",
     "tickets-basicLadderText2":"Each match will vary in the given points to the participants, based on the real probabilities on winning/losing of each different team and its adversary.",
     
     "tickets-boostLadderTitle":"BOOST LADDER",
@@ -52,9 +52,9 @@
     "referral-textSpan2":"on the purchase of their tickets and",
     "referral-textSpan3":"benefiting you ",
     "referral-textSpan4":"with ",
-    "referral-textSpan5":"2usd",
+    "referral-textSpan5":"2usdt",
     "referral-textSpan6":"for each basic ticket they buy and",
-    "referral-textSpan7":"3usd",
+    "referral-textSpan7":"3usdt",
     "referral-textSpan8":"for each boost ticket that will be automatically sent to your wallet ",
     "referral-textSpan9":"without commissions ",
     "referral-textSpan10":"and ready to spend.",
@@ -66,7 +66,7 @@
     "nfts-title":"Competition Rewards",
     "nfts-prizePoolTitle":"Winners NFT's",
     "nfts-prizePooltext":"We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge.",
-
+    "nfts-prizePooltext2":"Each Ladder will accumulate USDT in their own pool each time a new user arrives, which will be instantly added to a grand pool prize!",
 
     "trailer-title":"WATCH THE TRAILER",
 

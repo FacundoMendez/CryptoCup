@@ -22,8 +22,25 @@ const Nfts = () => {
                   defaultMessage="Competition Rewards"
                 />
             </h2>
+            
         </div>
+        <div className="textNfts">
+            <p className='textCardsNft'>
+              <FormattedMessage
+                id="nfts-prizePooltext2"
+                defaultMessage="Each Ladder is going to accumulate USDT to its own pool every time a new user arrives, which will instantly be added to a huge pool prize!"
+              />    
+            </p>
+            <br /> <br />
 
+            <p className='textCardsNft textNft_top'>
+              <FormattedMessage
+                id="nfts-prizePooltext"
+                defaultMessage="We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge."
+              />    
+            </p>
+            <br /> <br />
+        </div>
         <div className="boxPricePool">
           <svg className="arrowss">
             <path className="a1" d="M0 0 L30 32 L60 0"></path>
@@ -54,14 +71,7 @@ const Nfts = () => {
           />
         </h2>
 
-        <div className="textNfts">
-            <p className='textCardsNft'>
-              <FormattedMessage
-                id="nfts-prizePooltext"
-                defaultMessage="We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge."
-              />    
-            </p>
-        </div>
+
 
         <div className="tiposTorneos">   
           <img className='rockIz rockgrande' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_642,q_auto:eco,w_607/v1662509449/CryptocupQatar/nft/nftsScene/RocasFlotantesIzquierdaConPiedraGrande_czfvtz.png" alt="rocaGrandeIZ" />

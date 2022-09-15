@@ -67,7 +67,7 @@ const Referidos = () => {
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan5"
-                          defaultMessage="2usd"
+                          defaultMessage="2usdt"
                         />
                       </span>
 
@@ -79,7 +79,7 @@ const Referidos = () => {
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan7"
-                          defaultMessage="3usd"
+                          defaultMessage="3usdtt"
                         />
                       </span>
 
