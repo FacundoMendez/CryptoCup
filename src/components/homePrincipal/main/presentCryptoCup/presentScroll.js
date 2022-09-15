@@ -21,6 +21,10 @@ const tournamentScroll = () =>{
             }
         })
 
+        tl_present.from(".containerTexts",{
+            opacity:0,
+        })
+
         gsap.from(".backPresentacion",{
             opacity:0,
             duration: 3,

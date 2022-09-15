@@ -1,7 +1,7 @@
-import React, {lazy, useState, useContext, useEffect, Component} from 'react'
+import React, {lazy, useState, useContext, useEffect} from 'react'
 import { useSearchParams } from "react-router-dom";
 import { ethers } from 'ethers';
-import { contractAddress, abi, tokenAddresses, ERC20Abi, tokenAddress } from './utils'
+import { contractAddress, abi, tokenAddresses, ERC20Abi } from './utils'
 import truncateEthAddress from 'truncate-eth-address';
 import "./tiketBuy.css"
 import priceDescuento from "./codigoDescuento/src/priceDescuento.jpg"
