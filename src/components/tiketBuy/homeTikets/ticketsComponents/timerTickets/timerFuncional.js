@@ -7,14 +7,13 @@ const timerFuncional = () => {
         let today = new Date(),
             dd = String(today.getDate()).padStart(2, "0"),
             mm = String(today.getMonth() + 1).padStart(2, "0"),
-            yyyy = today.getFullYear(),
-            dayMonth = "10/1/",              /* ------->  MODICAR FECHA BACHES */
-            qatar = dayMonth + yyyy;
+            yyyy = today.getFullYear()
+
         
-            today = mm + "/" + dd + "/" + yyyy;
+        today = mm + "/" + dd + "/" + yyyy;
 
         //end
-        const countDown = new Date(qatar).getTime(),
+        const countDown = new Date(1664506800000).getTime(),
            x = setInterval(function() {    
       
               const now = new Date().getTime(),
