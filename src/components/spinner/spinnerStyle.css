@@ -11,7 +11,7 @@
 .spinner {
    width: 170px;
    height: 170px;
-   background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_500,q_auto:best,w_500/v1660656597/CryptocupQatar/present/Logo_br3xr2.png");
+   background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_512,q_auto:best,w_512/v1663283995/CryptocupQatar/Home%20/LogoPNG_hpkxsq.png");
    background-size: cover;
    filter: drop-shadow(0 0 30px rgba(106, 37, 163, 0.24)) contrast(110%) brightness(105%);
    animation: spinner-12 .9s infinite linear;

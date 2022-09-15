@@ -38,60 +38,59 @@ const Referidos = () => {
 
                         <FormattedMessage
                             id="referral-text"
-                            defaultMessage="The Referral System will allow you to earn by inviting people to be a part of Crypto Cup!
-                            When buying a ticket you will be given a link, which you can share with whoever you want making them get a "
+                            defaultMessage="The Referral System allows you to earn by inviting people to be a part of Crypto Cup! When buying a ticket you will be given a link, which you can share with whoever you want making them get a"
                           />
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan1"
-                          defaultMessage="great 20% discount"
+                          defaultMessage="GREAT 20% DISCOUNT"
                         />
                       </span>
                     
                         <FormattedMessage
                           id="referral-textSpan2"
-                          defaultMessage="on the purchase of their tickets and"
+                          defaultMessage="on their Ticket purchase, and also "
                         />
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan3"
-                          defaultMessage="benefiting you"
+                          defaultMessage="BENEFITING YOU"
                         />
                       </span>
 
                         <FormattedMessage
                           id="referral-textSpan4"
-                          defaultMessage="with"
+                          defaultMessage="with "
                         />
 
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan5"
-                          defaultMessage="2usdt"
+                          defaultMessage="2 USDT"
                         />
                       </span>
 
                         <FormattedMessage
                           id="referral-textSpan6"
-                          defaultMessage="for each basic ticket they buy and"
+                          defaultMessage="for each Basic Ticket and"
                         />
 
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan7"
-                          defaultMessage="3usdtt"
+                          defaultMessage="3 USDT"
                         />
                       </span>
 
                         <FormattedMessage
                           id="referral-textSpan8"
-                          defaultMessage="for each boost ticket that will be automatically sent to your wallet "
+                          defaultMessage="for each Boost Ticket sold. That amount will be automatically deposited on your wallet "
                         />
 
                       <span className='spanColor'>
                         <FormattedMessage
                           id="referral-textSpan9"
-                          defaultMessage="without commissions "
+                          defaultMessage="WITHOUT COMMISSIONS "
                         />
                       </span>
                         <FormattedMessage
@@ -104,7 +103,7 @@ const Referidos = () => {
                       <span className='textStart'> 
                         <FormattedMessage
                           id="referral-text2"
-                          defaultMessage=" Start to ear early with this "
+                          defaultMessage="Start earning early with this"
                         />
    <                    span className='spanColor'>
                         <FormattedMessage
