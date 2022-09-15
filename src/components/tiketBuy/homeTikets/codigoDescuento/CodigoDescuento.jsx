@@ -7,21 +7,20 @@ import copyActiveFuncional from './functionsDescuento/copyActiveFuncional'
 import submitActiveFuncional from './functionsDescuento/submitActiveFuncional'
 import {FormattedMessage} from 'react-intl';
 
-const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento , checkRefCodeValid /*, codigoPropio , codigoIncorrecto */}) => {
+const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento , checkRefCodeValid }) => {
 
 
     if(submitCodigoDescuento){
-        submitActiveFuncional()  //( hacer las conecciones para que lo ejecute una vez que valido si el cupon es correcto ) 
+        submitActiveFuncional()   
     }
 
-    //en el archivo TiketBuyPage se encuentra la validacion que trae el numero de cuenta de wallet
 
 
   return (
     <div className="containerCodigoDescuento">
         <div className='boxCopyCupon'  onClick={() => {
                 if(copyActive){
-                    copyActiveFuncional(referralCode)  //( hacer las conecciones para que lo ejecute una vez que compro la persona y se conecto a la billetera ) 
+                    copyActiveFuncional(referralCode)  
                 }
             }}>
             <p className='copy'>
@@ -29,7 +28,7 @@ const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescue
             </p>
             <div className="containerCopy">
                 <div className="triangle"></div>
-                {submitCodigoDescuento ? 
+                {copyActive ? 
                     <p className='text2Copy'>
                         <FormattedMessage
                             id="ticketBuy-hoverCopy"

@@ -1,13 +1,10 @@
 .boxCopyCupon{
     width: 6rem;
-    height: 5.7rem;
+    height: 6rem;
     border: 2px solid white;
     position: relative;
-    left:16.7rem;
-    margin-top: -7.1rem;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.377);
-    backdrop-filter: blur(2rem);
+    background-color: #07070762;
     z-index: 12;
     transition: all .5s ease-in-out linear;
 }
@@ -23,7 +20,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 .boxCopyCupon:active{
-    background: rgba(255, 255, 255, 0.623);
+    background: rgba(46, 46, 46, 0.623);
 }
 
 .boxCopyCupon_active{
@@ -39,7 +36,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 
 .copy{
-    color: rgb(31, 29, 32);
+    color: rgba(175, 175, 175, 0.918);
     font-size: 3rem;
     position: absolute;
     top: 50%;
@@ -55,11 +52,12 @@ input[type=number] { -moz-appearance:textfield; }
 
 .boxCopyCupon:hover > .containerCopy {
     border: 1px solid rgb(255, 255, 255);
-    width: 36rem;
+    width: 37.5rem;
     position: relative;
-    right: 17rem;
+    right: 31.5rem;
     top: 8rem;
-    background-color: rgb(0, 0, 0);
+    background-color: #080808af;
+    backdrop-filter: blur(1rem);
     transition: all .5s ease-in-out linear;
     opacity: 1;
     visibility: visible;
@@ -100,10 +98,10 @@ input[type=number] { -moz-appearance:textfield; }
     height: 1.5rem;
     clip-path: polygon(50% 0% , 0% 100%, 100% 100%);
     color: white;
-    background-color: white;
+    background-color: rgba(136, 136, 136, 0.945);
     position: absolute;
-    left: 50%;
-    top: -1.7rem;
+    left: 94.5%;
+    top: -1.62rem;
 }
 
 /* text */
@@ -597,15 +595,13 @@ input[type=number] { -moz-appearance:textfield; }
     
     .boxCopyCupon{
         width: 6rem;
-        left:15.4rem;
-        margin-top: -13.1rem;
     }
     
     .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
-        width: 37rem;
+        width: 29rem;
         position: relative;
-        right: 31.1rem;
+        right: 23rem;
         top: 9rem;
         background-color: rgb(0, 0, 0);
         transition: all .4s ease-in-out;
@@ -648,8 +644,6 @@ input[type=number] { -moz-appearance:textfield; }
 
     .boxCopyCupon{
         width: 6rem;
-        left:11.4rem;
-        margin-top: -13.1rem;
     }
         
     
@@ -722,8 +716,6 @@ input[type=number] { -moz-appearance:textfield; }
 
     .boxCopyCupon{
         width: 6rem;
-        left:11.4rem;
-        margin-top: -13.1rem;
     }
 
     .boxCopyCupon:hover > .containerCopy {
@@ -765,23 +757,15 @@ input[type=number] { -moz-appearance:textfield; }
         left: 25rem;
     }
 
-    .wrapperBotton-ticketSale-Connect {
-        position: relative;
-        padding-top: 1rem;
-        text-decoration: none;
-        margin-right: 0rem;
-        left: -3rem;
-    }
-
 
      /* popup */
      .boxCopyCupon:hover > .containerCopy {
         border: 2px solid rgb(255, 255, 255);
-        width: 28rem;
-        height: 20rem;
+        width: 28.5rem;
+        height: 10rem;
         overflow: hidden;
         position: relative;
-        right: 24rem;
+        right: 22.5rem;
         top: 8rem;
     }
 
@@ -804,11 +788,7 @@ input[type=number] { -moz-appearance:textfield; }
 
 @media screen  and (max-width: 325px){
 
-    .boxCopyCupon{
-        width: 6rem;
-        left:11.4rem;
-        margin-top: -13.1rem;
-    }
+
     .containerInputCupon input{
         width: 20rem;
         height: 4rem;

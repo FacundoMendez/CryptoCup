@@ -1,7 +1,7 @@
 .containerTiketsBuy{
     width: 100%;
     overflow: hidden;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080/e_contrast:50,q_auto:best,w_1920/v1661900963/CryptocupQatar/TICKETS%20BUY/home%20tickets/BackSectorTickets_yhp3gh.webp");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,e_contrast:25,h_1080,q_auto:best,w_1920/v1663200469/CryptocupQatar/TICKETS%20BUY/home%20tickets/buyTicketBack_ahsffj.png");
     background-repeat: no-repeat;
     background-position: 100% 100% ;
     top:0;
@@ -9,7 +9,15 @@
     background-attachment: fixed;
     position: relative;
     transition: all .3s ease-in-out;
-    filter: contrast(105%) brightness(100%) ;
+    filter: contrast(105%) brightness(105%) ;
+}
+
+.containerTiketsBuy::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.200);
 }
 
 .containerTiketsBuy::-webkit-scrollbar-thumb{
@@ -94,16 +102,34 @@
     
 }
 
+
+
+
 .imgTicket {
     width: 17rem;
-    filter: drop-shadow(0 0 40px rgba(159, 76, 255, 0.178));
+    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.822));
     position: relative;
     z-index: -1;
+    animation: ticketVolador 4s infinite linear;
 }
 
 .particle-Tikets video{
   width: 100%;
   object-fit: cover;
+}
+
+@keyframes ticketVolador {
+    0% {
+        transform: translate(0 , -.5%) scale(1.02);
+    }
+  
+    50% {
+        transform: translate(0 , 0%) scale(1);
+    }
+
+    100% {
+        transform: translate(0 , -.5%) scale(1.02);
+    }
 }
   
 
@@ -145,29 +171,22 @@
 
 .wrapperBotton-Tickets {
     position: relative;
-    margin-top: 0rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-left: -2rem;
+    left: -.4rem;
+    top: .8rem;
+    cursor: pointer;
+    background-color: #07070793;
 }
 
-.wrapperBotton-Tickets .btnButton-Tickets {
-  width: 14.5rem;
-  height: 4rem;
-  margin: 0 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-}
 
 .btnButton-Tickets p {
   font-size: 2.4rem;
   line-height: 4rem;
   letter-spacing: 1.5px;
-  padding-top: .06rem;
   font-weight: bold;
   text-transform: uppercase;
   -webkit-background-clip: text;
@@ -177,56 +196,13 @@
   inset 0 -2px 5px 1px #9999ff,
   inset 0 -1px 1px 3px #9999ff;
   background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  border: 2px solid rgb(255, 255, 255);
+  width: 16rem;
+  height: 6rem;
+  margin-top: -.4rem;
+  padding: 1rem .7rem;
 }
   
-.BorderTopBottom-Tickets:before {
-  content: "";
-  position: absolute;
-  width: 15.8rem;
-  height: 2px;
-  top: -6px;
-  left: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderTopBottom-Tickets:after {
-  content: "";
-  position: absolute;
-  width: 15.9rem;
-  height: 2px;
-  bottom: -6px;
-  right: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderLeftRight-Tickets:before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -7px;
-  width: 2px;
-  height: 4.8rem;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderLeftRight-Tickets:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  right: -7px;
-  width: 2px;
-  height: 5rem;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
 .btnButton-Tickets:hover {
     filter: drop-shadow( 0 0 1px white);
     transition: all .5s ease-in-out;
@@ -236,25 +212,29 @@
 /* button tokens */
 
 
-.wrapperBotton-ticketSale {
+.wrapperBotton-ticketSale, .btn-ticketSaleBoost {
     position: relative;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: .7rem;
+    top: -.2rem;
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    margin-left: -.2rem;
+
 }
 
-.wrapperBotton-ticketSale , .btn-ticketSale , .btn-ticketSaleBoost {
-  width: 4.7rem;
-  height: 4rem;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-}
+
 
 .btn-ticketSale p , .btn-ticketSaleBoost p {
   color: white;
   font-size: 2.4rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  padding-top: .6rem;
   -webkit-background-clip: text;
   background-clip: text;
   font-family: qatar;
@@ -263,54 +243,6 @@
   inset 0 -2px 5px 1px #9999ff,
   inset 0 -1px 1px 3px #9999ff;
   background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-}
-
-.BorderTopBottom-ticketSale:before {
-  content: "";
-  position: absolute;
-  width: 6rem;
-  height: 2px;
-  top: -6px;
-  left: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderTopBottom-ticketSale:after {
-  content: "";
-  position: absolute;
-  width: 6rem;
-  height: 2px;
-  bottom: -6px;
-  right: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderLeftRight-ticketSale:before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -7px;
-  width: 2px;
-  height: 5rem;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-}
-
-.BorderLeftRight-ticketSale:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  right: -7px;
-  width: 2px;
-  height: 5rem;
-  background: #fff;
-  transition: all 0.5s ease;
-  filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
 }
 
 
@@ -349,6 +281,7 @@
     visibility: hidden;
     transition: all .2s ease-in-out;
     z-index: 1000;
+    
 }
 
 .boxBlurTokenBoost_active{
@@ -417,9 +350,7 @@
     gap: 2rem;
     box-shadow: 0 0 20px #b277ff49, 0 0 56px #b379ffa2, 0 0 105px #b688ff8e;
     -webkit-backdrop-filter: blur(10px);
-
 }
-
 
 .radioTokenBoost-active{
     opacity: 1;
@@ -439,10 +370,12 @@
     padding: .8rem;
     padding-left: 5rem;
     margin: .2rem 0;
+    transition: all .5s ease-in-out;
 }
 
 .radio_active{
     background-color: rgba(160, 88, 255, 0.692);
+    transition: all .5s ease-in-out;
 }
 
 .radio:hover{
@@ -512,7 +445,7 @@
 }
 
 .titleTicket h2{
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     letter-spacing: 1px;
     -webkit-background-clip: text;
     background-clip: text;
@@ -545,23 +478,29 @@
     position: relative;
     padding-top: 1rem;
     text-decoration: none;
-    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
     width: 31.5rem;
-    height: 4.5rem;
-    margin: 0 3rem;
+    height: 6rem;
     text-align: center;
+    position: relative;
     cursor: pointer;
     position: relative;
-  }
+    border: 2px solid white;
+    background-color: #07070762;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   .btn-ticketSale-Connect p {
     color: white;
     font-size: 2.4rem;
     letter-spacing: 2px;
-    padding-top: 1rem;
     text-transform: uppercase;
     -webkit-background-clip: text;
     background-clip: text;
@@ -571,55 +510,10 @@
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-  }
+    width: 100%;
+    position: absolute;  
+}
   
-  .BorderTopBottom-ticketSale-Connect:before {
-    content: "";
-    position: absolute;
-    width: 32.7rem;
-    height: 2px;
-    top: -6px;
-    left: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderTopBottom-ticketSale-Connect:after {
-    content: "";
-    position: absolute;
-    width: 32.7rem;
-    height: 2px;
-    bottom: -6px;
-    right: -7px;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRight-ticketSale-Connect:before {
-    content: "";
-    position: absolute;
-    top: -4px;
-    left: -7px;
-    width: 2px;
-    height: 5.5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
-  
-  .BorderLeftRight-ticketSale-Connect:after {
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    right: -7px;
-    width: 2px;
-    height: 5.5rem;
-    background: #fff;
-    transition: all 0.5s ease;
-    filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-  }
   
 /* contador */
 
@@ -632,10 +526,8 @@
     border:2px solid rgb(255, 255, 255);
     padding: .5rem ;
     position: relative;
-    background-color: #000000d7;
     overflow:hidden;
-    backdrop-filter: blur(1em);
-    filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.411)) brightness(140%);
+    background-color: #07070793;
     top:-1.6rem;
     left: -.4rem;
     width: 21.8rem;
@@ -644,14 +536,13 @@
 
 .menos-basic, .mas-basic , .menos-boost, .mas-boost{
     border-radius: 5px;
-    background-color: #9366fcd0;
-    backdrop-filter: blur(1em);
+    background-color: #f6efffdc;
     border:none;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     padding: 0 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
@@ -827,7 +718,7 @@
     /* general */
     
     .flexTickets{
-        gap: 10rem;
+        gap: 5rem;
         width: 100%;
     }
     
@@ -835,11 +726,10 @@
 
     .boxTickets{
         width: 35%;
-        gap: 0rem;
     }
     
     .imgTicket {
-        width: 13rem;
+        width: 15rem;
         margin-top:4rem;
     }
     
@@ -873,66 +763,6 @@
 
     .containerTiketsBuy{
         background-position: 100% 30% ;
-    }
-    
-
-
-    /* button buy */
-
-        
-
-    .wrapperBotton-Tickets {
-        margin-left: -2rem;
-    }
-
-    .wrapperBotton-Tickets .btnButton-Tickets {
-        width: 10rem;
-        height: 4rem;
-        margin: 0 1.2rem;
-    }
-
-    .btnButton-Tickets p {
-        font-size: 1.7rem;
-        line-height: 4rem;
-        letter-spacing: 1.5px;
-        padding-top: .06rem;
-    }
-    
-
-    .BorderTopBottom-Tickets:after {
-        width: 11.4rem;
-        height: 2px;
-        bottom: -6px;
-        right: -7px;
-    }
-
-    .BorderLeftRight-Tickets:before {
-        top: -4px;
-        left: -7px;
-        width: 2px;
-        height: 4.8rem;
-    }
-
-    .BorderLeftRight-Tickets:after {
-        bottom: -4px;
-        right: -7px;
-        width: 2px;
-        height: 5rem;
-    }
-
-    /* contador */
-
-    .cantTicket-basic , .cantTicket-boost{
-        gap:4rem;
-        padding: .5rem ;
-        top:.4rem;
-        left: -.4rem;
-        width: 17.3rem;
-    }
-    
-    .menos-basic, .mas-basic , .menos-boost, .mas-boost{
-        font-size: 2.2rem;
-        padding: 0 1.3rem;
     }
 
 
@@ -1062,14 +892,6 @@
     }
 
     /* contador */
-    .cantTicket-basic , .cantTicket-boost{
-        gap:4rem;
-        padding: .5rem ;
-        top: -1.5rem;
-        left: -.4rem;
-        width: 17.3rem;
-    
-    }
 
     .boxBlurToken, .boxBlurTokenBoost {
         width: 100%;
@@ -1188,7 +1010,9 @@
 }
 
 
+
 @media screen and (max-width:480px){
+    /* general */
 
     .containerTiketsBuy{
         width: 100%;
@@ -1223,174 +1047,6 @@
         margin-top: 10rem;
     }
 
-    /* text */
-
-    .text-tickets{
-        top: 18rem;
-        width: 95%;
-        margin-left: 0rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-    }
-
-    .titleTicket h2{
-        font-size: 4.2rem;
-        line-height: 4rem;
-    }
-
-    .textoTicket p{
-        font-size: 2rem;
-        letter-spacing: 1.4px;
-        text-align: inherit;
-        margin-left: 2rem;
-        padding: 1rem;
-    }
-
-
-   
-    /* button buy */
-    
-
-    .wrapperBotton-Tickets .btnButton-Tickets {
-        width: 10rem;
-        height: 4rem;
-        margin: 0 1.2rem;
-    }
-
-    .btnButton-Tickets p {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        padding-top: .15rem;
-    }
-    
-    .BorderTopBottom-Tickets:before {
-        width: 11.4rem;
-        height: 2px;
-        top: -6px;
-        left: -7px;
-    }
-
-    .BorderTopBottom-Tickets:after {
-        width: 11.4rem;
-        height: 2px;
-        bottom: -6px;
-        right: -7px;
-    }
-
-    .BorderLeftRight-Tickets:before {
-        top: -4px;
-        left: -7px;
-        width: 2px;
-        height: 4.8rem;
-    }
-
-    .BorderLeftRight-Tickets:after {
-        bottom: -4px;
-        right: -7px;
-        width: 2px;
-        height: 5rem;
-    }
-
-    .btnButton-Tickets:hover {
-        transform: scale(1);
-        filter: drop-shadow( 0 0 1px white);
-        transition: all .5s ease-in-out;
-    }
-
-
-
-    /* button connect wallet */
-    
-  
-    .wrapperBotton-ticketSale-Connect {
-        position: relative;
-        padding-top: 1rem;
-        padding: 6rem 0;
-    }
-    
-    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
-      width: 30.7rem;
-      height: 4.5rem;
-      margin: 0 2rem;
-    }
-    
-    .btn-ticketSale-Connect p {
-      font-size: 2rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-      
-    .BorderTopBottom-ticketSale-Connect:before {
-        content: "";
-        position: absolute;
-        width: 31.9rem;
-        height: 2px;
-        top: -6px;
-        left: -7px;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderTopBottom-ticketSale-Connect:after {
-        content: "";
-        position: absolute;
-        width: 31.9rem;
-        height: 2px;
-        bottom: -6px;
-        right: -7px;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderLeftRight-ticketSale-Connect:before {
-        content: "";
-        position: absolute;
-        top: -4px;
-        left: -7px;
-        width: 2px;
-        height: 5.5rem;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderLeftRight-ticketSale-Connect:after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        right: -7px;
-        width: 2px;
-        height: 5.5rem;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-
-
-    /* contador */
-
-    .cantTicket-basic , .cantTicket-boost{
-        gap:4rem;
-        padding: .5rem ;
-        top:-1.5rem;
-        left: -.4rem;
-        width: 17.3rem;
-    
-    }
-    
-    .menos-basic, .mas-basic , .menos-boost, .mas-boost{
-        font-size: 2.2rem;
-        padding: 0 1.3rem;
-    }
-
-}
-
-@media screen and (max-width:410px){
-    /* general */
     
     .flexTickets{
         gap: 20rem;
@@ -1403,7 +1059,7 @@
     }
 
     .radioToken {
-        top: 40%;
+        top: 45%;
     }
     
     /* tickets  */
@@ -1459,63 +1115,15 @@
     
     .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
       width: 22.5rem;
-      height: 4.5rem;
-      margin: 0 2rem;
     }
     
     .btn-ticketSale-Connect p {
       font-size: 1.8rem;
+      width: 100%;
+      position: absolute;
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-      
-    .BorderTopBottom-ticketSale-Connect:before {
-        content: "";
-        position: absolute;
-        width: 23.7rem;
-        height: 2px;
-        top: -6px;
-        left: -7px;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderTopBottom-ticketSale-Connect:after {
-        content: "";
-        position: absolute;
-        width: 23.7rem;
-        height: 2px;
-        bottom: -6px;
-        right: -7px;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderLeftRight-ticketSale-Connect:before {
-        content: "";
-        position: absolute;
-        top: -4px;
-        left: -7px;
-        width: 2px;
-        height: 5.5rem;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
-      
-      .BorderLeftRight-ticketSale-Connect:after {
-        content: "";
-        position: absolute;
-        bottom: -4px;
-        right: -7px;
-        width: 2px;
-        height: 5.5rem;
-        background: #fff;
-        transition: all 0.5s ease;
-        filter: drop-shadow( 0 0 5px rgb(182, 136, 255)) brightness(140%);
-      }
     
       .btnButton-ticketSale-Connect:hover {
           transform: scale(1.02);
@@ -1523,25 +1131,34 @@
           transition: all .5s ease-in-out;
       }
 
-      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:before,
-      .btn-ticketSale-Connect:hover .BorderTopBottom-ticketSale-Connect:after {
-        width: 12.8rem;
-      }
+
+}
+
+@media screen and (max-width:410px){
+
+    .wrapperBotton-ticketSale-Connect {
+        position: relative;
+        padding-top: 1rem;
+        margin-left: 6rem;
+    }
+
 }
 
 
 @media screen and (max-width:355px){
+
+
     .text-tickets{
         top: 18rem;
         width: 95%;
-        margin-left: 0rem;
+        margin-left: -1rem;
     }
 
     .textoTicket p{
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         letter-spacing: 1px;
         text-align: inherit;
-        margin-left: .5rem;
+        width: 100%;
         padding: 1rem 0;
     }
 
@@ -1576,4 +1193,15 @@
         top: 0rem;
         left: 3rem;
     }
+}
+
+
+@media screen and (max-width:325px){
+    .text-tickets{
+        top: 18rem;
+        width: 95%;
+        margin-left: -3rem;
+    }
+
+
 }

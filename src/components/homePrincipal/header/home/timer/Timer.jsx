@@ -26,6 +26,7 @@ const Timer = () => {
 
                 <li>
                   <div className="rombo"></div>
+                  <div className="rombo"></div>
                 </li>
 
                 <li>
@@ -37,6 +38,7 @@ const Timer = () => {
                 </li>
 
                 <li>
+                  <div className="rombo"></div>
                   <div className="rombo"></div>
                 </li>
 

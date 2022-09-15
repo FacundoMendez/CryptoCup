@@ -31,6 +31,7 @@ const TimerTickets = () => {
 
                 <li>
                   <div className="rombo"></div>
+                  <div className="rombo"></div>
                 </li>
 
                 <li>
@@ -42,6 +43,7 @@ const TimerTickets = () => {
                 </li>
 
                 <li>
+                  <div className="rombo"></div>
                   <div className="rombo"></div>
                 </li>
 

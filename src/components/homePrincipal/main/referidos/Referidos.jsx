@@ -119,7 +119,7 @@ const Referidos = () => {
                       </span>
                     </p>
                   </div>
-                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_979,q_auto:good,w_1222/v1660657088/CryptocupQatar/referidos/ticketReferidos_mfeink.png"  alt="tickets referidos" />
+                  <img className="ticketsReferidos" src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_605,q_auto:best,w_768/v1663189571/CryptocupQatar/referidos/TicketsRefer_hh1qee.png"  alt="tickets referidos" />
 
                 </div>
 

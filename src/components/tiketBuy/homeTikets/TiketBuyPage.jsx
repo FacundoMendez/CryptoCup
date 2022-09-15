@@ -416,8 +416,7 @@ const TiketBuyPage = () => {
                               defaultMessage="CONNECT"
                             /> 
                           }</p>
-                          <span className="BorderTopBottom-Tickets "></span>
-                          <span className="BorderLeftRight-Tickets "></span>
+                       
                       </div>
                       
                       {/* seleccionar token */}
@@ -430,8 +429,7 @@ const TiketBuyPage = () => {
                                   {tokenOptionSelect === 3 ? <img className='imgTokenSelect' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/busdLogo_fmii68_iraojc.png"/* {busdLogo} */ alt="busd Logo" /> : null}
                                   {tokenOptionSelect === 4 ? <img className='imgTokenSelect' src=  "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_200,q_auto:eco,w_200/v1663108976/CryptocupQatar/TICKETS%20BUY/home%20tickets/daiLogo_k9yreu_qlhlzd.png"/* {daiLogo} */ alt="dai Logo" /> : null}
 
-                                  <span className="BorderTopBottom-ticketSale  "></span>
-                                  <span className="BorderLeftRight-ticketSale  "></span>  
+                 
                                   
                               </div>
 
@@ -650,24 +648,23 @@ const TiketBuyPage = () => {
                 </p>
 
                 {connected ? <input type="text" className="copyWallet" id='copyWallet' ></input> : null}
-                <span className="BorderTopBottom-ticketSale-Connect  "></span>
-                <span className="BorderLeftRight-ticketSale-Connect  "></span>
+               
               </div>
-            
+              <CodigoDescuento 
+                connected = {connected}
+                referralCode={referralCode} 
+                copyActive={copyActive} 
+                checkRefCodeValid={checkRefCodeValid} 
+                submitCodigoDescuento={submitCodigoDescuento} 
+                codigoPropio= {codigoPropio}
+                codigoIncorrecto = {codigoIncorrecto}
+              /> 
             </div>
                 
 
             {/* pasa los parametros al componente del codigo de descuento*/}
             
-            <CodigoDescuento 
-              connected = {connected}
-              referralCode={referralCode} 
-              copyActive={copyActive} 
-              checkRefCodeValid={checkRefCodeValid} 
-              submitCodigoDescuento={submitCodigoDescuento} 
-              codigoPropio= {codigoPropio}
-              codigoIncorrecto = {codigoIncorrecto}
-            /> 
+
           <TimerTickets/>
             
           </div>
