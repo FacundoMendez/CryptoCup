@@ -1,4 +1,4 @@
-import React, {lazy, useState, useContext, useEffect} from 'react'
+import React, {lazy, useState, useContext, useEffect, Component} from 'react'
 import { useSearchParams } from "react-router-dom";
 import { ethers } from 'ethers';
 import { contractAddress, abi, tokenAddresses, ERC20Abi, tokenAddress } from './utils'
@@ -22,7 +22,8 @@ const CodigoDescuento = lazy(() => import ("./codigoDescuento/CodigoDescuento"))
 
 const TiketBuyPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  
+  let checkedCode = false;
+
   const context = useContext(Context)
 
   const videoBuyActive = document.querySelector(".videoBuyActive")
@@ -37,9 +38,19 @@ const TiketBuyPage = () => {
         scale:.2,
         duration:1.2,
         delay:0
-    })
+      })
+
+      if(!checkedCode){
+        // chequear si hay codigo de descuento. en caso de que haya, hay que chequear si es valido. si es valido hay que mostrar los descuentos.
+        const referralCodee = searchParams.get("r")
+        if(referralCodee) {
+          checkRefCodeValid(referralCodee);
+        }
+        checkedCode = true;
+      }
 
     },[])
+
 
   /* validaciones de coneccion blockchain */
 
@@ -125,12 +136,6 @@ const TiketBuyPage = () => {
               setCopyActive(false);
             }
           });
-
-          // chequear si hay codigo de descuento. en caso de que haya, hay que chequear si es valido. si es valido hay que mostrar los descuentos.
-          const referralCode = searchParams.get("r")
-          if(referralCode) {
-            await checkRefCodeValid(referralCode, newContract);
-          }
 
           setProvider(newProvider);
           setAccount(newAccount);
@@ -320,13 +325,21 @@ const TiketBuyPage = () => {
     }
   }
 
-  const checkRefCodeValid = async (code, newContract) => {
+  const checkRefCodeValid = async (code) => {
     console.log(code)
-    if (code) {
+    if (code >= 0) {
       if(code !== referralCode.toString()) {
-        await newContract.getReferralAddressFromCode(code)
+        await fetch('http://cryptocupapi-env.eba-fta9xpxj.us-east-1.elasticbeanstalk.com/api/V1/utils/verifyReferralCode', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({code})
+        })
+        .then(res => res.json())
         .then(res => {
-          if (res !== "0x0000000000000000000000000000000000000000") {
+          console.log(res)
+          if (res == true) {
             setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
             setActiveReferralCode(code);
           } 
@@ -350,6 +363,8 @@ const TiketBuyPage = () => {
       }
     }
   }
+
+  
 
 
   return (
