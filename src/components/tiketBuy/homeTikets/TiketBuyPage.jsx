@@ -326,10 +326,9 @@ const TiketBuyPage = () => {
   }
 
   const checkRefCodeValid = async (code) => {
-    console.log(code)
     if (code >= 0) {
       if(code !== referralCode.toString()) {
-        await fetch('http://cryptocupapi-env.eba-fta9xpxj.us-east-1.elasticbeanstalk.com/api/V1/utils/verifyReferralCode', {
+        await fetch('https://api.cryptocupqatar.io/api/V1/utils/verifyReferralCode', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -338,7 +337,6 @@ const TiketBuyPage = () => {
         })
         .then(res => res.json())
         .then(res => {
-          console.log(res)
           if (res == true) {
             setSubmitCodigoDescuento(true);    //aca verifica si el codigo de descuento es correcto
             setActiveReferralCode(code);
