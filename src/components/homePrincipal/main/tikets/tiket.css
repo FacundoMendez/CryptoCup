@@ -335,6 +335,16 @@
 
 
 
+@media screen and (min-width:2000px) {
+
+    .division{
+        position: absolute;
+        bottom: -45.5rem !important;
+    }
+
+}
+
+
 
 @media screen and (max-width:1540px){
 

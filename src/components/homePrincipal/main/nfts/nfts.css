@@ -359,6 +359,17 @@
 }
 
 
+
+@media screen and (min-width:2000px) {
+
+    .titleNfts{
+        padding-top: 57rem ;
+    }
+
+}
+
+
+
 @media screen and (max-width: 1440px){
     .tiposTorneos{
         flex-direction: row;
