@@ -54,12 +54,18 @@ const TimerTickets = () => {
                     defaultMessage="Minutes"
                   />
                 </li>
-{/*                 <li><span id="seconds"></span>
+
+                <li>
+                  <div className="rombo"></div>
+                  <div className="rombo"></div>
+                </li>
+
+                <li><span id="seconds"></span>
                   <FormattedMessage
                     id="home-seg"
                     defaultMessage="Seconds"
                   />
-                </li> */}
+                </li>
             </ul>
         </div>
 

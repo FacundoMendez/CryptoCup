@@ -1,6 +1,7 @@
 .timer{
   position: relative;
   top: 2rem;
+  backdrop-filter: blur(1rem);
 }
 
 .headline_tickets  {
@@ -8,7 +9,7 @@
   text-transform: uppercase;
   text-align: center;
   padding: 1rem 1rem;
-  font-size: 3.7rem;
+  font-size: 4.2rem;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
@@ -25,7 +26,7 @@
   display: inline-block;
   font-size: 1.3rem;
   list-style-type: none;
-  padding: 0rem .5rem;
+  padding: 0rem .2rem;
   text-align: center;
   margin: 0 0.5rem;
   text-transform: uppercase;
@@ -37,18 +38,16 @@
   inset 0 -2px 5px 1px #9999ff,
   inset 0 -1px 1px 3px #9999ff;
   background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-
-
 }
 
 
 .reloj span {
   display: block;
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 
 .reloj li{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .reloj{
