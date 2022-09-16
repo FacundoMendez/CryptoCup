@@ -408,7 +408,6 @@
 
     .navMovile{
         display: inline-block;
-        z-index: 999999999 !important;
     }
 
     .navBack{
