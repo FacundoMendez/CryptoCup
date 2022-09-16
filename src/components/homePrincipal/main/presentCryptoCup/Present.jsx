@@ -35,8 +35,7 @@ const TournamentMain = () => {
 
                   <FormattedMessage
                       id="present-text1"
-                      defaultMessage="Crypto Cup is the first crypto tournament based on predictions of the Fifa World Cup 2022.
-                      We encourage you to be a part of this journey with a very accessible opportunity to start competing and winning big bounties."
+                      defaultMessage=" Crypto Cup is the first crypto tournament based on predictions of the World Cup 2022. We encourage you to be a part of this journey with a very accessible opportunity to start competing and winning big bounties "
                   />
                 </p><br /> <br />
                 <p>
@@ -51,7 +50,7 @@ const TournamentMain = () => {
 
                   <FormattedMessage
                       id="present-text3"
-                      defaultMessage="You'll be allowed to join a low-cost opportunity and the chance to win a big pool prize, unique NFTs and more! Prove your soccer insights competing with your friends and the world, cheer for your favorite team and win it all! The exponential increase of crypto adoption is yet to come, don't get left behind!"
+                      defaultMessage="You'll be allowed to join a low-cost opportunity and the chance to win a big pool prize, unique NFTs and more! Prove your soccer insights competing worldwide with your friends, cheer for your favorite team and win it all! The exponential increase of crypto adoption is yet to come, don't get left behind!"
                   />
                 
                 </p><br /> <br />
