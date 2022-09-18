@@ -361,6 +361,11 @@
         opacity: .3;
     }
 
+    .blurFooter::before{
+        height: 160vh;
+    }
+
+
 }
 
 @media screen and (max-width: 1050px) {
@@ -431,6 +436,7 @@
     .footer{
         gap: 3rem;
     }
+
 
     .listTerms a{
         font-size: 1.7rem;
