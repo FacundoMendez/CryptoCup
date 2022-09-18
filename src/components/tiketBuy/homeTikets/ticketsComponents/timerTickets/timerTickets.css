@@ -1,7 +1,9 @@
 .timer{
   position: relative;
   top: 2rem;
-  backdrop-filter: blur(1rem);
+  padding: 1rem 1rem;
+  backdrop-filter: blur(.8px);
+  border-radius: 15px;
 }
 
 .headline_tickets  {
@@ -141,18 +143,22 @@
   }
   
   .headline_tickets  {
-    font-size: 4.1rem;
+    font-size: 4rem;
     letter-spacing: 1px;
   }
     
   .reloj li {
     padding: 0 .2rem;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   
   .reloj li span {
     display: block;
-    font-size: 3rem;
+    font-size: 4rem;
+  }
+
+  .timer{
+    backdrop-filter: blur(0rem);
   }
 }
 
@@ -163,14 +169,22 @@
     position: relative;
     top: 3rem;
   }
+
+  .rombo{
+    width: 6px; 
+    height: 6px;
+    margin: 1rem 0; 
+  }
+  
   
   .headline_tickets{
-    font-size: 3.7rem !important;
+    font-size: 3rem !important;
     letter-spacing: 1px;
   }
     
   .reloj li {
-    padding: 0 .2rem;
+    padding: 0 .1rem;
+    font-size: 1.3rem;
   }
   
   .reloj li span {
@@ -179,11 +193,18 @@
   }
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:370px){
+
+  
   .timer{
     position: relative;
     top: 3rem;
   }
+
+  .reloj{
+    gap:0rem;
+  }
+  
   
   .headline_tickets  {
     font-size: 4rem;
@@ -191,8 +212,8 @@
   }
     
   .reloj li {
-    font-size: 1.4rem;
-    padding: .5rem .8rem;
+    font-size: 1.3rem;
+    padding: .5rem .4rem;
     font-weight: bold;
     text-align: center;
     margin: 0rem;
@@ -200,6 +221,6 @@
   
   .reloj li span {
     display: block;
-    font-size: 1.8rem;
+    font-size: 3rem;
   }
 }

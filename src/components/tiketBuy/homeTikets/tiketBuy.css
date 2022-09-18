@@ -72,6 +72,7 @@
     width: 100%;
     height: 100vh;
     z-index: 15;
+    
 }
 
 .flexTickets_active{
@@ -226,8 +227,8 @@
     width: 6rem;
     height: 6rem;
     margin-left: -.2rem;
-
 }
+
 
 
 
@@ -420,7 +421,26 @@
     width: 4rem !important;
     left: 10%;
     z-index: 1;
+    animation: effectToken 3s infinite linear;
+    filter: drop-shadow(0 0 10px  rgba(255, 255, 255, 0.685)) contrast(110%);
 }
+
+@keyframes effectToken {
+    0%{
+        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+        
+    }
+    50%{
+        filter: drop-shadow(0 0 10px  rgba(255, 255, 255, 0.685)) ;
+        
+    }
+    100%{
+        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+        
+
+    }
+}
+
 
 .btn-ticketSale , .btn-ticketSaleBoost{
     z-index: 10;

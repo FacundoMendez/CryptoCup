@@ -110,7 +110,7 @@
     color: white;
     padding: 0 1rem ;
     text-align: center;
-    padding-bottom: 8rem;
+    padding-bottom: 0rem;
     z-index: 100;
 }
 
@@ -407,6 +407,8 @@
         line-height: 3rem;
         font-size: 1.9rem;
     }
+
+    
     
     .container_card {
         width: 40rem;
