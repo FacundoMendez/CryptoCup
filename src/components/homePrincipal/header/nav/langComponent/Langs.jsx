@@ -64,7 +64,7 @@ const Langs = () => {
                         contextIdioma.establecerLenguaje("arLang")
                         setBandera("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_100,q_auto:eco,w_100/v1663278182/CryptocupQatar/MultiLang/qatar_gvetll.png")
                     }} >
-                    <p>Qatar  •  QTR</p>
+                    <p>Árabe  •  QTR</p>
                     <div className="imgBoxAr"></div>
                 </div>
 

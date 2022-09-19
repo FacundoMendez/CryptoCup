@@ -422,20 +422,20 @@
     left: 10%;
     z-index: 1;
     animation: effectToken 3s infinite linear;
-    filter: drop-shadow(0 0 10px  rgba(255, 255, 255, 0.685)) contrast(110%);
+    filter: drop-shadow(0 0 10px   rgba(255, 255, 255, 0.473)) contrast(110%);
 }
 
 @keyframes effectToken {
     0%{
-        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0))contrast(100%);
         
     }
     50%{
-        filter: drop-shadow(0 0 10px  rgba(255, 255, 255, 0.685)) ;
+        filter: drop-shadow(0 0 10px  rgba(255, 255, 255, 0.473)) contrast(110%) brightness(105%) ;
         
     }
     100%{
-        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0));
+        filter: drop-shadow(0 0 0px rgba(255, 255, 255, 0))contrast(100%);
         
 
     }
