@@ -17,7 +17,7 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(115%) brightness(110%)  ;
+    filter: contrast(115%) brightness(115%)  ;
     height: 105%;
     width: 100%;
     z-index: -1;

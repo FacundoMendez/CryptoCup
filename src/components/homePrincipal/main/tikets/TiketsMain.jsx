@@ -20,7 +20,7 @@ const TiketsMain = () => {
     <div id='tickets' className="containerTikets">
       <div className="diviTicket"></div>
         
-      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_3200,q_auto:good,w_2400/v1663006484/CryptocupQatar/tickets/backTickets_csjolw.png" alt="background" />
+      <img className="backgroundReflejo backTikets " src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2000,q_80,w_1400/v1663006484/CryptocupQatar/tickets/backTickets_csjolw.png" alt="background tickets" />
 
         <div className="textTikets">
             <div className=" tiketsTitle">
