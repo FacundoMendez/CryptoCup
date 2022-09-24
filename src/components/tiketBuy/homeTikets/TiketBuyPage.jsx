@@ -363,12 +363,10 @@ const TiketBuyPage = () => {
       }
     }
   }
-
-  
+  /* 
   console.log(tokenOptionSelect)
   console.log(tokenAddresses[tokenOptionSelect - 1].address)
-
-
+ */
   return (
 
     <>

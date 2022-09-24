@@ -75,14 +75,13 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
     z-index: 999999 !important;
-
 }
 
 
 .boxEnglish , .boxEspañol, .boxChino, .boxArabe , .boxPortugues {
     border: 2px solid rgba(202, 156, 255, 0.712);
     width: 17rem;
-    background: rgba(98, 0, 255, 0.1);
+    background: rgba(15, 1, 37, 0.658);
     backdrop-filter: blur(1rem);
     cursor: pointer;
     z-index: 3;
@@ -99,7 +98,7 @@
     top: 0;
     z-index: 2;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .imgBoxEN:hover{
@@ -113,7 +112,7 @@
     top: 0;
     opacity: 1;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .imgBoxES:hover{
@@ -127,7 +126,7 @@
     top: 0;
     opacity: 1;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .imgBoxZH:hover{
@@ -141,7 +140,7 @@
     top: 0;
     opacity: 1;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .imgBoxAr:hover{
@@ -155,7 +154,7 @@
     top: 0;
     opacity: 1;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .imgBoxPo:hover{
@@ -169,7 +168,7 @@
     top: 0;
     opacity: 1;
     z-index: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .boxEnglish:active , .boxEspañol:active, .boxChino:active, .boxArabe:active, .boxPortugues:active{
@@ -192,6 +191,19 @@
     .boxIdiomas{
         left: 3.5rem;
     }
+
+    
+    .boxEnglish , .boxEspañol, .boxChino, .boxArabe , .boxPortugues {
+        border: 2px solid rgba(202, 156, 255, 0.712);
+        background: rgb(5, 0, 12);
+        backdrop-filter: blur(1rem);
+        cursor: pointer;
+        z-index: 3;
+        width: 85vw;
+        margin-left: 4rem;
+    }
+
+
 }
 
 @media screen and (max-width:480px) {
@@ -205,5 +217,15 @@
 
     .radioIdiomas {
        z-index: 9999999 !important;
+    }
+
+    .boxEnglish , .boxEspañol, .boxChino, .boxArabe , .boxPortugues {
+        border: 2px solid rgba(202, 156, 255, 0.712);
+        background: rgb(5, 0, 12);
+        backdrop-filter: blur(1rem);
+        cursor: pointer;
+        z-index: 3;
+        width: 81vw;
+        margin-left: 4rem;
     }
 }

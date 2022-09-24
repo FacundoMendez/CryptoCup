@@ -193,7 +193,7 @@
   }
 }
 
-@media screen and (max-width:370px){
+@media screen and (max-width:379px){
 
   
   .timer{
@@ -216,7 +216,7 @@
     padding: .5rem .4rem;
     font-weight: bold;
     text-align: center;
-    margin: 0rem;
+    margin-left: 0rem;
   }
   
   .reloj li span {

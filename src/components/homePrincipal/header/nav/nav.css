@@ -424,7 +424,7 @@
         top: -1rem;
         height: 10.9rem;
         background-color: rgba(40, 4, 68, 0.397);
-        transition: all .6s ease-in-out;
+        transition: all .3s ease-in-out;
         filter: blur(8px);
         backdrop-filter: blur(1em);
     }
@@ -438,13 +438,14 @@
         padding: 20px 0;
         height: 100%;
         top: 9.9rem;
-        right: 120%;
+        right: 0%;
         overflow-y: hidden;
-        transition: right 0.4s ease-in-out;
+        transition: all 0.3s ease-in-out;
         padding-top: 10rem;
         filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
         background-color: rgba(0, 0, 0, 0.863);
         backdrop-filter: blur(1em);
+        opacity: 0;
     }
 
     .wrapperBottonBtn{
@@ -453,8 +454,7 @@
     }
     
     .nav-menu_visible {
-        right: 0%;
-        filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
+        opacity: 1;
         background-color: rgba(0, 0, 0, 0.884);
         backdrop-filter: blur(1em);
     }
@@ -495,7 +495,7 @@
     .logo img{
         width: 11.5rem;
         margin-top: -1.8rem;
-        transition: all .5s ease-in-out;
+        transition: all .3s ease-in-out;
     }
 
     .navDerecha{

@@ -343,9 +343,9 @@
     position: absolute;
     bottom: -5rem;
     height: 100rem;
-    width:60vw;
+    width:90vw;
     left: 0rem;
-    background-color: rgba(0, 0, 0, 0.562);
+    background-color: rgba(0, 0, 0, 0.712);
     filter: blur(80px);
     z-index: 12;
   }
