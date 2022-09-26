@@ -44,8 +44,8 @@
 
 
 .containerTikets::before{
-    width: 55%;
-    height: 74%;
+    width: 70%;
+    height: 80%;
     content: " ";
     top: 0rem;
     background-color: rgba(0, 0, 0, 0.404);

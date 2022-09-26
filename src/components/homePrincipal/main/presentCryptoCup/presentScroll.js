@@ -50,7 +50,10 @@ const tournamentScroll = () =>{
                 opacity:0,
         })
 
-            
+        tl_logoPresent.from(".boxButtonTicketBuy",{
+            y: 60,
+            opacity:0,
+    })     
     }
    
 }

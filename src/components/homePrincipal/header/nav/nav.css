@@ -184,13 +184,13 @@
 
 .dappTitleButton{
     position: absolute;
-    right: 1.8%;
+    right: 1.6%;
     top: .1rem;
     text-align: center;
     margin-top: 0rem;
     text-decoration: none;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     cursor: pointer;
     width: 19rem;
     height: 8.5rem;
@@ -424,9 +424,7 @@
         top: -1rem;
         height: 10.9rem;
         background-color: rgba(40, 4, 68, 0.397);
-        transition: all .3s ease-in-out;
-        filter: blur(8px);
-        backdrop-filter: blur(1em);
+        transition: all .2s ease-in-out;
     }
 
     .nav-menu {
@@ -438,13 +436,10 @@
         padding: 20px 0;
         height: 100%;
         top: 9.9rem;
-        right: 0%;
         overflow-y: hidden;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         padding-top: 10rem;
-        filter: drop-shadow(0 0 80px rgba(162, 130, 238, 0.63)) ;
         background-color: rgba(0, 0, 0, 0.863);
-        backdrop-filter: blur(1em);
         opacity: 0;
     }
 
@@ -456,7 +451,7 @@
     .nav-menu_visible {
         opacity: 1;
         background-color: rgba(0, 0, 0, 0.884);
-        backdrop-filter: blur(1em);
+        backdrop-filter: blur(1rem);
     }
 
     .nav-menu-item {

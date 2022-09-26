@@ -2,6 +2,7 @@ import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import homeScroll from './homeScroll'
 import {FormattedMessage} from 'react-intl';
+import NavAnnouncement from './nav_announcement/NavAnnouncement';
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
 
 const Button = lazy(() => import ("../../buttons/Button"))
@@ -13,8 +14,6 @@ const Home = () => {
   useEffect(() => {
     homeScroll()
   },[])
-
-
  
   return (
     <div id='home' className="containerHome" >
@@ -50,13 +49,13 @@ const Home = () => {
                   </div>
                 </div>
             </div>
-            <Timer time="11/20" />
+            <Timer />
           </div>
         </div>
       </div>    
     
       <Social />
-
+      <NavAnnouncement/>
     </div>
 
   )

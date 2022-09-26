@@ -421,6 +421,19 @@
 
 @media screen and (max-width:360px){
 
+  .containerPrincipalHome::before{
+    content: " ";
+    position: absolute;
+    bottom: -5rem;
+    height: 100rem;
+    width:95vw;
+    left: 0rem;
+    background-color: rgba(0, 0, 0, 0.87);
+    filter: blur(80px);
+    z-index: 12;
+  }
+
+
   .titlePrincipal{
     font-size: 3.5rem;
     letter-spacing: 2px;
