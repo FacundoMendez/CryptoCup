@@ -112,7 +112,7 @@ function NavHeader() {
                 
                     <li>
                         <div className="lineDappButton"></div>
-                        <p className='dappTitleButton'>DAPP</p>
+                        <p className='dappTitleButton'>AIRDROP</p>
                         <p className='comingDapp'>
                             <FormattedMessage
                                 id="nav-comingSoon"
