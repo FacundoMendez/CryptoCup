@@ -8,7 +8,7 @@ const NavAnnouncement = () => {
         <p className='announcement'>
             <FormattedMessage
                 id="nav_announcement"
-                defaultMessage="Play the friendly matchs and gain big rewards!  September 27, Play entering the Dapp!" 
+                defaultMessage="Win BIG Rewards by testing our Dapp with the International Friendly Matches of the September 27!" 
             />
         </p>
     </div>
