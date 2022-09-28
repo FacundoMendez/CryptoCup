@@ -55,7 +55,7 @@ const Home = () => {
       </div>    
     
       <Social />
-      <NavAnnouncement/>
+   {/*    <NavAnnouncement/> */}
     </div>
 
   )
