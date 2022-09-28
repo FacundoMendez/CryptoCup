@@ -112,14 +112,15 @@ function NavHeader() {
                 
                     <li>
                         <div className="lineDappButton"></div>
-                        <p className='dappTitleButton'>AIRDROP</p>
-                        <p className='comingDapp'>
+                        <a href="https://dapp.cryptocupqatar.io/">
+                            <p className='dappTitleButton'>DAPP</p>
+                        </a>
+{/*                         <p className='comingDapp'>
                             <FormattedMessage
                                 id="nav-comingSoon"
                                 defaultMessage="coming Soon"
                             />
-
-                        </p>
+                        </p> */}
                     </li>
                 </ul>
 
