@@ -16,13 +16,13 @@ const navBallModel = () => {
             /* sizes */
 
         const sizes = {
-            width: 200,
-            height: 200
+            width: 110,
+            height: 104
         }
 
         window.addEventListener("resize", () =>{
-            sizes.width = 200
-            sizes.height = 200
+            sizes.width = 110
+            sizes.height = 104
 
             camera.aspect = sizes.width / sizes.height
             camera.updateProjectionMatrix()
@@ -45,8 +45,8 @@ const navBallModel = () => {
 
             /* camera */
             
-        const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 10)
-            camera.position.z= 4.6
+        const camera =new THREE.PerspectiveCamera(30, sizes.width / sizes.height, .1, 10)
+        camera.position.z= 4.6
         scene.add(camera)
 
         let modelBall
@@ -56,7 +56,6 @@ const navBallModel = () => {
             (gltf) =>
             {
                 modelBall= gltf.scene
-                modelBall.scale.set(1.0, 1.0, 1.0)
                 scene.add(modelBall)
             }
         )
@@ -99,7 +98,7 @@ const navBallModel = () => {
 
 
         /* OPTIMIZACION */
-        
+/*         
         gltfLoader.verticesNeedUpdate = true; 
         gltfLoader.elementsNeedUpdate = true; 
         gltfLoader.morphTargetsNeedUpdate = true; 
@@ -108,7 +107,7 @@ const navBallModel = () => {
         gltfLoader.colorsNeedUpdate = true; 
 
         gltfLoader.needsUpdate = true
-
+ */
     }
 
 

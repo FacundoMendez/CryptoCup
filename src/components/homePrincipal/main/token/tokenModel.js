@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-/* import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'; */
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import tokenModelo from "./src/models/TokenModel.glb"
 
 
@@ -21,13 +21,13 @@ const tokenModel = () => {
             /* sizes */
 
         const sizes = {
-            width: 600,
-            height: 600
+            width: 240,
+            height: 240
         }
 
         window.addEventListener("resize", () =>{
-            sizes.width = 600
-            sizes.height = 600
+            sizes.width = 240
+            sizes.height = 240
 
             camera.aspect = sizes.width / sizes.height
             camera.updateProjectionMatrix()
@@ -41,13 +41,12 @@ const tokenModel = () => {
 
         const renderer =new THREE.WebGLRenderer({
             canvas: canvas, 
-            /* antialias:true, */
-            alpha:true
+            antialias:true,
+            /* alpha:true */
         })
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
         renderer.physicallyCorrectLights = true
-
 
 
         /* ------------------------------------------------- */
@@ -55,8 +54,8 @@ const tokenModel = () => {
 
             /* camera */
             
-        const camera =new THREE.PerspectiveCamera(55, sizes.width / sizes.height, .1, 100)
-        camera.position.z= 4.6
+        const camera =new THREE.PerspectiveCamera(20, sizes.width / sizes.height, .1, 10)
+        camera.position.z= 6
         scene.add(camera)
 
 
@@ -68,20 +67,19 @@ const tokenModel = () => {
             (gltf) =>
             {
                 tokenModelDorada= gltf.scene
-                tokenModelDorada.scale.set(.9, 1.0, 1.0)
                 scene.add(tokenModelDorada)
             }
         )
 
 
-
             // Controls
 
-/*         const controls = new OrbitControls(camera, canvas)
+        const controls = new OrbitControls(camera, canvas)
         controls.enableDamping = true
         controls.enableZoom = false 
-        controls.enablePan= false */
-
+        controls.enablePan= false
+        controls.minPolarAngle = 1.55;
+        controls.maxPolarAngle = 1.7;
 
 
             
@@ -103,7 +101,7 @@ const tokenModel = () => {
 
             // Update camera
 
-         /*    controls.update()  */
+            controls.update() 
             renderer.render(scene,camera)
             window.requestAnimationFrame(animate)
 
@@ -115,7 +113,7 @@ const tokenModel = () => {
 
         /* OPTIMIZACION */
         
-        gltfLoader.verticesNeedUpdate = true; 
+/*         gltfLoader.verticesNeedUpdate = true; 
         gltfLoader.elementsNeedUpdate = true; 
         gltfLoader.morphTargetsNeedUpdate = true; 
         gltfLoader.uvsNeedUpdate = true;
@@ -123,7 +121,7 @@ const tokenModel = () => {
         gltfLoader.colorsNeedUpdate = true; 
 
         gltfLoader.needsUpdate = true
-
+ */
     }
 }
 

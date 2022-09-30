@@ -4,14 +4,54 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 6rem;
+    gap: 2rem;
     z-index: 10;
     background-color: black;
-    padding-top: 20rem;
+    padding: 20rem 0;
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.webp");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+
+.tokenTitle h2{
+    font-size: 8rem;
+    letter-spacing: 0px;
+    font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+.enterPresale h3{
+    font-size: 5rem;
+    letter-spacing: 0px;
+    font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+.tokens::after{
+    width: 110%;
+    height: 15rem;
+    content: " ";
+    top: -3rem;
+    background-color: rgba(0, 0, 0, 0.911);
+    filter: blur(20px) ;
+    position: absolute;
+    z-index: 10;
 }
 
 .tokens::before{
@@ -20,7 +60,6 @@
     content: " ";
     top: 0rem;
     background-color: rgba(0, 0, 0, 0.733);
-    backdrop-filter: blur(1rem);
     position: absolute;
     z-index: -1;
 }
@@ -30,95 +69,27 @@
     width: 100%;
     height: 75%;
     position: absolute;
-    filter: grayscale(0.6) blur(8px);
 }
 
-.tokenblur{
-    backdrop-filter: blur(.6rem);
+
+.containerToken{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
     width: 100%;
-    height: 75%;
-    z-index: 13000;
-    position: absolute;
 }
 
-.comingToken {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    object-fit: cover;
-    filter: contrast(120%)  brightness(105%) drop-shadow(0 0 50px rgba(135, 6, 255, 0.144));
-}
-
-.tokenComingSoon-left{
-    position: absolute;
-    top: 36%;
-    left: 50.5%;
-    transform: translate(-50%, -50%) rotate(12deg);
-    width: 115%;
-    object-fit: cover;
-}
-
-.tokenComingSoon-right{
-    position: absolute;
-    top: 37%;
-    left: 50.5%;
-    transform: translate(-50%, -50%) rotate(-12deg);
-    width: 115%;
-    object-fit: cover;
-}
-
-.tokens::after{
-    height: 2rem;
-    content: " ";
-    top: 0rem;
-    width: 100%;
-    height: .1rem;
-    background-color:#fffffff5;
-    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
-    border: 1px solid rgba(178, 149, 202, 0.849);
-    border-radius: 100%;
-    backdrop-filter: blur(1rem);
-    filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
-    position: absolute;
-    z-index: 1;
-}
-
-.tokens::after{
-    height: 2rem;
-    content: " ";
-    bottom: 0rem;
-    width: 100%;
-    height: .1rem;
-    background-color:#fffffff5;
-    box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
-    border: 1px solid rgba(178, 149, 202, 0.849);
-    border-radius: 100%;
-    backdrop-filter: blur(1rem);
-    filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
-    position: absolute;
-    z-index: 1;
-}
 
 .tokenWebGl {
     position: relative;
     width: 10%;
     cursor: grab;
-    transform: scale(.01);
-    opacity: 0;
-    padding-bottom: 5rem;
-    filter: grayscale(100);
+    margin-top: 10rem;
 }
 
-.tokenVideo{
-    position: relative;
-    cursor: grab;
-    margin-top: 5rem;
-    padding-bottom: 15rem;
-    width: 17rem;
-    animation: rotate 5s infinite linear;
-}
+
 
 @keyframes rotate {
     0%{
@@ -129,38 +100,6 @@
     }
 }
 
-.containerToken{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0rem;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.textToken{
-    position: relative;
-    width: 49%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap:0rem;
-}
-
-.textToken p{
-    color: white;
-    padding:0rem 6rem;
-    text-align: center;
-}
-
-.tokenTitle h2{
-    font-size: 7.5rem;
-    letter-spacing: 4px;
-    filter: grayscale(100);
-    font-family: qatarHeavy;
-}
 
 
 @media screen and (min-width: 2550px){
@@ -331,6 +270,5 @@
         transform: translate(-50%, -50%) rotate(-22deg);
     }
 
-    .tokens {
-    }
+
 }
