@@ -2,15 +2,14 @@ import React, {Suspense, useEffect} from 'react'
 import "./token.css"
 import tokenScroll from './tokenScroll'
 /* import {FormattedMessage} from 'react-intl'; */
-
 import tokenModel from "./tokenModel"
 import Spinner from '../../../spinner/Spinner'
-import TimerPresaleToken from './timerPresaleToken/TimerPresaleToken'
+import Presale from './presale/Presale'
 
 const TokenMain = () => {
 
     useEffect(()=>{
-        tokenModel()
+       /*  tokenModel() */
         tokenScroll()
     },[])
 
@@ -19,22 +18,20 @@ const TokenMain = () => {
         <div className="titleContainers tokenTitle">
             <h2>TOKEN</h2>
         </div>
-
+{/* 
         <div className="enterPresale">
            <h3>Enter Presale Now</h3> 
-        </div>
+        </div> */}
+
 
         <div className="containerToken">
-            <Suspense fallback={<Spinner/>}>
+            <Presale/>
+
+       {/*      <Suspense fallback={<Spinner/>}>
                 <canvas className='tokenWebGl'></canvas>
-            </Suspense>
+            </Suspense> */}
         </div>
 
-        <TimerPresaleToken />
-
-{/*         <button className=''>Connect Metamask</button>
-        
-        <button className=''></button> */}
     </div>
   )
 }

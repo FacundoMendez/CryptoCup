@@ -1,0 +1,452 @@
+.boxPresale{
+    padding: 2rem 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 15px;
+    box-shadow: rgba(255, 204, 128, 0.164) 3px 3px 6px 0px inset, rgba(255, 201, 139, 0.158) -3px -3px 6px 1px inset;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.815);
+    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.021));
+}
+
+.boxPresale h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform:translateZ(50px) ;
+    font-family:gilron;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+
+}
+
+.boxPresale h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family:gilron;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    
+}
+
+
+.box_cct{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    width: 110%;
+}
+
+.box_cct p{
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+}
+
+
+
+/* barra progresiva */
+
+.progress {
+	background-color: #120f1a;
+	position: relative;
+	margin: 2rem 0;
+    margin-top: 3rem;
+	height: 5rem;
+    width: 110%;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+}
+
+.progress-done {
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    border-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
+.progress-done p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px black);
+    font-size:1.9rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+.boxPresale strong{
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+
+
+.soft_cap_progress{
+    height: 4rem;
+    border: 1px solid rgba(255, 218, 188, 0.404);
+    border-left: none;
+    position: absolute;
+    left: 30%;
+    top: -1.1rem;
+    z-index: -1;
+    
+}
+.soft_cap_progress::before{
+    content:"SOFT CAP";
+    position: absolute;
+    font-size: 1rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    width: 6rem;
+    letter-spacing: 1px;
+    top: -2rem;
+    left: -2.8rem;
+}
+
+
+/* box soft */
+
+.soft{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+    width: 110%;
+    text-align: center;
+}
+
+.user_buy_wallet{
+    width: 110%;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: -1rem;
+    padding: .5rem ;
+    text-align: center;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+}
+
+.soft p{
+    width: 100%;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5rem ;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+}
+
+
+
+/* buttons */
+
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 110%;
+    height: 7rem;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    cursor: pointer;
+}
+
+.connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 110%;
+    height: 6rem;
+    box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.connect:hover{
+    background-image: linear-gradient(to left, #00000011, #9e74ff1f);
+    transition: all .5s ease;
+}
+
+
+.connect p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px black);
+    font-size:2.4rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+
+/* nav buy presale */
+
+.nav_buy_presale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 110%;
+    height: 6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+    gap: .3rem;
+    border: none;
+}
+
+.box_tokens_presale{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    border-radius: 5px;
+}
+
+
+/* amount */
+
+.box_amount_presale{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    border: none;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    border-radius: 5px;
+}
+
+.box_amount_presale input{
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+    background-color: transparent;
+    font-size: 2rem;
+    text-align: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    border: none;
+}
+
+
+.box_amount_presale input::placeholder {
+    font-size: 1.3rem;
+    position: absolute;
+    letter-spacing: 1px;
+    color: rgba(129, 129, 129, 0.692);
+    border: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* buy */
+
+.box_buy_presale{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    border-radius:5px;
+}
+
+.box_buy_presale:active{
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.308);
+    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.281));
+}
+
+.box_buy_presale p{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px black);
+    font-size:2rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+
+
+/* select  token*/
+
+
+.select_token_presale{
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+}
+
+.imgTokenSelect{
+    width: 5rem;
+    object-fit: cover;
+    height: 5rem;
+    
+}
+
+/* box */
+.radio_token_presale{
+    width: 11.6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 2rem;
+    top: 5.8rem;
+    text-align: center;
+    background-image: linear-gradient(to right, #000000fd, #04010a);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+    
+}
+
+.radio_token_presale_active{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s ease;
+}
+
+.radio_token_presale p{
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+.LogoToken{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.radio_token_presale input{
+    display: none;
+}
+
+.radio_presale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}

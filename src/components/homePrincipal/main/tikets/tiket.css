@@ -58,11 +58,12 @@
 }
 
 .diviTicket::after{
-    width: 110%;
+    width: 120%;
     height: 15rem;
     content: " ";
-    top: -7rem;
-    background-color: rgba(0, 0, 0, 0.911);
+    top: -6rem;
+    left: -5rem;
+    background-color: rgba(0, 0, 0, 0.986);
     filter: blur(20px) ;
     position: absolute;
     z-index: 10;

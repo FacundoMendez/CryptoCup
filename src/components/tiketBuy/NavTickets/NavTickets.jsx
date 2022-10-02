@@ -73,12 +73,11 @@ function NavTicket() {
 
                     <li>
                         <div className="wrapperBottonBtn navMovile">
-                            <div className="btnButtonNav">
-                                <p >Dapp</p>
-                                <span className="BorderTopBottomNav "></span>
-                                <span className="BorderLeftRightNav "></span>
-                            </div>
-                            
+                            <a href="https://dapp.cryptocupqatar.io/" target="_blank">
+                                <div className="btnButtonNav">
+                                    <p>Dapp</p>
+                                </div>
+                            </a>
                         </div>
                    </li>
                 </ul>
@@ -111,8 +110,11 @@ function NavTicket() {
                 
                     <li>
                         <div className="lineDappButton"></div>
-                        <p className='dappTitleButton'>DAPP</p>
-                        <p className='comingDapp'>Coming Soon</p>
+                        <a href="https://dapp.cryptocupqatar.io/" target="_blank">
+                            <p className='dappTitleButton'>DAPP</p>
+                        </a>
+
+                      {/*   <p className='comingDapp'>Coming Soon</p> */}
                     </li>
                 </ul>
 

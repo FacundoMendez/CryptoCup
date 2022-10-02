@@ -8,6 +8,7 @@
     z-index: 10;
     background-color: black;
     padding: 20rem 0;
+    padding-bottom: 50rem;
     background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.webp");
     background-position: center;
     background-attachment: fixed;
@@ -47,8 +48,8 @@
     width: 110%;
     height: 15rem;
     content: " ";
-    top: -3rem;
-    background-color: rgba(0, 0, 0, 0.911);
+    top: -7rem;
+    background-color: rgba(0, 0, 0, 0.973);
     filter: blur(20px) ;
     position: absolute;
     z-index: 10;
@@ -72,19 +73,19 @@
 }
 
 
+
 .containerToken{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 10rem;
     width: 100%;
 }
 
-
 .tokenWebGl {
     position: relative;
-    width: 10%;
+    width: 50%;
     cursor: grab;
     margin-top: 10rem;
 }
@@ -126,7 +127,6 @@
     }
 
     .tokens{
-        padding-bottom: 0rem;
         padding-top: 15rem;
         background-size: cover;
     }
@@ -215,9 +215,6 @@
         backdrop-filter: blur(.5rem);
     }
 
-    
-
-
     .tokenWebGl {
         display: none;
     }
@@ -229,14 +226,8 @@
     .tokens{
         width: 100%;
         padding-top: 10rem;
-        padding-bottom: 10rem;
     }
     
-    .tokenWebGl {
-        position: relative;
-        width: 10%;
-        cursor: grab;
-    }
 
     .textToken{
         width: 100%;

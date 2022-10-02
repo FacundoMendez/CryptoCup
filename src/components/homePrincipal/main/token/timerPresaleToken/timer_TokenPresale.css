@@ -5,11 +5,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
+    
 }
 
+.reloj_tokenPresale span{
+    color: rgb(255, 222, 160);
+    letter-spacing: 2px;
+    font-family: qatar;
+    border-radius: 5px;
+    backdrop-filter: blur(3px);
+    width: 8rem;
+    height: 6.5rem;
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+}
+
+
 .reloj_tokenPresale li{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color:white;
     display: flex;
     justify-content: center;
@@ -17,35 +38,14 @@
     flex-direction: column;
     gap: 1rem;
     letter-spacing: 1px;
-    font-family: qatar;
-    
-}
-
-.reloj_tokenPresale li::before{
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    background-color: rgba(38, 7, 78, 0.103);
-    border-radius: 50%;
-    z-index: -1;
-    backdrop-filter: blur(3px);
-    filter: blur(1rem);
-}
-
-.reloj_tokenPresale span{
-    border-radius: 10px;
-    background-color:rgba(0, 0, 0, 0.288);
-    backdrop-filter: blur(3px);
-    width: 8.5rem;
-    height: 8.5rem;
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family:gilron;
+    -webkit-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
-    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
 }
+

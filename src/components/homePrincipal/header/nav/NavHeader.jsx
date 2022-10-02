@@ -72,15 +72,15 @@ function NavHeader() {
                         </a >
                     </li>
                 
-
                     <li>
                         <div className="wrapperBottonBtn navMovile">
-                            <div className="btnButtonNav">
-                                <p >Dapp</p>
-                                <span className="BorderTopBottomNav "></span>
-                                <span className="BorderLeftRightNav "></span>
-                            </div>
-                            
+                            <a href="https://dapp.cryptocupqatar.io/" target="_blank">
+                                <div className="btnButtonNav">
+                                    <p >Dapp</p>
+                                    <span className="BorderTopBottomNav "></span>
+                                    <span className="BorderLeftRightNav "></span>
+                                </div>
+                            </a>
                         </div>
                     </li>
                 </ul>
@@ -112,7 +112,7 @@ function NavHeader() {
                 
                     <li>
                         <div className="lineDappButton"></div>
-                        <a href="https://dapp.cryptocupqatar.io/">
+                        <a href="https://dapp.cryptocupqatar.io/" target="_blank">
                             <p className='dappTitleButton'>DAPP</p>
                         </a>
 {/*                         <p className='comingDapp'>

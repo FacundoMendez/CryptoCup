@@ -37,10 +37,10 @@ const TimerPresaleToken = () => {
   
   
     return (
-        <div className="timer">
+        <div className="timer_presale">
 
-        <div id="timerBox">
-            <ul className="reloj_tokenPresale">
+          <div id="timerBox">
+              <ul className="reloj_tokenPresale">
 
                 <li>
                   <span id="days_TokenPresale"></span>

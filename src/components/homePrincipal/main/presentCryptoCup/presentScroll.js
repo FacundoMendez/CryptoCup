@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { Timeline } from "gsap/gsap-core";
+import VanillaTilt from "vanilla-tilt";
 
 const tournamentScroll = () =>{
 
@@ -9,7 +10,13 @@ const tournamentScroll = () =>{
     }
 
     if (!isMobile()) {
-
+        VanillaTilt.init(document.querySelectorAll(".boxPresale"), {
+            max:.5,
+            speed: 400,
+            perspective: 300,
+            glare: true,
+            "max-glare": 0.02,
+        });
         
     gsap.registerPlugin(ScrollTrigger);
  

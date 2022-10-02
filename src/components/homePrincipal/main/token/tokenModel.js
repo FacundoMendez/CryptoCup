@@ -3,7 +3,6 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import tokenModelo from "./src/models/TokenModel.glb"
 
-
 const tokenModel = () => {
 
     function isMobile() {
@@ -42,7 +41,7 @@ const tokenModel = () => {
         const renderer =new THREE.WebGLRenderer({
             canvas: canvas, 
             antialias:true,
-            /* alpha:true */
+            alpha:true
         })
         renderer.setSize(sizes.width, sizes.height)
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))

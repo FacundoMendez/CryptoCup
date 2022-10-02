@@ -1,4 +1,8 @@
 /* model */
+*{
+    text-decoration: none;
+}
+
 .navMovile{
     display: none;
 }
@@ -182,6 +186,7 @@
     filter: drop-shadow(0 0 4px #7119ffe1) opacity(.8);
 }
 
+
 .dappTitleButton{
     position: absolute;
     right: 1.6%;
@@ -190,7 +195,7 @@
     margin-top: 0rem;
     text-decoration: none;
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     cursor: pointer;
     width: 19rem;
     height: 8.5rem;
@@ -238,57 +243,17 @@
   letter-spacing: 3px;
   padding-top: .25rem;
   text-transform: uppercase;
-    font-family:gilron;
-  color: rgba(209, 209, 209, 0.815);
+  font-family:gilron;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  
 }
 
-.BorderTopBottomNav:before {
-  content: "";
-  position: absolute;
-  width: 15.7rem;
-  height: 2px;
-  top: -6px;
-  left: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  background: rgba(199, 199, 199, 0.815);
-}
-
-.BorderTopBottomNav:after {
-  content: "";
-  position: absolute;
-  width: 15.7rem;
-  height: 2px;
-  bottom: -6px;
-  right: -7px;
-  background: #fff;
-  transition: all 0.5s ease;
-  background: rgba(199, 199, 199, 0.815);
-}
-
-.BorderLeftRightNav:before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -7px;
-  width: 2px;
-  height: 4.5rem;
-  background: #fff;
-  transition: all 0.5s ease;
-    background: rgba(199, 199, 199, 0.815);
-}
-
-.BorderLeftRightNav:after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  right: -7px;
-  width: 2px;
-  height: 4.5rem;
-  background: #fff;
-  transition: all 0.5s ease;
-  background: rgba(199, 199, 199, 0.815);
-}
 
 .dappIzquierda{
     display: none;
@@ -350,11 +315,10 @@
     }
 
     .btnButtonNav p {
-        font-size: 2rem;
+        font-size: 3rem;
         letter-spacing: 3px;
       }
       
-
     .nav-menu {
         width: 80%;
         padding-right: 3rem;
@@ -368,22 +332,6 @@
     
     .wrapperBottonBtn .btnButtonNav {
         width: 10.5rem;
-    }
-
-    .BorderTopBottomNav:before {
-        width: 11.7rem;
-    }
-      
-    .BorderTopBottomNav:after {
-      width: 11.7rem;
-    }
-    
-    .BorderLeftRightNav:before {
-      height: 4.5rem;
-    }
-    
-    .BorderLeftRightNav:after {
-      height: 4.5rem;
     }
 
         
@@ -441,6 +389,7 @@
         padding-top: 10rem;
         background-color: rgba(0, 0, 0, 0.863);
         opacity: 0;
+        visibility: hidden;
     }
 
     .wrapperBottonBtn{
@@ -449,6 +398,7 @@
     }
     
     .nav-menu_visible {
+        visibility: visible;
         opacity: 1;
         background-color: rgba(0, 0, 0, 0.884);
         backdrop-filter: blur(1rem);
