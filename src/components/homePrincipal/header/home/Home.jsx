@@ -1,13 +1,12 @@
 import React, {lazy, useEffect} from 'react'
 import "./home.css"
-import homeScroll from './homeScroll'
 import {FormattedMessage} from 'react-intl';
 import NavAnnouncement from './nav_announcement/NavAnnouncement';
 import Presale from '../../main/token/presale/Presale';
 import { NavLink } from 'react-router-dom';
+import gsap from 'gsap';
+
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
-
-
 const Button = lazy(() => import ("../../buttons/Button"))
 const Social = lazy(() => import ('./social/Social'))
 const Timer = lazy(() => import ('./timer/Timer'))
@@ -16,7 +15,12 @@ const Timer = lazy(() => import ('./timer/Timer'))
 const Home = () => {
 
   useEffect(() => {
-    homeScroll()
+    gsap.from(".navBallModel",{
+      opacity:0,
+      duration:1.8,
+      scale:.2,
+    })
+
   },[])
  
   return (
