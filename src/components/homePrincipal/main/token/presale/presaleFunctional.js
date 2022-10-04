@@ -1,7 +1,7 @@
 const presaleFunctional = () => {
     const radio_token_presale = document.querySelector(".radio_token_presale")
     const box_tokens_presale = document.querySelector(".box_tokens_presale")
-    const LogoToken = document.querySelectorAll(".LogoToken")
+    const LogoToken = document.querySelectorAll(".input_radio_presale")
     let amountTokens_presale = document.getElementById('amountTokens_presale')
     const box_buy_presale = document.querySelector(".box_buy_presale");
     

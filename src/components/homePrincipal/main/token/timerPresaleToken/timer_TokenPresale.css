@@ -18,13 +18,13 @@
     border-radius: 5px;
     backdrop-filter: blur(3px);
     width: 8rem;
-    height: 6.5rem;
+    height: 7.5rem;
     font-size: 2.3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
+    background-image: linear-gradient(to right, #00000011, #9e74ff3a);
     box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
 }
 
@@ -49,3 +49,46 @@
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
 }
 
+
+@media screen and (max-width:1440px) {
+    
+    .reloj_tokenPresale{
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reloj_tokenPresale span{
+        border-radius: 5px;
+        width: 7rem;
+        height: 6.5rem;
+        font-size: 2.3rem;
+    }
+
+    .reloj_tokenPresale li{
+        font-size: 1.4rem;
+        gap: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:378px) {
+
+    .reloj_tokenPresale{
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .reloj_tokenPresale span{
+        border-radius: 5px;
+        width: 6rem;
+        height: 5.5rem;
+        font-size: 2.3rem;
+    }
+
+    .reloj_tokenPresale li{
+        font-size: 1.4rem;
+        gap: 1rem;
+    }
+
+}
