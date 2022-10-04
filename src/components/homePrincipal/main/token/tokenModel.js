@@ -20,13 +20,13 @@ const tokenModel = () => {
             /* sizes */
 
         const sizes = {
-            width: 240,
-            height: 240
+            width: 255,
+            height: 255
         }
 
         window.addEventListener("resize", () =>{
-            sizes.width = 240
-            sizes.height = 240
+            sizes.width = 255
+            sizes.height = 255
 
             camera.aspect = sizes.width / sizes.height
             camera.updateProjectionMatrix()

@@ -2,12 +2,17 @@ import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import homeScroll from './homeScroll'
 import {FormattedMessage} from 'react-intl';
+import fire from "./onFire.mp4"
 import NavAnnouncement from './nav_announcement/NavAnnouncement';
+import Presale from '../../main/token/presale/Presale';
+import { NavLink } from 'react-router-dom';
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
+
 
 const Button = lazy(() => import ("../../buttons/Button"))
 const Social = lazy(() => import ('./social/Social'))
 const Timer = lazy(() => import ('./timer/Timer'))
+
 
 const Home = () => {
 
@@ -35,18 +40,17 @@ const Home = () => {
                   <Button title="BUY TICKETS"/>          
                 </a>
                 <div className=" wrapperBottonPresale">
+                  
+                <NavLink to="/presale">
                   <div className="btnPresale">
                     <p>       
                       <FormattedMessage
                           id="home-presale"
                           defaultMessage="Presale" 
                       />
-                  </p>
-                    <span className=" BorderTopBottomPresale"></span>
-                    <span className=" BorderBottomPresale"></span>
-                    <span className=" BorderLeftRightPresale"></span>
-                    <img className='comingSoon' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_62,q_auto:low,w_346/v1660656414/CryptocupQatar/Home%20/comingSoon_xoiyc1.png" alt="Coming Soon" />
+                    </p>
                   </div>
+                </NavLink>
                 </div>
             </div>
             <Timer />

@@ -1,6 +1,30 @@
-.boxPresale{
-    padding: 2rem 5rem;
+.containerPresale{
+    width: 100%;
+    height: 100vh;
     position: relative;
+    overflow: hidden;
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_2100,q_auto:low,w_2500/v1660656624/CryptocupQatar/nft/BackToken_bpo7qi.webp");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.containerPresale::before{
+    width: 110%;
+    height: 100%;
+    content: " ";
+    top: 0rem;
+    background-color: rgba(0, 0, 0, 0.568);
+    position: absolute;
+}
+
+.boxPresale{
+    width: 70rem;
+    padding: 5rem 5rem;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +33,7 @@
     border-radius: 15px;
     box-shadow: rgba(255, 204, 128, 0.164) 3px 3px 6px 0px inset, rgba(255, 201, 139, 0.158) -3px -3px 6px 1px inset;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgba(0, 0, 0, 0.404);
     filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.021));
 }
 
@@ -52,9 +76,10 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     width: 110%;
+    margin: 1rem 0;
 }
 
 .box_cct p{
@@ -140,7 +165,7 @@
     border: 1px solid rgba(255, 218, 188, 0.404);
     border-left: none;
     position: absolute;
-    left: 30%;
+    left: 25%;
     top: -1.1rem;
     z-index: -1;
     
@@ -394,7 +419,7 @@
 
 /* box */
 .radio_token_presale{
-    width: 11.6rem;
+    width: 100%;
     padding: 2rem;
     display: flex;
     justify-content: center;
@@ -412,6 +437,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease;
+    z-index: 9999;
     
 }
 
@@ -438,6 +464,10 @@
     width: 3rem;
     height: 3rem;
     cursor: pointer;
+}
+
+.LogoToken:hover{
+    filter: drop-shadow(0 0 10px rgba(181, 149, 255, 0.603));
 }
 
 .radio_token_presale input{

@@ -13,14 +13,12 @@ const TimerPresaleToken = () => {
         let today = new Date(),
             dd = String(today.getDate()).padStart(2, "0"),
             mm = String(today.getMonth() + 1).padStart(2, "0"),
-            yyyy = today.getFullYear(),
-            dayMonth = "10/16/",
-            qatar = dayMonth + yyyy;
+            yyyy = today.getFullYear()
         
             today = mm + "/" + dd + "/" + yyyy;
 
         //end
-        const countDown = new Date(qatar).getTime(),
+        const countDown = new Date(1666224000000).getTime(),
             x = setInterval(function() {    
 
                 const now = new Date().getTime(),

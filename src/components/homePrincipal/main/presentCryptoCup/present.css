@@ -25,7 +25,7 @@
 
 .logoContainer img{
     object-fit: cover;
-    width: 45rem;
+    width: 40rem;
     border-radius: 50%;
     margin-top: -14rem;
     filter: brightness(125%) contrast(120%) drop-shadow( 0 0 40px #000000);

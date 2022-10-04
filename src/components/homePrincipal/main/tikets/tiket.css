@@ -17,13 +17,12 @@
 
 .backTikets{
     object-fit: cover;
-    filter: contrast(115%) brightness(115%)  ;
+    filter: contrast(125%) brightness(115%)  ;
     height: 105%;
     width: 100%;
     z-index: -1;
     opacity: .97;
     position: absolute;
-    width: 100vw;
     height: 272rem;
 }
 
@@ -44,7 +43,7 @@
 
 
 .containerTikets::before{
-    width: 70%;
+    width: 60%;
     height: 80%;
     content: " ";
     top: 0rem;
@@ -326,7 +325,7 @@
 
 .division{
     position: absolute;
-    bottom: -16.5rem !important;
+    bottom: -16rem !important;
 }
 
 .division img{
