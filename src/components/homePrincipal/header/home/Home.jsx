@@ -2,7 +2,6 @@ import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import homeScroll from './homeScroll'
 import {FormattedMessage} from 'react-intl';
-import fire from "./onFire.mp4"
 import NavAnnouncement from './nav_announcement/NavAnnouncement';
 import Presale from '../../main/token/presale/Presale';
 import { NavLink } from 'react-router-dom';
