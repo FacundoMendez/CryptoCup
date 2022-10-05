@@ -4,7 +4,6 @@ import tokenScroll from './tokenScroll'
 import {FormattedMessage} from 'react-intl';
 import tokenModel from "./tokenModel"
 import Spinner from '../../../spinner/Spinner'
-import Presale from './presale/Presale'
 
 const TokenMain = () => {
 
@@ -26,14 +25,14 @@ const TokenMain = () => {
 
         <div className="boxText_token">
             
-            <p>
+            <p className='t_1'>
                 <FormattedMessage
                     id="token-text1"
                     defaultMessage="Issuing tokens too slowly reduces the benefits accessible to earlyadopters and ardent supporters, while flooding the market with tokensoffers little room for speculators and opportunists."
                 />
             </p> 
             
-            <p>
+            <p className='t_2'>
                 <FormattedMessage
                     id="token-text2"
                     defaultMessage="By carefully combining rewards with a long-term token burn mechanism,CryptoCup tackles both of these issues at once. In addition to creating asustainable model of growth for the CCT token, that will motivate holders."
