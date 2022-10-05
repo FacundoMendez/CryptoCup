@@ -7,8 +7,8 @@ import "./presale.css"
 
 const Presale = () => {
 
-    const [accumulated , setAccumulated] = useState(399990)       //cantidad en $ 
-    const [porcentaje , setPorcentaje] = useState("10")      //cantidad en %
+    const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
+    const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
 
     const [connect , setConnect] = useState(false)
 
