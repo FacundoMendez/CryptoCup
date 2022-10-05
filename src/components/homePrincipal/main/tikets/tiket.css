@@ -43,11 +43,12 @@
 
 
 .containerTikets::before{
-    width: 60%;
+    width: 80%;
     height: 80%;
     content: " ";
+    left: -10rem;
     top: 0rem;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.753);
     filter: blur(30px) ;
     position: absolute;
     overflow: hidden;

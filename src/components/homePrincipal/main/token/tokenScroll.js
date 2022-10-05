@@ -25,15 +25,19 @@ const tokenScroll = () =>{
         })
 
         tl_token.from(".boxText_token" , {
+            duration:.3,
             opacity:0,
         })
         tl_token.from(".t_1" , {
+            duration:.3,
             opacity:0,
         })
         tl_token.from(".t_2" , {
+            duration:.3,
             opacity:0,
         })
         tl_token.from(".mark_token" , {
+            duration:.5,
             opacity:0,
         })
 
@@ -49,42 +53,42 @@ const tokenScroll = () =>{
         tl_token2.from(".tokenWebGl" , {
             opacity:0,
             scale:0,
-            duration:1.5
+            duration:1
         })
 
         tl_token2.from(".top_left_line" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
         tl_token2.from(".box_left_token_prediction" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
 
         tl_token2.from(".bottom_left_line" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
         tl_token2.from(".box_text_left_bottom" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
 
 
         tl_token2.from(".top_right_line" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
         tl_token2.from(".box_text_right_top" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
         tl_token2.from(".bottom_right_line" , {
             opacity:0,
-            duration:.5,
+            duration:.3,
         })
         tl_token2.from(".box_text_right_bottom" , {
-            duration:.5,
+            duration:.3,
             opacity:0,
         })
 

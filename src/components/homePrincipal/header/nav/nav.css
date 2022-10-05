@@ -11,7 +11,7 @@
 .navBallModel{
     cursor: grab;
     z-index: 999999999;
-    filter:drop-shadow(0 0 50px rgba(92, 1, 167, 0.336)) contrast(110%);
+    filter:drop-shadow(0 0 20px rgba(148, 18, 255, 0.253)) contrast(110%);
     margin-top: .8rem;
     margin-left: .2rem;
     width: 100%;
