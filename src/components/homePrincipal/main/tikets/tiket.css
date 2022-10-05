@@ -56,18 +56,6 @@
     width: 100%;
 }
 
-.diviTicket::after{
-    width: 120%;
-    height: 15rem;
-    content: " ";
-    top: -6rem;
-    left: -5rem;
-    background-color: rgba(0, 0, 0, 0.986);
-    filter: blur(20px) ;
-    position: absolute;
-    z-index: 10;
-}
-
 
 .tiketsTitle h2{
     font-size: 6rem;
@@ -589,12 +577,6 @@
         font-size: 5rem;
     }
 
-    .diviTicket::after {
-        width: 150%;
-        left: -3rem;
-        height: 15rem;
-        top: -10rem;
-    }
 }
 
 
@@ -712,12 +694,8 @@
 }
 
 @media screen and (max-width:480px){
-    .diviTicket::after {
-        width: 150%;
-        left: -3rem;
-        height: 15rem;
-        top: -10rem;
-    }
+
+
 
     .tiketsPreview {
         animation: none;
@@ -735,6 +713,10 @@
         padding-top: 0rem;
         padding-bottom: 10rem ;
         text-align: center;
+    }
+
+    .containerTikets::before{
+        background-color: rgba(21, 1, 53, 0.336);
     }
 
     .titleTicket-home-basic h2, .titleTicket-home-boost h2 {
@@ -827,7 +809,7 @@
         text-align: center;
         letter-spacing: 0;
         line-height: 4rem;
-        margin-top: 3rem;
+        margin-top: 0rem;
     }
     .textTikets {
         padding: 0 1rem;
