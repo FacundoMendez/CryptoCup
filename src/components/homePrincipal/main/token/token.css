@@ -7,7 +7,7 @@
     gap: 2rem;
     z-index: 10;
     background-color: black;
-    padding: 10rem 0;
+    padding: 5rem 0;
     padding-bottom: 20rem;
 }
 
@@ -57,7 +57,7 @@
     gap: 10rem;
     width: 100%;
     position: relative;
-    margin-top: 10rem;
+    margin-top: 18rem;
 
 }
 
@@ -69,11 +69,110 @@
 }
 
 
+/* Titles tokens gir */
+
+.mark_token{
+    font-size: 3rem;
+    letter-spacing: .5px;
+    font-family: qatar;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    outline: none;
+    line-height: 4rem;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50% ,0);
+    text-align: center;
+}
+
+.box_text_left_top{
+    width: 25rem;
+    height: 10rem;
+    position: relative;
+    left: -14rem;
+    top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box_text_left_bottom{
+    width: 25rem;
+    height: 10rem;
+    position: relative;
+    left: -14rem;
+    top: 10.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box_left_token_prediction h3 , .box_right_token_prediction h3{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-family: qatar;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.box_left_token_prediction strong , .box_right_token_prediction strong{
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.box_text_right_top{
+    width: 30rem;
+    height: 10rem;
+    position: relative;
+    right: -15rem;
+    top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box_text_right_bottom{
+    width: 30rem;
+    height: 10rem;
+    position: relative;
+    right: -16rem;
+    top: 10.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
 /* lines token */
 
 .box_left_token_prediction, .box_right_token_prediction{
     height: 30rem;
-    width: 30rem;
+    width: 28rem;
     position: relative;
 }
 
@@ -235,6 +334,10 @@
 }
 
 
+.movile_right{
+    display: none;
+}
+
 
 @keyframes rotate {
     0%{
@@ -266,55 +369,347 @@
 
 @media screen and (max-width: 1440px){
 
-    .textToken{
-        width: 65%;
-    }
 
-    .tokens{
-        padding-top: 15rem;
-        background-size: cover;
-    }
 
-    .textToken p{
-        padding: 0rem 4rem;
-        letter-spacing: 1px;
-        line-height: 3rem;
-        font-size: 1.9rem;
-    }
-
-    .comingToken {
-        top: 33%;
-        left: 50%;
-        width: 85%;
-    }
-    
-    .tokenComingSoon-left{
-        width: 125%;
-        top: 32%;
-        left: 50%;
-    }
-    
-    .tokenComingSoon-right{
-        top: 32%;
-        left: 50%;
-        width: 125%;
+    .tokenTitle h2{
+        font-size: 6rem;
     }
     
     
-}
-
-@media screen and (max-width: 1170px){
-
-    .textToken{
-        width: 70%;
+    .boxText_token{
+        width: 60vw;
+        top: 2rem;
+        gap:2rem;
     }
-
-    .comingToken {
-        top: 33%;
+    
+  
+    
+    .containerToken{
+        gap: 10rem;
+        width: 100%;
+        margin-top: 18rem;
+    
+    }
+    
+    
+    
+    /* Titles tokens gir */
+    
+    .mark_token{
+        font-size: 3rem;
+        letter-spacing: .5px;
+        top: 30rem;
         left: 50%;
         width: 100%;
     }
     
+    .box_text_left_top{
+        width: 25rem;
+        height: 10rem;
+        left: -12rem;
+        top: 1.8rem;
+        gap: 1rem;
+    }
+    
+    .box_text_left_bottom{
+        width: 25rem;
+        height: 10rem;
+        left: -12rem;
+        top: 10.7rem;
+        gap: 1rem;
+    }
+    
+    .box_left_token_prediction h3 , .box_right_token_prediction h3{
+        font-size: 1.9rem;
+        letter-spacing: .5px;
+        line-height: 2.5rem;
+    }
+    
+    .box_left_token_prediction strong , .box_right_token_prediction strong{
+        font-size: 1.7rem;
+    }
+    
+    .box_text_right_top{
+        width: 30rem;
+        height: 10rem;
+        right: -4.5rem;
+        top: 1.8rem;
+        gap: 1rem;
+    }
+    
+    .box_text_right_bottom{
+        width: 30rem;
+        height: 10rem;
+        right: -5.5rem;
+        top: 10.6rem;
+        gap: 1rem;
+    }
+        
+
+        
+    /* lines token */
+
+    .box_left_token_prediction, .box_right_token_prediction{
+        height: 30rem;
+        width: 20rem;
+    }
+
+    .top_left_line{
+        width: 10rem;
+        left: 0;
+        height: .1rem;
+        top: 30%;
+        left: 10rem;
+    }
+
+    .top_left_line::before ,.bottom_left_line::before{
+        left: -1.1rem;
+        top: -.5rem;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+
+    .top_left_line::after{
+        left: 95%;
+        top: 2.5rem;
+        height: .1rem;
+        width: 15rem;
+    }
+
+    .bottom_left_line{
+        width: 10rem;
+        height: .1rem;
+        top: 28rem;
+        left: 10rem;
+    }
+
+    .bottom_left_line::after{
+        left: 95%;
+        top: -2.5rem;
+        height: .1rem;
+        width: 15rem;
+    }
+
+    /* right  */
+
+    .top_right_line{
+        width: 10rem;
+        right: 10rem;
+        height: .1rem;
+        top: 30%;
+    }
+    .bottom_right_line::before ,.top_right_line::before{
+        right: -1.2rem;
+        top: -.5rem;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .top_right_line::after{
+        right: 95%;
+        top: 2.5rem;
+        width: 15rem;
+
+    }
+
+    .bottom_right_line{
+        width: 10rem;
+        height: .1rem;
+        top: 28rem;
+        right: 10rem;
+    }
+
+    .bottom_right_line::after{
+        right: 96%;
+        top: -2.56rem;
+        height: .1rem;
+        width: 15rem;
+    }
+
+    /* text coment */
+
+    .comment_token{
+        width: 50vw;
+        margin-top: 15rem;
+        gap:2rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1170px){
+
+    .containerToken {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10rem;
+        width: 100%;
+        position: relative;
+        margin-top: 22rem;
+    }
+
+    .movile_right{
+        display: inline-block;
+    }
+    
+   
+    
+    
+    /* Titles tokens gir */
+    
+    .mark_token{
+        font-size: 3rem;
+        letter-spacing: .5px;
+        top: 30rem;
+        left: 50%;
+        width: 100%;
+    }
+    
+    .box_text_left_top{
+        width: 25rem;
+        height: 10rem;
+        left: -2rem;
+        top: -3rem;
+        gap: 1rem;
+    }
+    
+    .box_text_left_bottom{
+        width: 25rem;
+        height: 10rem;
+        left: -2rem;
+        top: 8rem;
+        gap: 1rem;
+    }
+    
+    .box_left_token_prediction h3 , .box_right_token_prediction h3{
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+        line-height: 2.5rem;
+    }
+    
+    .box_left_token_prediction strong , .box_right_token_prediction strong{
+        font-size: 1.7rem;
+    }
+    
+    .box_text_right_top{
+        width: 30rem;
+        height: 10rem;
+        right: 4rem;
+        top: 19rem;
+        gap: 1rem;
+    }
+    
+    .box_text_right_bottom{
+        width: 30rem;
+        height: 10rem;
+        right: 4.2rem;
+        top: 31rem;
+        gap: 1rem;
+    }
+        
+
+        
+    /* lines token */
+
+    .box_left_token_prediction, .box_right_token_prediction{
+        height: 30rem;
+        width: 20rem;
+    }
+
+    .top_left_line{
+        width: 20rem;
+        left: 0;
+        height: .1rem;
+        top: 30%;
+        left: 0rem;
+    }
+
+
+    .top_left_line::after{
+        left: 97%;
+        top: 3.1rem;
+        height: .1rem;
+        width: 18rem;
+    }
+
+    .bottom_left_line{
+        width: 20rem;
+        height: .1rem;
+        top: 51rem;
+        left: 0rem;
+    }
+
+    .bottom_left_line::after{
+        left: 97%;
+        top: -2.6rem;
+        height: .1rem;
+        width: 15rem;
+    }
+
+    /* right  */
+
+    .top_right_line{
+        width: 20rem;
+        right: 0rem;
+        height: .1rem;
+        top:10rem;
+    }
+    .bottom_right_line::before ,.top_right_line::before{
+        right: -1.2rem;
+        top: -.5rem;
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    .top_right_line::after{
+        right: 97%;
+        top: 2.5rem;
+        width: 15rem;
+    }
+
+    .bottom_right_line{
+        width: 20rem;
+        height: .1rem;
+        top: 53rem;
+        right: 0rem;
+    }
+
+    .bottom_right_line::after{
+        right: 97%;
+        top: -2.56rem;
+        height: .1rem;
+        width: 15rem;
+    }
+
+    .right-desktop{
+        display: none;
+    }
+
+    .tokenWebGl {
+        position: relative;
+        width: 50%;
+        cursor: grab;
+        margin-top: 50rem;
+    }
+
+    .comment_token {
+        width: 50vw;
+        margin-top:8rem;
+        gap: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+    }
+    .boxText_token {
+        width: 80vw;
+        top: 2rem;
+        gap: 2rem;
+    }
 }
 
 @media screen and (max-width: 800px){
@@ -323,48 +718,32 @@
         width: 100%;
     }
 
-    .comingToken {
-        top: 33%;
-        left: 50%;
-        width: 120%;
+    .comment_token {
+        width: 70vw;
+        margin-top:8rem;
+        gap: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
     }
 
-    .tokenComingSoon-left{
-        width: 185%;
-        top: 32%;
-        left: 50%;
+    .boxText_token {
+        width: 80vw;
+        top: 2rem;
+        gap: 2rem;
     }
-    
-    .tokenComingSoon-right{
-        top: 32%;
-        left: 50%;
-        width: 185%;
-    }
+
 }
 
 @media screen and (max-width:480px){
 
-    .tokenVideo{
-        position: relative;
-        cursor: grab;
-        transform: scale(.01);
-        opacity: 0;
-        margin-top: 9rem;
-        padding-bottom: 0rem;
-        display: none;
-    }
-
-
-    .tokenblur{
-        backdrop-filter: blur(.5rem);
-    }
-
-    .tokenWebGl {
-        display: none;
+    .boxText_token {
+        width: 90vw;
+        top: 2rem;
+        gap: 2rem;
     }
 
     .tokenTitle h2{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .tokens{
@@ -379,31 +758,28 @@
         text-align: center;
     }
     
-    .textToken p{
-        padding: 0rem 1rem;
-        text-align: center;
+    .boxText_token p {
+        font-size: 1.8rem;
     }
 
-    .comingToken {
-        top: 45%;
-        left: 53%;
-        width: 150%;
+    .comment_token {
+        width: 90vw;
+        margin-top:8rem;
+        gap: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
     }
 
+    .containerToken {
+        margin-top: 32rem;
+    }
 
-    .tokenComingSoon-left{
-        width: 275%;
-        top: 36%;
+    .mark_token {
+        font-size: 3rem !important;
+        letter-spacing: .5px;
+        top: 50rem;
         left: 50%;
-        transform: translate(-50%, -50%) rotate(22deg);
+        width: 100%;
     }
-    
-    .tokenComingSoon-right{
-        top: 36%;
-        left: 50%;
-        width: 275%;
-        transform: translate(-50%, -50%) rotate(-22deg);
-    }
-
 
 }

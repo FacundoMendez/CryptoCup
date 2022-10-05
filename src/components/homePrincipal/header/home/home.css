@@ -101,24 +101,56 @@
 
 
 /* button Presale */
+
+
+
 .btnPresale {
-  width: 14.5rem;
+  width: 16.5rem; /* 145px */
+  height: 6rem;   /* 60px */
   margin: 0 3rem;
-  height: 6rem;
   text-align: center;
   cursor: pointer;
-  border: 2px solid rgba(255, 255, 255, 0.658);
+  border: 2px solid rgba(110, 60, 37, 0.288);
   filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.377)) brightness(140%);
-  box-shadow: 0 0 1.5rem rgba(166, 133, 255, 0.555);
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: fireVision 2s infinite linear;
+}
+
+@keyframes fireVision {
+  0%{
+    filter: drop-shadow( 0 0 0px rgba(255, 160, 136, 0.24)) brightness(140%);
+    box-shadow: 0 0 0rem rgba(165, 91, 7, 0.288);
+  }
+  50%{
+    filter: drop-shadow( 0 0 20px rgba(233, 115, 68, 0.212)) brightness(140%);
+    box-shadow: 0 0 2rem rgba(184, 72, 20, 0.308);
+  }
+  100%{
+    filter: drop-shadow( 0 0 0px rgba(255, 154, 136, 0.281)) brightness(140%);
+    box-shadow: 0 0 .5rem rgba(165, 91, 7, 0.253);
+  }
+}
+
+
+.btnPresale::after{
+  content: "";
+  position: absolute;
+  width: 15.5rem; /* 145px */
+  height: 4.9rem;
+  top: 50%;
+  transform: translate(0 , -50%);
+  background-color: rgba(6, 0, 12, 0.966);
+  border: 1px solid rgba(155, 36, 0, 0.089);
+  z-index: 20 !important;
 }
 
 .btnPresale p{
   color: white;
+  z-index: 22 !important;
   font-size: 2rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -132,9 +164,36 @@
   inset 0 -1px 1px 3px #9999ff;
   background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
 }
+.btnPresale video {
+  width: 16.5rem; /* 145px */
+  height: 9rem;   /* 60px */
+  position: absolute;
+  z-index: -1  !important;
+  pointer-events: none;
+  opacity: 1;
+}
 
+.firegif{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  z-index: 30;
+  right: -.3rem;
+  bottom: -.35rem;
+  transform: rotate(-20deg);
+  opacity: .5;
+}
 
-
+.firegif2{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  z-index: 30;
+  left: -.5rem;
+  bottom: -.25rem;
+  opacity: .5;
+  transform: rotate(60deg);
+}
 
 
 @media screen and (min-width: 2550px){

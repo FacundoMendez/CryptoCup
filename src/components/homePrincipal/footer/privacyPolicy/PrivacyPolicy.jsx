@@ -40,8 +40,8 @@ const PrivacyPolicy = () => {
                 
                 <div className="textUpdate">
                     <h2><span>Crypto Cup</span></h2>
-                    <h4>Terms and Conditions of <a className='linkCryptocup' href="https://www.cryptocupqatar.io/">https://www.cryptocupqatar.io/</a></h4>
-                    <h5>Last resived Date: 5 September 2022</h5>
+                    <h4>Términos y condiciones de <a className='linkCryptocup' href="https://www.cryptocupqatar.io/">https://www.cryptocupqatar.io/</a></h4>
+                    <h5>Fecha de última actualización: 4 de octubre de 2022</h5>
                 </div>
 
 
@@ -572,7 +572,7 @@ const PrivacyPolicy = () => {
                         <br /><br />
                     </p>
                 </div>
-                <h4>CRYPTO CUP IS IN NO WAY ASSOCIATED TO FIFA OR ANY OF THEIR BRANDS</h4>
+                <h4>CRYPTO CUP NO ESTÁ ASOCIADA DE NINGUNA MANERA A LA FIFA NI A NINGUNA DE SUS MARCAS.</h4>
             </div>
 
         </div>

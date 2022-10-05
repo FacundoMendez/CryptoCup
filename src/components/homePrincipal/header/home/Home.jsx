@@ -5,6 +5,9 @@ import NavAnnouncement from './nav_announcement/NavAnnouncement';
 import Presale from '../../main/token/presale/Presale';
 import { NavLink } from 'react-router-dom';
 import gsap from 'gsap';
+import fire from "./fuego.mp4"
+import fireGif from "./fireGif2.gif"
+
 
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
 const Button = lazy(() => import ("../../buttons/Button"))
@@ -52,6 +55,10 @@ const Home = () => {
                           defaultMessage="Presale" 
                       />
                     </p>
+
+                    <video className='fire' src={fire} autoPlay loop muted ></video>
+                    <img className='firegif2' src={fireGif} alt="fire Gif" />
+                    <img className='firegif' src={fireGif} alt="fire Gif" />
                   </div>
                 </NavLink>
                 </div>

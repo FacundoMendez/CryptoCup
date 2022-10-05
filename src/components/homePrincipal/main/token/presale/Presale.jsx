@@ -7,8 +7,8 @@ import "./presale.css"
 
 const Presale = () => {
 
-    const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
-    const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
+    const [accumulated , setAccumulated] = useState(399990)       //cantidad en $ 
+    const [porcentaje , setPorcentaje] = useState("10")      //cantidad en %
 
     const [connect , setConnect] = useState(false)
 
@@ -29,7 +29,7 @@ const Presale = () => {
         <NavTicket/>
         <div className="boxPresale">
             
-            <h2>Public Sale 1</h2>
+            <h2>Presale 1</h2>
             <h3>Start in:</h3>
             <TimerPresaleToken/>
 

@@ -33,7 +33,7 @@
     border-radius: 15px;
     box-shadow: rgba(255, 205, 147, 0.311) 3px 3px 6px 0px inset, rgba(255, 205, 147, 0.311) -3px -3px 6px 1px inset;
     backdrop-filter: blur(5px);
-    background-color: rgba(77, 1, 255, 0.035);
+    background-color: rgba(22, 0, 73, 0.055);
     filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.021));
     
 }
@@ -261,12 +261,9 @@
     box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
     cursor: pointer;
     transition: all .5s ease;
+    background-color: rgba(165, 165, 165, 0.322);
 }
 
-.connect:hover{
-    background-image: linear-gradient(to left, #00000011, #9e74ff1f);
-    transition: all .5s ease;
-}
 
 
 .connect p{
@@ -275,9 +272,10 @@
     position: absolute;
     left: 0;
     font-weight: bold;
-    filter: drop-shadow(0 0 5px black);
+    font-family: gilron;
+/*     filter: drop-shadow(0 0 5px black); */
     font-size:2.4rem;
-    -webkit-background-clip: text;
+/*     -webkit-background-clip: text;
     background-clip: text;
     text-transform: uppercase;
     color: transparent;
@@ -285,6 +283,9 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    */ color: black ;
+    text-transform: uppercase;
+
 }
 
 
