@@ -8,7 +8,7 @@
     z-index: 10;
     background-color: black;
     padding: 5rem 0;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
 }
 
 
@@ -57,8 +57,41 @@
     gap: 10rem;
     width: 100%;
     position: relative;
-    margin-top: 18rem;
+    margin-top: 25rem;
+}
 
+
+.grafico{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 22rem;
+}
+
+.grafico h2{
+    font-size: 4.5rem;
+    letter-spacing: 0px;
+    font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    text-shadow: 0 0 1rem rgba(255, 190, 146, 0.212);
+
+}
+
+.grafico img{
+    width: 52%;
+    object-fit: cover;
+    margin: 10rem 0;
+    filter: contrast(115%) brightness(110%) ;
 }
 
 .tokenWebGl {
@@ -69,29 +102,40 @@
     filter: drop-shadow(0 0 20px rgba(255, 124, 1, 0.089)) contrast(105%) ;
 }
 
+.tokenVideoMovil{
+    width: 55rem;
+    height: 55rem;
+    object-fit: cover;
+    filter: contrast(110%) ;
+    position: relative; 
+    top: 30rem;
+    margin-bottom: 8rem;
+}
+
 
 /* Titles tokens gir */
 
 .mark_token{
-    font-size: 3rem;
-    font-family: qatar;
+    font-size: 4rem;
+    letter-spacing: 0px;
+    font-family: qatarHeavy;
     -webkit-background-clip: text;
     background-clip: text;
     text-transform: uppercase;
     color: transparent;
-    outline: none;
-    line-height: 4rem;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     position: absolute;
-    top: 30rem;
+    top: 32rem;
     left: 50%;
-    width: 100%;
+    line-height: 4.1rem;
+    width: 80%;
     transform: translate(-50% ,0);
     text-align: center;
-    text-shadow: 0 0 1rem rgba(255, 157, 92, 0.349);
+    text-shadow: 0 0 1rem rgba(255, 190, 146, 0.253);
+
 }
 
 .box_text_left_top{
@@ -121,9 +165,9 @@
 }
 
 .box_left_token_prediction h3 , .box_right_token_prediction h3{
-    font-size: 2.2rem;
-    letter-spacing: 1px;
-    font-family: qatar;
+    font-size: 2rem;
+    letter-spacing: 0px;
+    font-family: qatarHeavy;
     -webkit-background-clip: text;
     background-clip: text;
     text-transform: uppercase;
@@ -132,8 +176,9 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+   background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 .box_left_token_prediction strong , .box_right_token_prediction strong{
@@ -321,25 +366,29 @@
 
 .comment_token{
     position: relative;
-    position: relative;
     width: 30vw;
-    margin-top: 15rem;
+    margin-top: 20rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap:2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     outline: none;
     line-height: 2.3rem;
-    color: rgb(184, 184, 184);
+    color: rgba(184, 184, 184, 0.829);
     text-align: center;
+    letter-spacing: .2px;
+    font-family: qatar;
+    text-align: center;
+    line-height: 2rem;
 }
 
 
 .movile_right{
     display: none;
 }
+
 
 
 @keyframes rotate {
@@ -372,7 +421,9 @@
 
 @media screen and (max-width: 1440px){
 
-
+    .grafico img{
+        width: 70%;
+    }
 
     .tokenTitle h2{
         font-size: 6rem;
@@ -534,7 +585,6 @@
 
     .comment_token{
         width: 50vw;
-        margin-top: 15rem;
         gap:2rem;
         font-size: 1.6rem;
         line-height: 2.3rem;
@@ -703,7 +753,6 @@
 
     .comment_token {
         width: 50vw;
-        margin-top:8rem;
         gap: 2rem;
         font-size: 1.6rem;
         line-height: 2.3rem;
@@ -717,13 +766,17 @@
 
 @media screen and (max-width: 800px){
 
+    .grafico img{
+        width: 80%;
+    }
+
+
     .textToken{
         width: 100%;
     }
 
     .comment_token {
         width: 70vw;
-        margin-top:8rem;
         gap: 2rem;
         font-size: 1.6rem;
         line-height: 2.3rem;
@@ -735,9 +788,33 @@
         gap: 2rem;
     }
 
+    .grafico h2 {
+        padding: 0 1rem;
+        font-size: 3.5rem;
+    }
 }
 
 @media screen and (max-width:480px){
+
+    .tokenVideoMovil{
+        margin-bottom: 15rem;
+    }
+    
+
+    .grafico img{
+        width: 95%;
+    }
+
+    .grafico {
+        top: 10rem;
+    }
+
+    .grafico h2 {
+        padding: 0 1rem;
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        line-height: 5rem;
+    }
 
     .boxText_token {
         width: 90vw;
@@ -768,10 +845,10 @@
 
     .comment_token {
         width: 90vw;
-        margin-top:8rem;
         gap: 2rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         line-height: 2.3rem;
+        margin-top: 10rem;
     }
 
     .containerToken {

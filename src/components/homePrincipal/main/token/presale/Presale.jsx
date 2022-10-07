@@ -30,12 +30,12 @@ const Presale = () => {
         <div className="boxPresale">
             
             <h2>Presale 1</h2>
-            <h3>Start in:</h3>
+            <h3>Starts in:</h3>
             <TimerPresaleToken/>
 
             <div className="box_cct">
                 <p> <strong>1 CCT =</strong> &nbsp; 0.0038 USDT</p>
-                <p><strong>USDT Raised:</strong> &nbsp;  {accumulated} / 972.000 USDT</p>
+                <p><strong>USDT Raised:</strong> &nbsp;  {accumulated} / 304.000 USDT</p>
             </div>
 
 

@@ -56,6 +56,12 @@ const tokenScroll = () =>{
             duration:1
         })
 
+        tl_token2.from(".containerTokenReflect" , {
+            opacity:0,
+            scale:0,
+        })
+        
+
         tl_token2.from(".top_left_line" , {
             duration:.3,
             opacity:0,

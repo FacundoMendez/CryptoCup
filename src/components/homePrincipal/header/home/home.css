@@ -118,7 +118,15 @@
   justify-content: center;
   align-items: center;
   animation: fireVision 2s infinite linear;
+  transition: all .5s ease;
 }
+
+.btnPresale:hover{
+  scale: 1.04;
+  transition: all .5s ease;
+}
+
+
 
 @keyframes fireVision {
   0%{

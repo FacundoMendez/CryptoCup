@@ -15,6 +15,19 @@ const tiketsScroll = () =>{
 
         /* basic */
 
+        
+        let tl_basic_text = new Timeline({
+            scrollTrigger:{
+                trigger: ".containerTikets",
+                start: "top 50%",
+                end: "bottom bottom",
+            }
+        })
+        
+        tl_basic_text.from(".textTikets",{
+            opacity:0,
+        })
+
         let tl_basic = new Timeline({
             scrollTrigger:{
                 trigger: ".titleTicket-home-basic",
@@ -23,7 +36,6 @@ const tiketsScroll = () =>{
             }
         })
 
-        
         
         tl_basic.from(".titleTicket-home-basic",{
             opacity:0,

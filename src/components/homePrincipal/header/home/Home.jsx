@@ -1,12 +1,11 @@
 import React, {lazy, useEffect} from 'react'
 import "./home.css"
 import {FormattedMessage} from 'react-intl';
-import NavAnnouncement from './nav_announcement/NavAnnouncement';
-import Presale from '../../main/token/presale/Presale';
+/* import NavAnnouncement from './nav_announcement/NavAnnouncement';
+import Presale from '../../main/token/presale/Presale'; */
 import { NavLink } from 'react-router-dom';
 import gsap from 'gsap';
-import fire from "./fuego.mp4"
-import fireGif from "./fireGif2.gif"
+import fire from "./fuego3.mp4"
 
 
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
@@ -57,8 +56,8 @@ const Home = () => {
                     </p>
 
                     <video className='fire' src={fire} autoPlay loop muted ></video>
-                    <img className='firegif2' src={fireGif} alt="fire Gif" />
-                    <img className='firegif' src={fireGif} alt="fire Gif" />
+                    <img className='firegif2' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
+                    <img className='firegif' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
                   </div>
                 </NavLink>
                 </div>

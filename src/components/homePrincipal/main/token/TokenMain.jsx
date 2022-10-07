@@ -1,17 +1,23 @@
-import React, {Suspense, useEffect} from 'react'
+import React, {Suspense, useEffect, useState} from 'react'
 import "./token.css"
 import tokenScroll from './tokenScroll'
 import {FormattedMessage} from 'react-intl';
 import tokenModel from "./tokenModel"
 import Spinner from '../../../spinner/Spinner'
-
+import TokensReflecs from './tokensReflects/TokensReflecs';
 const TokenMain = () => {
 
     useEffect(()=>{
         tokenModel()
         tokenScroll()
+
+      
     },[])
 
+    
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
   return (
     <div id="tokens" className="tokens">
         <div className="titleContainers tokenTitle">
@@ -103,7 +109,13 @@ const TokenMain = () => {
             
 
             <Suspense fallback={<Spinner/>}>
-                <canvas className='tokenWebGl'></canvas>
+                {isMobile() ? 
+                 <video className='tokenVideoMovil' src="https://res.cloudinary.com/dvrxw8fbg/video/upload/c_scale,h_1080,q_auto:good,w_1080/v1665112548/CryptocupQatar/token/tokenVideo_ghk99c.mp4" autoPlay loop muted ></video>
+
+                 : 
+                 <canvas className='tokenWebGl'></canvas>
+
+                }
             </Suspense>
             
 
@@ -130,9 +142,14 @@ const TokenMain = () => {
                 
                 <div className="top_right_line"></div>
                 <div className="bottom_right_line"></div>
+                <TokensReflecs/>
             </div>
+       
         </div>
-
+        <div className="grafico">
+            <h2>Token Allocations</h2>
+            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:good,w_1920/v1665112547/CryptocupQatar/token/grafico_qe82r9.png" alt="grafico" />
+        </div>
         <p className='comment_token'>
             <FormattedMessage
                 id="token-text-sec"
