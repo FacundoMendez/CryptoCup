@@ -41,7 +41,7 @@ const TokenMain = () => {
             <p className='t_2'>
                 <FormattedMessage
                     id="token-text2"
-                    defaultMessage="By carefully combining rewards with a long-term token burn mechanism,CryptoCup tackles both of these issues at once. In addition to creating asustainable model of growth for the CCT token, that will motivate holders."
+                    defaultMessage="By carefully combining rewards with a long-term token burn mechanism, CryptoCup tackles both of these issues at once. In addition to creating asustainable model of growth for the CCT token, that will motivate holders."
                 />
             </p>
 
@@ -144,18 +144,19 @@ const TokenMain = () => {
                 <div className="bottom_right_line"></div>
                 <TokensReflecs/>
             </div>
-       
         </div>
-        <div className="grafico">
-            <h2>Token Allocations</h2>
-            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:good,w_1920/v1665112547/CryptocupQatar/token/grafico_qe82r9.png" alt="grafico" />
-        </div>
+
         <p className='comment_token'>
             <FormattedMessage
                 id="token-text-sec"
                 defaultMessage="CCT will initially launch as a BEP-20 asset on Binance Smart Chain to minimize fees and maximize accessibility. Additional chains will be considered based on user demand and utility."
             />
         </p>
+
+        <div className="grafico">
+            <h2>Tokenomics</h2>
+            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:good,w_1920/v1665112547/CryptocupQatar/token/grafico_qe82r9.png" alt="grafico" />
+        </div>
 
     </div>
   )

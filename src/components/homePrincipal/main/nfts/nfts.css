@@ -39,13 +39,13 @@
 .titleNfts{
     z-index: 10;
     text-transform: uppercase;
-    padding-top: 27rem ;
+    padding-top: 20rem ;
     padding-bottom: 0rem;
 }
 
 .titleNfts h2{
     font-weight: 300;
-    font-size: 7rem;
+    font-size: 6rem;
     top: 25px;
     text-align: center;
     -webkit-background-clip: text;
@@ -97,7 +97,7 @@
 
 .textNfts{
     z-index: 100;
-    width: 45%;
+    width: 42%;
     text-align: center;
     margin-top:-3rem
 }
@@ -140,14 +140,14 @@
     width: 43rem;
     height: 50rem;
     z-index: 900;
-    filter: drop-shadow(0 0 20px rgba(101, 8, 177, 0.164)) contrast(110%) brightness(106%);
+    filter:  contrast(110%) brightness(106%);
 }
 .imgNftBasic{
-    animation: float 7.5s ease-in-out infinite;
+    animation: float 5.5s ease-in-out infinite;
 }
 
 .imgNftBoost{
-    animation: float 7s ease-in-out infinite;
+    animation: float 4.5s ease-in-out infinite;
 }
 
 /* roca grande izquierda */
@@ -160,7 +160,7 @@
     transform: translate(-0%, -50%) ;
     filter: contrast(110%) brightness(105%) drop-shadow(5px 0 10px rgba(225, 180, 255, 0.363));
     z-index: 1000;
-    animation: float2 7s ease-in-out infinite;
+    animation: float2 6s ease-in-out infinite;
 }
 
 
@@ -173,7 +173,7 @@
     transform: translate(-0%, -50%) ;
     filter: contrast(105%) brightness(105%) drop-shadow(2px -5px 10px rgba(225, 180, 255, 0.253));
     z-index: 1000 !important;
-    animation: float 8s ease-in-out infinite;
+    animation: float 6.5s ease-in-out infinite;
 }
 
 .tiposTorneos{
@@ -194,7 +194,7 @@
     left: 18%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(0px 0px 10px rgba(195, 150, 255, 0.568)) ;
-    animation: float2 6s ease-in-out infinite;
+    animation: float2 5s ease-in-out infinite;
 }
 
 
@@ -222,7 +222,6 @@
         
 	}
 }
-
 
 
 /* pricePOOL */
@@ -408,8 +407,6 @@
         font-size: 1.9rem;
     }
 
-    
-    
     .container_card {
         width: 40rem;
         height: 49rem;
@@ -419,7 +416,6 @@
         width: 37rem;
         height: 43rem;
         z-index: 900;
-        filter: drop-shadow(0 0 20px rgba(101, 8, 177, 0.164)) contrast(110%) brightness(106%);
     }
 
     .rockIz {
@@ -727,8 +723,8 @@
     }
 
     .imgNftBasic, .imgNftBoost {
-        width: 45rem;
-        height: 49rem;
+        width: 38rem;
+        height: 45rem;
         z-index: 900;
         margin-left: 1rem;
     }

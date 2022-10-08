@@ -32,11 +32,10 @@
   width: 100%;
   height: .1rem;
   background-color:#fffffff5;
-  box-shadow: 0 0 20px #913cff, 0 0 25px #994bff85, 0 0 45px #9a5bffa6, 0 0 100px #af99ffce;
+  box-shadow: 0 0 5px #913cff, 0 0 10px #994bff85, 0 0 15px #9a5bffa6, 0 0 20px #af99ffce;
   border: 1px solid rgba(178, 149, 202, 0.849);
   border-radius: 100%;
   backdrop-filter: blur(1rem);
-  filter: drop-shadow(0 0 1px rgba(137, 63, 255, 0.336));
   position: absolute;
   z-index: 100;
 }

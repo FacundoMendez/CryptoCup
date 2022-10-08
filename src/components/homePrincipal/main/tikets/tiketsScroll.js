@@ -112,22 +112,29 @@ const tiketsScroll = () =>{
 
         tl_boost.from(".star1",{
             opacity:0,
+            duration:.3,
             scale:1.3,
         })
 
         tl_boost.from(".star2",{
             opacity:0,
             scale:1.3,
+            duration:.3,
+
         })
 
         tl_boost.from(".star3",{
             opacity:0,
             scale:1.3,
+            duration:.3,
+
         })
 
         tl_boost.from(".star4",{
             opacity:0,
             scale:1.3,
+            duration:.3,
+
         })
 
         tl_boost.from(".text_boost_bottom",{

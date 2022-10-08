@@ -19,8 +19,8 @@ const Main = () => {
         <Suspense fallback={<Spinner/>}>
           <Home/>
           <TournamentMain/>
-          <TokenMain />
           <TiketsMain />
+          <TokenMain />
           <Nfts /> 
           <PelotaGame />
           <Referidos />

@@ -37,7 +37,7 @@ const tokenScroll = () =>{
             opacity:0,
         })
         tl_token.from(".mark_token" , {
-            duration:.5,
+            duration:.4,
             opacity:0,
         })
 
@@ -58,43 +58,44 @@ const tokenScroll = () =>{
 
         tl_token2.from(".containerTokenReflect" , {
             opacity:0,
+            duration:.2,
             scale:0,
         })
         
 
         tl_token2.from(".top_left_line" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
         tl_token2.from(".box_left_token_prediction" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
 
         tl_token2.from(".bottom_left_line" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
         tl_token2.from(".box_text_left_bottom" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
 
 
         tl_token2.from(".top_right_line" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
         tl_token2.from(".box_text_right_top" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
         tl_token2.from(".bottom_right_line" , {
             opacity:0,
-            duration:.3,
+            duration:.2,
         })
         tl_token2.from(".box_text_right_bottom" , {
-            duration:.3,
+            duration:.2,
             opacity:0,
         })
 
