@@ -438,13 +438,12 @@
 @media screen and (max-width: 1440px){
 
     .grafico img{
-        width: 70%;
+        width: 60%;
     }
 
     .tokenTitle h2{
         font-size: 6rem;
     }
-    
     
     .boxText_token{
         width: 60vw;
@@ -452,21 +451,22 @@
         gap:2rem;
     }
     
-  
-    
     .containerToken{
         gap: 10rem;
         width: 100%;
         margin-top: 18rem;
-    
     }
-    
+
+    .boxText_token p{
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
     
     
     /* Titles tokens gir */
     
     .mark_token{
-        font-size: 3rem;
+        font-size: 3rem !important; 
         letter-spacing: .5px;
         top: 30rem;
         left: 50%;

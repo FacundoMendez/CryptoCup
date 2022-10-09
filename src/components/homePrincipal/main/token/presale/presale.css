@@ -491,13 +491,13 @@
 @media screen and (max-width:1440px) {
 
     .containerPresale{
-        height: 100vh;
+        height: 120vh;
         width: 100%;
     }
     
     .containerPresale::before{
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         content: " ";
         top: 0rem;
         background-color: rgba(0, 0, 0, 0.568);
@@ -513,25 +513,25 @@
     }
 
     .boxPresale h2{
-        font-size: 4rem;
+        font-size: 3.5rem;
         letter-spacing: 1px;
     }
 
     .boxPresale h3{
-        font-size: 2rem;
+        font-size: 1.9rem;
         margin-bottom: 1rem;
     }
 
 
     .box_cct{
         width: 110%;
-        margin: .5rem 0;
+        margin: .3rem 0;
         flex-direction: column;
     }
 
     .box_cct p{
         font-size: 1.5rem;
-        padding: .5rem;
+        padding: .3rem;
     }
 
 
@@ -569,32 +569,26 @@
         width: 110%;
         font-size: 1.5rem;
         margin-top: 0rem;
-        padding: .5rem ;
+        padding: .3rem ;
     }
 
     .soft p{
         width: 100%;
         font-size: 1.5rem;
-        padding: .5rem ;
+        padding: .3rem ;
     }
 
     /* buttons */
 
     .connect{
-        margin-top: 2rem;
-        width: 110%;
-        height: 7rem;
-    }
-
-    .connect{
         margin-top: 1rem;
         width: 110%;
-        height: 6rem;
+        height: 5rem;
     }
 
     .connect p{
         width: 100%;
-        font-size:2.4rem;
+        font-size:2rem;
     }
 
 }

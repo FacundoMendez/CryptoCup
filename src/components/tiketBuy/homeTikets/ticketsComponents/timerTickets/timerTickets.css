@@ -119,13 +119,13 @@
   }
 
   .timer h2{
-    font-size: 4rem;
+    font-size: 3rem;
   }
     
   
   .reloj li {
     padding: 0 .2rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   
   .reloj li span {

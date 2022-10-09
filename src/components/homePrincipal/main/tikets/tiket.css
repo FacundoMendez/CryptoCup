@@ -336,7 +336,10 @@
 
 
 @media screen and (max-width:1540px){
-
+    .containerTikets::before{
+        width: 80%;
+        height: 70%;
+    }
     .division{
         position: absolute;
         bottom: -3rem !important;

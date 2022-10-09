@@ -53,19 +53,19 @@
 @media screen and (max-width:1440px) {
     
     .reloj_tokenPresale{
-        gap: 1rem;
+        gap: 1.5rem;
         margin-bottom: 1rem;
     }
 
     .reloj_tokenPresale span{
         border-radius: 5px;
-        width: 7rem;
-        height: 6.5rem;
-        font-size: 2.3rem;
+        width: 6rem;
+        height: 5.5rem;
+        font-size: 2rem;
     }
 
     .reloj_tokenPresale li{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         gap: 1rem;
     }
 
