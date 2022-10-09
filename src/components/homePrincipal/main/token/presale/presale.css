@@ -821,18 +821,17 @@
         position: absolute;
     }
     
-    
     .boxPresale{
-        padding: 2rem 0rem;
+        padding: 1.5rem 0rem;
         top: 55%;
         left: 50%;
         gap: 1rem;
         width: 40rem;
-        margin-top: 2rem;
+        margin-top: 1.2rem;
     }
 
     .boxPresale h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: 1px;
     }
 
@@ -841,40 +840,38 @@
         margin-bottom: 1rem;
     }
 
-
     .box_cct{
         width: 92%;
-        margin: .5rem 0;
+        margin: .3rem 0;
         flex-direction: column;
     }
 
     .box_cct p{
         font-size: 1.2rem;
-        padding: .5rem;
+        padding: .3rem;
     }
     .boxPresale strong{
         font-size: 1.3rem;
     }
-    
 
 
     /* barra progresiva */
 
     .progress {
-        margin: 1rem 0;
-        margin-top: 3rem;
-        height: 5rem;
+        margin: .5rem 0;
+        margin-top: 2.5rem;
+        height: 4rem;
         width: 92%;
         font-size: 1.8rem;
     }
 
     .progress-done p{
         width: 100%;
-        font-size:1.9rem;
+        font-size:1.8rem;
     }
 
     .soft_cap_progress{
-        height: 4rem;
+        height: 3rem;
         left: 25%;
         top: -1.1rem;
     }
@@ -892,38 +889,31 @@
         width: 92%;
         font-size: 1.3rem;
         margin-top: 0rem;
-        padding: .5rem ;
+        padding: .3rem ;
     }
 
     .soft p{
         width: 100%;
         font-size: 1.3rem;
-        padding: .5rem ;
+        padding: .3rem ;
     }
-
 
 
     /* buttons */
 
-    .connect{
-        margin-top: 2rem;
-        width: 92%;
-        height: 7rem;
-    }
 
     .connect{
-        margin-top: 1rem;
+        margin-top: .3rem;
         width: 92%;
-        height: 6rem;
+        height: 5rem;
+        margin-bottom: 1rem;
     }
 
     .connect p{
         width: 100%;
-        font-size:2.4rem;
+        font-size:2rem;
     }
 
-
-    
 
     /* nav buy presale */
 

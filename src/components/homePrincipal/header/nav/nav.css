@@ -470,10 +470,19 @@
         right: 2.2rem;
     }
     
+    .nav-menu-item {
+        padding: 1.5rem 0rem;
+        overflow: hidden;
+    }
+    
+    .nav-menu-item a{
+        font-size: 2.2rem;
+    }
+    
     .btnButtonNav p {
-        font-size: 2.4rem;
+        font-size: 2.5rem;
         letter-spacing: 3.8px;
-        padding-top: .35rem;
+        margin-top: -1rem;
     }
 
     .navBallModel{

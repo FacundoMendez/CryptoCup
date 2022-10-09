@@ -383,8 +383,7 @@
 .comment_token{
     position: relative;
     width:30%;
-    left: 0;
-    margin-top: 18rem;
+    margin-top: 10rem;
     left: 0rem;
     display: flex;
     justify-content: center;
@@ -393,10 +392,9 @@
     gap:2rem;
     font-size: 1.4rem;
     outline: none;
-    color: rgba(184, 184, 184, 0.829);
+    color: rgba(255, 255, 255, 0.39);
     text-align: center;
-    letter-spacing: .2px;
-    font-family: qatar;
+    letter-spacing: 1px;
     text-align: center;
     line-height: 2rem;
     text-shadow: 0 ;
