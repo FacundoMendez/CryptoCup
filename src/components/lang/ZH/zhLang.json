@@ -82,41 +82,54 @@
 
     "roadmap-title":"路線圖",
 
+
     "roadmap-q42021title":"Q4 2021",
-    "roadmap-q42021span1":"- 概念設計",
+    "roadmap-q42021span1":"- 概念設計 ",
     "roadmap-q42021span2":"- 品牌和遊戲研究",
-    "roadmap-q42021span3":"- NFT 研究",
+    "roadmap-q42021span3":"- NFT 研究 ",
     "roadmap-q42021span4":"- 代幣研究 ",
-    "roadmap-q42021span5":"- 開發環境 ",
+    "roadmap-q42021span5":"- 開發環境設置 ",
 
     "roadmap-q1title":"Q1 2022",
-    "roadmap-q1span1":"- 網絡圖像的選擇",
-    "roadmap-q1span2":"- 智能合約的開發",
-    "roadmap-q1span3":"- NFT 插圖和 3D 模型",
-    "roadmap-q1span4":"- 投資者選擇流程 ",
+    "roadmap-q1span1":"- 投資者選擇流程",
+    "roadmap-q1span2":"- 登陸頁面素材",
+    "roadmap-q1span3":"- 智能合約開發 ",
+    "roadmap-q1span4":"- NFT 插圖和 3D 模型",
+
 
     "roadmap-q2title":"Q2 2022",
-    "roadmap-q2span1":"- 開發錦標賽系統",
-    "roadmap-q2span2":"- 創建技術文件",
-    "roadmap-q2span3":"- 網站結構",
-    "roadmap-q2span4":"- 背景設計",
+    "roadmap-q2span1":"- 梯子系統開發",
+    "roadmap-q2span2":"- 網站結構",
+    "roadmap-q2span3":"- 背景設計",
+    "roadmap-q2span4":"- 白皮書創建",
+    "roadmap-q2span5":"- 既定條款和條件 ",
+    "roadmap-q2span6":"- 多語言網站",
+
 
     "roadmap-q3title":"Q3 2022",
-    "roadmap-q3span1":"- 私人銷售",
-    "roadmap-q3span2":"- 售票",
-    "roadmap-q3span3":"- Dapp 設計與開發",
-    "roadmap-q3span4":"- 官網上線。",
-    "roadmap-q3span5":"- 公共小遊戲",
-    "roadmap-q3span6":"- 公共代幣預售1",
-    "roadmap-q3span7":"- 公開代幣預售2",
-    "roadmap-q3span8":"- Dapp 測試版",
+    "roadmap-q3span1":"- Dapp 設計與開發",
+    "roadmap-q3span2":"- 網站正式上線",
+    "roadmap-q3span3":"- 售票",
+    "roadmap-q3span4":"- 代幣公開預售1",
+    "roadmap-q3span5":"- 代幣公開預售2",
+    "roadmap-q3span6":"- Dapp 測試版",
+
     
     "roadmap-q4title":"Q4 2022",
-    "roadmap-q4span1":"- dapp 啟動",
-    "roadmap-q4span2":"- 錦標賽系統上線",
-    "roadmap-q4span3":"- 比賽開始",
-    "roadmap-q4span4":"- 市場",
-    "roadmap-q4span5":"- 獎池分配",
+    "roadmap-q4span1":"- Dapp 啟動",
+    "roadmap-q4span2":"- 空投1",
+    "roadmap-q4span3":"- 友誼賽測試",
+    "roadmap-q4span4":"- 空投2",
+    "roadmap-q4span5":"- 公測小遊戲",
+    "roadmap-q4span6":"- 比賽開始",
+    "roadmap-q4span7":"- 市場",
+
+
+    "roadmap-q5title":"Q4 2022",
+    "roadmap-q5span1":"- 獎池分配",
+    "roadmap-q5span2":"- 擴展到新的錦標賽",
+    "roadmap-q5span3":"- 加密杯小遊戲開發",
+
 
 
     "footer-social":"我們的社交網絡",

@@ -1,4 +1,4 @@
-import React, {lazy, useEffect} from 'react'
+import React, {lazy, Suspense, useEffect} from 'react'
 import "./home.css"
 import {FormattedMessage} from 'react-intl';
 /* import NavAnnouncement from './nav_announcement/NavAnnouncement';
@@ -6,6 +6,7 @@ import Presale from '../../main/token/presale/Presale'; */
 import { NavLink } from 'react-router-dom';
 import gsap from 'gsap';
 import fire from "./fuego3.mp4"
+import Spinner from '../../../spinner/Spinner';
 
 
 const NavHeader = lazy(() => import ('../../header/nav/NavHeader'))
@@ -46,20 +47,22 @@ const Home = () => {
                 </a>
                 <div className=" wrapperBottonPresale">
                   
-                <NavLink to="/presale">
-                  <div className="btnPresale">
-                    <p>       
-                      <FormattedMessage
-                          id="home-presale"
-                          defaultMessage="Presale" 
-                      />
-                    </p>
+                <Suspense fallback={Spinner}>
+                  <a href="/presale">
+                    <div className="btnPresale">
+                      <p>       
+                        <FormattedMessage
+                            id="home-presale"
+                            defaultMessage="Presale" 
+                        />
+                      </p>
 
-                    <video className='fire' src={fire} autoPlay loop muted ></video>
-                    <img className='firegif2' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
-                    <img className='firegif' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
-                  </div>
-                </NavLink>
+                      <video className='fire' src={fire} autoPlay loop muted ></video>
+                      <img className='firegif2' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
+                      <img className='firegif' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_498,q_auto:low,w_270/v1665113047/CryptocupQatar/Home%20/fireGif2_bwyrqj.gif" alt="fire Gif" />
+                    </div>
+                  </a>
+                </Suspense>
                 </div>
             </div>
             <Timer />

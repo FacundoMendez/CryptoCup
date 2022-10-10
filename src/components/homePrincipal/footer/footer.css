@@ -173,7 +173,7 @@
 .cupLarg{
     position: absolute;
     font-size: 17rem;
-    right: 34rem;
+    right: 36rem;
     text-transform: uppercase;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgba(215, 173, 255, 0.089);
@@ -184,7 +184,7 @@
 
 .pelotaFooter{
     position: absolute;
-    right: 8rem;
+    right: 10rem;
     width: 23rem;
     border: 2px solid  rgba(215, 173, 255, 0.089);
     border-radius: 50%;

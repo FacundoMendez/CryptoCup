@@ -68,19 +68,19 @@ const Roadmap = () => {
               <p>
                 <FormattedMessage
                     id="roadmap-q1span1"
-                    defaultMessage="- Web footage selection"
+                    defaultMessage="- Investor selection process"
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q1span2"
-                    defaultMessage="- Smart contracts development "
+                    defaultMessage="- Landing Page Footage"
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q1span3"
-                    defaultMessage="- NFTs Illustrations and 3D Models "
+                    defaultMessage="- Smart contracts development "
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q1span4"
-                    defaultMessage="- Investor selection process "
+                    defaultMessage="- NFTs Illustrations and 3D Models"
                 /><span>✓</span><br/>
               </p>
             </div>
@@ -100,15 +100,23 @@ const Roadmap = () => {
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q2span2"
-                    defaultMessage="- Whitepaper creation"
+                    defaultMessage="- Website Structure"
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q2span3"
-                    defaultMessage="- Website Structure "
+                    defaultMessage="- Background Design  "
                 /><span>✓</span><br/>
                 <FormattedMessage
                     id="roadmap-q2span4"
-                    defaultMessage="- Background Design  "
+                    defaultMessage="- Whitepaper Creation  "
+                /><span>✓</span><br/> {/* 2 */}
+                <FormattedMessage
+                    id="roadmap-q2span5"
+                    defaultMessage="- Established Terms and Conditions "
+                /><span>✓</span><br/>
+                <FormattedMessage
+                    id="roadmap-q2span6"
+                    defaultMessage="- Multi Language Website "
                 /><span>✓</span><br/>
               </p>
             </div>
@@ -124,34 +132,26 @@ const Roadmap = () => {
                 <p>
                   <FormattedMessage
                       id="roadmap-q3span1"
-                      defaultMessage="- Private sale "
+                      defaultMessage="- Dapp Design and development"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span2"
-                      defaultMessage="- Ticket Sales"
+                      defaultMessage="- Official launch of the website"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span3"
-                      defaultMessage="- Dapp Design and development "
+                      defaultMessage="- Ticket Sales"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span4"
-                      defaultMessage="- Official launch of the website "
+                      defaultMessage="- Token public presale 1"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span5"
-                      defaultMessage="- Public Mini Game "
-                  /><br/>
-                  <FormattedMessage
-                      id="roadmap-q3span6"
-                      defaultMessage="- Token public presale 1 "
-                  /><br/>
-                  <FormattedMessage
-                      id="roadmap-q3span7"
                       defaultMessage="- Token public presale 2"
                   /><br/>
                   <FormattedMessage
-                      id="roadmap-q3span8"
+                      id="roadmap-q3span6"
                       defaultMessage="- Dapp Beta"
                   /><br/>
               </p>
@@ -172,19 +172,51 @@ const Roadmap = () => {
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span2"
-                      defaultMessage="- Playable Ladders System Release "
+                      defaultMessage="- Airdrop 1"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span3"
-                      defaultMessage="- Tournament starts  "
+                      defaultMessage="- Friendly matches Testing"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span4"
-                      defaultMessage="- Marketplace"
+                      defaultMessage="- Airdrop 2"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span5"
-                      defaultMessage="- Prize pool distribution "
+                      defaultMessage="- Beta Mini Game"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q4span6"
+                      defaultMessage="- Tournament starts"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q4span7"
+                      defaultMessage="- Marketplace"
+                  /><br/>
+              </p>
+            </div>
+          </li>
+          <li>
+            <div className='textRoadamp t6'>
+              <strong className='qName'>
+                  <FormattedMessage
+                    id="roadmap-q5title"
+                    defaultMessage="Q1 2023"
+                  />
+                </strong >
+                <p>
+                  <FormattedMessage
+                      id="roadmap-q5span1"
+                      defaultMessage="- Prize pool distribution"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q5span2"
+                      defaultMessage="- Expanding to new tournaments"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q5span3"
+                      defaultMessage="- Crypto Cup Mini Game Development"
                   /><br/>
               </p>
             </div>

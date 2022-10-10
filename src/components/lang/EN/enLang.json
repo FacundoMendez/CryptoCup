@@ -91,33 +91,45 @@
     "roadmap-q42021span5":"- Development environment setup ",
 
     "roadmap-q1title":"Q1 2022",
-    "roadmap-q1span1":"- Web footage selection",
-    "roadmap-q1span2":"- Smart contracts development ",
-    "roadmap-q1span3":"- NFTs Illustrations and 3D Models ",
-    "roadmap-q1span4":"- Investor selection process ",
+    "roadmap-q1span1":"- Investor selection process",
+    "roadmap-q1span2":"- Landing Page Footage ",
+    "roadmap-q1span3":"- Smart contracts development  ",
+    "roadmap-q1span4":"- NFTs Illustrations and 3D Models",
+
 
     "roadmap-q2title":"Q2 2022",
     "roadmap-q2span1":"- Ladders System development ",
-    "roadmap-q2span2":"- Whitepaper creation",
-    "roadmap-q2span3":"- Website Structure ",
-    "roadmap-q2span4":"- Background Design ",
+    "roadmap-q2span2":"- Website Structure",
+    "roadmap-q2span3":"- Background Design  ",
+    "roadmap-q2span4":"- Whitepaper Creation ",
+    "roadmap-q2span5":"- Established Terms and Conditions  ",
+    "roadmap-q2span6":"- Multi Language Website  ",
+
 
     "roadmap-q3title":"Q3 2022",
-    "roadmap-q3span1":"- Private sale ",
-    "roadmap-q3span2":"- Ticket Sales",
-    "roadmap-q3span3":"- Dapp Design and development ",
-    "roadmap-q3span4":"- Official launch of the website",
-    "roadmap-q3span5":"- Public Mini Game ",
-    "roadmap-q3span6":"- Token public presale 1 ",
-    "roadmap-q3span7":"- Token public presale 2",
-    "roadmap-q3span8":"- Dapp Beta",
+    "roadmap-q3span1":"- Dapp Design and development ",
+    "roadmap-q3span2":"- Official launch of the website",
+    "roadmap-q3span3":"- Ticket Sales",
+    "roadmap-q3span4":"- Token public presale 1",
+    "roadmap-q3span5":"- Token public presale 2 ",
+    "roadmap-q3span6":"- Dapp Beta",
+
     
     "roadmap-q4title":"Q4 2022",
     "roadmap-q4span1":"- Dapp launch",
-    "roadmap-q4span2":"- Playable Ladders System Release ",
-    "roadmap-q4span3":"- Tournament starts ",
-    "roadmap-q4span4":"- Marketplace",
-    "roadmap-q4span5":"- Prize pool distribution ",
+    "roadmap-q4span2":"- Airdrop 1",
+    "roadmap-q4span3":"- Friendly matches Testing",
+    "roadmap-q4span4":"- Airdrop 2",
+    "roadmap-q4span5":"- Beta Mini Game",
+    "roadmap-q4span6":"- Tournament starts",
+    "roadmap-q4span7":"- Marketplace",
+
+
+    "roadmap-q5title":"Q4 2022",
+    "roadmap-q5span1":"- Prize pool distribution",
+    "roadmap-q5span2":"- Expanding to new tournaments",
+    "roadmap-q5span3":"- Crypto Cup Mini Game Development",
+
 
 
     "footer-social":"Our Social Networks",

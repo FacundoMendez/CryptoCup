@@ -178,9 +178,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    left: -.4rem;
+    margin-left: -.7rem;
     top: .8rem;
     cursor: pointer;
+    
+}
+
+.btnButton-Tickets{
     background-color: #07070793;
 }
 
@@ -203,6 +207,7 @@
   height: 6rem;
   margin-top: -.4rem;
   padding: 1rem .7rem;
+  
 }
   
 .btnButton-Tickets:hover {
@@ -227,6 +232,8 @@
     width: 6rem;
     height: 6rem;
     margin-left: -.2rem;
+    background-color: #07070793;
+
 }
 
 
@@ -802,7 +809,29 @@
         top: 58%;
     }
 
+    .btnButton-Tickets , .cantTicket-boost , .cantTicket-basic{
+        scale: .9;
+        top: -2rem;
+    }
 
+    .wrapperBotton-Tickets {
+        margin-left: -1.6rem;
+        top: 0.8rem;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .wrapperBotton-ticketSale, .btn-ticketSaleBoost {
+        padding: 0.7rem;
+        top: -0.29rem;
+        width: 5.3rem;
+        height: 5.3rem;
+        margin-left: -.9rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect {
+        scale: .9;
+    }
     /* precio */
     
     .priceBasic, .priceBoost{
@@ -826,6 +855,15 @@
 
 
 @media screen and ( max-width:1170px) {
+
+    .wrapperBotton-ticketSale, .btn-ticketSaleBoost {
+        padding: 0.7rem;
+        top: -0.2rem;
+        width: 5.3rem;
+        height: 5.35rem;
+        margin-left: -.9rem;
+    }
+
 
     /* videos buy */
     .videoCompra{
@@ -1050,8 +1088,16 @@
 
 
 @media screen and (max-width:480px){
-    /* general */
 
+    .wrapperBotton-ticketSale {
+        top: -0.3rem;
+    }
+
+
+    /* general */
+    .wrapperBotton-ticketSale-Connect {
+        scale: 1;
+    }
     .containerTiketsBuy{
         width: 100%;
     }

@@ -85,39 +85,51 @@
 
     "roadmap-q42021title":"Q4 2021",
     "roadmap-q42021span1":"- Projeto de conceito ",
-    "roadmap-q42021span2":"- Pesquisa de branding e jogos ",
-    "roadmap-q42021span3":"- Pesquisa NFT",
+    "roadmap-q42021span2":"- Pesquisa de branding e jogos",
+    "roadmap-q42021span3":"- Pesquisa NFT ",
     "roadmap-q42021span4":"- Pesquisa de token ",
     "roadmap-q42021span5":"- Configuração do ambiente de desenvolvimento ",
 
     "roadmap-q1title":"Q1 2022",
-    "roadmap-q1span1":"- Seleção de imagens da Web",
-    "roadmap-q1span2":"- Desenvolvimento de contratos inteligentes ",
-    "roadmap-q1span3":"- Ilustrações e modelos 3D de NFTs ",
-    "roadmap-q1span4":"- Processo de seleção de investidores ",
+    "roadmap-q1span1":"- Processo de seleção de investidores",
+    "roadmap-q1span2":"- Filmagem da página de destino",
+    "roadmap-q1span3":"- Desenvolvimento de contratos inteligentes ",
+    "roadmap-q1span4":"- Ilustrações e modelos 3D de NFTs",
+
 
     "roadmap-q2title":"Q2 2022",
-    "roadmap-q2span1":"- Desenvolvimento de sistema de Torneios ",
-    "roadmap-q2span2":"- Criação de whitepaper",
-    "roadmap-q2span3":"- Estrutura do site ",
-    "roadmap-q2span4":"- Plano de fundo ",
+    "roadmap-q2span1":"- Desenvolvimento de sistema de Tickets",
+    "roadmap-q2span2":"- Estrutura do site",
+    "roadmap-q2span3":"- Plano de fundo",
+    "roadmap-q2span4":"- Criação de whitepaper",
+    "roadmap-q2span5":"- Termos e Condições Estabelecidos",
+    "roadmap-q2span6":"- Site multilíngue",
+
 
     "roadmap-q3title":"Q3 2022",
-    "roadmap-q3span1":"- Venda privada",
-    "roadmap-q3span2":"- Venda de ingressos",
-    "roadmap-q3span3":"- Dapp Design e desenvolvimento",
-    "roadmap-q3span4":"- Lançamento oficial do site",
-    "roadmap-q3span5":"- Minijogo público",
-    "roadmap-q3span6":"- Token public presale 1 ",
-    "roadmap-q3span7":"- Pré-venda pública de token 2",
-    "roadmap-q3span8":"- Dapp Beta",
+    "roadmap-q3span1":"- Dapp Design e desenvolvimento",
+    "roadmap-q3span2":"- Lançamento oficial do site",
+    "roadmap-q3span3":"- Venda de ingressos",
+    "roadmap-q3span4":"- Pré-venda pública de token 1",
+    "roadmap-q3span5":"- Pré-venda pública de token 2",
+    "roadmap-q3span6":"- Dapp Beta",
+
     
     "roadmap-q4title":"Q4 2022",
     "roadmap-q4span1":"- Lançamento do Dapp",
-    "roadmap-q4span2":"-Lançamento do sistema de Torneios jogáveis",
-    "roadmap-q4span3":"- Início do torneio ",
-    "roadmap-q4span4":"- Mercado",
-    "roadmap-q4span5":"- Distribuição de prêmios ",
+    "roadmap-q4span2":"- Lançamento aéreo 1",
+    "roadmap-q4span3":"- Testes de amistosos",
+    "roadmap-q4span4":"- Lançamento aéreo 2",
+    "roadmap-q4span5":"- Minijogo Beta",
+    "roadmap-q4span6":"- Início do torneio",
+    "roadmap-q4span7":"- Mercado",
+
+
+    "roadmap-q5title":"Q4 2022",
+    "roadmap-q5span1":"- Distribuição de prêmios",
+    "roadmap-q5span2":"- Expansão para novos torneios",
+    "roadmap-q5span3":"- Desenvolvimento de Minijogos Crypto Cup",
+
 
 
     "footer-social":"Nossas Redes Sociais",

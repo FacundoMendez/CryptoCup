@@ -35,7 +35,7 @@ const TournamentMain = () => {
 
                   <FormattedMessage
                       id="present-text1"
-                      defaultMessage=" Crypto Cup is the first crypto tournament based on predictions of the World Cup 2022. We encourage you to be a part of this journey with a very accessible opportunity to start competing and winning big bounties "
+                      defaultMessage=" Crypto Cup is the first crypto tournament based on predictions of the World Cup 2022. We encourage you to be a part of this journey with a very accessible opportunity to start competing and winning big bounties. "
                   />
                 </p><br /> <br />
                 <p>

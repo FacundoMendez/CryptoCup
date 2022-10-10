@@ -34,7 +34,7 @@ const TiketsMain = () => {
             <p className='textDescripcionTikets'>
               <FormattedMessage
                 id="tickets-text"
-                defaultMessage="To be available to participate, you’ll need one of our NFT tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access to the tournament as a player, so you will be able to use all the functions of the dapp!"
+                defaultMessage="To be available to participate, you’ll need one of our NFT Tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access as a player, therefore you could use all the functions of the dapp!"
               />
             </p>
         </div>
@@ -60,7 +60,7 @@ const TiketsMain = () => {
 
                 <FormattedMessage
                   id="tickets-basicLadderText"
-                  defaultMessage="This ladder is designed for everyone who wants to compete in the simplest way, you only need your basic ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder!"
+                  defaultMessage="This ladder is designed for everyone who wants to compete in the simplest way, you only need your Basic Ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder!"
                 />
                 <br /><br />
                 <FormattedMessage

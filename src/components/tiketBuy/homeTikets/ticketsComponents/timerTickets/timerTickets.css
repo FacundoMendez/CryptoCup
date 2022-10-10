@@ -112,6 +112,8 @@
   .timer{
     position: relative;
     top: 3rem;
+    z-index: -1;
+
   }
   
   .headline_tickets  {

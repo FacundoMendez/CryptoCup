@@ -64,6 +64,16 @@ const roadmapScroll = () =>{
         }
       })
 
+      gsap.from(".t6",{
+        opacity:0,
+        duration:.2,
+        scrollTrigger:{
+          trigger: ".t5",
+          start: "top end",
+          end: "bottom bottom",
+        }
+      })
+
   }
 
 }

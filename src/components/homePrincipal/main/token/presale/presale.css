@@ -817,11 +817,12 @@
     
     .boxPresale{
         padding: 1.5rem 0rem;
-        top: 55%;
-        left: 50%;
+        top: 51%;
+        left: 45%;
         gap: 1rem;
         width: 40rem;
         margin-top: 1.2rem;
+        scale: .9;
     }
 
     .boxPresale h2{
