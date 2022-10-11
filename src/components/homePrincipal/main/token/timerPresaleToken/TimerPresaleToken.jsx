@@ -18,7 +18,7 @@ const TimerPresaleToken = () => {
             today = mm + "/" + dd + "/" + yyyy;
 
         //end
-        const countDown = new Date(1666200000000).getTime(),
+        const countDown = new Date(1666310408000).getTime(),
             x = setInterval(function() {    
 
                 const now = new Date().getTime(),
