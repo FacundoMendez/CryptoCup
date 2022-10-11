@@ -15,7 +15,7 @@ const Footer = lazy(() => import ("../footer/Footer"))
 const Main = () => {
 
   return (
-    <main className='main'>
+    <main className='main' >
         <Suspense fallback={<Spinner/>}>
           <Home/>
           <TournamentMain/>
