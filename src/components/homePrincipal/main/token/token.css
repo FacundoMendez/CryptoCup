@@ -84,11 +84,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    top: 15rem;
+    top: 12rem;
 }
 
 .grafico h2{
-    font-size: 5.5rem;
+    font-size: 6rem;
     letter-spacing: 1px;
     font-family: qatarHeavy;
     -webkit-background-clip: text;
@@ -104,10 +104,11 @@
 }
 
 .grafico img{
-    width: 52%;
+    width: 75%;
     object-fit: cover;
-    margin: 10rem 0;
-    filter: contrast(115%) brightness(110%) ;
+    margin: 0rem 0;
+    margin-top:-9rem;
+    filter: brightness(95%) contrast(103%) drop-shadow(0 0 20px rgba(178, 120, 255, 0.137));
 }
 
 .tokenWebGl {
