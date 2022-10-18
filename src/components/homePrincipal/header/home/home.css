@@ -147,12 +147,13 @@
 .btnPresale::after{
   content: "";
   position: absolute;
-  width: 15.5rem; /* 145px */
-  height: 4.9rem;
+  width: 15.6rem; /* 145px */
+  height: 5rem;
   top: 50%;
   transform: translate(0 , -50%);
   background-color: rgba(6, 0, 12, 0.966);
   border: 1px solid rgba(155, 36, 0, 0.089);
+  border-radius: 8px;
   z-index: 20 !important;
 }
 

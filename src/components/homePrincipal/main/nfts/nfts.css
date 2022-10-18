@@ -253,24 +253,24 @@
 
 .event1 .image {
     top: 50%;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_814,q_auto:best,w_1100/v1663101888/CryptocupQatar/nft/PrizePoolBasic2_fi4urh.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_814,q_auto:best,w_1100/v1666134560/CryptocupQatar/nft/PrizePoolCopaNuevaBasic_batezz.webp");
     background-size: contain;
     width: 51%;
     text-align: center;
     background-repeat: no-repeat;
-    filter: contrast(115%) brightness(105%);
+    filter: contrast(118%) brightness(105%);
 }
 
 /* img2 */
 
 .event2 .image {
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_814,q_auto:best,w_1100/v1663101886/CryptocupQatar/nft/PrizePoolBoost3Ingles_pbnf48.png");
+    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_814,q_auto:best,w_1100/v1666134560/CryptocupQatar/nft/PrizePoolCopaNuevaBoost_lp9he8.webp");
     background-size: contain;
     width: 51.00%;
     text-align: center;
     margin-left: 0px;
     background-repeat: no-repeat;
-    filter: contrast(120%) brightness(100%);
+    filter: contrast(118%) brightness(100%);
 }
 .image {
     top: -50%;
