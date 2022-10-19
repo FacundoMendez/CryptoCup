@@ -62,6 +62,14 @@ const Nfts = () => {
           </div>
       </section>
 
+
+      <p className='note_nfts'>
+        <FormattedMessage
+            id="note_nft"
+            defaultMessage="Note: The Prize Pool is Determined by the number of participants."
+          />
+      </p>
+
     <div className="containerWins">
 
         <h2 className='subtitleNftWinners'> 
