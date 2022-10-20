@@ -43,11 +43,11 @@ const ConnectPresale = ({ buyTokens }) => {
             </div>
         </div>
         <div className="box_amount_presale">
-            <input id='amountTokens_presale' type="number" max={5000} min={10} placeholder="AMOUNT" />
+            <input id='amountTokens_presale' type="number" max={5000} min={5} placeholder="AMOUNT" />
         </div>
         <div className="box_buy_presale" onClick={() => {
             const amount = document.getElementById('amountTokens_presale').value
-            buyTokens(amount)
+            buyTokens(amount, tokenOptionSelect - 1)
         }} >
             <p>BUY</p>
         </div>
