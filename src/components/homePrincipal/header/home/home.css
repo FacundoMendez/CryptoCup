@@ -96,7 +96,6 @@
   flex-wrap: wrap;
   flex-wrap: nowrap;
   margin-left: 2rem;
-  
 }
 
 
@@ -104,13 +103,13 @@
 
 
 
+
 .btnPresale {
-  width: 16.5rem; /* 145px */
-  height: 6rem;   /* 60px */
+  width: 16.4rem; /* 145px */
+  height: 5.6rem;   /* 60px */
   margin: 0 3rem;
   text-align: center;
   cursor: pointer;
-  border: 2px solid rgba(110, 60, 37, 0.288);
   filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.377)) brightness(140%);
   position: relative;
   overflow: hidden;
@@ -119,6 +118,7 @@
   align-items: center;
   animation: fireVision 2s infinite linear;
   transition: all .5s ease;
+  border-radius: 8px;  
 }
 
 .btnPresale:hover{
@@ -130,16 +130,16 @@
 
 @keyframes fireVision {
   0%{
-    filter: drop-shadow( 0 0 0px rgba(255, 160, 136, 0.24)) brightness(140%);
-    box-shadow: 0 0 0rem rgba(165, 91, 7, 0.288);
+    filter: drop-shadow( 0 0 0px rgba(226, 182, 255, 0.24)) brightness(140%);
+    box-shadow: 0 0 0rem rgba(75, 7, 165, 0.288);
   }
   50%{
-    filter: drop-shadow( 0 0 20px rgba(233, 115, 68, 0.212)) brightness(140%);
-    box-shadow: 0 0 2rem rgba(184, 72, 20, 0.308);
+    filter: drop-shadow( 0 0 20px rgba(224, 178, 255, 0.212)) brightness(140%);
+    box-shadow: 0 0 2rem rgba(165, 73, 250, 0.308);
   }
   100%{
-    filter: drop-shadow( 0 0 0px rgba(255, 154, 136, 0.281)) brightness(140%);
-    box-shadow: 0 0 .5rem rgba(165, 91, 7, 0.253);
+    filter: drop-shadow( 0 0 0px rgba(221, 185, 255, 0.281)) brightness(140%);
+    box-shadow: 0 0 .5rem rgba(94, 7, 165, 0.253);
   }
 }
 
@@ -147,14 +147,15 @@
 .btnPresale::after{
   content: "";
   position: absolute;
-  width: 15.6rem; /* 145px */
-  height: 5rem;
-  top: 50%;
+  width: 15.5rem; /* 145px */
+  height: 4.8rem;
+  top: 49.5%;
   transform: translate(0 , -50%);
-  background-color: rgba(6, 0, 12, 0.966);
-  border: 1px solid rgba(155, 36, 0, 0.089);
-  border-radius: 8px;
   z-index: 20 !important;
+  border-radius: 8px;
+  background: linear-gradient(90.23deg,#5f3d74fb -1.47%,#251a35fd 99.8%);
+  box-shadow: rgba(0, 0, 0, 0.514) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.514) -3px -3px 6px 1px inset;
+  border: 3px ridge rgba(0, 0, 0, 0.815);
 }
 
 .btnPresale p{
@@ -173,6 +174,7 @@
   inset 0 -1px 1px 3px #9999ff;
   background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
 }
+
 .btnPresale video {
   width: 16.5rem; /* 145px */
   height: 9rem;   /* 60px */
@@ -180,6 +182,7 @@
   z-index: -1  !important;
   pointer-events: none;
   opacity: 1;
+  
 }
 
 .firegif{
@@ -188,6 +191,8 @@
   height: 2rem;
   z-index: 30;
   right: -.3rem;
+  border-radius: 10px;
+
   bottom: -.35rem;
   transform: rotate(-20deg);
   opacity: .5;

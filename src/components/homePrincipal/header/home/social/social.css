@@ -17,7 +17,6 @@
 .social a {
     color: white;
     letter-spacing: 1px;
-    background: #34017754 ;
     font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
@@ -31,9 +30,10 @@
     transition: transform 1s;
     align-items: center;
     transition: all .5s ease-in-out;
-    background-color: rgba(85, 73, 104, 0.158);
     backdrop-filter: blur(3rem);
     border: 2px groove #d19fffa6;
+    background: linear-gradient(90.23deg,#c263fd70 -1.47%,#020103c2 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.514) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.514) -3px -3px 6px 1px inset;
 } 
 
 .social a:hover {
