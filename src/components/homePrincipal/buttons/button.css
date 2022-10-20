@@ -4,12 +4,12 @@
   filter: drop-shadow( 0 0 10px rgba(191, 112, 255, 0.473)) brightness(140%);
   text-align: center;
   background-color: rgba(0, 0, 0, 0.801);
-  width: 21.5rem; /* 145px */
-  height: 5.42rem;   /* 60px */
+  width: 22.5rem; /* 145px */
+  height: 5.32rem;   /* 60px */
   border-radius: 8px;
   background: linear-gradient(90.23deg,#5f3d74fb -1.47%,#251a35fd 99.8%);
   box-shadow: rgba(0, 0, 0, 0.432) 3px 3px 4px 0px inset, rgba(0, 0, 0, 0.432) -3px -3px 4px 1px inset;
-  border: 3px ridge rgba(0, 0, 0, 0.815);
+  border: 4px ridge rgba(0, 0, 0, 0.815);
 }
 
 
@@ -18,18 +18,17 @@
   transition: all .5s ease;
 }
 
-.btn{
-  margin-top: .1rem;
-}
+
 
 .btn p {
   color: white;
   font-size: 2rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-background-clip: text;
   background-clip: text;
   font-family: qatarHeavy;
+  margin-top: -.2rem;
   padding: 0 1rem;
   color: transparent;
   text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
@@ -78,8 +77,8 @@
 
 
 @media screen and (max-width:355px){
-  .btn p {
-    font-size: 1.7rem;
+  .btn p , .btnPresale p {
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
 
@@ -92,9 +91,20 @@
     left: 10%;
   }
 
-  .wrapperBottonPresale .btnPresale {
-    width: 12.5rem;
-    margin: 0 2rem;
+  .wrapperBotton{
+    width: 14.5rem;
+    margin: 0 0rem;
+    height: 5.8rem;
+  }
+
+  .btnPresale::after {
+    width: 12.8rem;
+    height: 4.9rem;
+}
+  .btnPresale {
+    width: 13.8rem;
+    height: 5.8rem;
+    margin: 1rem;
   }
 
 }
