@@ -136,7 +136,7 @@ const Presale = () => {
                     <p className='hard_cap' ><strong>Hard Cap:</strong>&nbsp;  972.000 USDT</p>
                 </div>
 
-                <p className='user_buy_wallet'><strong>Capped FCFS with Parcel Limit:</strong>&nbsp; &nbsp; Min buy 10$ - Max 5000$ </p>
+                <p className='user_buy_wallet'><strong>Capped FCFS with Parcel Limit:</strong>&nbsp; &nbsp; Min buy 5$ - Max 5000$ </p>
 
                 {connected ? 
                     <ConnectPresale buyTokens={buyTokens} />
