@@ -98,7 +98,7 @@ const Presale = () => {
 
     const buyTokens = async (amount, currency) => {
         if(contract !== undefined) {
-          const tx = await contract.buyTokens(amount / 0.0038, currency);
+          const tx = await contract.buyTokens(Math.round(amount / 0.0038), currency);
           await tx.wait();
         }
     }
