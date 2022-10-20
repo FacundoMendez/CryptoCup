@@ -111,7 +111,7 @@ const Presale = () => {
             <div className="boxPresale">
                 
                 <h2>Presale 1</h2>
-                <h3>Starts in:</h3>
+                <h3>Ends in:</h3>
                 <TimerPresaleToken/>
 
                 <div className="box_cct">
