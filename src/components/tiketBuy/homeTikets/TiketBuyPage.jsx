@@ -13,7 +13,6 @@ import checkTokenBoost from './ticketsComponents/tokenBoost/checkTokenBoost';
 import Favicon from 'react-favicon';
 import gsap from 'gsap';
 import {FormattedMessage} from 'react-intl';
-import TimerTickets from './ticketsComponents/timerTickets/TimerTickets';
 
 const NavTicket = lazy(() => import ('../NavTickets/NavTickets'))
 const TermsAndCondicionsPopup = lazy(() => import ('../../homePrincipal/header/termsAndCondicionsPopup/TermsAndCondicionsPopup'))
@@ -650,7 +649,6 @@ const TiketBuyPage = () => {
                 codigoIncorrecto = {codigoIncorrecto}
               /> 
             </div>
-          <TimerTickets/>
           </div>
         </div>
     </div>

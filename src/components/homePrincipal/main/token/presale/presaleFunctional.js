@@ -25,7 +25,7 @@ const presaleFunctional = () => {
             amountTokens_presale.value=5000
         }
         if(amountTokens_presale.value < 20){
-            amountTokens_presale.value= 20
+            amountTokens_presale.value= 10
         }
     })
 
