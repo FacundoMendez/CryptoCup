@@ -18,7 +18,7 @@ const Presale = () => {
     const [account, setAccount] = useState(undefined);
     const [signer, setSigner] = useState(undefined);
 
-    const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
+    const [accumulated , setAccumulated] = useState(10000)       //cantidad en $ 
     const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
 
     const [connect , setConnect] = useState(false)

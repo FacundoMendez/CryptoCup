@@ -31,7 +31,6 @@
     flex-direction: column;
     gap: 2rem;
     border-radius: 10px;
-
     box-shadow: rgba(255, 205, 147, 0.311) 3px 3px 6px 0px inset, rgba(255, 205, 147, 0.311) -3px -3px 6px 1px inset;
     backdrop-filter: blur(5px);
     filter: drop-shadow( 0 0 20px rgba(121, 81, 194, 0.185)) contrast(101%) brightness(105%);
@@ -83,7 +82,6 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    
 }
 
 
@@ -100,7 +98,7 @@
 
 .box_cct p{
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -108,7 +106,6 @@
     text-align: center;
     border-radius: 5px;
     border: 2px ridge rgba(212, 179, 255, 0.048);
-
     background-color: #000000;
     background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
     box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
@@ -148,7 +145,6 @@
 	width: 0;
 	opacity: 0;
 	transition: 1s ease 0.3s;
-    
 }
 
 .progress-done p{
@@ -158,7 +154,7 @@
     left: 0;
     font-weight: bold;
     filter: drop-shadow(0 0 5px black);
-    font-size:1.9rem;
+    font-size:2rem;
     -webkit-background-clip: text;
     background-clip: text;
     text-transform: uppercase;
@@ -180,7 +176,8 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    font-family: qatar;
+    font-family: qatarHeavy;
+    font-size: 1.5rem;
 }
 
 
@@ -211,7 +208,6 @@
     top: -2rem;
     left: -2.8rem;
     font-family: qatarHeavy;
-
 }
 
 .note_presale{
@@ -921,11 +917,11 @@
     }
 
     .box_cct p{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         padding: .3rem;
     }
     .boxPresale strong{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
 
@@ -967,7 +963,7 @@
 
     .soft p{
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         padding: .3rem ;
     }
 
