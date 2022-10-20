@@ -6,8 +6,8 @@ import { useState } from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Context from "./components/context/Context";
 import Spinner from "./components/spinner/Spinner";
-import Presale from './components/homePrincipal/main/token/presale/Presale';
 
+const Presale = lazy(() => import ("./components/homePrincipal/main/token/presale/Presale"))
 const Error404 = lazy(() => import ("./components/error404/Error404"))
 const TiketBuyPage = lazy(() => import ("./components/tiketBuy/homeTikets/TiketBuyPage"))
 const HomePrincipal = lazy(() => import ("./components/homePrincipal/HomePrincipal"))
