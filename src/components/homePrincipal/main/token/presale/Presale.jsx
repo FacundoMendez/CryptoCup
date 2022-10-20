@@ -7,6 +7,7 @@ import ConnectPresale from './connectPresale/ConnectPresale'
 import "./presale.css"
 
 
+
 const Presale = () => {
     /* validaciones de coneccion blockchain */
 
