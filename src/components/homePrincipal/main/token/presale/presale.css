@@ -2,10 +2,11 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url("https://res.cloudinary.com/dvrxw8fbg/image/upload/q_auto:low/v1661785088/CryptocupQatar/token/BackToken_sknpmi.webp");
+    background-image: url("../src/backMatch7.png");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    filter: contrast(108%);
 }
 
 .containerPresale::before{
@@ -29,12 +30,26 @@
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    border-radius: 15px;
+    border-radius: 10px;
+
     box-shadow: rgba(255, 205, 147, 0.311) 3px 3px 6px 0px inset, rgba(255, 205, 147, 0.311) -3px -3px 6px 1px inset;
     backdrop-filter: blur(5px);
-    background-color: rgba(22, 0, 73, 0.055);
-    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.021));
-    
+    filter: drop-shadow( 0 0 20px rgba(121, 81, 194, 0.185)) contrast(101%) brightness(105%);
+    background: radial-gradient(circle,rgba(62, 40, 104, 0.61) 0,rgba(10, 4, 22, 0.829) 75%);
+    background-color: #1e0d3be0;
+}
+
+.boxPresale::before{
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url("../src/backMatch2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: .3;
+    z-index: -1;
 }
 
 .boxPresale h2{
@@ -45,13 +60,13 @@
     font-family:gilron;
     -webkit-background-clip: text;
     background-clip: text;
+    font-family: qatarHeavy;
     text-transform: uppercase;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-
 }
 
 .boxPresale h3{
@@ -62,6 +77,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     text-transform: uppercase;
+    font-family: qatarHeavy;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
@@ -91,8 +107,12 @@
     padding: .5rem;
     text-align: center;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+
+    background-color: #000000;
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
 }
 
 
@@ -100,16 +120,17 @@
 /* barra progresiva */
 
 .progress {
-	background-color: #120f1a;
 	position: relative;
-	margin: 2rem 0;
     margin-top: 3rem;
 	height: 5rem;
     width: 110%;
     font-size: 1.8rem;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #0000007e, #8c5bff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
 }
 
 .progress-done {
@@ -127,6 +148,7 @@
 	width: 0;
 	opacity: 0;
 	transition: 1s ease 0.3s;
+    
 }
 
 .progress-done p{
@@ -145,6 +167,8 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    font-family: qatarHeavy;
+
 }
 
 .boxPresale strong{
@@ -152,24 +176,24 @@
     background-clip: text;
     text-transform: uppercase;
     color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    text-shadow: 0 3px 6px rgba(207, 16, 16, 0.16), 0 3px 6px rgba(110,80,20,.4),
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    font-family: qatar;
 }
 
 
-
 .soft_cap_progress{
-    height: 4rem;
+    height: 1.3rem;
     border: 1px solid rgba(255, 218, 188, 0.404);
     border-left: none;
     position: absolute;
     left: 25%;
     top: -1.1rem;
     z-index: -1;
-    
 }
+
 .soft_cap_progress::before{
     content:"SOFT CAP";
     position: absolute;
@@ -186,9 +210,20 @@
     letter-spacing: 1px;
     top: -2rem;
     left: -2.8rem;
+    font-family: qatarHeavy;
+
 }
 
-
+.note_presale{
+    color: rgb(163, 163, 163);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: gilron;
+    text-shadow: -.3rem .2rem .4rem rgb(10, 10, 10);
+    text-align: center;
+    padding: 0 1rem;
+}
 /* box soft */
 
 .soft{
@@ -212,8 +247,11 @@
     padding: .5rem ;
     text-align: center;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
 }
 
 .soft p{
@@ -225,8 +263,12 @@
     padding: .5rem ;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 5px;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
+
 }
 
 
@@ -243,11 +285,13 @@
     height: 6rem;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 5px;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
 /*     cursor: pointer; */
     transition: all .5s ease;
     background-color: rgba(165, 165, 165, 0.322);
+    font-family: qatarHeavy;
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+
 }
 
 
@@ -272,7 +316,7 @@
     */ color: rgb(163, 163, 163) ;
     text-transform: uppercase;
     text-shadow: 0 0 1rem rgba(0, 0, 0, 0.363);
-
+    font-family: qatarHeavy;
 }
 
 
@@ -297,8 +341,11 @@
     width: 25%;
     height: 100%;
     position: relative;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
     border-radius: 5px;
     cursor: pointer;
 
@@ -312,8 +359,11 @@
     height: 100%;
     position: relative;
     border: none;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
+    font-family: qatar;
     border-radius: 5px;
 }
 
@@ -340,11 +390,12 @@
     font-size: 1.3rem;
     position: absolute;
     letter-spacing: 1px;
-    color: rgba(129, 129, 129, 0.692);
+    color: rgba(180, 180, 180, 0.863);
     border: none;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-family: qatarHeavy;
 }
 
 
@@ -360,8 +411,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-image: linear-gradient(to right, #00000011, #9e74ff1f);
-    box-shadow: rgba(255, 204, 128, 0.055) 3px 3px 6px 0px inset, rgba(255, 229, 195, 0.11) -3px -3px 6px 1px inset;
+    background-color: #000000;
+    border: 2px ridge rgba(212, 179, 255, 0.048);
+    background: linear-gradient(90.23deg,#5a1f92d3 -1.47%,#3d1a77d0 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
     border-radius:5px;
     cursor: pointer;
 
@@ -388,6 +441,7 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    font-family: qatarHeavy;
 }
 
 
@@ -408,6 +462,8 @@
     height: 5rem;
     
 }
+
+
 
 /* box */
 
@@ -431,9 +487,23 @@
     opacity: 1;
     transition: all .3s ease;
     z-index: 9999;
-    background-color: rgba(0, 0, 0, 0.973);
+    filter: contrast(108%);
     backdrop-filter: blur(1rem);
     cursor: auto;
+
+}
+
+.radio_token_presale::before{
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background-image: url("../src/backMatch2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: .8;
+    z-index: -1;
 }
 
 .radio_token_presale_active{
@@ -464,6 +534,11 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+}
+
+
+.control_radio_presale p:hover{
+    text-shadow:  0 0 .3rem rgba(255, 228, 217, 0.616);
 }
 
 .LogoToken{
@@ -552,7 +627,6 @@
     }
 
     .soft_cap_progress{
-        height: 4rem;
         left: 25%;
         top: -1.1rem;
     }
@@ -597,13 +671,13 @@
 @media screen and (max-width:765px) {
 
     .containerPresale{
-        height: 100vh;
+        height: 110vh;
         width: 100%;
     }
     
     .containerPresale::before{
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         content: " ";
         top: 0rem;
         background-color: rgba(0, 0, 0, 0.568);
@@ -644,7 +718,12 @@
         font-size: 1.3rem;
     }
     
-
+    .note_presale{
+        font-size: 1rem;
+        line-height: 2rem;
+        letter-spacing: 1px;
+        padding: 0 1rem;
+    }
 
     /* barra progresiva */
 
@@ -662,7 +741,6 @@
     }
 
     .soft_cap_progress{
-        height: 4rem;
         left: 25%;
         top: -1.1rem;
     }
@@ -802,13 +880,13 @@
 @media screen and (max-width:480px) {
 
     .containerPresale{
-        height: 100vh;
+        height: 105vh;
         width: 100%;
     }
     
     .containerPresale::before{
         width: 100%;
-        height: 100vh;
+        height: 105vh;
         content: " ";
         top: 0rem;
         background-color: rgba(0, 0, 0, 0.568);
@@ -866,7 +944,6 @@
     }
 
     .soft_cap_progress{
-        height: 3rem;
         left: 25%;
         top: -1.1rem;
     }

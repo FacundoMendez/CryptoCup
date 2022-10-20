@@ -50,6 +50,8 @@ const Presale = () => {
                     </div>
                 </div>
 
+                <p className='note_presale'>Note: if the soft cap is not reached, there will be a refund to the contributors.</p>
+
                 <div className="soft">
                     <p><strong>Soft Cap: </strong>&nbsp; 50.000 USDT</p>
                     <p className='hard_cap' ><strong>Hard Cap:</strong>&nbsp;  972.000 USDT</p>

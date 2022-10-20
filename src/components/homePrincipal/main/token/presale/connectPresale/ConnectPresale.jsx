@@ -43,7 +43,7 @@ const ConnectPresale = () => {
             </div>
         </div>
         <div className="box_amount_presale">
-            <input id='amountTokens_presale' type="number" max={5000} min={20} placeholder="AMOUNT" />
+            <input id='amountTokens_presale' type="number" max={5000} min={10} placeholder="AMOUNT" />
         </div>
         <div className="box_buy_presale">
             <p>BUY</p>
