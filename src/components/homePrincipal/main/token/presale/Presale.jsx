@@ -18,10 +18,10 @@ const Presale = () => {
     const [account, setAccount] = useState(undefined);
     const [signer, setSigner] = useState(undefined);
 
+    const [amountToBuy, setAmountToBuy] = useState(0);
+
     const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
     const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
-
-    const [connect , setConnect] = useState(false)
 
 	const [style, setStyle] = useState({})
 
@@ -69,7 +69,14 @@ const Presale = () => {
             const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
             const newSigner = await newProvider.getSigner();
             const newContract = await new ethers.Contract( icoAddress , icoAbi , newSigner );
-  
+
+            const soldTokens = await (await newContract.icoSoldTokens()).toNumber();
+            const soldPercentage = await (await newContract.icoSoldTokensPercentage()).toNumber();
+            const totalRaised = soldTokens * 0.0038;
+
+            setAccumulated(totalRaised);
+            setPorcentaje(soldPercentage);
+
             setProvider(newProvider);
             setAccount(newAccount);
             setSigner(newSigner);
@@ -87,6 +94,13 @@ const Presale = () => {
   
         }
   
+    }
+
+    const buyTokens = async (amount) => {
+        if(contract !== undefined) {
+          const tx = await contract.buyTokens(amount / 0.0038);
+          await tx.wait();
+        }
     }
 
 
@@ -124,8 +138,8 @@ const Presale = () => {
 
                 <p className='user_buy_wallet'><strong>Capped FCFS with Parcel Limit:</strong>&nbsp; &nbsp; Min buy 10$ - Max 5000$ </p>
 
-                {connect ? 
-                    <ConnectPresale/>
+                {connected ? 
+                    <ConnectPresale buyTokens={buyTokens} />
                     :
                     <div className="connect" onClick={() => login()}>
                         <p>Connect</p>

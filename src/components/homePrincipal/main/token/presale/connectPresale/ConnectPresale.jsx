@@ -2,7 +2,7 @@ import React, {useEffect , useState} from 'react'
 import presaleFunctional from '../presaleFunctional'
 
 
-const ConnectPresale = () => {
+const ConnectPresale = ({ buyTokens }) => {
 
     const [tokenOptionSelect, setTokenOptionSelect] = useState(4)
 
@@ -45,7 +45,10 @@ const ConnectPresale = () => {
         <div className="box_amount_presale">
             <input id='amountTokens_presale' type="number" max={5000} min={10} placeholder="AMOUNT" />
         </div>
-        <div className="box_buy_presale">
+        <div className="box_buy_presale" onClick={() => {
+            const amount = document.getElementById('amountTokens_presale').value
+            buyTokens(amount)
+        }} >
             <p>BUY</p>
         </div>
     </div>
