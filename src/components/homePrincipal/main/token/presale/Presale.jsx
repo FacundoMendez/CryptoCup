@@ -1,3 +1,4 @@
+import { ethers } from 'ethers'
 import React ,{useState, useEffect, Suspense} from 'react'
 import Spinner from '../../../../spinner/Spinner'
 import NavTicket from '../../../../tiketBuy/NavTickets/NavTickets'
@@ -7,6 +8,13 @@ import "./presale.css"
 
 
 const Presale = () => {
+    /* validaciones de coneccion blockchain */
+
+    const [provider, setProvider] = useState(undefined);
+    const [connected, setConnected] = useState(false);
+    const [contract, setContract] = useState(false);
+    const [account, setAccount] = useState(undefined);
+    const [signer, setSigner] = useState(undefined);
 
     const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
     const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
@@ -23,6 +31,61 @@ const Presale = () => {
         setStyle(newStyle);
 
     },[porcentaje])
+
+    const changeChain = () => {
+        window.ethereum.request({
+          method: "wallet_addEthereumChain",
+          params: [{
+              chainId: "0x38",
+              rpcUrls: ["https://bsc-dataseed.binance.org/"],
+              chainName: "Binance Smart Chain",
+              nativeCurrency: {
+                  name: "BNB",
+                  symbol: "BNB",
+                  decimals: 18
+              },
+              blockExplorerUrls: ["https://bscscan.com/"]
+          }]
+        });
+      }
+
+    const login = async () => {
+
+        if(window.ethereum !== undefined) {
+          const newProvider = new ethers.providers.Web3Provider(window.ethereum);
+          const { chainId } = await newProvider.getNetwork();
+  
+          window.ethereum.on('accountsChanged', async accounts => {
+            await login();
+          });
+  
+          window.ethereum.on('networkChanged', async accounts => {
+            await login();
+          });
+  
+          if(chainId === 56) {
+            const newAccount = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            const newSigner = await newProvider.getSigner();
+            const newContract = await new ethers.Contract( icoAddress , icoAbi , newSigner );
+  
+            setProvider(newProvider);
+            setAccount(newAccount);
+            setSigner(newSigner);
+            setContract(newContract);
+            setConnected(true);
+          } else {
+            setProvider(undefined);
+            setAccount(undefined);
+            setSigner(undefined);
+            setContract(undefined);
+            setConnected(false);
+  
+            await changeChain();
+          }
+  
+        }
+  
+    }
 
 
   return (
@@ -62,7 +125,7 @@ const Presale = () => {
                 {connect ? 
                     <ConnectPresale/>
                     :
-                    <div className="connect">
+                    <div className="connect" onClick={() => login()}>
                         <p>Connect</p>
                     </div>
                 }

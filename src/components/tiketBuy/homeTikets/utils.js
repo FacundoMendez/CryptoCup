@@ -1089,6 +1089,10 @@ export const abi = [
 	}
 ];
 
+export const icoAbi = 
+
+export const icoAddress = "0x36be8bF2b05d70E4DF5bFC6BDA96757128D34F62"
+
 export const contractAddress = "0xF7AbE5DDFa1dDDe789c48cF6838b558F1dd24D2d";
 
 export const tokenAddresses = [

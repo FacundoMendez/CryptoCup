@@ -285,13 +285,12 @@
     height: 6rem;
     box-shadow: 0 0 15px rgb(0 0 0 / 30%);
     border-radius: 5px;
-/*     cursor: pointer; */
+    cursor: pointer;
     transition: all .5s ease;
     background-color: rgba(165, 165, 165, 0.322);
     font-family: qatarHeavy;
     box-shadow: rgba(0, 0, 0, 0.281) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.247) -3px -3px 6px 1px inset;
     border: 2px ridge rgba(212, 179, 255, 0.048);
-
 }
 
 
