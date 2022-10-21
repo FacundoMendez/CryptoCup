@@ -1,7 +1,7 @@
 import { ethers } from 'ethers'
 import React ,{useState, useEffect, Suspense} from 'react'
 import Spinner from '../../../../spinner/Spinner'
-import { icoAbi, icoAddress } from '../../../../tiketBuy/homeTikets/utils'
+import { icoAbi, icoAddress, tokenAddresses } from '../../../../tiketBuy/homeTikets/utils'
 import NavTicket from '../../../../tiketBuy/NavTickets/NavTickets'
 import TimerPresaleToken from '../timerPresaleToken/TimerPresaleToken'
 import ConnectPresale from './connectPresale/ConnectPresale'
@@ -98,6 +98,36 @@ const Presale = () => {
 
     const buyTokens = async (amount, currency) => {
         if(contract !== undefined) {
+
+          const tokenAddress = tokenAddresses[currency - 1].address;
+          const tokenContract = await new ethers.Contract( tokenAddress , ERC20Abi , signer );
+          const tokenDecimals = await tokenContract.decimals();
+
+          const enoughBalance = await tokenContract.balanceOf(account[0]).then(res => {
+
+            if((res / (10 ** tokenDecimals)) < amount) {
+              return false;
+            } else {
+              return true;
+            }
+          });
+
+          if(enoughBalance){
+
+
+            await tokenContract.allowance(account[0], "0xabFb604b655Bb34166a7da800b738D64c8aDdf4F").then(async res => {
+              if((res / (10 ** tokenDecimals)) < amount) {
+                const txAllowance = await tokenContract.approve("0xabFb604b655Bb34166a7da800b738D64c8aDdf4F", ethers.utils.parseEther("1000000")).catch(e => {
+                  // Aca se tiene que mostrar un error de que el usuario rechazo la transaccion.
+                  console.log(e);
+                })
+      
+                const receipt = await txAllowance.wait()
+              }
+            });
+
+          }
+
           const tx = await contract.buyTokens(Math.round(amount / 0.0038), currency);
           await tx.wait();
         }
