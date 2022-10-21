@@ -18,11 +18,21 @@ const Presale = () => {
     const [contract, setContract] = useState(false);
     const [account, setAccount] = useState(undefined);
     const [signer, setSigner] = useState(undefined);
-    const [noMetamask, setNoMetamask] = useState(false)
     const [amountToBuy, setAmountToBuy] = useState(0);
 
     const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
     const [porcentaje , setPorcentaje] = useState("0")      //cantidad en %
+
+
+
+    /* validaciones de errores */
+
+    const [codigoPropio, setCodigoPropio] = useState(false)
+    const [chainIncorrecta, setChainIncorrecta] = useState(false)
+    const [noMetamask, setNoMetamask] = useState(false)
+    const [codigoIncorrecto, setCodigoIncorrecto] = useState(false)
+    const [noBalance, setNoBalance] = useState(false)
+
 
 	const [style, setStyle] = useState({})
 
@@ -147,7 +157,12 @@ const Presale = () => {
         <div className="containerPresale">
 
             <NavTicket/>
+
             {noMetamask ? <NoMetamask noMetamask={noMetamask} /> : null}
+            {chainIncorrecta ? <NoMetamask chainIncorrecta={chainIncorrecta}/> : null }    
+            {noBalance ? <NoMetamask noBalance={noBalance}  /> : null } 
+
+            
             <div className="boxPresale">
                 
                 <h2>Presale 1</h2>

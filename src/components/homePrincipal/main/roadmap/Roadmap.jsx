@@ -144,15 +144,19 @@ const Roadmap = () => {
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span4"
-                      defaultMessage="- Token public presale 1"
+                      defaultMessage="- Airdrop 1"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span5"
-                      defaultMessage="- Token public presale 2"
+                      defaultMessage="- Friendly matches Testing"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q3span6"
-                      defaultMessage="- Dapp Beta"
+                      defaultMessage="- Airdrop 2"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q3span7"
+                      defaultMessage="- Dapp Alpha Test "
                   /><br/>
               </p>
             </div>
@@ -168,27 +172,27 @@ const Roadmap = () => {
                 <p>
                   <FormattedMessage
                       id="roadmap-q4span1"
-                      defaultMessage="- Dapp launch"
+                      defaultMessage="- Official Alpha Dapp launch"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span2"
-                      defaultMessage="- Airdrop 1"
+                      defaultMessage="- Token Pre Sale 1 "
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span3"
-                      defaultMessage="- Friendly matches Testing"
+                      defaultMessage="- Token Pre Sale 2"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span4"
-                      defaultMessage="- Airdrop 2"
+                      defaultMessage="- Beta Crypto Ball"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span5"
-                      defaultMessage="- Beta Mini Game"
+                      defaultMessage="- Tournament starts"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span6"
-                      defaultMessage="- Tournament starts"
+                      defaultMessage="- Staking Live"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q4span7"
@@ -212,11 +216,15 @@ const Roadmap = () => {
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q5span2"
-                      defaultMessage="- Expanding to new tournaments"
+                      defaultMessage="- New games and strategic alliances"
                   /><br/>
                   <FormattedMessage
                       id="roadmap-q5span3"
-                      defaultMessage="- Crypto Cup Mini Game Development"
+                      defaultMessage="- Esports coverage"
+                  /><br/>
+                  <FormattedMessage
+                      id="roadmap-q5span4"
+                      defaultMessage="- Unity Crypto Ball"
                   /><br/>
               </p>
             </div>
