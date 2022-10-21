@@ -1,7 +1,7 @@
 import { ethers } from 'ethers'
 import React ,{useState, useEffect, Suspense} from 'react'
 import Spinner from '../../../../spinner/Spinner'
-import { icoAbi, icoAddress, tokenAddresses } from '../../../../tiketBuy/homeTikets/utils'
+import { ERC20Abi, icoAbi, icoAddress, tokenAddresses } from '../../../../tiketBuy/homeTikets/utils'
 import NavTicket from '../../../../tiketBuy/NavTickets/NavTickets'
 import TimerPresaleToken from '../timerPresaleToken/TimerPresaleToken'
 import ConnectPresale from './connectPresale/ConnectPresale'
