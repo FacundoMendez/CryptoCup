@@ -21,7 +21,7 @@
 .boxPresale{
     padding: 3rem 7rem;
     position: relative;
-    top: 54%;
+    top: 55%;
     left: 50%;
     width: 75rem;
     transform: translate(-50%, -50%);
@@ -55,6 +55,7 @@
     font-size: 5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 5rem;
     transform:translateZ(50px) ;
     font-family:gilron;
     -webkit-background-clip: text;
