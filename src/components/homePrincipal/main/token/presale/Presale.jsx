@@ -97,6 +97,8 @@ const Presale = () => {
     }
 
     const buyTokens = async (amount, currency) => {
+      console.log(amount / 0.0038)
+      console.log(currency)
         if(contract !== undefined) {
 
           const tokenAddress = tokenAddresses[currency - 1].address;
