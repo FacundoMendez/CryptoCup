@@ -1,6 +1,7 @@
 import { ethers } from 'ethers'
 import React ,{useState, useEffect, Suspense} from 'react'
 import Spinner from '../../../../spinner/Spinner'
+import NoMetamask from '../../../../tiketBuy/homeTikets/codigoDescuento/popupsErrors/noMetamask/NoMetamask'
 import { ERC20Abi, icoAbi, icoAddress, tokenAddresses } from '../../../../tiketBuy/homeTikets/utils'
 import NavTicket from '../../../../tiketBuy/NavTickets/NavTickets'
 import TimerPresaleToken from '../timerPresaleToken/TimerPresaleToken'
@@ -17,7 +18,7 @@ const Presale = () => {
     const [contract, setContract] = useState(false);
     const [account, setAccount] = useState(undefined);
     const [signer, setSigner] = useState(undefined);
-
+    const [noMetamask, setNoMetamask] = useState(false)
     const [amountToBuy, setAmountToBuy] = useState(0);
 
     const [accumulated , setAccumulated] = useState(0)       //cantidad en $ 
@@ -90,9 +91,13 @@ const Presale = () => {
             setConnected(false);
   
             await changeChain();
+          } } else {
+            setNoMetamask(true)
+    
+            setTimeout(function(){
+              setNoMetamask(false) 
+            },5000)
           }
-  
-        }
   
     }
 
@@ -139,7 +144,9 @@ const Presale = () => {
   return (
     <Suspense fallback={Spinner}>
         <div className="containerPresale">
+
             <NavTicket/>
+            {noMetamask ? <NoMetamask noMetamask={noMetamask} /> : null}
             <div className="boxPresale">
                 
                 <h2>Presale 1</h2>
