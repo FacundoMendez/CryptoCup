@@ -133,10 +133,11 @@ const Presale = () => {
               }
             });
 
-          }
+            const tx = await contract.buyTokens(Math.round(amount / 0.0038), currency);
+            await tx.wait();
 
-          const tx = await contract.buyTokens(Math.round(amount / 0.0038), currency);
-          await tx.wait();
+          }
+          
         }
     }
 
