@@ -101,11 +101,16 @@ const Presale = () => {
       console.log(currency)
         if(contract !== undefined) {
 
-          const tokenAddress = tokenAddresses[currency - 1].address;
+          
+          const tokenAddress = tokenAddresses[currency].address;
           const tokenContract = await new ethers.Contract( tokenAddress , ERC20Abi , signer );
           const tokenDecimals = await tokenContract.decimals();
 
+          console.log(currency)
+          console.log(tokenAddress)
+
           const enoughBalance = await tokenContract.balanceOf(account[0]).then(res => {
+            console.log(res)
 
             if((res / (10 ** tokenDecimals)) < amount) {
               return false;
@@ -118,6 +123,7 @@ const Presale = () => {
 
 
             await tokenContract.allowance(account[0], "0xabFb604b655Bb34166a7da800b738D64c8aDdf4F").then(async res => {
+              console.log(res)
               if((res / (10 ** tokenDecimals)) < amount) {
                 const txAllowance = await tokenContract.approve("0xabFb604b655Bb34166a7da800b738D64c8aDdf4F", ethers.utils.parseEther("1000000")).catch(e => {
                   // Aca se tiene que mostrar un error de que el usuario rechazo la transaccion.
