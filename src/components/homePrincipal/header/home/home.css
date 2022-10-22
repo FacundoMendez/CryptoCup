@@ -105,8 +105,8 @@
 
 
 .btnPresale {
-  width: 16.4rem; /* 145px */
-  height: 5.6rem;   /* 60px */
+  width: 16.7rem; /* 145px */
+  height: 5.9rem;   /* 60px */
   margin: 0 3rem;
   text-align: center;
   cursor: pointer;
@@ -119,6 +119,7 @@
   animation: fireVision 2s infinite linear;
   transition: all .5s ease;
   border-radius: 8px;  
+
 }
 
 .btnPresale:hover{
@@ -149,20 +150,19 @@
   position: absolute;
   width: 15.4rem; /* 145px */
   height: 4.7rem;
-  top: 49.5%;
+  top: 50.3%;
   transform: translate(0 , -50%);
   z-index: 20 !important;
   border-radius: 8px;
-  background: linear-gradient(90.23deg,#5f3892 -1.47%,#511e6d 99.8%);
-  box-shadow: rgba(0, 0, 0, 0.432) 3px 3px 4px 0px inset, rgba(0, 0, 0, 0.432) -3px -3px 4px 1px inset;
-  border: 3px ridge rgba(0, 0, 0, 0.815);
+  background: rgb(12, 12, 12);
+  border: 3.7px ridge rgba(126, 126, 126, 0.815);
 }
 
 .btnPresale p{
   color: rgba(255, 255, 255, 0.63);
   text-shadow: 0 1px .4rem rgb(17, 17, 17);
   z-index: 22 !important;
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-family: qatar;
@@ -170,12 +170,11 @@
 }
 
 .btnPresale video {
-  width: 16.5rem; /* 145px */
-  height: 9rem;   /* 60px */
+  width: 17rem; /* 145px */
+  height: 10rem;   /* 60px */
   position: absolute;
   z-index: -1  !important;
   pointer-events: none;
-  opacity: 1;
   
 }
 

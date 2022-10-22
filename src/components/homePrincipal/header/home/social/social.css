@@ -31,9 +31,7 @@
     align-items: center;
     transition: all .5s ease-in-out;
     backdrop-filter: blur(3rem);
-    border: 2px groove #d19fffa6;
-    background: linear-gradient(90.23deg,#7444a1 -1.47%,#3c1d64 99.8%);
-    box-shadow: rgba(0, 0, 0, 0.432) 3px 3px 4px 0px inset, rgba(0, 0, 0, 0.432) -3px -3px 4px 1px inset;
+    border: 2px ridge #c07ffd9f;
 } 
 
 .social a:hover {
