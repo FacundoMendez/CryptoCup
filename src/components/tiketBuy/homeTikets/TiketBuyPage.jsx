@@ -83,10 +83,10 @@ const TiketBuyPage = () => {
 
   const [cantTicketsBasic, setCantTicketsBasic] = useState(1)
   const [cantTicketsBoost, setCantTicketsBoost] = useState(1)
-  const [priceTicketBasic, setPriceTicketBasic] = useState(20)
-  const [priceTicketBoost, setPriceTicketBoost] = useState(35)
-  const [priceTicketBasicDescuento, setPriceTicketBasicDescuento] = useState(16)
-  const [priceTicketBoostDescuento, setPriceTicketBoostDescuento] = useState(27)
+  const [priceTicketBasic, setPriceTicketBasic] = useState(10) /* 20 */
+  const [priceTicketBoost, setPriceTicketBoost] = useState(15) /* 35 */
+  const [priceTicketBasicDescuento, setPriceTicketBasicDescuento] = useState(8) /* 16 */
+  const [priceTicketBoostDescuento, setPriceTicketBoostDescuento] = useState(12) /* 27 */
   const [tokenOptionSelect, setTokenOptionSelect] = useState(4)
 
 
@@ -398,11 +398,11 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-basic' src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png"/* {tiketBasico} */ alt="Ticket Basic" />
                   <div className="priceBasic">
                       <div className="boxPrinceBasic">
-                        <h2 className='priceBasicOrigin'>${priceTicketBasic}</h2>
+                        <h2 className='priceBasicOrigin' data-badge="&nbsp;  2̶0     &nbsp; " >${priceTicketBasic}</h2>
                         <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                       <div className="boxPriceBasicDescuento">
-                        <h2 className='priceBasicDescuento'>${priceTicketBasic - ( 4 * cantTicketsBasic)}</h2>
+                        <h2 className='priceBasicDescuento'  >${priceTicketBasic - ( 4 * cantTicketsBasic)}</h2>
                       </div>
                   </div>
 
@@ -474,8 +474,8 @@ const TiketBuyPage = () => {
                             if (cantTicketsBasic > 1){
                               setCantTicketsBasic(cantTicketsBasic - 1) 
                             }
-                            if(priceTicketBasic >= 40){
-                              setPriceTicketBasic(priceTicketBasic - 20) 
+                            if(priceTicketBasic >= 20){  /* 40 */
+                              setPriceTicketBasic(priceTicketBasic - 10)  /* 20 */  
                             }
                             }}> - 
                         </button>
@@ -485,8 +485,8 @@ const TiketBuyPage = () => {
                         </div>
 
                         <button className='mas-basic' onClick={() => {
-                            if(priceTicketBasic >= 20){
-                              setPriceTicketBasic(priceTicketBasic + 20) 
+                            if(priceTicketBasic >= 10){  /* 20 */
+                              setPriceTicketBasic(priceTicketBasic + 10)  /* 20 */
                             }
                             setCantTicketsBasic(cantTicketsBasic + 1)
                           } }> + 
@@ -501,7 +501,7 @@ const TiketBuyPage = () => {
                   <img className='imgTicket imgTicket-boost' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBoost_rbpfe9.png"/* {tiketBoost} */ alt="Ticket Ladder" />
                   <div className="priceBoost">
                       <div className="boxPrinceBoost">
-                        <h2>${priceTicketBoost}</h2>
+                        <h2 className='priceBoostOrigin' data-badge="&nbsp;  3̶5  &nbsp; ">${priceTicketBoost}</h2>
                         <img className='imagenBanDescuentoBoost' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                   
@@ -577,8 +577,8 @@ const TiketBuyPage = () => {
                           if (cantTicketsBoost > 1){
                             setCantTicketsBoost(cantTicketsBoost - 1)  
                           }
-                          if(priceTicketBoost >= 70){
-                            setPriceTicketBoost(priceTicketBoost - 35) 
+                          if(priceTicketBoost >= 30){  /* 70 */
+                            setPriceTicketBoost(priceTicketBoost - 15)  /* 35 */
                           }
                           }}> - 
                         </button>
@@ -586,8 +586,8 @@ const TiketBuyPage = () => {
                             <p>{cantTicketsBoost}</p>
                         </div>
                         <button className='mas-boost' onClick={() => {
-                          if(priceTicketBoost >= 30){
-                            setPriceTicketBoost(priceTicketBoost + 35) 
+                          if(priceTicketBoost >= 15){ /* 30 */
+                            setPriceTicketBoost(priceTicketBoost + 15)  /* 35 */
                           }
                           setCantTicketsBoost(cantTicketsBoost + 1)
                           }}> + 

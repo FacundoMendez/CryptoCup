@@ -217,8 +217,9 @@
 .boxPrinceBasic_active{
     position: relative;
     color: rgb(230, 220, 255);
-    overflow: hidden;
     padding: .5rem;
+    left: -2rem; /* sacar */
+    top: .5rem;  /* sacar */
 }
 
 
@@ -227,6 +228,7 @@
     top: 49%;
     left: -.5rem;
     width: 120%;
+    height: .5rem;  /* sacar */
     transform: rotate(-30deg);
     opacity: 0; 
     display: none;
@@ -235,6 +237,7 @@
 .imagenBanDescuento_active{
     display: inline-block;
     opacity: 1;
+    filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgba(255, 145, 2, 0.74));
     transition: all .5s ease-in-out;
 }
 
@@ -259,8 +262,9 @@
 .boxPrinceBoost_active{
     position: relative;
     color: rgb(230, 220, 255);
-    overflow: hidden;
     padding: .5rem;
+    left: -2rem; /* sacar */
+    top: .5rem;  /* sacar */
 }
 
 .imagenBanDescuentoBoost{
@@ -268,6 +272,7 @@
     top: 49%;
     left: -.5rem;
     width: 120%;
+    height: .5rem;  /* sacar */
     transform: rotate(-30deg);
     opacity: 0; 
     display: none;
@@ -276,6 +281,7 @@
 .imagenBanDescuentoBoost_active{
     display: inline-block;
     opacity: 1;
+    filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgba(255, 145, 2, 0.74));
     transition: all .5s ease-in-out;
 }
 

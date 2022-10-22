@@ -5,6 +5,9 @@ const submitActiveFuncional = () =>{
     const priceBasic = document.querySelector(".priceBasic")
     const boxPrinceBasic = document.querySelector(".boxPrinceBasic")
 
+    const priceBasicOrigin = document.querySelector(".priceBasicOrigin")
+    const priceBoostOrigin = document.querySelector(".priceBoostOrigin")
+
     imagenBanDescuento.classList.add("imagenBanDescuento_active")
     boxPriceBasicDescuento.classList.add("boxPriceBasicDescuento_active")
     priceBasic.classList.add("priceBasic_active")
@@ -20,7 +23,8 @@ const submitActiveFuncional = () =>{
     boxPriceBoostDescuento.classList.add("boxPriceBoostDescuento_active")
     priceBoost.classList.add("priceBoost_active")
     boxPrinceBoost.classList.add("boxPrinceBoost_active")
-
+    priceBasicOrigin.classList.add("priceBoostOrigin_active")
+    priceBoostOrigin.classList.add("priceBasicOrigin_active")
 }
 
 export default submitActiveFuncional;

@@ -153,9 +153,7 @@
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
     inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-
-    
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); 
 }
 
 .priceBasic_active{
@@ -167,8 +165,49 @@
     font-size: 2rem;
     transition: all .5s ease-in-out;
 }
+.priceBasicOrigin , .priceBoostOrigin{
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1.4rem 0;
+    margin: 0;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); 
+}
+
 
 /* buttons buy */
+
+/* sacr */
+
+.priceBasicOrigin[data-badge] , .priceBoostOrigin[data-badge] {
+    position: relative;
+  }
+  .priceBasicOrigin[data-badge]:after , .priceBoostOrigin[data-badge]:after {
+    position: absolute;
+    right: -2rem;
+    top: -.5rem;
+    padding: 2px;
+    color: #fff;
+    background-color: #ff7a68c4;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 .5rem black;
+    content: attr(data-badge);
+  }
+
+  .priceBasicOrigin_active[data-badge] , .priceBoostOrigin_active[data-badge]{
+    font-size:3rem;
+    transition: all .5s ease-in-out;
+  }
+
 
 
 .wrapperBotton-Tickets {
@@ -473,7 +512,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    top: 0rem;
+    top: -8rem;
     width: 32%;
     left: 2rem;
 }
