@@ -32,8 +32,8 @@
     transition: all .5s ease-in-out;
     backdrop-filter: blur(3rem);
     border: 2px groove #d19fffa6;
-    background: linear-gradient(90.23deg,#c263fd70 -1.47%,#020103c2 99.8%);
-    box-shadow: rgba(0, 0, 0, 0.514) 3px 3px 6px 0px inset, rgba(0, 0, 0, 0.514) -3px -3px 6px 1px inset;
+    background: linear-gradient(90.23deg,#7444a1 -1.47%,#3c1d64 99.8%);
+    box-shadow: rgba(0, 0, 0, 0.432) 3px 3px 4px 0px inset, rgba(0, 0, 0, 0.432) -3px -3px 4px 1px inset;
 } 
 
 .social a:hover {

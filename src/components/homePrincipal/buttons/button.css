@@ -1,5 +1,5 @@
 .wrapperBotton{
-  padding: 1.1rem;
+  padding: 1.2rem;
   transition: all 0.5s ease;
   filter: drop-shadow( 0 0 10px rgba(191, 112, 255, 0.473)) brightness(140%);
   text-align: center;
@@ -7,9 +7,9 @@
   width: 22.5rem; /* 145px */
   height: 5.32rem;   /* 60px */
   border-radius: 8px;
-  background: linear-gradient(90.23deg,#5f3d74fb -1.47%,#251a35fd 99.8%);
+  background: linear-gradient(90.23deg,#511e6d -1.47%,#5f3892 99.8%);
   box-shadow: rgba(0, 0, 0, 0.432) 3px 3px 4px 0px inset, rgba(0, 0, 0, 0.432) -3px -3px 4px 1px inset;
-  border: 4px ridge rgba(0, 0, 0, 0.815);
+  border: 3.7px ridge rgba(0, 0, 0, 0.815);
 }
 
 
@@ -19,22 +19,15 @@
 }
 
 
-
 .btn p {
-  color: white;
-  font-size: 2rem;
-  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.63);
+  text-shadow: 0 1px .4rem rgb(17, 17, 17);
+  font-size: 1.9rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-family: qatarHeavy;
+  font-family: qatar;
   margin-top: -.2rem;
   padding: 0 1rem;
-  color: transparent;
-  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-  inset 0 -2px 5px 1px #9999ff,
-  inset 0 -1px 1px 3px #9999ff;
-  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
 }
 
 

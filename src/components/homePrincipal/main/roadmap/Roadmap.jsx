@@ -133,23 +133,23 @@ const Roadmap = () => {
                   <FormattedMessage
                       id="roadmap-q3span1"
                       defaultMessage="- Dapp Design and development"
-                  /><br/>
+                  /><span>✓</span><br/>
                   <FormattedMessage
                       id="roadmap-q3span2"
                       defaultMessage="- Official launch of the website"
-                  /><br/>
+                  /><span>✓</span><br/>
                   <FormattedMessage
                       id="roadmap-q3span3"
                       defaultMessage="- Ticket Sales"
-                  /><br/>
+                  /><span>✓</span><br/>
                   <FormattedMessage
                       id="roadmap-q3span4"
                       defaultMessage="- Airdrop 1"
-                  /><br/>
+                  /><span>✓</span><br/>
                   <FormattedMessage
                       id="roadmap-q3span5"
                       defaultMessage="- Friendly matches Testing"
-                  /><br/>
+                  /><span>✓</span><br/>
                   <FormattedMessage
                       id="roadmap-q3span6"
                       defaultMessage="- Airdrop 2"
