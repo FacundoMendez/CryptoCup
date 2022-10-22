@@ -169,7 +169,7 @@
     font-size: 4.5rem;
     letter-spacing: 2px;
     color: white;
-    padding: 1.4rem 0;
+    padding-top: 1.4rem; /* padding 1.4 */
     margin: 0;
     text-transform: uppercase;
     -webkit-background-clip: text;
