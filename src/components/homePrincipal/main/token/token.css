@@ -485,6 +485,10 @@
         top: 10.7rem;
         gap: 1rem;
     }
+
+    .tokenTitle h2 {
+       margin-top: 10rem;
+    }
     
     .box_left_token_prediction h3 , .box_right_token_prediction h3{
         font-size: 1.9rem;

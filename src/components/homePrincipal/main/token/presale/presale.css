@@ -564,25 +564,25 @@
 @media screen and (max-width:1440px) {
 
     .containerPresale{
-        height: 120vh;
+        height: 140vh;
         width: 100%;
     }
     
     .containerPresale::before{
         width: 100%;
-        height: 120vh;
+        height: 140vh;
         content: " ";
         top: 0rem;
         background-color: rgba(0, 0, 0, 0.568);
         position: absolute;
     }
     
-    
     .boxPresale{
-        padding: 2rem 6rem;
-        top: 55%;
+        padding: 1.5rem 6rem;
+        top: 54%;
         left: 50%;
-        gap: 1rem;
+        gap: .5rem;
+        filter: contrast(110%);
     }
 
     .boxPresale h2{
