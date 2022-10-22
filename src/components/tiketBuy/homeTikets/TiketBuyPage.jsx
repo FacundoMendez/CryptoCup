@@ -402,7 +402,7 @@ const TiketBuyPage = () => {
                         <img className='imagenBanDescuento' src={priceDescuento} alt="precio descuento banner " />
                       </div>
                       <div className="boxPriceBasicDescuento">
-                        <h2 className='priceBasicDescuento'  >${priceTicketBasic - ( 4 * cantTicketsBasic)}</h2>
+                        <h2 className='priceBasicDescuento'  >${priceTicketBasic - ( 2 * cantTicketsBasic)}</h2> {/* 4 */}
                       </div>
                   </div>
 
@@ -506,7 +506,7 @@ const TiketBuyPage = () => {
                       </div>
                   
                       <div className="boxPriceBoostDescuento">
-                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 7 * cantTicketsBoost) }</h2>
+                        <h2 className='priceBoostDescuento'>${priceTicketBoost - ( 3 * cantTicketsBoost) }</h2> {/* 7 */}
                       </div>
                   </div>
 
