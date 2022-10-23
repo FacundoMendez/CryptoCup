@@ -110,13 +110,11 @@
   margin: 0 3rem;
   text-align: center;
   cursor: pointer;
-  filter: drop-shadow( 0 0 5px rgba(182, 136, 255, 0.377)) brightness(140%);
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fireVision 2s infinite linear;
   transition: all .5s ease;
   border-radius: 8px;  
 
@@ -155,11 +153,11 @@
   z-index: 20 !important;
   border-radius: 8px;
   background: rgb(12, 12, 12);
-  border: 3.7px ridge rgba(126, 126, 126, 0.815);
+  border: 3.7px ridge rgba(170, 170, 170, 0.979);
 }
 
 .btnPresale p{
-  color: rgba(255, 255, 255, 0.63);
+  color: rgba(255, 255, 255, 0.801);
   text-shadow: 0 1px .4rem rgb(17, 17, 17);
   z-index: 22 !important;
   font-size: 2rem;
@@ -175,7 +173,6 @@
   position: absolute;
   z-index: -1  !important;
   pointer-events: none;
-  
 }
 
 .firegif{
