@@ -29,6 +29,21 @@
   padding: 0 1rem;
 }
 
+@media screen and (max-width:1440px) {
+
+  .wrapperBotton{
+    width: 19.8rem;
+    height: 5.8rem;
+  }
+
+  .btnPresale {
+    width: 16.8rem;
+    height: 6rem;
+  }
+
+  
+}
+
 
 @media screen and (max-width:480px){
   .btn p {
