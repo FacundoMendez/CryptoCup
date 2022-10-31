@@ -48,7 +48,7 @@ function NavHeader() {
                         <a href="/tickets"  className="nav-menu-link nav-link"> 
                             <FormattedMessage
                                 id="nav-tickets"
-                                defaultMessage="Tickets"
+                                defaultMessage="Ticket"
                             />
                         </a>
                     </li>

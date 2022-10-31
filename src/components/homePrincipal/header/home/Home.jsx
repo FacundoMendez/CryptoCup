@@ -43,7 +43,7 @@ const Home = () => {
               
               <div className="buttonsHome">
                 <a href="/tickets">
-                  <Button title="BUY TICKETS"/>          
+                  <Button title="BUY TICKET"/>          
                 </a>
                 <div className=" wrapperBottonPresale">
                   

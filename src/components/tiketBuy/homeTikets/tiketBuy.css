@@ -17,7 +17,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.38);
 }
 
 .containerTiketsBuy::-webkit-scrollbar-thumb{
@@ -91,7 +91,7 @@
 
 .imgTicket {
     width: 22rem;
-    filter: drop-shadow(0 0 40px rgba(138, 41, 230, 0.822)) contrast(95%) brightness(95%);
+    filter: drop-shadow(0 0 40px rgba(139, 41, 230, 0.589)) contrast(95%) brightness(95%);
     position: relative;
     z-index: -1;
     animation: ticketVolador 4s infinite linear;
@@ -106,7 +106,7 @@
   
     50% {
         transform: translate(0 , 0%) scale(1);
-        filter: drop-shadow(0 0 5px rgba(253, 253, 253, 0.479));
+        filter: drop-shadow(0 0 5px rgba(253, 253, 253, 0.288));
 
     }
 
@@ -411,7 +411,7 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
     padding-bottom: 2rem;
-    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.308));
+    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.247));
 }
 
 
