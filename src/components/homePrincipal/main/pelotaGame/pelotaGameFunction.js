@@ -24,14 +24,14 @@ const pelotaGameFunction = () => {
     let parado = false;
     let saltando = false;
     let tiempoHastaObstaculo = 2;
-    let tiempoObstaculoMin = 1.2;
-    let tiempoObstaculoMax = 3;
+    let tiempoObstaculoMin = 1.7;
+    let tiempoObstaculoMax = 5;
     let obstaculos = [];
     let tiempoHastaNube = 0.5;
     let tiempoNubeMin = 6;
-    let tiempoNubeMax = 12;
-    let maxNubeY = 280;
-    let minNubeY = 100;
+    let tiempoNubeMax = 20;
+    let maxNubeY = 300;
+    let minNubeY = 180;
     let nubes = [];
     let velNube = .5;
     let contenedor;
@@ -41,8 +41,8 @@ const pelotaGameFunction = () => {
     let gameOver;
 
     let tiempoHastaMoneda = 2;
-    let tiempoMonedaMin = .8;
-    let tiempoMonedaMax = 3;
+    let tiempoMonedaMin = 1.8;
+    let tiempoMonedaMax = 5;
     let monedaMinY = 5;
     let monedaMaxY = 320;
 
@@ -209,7 +209,7 @@ const pelotaGameFunction = () => {
     
     function CrearMoneda() {
         let moneda = document.createElement("div");
-        if ((Math.random() > .55) && (score >= 5)){
+        if ((Math.random() > .75) && (score >= 5)){
             contenedor.appendChild(moneda);
             moneda.classList.add("moneda");
             moneda.posX = contenedor.clientWidth;

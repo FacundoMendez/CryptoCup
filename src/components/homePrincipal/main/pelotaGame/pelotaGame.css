@@ -161,7 +161,7 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    z-index: 1;
+    z-index: 700;
     background: url("./src/token.png") no-repeat center center;
     animation: animarMoneda_game 3s linear infinite;
     filter: drop-shadow(0 0 1px black) contrast(110%) brightness(120%);

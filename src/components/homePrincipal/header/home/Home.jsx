@@ -48,7 +48,7 @@ const Home = () => {
                 <div className=" wrapperBottonPresale">
                   
                 <Suspense fallback={Spinner}>
-                  <a href="/presale">
+                  <a href="/">
                     <div className="btnPresale">
                       <p>       
                         <FormattedMessage

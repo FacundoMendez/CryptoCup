@@ -17,7 +17,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.200);
+    background-color: rgba(0, 0, 0, 0.400);
 }
 
 .containerTiketsBuy::-webkit-scrollbar-thumb{
@@ -62,7 +62,7 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
@@ -85,7 +85,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 35%;
+    width: 42%;
 }
 
 
@@ -411,6 +411,7 @@
     inset 0 -1px 1px 3px #9999ff;
     background-image: linear-gradient(160deg, #7a55ff, #c18aff, #d5b9ff, #ffffff, #d5b9ff, #c18aff, #7a55ff);
     padding-bottom: 2rem;
+    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.308));
 }
 
 
