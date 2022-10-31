@@ -24,10 +24,6 @@
     background: #34017796 ;
 }
 
-.containerTiketsBuy{
-    width: 100%;
-    object-fit: cover;
-}
 
 
 
@@ -64,60 +60,44 @@
 .flexTickets{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10rem;
     width: 100%;
     height: 100vh;
     z-index: 15;
-    
 }
 
 .flexTickets_active{
     z-index: -10;
 }
 
+
+
 /* tickets  */
-.ticketsSale{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 10rem;
-    z-index: 99999;
-}
+
 
 .boxTickets{
-    width: 50rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
     position: relative;
-    left: 0rem;
+    width: 35%;
 }
 
 
-
-
 .imgTicket {
-    width: 17rem;
-    filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.822));
+    width: 22rem;
+    filter: drop-shadow(0 0 40px rgba(138, 41, 230, 0.822)) contrast(95%) brightness(95%);
     position: relative;
     z-index: -1;
     animation: ticketVolador 4s infinite linear;
 }
 
-.particle-Tikets video{
-  width: 100%;
-  object-fit: cover;
-}
+
 
 @keyframes ticketVolador {
     0% {
@@ -126,6 +106,8 @@
   
     50% {
         transform: translate(0 , 0%) scale(1);
+        filter: drop-shadow(0 0 5px rgba(253, 253, 253, 0.479));
+
     }
 
     100% {
@@ -136,7 +118,7 @@
 
 /* prices */
 
-.priceBasic, .priceBoost{
+.priceBoost{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,17 +138,9 @@
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); 
 }
 
-.priceBasic_active{
-    font-size: 2rem;
-    transition: all .5s ease-in-out;
-}
 
-.priceBoost_active{
-    font-size: 2rem;
-    transition: all .5s ease-in-out;
-}
-.priceBasicOrigin , .priceBoostOrigin{
-    font-size: 4.5rem;
+.priceBoostOrigin{
+    font-size: 6.5rem;
     letter-spacing: 2px;
     color: white;
     padding-top: 1.4rem; /* padding 1.4 */
@@ -181,84 +155,32 @@
     background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); 
 }
 
-
-/* buttons buy */
-
-/* sacr */
-
-.priceBasicOrigin[data-badge] , .priceBoostOrigin[data-badge] {
-    position: relative;
-  }
-  .priceBasicOrigin[data-badge]:after , .priceBoostOrigin[data-badge]:after {
-    position: absolute;
-    right: -2rem;
-    top: -.5rem;
-    padding: 2px;
-    color: #fff;
-    background-color: #ff7a68c4;
-    font-size: 1.3rem;
-    border-radius: 20px;
-    letter-spacing: 1px;
-    text-shadow: 0 0 .5rem black;
-    content: attr(data-badge);
-  }
-
-  .priceBasicOrigin_active[data-badge] , .priceBoostOrigin_active[data-badge]{
-    font-size:3rem;
-    transition: all .5s ease-in-out;
-  }
-
-
-
-.wrapperBotton-Tickets {
-    position: relative;
-    text-decoration: none;
+.priceBoost_active{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin-left: -.7rem;
-    top: .8rem;
-    cursor: pointer;
-    
+    gap: 1rem;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1.4rem 0;
+    margin: 0;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+    inset 0 -2px 5px 1px #9999ff,
+    inset 0 -1px 1px 3px #9999ff;
+    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff); 
 }
 
-.btnButton-Tickets{
-    background-color: #07070793;
-}
-
-
-.btnButton-Tickets p {
-  font-size: 2.4rem;
-  line-height: 4rem;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-  inset 0 -2px 5px 1px #9999ff,
-  inset 0 -1px 1px 3px #9999ff;
-  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-  border: 2px solid rgb(255, 255, 255);
-  width: 16rem;
-  height: 6rem;
-  margin-top: -.4rem;
-  padding: 1rem .7rem;
-  
-}
-  
-.btnButton-Tickets:hover {
-    filter: drop-shadow( 0 0 1px white);
-    transition: all .5s ease-in-out;
-}
 
 
 /* button tokens */
 
 
-.wrapperBotton-ticketSale, .btn-ticketSaleBoost {
+.btn-ticketSaleBoost {
     position: relative;
     text-decoration: none;
     display: flex;
@@ -266,19 +188,15 @@
     align-items: center;
     border: 2px solid white;
     padding: .7rem;
-    top: -.2rem;
     cursor: pointer;
     width: 6rem;
-    height: 6rem;
+    height: 5rem;
     margin-left: -.2rem;
     background-color: #07070793;
-
 }
 
 
-
-
-.btn-ticketSale p , .btn-ticketSaleBoost p {
+.btn-ticketSaleBoost p {
   color: white;
   font-size: 2.4rem;
   letter-spacing: 3px;
@@ -339,47 +257,18 @@
     transition: all .5s ease-in-out;
 }
 
-.containerTiketsBuy__active{
-    background-color: #000000;
-}
 
-.radioToken{
-    position: fixed;
-    border: 5px groove rgba(167, 100, 255, 0.295);
-    background-color: rgba(0, 0, 0, 0.568);
-    backdrop-filter: blur(2rem);
-    width: 34rem;
-    height: 40rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    padding: 2rem;
-    border-radius: 15px;
-    z-index: 9999999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    box-shadow: 0 0 20px #b277ff49, 0 0 56px #b379ffa2, 0 0 105px #b688ff8e;
-    -webkit-backdrop-filter: blur(10px);
-}
 
-.radioToken-active{
-    opacity: 1;
-    visibility: visible;
-    transition: all .5s ease-in-out;
-}
 
 /* boost */
+
+
+
 
 .radioTokenBoost{
     position: fixed;
     border: 5px groove rgba(167, 100, 255, 0.295);
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.452);
     backdrop-filter: blur(2rem);
     width: 34rem;
     height: 40rem;
@@ -404,7 +293,6 @@
 .radioTokenBoost-active{
     opacity: 1;
     visibility: visible;
-
     transition: all .5s ease-in-out;
 }
 
@@ -492,10 +380,6 @@
 }
 
 
-.btn-ticketSale , .btn-ticketSaleBoost{
-    z-index: 10;
-    margin-top: 0rem;
-}
 
 /* text */
 
@@ -512,18 +396,15 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    top: -8rem;
-    width: 32%;
-    left: 2rem;
+    width: 40%;
 }
 
 .titleTicket h2{
-    font-size: 5.5rem;
+    font-size: 7.5rem;
     letter-spacing: 1px;
     -webkit-background-clip: text;
     background-clip: text;
     font-family: qatarHeavy;
-    line-height: 6rem;
     color: transparent;
     text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
     inset 0 -2px 5px 1px #9999ff,
@@ -532,15 +413,15 @@
     padding-bottom: 2rem;
 }
 
-.textoTicket{
-    width: 90%;
-}
 
 .textoTicket p{
     color: white;
     text-align: center;
     padding: 2rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    width: 60rem;
 }
 
 
@@ -588,57 +469,54 @@
 }
 
 
-  
-/* contador */
 
-.cantTicket-basic , .cantTicket-boost{
+/* buttons buy */
+
+
+.wrapperBotton-Tickets {
+    position: relative;
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap:5rem;
-    border:2px solid rgb(255, 255, 255);
-    padding: .5rem ;
-    position: relative;
-    overflow:hidden;
-    background-color: #07070793;
-    top:-1.6rem;
-    left: -.4rem;
-    width: 21.8rem;
-}
-
-.menos-basic, .mas-basic , .menos-boost, .mas-boost{
-    border-radius: 5px;
-    background-color: #f6efffdc;
-    border:none;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 2rem;
-    color: rgb(0, 0, 0);
+    top: 1.8rem;
     cursor: pointer;
+    
 }
 
-.menos-basic:active, .mas-basic:active , .menos-boost:active, .mas-boost:active{
-    filter: drop-shadow( 0 0 5px rgb(155, 48, 255)) brightness(130%);
+.btnButton-Tickets{
+    background-color: #07070748;
 }
 
-.contador-basic p , .contador-boost p{
-    font-size: 2.4rem;
-    font-weight: 700;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-    inset 0 -2px 5px 1px #9999ff,
-    inset 0 -1px 1px 3px #9999ff;
-    background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-    letter-spacing: 3px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+
+.btnButton-Tickets p {
+  font-size: 2.4rem;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
+  inset 0 -2px 5px 1px #9999ff,
+  inset 0 -1px 1px 3px #9999ff;
+  background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
+  border: 2px solid rgb(255, 255, 255);
+  width: 32rem;
+  height: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+  
+.btnButton-Tickets:hover {
+    filter: drop-shadow( 0 0 1px white);
+    transition: all .5s ease-in-out;
+}
+
+
 
 
 /* pantalla espera compra */
@@ -647,15 +525,14 @@
 .PopupEsperaBuyContainer{
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     background-color: #00000042;
     backdrop-filter: blur(5px);
     position: fixed;
     top: 0;
-    z-index: 9999999;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
     transition: all 1s ease-in-out;
 }
 
@@ -726,191 +603,32 @@
 
 
 @media screen and (min-width: 2550px){
-    .containerTiketsBuy{
-        width: 100%;
-        overflow-y: scroll;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    /* general */
-    
-    .flexTickets{
-        gap: 10rem;
-        width: 100%;
-        z-index: 15;
-    }
-    
-    /* tickets  */
-
-    .boxTickets{
-        width: 40%;
-        gap: 5rem;
-    }
-    
-    .imgTicket {
-        width: 35rem;
-    }
-    
-    /* text */
-
-    .text-tickets{
-        top: -10rem;
-        width: 40%;
-        margin-left: -2rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-        text-align: center;
-    }
-
-    .titleTicket h2{
-        font-size: 10rem;
-        line-height: 9rem;
-    }
-
-    .textoTicket p{
-        font-size: 3.5rem;
-        letter-spacing: 1.5px;
-        padding: 1rem;
-    }
+ 
 }
 
 
 @media screen and ( max-width:1440px) {
-    .containerTiketsBuy{
-        width: 100%;
+ 
+    .titleTicket h2 {
+        font-size: 6.5rem;
+    }
+    .textoTicket p {
+        font-size: 2rem;
     }
 
-    .radioTokenBoost-active {
-        top:58%;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
-        object-fit: cover;
-    }
-
-
-    
-
-    /* general */
-    
-    .flexTickets{
-        gap: 5rem;
-        width: 100%;
-    }
-    
-    /* tickets  */
-
-    .boxTickets{
-        width: 35%;
-    }
-    
     .imgTicket {
-        width: 12rem;
-        margin-top:6rem;
-    }
-    
-    /* text */
-
-    .text-tickets{
-        top: 3rem;
-        width: 40%;
-        text-align: center;
+        width: 19rem;
     }
 
-    .titleTicket{
-        width: 100%;
-        text-align: center;
+    .text-tickets {
+        width:50%;
     }
-
-    .titleTicket h2{
-        font-size: 4.5rem;
-        line-height: 5rem;
-        padding: 0;
-    }
-
-    .textoTicket p{
-        font-size: 1.8rem;
-        letter-spacing: 1.3px;
-        text-align: center;
-        margin-top: -2rem;
-
-    }
-
-    .btn-ticketSale-Connect p {
-        font-size: 2.4rem;
-    }
-
-    .containerTiketsBuy{
-        background-position: 100% 30% ;
-    }
-
-    /*  container tokens */
-    .radioToken {
-        top: 58%;
-    }
-
-    .btnButton-Tickets , .cantTicket-boost , .cantTicket-basic{
-        scale: .9;
-        top: -2rem;
-    }
-
-    .wrapperBotton-Tickets {
-        margin-left: -1.6rem;
-        top: 0.8rem;
-        cursor: pointer;
-        width: 100%;
-    }
-
-    .wrapperBotton-ticketSale, .btn-ticketSaleBoost {
-        padding: 0.7rem;
-        top: -0.29rem;
-        width: 5.3rem;
-        height: 5.3rem;
-        margin-left: -.9rem;
-    }
-
-    .wrapperBotton-ticketSale-Connect {
-        scale: .9;
-    }
-    /* precio */
-    
-    .priceBasic, .priceBoost{
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-        color: white;
-        padding-bottom: 0rem;
-        margin: 0;
-        text-transform: uppercase;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px #9999ff,
-        inset 0 -2px 5px 1px #9999ff,
-        inset 0 -1px 1px 3px #9999ff;
-        background-image: linear-gradient(160deg, #8f70ff, #c898ff, #d5b9ff, #ffffff, #d5b9ff, #c898ff, #8f70ff);
-    }
-
-
 }
 
 
 @media screen and ( max-width:1170px) {
 
-    .wrapperBotton-ticketSale, .btn-ticketSaleBoost {
-        padding: 0.7rem;
-        top: -0.2rem;
-        width: 5.3rem;
-        height: 5.35rem;
-        margin-left: -.9rem;
-    }
-
+  
 
     /* videos buy */
     .videoCompra{
@@ -921,208 +639,36 @@
         display: none;
     }
 
-    .PopupEsperaBuyContainer {
-        height: 100%;
-    }
+}
 
-    .containerTiketsBuy{
-        width: 100%;
-    }
+@media screen and (max-width: 1070px){
 
-    .text-tickets{
-        left: 0rem;
-    }
-    
-    .radioTokenBoost-active , .radioToken {
-        top: 70%;
-    }
-
-    .radioToken  {
-        top: 70%;
-    }
-
- 
-    .containerTiketsBuy{
-        width: 100%;
-        object-fit: cover;
-    }
-    
-    /* general */
-    
-    .flexTickets{
+    .flexTickets {
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: column-reverse;
-        align-items: center;
         flex-wrap: wrap;
-        gap: 25rem;
         width: 100%;
         height: 100%;
+        gap: 10rem;
+        margin-top:20rem;
         z-index: 15;
-        padding-bottom: 6rem;
     }
 
-    .sk-chase {
-        top: 15% ;
-    }
-    
-    /* tickets  */
-    .ticketsSale{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    
-    .boxTickets{
-        width: 40%;
-        gap:2rem;
-
-    }
-    
-    .imgTicket {
-        width: 14rem;
-    }
-
-    /* text */
-
-    .text-tickets{
-        top: 18rem;
-        width: 66%;
-        margin-left: 0rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-        text-align: center;
-    }
-
-    .titleTicket h2{
-        font-size: 5rem;
-        line-height: 5.5rem;
-    }
-
-    .textoTicket p{
-        font-size: 2rem;
-        letter-spacing: 1.5px;
-        padding: 1rem 6rem;
-    }
-
-    /* contador */
-
-    .boxBlurToken, .boxBlurTokenBoost {
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-    }
-}
-
-
-@media screen and (max-width: 800px){
-    .containerTiketsBuy{
-        width: 100%;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
-    }
-
-    .flexTickets{
-        gap: 20rem;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 3rem;
-    }
-    
-    /* tickets  */
-
-
-    /* text */
-
-    .text-tickets{
-        top: 18rem;
-        width: 85%;
-        margin-left: 0rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-    }
-
-    .titleTicket h2{
-        font-size: 5rem;
-        line-height: 5.5rem;
-    }
-
-    .textoTicket p{
-        font-size: 2rem;
-        letter-spacing: 1.5px;
-        padding: 1rem 0;
-    }
-
-        
-    .radioTokenBoost-active , .radioToken {
-        top: 70%;
+    .text-tickets {
+        width:100%;
     }
 
 }
 
 
-@media screen and (max-width: 600px){
-    .containerTiketsBuy{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .containerTiketsBuy{
-        width: 100%;
-    }
-    
-    /* general */
-    
-    .flexTickets{
-        gap: 20rem;
-        width: 100%;
-        height: 100%;
-        padding-bottom: 7rem;
-    }
 
-    /* text */
 
-    .text-tickets{
-        top: 18rem;
-        width: 95%;
-        margin-left: 0rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-    }
-
-    .titleTicket h2{
-        font-size: 5rem;
-        line-height: 5.5rem;
-    }
-
-    .textoTicket p{
-        font-size: 1.8rem;
-        letter-spacing: 1.5px;
-        padding: 1rem;
-    }
-
-    .btn-ticketSale p , .btn-ticketSaleBoost p{
-        font-size: 2.3rem;
-        padding-top: .8rem;
-      }
-
-      .imgTicket {
-        width: 17rem;
+@media screen and (max-width: 700px){
+    .textoTicket p {
+        width: 50rem;
     }
 }
 
@@ -1130,197 +676,72 @@
 
 @media screen and (max-width:480px){
 
-    .wrapperBotton-ticketSale {
-        top: -0.3rem;
+    .textoTicket p {
+        width: 40rem;
     }
 
-
-    /* general */
-    .wrapperBotton-ticketSale-Connect {
-        scale: 1;
-    }
-    .containerTiketsBuy{
-        width: 100%;
-    }
-    
-    .textoTicket{
-        width: 100%;
-    }
-
-    /* general */
-    
-    .flexTickets{
-        gap: 20rem;
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        padding-bottom: 10rem;
-    }
-    
-    /* tickets  */
-
-    
-    .boxTickets{
-        width: 40%;
-    }
-    
-    .imgTicket {
-        width: 16rem !important;
-        margin-top: 10rem;
-    }
-
-    
-    .flexTickets{
-        gap: 20rem;
-        width: 100%;
-        height: 100%;
-    }
-
-    .radioTokenBoost-active  {
-        top: 80%;
-    }
-
-    .radioToken {
-        top: 45%;
-    }
-    
-    /* tickets  */
-
-    
-    .boxTickets{
-        width: 40%;
-    }
-    
-    .imgTicket {
-        width: 18.9rem;
-    }
-
-    
-    /* text */
-
-
-    .text-tickets{
-        top: 18rem;
-        width: 95%;
-        margin-left: 0rem;
-    }
-
-    .titleTicket{
-        width: 100%;
-    }
-
-    .titleTicket h2{
-        font-size: 3.5rem;
-        line-height: 3.5rem;
-    }
-
-    .textoTicket p{
-        font-size: 2rem;
-        letter-spacing: 1px;
-        text-align: inherit;
-        margin-left: .5rem;
-        padding: 1rem;
-    }
-
-
-
-    /* button connect wallet */
-    
-  
-    .wrapperBotton-ticketSale-Connect {
-        position: relative;
-        padding-top: 1rem;
-    }
-    
-    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
-      width: 22.5rem;
-    }
-    
-    .btn-ticketSale-Connect p {
-      font-size: 1.8rem;
-      width: 100%;
-      position: absolute;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    
-      .btnButton-ticketSale-Connect:hover {
-          transform: scale(1.02);
-          filter: drop-shadow( 0 0 1px white);
-          transition: all .5s ease-in-out;
-      }
-
-
-}
-
-@media screen and (max-width:410px){
-
-    .wrapperBotton-ticketSale-Connect {
-        position: relative;
-        padding-top: 1rem;
-        margin-left: 6rem;
-    }
-
-}
-
-
-@media screen and (max-width:355px){
-
-
-    .text-tickets{
-        top: 18rem;
-        width: 95%;
-        margin-left: -1rem;
-    }
-
-    .textoTicket p{
-        font-size: 1.6rem;
-        letter-spacing: 1px;
-        text-align: inherit;
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    .radio {
-        padding: .3rem 0 ;
-    }
-    .titleTicket h2{
+    .titleTicket h2 {
         font-size: 5rem;
-        line-height: 5.5rem;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
     }
 
-
-    .radioToken {
-        width: 30rem;
-        height: 40rem;
-        padding: 3rem;
+    .btnButton-Tickets p {
+        font-size: 2.4rem;
+        width: 25rem;
     }
 
-    .radioTokenBoost {
-        width: 30rem;
-        height: 40rem;
-        padding: 3rem;
-    }
-
-    .radio p{
-        left: 2rem;
-    }
-
-    .LogoToken {
-        position: relative;
-        width: 4rem !important;
-        top: 0rem;
-        left: 3rem;
+    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+        width: 25rem;
     }
 }
 
 
-@media screen and (max-width:325px){
-    .text-tickets{
-        top: 18rem;
-        width: 95%;
-        margin-left: -3rem;
+@media screen and (max-width:400px){
+
+    .textoTicket p {
+        width: 35rem;
     }
 
+    .titleTicket h2 {
+        font-size: 4.5rem;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+
+    .btnButton-Tickets p {
+        font-size: 2.4rem;
+        width: 25rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+        width: 25rem;
+    }
 
 }
+
+
+@media screen and (max-width:350px){
+
+    .textoTicket p {
+        width: 32rem;
+    }
+
+    .titleTicket h2 {
+        font-size: 4rem;
+        letter-spacing: 1px;
+        padding-bottom: 2rem;
+    }
+
+    .btnButton-Tickets p {
+        font-size: 2.4rem;
+        width: 25rem;
+    }
+
+    .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
+        width: 25rem;
+    }
+
+}
+
+

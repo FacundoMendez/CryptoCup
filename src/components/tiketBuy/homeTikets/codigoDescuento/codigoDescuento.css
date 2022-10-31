@@ -281,7 +281,7 @@
 .imagenBanDescuentoBoost_active{
     display: inline-block;
     opacity: 1;
-    filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgba(255, 145, 2, 0.74));
+    filter: contrast(110%) brightness(110%) drop-shadow( 0 0 5px rgba(255, 82, 2, 0.247));
     transition: all .5s ease-in-out;
 }
 
@@ -293,7 +293,7 @@
 
 .boxPriceBoostDescuento_active{
     display: inline-block;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     opacity:1;
     transition: all .5s ease-in-out;
 }
@@ -306,13 +306,12 @@
 /* error no metamask */
 
 .errorNoMetamask{
-    width: 45rem;
     height: 5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
-    position: absolute;
-    overflow: hidden;
+    padding: 0 2rem;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,9 +325,13 @@
 }
 
 .errorNoMetamask p{
-    color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-weight: 500;
     letter-spacing: 1px;
+    transition: all 1ms ease-in-out;
+    color: white;
 }
 
 .errorNoMetamask_active{
@@ -341,13 +344,12 @@
 /* error codigo incorrecto */
 
 .errorCodigoIncorrecto{
-    width: 90%;
     height: 5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
-    position: absolute;
-    overflow: hidden;
+    position: fixed;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,7 +361,7 @@
 }
 
 .errorCodigoIncorrecto p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0 1rem;
     font-weight: 500;
@@ -378,13 +380,13 @@
 /* error no connect wallet */
 
 .errorNoConnectWallet{
-    width: 90%;
     height: 5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
     position: absolute;
-    overflow: hidden;
+    position: fixed;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,7 +398,7 @@
 }
 
 .errorNoConnectWallet p{
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0 1rem;
     font-weight: 500;
@@ -415,12 +417,12 @@
 /* error codigo vacio */
 
 .errorCodigoVacio{
-    width: 26rem;
     height: 4.5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
-    position: absolute;
+    position: fixed;
+    padding: 0 2rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -434,7 +436,7 @@
 }
 
 .errorCodigoVacio p{
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0 1rem;
     font-weight: 500;
@@ -453,13 +455,12 @@
 
 
 .errorCuponPropio{
-    width: 90%;
     height: 5rem;
     border-radius: 10px;
     background-color: #000000ec;
     backdrop-filter: blur(2rem);
-    position: absolute;
-    overflow: hidden;
+    position: fixed;
+    padding: 0 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,7 +477,7 @@
 }
 
 .errorCuponPropio p{
-    font-size: 1.55rem;
+    font-size: 2rem;
     text-align: center;
     padding: 0 1rem;
     font-weight: bold;
@@ -558,15 +559,9 @@
         right: 3rem;
     }
 
-    .priceBasic_active{
-        font-size: 1.5rem;
-        transition: all .5s ease-in-out;
-    }
+ 
     
-    .priceBoost_active{
-        font-size: 1.5rem;
-        transition: all .5s ease-in-out;
-    }
+  
     
 }
 
@@ -637,12 +632,7 @@
         right: 3rem;
     }
 
-    .priceBoostDescuento{
-        font-size: 4rem !important;
-    }
-    .priceBasicDescuento{
-        font-size: 4rem !important;
-    }
+
 }
 
 
@@ -686,7 +676,6 @@
     }
 
 
-
     /* input */
 
     .containerInputCupon input{
@@ -702,8 +691,6 @@
         position: relative;
         padding-top: 1rem;
         text-decoration: none;
-        margin-right: 0rem;
-        left: -3rem;
     }
 
     .errorCodigoIncorrecto{
@@ -716,15 +703,11 @@
         top: 16rem;
     }
     
-    
-    
 }
 
 
 
 @media screen  and (max-width: 355px){
-
-
 
     .boxCopyCupon{
         width: 6rem;
@@ -810,13 +793,6 @@
         left: 20rem;
     }
 
-    .wrapperBotton-ticketSale-Connect {
-        position: relative;
-        padding-top: 1rem;
-        text-decoration: none;
-        margin-right: 0rem;
-        left: -3rem;
-    }
     
         /* error codigo vacio */
         .errorCodigoVacio{

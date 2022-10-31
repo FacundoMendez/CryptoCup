@@ -10,7 +10,7 @@ import {FormattedMessage} from 'react-intl';
 const CodigoDescuento = ({connected,referralCode, copyActive, submitCodigoDescuento , checkRefCodeValid }) => {
 
 
-    if(submitCodigoDescuento){
+    if(submitCodigoDescuento && connected){
         submitActiveFuncional()   
     }
 
