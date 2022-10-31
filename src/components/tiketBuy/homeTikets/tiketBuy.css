@@ -64,7 +64,7 @@
 .flexTickets{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -87,20 +87,20 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10rem;
-    margin-top: 4rem;
+    margin-top: 10rem;
     z-index: 99999;
 }
 
 .boxTickets{
-    width: 40%;
+    width: 50rem;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    
+    position: relative;
+    left: 0rem;
 }
 
 
@@ -717,6 +717,14 @@
 
 
 
+  /* deshabilitar basic ticket buy */
+
+
+.priceBasic,  .imgTicket-basic , .wrapperBotton-ticketSale , .cantTicket-basic {
+    display: none;
+} 
+
+
 @media screen and (min-width: 2550px){
     .containerTiketsBuy{
         width: 100%;
@@ -967,8 +975,6 @@
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 8rem;
-        margin-left: 1rem;
     }
 
     
@@ -1035,11 +1041,7 @@
     }
     
     /* tickets  */
-    .ticketsSale{
-        gap: 6rem;
-        margin-left: 1rem;
-    }
-    
+
 
     /* text */
 
@@ -1156,10 +1158,7 @@
     }
     
     /* tickets  */
-    .ticketsSale{
-        gap: 3.5rem;
-        margin-top: -10rem;
-    }
+
     
     .boxTickets{
         width: 40%;
@@ -1198,10 +1197,7 @@
 
     
     /* text */
-    .ticketsSale{
-        flex-direction: column;
-        gap: 0rem;
-    }
+
 
     .text-tickets{
         top: 18rem;

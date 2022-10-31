@@ -391,7 +391,7 @@ const TiketBuyPage = () => {
           <div className="ticketsSale">
               <div className="boxBlurToken"></div>
               <div className="boxBlurTokenBoost"></div>
-              <div className="boxTickets">
+              <div className="boxTicketsa">
 
                  {/* ticket basic- descuentos aplicados */}
                  
@@ -410,7 +410,7 @@ const TiketBuyPage = () => {
                   {/* ticket basic- compra */}
 
                   <div className="wrapperBotton-Tickets">
-                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
+{/*                       <div className="btnButton-Tickets" onClick={async () => connected? await buyBasicTicket() : await login()}>
                           <p >{connected? 
                             <FormattedMessage
                                 id="ticketBuy-buy"
@@ -422,7 +422,7 @@ const TiketBuyPage = () => {
                               defaultMessage="CONNECT"
                             /> 
                           }</p>
-                      </div>
+                      </div> */}
                       
                       {/* seleccionar token */}
                       <div className="boxToken">
