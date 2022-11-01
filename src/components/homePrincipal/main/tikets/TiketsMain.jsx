@@ -34,7 +34,7 @@ const TiketsMain = () => {
             <p className='textDescripcionTikets'>
               <FormattedMessage
                 id="tickets-text"
-                defaultMessage="To be available to participate, you’ll need one of our NFT Tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access as a player, therefore you could use all the functions of the dapp!"
+                defaultMessage="To be available to participae, you’ll have two choices, the Basic Ladder and the Boost Ladder. The first one 'Basic Ladder' will allows you to play in a Free way. The second one 'Boost Ladder' will allows you to play a more inmersive tournament, accesing exclusively with the NFT Boost Ladder Ticket!"
               />
             </p>
         </div>
@@ -43,9 +43,7 @@ const TiketsMain = () => {
             <div className="tiketImg-basic" >
               <img className='tiketsPreview' src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_806,q_auto:best,w_354/v1660656671/CryptocupQatar/tickets/tiketBasic_ymmkrm.png" alt="ticket" onClick={() => setTiketClick(true)} />
             </div>
-            <a className='buttonBuyTicketLP_basic' href="/tickets">
-              <Button title="Buy Ticket"/>
-            </a>
+
           </div>
 
           <div className="titleTicket-home-basic">
@@ -60,7 +58,7 @@ const TiketsMain = () => {
 
                 <FormattedMessage
                   id="tickets-basicLadderText"
-                  defaultMessage="This ladder is designed for everyone who wants to compete in the simplest way, you only need your Basic Ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder!"
+                  defaultMessage="This Ladder is designed for everyone who wants to compete in a free way. You only need to log in with you Google Account and be ready to forecast the largest posible number of matches to earn points on this Ladder! "
                 />
                 <br /><br />
                 <FormattedMessage
@@ -87,7 +85,7 @@ const TiketsMain = () => {
                 <p className='text_boost_top'>
                   <FormattedMessage
                     id="tickets-boostLadderText1"
-                    defaultMessage="It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:"
+                    defaultMessage="It’s a Premium Ladder that grants you Access to special extra functions which will bring more value to your strategy, timing, visión and overall a more interesting competition. Joining this Ladder will unlock you: "
                   />
                 </p>
                 <ul className='stars'>
@@ -103,12 +101,7 @@ const TiketsMain = () => {
                       defaultMessage="Access to Multipliers"
                     />
                   </li>
-                  <li className='star3'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars3" /> 
-                    <FormattedMessage
-                      id="tickets-boostLadderStar3"
-                      defaultMessage="Advanced Predictions unlocked"
-                    />
-                  </li>
+
                   <li className='star4'><img  src= "https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_99,q_auto:eco,w_100/v1661557746/CryptocupQatar/tickets/star3d_prqb1b.png" alt="stars4" />  
                       <FormattedMessage
                         id="tickets-boostLadderStar4"
@@ -119,7 +112,7 @@ const TiketsMain = () => {
                 <p className='text_boost_bottom'>
                   <FormattedMessage
                       id="tickets-boostLaddertext2"
-                      defaultMessage="Test your skills on all matches of the world cup by accessing multipliers to climb faster. Increase your rewards with the CCT Token, access winning streaks and more!"
+                      defaultMessage="Test your skills on all matches of the world cup by accessing multipliers to climb faster. Access winning streaks and more!"
                     />
                 </p>
 

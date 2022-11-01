@@ -28,7 +28,7 @@ const Nfts = () => {
             <p className='textCardsNft'>
               <FormattedMessage
                 id="nfts-prizePooltext2"
-                defaultMessage="Each Ladder is going to accumulate USDT to its own pool every time a new user arrives, which will instantly be added to a huge pool prize!"
+                defaultMessage="Each Ladder is going to accumulate USDT in their own way. The Basic Ladder will acumulate a Prizepool based on the Token Sell Fee Comisions and having a Prizepool base of 100 USDT. In other hand we have the Boost Ladder which will accumulate USDT from the sales of the NFT Tickets. "
               />    
             </p>
             <br /> <br />
@@ -36,7 +36,7 @@ const Nfts = () => {
             <p className='textCardsNft textNft_top'>
               <FormattedMessage
                 id="nfts-prizePooltext"
-                defaultMessage="We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge."
+                defaultMessage="Also, we introduce you the OmniChain NFT’s, where the champions could redeem and sell in his favorite Marketplace without the need of a bridge."
               />    
             </p>
             <br /> <br />
@@ -66,7 +66,7 @@ const Nfts = () => {
       <p className='note_nfts'>
         <FormattedMessage
             id="note_nft"
-            defaultMessage="Note: The Prize Pool is Determined by the number of participants."
+            defaultMessage="Note: Basic Ladder Prizepool is determined by the sell fee comissions and the Boost Ladder Prizepool is determined by the number of participants of the Ladder."
           />
       </p>
 

@@ -36,19 +36,19 @@
 
 
     "tickets-title":"ABRA SEU CAMINHO ATÉ O TOPO DA TORNEIO",
-    "tickets-text":"Para estar disponível para participar, você precisará de um de nossos ingressos NFT. Você pode escolher entre “Tíquete de Torneio básico”, “Tíquete de Torneio Premium” ou ambos. Cada bilhete permite que você jogue o torneio correspondente e concederá seu acesso ao torneio como jogador, para que você possa usar todas as funções do dapp!",
+    "tickets-text":"Para posso participar, você terá duas opções, Basic Ladder e Boost Ladder. O primeiro 'Basic Ladder' permitirá que você jogue de graça. O segundo 'Boost Ladder' permitirá que você jogue um torneio mais imersivo, acessado exclusivamente com o NFT Boost Ladder Ticket!",
     
     "tickets-basicLadderTitle":"Torneio BÁSICA",
-    "tickets-basicLadderText":"Esta Torneio foi pensada para todos que querem competir da forma mais simples, você só precisa do seu ingresso básico adquirido e estar pronto para prever o maior número possível de partidas para ganhar pontos nesta Torneio",
-    "tickets-basicLadderText2":"Cada partida irá variar nos pontos dados aos participantes, com base nas probabilidades reais de ganhar/perder de cada equipe diferente e seu adversário.",
+    "tickets-basicLadderText":"Este torneio é projetado para todos que querem competir de graça. Você só precisa fazer login com sua conta do Google e estar pronto para prever o maior número possível de partidas para ganhar pontos neste torneio!",
+    "tickets-basicLadderText2":"Cada partida variará na pontuação concedida aos participantes, com base nas chances reais de vitória/perda de cada equipe diferente e de seu oponente.",
     
     "tickets-boostLadderTitle":"Torneio DE IMPULSO",
-    "tickets-boostLadderText1":"É uma Torneio premium que lhe dá acesso a funções extras especiais que trarão mais valor à sua estratégia, tempo, visão e, em geral, uma competição mais interessante. Juntar-se a esta Torneio irá desbloquear você:",
+    "tickets-boostLadderText1":"É um Torneio Premium que lhe dá acesso a recursos adicionais especiais que agregarão mais valor à sua estratégia, tempo, visão e competição geralmente mais interessante. Juntar-se a este Toreno desbloqueará você:",
     "tickets-boostLadderStar1":"Utilitário de token",
     "tickets-boostLadderStar2":"Acesso a multiplicadores",
     "tickets-boostLadderStar3":"Previsões avançadas desbloqueadas",
     "tickets-boostLadderStar4":"Recompensas da sequência de previsões",
-    "tickets-boostLaddertext2":"Teste suas habilidades em todas as partidas da copa do mundo acessando multiplicadores para subir mais rápido. Aumente suas recompensas com o Token CCT, acesse sequências de vitórias e muito mais!",
+    "tickets-boostLaddertext2":"Compita em todas as partidas da copa do mundo para ter acesso a multiplicadores, sequências de vitórias e muito mais!",
 
 
     "game-start":"começar",
@@ -57,17 +57,8 @@
     "game-gameOver":"fim de jogo",
 
     "referral-title":"Consulte para ganhar",
-    "referral-text":"O sistema de referência permitirá que você ganhe convidando pessoas para fazer parte da Crypto Cup! Ao comprar um bilhete, você receberá um link, que poderá compartilhar com quem quiser, fazendo com que eles ganhem um",
-    "referral-textSpan1":"ótimo desconto de 20%",
-    "referral-textSpan2":"na compra dos seus Tickets e",
-    "referral-textSpan3":"beneficiando você",
-    "referral-textSpan4":"com ",
-    "referral-textSpan5":"1 USDT",
-    "referral-textSpan6":"para cada bilhete básico que compram e",
-    "referral-textSpan7":"2 USDT",
-    "referral-textSpan8":"para cada bilhete de aumento que será enviado automaticamente para sua carteira",
-    "referral-textSpan9":"sem comissões",
-    "referral-textSpan10":"e pronto para gastar.",
+    "referral-text":"O sistema de referência permite que você ganhe convidando pessoas para fazer parte da Crypto Cup! Ao comprar um ingresso, você receberá um link, que poderá compartilhar com quem quiser, fazendo com que eles ganhem um EXCELENTE DESCONTO de 20% na compra do ingresso, e também beneficiando você com 1 USDT por cada ingresso Boost Ladder vendido no seu link. Esse valor será depositado automaticamente na sua carteira SEM COMISSÕES e pronto para gastar.",
+
 
     "referral-text2":"Comece a ouvir cedo com isso ",
     "referral-text2Span1":"ganha-ganha",
@@ -75,9 +66,9 @@
 
     "nfts-title":"Recompensas da competição",
     "nfts-prizePoolTitle":"Vencedores NFT's",
-    "nfts-prizePooltext":"apresentamos a você as NFTs omni chain, onde os campeões podem resgatar e vender em seu mercado favorito sem a necessidade de uma ponte.",
+    "nfts-prizePooltext":"Cada Ladder vai acumular USDT à sua maneira. A Escada Básica acumulará um Prêmio com base nas Comissões de Taxa de Venda de Tokens e com uma base de Prêmios de 100 USDT. Por outro lado, temos o Boost Ladder que acumulará USDT das vendas dos NFT Tickets.",
     "nfts-prizePooltext2":"Cada Ladder acumulará USDT em seu próprio pool cada vez que um novo usuário chegar, que será instantaneamente adicionado a um grande prêmio do pool!",
-    "note_nft":"Nota: A premiação é determinada pelo número de participantes." ,
+    "note_nft":"Nota: O fundo de prêmios da Basic Ladder é determinado pelas comissões da tarifa de venta. O fundo de prêmios do Boost Ladder é determinado pelo número de participantes do Ladder." ,
     "trailer-title":"ASSISTA O TRAILER",
 
 

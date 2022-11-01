@@ -164,8 +164,10 @@
     width: 100%;
     letter-spacing: 1.2px;
     font-weight:bolder;
+    line-height: 3.5rem;
     text-align:center;
     filter: drop-shadow(0 0 50px black);
+    text-shadow: 0 0 .8rem rgba(0, 0, 0, 0.842);
 }
 
 .spanColor{

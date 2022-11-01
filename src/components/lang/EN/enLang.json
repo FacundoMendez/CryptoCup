@@ -36,19 +36,19 @@
 
 
     "tickets-title":"GRIND YOUR WAY TO THE TOP OF THE LADDER",
-    "tickets-text":"To be available to participate, you’ll need one of our NFT Tickets. You can choose between “Basic Ladder Ticket”, “Premium Ladder Ticket” or both. Each ticket allows you to play the corresponding tournament and will grant your access as a player, therefore you could use all the functions of the dapp!",
+    "tickets-text":"To be available to participae, you’ll have two choices, the Basic Ladder and the Boost Ladder. The first one 'Basic Ladder' will allows you to play in a Free way. The second one 'Boost Ladder' will allows you to play a more inmersive tournament, accesing exclusively with the NFT Boost Ladder Ticket!",
     
     "tickets-basicLadderTitle":"BASIC LADDER",
-    "tickets-basicLadderText":"This ladder is designed for everyone who wants to compete in the simplest way, you only need your Basic Ticket acquired and be ready to forecast the largest possible number of matches to earn points on this ladder!",
+    "tickets-basicLadderText":"This Ladder is designed for everyone who wants to compete in a free way. You only need to log in with you Google Account and be ready to forecast the largest posible number of matches to earn points on this Ladder!",
     "tickets-basicLadderText2":"Each match will vary in the given points to the participants, based on the real probabilities on winning/losing of each different team and its adversary.",
     
     "tickets-boostLadderTitle":"BOOST LADDER",
-    "tickets-boostLadderText1":"It's a premium ladder that grants you access to special extra functions which will bring more value to your strategy, timing, vision and overall a more interesting competition. Joining this ladder will unlock you:",
+    "tickets-boostLadderText1":"It’s a Premium Ladder that grants you Access to special extra functions which will bring more value to your strategy, timing, visión and overall a more interesting competition. Joining this Ladder will unlock you: ",
     "tickets-boostLadderStar1":"Token utility",
     "tickets-boostLadderStar2":"Access to Multipliers",
     "tickets-boostLadderStar3":"Advanced Predictions unlocked",
     "tickets-boostLadderStar4":"Prediction Streak Rewards",
-    "tickets-boostLaddertext2":"Test your skills on all matches of the world cup by accessing multipliers to climb faster. Increase your rewards with the CCT Token, access winning streaks and more!",
+    "tickets-boostLaddertext2":"Test your skills on all matches of the world cup by accessing multipliers to climb faster. Access winning streaks and more!",
 
 
     "game-start":"Start",
@@ -57,17 +57,7 @@
     "game-gameOver":"GAME OVER",
 
     "referral-title":"Refer To Earn",
-    "referral-text":"The Referral System allows you to earn by inviting people to be a part of Crypto Cup! When buying a ticket you will be given a link, which you can share with whoever you want making them get a ",
-    "referral-textSpan1":"GREAT 20% DISCOUNT",
-    "referral-textSpan2":"oon their Ticket purchase, and also",
-    "referral-textSpan3":"BENEFITING YOU ",
-    "referral-textSpan4":"with ",
-    "referral-textSpan5":" 1 USDT",
-    "referral-textSpan6":" for each Basic Ticket and",
-    "referral-textSpan7":"2 USDT",
-    "referral-textSpan8":"for each Boost Ticket sold. That amount will be automatically deposited on your wallet",
-    "referral-textSpan9":"WITHOUT COMMISSIONS ",
-    "referral-textSpan10":"and ready to spend.",
+    "referral-text":"The Referral System allows you to earn by inviting people to be part of Crypto Cup! When buying a ticket you will be given a link, which you can share with whoever you want making them get a GREAT 20% DISCOUNT on their Ticket purchase, and also Benefiting you with 1 USDT for each Boost Ladder Ticket sold throw your link. That amount will be automatically deposite don your wallet WITHOUT COMISSIONS and ready to spend. ",
 
     "referral-text2":"Start to ear early with this ",
     "referral-text2Span1":"win-win",
@@ -75,9 +65,9 @@
 
     "nfts-title":"Competition Rewards",
     "nfts-prizePoolTitle":"Winners NFT's",
-    "nfts-prizePooltext":"We introduce you to omni chain NFTs, where the champions could redeem and sell in his favorite marketplace without the need of a bridge.",
-    "nfts-prizePooltext2":"Each Ladder will accumulate USDT in their own pool each time a new user arrives, which will be instantly added to a grand pool prize!",
-    "note_nft":"Note: The Prize Pool is Determined by the number of participants." ,
+    "nfts-prizePooltext":"Also, we introduce you the OmniChain NFT’s, where the champions could redeem and sell in his favorite Marketplace without the need of a bridge.",
+    "nfts-prizePooltext2":"Each Ladder is going to accumulate USDT in their own way. The Basic Ladder will acumulate a Prizepool based on the Token Sell Fee Comisions and having a Prizepool base of 100 USDT. In other hand we have the Boost Ladder which will accumulate USDT from the sales of the NFT Tickets.",
+    "note_nft":"Note: Basic Ladder Prizepool is determined by the sell fee comissions and the Boost Ladder Prizepool is determined by the number of participants of the Ladder." ,
     "trailer-title":"WATCH THE TRAILER",
 
 

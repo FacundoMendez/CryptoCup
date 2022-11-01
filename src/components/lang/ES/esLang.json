@@ -34,19 +34,19 @@
 
 
     "tickets-title":"ESCALA HACIA LA CIMA DE LAS TABLAS",
-    "tickets-text":"Para participar, necesitará uno de nuestros Tickets NFT. Puede elegir entre ' Ticket Básico ', ' Ticket Premium ' o ambos. Cada Ticket te permite jugar el torneo correspondiente!",
+    "tickets-text":"Para poder participar, tendrá dos opciones, Basic Ladder y Boost Ladder. 'Basic Ladder' te permitirá jugar de forma gratis. 'Boost Ladder' te permitirá jugar un torneo más inmersivo, ¡accediendo exclusivamente con el NFT Boost Ladder!",
     
     "tickets-basicLadderTitle":"TORNEO BASICO",
-    "tickets-basicLadderText":"Este Torneo está diseñado para todos los que quieran competir de la manera más sencilla, solo necesitas adquirir tu Ticket básico y estar listo para pronosticar la mayor cantidad de partidos posibles para ganar puntos en la tabla.",
+    "tickets-basicLadderText":"Este Torneo está diseñado para todos los que quieran competir de forma gratis. ¡Solo necesita iniciar sesión con su cuenta de Google y estar listo para pronosticar la mayor cantidad posible de partidos para ganar puntos en este torneo!",
     "tickets-basicLadderText2":"Cada partido variará en la puntuación otorgada a los participantes, en función a las probabilidades reales de ganar/perder de cada equipo diferente y su adversario.",
     
     "tickets-boostLadderTitle":"TORNEO PREMIUM",
-    "tickets-boostLadderText1":"Este Torneo Premium le otorga acceso a funciones adicionales especiales que aportarán más valor a su estrategia, sincronización, visión y, en general, una competencia más interesante. Unirse a esta Torneo te desbloqueará:",
+    "tickets-boostLadderText1":"Es un Torneo Premium que le otorga acceso a funciones adicionales especiales que aportarán más valor a su estrategia, visión y, en general, una competencia más interesante. Unirse a este Toreno te desbloqueará:",
     "tickets-boostLadderStar1":"Utilidad de token",
     "tickets-boostLadderStar2":"Acceso a Multiplicadores",
     "tickets-boostLadderStar3":"Predicciones avanzadas desbloqueadas",
     "tickets-boostLadderStar4":"Recompensas de la racha de predicción",
-    "tickets-boostLaddertext2":"Pon a prueba tus habilidades en todos los partidos de la copa del mundo accediendo a multiplicadores para escalar más rápido. Aumente sus recompensas con el token CCT, acceda a rachas ganadoras y más",
+    "tickets-boostLaddertext2":"Compite en todos los partidos de la copa del mundo accediendo a multiplicadores, rachas ganadoras y más!",
 
 
     "game-start":"Iniciar",
@@ -56,17 +56,8 @@
 
 
     "referral-title":"Invita para Ganar",
-    "referral-text":"¡El sistema de referencia le permitirá ganar al invitar a personas a ser parte de Crypto Cup! Al comprar una entrada se te facilitará un enlace, que podrás compartir con quien quieras para que obtenga un",
-    "referral-textSpan1":"gran descuento de 20%",
-    "referral-textSpan2":"en la compra de sus Tickets y",
-    "referral-textSpan3":"beneficiándote",
-    "referral-textSpan4":"con",
-    "referral-textSpan5":"1usd",
-    "referral-textSpan6":"por cada Ticket básico que compran y",
-    "referral-textSpan7":"2usdt",
-    "referral-textSpan8":"por cada Ticket Premium, que se enviará automáticamente a su billetera",
-    "referral-textSpan9":"sin comisiones ",
-    "referral-textSpan10":"Y listo para gastar.",
+    "referral-text":"¡El Sistema de referencia le permite ganar al invitar a personas a ser parte de Crypto Cup! Al comprar un Ticket, se le dará un enlace, que puede compartir con quien desee, haciéndoles obtener un GRAN DESCUENTO DE 20% en la compra de su Ticket, y también beneficiándolo a usted con 1 USDT por cada boleto de Boost Ladder vendido a través de su enlace. Ese monto será depositado automáticamente en tu billetera SIN COMISIONES y listo para gastar.",
+
 
     "referral-text2":"Comience a ganar temprano con esto",
     "referral-text2Span1":"ganar-ganar",
@@ -75,8 +66,8 @@
     "nfts-title":"Recompensas de la competencia",
     "nfts-prizePoolTitle":"Ganadores NFT",
     "nfts-prizePooltext":"¡Cada Ladder acumulará USDT en su propio grupo cada vez que llegue un nuevo usuario, que se agregará instantáneamente a un gran premio de grupo!",
-    "nfts-prizePooltext2":"Cada partido variará en los puntos otorgados a los participantes, en función de las probabilidades reales de ganar/perder de cada equipo diferente y su adversario.",
-    "note_nft":"Nota: El fondo de premios está determinado por el número de participantes." ,
+    "nfts-prizePooltext2":"Cada Ladder acumulará USDT a su manera. La Basic Ladder acumulará un Prizepool basado en las Comisiones de Tasa de Venta de Tokens y teniendo una base de Prizepool de 100 USDT. Por otro lado, la Boost Ladder, que acumulará USDT de las ventas de los boletos NFT.",
+    "note_nft":"Nota: El fondo de premios de la Basic Ladder está determinado por las comisiones de la tarifa de venta. El fondo de premios de Boost Ladder está determinado por el número de participantes de la Ladder." ,
     "trailer-title":"VER EL TRAILER",
 
     "roadmap-title":"ROADMAP",

@@ -33,20 +33,20 @@
 
 
     "tickets-title":"勇往直前",
-    "tickets-text":"要參與和參與，您需要一張我們的 NFT 門票。 您可以在“基本錦標賽門票”、“高級錦標賽門票”或兩者之間進行選擇。 每張門票都允許您參加相應的錦標賽，並授予您以玩家身份參加錦標賽的權限，因此您將能夠使用 Dapp 的所有功能！",
+    "tickets-text":"要可供參與者使用，您將有兩個選擇，基本階梯和加速階梯。 第一個（基本梯子）將允許您以自由方式進行遊戲。 第二個（Boost Ladder）將讓您參加更具沉浸感的錦標賽，僅使用 NFT Boost Ladder Ticket 入場！",
     
     "tickets-basicLadderTitle":"基本錦標賽",
-    "tickets-basicLadderText":"本次錦標賽專為希望以最簡單方式參賽的所有人而設計，您只需購買基本門票並準備好預測盡可能多的比賽即可在本次錦標賽中獲得積分。",
+    "tickets-basicLadderText":"每場比賽將根據每個不同球隊及其對手的贏/輸的真實概率，在給參與者的分數上有所不同。",
 
     "tickets-basicLadderText2":"每場比賽將根據每支不同球隊及其對手的實際輸贏賠率，給予參與者的分數有所不同。",
     
     "tickets-boostLadderTitle":"高級錦標賽",
-    "tickets-boostLadderText1":"這是一項高級錦標賽，您可以使用特殊的附加功能，為您的策略、時機、願景和通常更有趣的比賽增加更多價值。 參加本次錦標賽將解鎖您：",
+    "tickets-boostLadderText1":"這是一個高級階梯，讓您可以訪問特殊的額外功能，這將為您的策略、時機、願景和整體更有趣的比賽帶來更多價值。 加入此梯子將解鎖您：",
     "tickets-boostLadderStar1":"代幣效用",
     "tickets-boostLadderStar2":"使用乘數",
     "tickets-boostLadderStar3":"高級預測解鎖",
     "tickets-boostLadderStar4":"預測連勝獎勵",
-    "tickets-boostLaddertext2":"通過訪問乘數以更快地攀登，測試您在所有世界杯比賽中的技能。 使用 CCT 代幣增加您的獎勵，獲得連勝記錄等",
+    "tickets-boostLaddertext2":"通過訪問乘數以更快地攀登，在世界杯的所有比賽中測試您的技能。 訪問連勝記錄等等！",
 
 
     "game-start":"開始",
@@ -56,17 +56,7 @@
 
 
     "referral-title":"邀請贏",
-    "referral-text":"推薦系​​統將允許您通過邀請人們成為 Crypto Cup 的一部分來賺錢！ 當您購買門票時，您將獲得一個鏈接，您可以將其分享給任何您想要的人，以便他們獲得",
-    "referral-textSpan1":"20% 大折扣",
-    "referral-textSpan2":"在購買您的門票和",
-    "referral-textSpan3":"讓你受益",
-    "referral-textSpan4":"和",
-    "referral-textSpan5":"1 美元",
-    "referral-textSpan6":"他們購買的每張基本票和",
-    "referral-textSpan7":"2 美元",
-    "referral-textSpan8":"對於每張高級票，將自動發送到您的錢包",
-    "referral-textSpan9":"無佣金",
-    "referral-textSpan10":"並準備消費。",
+    "referral-text":"推薦系統允許您通過邀請人們成為 Crypto Cup 的一部分來賺錢！ 購買門票時，您將獲得一個鏈接，您可以與任何您想要的人分享，讓他們在購買門票時獲得 20% 的 GREAT 折扣，並且每售出一張 Boost Ladder Ticket 即可獲得 1 USDT 的收益，請拋出您的鏈接。 該金額將自動存入您的錢包，無需佣金並可以使用。",
 
     "referral-text2":"用這個早點開始賺錢",
     "referral-text2Span1":"雙贏",
@@ -74,9 +64,9 @@
 
     "nfts-title":"比賽獎勵",
     "nfts-prizePoolTitle":"NFT 贏家",
-    "nfts-prizePooltext":"引入全向鏈 NFT，冠軍可以在他們最喜歡的市場上贖回和出售，而無需橋樑。",
-    "nfts-prizePooltext2":"每次有新用戶到達時，每個天梯都會在自己的礦池中累積USDT，這將立即添加到大獎池中！",
-    "note_nft":"注：獎池由參與人數決定。" ,
+    "nfts-prizePooltext":"此外，我們向您介紹了 Omnichain NFT，冠軍可以在他最喜歡的市場中贖回和出售，而無需橋樑。",
+    "nfts-prizePooltext2":"每個梯子都會以自己的方式積累 USDT。 基本階梯將根據代幣銷售佣金累積一個獎池，獎池基數為 100 USDT。 另一方面，我們有 Boost Ladder，它將從 NFT 門票的銷售中積累 USDT。",
+    "note_nft":"注：基本天梯獎池由銷售佣金決定，Boost Ladder獎池由天梯參與人數決定。" ,
     
     "trailer-title":"觀看預告片",
 
