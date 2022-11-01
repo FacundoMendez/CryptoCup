@@ -664,6 +664,10 @@
         width:100%;
     }
 
+    .boxTickets{
+        margin-bottom: 18rem;
+    }
+
 }
 
 
@@ -697,6 +701,8 @@
     .wrapperBotton-ticketSale-Connect .btn-ticketSale-Connect {
         width: 25rem;
     }
+
+
 }
 
 

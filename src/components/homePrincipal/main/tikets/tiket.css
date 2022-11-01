@@ -296,6 +296,15 @@
     filter: drop-shadow(0 0 4px rgba(253, 137, 60, 0.63)) contrast(105%) brightness(150%) ;
 }
 
+.stars{
+    left: -5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
 .star1{
     margin-top: 3rem;
     bottom: 0;
@@ -461,39 +470,12 @@
         font-size: 1.6rem;
     }
 
-    .textoTicket-home {
-        gap: 23rem;
+
+    .stars{
+        gap: 0;
     }
 
 
-    .star1{
-        margin: 0;
-        top: -2rem;
-        left: 12%;
-        position: absolute;
-    }
-
-    .star2{
-        margin: 0;
-        top: 48.5rem;
-        left: 50%;
-        position: absolute;
-    }
-
-    .star4{
-        margin: 0;
-        top: 31.5rem;
-        left: 50%;
-        position: absolute;
-    }
-
-    .star3{
-        margin: 0;
-        top: 37rem;
-        left: 12%;
-        position: absolute;
-    }
-    
 
 }
 
@@ -554,33 +536,17 @@
         width: 60%;
     } 
 
-    .star1{
-        margin: 0;
-        top: -2rem;
-        left: 12%;
-    }
 
-    .star2{
-        margin: 0;
-        top: 57%;
-        left: 50%;
-    }
-
-    .star4{
-        margin: 0;
-        top: 36%;
-        left: 50%;
-    }
-
-    .star3{
-        margin: 0;
-        top: 37rem;
-        left: 12%;
-    }
-    
     .tiketsTitle{
         padding-top: 2rem;
         font-size: 5rem;
+    }
+
+
+    
+    .stars{
+        gap: 0;
+        left: 1rem;
     }
 
 }
@@ -639,9 +605,9 @@
         flex-wrap: wrap;
         gap: 10rem;
         position: relative;
-        width: 130vw;
         margin-top: 10rem;
         padding-bottom: 0rem;
+        width: 150%;
     }
 
     .containerTikets {
@@ -657,22 +623,10 @@
         order: 2;
     }
 
-    .star1{
-        left: 10%;
+    .stars{
+        gap: 0;
+        left: -2rem;
     }
-
-    .star2{
-        left: 60%;
-    }
-
-    .star4{
-        left: 60%;
-    }
-
-    .star3{
-        left: 10%;
-    }
-
     
     .textoTicket-home li {
         font-size: 1.4rem;
@@ -770,10 +724,6 @@
     }
 
 
-    .titleTicket-home-boost{
-        width: 50%;
-    }
-
     .division{
         display: none;
     }
@@ -787,26 +737,9 @@
         width: 170vw;
     }
 
-    .star1{
-        left: 2%;
-    }
-
-    .star2{
-        left: 53%;
-        top: 56.5%;
-    }
-
-    .star4{
-        left: 53%;
-        top: 38.2%;
-    }
-
-    .star3{
-        left: 2%;
-    }
-
+   
     .star1 img , .star2 img , .star3 img , .star4 img{
-        width: 6rem !important;
+        width: 5rem !important;
     }
 
    
@@ -821,6 +754,11 @@
         padding: 0 1rem;
     }
 
+    .textoTicket-home p {
+        text-align: center;
+        width: 35rem;
+    }
+
     .tiketsTitle h3{
         font-size: 3.2rem ;
         text-align: center;
@@ -829,6 +767,21 @@
         margin-top: 3rem;
     }
 
+    .boxTickets-Home-boost{
+        gap: 10rem;
+        width: 180%;
+    }
+
+    .stars {
+        left: 0rem;
+    }
+
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 13rem;
+        padding: 5.5rem 0;
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -851,6 +804,17 @@
         margin-left: -3.5rem;
     }
 
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 10rem;
+        padding: 5.5rem 0;
+        font-size: 1.3rem;
+    }
+
+    .textoTicket-home p {
+        text-align: center;
+        width: 30rem;
+    }
 
 }
 
@@ -886,6 +850,34 @@
         font-size: 1.3rem;
     }
 
+    
+    .textoTicket-home li {
+        gap: 2rem;
+        width: 10rem;
+        padding: 5.5rem 0;
+        font-size: 1.3rem;
+    }
+
+    .textoTicket-home p {
+        text-align: center;
+        width: 30rem;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapperBotton {
+        width: 17.5rem !important;
+        height: 6rem;
+    }
+    .btn p {
+        position: relative;
+        font-size: 1.7rem !important;
+        top: .3rem;
+    }
 
     .star1 img , .star2 img , .star3 img , .star4 img{
         width: 5rem !important;
