@@ -57,16 +57,7 @@ const tiketsScroll = () =>{
             }
         })
 
-        gsap.from(".buttonBuyTicketLP_basic",{
-            opacity:0,
-            delay:1,
-            duration:1,
-            scrollTrigger:{
-                trigger: ".titleTicket-home-basic",
-                start: "top 50%",
-                end: "bottom bottom",
-            }
-        })
+
 
         /* boot */
 
@@ -117,13 +108,6 @@ const tiketsScroll = () =>{
         })
 
         tl_boost.from(".star2",{
-            opacity:0,
-            scale:1.3,
-            duration:.3,
-
-        })
-
-        tl_boost.from(".star3",{
             opacity:0,
             scale:1.3,
             duration:.3,
