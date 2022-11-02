@@ -58,7 +58,7 @@ const TiketsMain = () => {
 
                 <FormattedMessage
                   id="tickets-basicLadderText"
-                  defaultMessage="This Ladder is designed for everyone who wants to compete in a free way. You only need to log in with you Google Account and be ready to forecast the largest posible number of matches to earn points on this Ladder! "
+                  defaultMessage="This Ladder is designed for everyone who wants to compete in a free way. You only need to log in with you Account and be ready to forecast the largest posible number of matches to earn points on this Ladder! "
                 />
                 <br /><br />
                 <FormattedMessage

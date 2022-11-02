@@ -409,6 +409,12 @@
         width: 60%;
         text-align: center;
     }
+
+    .note_nfts{
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+        width: 78%;
+    }
     
     .textNfts p{
         padding: 0rem 4rem;
@@ -538,6 +544,12 @@
     }
 
 
+    .note_nfts{
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+        width: 78%;
+        display: none;
+    }
 
 }
 

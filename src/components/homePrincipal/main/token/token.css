@@ -685,6 +685,16 @@
         top: 31rem;
         gap: 1rem;
     }
+
+    .tokenVideoMovil {
+        width: 55rem;
+        height: 55rem;
+        object-fit: cover;
+        filter: contrast(110%);
+        position: relative;
+        top: 37rem;
+        margin-bottom: 18rem;
+    }
         
         
     /* lines token */
@@ -823,6 +833,7 @@
 
     .tokenVideoMovil{
         margin-bottom: 15rem;
+
     }
     
     .grafico img{
