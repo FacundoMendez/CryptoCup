@@ -48,7 +48,7 @@ const Home = () => {
                 <div className=" wrapperBottonPresale">
                   
                 <Suspense fallback={Spinner}>
-                  <a href="/">
+                  <a href="https://www.pinksale.finance/launchpad/0x8eb7eC21e226418ab92E03D4122b28185e2C34FD?chain=BSC" target="_blank" rel='noreferrer'>
                     <div className="btnPresale">
                       <p>       
                         <FormattedMessage
