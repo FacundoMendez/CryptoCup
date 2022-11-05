@@ -58,6 +58,65 @@
 }
 
 
+/* box porcent tokens */
+
+.box_porcentTokens{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    row-gap: 0rem;
+}
+
+
+.porcent_token{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    border: 2px ridge rgba(118, 71, 179, 0.719);
+    backdrop-filter: blur(3px);
+    width: 30rem;
+    border-radius: 10px;
+    padding: 1rem 0;
+    background-color: rgba(70, 15, 141, 0.103);
+}
+
+.porcent_token strong{
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    text-shadow: 0 0 1rem rgba(255, 190, 146, 0.212);
+}
+
+.porcent_token p{
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+    font-family: qatar;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    text-shadow: 0 0 1rem rgba(255, 190, 146, 0.212);
+}
+
+
 .backToken{
     object-fit: cover;
     width: 100%;
@@ -73,7 +132,7 @@
     gap: 10rem;
     width: 100%;
     position: relative;
-    margin-top: 35rem;
+    margin-top: 25rem;
 }
 
 
@@ -100,8 +159,28 @@
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     text-shadow: 0 0 1rem rgba(255, 190, 146, 0.212);
-
 }
+
+
+.t_subtitle{
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    font-family: qatarHeavy;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+    inset 0 -2px 5px 1px rgb(204, 111, 34),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    text-shadow: 0 0 1rem rgba(255, 190, 146, 0.212);
+    margin-bottom: 2rem;
+}
+
+
+
+
 
 .grafico img{
     width: 75%;
@@ -115,7 +194,6 @@
     position: relative;
     width: 50%;
     cursor: grab;
-    margin-top: 10rem;
     filter: drop-shadow(0 0 20px rgba(255, 124, 1, 0.055)) contrast(105%) ;
 }
 
@@ -144,8 +222,8 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-    position: absolute;
-    top: 38rem;
+    position: relative;
+    top: 10rem;
     left: 50%;
     line-height: 4.1rem;
     width: 80%;
@@ -193,7 +271,7 @@
     inset 0 -2px 5px 1px rgb(204, 111, 34),
     inset 0 -1px 1px 3px rgba(250,227,133,1);
     background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
-   background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
+    background-image: linear-gradient(160deg, #fa9d51, #fcc250, #fef1a2, #fcc250, #f79647);
     text-align: center;
     line-height: 2rem;
 }
@@ -465,7 +543,7 @@
     .mark_token{
         font-size: 3rem !important; 
         letter-spacing: .5px;
-        top: 30rem;
+        top: 8rem;
         left: 50%;
         width: 100%;
     }
@@ -639,7 +717,6 @@
     .mark_token{
         font-size: 3rem;
         letter-spacing: .5px;
-        top: 30rem;
         left: 50%;
         width: 100%;
     }
@@ -863,7 +940,6 @@
 
     .tokens{
         width: 100%;
-        padding-top: 10rem;
         padding-bottom: 8rem;
     }
     
@@ -893,7 +969,7 @@
     .mark_token {
         font-size: 3rem !important;
         letter-spacing: .5px;
-        top: 50rem;
+        top: 15rem;
         left: 50%;
         width: 100%;
     }

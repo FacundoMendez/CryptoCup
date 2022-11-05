@@ -30,6 +30,13 @@ const TokenMain = () => {
         </div>
 
         <div className="boxText_token">
+
+            <p className='t_subtitle'>
+                <FormattedMessage
+                    id="token-subtitle2"
+                    defaultMessage="7% Fee on all sell orders"
+                />
+            </p> 
             
             <p className='t_1'>
                 <FormattedMessage
@@ -45,6 +52,28 @@ const TokenMain = () => {
                 />
             </p>
 
+
+            <div className="box_porcentTokens">
+                <div className="porcent_token">
+                    <strong>1%</strong>
+                    <p>Burn</p>
+                </div>
+                <div className="porcent_token">
+                    <strong>1%</strong>
+                    <p>Staking Rewards</p>
+                </div>
+                <div className="porcent_token">
+                    <strong>2%</strong>
+                    <p>Reserve (Used to prize pools)</p>
+                </div>
+                <div className="porcent_token">
+                    <strong>3%</strong>
+                    <p>Marketing and Development</p>
+                </div>
+            </div>
+
+
+
             <p className="mark_token">
                 <FormattedMessage
                     id="token-text3"
@@ -53,6 +82,8 @@ const TokenMain = () => {
             </p>
 
         </div>
+
+
         
         <div className="containerToken">
 

@@ -36,8 +36,13 @@ const tokenScroll = () =>{
             duration:.3,
             opacity:0,
         })
-        tl_token.from(".mark_token" , {
-            duration:.4,
+
+        tl_token.from(".t_2" , {
+            duration:.3,
+        })
+
+        tl_token.from(".box_porcentTokens" , {
+            duration:.3,
             opacity:0,
         })
 
