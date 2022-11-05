@@ -31,7 +31,11 @@
     "token-box_3":"Suministro en el listado",
     "token-box_4":"Capitalización de mercado inicial",
     "token-text-sec":"CCT se lanzará inicialmente como un activo BEP-20 en Binance Smart Chain para minimizar las tarifas y maximizar la accesibilidad. Se considerarán cadenas adicionales en función de la demanda y la utilidad del usuario.",
-
+    "token-subtitle2":"Tarifa del 7% en todas las órdenes de venta" ,
+    "token-porcent1":"Quemar" ,
+    "token-porcent2":"Recompensas de participación" ,
+    "token-porcent3":"Reserve (Usado para premios acumulados)" ,
+    "token-porcent4":"Marketing y Desarrollo" ,
 
     "tickets-title":"ESCALA HACIA LA CIMA DE LAS TABLAS",
     "tickets-text":"Para poder participar, tendrá dos opciones, Basic Ladder y Boost Ladder. 'Basic Ladder' te permitirá jugar de forma gratis. 'Boost Ladder' te permitirá jugar un torneo más inmersivo, ¡accediendo exclusivamente con el NFT Boost Ladder!",

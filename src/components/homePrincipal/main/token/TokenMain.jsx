@@ -56,19 +56,40 @@ const TokenMain = () => {
             <div className="box_porcentTokens">
                 <div className="porcent_token">
                     <strong>1%</strong>
-                    <p>Burn</p>
+                    <p>
+                        <FormattedMessage
+                            id="token-porcent1"
+                            defaultMessage="Burn"
+                        />
+                    </p>
                 </div>
                 <div className="porcent_token">
                     <strong>1%</strong>
-                    <p>Staking Rewards</p>
+                    <p>
+                        <FormattedMessage
+                            id="token-porcent2"
+                            defaultMessage="Staking Rewards"
+                        />
+                    </p>
+                    <p></p>
                 </div>
                 <div className="porcent_token">
                     <strong>2%</strong>
-                    <p>Reserve (Used to prize pools)</p>
+                    <p>
+                        <FormattedMessage
+                            id="token-porcent3"
+                            defaultMessage="Reserve (Used to prize pools)"
+                        />
+                    </p>
                 </div>
                 <div className="porcent_token">
                     <strong>3%</strong>
-                    <p>Marketing and Development</p>
+                    <p>
+                        <FormattedMessage
+                            id="token-porcent3"
+                            defaultMessage="Marketing and Development"
+                        />
+                    </p>
                 </div>
             </div>
 

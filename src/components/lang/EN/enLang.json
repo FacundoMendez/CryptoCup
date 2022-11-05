@@ -33,7 +33,11 @@
     "token-box_3":"Supply at listing",
     "token-box_4":"Initial Market Cap",
     "token-text-sec":"CCT will initially launch as a BEP-20 asset on Binance Smart Chain to minimize fees and maximize accessibility. Additional chains will be considered based on user demand and utility.",
-
+    "token-subtitle2":"7% Fee on all sell orders" ,
+    "token-porcent1":"Burn" ,
+    "token-porcent2":"Staking Rewards" ,
+    "token-porcent3":"Reserve (Used to prize pools)" ,
+    "token-porcent4":"Marketing and Development" ,
 
     "tickets-title":"GRIND YOUR WAY TO THE TOP OF THE LADDER",
     "tickets-text":"To be available to participae, you’ll have two choices, the Basic Ladder and the Boost Ladder. The first one 'Basic Ladder' will allows you to play in a Free way. The second one 'Boost Ladder' will allows you to play a more inmersive tournament, accesing exclusively with the NFT Boost Ladder Ticket!",
