@@ -155,7 +155,7 @@ const TokenMain = () => {
 
         <div className="grafico">
             <h2>Tokenomics</h2>
-            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1920/v1665631492/CryptocupQatar/token/PieChartDEFINITIVO_o2gxlb.png" alt="grafico" />
+            <img src="https://res.cloudinary.com/dvrxw8fbg/image/upload/c_scale,h_1080,q_auto:best,w_1920/v1667608031/CryptocupQatar/token/grafico_tbzeub.png" alt="grafico" />
         </div>
 
     </div>
