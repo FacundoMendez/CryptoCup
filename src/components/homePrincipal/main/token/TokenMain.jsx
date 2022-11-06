@@ -117,7 +117,7 @@ const TokenMain = () => {
                             defaultMessage="Listing Price"
                         />
                     </h3>
-                    <strong>0,0048 USDT</strong>
+                    <strong>0,005 USDT</strong>
                 </div>
                 <div className="box_text_left_bottom">
                     <h3 className="title_text_left">
@@ -126,7 +126,7 @@ const TokenMain = () => {
                             defaultMessage="Maximum supply"
                         />
                     </h3>
-                    <strong>800,000,000</strong>
+                    <strong>1,000,000,000</strong>
                 </div>
 
 
@@ -142,16 +142,16 @@ const TokenMain = () => {
                                 defaultMessage="Supply at listing"
                             />
                         </h3>
-                        <strong>10,500,000</strong>
+                        <strong>650,000</strong>
                     </div>
                     <div className="box_text_right_bottom ">
                         <h3 className="title_text_right">
                             <FormattedMessage
                                 id="token-box_4"
-                                defaultMessage="Initial Market Cap"
+                                defaultMessage="INITIAL F.D MARKET CAP"
                             />
                         </h3>
-                        <strong>152.000 USDT</strong>
+                        <strong>5.000.000</strong>
                     </div>
 
                     <div className="top_right_line"></div>
@@ -180,16 +180,16 @@ const TokenMain = () => {
                             defaultMessage="Supply at listing"
                         />
                     </h3>
-                    <strong>10,500,000</strong>
+                    <strong>650,000</strong>
                 </div>
                 <div className="box_text_right_bottom">
                     <h3 className="title_text_right">
                         <FormattedMessage
                             id="token-box_4"
-                            defaultMessage="Initial Market Cap"
+                            defaultMessage="INITIAL F.D MARKET CAP"
                         />
                     </h3>
-                    <strong>152.000 USDT</strong>
+                    <strong>5.000.000</strong>
                 </div>
                 
                 <div className="top_right_line"></div>
