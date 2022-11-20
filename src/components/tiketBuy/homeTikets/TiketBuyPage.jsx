@@ -439,11 +439,11 @@ const TiketBuyPage = () => {
 
                   {connected ? 
                       <div className="wrapperBotton-Tickets">
-                      <div className="btnButton-Tickets" onClick={async () => connected? await buyBoostTicket() : await login()}>
+                      <div className="btnButton-Tickets" style={{backgroundColor:"#55555580", cursor:"default"}} /* onClick={async () => connected? await buyBoostTicket() : await login()} */>
                           <p>
                                 <FormattedMessage
                                     id="ticketBuy-buy"
-                                    defaultMessage="BUY"
+                                    defaultMessage="Sold Out"
                                 /> 
                           </p>
                       </div>
