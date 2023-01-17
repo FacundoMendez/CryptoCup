@@ -1,12 +1,100 @@
 import React, {useEffect} from 'react'
 import "./roadmap.css"
-import roadmapScroll from './roadmapScroll'
 import {FormattedMessage} from 'react-intl';
+import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Roadmap = () => {
 
   useEffect(()=>{
+
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+        
+    const roadmapScroll = () =>{
+
+
+      if (!isMobile()) {
+
+          gsap.registerPlugin(ScrollTrigger); 
+
+          gsap.from(".t1",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".containerTitle_roadmap",
+              start: "top center",
+              end: "bottom bottom",
+            }
+          })
+
+          gsap.from(".t2",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".t1",
+              start: "top end",
+              end: "bottom bottom",
+            }
+          })
+
+
+          gsap.from(".t3",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".t2",
+              start: "top end",
+              end: "bottom bottom",
+            }
+          })
+
+
+          gsap.from(".t4",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".t3",
+              start: "top end",
+              end: "bottom bottom",
+            }
+          })
+
+          
+          gsap.from(".t5",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".t4",
+              start: "top end",
+              end: "bottom bottom",
+            }
+          })
+
+          gsap.from(".t6",{
+            opacity:0,
+            duration:.2,
+            scrollTrigger:{
+              trigger: ".t5",
+              start: "top end",
+              end: "bottom bottom",
+            }
+          })
+
+      }
+
+    }
+      
     roadmapScroll()
+
+    return () => {
+      roadmapScroll()
+      isMobile()
+    }
+
+
   },[])
   
   return (

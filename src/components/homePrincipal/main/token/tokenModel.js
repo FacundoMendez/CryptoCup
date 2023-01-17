@@ -2,6 +2,8 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import tokenModelo from "./src/models/TokenModel.glb"
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+
 
 const tokenModel = () => {
 
@@ -60,8 +62,12 @@ const tokenModel = () => {
 
 
         let tokenModelDorada
-
+        const dracoLoader = new DRACOLoader()
+        dracoLoader.setDecoderPath('/draco/')
         const gltfLoader = new GLTFLoader()
+        gltfLoader.setDRACOLoader(dracoLoader)
+
+
         gltfLoader.load(tokenModelo,
             (gltf) =>
             {
@@ -112,7 +118,7 @@ const tokenModel = () => {
 
         /* OPTIMIZACION */
         
-/*         gltfLoader.verticesNeedUpdate = true; 
+        gltfLoader.verticesNeedUpdate = true; 
         gltfLoader.elementsNeedUpdate = true; 
         gltfLoader.morphTargetsNeedUpdate = true; 
         gltfLoader.uvsNeedUpdate = true;
@@ -120,7 +126,7 @@ const tokenModel = () => {
         gltfLoader.colorsNeedUpdate = true; 
 
         gltfLoader.needsUpdate = true
- */
+
     }
 }
 

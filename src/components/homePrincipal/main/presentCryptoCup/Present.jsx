@@ -1,13 +1,87 @@
 import React, {useEffect, lazy} from 'react'
 import "./present.css"
-import presentScroll from './presentScroll'
+import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import VanillaTilt from "vanilla-tilt";
+
 import {FormattedMessage} from 'react-intl';
 const ButtonFloatTickets = lazy(() => import ("./ButtonFloatTickets"))
 
 const TournamentMain = () => {
 
   useEffect(() =>{
-    presentScroll()
+
+
+      function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+
+      const tournamentScroll = () =>{
+
+        if (!isMobile()) {
+              VanillaTilt.init(document.querySelectorAll(".boxPresale"), {
+                  max:.5,
+                  speed: 400,
+                  perspective: 300,
+                  glare: true,
+                  "max-glare": 0.02,
+              });
+              
+            gsap.registerPlugin(ScrollTrigger);
+        
+                let tl_present = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: ".boxTournament",
+                        start: "top center",
+                        end: "bottom bottom",
+                    }
+                })
+
+                tl_present.from(".containerTexts",{
+                    opacity:0,
+                })
+
+                gsap.from(".backPresentacion",{
+                    opacity:0,
+                    duration: 3,
+                    scrollTrigger:{
+                        trigger: ".boxTournament",
+                        start: "top center",
+                        end: "bottom bottom",
+                    }
+                })
+
+
+                let tl_logoPresent = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: ".subTitlePrize",
+                        start: "top -100",
+                        end: "bottom bottom",
+              
+                    }
+                })
+
+                tl_logoPresent.from(".logoContainer",{
+                        y: 60,
+                        opacity:0,
+                })
+
+                tl_logoPresent.from(".boxButtonTicketBuy",{
+                    y: 60,
+                    opacity:0,
+            })     
+        }
+        
+    }
+
+    tournamentScroll()
+
+    return () => {
+      tournamentScroll()
+      isMobile()
+
+    }
+
   },[])
 
   return (

@@ -1,16 +1,136 @@
-import React, {Suspense, useEffect, useState} from 'react'
+import React, {Suspense, useEffect} from 'react'
 import "./token.css"
-import tokenScroll from './tokenScroll'
 import {FormattedMessage} from 'react-intl';
 import tokenModel from "./tokenModel"
 import Spinner from '../../../spinner/Spinner'
 import TokensReflecs from './tokensReflects/TokensReflecs';
+import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+
+
 const TokenMain = () => {
 
     useEffect(()=>{
+
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        
+        const tokenScroll = () =>{
+
+            if (!isMobile()) {
+
+                gsap.registerPlugin(ScrollTrigger); 
+
+                let tl_token = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: ".tokens",
+                        start: "top 50%",
+                        end: "bottom bottom",
+                    }
+                })
+
+                tl_token.from(".tokenTitle" , {
+                    opacity:0,
+                })
+
+                tl_token.from(".boxText_token" , {
+                    duration:.3,
+                    opacity:0,
+                })
+                tl_token.from(".t_1" , {
+                    duration:.3,
+                    opacity:0,
+                })
+                tl_token.from(".t_2" , {
+                    duration:.3,
+                    opacity:0,
+                })
+
+                tl_token.from(".t_2" , {
+                    duration:.3,
+                })
+
+                tl_token.from(".box_porcentTokens" , {
+                    duration:.3,
+                    opacity:0,
+                })
+
+
+                let tl_token2 = gsap.timeline({
+                    scrollTrigger:{
+                        trigger: ".containerToken",
+                        start: "top 50%",
+                        end: "bottom bottom",
+                    }
+                })
+
+                tl_token2.from(".tokenWebGl" , {
+                    opacity:0,
+                    scale:0,
+                    duration:1
+                })
+
+                tl_token2.from(".containerTokenReflect" , {
+                    opacity:0,
+                    duration:.2,
+                    scale:0,
+                })
+                
+
+                tl_token2.from(".top_left_line" , {
+                    duration:.2,
+                    opacity:0,
+                })
+                tl_token2.from(".box_left_token_prediction" , {
+                    duration:.2,
+                    opacity:0,
+                })
+
+                tl_token2.from(".bottom_left_line" , {
+                    duration:.2,
+                    opacity:0,
+                })
+                tl_token2.from(".box_text_left_bottom" , {
+                    duration:.2,
+                    opacity:0,
+                })
+
+
+                tl_token2.from(".top_right_line" , {
+                    duration:.2,
+                    opacity:0,
+                })
+                tl_token2.from(".box_text_right_top" , {
+                    duration:.2,
+                    opacity:0,
+                })
+                tl_token2.from(".bottom_right_line" , {
+                    opacity:0,
+                    duration:.2,
+                })
+                tl_token2.from(".box_text_right_bottom" , {
+                    duration:.2,
+                    opacity:0,
+                })
+
+                tl_token2.from(".comment_token" , {
+                    opacity:0,
+                })
+
+            }
+
+        }
+
+
         tokenModel()
         tokenScroll()
 
+        return () => {
+            tokenScroll()
+            tokenModel()
+        }
       
     },[])
 

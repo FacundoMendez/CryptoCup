@@ -1,16 +1,114 @@
 import React,{useEffect} from 'react'
 import "./nfts.css"
-import nftScroll from "./nftScroll"
-import cardsFuncional from './cardsFuncional'
-import effectPool from './effectPool'
 import {FormattedMessage} from 'react-intl';
+import gsap from "gsap";
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollMagic from "scrollmagic"
+import VanillaTilt from "vanilla-tilt"
+
 
 const Nfts = () => {
 
   useEffect(()=> {
-    nftScroll()
+
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+
+    const effectPool = () =>{
+      var controller = new ScrollMagic.Controller();
+  
+      new ScrollMagic.Scene({
+          triggerElement: ".event.event2",
+          triggerHook: "onEnter",
+          duration: "100%"
+      }).setPin(".events-page .event.event1 .pinWrapper",{
+          pushFollowers: false
+      }).addTo(controller);
+      
+      new ScrollMagic.Scene({
+          triggerElement: ".event.event2",
+          triggerHook: "onEnter",
+          duration: "100%"
+      }).setPin(".events-page .event.event2 .pinWrapper",{
+          pushFollowers: false
+      }).addTo(controller);
+      
+  }
+  
+
+    
+  const cardsFuncional = () => {
+
+    if (!isMobile()) { 
+        VanillaTilt.init(document.querySelectorAll(".tiketImg-basic"), {
+            max: 25,
+            speed: 1000,
+            "max-glare":1,
+        });
+        
+        VanillaTilt.init(document.querySelectorAll(".tiketImg-boost"), {
+            max: 25,
+            speed: 1000,
+            "max-glare":1,
+        });
+
+    } 
+    
+  }
+
+
+  const effetAnimate = () => {
+
+  
+    if (!isMobile()) {
+  
+        gsap.registerPlugin(ScrollTrigger); 
+  
+  
+        let tl_nftsCopas = gsap.timeline({
+            scrollTrigger:{
+                trigger: ".containerWins",
+                start: "top center",
+                end: "bottom bottom",
+            }
+        })
+  
+  
+        tl_nftsCopas.from(".rockgrande",{
+            opacity:0,
+            top: 200,
+        })
+  
+        
+        tl_nftsCopas.from(".container_card",{
+            opacity:0,
+            duration:1,
+            y: 120,
+        })
+        
+        tl_nftsCopas.from(".fondoRock",{
+            opacity:0,
+            scale:.1,
+            top: 200,
+        })
+  
+    }
+  
+  }
     cardsFuncional()
     effectPool()
+    effetAnimate()
+  
+    return () => {
+      effectPool()
+      effetAnimate()
+      cardsFuncional()
+      isMobile()
+
+    }
+
   },[])
 
   return (

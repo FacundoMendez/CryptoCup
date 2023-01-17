@@ -1,18 +1,36 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import pelotaGameFunction from './pelotaGameFunction'
 import "./pelotaGame.css"
 import {FormattedMessage} from 'react-intl';
 
+
 const PelotaGame = () => {
 
     let scoreMax = localStorage.getItem("scoreMax")
+
+    const [isPlay , setIsPlay] = useState(false)
+
+    const handlerPlay = () => {
+      setIsPlay(!isPlay)
+    }
+
+    useEffect(() => {
+
+      if(isPlay){
+        pelotaGameFunction()
+      }
+
+      return () => {
+        pelotaGameFunction()
+      }
+    },[isPlay])
 
   return (
 
     <div>
         <div className="contenedor">
 
-            <div className="StartGame" onClick={pelotaGameFunction}>
+            <div className="StartGame" onClick={handlerPlay}>
               <p>
                 <FormattedMessage
                   id="game-start"

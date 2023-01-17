@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import ballModel from "./src/models/PelotaGod.glb"
-
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 
 const navBallModel = () => {
 
@@ -50,8 +50,12 @@ const navBallModel = () => {
         scene.add(camera)
 
         let modelBall
-
+        
+        const dracoLoader = new DRACOLoader()
+        dracoLoader.setDecoderPath('/draco/')
         const gltfLoader = new GLTFLoader()
+        gltfLoader.setDRACOLoader(dracoLoader)
+
         gltfLoader.load(ballModel,
             (gltf) =>
             {
@@ -98,7 +102,7 @@ const navBallModel = () => {
 
 
         /* OPTIMIZACION */
-/*         
+        
         gltfLoader.verticesNeedUpdate = true; 
         gltfLoader.elementsNeedUpdate = true; 
         gltfLoader.morphTargetsNeedUpdate = true; 
@@ -107,7 +111,7 @@ const navBallModel = () => {
         gltfLoader.colorsNeedUpdate = true; 
 
         gltfLoader.needsUpdate = true
- */
+
     }
 
 
