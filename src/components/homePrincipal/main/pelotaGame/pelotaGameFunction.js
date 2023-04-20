@@ -1,5 +1,5 @@
 const pelotaGameFunction = () => {
-    window.addEventListener('keydown', (e) => {  
+  window.addEventListener('keydown', (e) => {  
         if (e.keyCode === 32 && e.target === document.body) {  
           e.preventDefault();  
         }  
@@ -8,6 +8,7 @@ const pelotaGameFunction = () => {
       const StartGame = document.querySelector(".StartGame")
       let pelotaGame = document.querySelector(".pelota_game")
       const restart = document.querySelector(".restart")
+      const cono = document.querySelectorAll(".cono")
 
 
     let sueloY = 12;
@@ -24,16 +25,17 @@ const pelotaGameFunction = () => {
     let parado = false;
     let saltando = false;
     let tiempoHastaObstaculo = 2;
-    let tiempoObstaculoMin = 1.7;
-    let tiempoObstaculoMax = 5;
+    let tiempoObstaculoMin = 1.2;
+    let tiempoObstaculoMax = 3;
+    let obstaculoPosY = 16;
     let obstaculos = [];
     let tiempoHastaNube = 0.5;
-    let tiempoNubeMin = 6;
-    let tiempoNubeMax = 20;
-    let maxNubeY = 300;
-    let minNubeY = 180;
+    let tiempoNubeMin = 0.7;
+    let tiempoNubeMax = 6.7;
+    let maxNubeY = 270;
+    let minNubeY = 100;
     let nubes = [];
-    let velNube = .5;
+    let velNube = 0.5;
     let contenedor;
     let pelota_game;
     let textoScore;
@@ -41,15 +43,15 @@ const pelotaGameFunction = () => {
     let gameOver;
 
     let tiempoHastaMoneda = 2;
-    let tiempoMonedaMin = 1.8;
-    let tiempoMonedaMax = 5;
+    let tiempoMonedaMin = .8;
+    let tiempoMonedaMax = 3;
     let monedaMinY = 5;
     let monedaMaxY = 320;
 
     let time = new Date();
     let deltaTime = 0;
 
-    let interactuables = [];
+    var interactuables = [];
 
 
     
@@ -209,7 +211,7 @@ const pelotaGameFunction = () => {
     
     function CrearMoneda() {
         let moneda = document.createElement("div");
-        if ((Math.random() > .75) && (score >= 5)){
+        if ((Math.random() > .55) && (score >= 5)){
             contenedor.appendChild(moneda);
             moneda.classList.add("moneda");
             moneda.posX = contenedor.clientWidth;
@@ -219,6 +221,9 @@ const pelotaGameFunction = () => {
             interactuables.push(moneda);
             tiempoHastaMoneda = tiempoMonedaMin + Math.random() * (tiempoMonedaMax-tiempoMonedaMin) / gameVel;
         }
+        if ((Math.random() > .7) && (score >= 20)){
+            moneda.classList.add("monedaGrande");
+        } 
     }
 
     function MoverInteractuables() {
@@ -242,6 +247,9 @@ const pelotaGameFunction = () => {
             }else{
                 if(IsCollision(pelota_game, interactuables[i], 10, 25, 10, 20)) {
                     if(interactuables[i].classList.contains("moneda")){
+                        if(interactuables[i].classList.contains("monedaGrande")){
+                            score = score + 5
+                        }
                         GanarPuntos();
                         interactuables[i].parentNode.removeChild(interactuables[i]);
                         interactuables.splice(i, 1);
@@ -320,32 +328,58 @@ const pelotaGameFunction = () => {
         score++;
         textoScore.innerText = score;
         if(score === 5){
-            gameVel = 1.5;
+            gameVel = 1.6;
             tiempoHastaObstaculo = 4;
-            tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 2;
+            tiempoObstaculoMin = 1.7;
+            tiempoObstaculoMax = 2.5;
+            contenedor.classList.add("level-up1");
    
         }else if(score === 20) {
-            gameVel = 2.5;
+            gameVel = 2;
+            contenedor.classList.add("level-up2");
+            tiempoHastaObstaculo = 4;
+            tiempoObstaculoMin = 1;
+            tiempoObstaculoMax = 3;
+        } else if(score === 40) {
+            gameVel = 3;
+            contenedor.classList.add("level-up3");
+            tiempoHastaObstaculo = 4;
+            tiempoObstaculoMin = .8;
+            tiempoObstaculoMax = 2;
+        }else if(score === 60) {
+            gameVel = 4;
+            contenedor.classList.add("level-up4");
             tiempoHastaObstaculo = 4;
             tiempoObstaculoMin = 1;
             tiempoObstaculoMax = 2.5;
-        } else if(score === 40) {
-            gameVel = 3.5;
+        }
+        else if(score === 80) {
+            gameVel = 5;
+            contenedor.classList.add("level-up5");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = 1;
-            tiempoObstaculoMax = 3;
-        } else if(score === 60) {
-            gameVel = 5;
+            tiempoObstaculoMax = 4;
+        }
+        else if(score === 100) {
+            gameVel = 6;
+            contenedor.classList.add("level-up6");
             tiempoHastaObstaculo = 5;
             tiempoObstaculoMin = .9;
-            tiempoObstaculoMax = 3.5;
-        } else if(score === 100) {
-            gameVel = 6;
+            tiempoObstaculoMax = 5.2;
+        }  else if(score === 120) {
+            gameVel = 7;
+            contenedor.classList.add("level-up7");
             tiempoHastaObstaculo = 5;
-            tiempoObstaculoMin = .7;
-            tiempoObstaculoMax = 4;
-        } 
+            tiempoObstaculoMin = .8;
+            tiempoObstaculoMax = 5.7;
+        }
+        else if(score ===150) {
+            gameVel = 8;
+            contenedor.classList.add("level-up8");
+            tiempoHastaObstaculo = 5;
+            tiempoObstaculoMin = .75;
+            tiempoObstaculoMax = 6.2;
+        }
         
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"
@@ -418,6 +452,7 @@ const pelotaGameFunction = () => {
         tiempoHastaObstaculo = 2;
         tiempoObstaculoMin = 1.5;
         tiempoObstaculoMax = 4;
+        obstaculoPosY = 16;
         obstaculos = []
         tiempoHastaNube = 0.5;
         tiempoNubeMin = 0.7;
@@ -448,6 +483,8 @@ const pelotaGameFunction = () => {
         contenedor.classList.remove("level-up4");
         contenedor.classList.remove("level-up5");
         contenedor.classList.remove("level-up6");
+        contenedor.classList.remove("level-up7");
+        contenedor.classList.remove("level-up8");
 
         suelo.style.animationDuration = (3/gameVel)+"s";
         pelotaGame.style.animationDuration =(3/gameVel)+"s"
@@ -458,7 +495,5 @@ const pelotaGameFunction = () => {
         }
         
     })
-
-}
 
 export default pelotaGameFunction
