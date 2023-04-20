@@ -1,5 +1,5 @@
 const pelotaGameFunction = () => {
-  window.addEventListener('keydown', (e) => {  
+    window.addEventListener('keydown', (e) => {  
         if (e.keyCode === 32 && e.target === document.body) {  
           e.preventDefault();  
         }  
@@ -494,6 +494,6 @@ const pelotaGameFunction = () => {
                 interactuables[i].parentNode.removeChild(interactuables[i]);
         }
         
-    })
+    })}
 
 export default pelotaGameFunction

@@ -74,7 +74,7 @@ function NavHeader() {
                 
                     <li>
                         <div className="wrapperBottonBtn navMovile">
-                            <a href="https://dapp.cryptocupqatar.io/" target="_blank">
+                            <a href="https://crypto-cup-dapp.vercel.app/https://dapp.cryptocupqatar.io/" target="_blank">
                                 <div className="btnButtonNav">
                                     <p >Dapp</p>
                                     <span className="BorderTopBottomNav "></span>
@@ -112,7 +112,7 @@ function NavHeader() {
                 
                     <li>
                         <div className="lineDappButton"></div>
-                        <a href="https://dapp.cryptocupqatar.io/" target="_blank">
+                        <a href="https://crypto-cup-dapp.vercel.app/" target="_blank">
                             <p className='dappTitleButton'>DAPP</p>
                         </a>
 {/*                         <p className='comingDapp'>

@@ -14,16 +14,11 @@ const PelotaGame = () => {
       setIsPlay(!isPlay)
     }
 
-    useEffect(() => {
 
       if(isPlay){
         pelotaGameFunction()
       }
 
-      return () => {
-        pelotaGameFunction()
-      }
-    },[isPlay])
 
   return (
 
